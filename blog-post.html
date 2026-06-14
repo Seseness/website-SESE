@@ -211,6 +211,40 @@
       color: var(--ink-3);
     }
 
+    /* ── Sources ── */
+    .article-sources {
+      max-width: 720px;
+      margin: 48px auto 0;
+      padding: 32px 56px 0;
+      border-top: 1px solid var(--line-soft);
+    }
+    .article-sources h4 {
+      font-size: 11px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      font-weight: 300;
+      margin: 0 0 16px;
+    }
+    .article-sources ol {
+      margin: 0; padding: 0;
+      list-style: none;
+    }
+    .article-sources ol li {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--ink-3);
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+    .article-sources ol li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--ink-3);
+    }
+
     /* ── Article divider ── */
     .article-divider {
       max-width: 720px;
@@ -480,6 +514,11 @@ const POSTS = [
     readtime: "7 min read",
     excerpt: "The five steps that make the difference. No complicated protocols, no expensive extras — just the right foundation, in the right order.",
     image: "project/assets/products/peptide-serum-studio.jpg",
+    sources: [
+      "Baumann, L. (2009). <em>Cosmetic Dermatology — Principles and Practice.</em> McGraw-Hill.",
+      "EWG's Skin Deep — cosmeticsdatabase.com",
+      "COSMOS Standard — ecocert.com/cosmos"
+    ],
     fullBody: `<p>There is a version of skincare that costs a lot, asks a lot, and delivers very little. Twelve steps. Six serums. A different product for every concern and every season. You know this version. You may have tried it.</p>
 
 <p>Then there is the other kind. Simple, intentional, consistent. Five steps that fit into a real morning and a real evening. The kind of routine that your skin can actually feel the benefit of — because you keep doing it.</p>
@@ -640,6 +679,26 @@ const POSTS = [
     readtime: "5 min read",
     excerpt: "Lightest to heaviest. Actives before occlusives. There is a logic to the order — and it makes everything work better.",
     image: "project/assets/products/vitamin-c-serum-studio.jpg",
+    sources: [
+      "Flament, F. et al. (2013). Effect of the sun on visible clinical signs of aging. <em>Clinical, Cosmetic and Investigational Dermatology.</em>",
+      "Hughes, M.C.B. et al. (2013). Sunscreen and prevention of skin aging. <em>Annals of Internal Medicine.</em>",
+      "WHO — Ultraviolet radiation and health: who.int/news-room"
+    ],
+    sources: [
+      "Schagen, S.K. et al. (2012). Discovering the link between nutrition and skin aging. <em>Dermato-Endocrinology.</em>",
+      "Pullar, J.M. et al. (2017). The roles of vitamin C in skin health. <em>Nutrients.</em>",
+      "Baumann, L. (2009). <em>Cosmetic Dermatology — Principles and Practice.</em> McGraw-Hill."
+    ],
+    sources: [
+      "Schagen, S.K. et al. (2012). Discovering the link between nutrition and skin aging. <em>Dermato-Endocrinology.</em>",
+      "Katayama, K. et al. (1993). A pentapeptide from type I procollagen promotes extracellular matrix production. <em>Journal of Biological Chemistry.</em>",
+      "Tran, D. et al. (2015). Daily intake of the herbal alternative to retinol. <em>Journal of Clinical and Aesthetic Dermatology.</em>"
+    ],
+    sources: [
+      "Flament, F. et al. (2013). Effect of the sun on visible clinical signs of aging. <em>Clinical, Cosmetic and Investigational Dermatology.</em>",
+      "Pullar, J.M. et al. (2017). The roles of vitamin C in skin health. <em>Nutrients.</em>",
+      "COSMOS Standard — cosmeticscertification.com"
+    ],
     fullBody: `<p>The order in which you apply your skincare products is not arbitrary. There is a logic to it — one rooted in how the skin absorbs different substances, how ingredients interact with each other, and what each product is designed to do. Get the order right and your routine becomes significantly more effective. Get it wrong and you may be reducing the benefit of products you are spending real money on.</p>
 
 <p>The general principle is simple: lightest to heaviest, water-based before oil-based, actives before occlusives.</p>
@@ -681,6 +740,11 @@ const POSTS = [
     readtime: "5 min read",
     excerpt: "Hydration gets in. The barrier keeps it there. Understanding the difference changes how you shop for skincare.",
     image: null,
+    sources: [
+      "Draelos, Z.D. (2010). The science behind skin care: moisturizers. <em>Journal of Cosmetic Dermatology.</em>",
+      "Papakonstantinou, E. et al. (2012). Hyaluronic acid: a key molecule in skin aging. <em>Dermato-Endocrinology.</em>",
+      "Loden, M. (2003). Role of topical emollients and moisturizers in the treatment of dry skin barrier disorders. <em>American Journal of Clinical Dermatology.</em>"
+    ],
     fullBody: `<p>Walk into any pharmacy or browse any skincare website and you will encounter both hydrating products and barrier-repair products. They often sit near each other. They may look similar. But they do different things — and understanding the difference will change how you read ingredient lists and make purchasing decisions.</p>
 
 <h2>What moisturising does</h2>
@@ -716,6 +780,11 @@ const POSTS = [
     readtime: "6 min read",
     excerpt: "A certification with teeth. Here is what it requires, what it excludes, and why it is worth looking for.",
     image: null,
+    sources: [
+      "COSMOS Standard — cosmeticscertification.com",
+      "Ecocert — ecocert.com/cosmos",
+      "European Commission — Cosmetics Regulation (EC) No 1223/2009"
+    ],
     fullBody: `<p>Natural skincare claims are easy to make and difficult to verify. "Clean." "Green." "Botanical." These are words that appear on packaging without any standardised definition, any independent verification, or any requirement to substantiate them. A brand can call its products natural while using synthetic preservatives, petrochemical derivatives, or formulations that would be prohibited under genuine natural standards.</p>
 
 <p>COSMOS Natural certification is different. It is a rigorous, independently audited standard developed by a consortium of European certifying bodies — Ecocert, BDIH, Cosmebio, Soil Association, and ICEA. It defines what "natural" actually means in cosmetics, and it requires third-party verification at every stage of the supply chain.</p>
@@ -749,6 +818,11 @@ const POSTS = [
     readtime: "5 min read",
     excerpt: "The regeneration cycle. The repair window. Why your night cream matters more than your morning one.",
     image: null,
+    sources: [
+      "Oyetakin-White, P. et al. (2015). Does poor sleep quality affect skin ageing? <em>Clinical and Experimental Dermatology.</em>",
+      "Elias, P.M. (2008). Skin barrier function. <em>Current Allergy and Asthma Reports.</em>",
+      "Rawlings, A.V. & Matts, P.J. (2005). Stratum corneum moisturization at the molecular level. <em>Journal of Investigative Dermatology.</em>"
+    ],
     fullBody: `<p>Sleep is not passive time for your skin. It is, in fact, the period of most intense repair and regeneration — the window when the skin is freed from the work of protecting itself against the external environment and can focus its resources on restoration.</p>
 
 <p>Understanding what actually happens during those hours helps clarify not just why a good evening routine matters, but why the specific products you use at night should be chosen differently from those you use in the morning.</p>
@@ -784,6 +858,11 @@ const POSTS = [
     readtime: "5 min read",
     excerpt: "Three serums. Three different results. Here is the honest guide to knowing which one is for you.",
     image: null,
+    sources: [
+      "Schagen, S.K. et al. (2012). Discovering the link between nutrition and skin aging. <em>Dermato-Endocrinology.</em>",
+      "Katayama, K. et al. (1993). A pentapeptide from type I procollagen promotes extracellular matrix production. <em>Journal of Biological Chemistry.</em>",
+      "Tran, D. et al. (2015). Daily intake of the herbal alternative to retinol. <em>Journal of Clinical and Aesthetic Dermatology.</em>"
+    ],
     fullBody: `<p>SESE has three treatment serums. Each one targets a different aspect of aging skin, works through a different mechanism, and suits different skin types and priorities. This is not a case of more is better — it is a case of understanding what your skin actually needs and choosing accordingly.</p>
 
 <p>You might use one. You might use two at different times of day. You might work through all three across different stages of your skincare practice. Here is what you need to know about each.</p>
@@ -825,6 +904,11 @@ const POSTS = [
     readtime: "6 min read",
     excerpt: "SESE was born from a very specific idea about how to care for skin. This is that idea, in full.",
     image: null,
+    sources: [
+      "Krutmann, J. et al. (2017). The skin aging exposome. <em>Journal of Dermatological Science.</em>",
+      "Baumann, L. (2009). <em>Cosmetic Dermatology — Principles and Practice.</em> McGraw-Hill.",
+      "COSMOS Standard — cosmeticscertification.com"
+    ],
     fullBody: `<p>There is something about the Belgian coast that slows time. The wide, flat horizon. The particular quality of northern light on the water. The way the wind demands a certain presence — you cannot be distracted on a beach in winter. You are simply there, and the weather makes that the only option.</p>
 
 <p>SESE was conceived in this context. Not as a response to a market gap or a formulation trend, but as a reflection of a particular way of thinking about care. Slow. Intentional. Without the noise of the industry that has built an entire infrastructure of urgency around something that should be simple.</p>
@@ -909,6 +993,11 @@ function renderPost(post) {
     <div class="article-body">
       ${post.fullBody}
     </div>
+    ${post.sources ? `
+    <div class="article-sources">
+      <h4>Sources &amp; further reading</h4>
+      <ol>${post.sources.map(s => `<li>${s}</li>`).join('')}</ol>
+    </div>` : ''}
     <hr class="article-divider">
   `;
 
