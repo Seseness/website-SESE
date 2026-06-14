@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SESE — Coming Soon</title>
+  <style>
+    @font-face {
+      font-family: "Todes";
+      src: url("project/fonts/Todes-Light.otf") format("opentype");
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:        #1A1A1A;
+      --ink-2:      rgba(26,26,26,0.55);
+      --ink-3:      rgba(26,26,26,0.38);
+      --warm-white: #FAF5EC;
+      --sand:       #EDE3D0;
+      --blue:       #3B6B8A;
+      --font-display: "Todes","Cormorant Garamond","Times New Roman",serif;
+      --font-ui:    "Inter","Helvetica Neue",system-ui,sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--warm-white);
+      color: var(--ink);
+      font-family: var(--font-display);
+      font-weight: 300;
+    }
+
+    /* ── Layout ── */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ── Subtle background texture ── */
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(180,156,120,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 100%, rgba(59,107,138,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* ── Wordmark ── */
+    .wordmark {
+      font-size: 32px;
+      letter-spacing: 0.42em;
+      color: var(--ink);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 56px;
+    }
+
+    /* ── Divider ── */
+    .rule {
+      width: 48px;
+      height: 1px;
+      background: var(--ink-2);
+      margin: 0 auto 40px;
+    }
+
+    /* ── Main headline ── */
+    .tagline {
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    /* ── Sub-label ── */
+    .sub {
+      font-size: 13px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+      font-family: var(--font-ui);
+      font-weight: 400;
+      margin-bottom: 64px;
+    }
+
+    /* ── Countdown ── */
+    .countdown {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: center;
+      margin-bottom: 72px;
+    }
+
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .countdown-number {
+      font-size: clamp(40px, 7vw, 72px);
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      color: var(--ink);
+      min-width: 2ch;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .countdown-label {
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      font-family: var(--font-ui);
+      font-weight: 400;
+    }
+
+    .countdown-sep {
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 300;
+      color: var(--ink-3);
+      line-height: 1;
+      padding-top: 2px;
+    }
+
+    /* ── Launch date pill ── */
+    .launch-date {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(26,26,26,0.22);
+      border-radius: 999px;
+      padding: 10px 24px;
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+      font-family: var(--font-ui);
+      font-weight: 400;
+      margin-bottom: 80px;
+    }
+
+    .launch-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--blue);
+      flex-shrink: 0;
+    }
+
+    /* ── Email signup ── */
+    .notify-label {
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      font-family: var(--font-ui);
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+
+    .notify-form {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      border: 1px solid rgba(26,26,26,0.25);
+      border-radius: 999px;
+      overflow: hidden;
+      max-width: 380px;
+      width: 100%;
+      background: rgba(255,255,255,0.5);
+    }
+
+    .notify-form input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 14px 20px;
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: 14px;
+      color: var(--ink);
+    }
+
+    .notify-form input::placeholder { color: var(--ink-3); }
+
+    .notify-form button {
+      background: var(--ink);
+      color: var(--warm-white);
+      border: none;
+      cursor: pointer;
+      padding: 14px 22px;
+      font-family: var(--font-ui);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      transition: background 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .notify-form button:hover { background: #2A2A2A; }
+
+    .notify-thanks {
+      display: none;
+      font-size: 14px;
+      color: var(--ink-2);
+      letter-spacing: 0.08em;
+    }
+
+    /* ── Footer line ── */
+    .foot {
+      position: absolute;
+      bottom: 28px;
+      left: 0; right: 0;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      font-family: var(--font-ui);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
+      .countdown { gap: 20px; }
+      .countdown-sep { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <a href="#" class="wordmark">S E S E</a>
+
+    <div class="rule"></div>
+
+    <h1 class="tagline">Unlock your skin's timeless beauty.</h1>
+
+    <p class="sub">Something beautiful is on its way</p>
+
+    <div class="countdown" id="countdown">
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cd-days">00</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cd-hours">00</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cd-mins">00</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cd-secs">00</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+
+    <div class="launch-date">
+      <span class="launch-dot"></span>
+      Official launch · July 1st, 2026
+    </div>
+
+    <p class="notify-label">Notify me at launch</p>
+    <form class="notify-form" id="notify-form" onsubmit="handleNotify(event)">
+      <input type="email" placeholder="your@email.com" required />
+      <button type="submit">Notify me</button>
+    </form>
+    <p class="notify-thanks" id="notify-thanks">Thank you — we'll be in touch.</p>
+
+    <footer class="foot">© 2026 SESE · Based in Belgium</footer>
+  </main>
+
+  <script>
+    // Countdown to July 1st 2026 00:00:00 (Belgium = UTC+2 in summer)
+    const launch = new Date('2026-07-01T00:00:00+02:00').getTime();
+
+    function pad(n) { return String(n).padStart(2, '0'); }
+
+    function tick() {
+      const now  = Date.now();
+      const diff = launch - now;
+
+      if (diff <= 0) {
+        document.getElementById('cd-days').textContent  = '00';
+        document.getElementById('cd-hours').textContent = '00';
+        document.getElementById('cd-mins').textContent  = '00';
+        document.getElementById('cd-secs').textContent  = '00';
+        return;
+      }
+
+      const days  = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff % 86400000) / 3600000);
+      const mins  = Math.floor((diff % 3600000)  / 60000);
+      const secs  = Math.floor((diff % 60000)    / 1000);
+
+      document.getElementById('cd-days').textContent  = pad(days);
+      document.getElementById('cd-hours').textContent = pad(hours);
+      document.getElementById('cd-mins').textContent  = pad(mins);
+      document.getElementById('cd-secs').textContent  = pad(secs);
+    }
+
+    tick();
+    setInterval(tick, 1000);
+
+    function handleNotify(e) {
+      e.preventDefault();
+      document.getElementById('notify-form').style.display   = 'none';
+      document.getElementById('notify-thanks').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
