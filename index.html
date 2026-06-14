@@ -152,23 +152,13 @@
       height: 720px;
       border-radius: 24px;
       overflow: hidden;
-      background: linear-gradient(155deg, #EBE2D0 0%, #D8C6A7 55%, #B59E80 100%);
+      background: #B59E80;
     }
     .hero .photo-bg {
       position: absolute; inset: 0;
-      background-image:
-        radial-gradient(circle at 18% 22%, rgba(255,255,255,0.35) 0, transparent 36%),
-        radial-gradient(circle at 82% 70%, rgba(255,250,235,0.4) 0, transparent 40%),
-        radial-gradient(circle at 60% 30%, rgba(255,255,255,0.25) 0, transparent 30%);
-    }
-    .hero .photo-tag {
-      position: absolute; top: 28px; left: 28px;
-      font-family: ui-monospace, monospace;
-      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
-      color: rgba(26,26,26,0.55);
-      padding: 8px 14px;
-      background: rgba(255,255,255,0.45);
-      border-radius: 999px;
+      background-image: url('project/assets/hero-photo.jpg');
+      background-size: cover;
+      background-position: center;
     }
     .hero .overlay {
       position: absolute; inset: 0;
@@ -640,7 +630,6 @@
   <!-- Hero -->
   <section class="hero">
     <div class="photo-bg"></div>
-    <span class="photo-tag">[hero photo — bottles in botanical setting · golden hour · from Drive folder]</span>
     <div class="overlay"></div>
     <div class="content">
       <div class="hero-eyebrow">Anti-aging skincare · Beach &amp; botanical</div>
