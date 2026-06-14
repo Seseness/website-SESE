@@ -187,6 +187,12 @@
     .hero .subtitle { margin: 28px 0 0; font-style: italic; font-size: 22px; line-height: 1.4; color: var(--ink); opacity: 0.85; }
     .hero .lede { margin: 22px 0 40px; font-size: 17px; line-height: 1.6; color: var(--ink); max-width: 520px; opacity: 0.78; }
     .hero-ctas { display: inline-flex; gap: 14px; }
+    .hero-discover {
+      position: absolute;
+      bottom: 80px;
+      right: 80px;
+      z-index: 2;
+    }
 
     /* ── USPs ── */
     .usps {
@@ -638,10 +644,12 @@
       <p class="lede">Care for your skin with intention, softness, and the right foundation.</p>
       <div class="hero-ctas">
         <a class="btn btn--primary" href="collection.html">Shop Now <span class="arrow">→</span></a>
-        <button class="btn btn--blue-outline" onclick="document.getElementById('forever-bundle').scrollIntoView({behavior:'smooth'})">
-          Discover your routine
-        </button>
       </div>
+    </div>
+    <div class="hero-discover">
+      <button class="btn btn--blue-outline" onclick="document.getElementById('forever-bundle').scrollIntoView({behavior:'smooth'})">
+        Discover your routine
+      </button>
     </div>
   </section>
 
