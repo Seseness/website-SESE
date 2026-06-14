@@ -282,7 +282,14 @@
       height: 340px;
       border-radius: var(--r-card);
       overflow: hidden;
-      background-position: center; background-repeat: no-repeat; background-size: 80.5% auto;
+      display: flex; align-items: center; justify-content: center;
+      padding: 12px;
+    }
+    .card-pic img.product-img {
+      width: 80.5%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: var(--r-card);
     }
     .card-step {
       position: absolute; top: 14px; left: 14px;
@@ -682,7 +689,7 @@
     <div class="carousel-track" id="track">
 
       <div class="card" data-product="cleansing-foam">
-        <div class="card-pic" style="background-image:url('project/assets/products-new/cleansing-foam-new.png')">
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/cleansing-foam-new.png" alt="Cleansing Foam" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -696,7 +703,7 @@
       </div>
 
       <div class="card" data-product="hydrating-toner">
-        <div class="card-pic" style="background-image:url('project/assets/products-new/hydrating-toner-new.png')">
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/hydrating-toner-new.png" alt="Hydrating Toner" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -710,7 +717,7 @@
       </div>
 
       <div class="card" data-product="vitamin-c-serum">
-        <div class="card-pic" style="background-image:url('project/assets/products-new/vitamin-c-serum-new.png')">
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/vitamin-c-serum-new.png" alt="Vitamin C Serum" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -724,7 +731,7 @@
       </div>
 
       <div class="card" data-product="peptide-serum">
-        <div class="card-pic" style="background-image:url('project/assets/products-new/peptide-serum-new.png')">
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/peptide-serum-new.png" alt="Peptide Serum" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -738,7 +745,7 @@
       </div>
 
       <div class="card" data-product="retinol-alt-serum">
-        <div class="card-pic" style="background-image:url('project/assets/products-new/retinol-serum-new.png')">
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/retinol-serum-new.png" alt="Retinol Serum" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -752,7 +759,7 @@
       </div>
 
       <div class="card" data-product="firming-day-cream">
-        <div class="card-pic" style="background-image:url('project/assets/products-new/firming-day-cream-new.png')">
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/firming-day-cream-new.png" alt="Firming Day Cream" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -766,7 +773,7 @@
       </div>
 
       <div class="card" data-product="ceramide-night-cream">
-        <div class="card-pic" style="background-image:url('project/assets/products-new/ceramide-night-cream-new.png')">
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/ceramide-night-cream-new.png" alt="Ceramide Night Cream" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -780,7 +787,7 @@
       </div>
 
       <div class="card" data-product="smoothing-eye-cream">
-        <div class="card-pic" style="background-image:url('project/assets/products-new/smoothing-eye-cream-new.png')">
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/smoothing-eye-cream-new.png" alt="Smoothing Eye Cream" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -794,7 +801,7 @@
       </div>
 
       <div class="card" data-product="spf50-stick">
-        <div class="card-pic" style="background-image:url('project/assets/products-new/spf50-stick-new.png')">
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/spf50-stick-new.png" alt="SPF 50 Stick" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
