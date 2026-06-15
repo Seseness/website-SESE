@@ -605,6 +605,112 @@
       z-index: 9000; white-space: nowrap;
     }
     .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE — Tablet (≤ 1024px)
+    ══════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .page { width: 100%; }
+
+      .hero { margin: 12px 24px 0; height: 560px; }
+      .hero .content { padding: 56px 48px 100px; }
+      .hero h1 { font-size: 60px; }
+      .hero-shop-top { left: 48px; top: 56px; }
+      .hero-discover { right: 24px; bottom: 56px; }
+
+      .usps { padding: 20px 24px; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+      .usps-divider { display: none; }
+
+      .section-head { padding: 0 24px; }
+      .carousel { padding: 0 24px; }
+
+      .about { margin: 80px 24px 0; padding: 48px 40px; gap: 48px; }
+      .about-body h3 { font-size: 32px; }
+
+      .forever { margin: 80px 24px 0; padding: 56px 48px; gap: 40px; }
+      .forever h2 { font-size: 58px; }
+
+      .rituals { margin: 16px 24px 0; gap: 16px; }
+
+      .blog-head { margin-top: 80px; }
+      .journal { margin: 0 24px; gap: 36px; }
+      .journal-body h3 { font-size: 30px; }
+      .journal-foot { margin: 16px 24px 0; }
+
+      .foot-top { padding: 56px 24px 40px; gap: 32px; }
+      .foot-bot { padding: 20px 24px 24px; }
+    }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE — Mobile (≤ 680px)
+    ══════════════════════════════════════════ */
+    @media (max-width: 680px) {
+      /* Nav */
+      .nav { padding: 18px 20px; grid-template-columns: 1fr auto; }
+      .nav-center { display: none; }
+      .wordmark { font-size: 18px; letter-spacing: 0.3em; white-space: nowrap; }
+      .nav-right { gap: 12px; }
+      .nav-right span:not(.nav-icon):not(.cart-dot) { display: none; }
+
+      /* Hero */
+      .hero { margin: 10px 16px 0; height: 520px; border-radius: 18px; }
+      .hero .content { padding: 28px 24px 32px; max-width: 100%; justify-content: flex-end; }
+      .hero h1 { font-size: 38px; line-height: 1.05; }
+      .hero .subtitle { font-size: 16px; margin-top: 14px; }
+      .hero .lede { font-size: 14px; margin: 12px 0 20px; }
+      .hero-shop-top { top: 24px; left: 24px; }
+      .hero-discover { top: 24px; right: 16px; bottom: auto; }
+      .hero-discover .btn { font-size: 10px; padding: 9px 14px; letter-spacing: 0.14em; }
+
+      /* USPs */
+      .usps { padding: 16px 16px; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 16px 0; }
+      .usp-text { font-size: 12px; }
+
+      /* Section header */
+      .section-head { flex-direction: column; align-items: flex-start; gap: 12px; padding: 0 16px; margin-bottom: 20px; }
+      .section-head h2 { font-size: 28px; }
+      .view-all { align-self: flex-start; }
+
+      /* Carousel — horizontal scroll */
+      .carousel { padding: 0 16px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+      .carousel::-webkit-scrollbar { display: none; }
+      .carousel-track { grid-template-columns: repeat(9, 260px); gap: 8px; }
+      .card { min-width: 260px; }
+      .card-pic { height: 280px; }
+
+      /* About */
+      .about { margin: 56px 16px 0; padding: 32px 24px; grid-template-columns: 1fr; gap: 32px; border-radius: 18px; }
+      .about-body h3 { font-size: 28px; }
+      .about-img { height: 260px; border-radius: 14px; }
+
+      /* Forever bundle */
+      .forever { margin: 56px 16px 0; padding: 36px 24px; grid-template-columns: 1fr; gap: 32px; border-radius: 18px; }
+      .forever h2 { font-size: 44px; }
+      .forever-art { height: 320px; }
+      .forever-badge { font-size: 10px; }
+      .forever-ctas { flex-direction: column; gap: 10px; }
+      .forever-ctas .btn { width: 100%; text-align: center; justify-content: center; }
+
+      /* Ritual bundles */
+      .rituals { margin: 12px 16px 0; grid-template-columns: 1fr; gap: 14px; }
+      .ritual { min-height: 220px; }
+
+      /* Journal */
+      .blog-head { margin-top: 56px; }
+      .journal { margin: 0 16px; grid-template-columns: 1fr; gap: 0; padding: 20px; border-radius: 18px; }
+      .journal-cover { min-height: 220px; }
+      .journal-body { padding: 20px 0 0; }
+      .journal-body h3 { font-size: 24px; }
+      .journal-foot { margin: 12px 16px 0; flex-direction: column; align-items: flex-start; gap: 10px; }
+
+      /* Footer */
+      .foot-wrap { margin-top: 56px; }
+      .foot-top { grid-template-columns: 1fr; gap: 36px; padding: 40px 20px 32px; }
+      .foot-divider { display: none; }
+      .foot-bot { flex-direction: column; align-items: flex-start; gap: 14px; padding: 16px 20px 24px; }
+      .pay { flex-wrap: wrap; }
+      .lang-foot { display: none; }
+    }
   </style>
 </head>
 <body>
