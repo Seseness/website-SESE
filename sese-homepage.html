@@ -25,7 +25,7 @@
       --ink-3:        #7A7770;
       --bg-page:      #FFFFFF;
       --bg-nav:       #FAF5EC;
-      --bg-elev:      #FFFCF5;
+      --bg-elev:      #DCEAF1;
       --line-soft:    rgba(26,26,26,0.08);
       --line-default: rgba(26,26,26,0.16);
       --line-strong:  rgba(26,26,26,0.28);
@@ -39,7 +39,7 @@
     *, *::before, *::after { box-sizing: border-box; }
     html, body {
       margin: 0; padding: 0;
-      background: #fff;
+      background: #FAF5EC;
       color: var(--ink);
       font-family: var(--font-display);
       font-weight: 300;
@@ -152,23 +152,13 @@
       height: 720px;
       border-radius: 24px;
       overflow: hidden;
-      background: linear-gradient(155deg, #EBE2D0 0%, #D8C6A7 55%, #B59E80 100%);
+      background: #B59E80;
     }
     .hero .photo-bg {
       position: absolute; inset: 0;
-      background-image:
-        radial-gradient(circle at 18% 22%, rgba(255,255,255,0.35) 0, transparent 36%),
-        radial-gradient(circle at 82% 70%, rgba(255,250,235,0.4) 0, transparent 40%),
-        radial-gradient(circle at 60% 30%, rgba(255,255,255,0.25) 0, transparent 30%);
-    }
-    .hero .photo-tag {
-      position: absolute; top: 28px; left: 28px;
-      font-family: ui-monospace, monospace;
-      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
-      color: rgba(26,26,26,0.55);
-      padding: 8px 14px;
-      background: rgba(255,255,255,0.45);
-      border-radius: 999px;
+      background-image: url('project/assets/hero-photo.jpg');
+      background-size: cover;
+      background-position: center;
     }
     .hero .overlay {
       position: absolute; inset: 0;
@@ -178,9 +168,15 @@
     .hero .content {
       position: relative; z-index: 2;
       height: 100%;
-      padding: 96px 80px;
+      padding: 96px 80px 132px;
       display: flex; flex-direction: column; justify-content: flex-end;
       max-width: 880px;
+    }
+    .hero-shop-top {
+      position: absolute;
+      bottom: 80px;
+      right: 40px;
+      z-index: 2;
     }
     .hero-eyebrow {
       font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
@@ -197,6 +193,12 @@
     .hero .subtitle { margin: 28px 0 0; font-style: italic; font-size: 22px; line-height: 1.4; color: var(--ink); opacity: 0.85; }
     .hero .lede { margin: 22px 0 40px; font-size: 17px; line-height: 1.6; color: var(--ink); max-width: 520px; opacity: 0.78; }
     .hero-ctas { display: inline-flex; gap: 14px; }
+    .hero-discover {
+      position: absolute;
+      top: 80px;
+      right: 40px;
+      z-index: 2;
+    }
 
     /* ── USPs ── */
     .usps {
@@ -258,7 +260,7 @@
     .carousel-track {
       display: grid;
       grid-template-columns: repeat(9, 312px);
-      gap: 20px;
+      gap: 10px;
       overflow-x: auto;
       padding-bottom: 14px;
       scroll-behavior: smooth;
@@ -274,16 +276,21 @@
       padding: 16px 16px 22px;
       cursor: pointer;
       transition: transform .42s var(--ease-out), box-shadow .42s var(--ease-out);
-      border: 1px solid var(--line-soft);
       display: block;
     }
     .card:hover { transform: translateY(-4px); box-shadow: 0 22px 40px -22px rgba(26,26,26,0.22); }
     .card-pic {
       position: relative;
       height: 340px;
-      border-radius: var(--r-soft);
-      overflow: hidden;
-      background-position: center; background-repeat: no-repeat; background-size: 70% auto;
+      display: flex; align-items: center; justify-content: center;
+      margin: 8px;
+    }
+    .card-pic img.product-img {
+      width: 82%; height: 82%;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 14px;
+      display: block;
     }
     .card-step {
       position: absolute; top: 14px; left: 14px;
@@ -389,14 +396,29 @@
     .forever-pricing .was { font-size: 17px; color: rgba(15,42,54,0.55); text-decoration: line-through; }
     .forever-pricing .save { font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #0F2A36; background: rgba(255,255,255,0.6); padding: 6px 10px; border-radius: 999px; }
     .forever-ctas { display: inline-flex; gap: 12px; }
+    .forever-inside {
+      display: none; margin-top: 28px;
+    }
+    .forever-inside.open { display: block; }
+    .forever-inside ul { list-style: none; margin: 0; padding: 0; }
+    .forever-inside li {
+      display: flex; align-items: center; gap: 14px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(15,42,54,0.12);
+      font-size: 15px; color: #0F2A36;
+    }
+    .forever-inside li:last-child { border-bottom: none; }
+    .fi-num {
+      font-size: 10px; letter-spacing: 0.22em; color: rgba(15,42,54,0.45);
+      font-family: var(--font-ui); min-width: 20px;
+    }
+    .forever-inside li a {
+      color: inherit; text-decoration: none;
+    }
+    .forever-inside li a:hover { text-decoration: underline; }
 
-    .forever-art { position: relative; height: 460px; }
-    .forever-art img { position: absolute; bottom: 0; max-height: 100%; object-fit: contain; }
-    .forever-art .b1 { left: 0;   height: 78%; transform: rotate(-3deg); filter: drop-shadow(0 24px 28px rgba(15,42,54,0.18)); }
-    .forever-art .b2 { left: 18%; height: 92%; z-index: 2; filter: drop-shadow(0 30px 36px rgba(15,42,54,0.22)); }
-    .forever-art .b3 { left: 40%; height: 100%; z-index: 3; filter: drop-shadow(0 30px 36px rgba(15,42,54,0.24)); }
-    .forever-art .b4 { left: 62%; height: 86%; transform: rotate(4deg); filter: drop-shadow(0 24px 28px rgba(15,42,54,0.18)); }
-    .forever-art .b5 { left: 82%; height: 64%; transform: rotate(-2deg); filter: drop-shadow(0 18px 22px rgba(15,42,54,0.16)); }
+    .forever-art { position: relative; height: 460px; display: flex; align-items: center; justify-content: center; }
+    .forever-art img { height: 100%; width: auto; object-fit: contain; }
     .forever-art .count-chip {
       position: absolute; top: 12px; right: 14px;
       background: #fff; padding: 10px 14px; border-radius: 999px;
@@ -440,6 +462,38 @@
     .ritual--full  .ritual-go { background: rgba(42,38,32,0.12); }
     .ritual-bottles { position: relative; height: 220px; align-self: stretch; }
     .ritual-bottles img { position: absolute; bottom: 0; max-height: 100%; object-fit: contain; }
+    .ritual-price { font-size: 28px; font-weight: 300; margin: 10px 0 0; letter-spacing: -0.01em; }
+    .ritual-cart-btn {
+      display: inline-flex; align-items: center; gap: 8px; align-self: flex-start;
+      background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.5);
+      color: inherit; padding: 9px 18px; border-radius: 999px;
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      cursor: pointer; font-family: var(--font-ui); margin-top: 16px;
+      transition: background 0.2s;
+    }
+    .ritual-cart-btn:hover { background: rgba(255,255,255,0.35); }
+    .ritual--full .ritual-cart-btn { background: rgba(42,38,32,0.08); border-color: rgba(42,38,32,0.3); }
+    .ritual--full .ritual-cart-btn:hover { background: rgba(42,38,32,0.18); }
+    .ritual-inside-wrap { margin-top: 14px; }
+    .ritual-inside-btn {
+      background: none; border: 1px solid currentColor; color: inherit;
+      opacity: 0.7; padding: 6px 14px; border-radius: 20px;
+      font-size: 12px; letter-spacing: 0.08em; cursor: pointer;
+      font-family: var(--font-ui);
+    }
+    .ritual-inside-btn:hover { opacity: 1; }
+    .ritual-inside { display: none; margin-top: 12px; }
+    .ritual-inside.open { display: block; }
+    .ritual-inside ul { list-style: none; margin: 0; padding: 0; }
+    .ritual-inside li {
+      display: flex; align-items: center; gap: 12px; padding: 7px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 13px;
+    }
+    .ritual--full .ritual-inside li { border-bottom-color: rgba(42,38,32,0.15); }
+    .ritual-inside li:last-child { border-bottom: none; }
+    .ritual-inside .fi-num { color: inherit; opacity: 0.4; }
+    .ritual-inside li a { color: inherit; text-decoration: none; }
+    .ritual-inside li a:hover { text-decoration: underline; }
     .ritual--night .ritual-bottles img { filter: drop-shadow(0 14px 18px rgba(0,0,0,0.4)); }
     .ritual--full  .ritual-bottles img { filter: drop-shadow(0 14px 18px rgba(42,38,32,0.18)); }
     .ritual--night .rb1 { left: 0;   height: 80%; transform: rotate(-3deg); }
@@ -466,6 +520,11 @@
     .journal-cover {
       position: relative; border-radius: 18px; overflow: hidden; min-height: 460px;
       background: linear-gradient(160deg, #E5DCC4 0%, #CFC1A0 100%);
+    }
+    .journal-cover .cover-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
     }
     .journal-cover .ph {
       position: absolute; inset: 0;
@@ -528,7 +587,8 @@
     .journal-foot a { color: var(--ink); border-bottom: 1px solid var(--line-default); padding-bottom: 3px; }
 
     /* ── Footer ── */
-    .foot-wrap { margin-top: 96px; background: var(--bg-nav); color: #2A2620; }
+    .foot-wrap { margin-top: 96px; background: #FAF5EC; color: #2A2620; }
+    .foot-wrap .page { background: #FAF5EC; }
     .foot-top {
       padding: 80px 56px 56px;
       display: grid;
@@ -595,6 +655,112 @@
       z-index: 9000; white-space: nowrap;
     }
     .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE — Tablet (≤ 1024px)
+    ══════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .page { width: 100%; }
+
+      .hero { margin: 12px 24px 0; height: 560px; }
+      .hero .content { padding: 56px 48px 100px; }
+      .hero h1 { font-size: 60px; }
+      .hero-shop-top { left: 48px; top: 56px; }
+      .hero-discover { right: 24px; bottom: 56px; }
+
+      .usps { padding: 20px 24px; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+      .usps-divider { display: none; }
+
+      .section-head { padding: 0 24px; }
+      .carousel { padding: 0 24px; }
+
+      .about { margin: 80px 24px 0; padding: 48px 40px; gap: 48px; }
+      .about-body h3 { font-size: 32px; }
+
+      .forever { margin: 80px 24px 0; padding: 56px 48px; gap: 40px; }
+      .forever h2 { font-size: 58px; }
+
+      .rituals { margin: 16px 24px 0; gap: 16px; }
+
+      .blog-head { margin-top: 80px; }
+      .journal { margin: 0 24px; gap: 36px; }
+      .journal-body h3 { font-size: 30px; }
+      .journal-foot { margin: 16px 24px 0; }
+
+      .foot-top { padding: 56px 24px 40px; gap: 32px; }
+      .foot-bot { padding: 20px 24px 24px; }
+    }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE — Mobile (≤ 680px)
+    ══════════════════════════════════════════ */
+    @media (max-width: 680px) {
+      /* Nav */
+      .nav { padding: 18px 20px; grid-template-columns: 1fr auto; }
+      .nav-center { display: none; }
+      .wordmark { font-size: 18px; letter-spacing: 0.3em; white-space: nowrap; }
+      .nav-right { gap: 12px; }
+      .nav-right span:not(.nav-icon):not(.cart-dot) { display: none; }
+
+      /* Hero */
+      .hero { margin: 10px 16px 0; height: 520px; border-radius: 18px; }
+      .hero .content { padding: 28px 24px 32px; max-width: 100%; justify-content: flex-end; }
+      .hero h1 { font-size: 38px; line-height: 1.05; }
+      .hero .subtitle { font-size: 16px; margin-top: 14px; }
+      .hero .lede { font-size: 14px; margin: 12px 0 20px; }
+      .hero-shop-top { top: 24px; left: 24px; }
+      .hero-discover { top: 24px; right: 16px; bottom: auto; }
+      .hero-discover .btn { font-size: 10px; padding: 9px 14px; letter-spacing: 0.14em; }
+
+      /* USPs */
+      .usps { padding: 16px 16px; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 16px 0; }
+      .usp-text { font-size: 12px; }
+
+      /* Section header */
+      .section-head { flex-direction: column; align-items: flex-start; gap: 12px; padding: 0 16px; margin-bottom: 20px; }
+      .section-head h2 { font-size: 28px; }
+      .view-all { align-self: flex-start; }
+
+      /* Carousel — horizontal scroll */
+      .carousel { padding: 0 16px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+      .carousel::-webkit-scrollbar { display: none; }
+      .carousel-track { grid-template-columns: repeat(9, 260px); gap: 8px; }
+      .card { min-width: 260px; }
+      .card-pic { height: 280px; }
+
+      /* About */
+      .about { margin: 56px 16px 0; padding: 32px 24px; grid-template-columns: 1fr; gap: 32px; border-radius: 18px; }
+      .about-body h3 { font-size: 28px; }
+      .about-img { height: 260px; border-radius: 14px; }
+
+      /* Forever bundle */
+      .forever { margin: 56px 16px 0; padding: 36px 24px; grid-template-columns: 1fr; gap: 32px; border-radius: 18px; }
+      .forever h2 { font-size: 44px; }
+      .forever-art { height: 320px; }
+      .forever-badge { font-size: 10px; }
+      .forever-ctas { flex-direction: column; gap: 10px; }
+      .forever-ctas .btn { width: 100%; text-align: center; justify-content: center; }
+
+      /* Ritual bundles */
+      .rituals { margin: 12px 16px 0; grid-template-columns: 1fr; gap: 14px; }
+      .ritual { min-height: 220px; }
+
+      /* Journal */
+      .blog-head { margin-top: 56px; }
+      .journal { margin: 0 16px; grid-template-columns: 1fr; gap: 0; padding: 20px; border-radius: 18px; }
+      .journal-cover { min-height: 220px; }
+      .journal-body { padding: 20px 0 0; }
+      .journal-body h3 { font-size: 24px; }
+      .journal-foot { margin: 12px 16px 0; flex-direction: column; align-items: flex-start; gap: 10px; }
+
+      /* Footer */
+      .foot-wrap { margin-top: 56px; }
+      .foot-top { grid-template-columns: 1fr; gap: 36px; padding: 40px 20px 32px; }
+      .foot-divider { display: none; }
+      .foot-bot { flex-direction: column; align-items: flex-start; gap: 14px; padding: 16px 20px 24px; }
+      .pay { flex-wrap: wrap; }
+      .lang-foot { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -612,12 +778,12 @@
   <header class="nav">
     <a href="#" class="wordmark">S E S E</a>
     <nav class="nav-center">
-      <a class="active">Shop</a>
-      <a>Routines</a>
-      <a>Cleanse &amp; Prep</a>
-      <a>Serums</a>
-      <a>Moisturize</a>
-      <a>About</a>
+      <a class="active" href="collection.html">Shop</a>
+      <a href="collection.html?c=bundles">Routines</a>
+      <a href="collection.html?c=cleanse">Cleanse &amp; Prep</a>
+      <a href="collection.html?c=serums">Serums</a>
+      <a href="collection.html?c=moisturize">Moisturize</a>
+      <a href="about.html">About</a>
     </nav>
     <div class="nav-right">
       <span class="nav-icon" title="Search">
@@ -634,21 +800,20 @@
   <!-- Hero -->
   <section class="hero">
     <div class="photo-bg"></div>
-    <span class="photo-tag">[hero photo — bottles in botanical setting · golden hour · from Drive folder]</span>
     <div class="overlay"></div>
+    <div class="hero-shop-top">
+      <a class="btn btn--primary" href="collection.html">Shop Now <span class="arrow">→</span></a>
+    </div>
     <div class="content">
       <div class="hero-eyebrow">Anti-aging skincare · Beach &amp; botanical</div>
       <h1>Unlock your skin's<br/><em>timeless beauty.</em></h1>
       <p class="subtitle">Timeless skin, naturally yours.</p>
       <p class="lede">Care for your skin with intention, softness, and the right foundation.</p>
-      <div class="hero-ctas">
-        <button class="btn btn--primary" onclick="document.getElementById('essentials').scrollIntoView({behavior:'smooth'})">
-          Shop Now <span class="arrow">→</span>
-        </button>
-        <button class="btn btn--blue-outline" onclick="document.getElementById('forever-bundle').scrollIntoView({behavior:'smooth'})">
-          Discover your routine
-        </button>
-      </div>
+    </div>
+    <div class="hero-discover">
+      <button class="btn btn--blue-outline" onclick="document.getElementById('forever-bundle').scrollIntoView({behavior:'smooth'})">
+        Discover your routine
+      </button>
     </div>
   </section>
 
@@ -678,7 +843,7 @@
       <div class="eyebrow">Discover your essentials</div>
     </div>
     <div class="head-aside">
-      <a href="#">Shop all</a>
+      <a href="collection.html">Shop all</a>
       <div class="arrows">
         <button id="prev" aria-label="Previous">‹</button>
         <button id="next" aria-label="Next">›</button>
@@ -690,8 +855,7 @@
     <div class="carousel-track" id="track">
 
       <div class="card" data-product="cleansing-foam">
-        <div class="card-pic" style="background-color:#E3EEF5;background-image:url('project/assets/products/cleansing-foam-front-alt.jpg')">
-          <span class="card-step">Step 01 · Cleanse</span>
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/cleansing-foam-hp.png" alt="Cleansing Foam" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -705,8 +869,7 @@
       </div>
 
       <div class="card" data-product="hydrating-toner">
-        <div class="card-pic" style="background-color:#E6EFE9;background-image:url('project/assets/products/hydrating-toner-front-alt.jpg')">
-          <span class="card-step">Step 02 · Tone</span>
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/hydrating-toner-hp.png" alt="Hydrating Toner" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -720,8 +883,7 @@
       </div>
 
       <div class="card" data-product="vitamin-c-serum">
-        <div class="card-pic" style="background-color:#FCEAD0;background-image:url('project/assets/products/vitamin-c-serum-front-alt.jpg')">
-          <span class="card-step">Step 03 · Treat · AM</span>
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/vitamin-c-serum-hp.png" alt="Vitamin C Serum" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -735,8 +897,7 @@
       </div>
 
       <div class="card" data-product="peptide-serum">
-        <div class="card-pic" style="background-color:#FCEAD0;background-image:url('project/assets/products/peptide-serum-front.jpg')">
-          <span class="card-step">Step 03 · Treat · AM/PM</span>
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/peptide-serum-hp.png" alt="Peptide Serum" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -750,8 +911,7 @@
       </div>
 
       <div class="card" data-product="retinol-alt-serum">
-        <div class="card-pic" style="background-color:#FCEAD0;background-image:url('project/assets/products/retinol-alt-serum-front.jpg')">
-          <span class="card-step">Step 03 · Treat · PM</span>
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/retinol-alt-serum-hp.png" alt="Retinol Serum" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -765,8 +925,7 @@
       </div>
 
       <div class="card" data-product="firming-day-cream">
-        <div class="card-pic" style="background-color:#FCE8EB;background-image:url('project/assets/products/firming-day-cream-front.jpg')">
-          <span class="card-step">Step 04 · Moisturise · AM</span>
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/firming-day-cream-hp.png" alt="Firming Day Cream" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -780,8 +939,7 @@
       </div>
 
       <div class="card" data-product="ceramide-night-cream">
-        <div class="card-pic" style="background-color:#FCE8EB;background-image:url('project/assets/products/ceramide-night-cream-front-alt.jpg')">
-          <span class="card-step">Step 05 · Moisturise · PM</span>
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/ceramide-night-cream-hp.png" alt="Ceramide Night Cream" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -795,8 +953,7 @@
       </div>
 
       <div class="card" data-product="smoothing-eye-cream">
-        <div class="card-pic" style="background-color:#EBE9F5;background-image:url('project/assets/products/smoothing-eye-cream-front.jpg')">
-          <span class="card-step">Targeted · Eye</span>
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/smoothing-eye-cream-hp.png" alt="Smoothing Eye Cream" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -810,8 +967,7 @@
       </div>
 
       <div class="card" data-product="spf50-stick">
-        <div class="card-pic" style="background-color:#FAF7C9;background-image:url('project/assets/products/spf50-stick-front.jpg')">
-          <span class="card-step">Step · Protect</span>
+        <div class="card-pic"><img class="product-img" src="project/assets/products-new/spf50-stick-hp.png" alt="SPF 50 Stick" />
           <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
         </div>
         <div class="card-meta">
@@ -835,13 +991,13 @@
     </div>
     <div class="about-body">
       <div class="eyebrow">Our story</div>
-      <h3>I know what it feels like to search<br/>— really search — for something<br/>that finally works.</h3>
+      <h3>Beauty isn't something you apply.<br/><em>It's something you live.</em></h3>
       <p>For years, my own skin was my biggest frustration. I tried everything, trusted too many labels, and felt lost in an industry that made everything more complicated than it needed to be.</p>
       <p>SESE was born from that search. From the belief that your skin deserves honest care — not quick fixes or empty promises. And that true beauty has no expiry date.</p>
       <p>At every age, you deserve to feel like yourself. Radiant, cared for, and completely at ease in your own skin.</p>
       <p class="sig">— Séphora, founder of SESE</p>
       <div class="links">
-        <button class="btn btn--dark">Read our story <span class="arrow">→</span></button>
+        <a class="btn btn--dark" href="about.html">Read our story <span class="arrow">→</span></a>
       </div>
     </div>
   </section>
@@ -853,57 +1009,85 @@
       <h2>The Forever<br/><em>Bundle.</em></h2>
       <p>Five morning essentials, one timeless ritual. Everything your skin needs to start the day — cleanse, hydrate, firm and protect.</p>
       <div class="forever-pricing">
-        <span class="now">€168</span>
+        <span class="now">€140</span>
         <span class="was">€186</span>
-        <span class="save">Save €18</span>
+        <span class="save">Save €46</span>
       </div>
       <div class="forever-ctas">
         <button class="btn btn--white" data-product="forever-bundle" id="bundle-btn">
-          Start your routine <span class="arrow">→</span>
+          Add →
         </button>
-        <button class="btn btn--outline-dark">What's inside?</button>
+        <button class="btn btn--outline-dark" id="whats-inside-btn" onclick="toggleInside()">What's inside?</button>
+      </div>
+      <div class="forever-inside" id="forever-inside">
+        <ul>
+          <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam">Foaming Cleanser</a></li>
+          <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner">Hydrating Toner</a></li>
+          <li><span class="fi-num">03</span><a href="product.html?p=peptide-serum">Peptide Firming Serum</a></li>
+          <li><span class="fi-num">04</span><a href="product.html?p=firming-day-cream">Firming Day Cream</a></li>
+          <li><span class="fi-num">05</span><a href="product.html?p=spf50-stick">SPF 50 Mineral Stick</a></li>
+        </ul>
       </div>
     </div>
     <div class="forever-art">
       <span class="count-chip"><span class="num">5</span>products · one box</span>
-      <img class="b1" src="project/assets/products/cleansing-foam-front-alt.jpg" alt="Cleansing Foam" />
-      <img class="b2" src="project/assets/products/hydrating-toner-front-alt.jpg" alt="Hydrating Toner" />
-      <img class="b3" src="project/assets/products/peptide-serum-front.jpg" alt="Peptide Serum" />
-      <img class="b4" src="project/assets/products/firming-day-cream-front.jpg" alt="Anti-Age Day Cream" />
-      <img class="b5" src="project/assets/products/spf50-stick-front.jpg" alt="SPF 50 Stick" />
+      <img src="project/assets/products-new/bundle-forever.jpg" alt="The Forever Bundle" />
     </div>
   </section>
 
   <!-- Ritual bundles -->
   <section class="rituals">
-    <a class="ritual ritual--night" data-product="beauty-sleep-ritual" href="#">
+    <div class="ritual ritual--night" data-product="beauty-sleep-ritual" onclick="location.href='product.html?p=beauty-sleep-ritual'">
       <div class="ritual-head">
         <span class="ritual-label">Night ritual</span>
         <h3>The Beauty<br/><em>Sleep Ritual.</em></h3>
-        <span class="ritual-go">→</span>
+        <p class="ritual-price">€135</p>
+        <button class="ritual-cart-btn" id="night-cart-btn" onclick="event.stopPropagation()">Add →</button>
+        <div class="ritual-inside-wrap">
+          <button class="ritual-inside-btn" id="night-inside-btn" onclick="event.stopPropagation(); toggleNightInside()">What's inside?</button>
+          <div class="ritual-inside" id="night-inside">
+            <ul>
+              <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam" onclick="event.stopPropagation()">Foaming Cleanser</a></li>
+              <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner" onclick="event.stopPropagation()">Hydrating Toner</a></li>
+              <li><span class="fi-num">03</span><a href="product.html?p=smoothing-eye-cream" onclick="event.stopPropagation()">Smoothing Eye Cream</a></li>
+              <li><span class="fi-num">04</span><a href="product.html?p=retinol-alt-serum" onclick="event.stopPropagation()">Retinol Alt. Serum</a></li>
+              <li><span class="fi-num">05</span><a href="product.html?p=ceramide-night-cream" onclick="event.stopPropagation()">Ceramide Night Cream</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="ritual-bottles">
-        <img class="rb1" src="project/assets/products/cleansing-foam-front-alt.jpg" alt="" />
-        <img class="rb2" src="project/assets/products/retinol-alt-serum-front.jpg" alt="" />
-        <img class="rb3" src="project/assets/products/smoothing-eye-cream-front.jpg" alt="" />
-        <img class="rb4" src="project/assets/products/ceramide-night-cream-front-alt.jpg" alt="" />
+        <img src="project/assets/products-new/bundle-beauty-sleep.png" alt="The Beauty Sleep Ritual" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
       </div>
-    </a>
+    </div>
 
-    <a class="ritual ritual--full" data-product="full-ritual" href="#">
+    <div class="ritual ritual--full" data-product="full-ritual" onclick="location.href='product.html?p=full-ritual'">
       <div class="ritual-head">
         <span class="ritual-label">Complete edit</span>
         <h3>The Full<br/><em>Ritual.</em></h3>
-        <span class="ritual-go">→</span>
+        <p class="ritual-price">€260</p>
+        <button class="ritual-cart-btn" id="full-cart-btn" onclick="event.stopPropagation()">Add →</button>
+        <div class="ritual-inside-wrap">
+          <button class="ritual-inside-btn" id="full-inside-btn" onclick="event.stopPropagation(); toggleFullInside()">What's inside?</button>
+          <div class="ritual-inside" id="full-inside">
+            <ul>
+              <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam" onclick="event.stopPropagation()">Foaming Cleanser</a></li>
+              <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner" onclick="event.stopPropagation()">Hydrating Toner</a></li>
+              <li><span class="fi-num">03</span><a href="product.html?p=vitamin-c-serum" onclick="event.stopPropagation()">Vitamin C Serum</a></li>
+              <li><span class="fi-num">04</span><a href="product.html?p=peptide-serum" onclick="event.stopPropagation()">Peptide Firming Serum</a></li>
+              <li><span class="fi-num">05</span><a href="product.html?p=retinol-alt-serum" onclick="event.stopPropagation()">Retinol Alt. Serum</a></li>
+              <li><span class="fi-num">06</span><a href="product.html?p=firming-day-cream" onclick="event.stopPropagation()">Firming Day Cream</a></li>
+              <li><span class="fi-num">07</span><a href="product.html?p=ceramide-night-cream" onclick="event.stopPropagation()">Ceramide Night Cream</a></li>
+              <li><span class="fi-num">08</span><a href="product.html?p=smoothing-eye-cream" onclick="event.stopPropagation()">Smoothing Eye Cream</a></li>
+              <li><span class="fi-num">09</span><a href="product.html?p=spf50-stick" onclick="event.stopPropagation()">SPF 50 Mineral Stick</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="ritual-bottles">
-        <img class="rb1" src="project/assets/products/cleansing-foam-front-alt.jpg" alt="" />
-        <img class="rb2" src="project/assets/products/hydrating-toner-front-alt.jpg" alt="" />
-        <img class="rb3" src="project/assets/products/peptide-serum-front.jpg" alt="" />
-        <img class="rb4" src="project/assets/products/firming-day-cream-front.jpg" alt="" />
-        <img class="rb5" src="project/assets/products/spf50-stick-front.jpg" alt="" />
+        <img src="project/assets/products-new/bundle-full-ritual.jpg" alt="The Full Ritual" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
       </div>
-    </a>
+    </div>
   </section>
 
   <!-- Journal -->
@@ -913,13 +1097,13 @@
       <h2>The latest <em>read.</em></h2>
     </div>
     <div class="head-aside">
-      <a href="#">All articles →</a>
+      <a href="blog.html">All articles →</a>
     </div>
   </div>
 
-  <a class="journal" href="#">
+  <a class="journal" href="blog-post.html?p=1">
     <div class="journal-cover">
-      <div class="ph">[journal cover — hands &amp; serum · golden hour]</div>
+      <img class="cover-img" src="project/assets/journal-cover.jpg" alt="Journal cover" />
       <div class="meta-top">
         <span class="pill">Most recent</span>
         <span>May 11, 2026 · 7 min read</span>
@@ -940,9 +1124,9 @@
 
   <div class="journal-foot">
     <span>Also recent in the journal</span>
-    <span><a href="#">What peptides actually do (and don't) →</a></span>
-    <span><a href="#">Aging on your own terms →</a></span>
-    <span><a href="#">Visit the journal →</a></span>
+    <span><a href="blog-post.html?p=2">What peptides actually do (and don't) →</a></span>
+    <span><a href="blog-post.html?p=3">Aging on your own terms →</a></span>
+    <span><a href="blog.html">Visit the journal →</a></span>
   </div>
 
 </div><!-- /.page -->
@@ -983,10 +1167,10 @@
       <div class="foot-col">
         <h5>Klantenservice</h5>
         <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Shipping &amp; Delivery</a></li>
-          <li><a href="#">Returns &amp; Refunds</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="shipping.html">Shipping &amp; Delivery</a></li>
+          <li><a href="returns.html">Returns &amp; Refunds</a></li>
           <li><a href="#">Track my order</a></li>
         </ul>
       </div>
@@ -996,11 +1180,11 @@
       <div class="foot-col">
         <h5>Beleid &amp; info</h5>
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li><a href="#">Right of Withdrawal</a></li>
-          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="withdrawal.html">Right of Withdrawal</a></li>
+          <li><a href="cookie-policy.html">Cookie Policy</a></li>
         </ul>
       </div>
 
@@ -1025,13 +1209,32 @@
 <div class="toast" id="toast"></div>
 
 <script>
+function toggleInside() {
+  const panel = document.getElementById('forever-inside');
+  const btn = document.getElementById('whats-inside-btn');
+  const open = panel.classList.toggle('open');
+  btn.textContent = open ? 'Hide contents' : 'What\'s inside?';
+}
+function toggleNightInside() {
+  const panel = document.getElementById('night-inside');
+  const btn = document.getElementById('night-inside-btn');
+  const open = panel.classList.toggle('open');
+  btn.textContent = open ? 'Hide contents' : 'What\'s inside?';
+}
+function toggleFullInside() {
+  const panel = document.getElementById('full-inside');
+  const btn = document.getElementById('full-inside-btn');
+  const open = panel.classList.toggle('open');
+  btn.textContent = open ? 'Hide contents' : 'What\'s inside?';
+}
+</script>
+<script>
 // =============================================================
 //  SHOPIFY STOREFRONT API CONFIGURATION
 //  Replace these values before going live.
 // =============================================================
 const SHOPIFY = {
-  domain:     'YOUR_STORE.myshopify.com',          // e.g. sese-be.myshopify.com
-  token:      'YOUR_STOREFRONT_ACCESS_TOKEN',       // public storefront token
+  domain:     'sese-8214.myshopify.com',
   apiVersion: '2024-01',
 
   // Map each product key to its Shopify ProductVariant GID.
@@ -1044,7 +1247,7 @@ const SHOPIFY = {
     'retinol-alt-serum':    'gid://shopify/ProductVariant/REPLACE_ME',
     'firming-day-cream':    'gid://shopify/ProductVariant/REPLACE_ME',
     'ceramide-night-cream': 'gid://shopify/ProductVariant/REPLACE_ME',
-    'smoothing-eye-cream':  'gid://shopify/ProductVariant/REPLACE_ME',
+    'smoothing-eye-cream':  'gid://shopify/ProductVariant/15788863947136',
     'spf50-stick':          'gid://shopify/ProductVariant/REPLACE_ME',
     'forever-bundle':       'gid://shopify/ProductVariant/REPLACE_ME',
     'beauty-sleep-ritual':  'gid://shopify/ProductVariant/REPLACE_ME',
@@ -1058,16 +1261,11 @@ const SHOPIFY = {
 const Cart = (() => {
   const CART_KEY = 'sese_cart_id';
 
-  function endpoint() {
-    return `https://${SHOPIFY.domain}/api/${SHOPIFY.apiVersion}/graphql.json`;
-  }
-
   async function gql(query, variables = {}) {
-    const res = await fetch(endpoint(), {
+    const res = await fetch('/api/shopify', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Shopify-Storefront-Access-Token': SHOPIFY.token,
       },
       body: JSON.stringify({ query, variables }),
     });
@@ -1149,7 +1347,7 @@ function showToast(msg) {
 
 // Check if Shopify is configured (for dev/preview mode)
 function isConfigured() {
-  return !SHOPIFY.domain.startsWith('YOUR_') && !SHOPIFY.token.startsWith('YOUR_');
+  return !SHOPIFY.domain.startsWith('YOUR_');
 }
 
 // =============================================================
@@ -1215,6 +1413,35 @@ document.getElementById('bundle-btn').addEventListener('click', async () => {
 });
 
 // =============================================================
+//  Ritual bundle buttons
+// =============================================================
+['night-cart-btn', 'beauty-sleep-ritual', 'full-cart-btn', 'full-ritual'].reduce((acc, _, i, arr) => {
+  if (i % 2 !== 0) return acc;
+  const [btnId, productKey] = [arr[i], arr[i + 1]];
+  document.getElementById(btnId).addEventListener('click', async (e) => {
+    e.stopPropagation();
+    const btn = document.getElementById(btnId);
+    const variantId = SHOPIFY.variants[productKey];
+    if (!isConfigured() || variantId.includes('REPLACE_ME')) {
+      showToast('Configure Shopify variant IDs to enable checkout.');
+      return;
+    }
+    btn.classList.add('loading');
+    try {
+      const cart = await Cart.addToCart(variantId);
+      updateCartCount(cart.totalQuantity);
+      showToast('Bundle added — taking you to checkout…');
+      setTimeout(() => { window.location.href = cart.checkoutUrl; }, 1000);
+    } catch (err) {
+      btn.classList.remove('loading');
+      showToast('Could not add to cart. Please try again.');
+      console.error(err);
+    }
+  });
+  return acc;
+}, null);
+
+// =============================================================
 //  Cart button — go to checkout
 // =============================================================
 document.getElementById('cart-btn').addEventListener('click', async () => {
@@ -1252,6 +1479,17 @@ document.getElementById('cart-btn').addEventListener('click', async () => {
   document.getElementById('next').addEventListener('click', () =>
     track.scrollBy({ left:  STEP, behavior: 'smooth' }));
 })();
+
+// =============================================================
+//  Product card → product page navigation
+// =============================================================
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', (e) => {
+    if (e.target.closest('.card-add')) return;
+    const key = card.dataset.product;
+    if (key) window.location.href = `product.html?p=${key}`;
+  });
+});
 </script>
 
 </body>
