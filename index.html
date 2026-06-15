@@ -464,6 +464,7 @@
     .ritual--full  .ritual-go { background: rgba(42,38,32,0.12); }
     .ritual-bottles { position: relative; height: 220px; align-self: stretch; }
     .ritual-bottles img { position: absolute; bottom: 0; max-height: 100%; object-fit: contain; }
+    .ritual-price { font-size: 28px; font-weight: 300; margin: 10px 0 0; letter-spacing: -0.01em; }
     .ritual-inside-wrap { margin-top: 14px; }
     .ritual-inside-btn {
       background: none; border: 1px solid currentColor; color: inherit;
@@ -1031,6 +1032,7 @@
       <div class="ritual-head">
         <span class="ritual-label">Night ritual</span>
         <h3>The Beauty<br/><em>Sleep Ritual.</em></h3>
+        <p class="ritual-price">€135</p>
         <div class="ritual-inside-wrap">
           <button class="ritual-inside-btn" id="night-inside-btn" onclick="event.stopPropagation(); toggleNightInside()">What's inside?</button>
           <div class="ritual-inside" id="night-inside">
@@ -1053,6 +1055,7 @@
       <div class="ritual-head">
         <span class="ritual-label">Complete edit</span>
         <h3>The Full<br/><em>Ritual.</em></h3>
+        <p class="ritual-price">€260</p>
         <div class="ritual-inside-wrap">
           <button class="ritual-inside-btn" id="full-inside-btn" onclick="event.stopPropagation(); toggleFullInside()">What's inside?</button>
           <div class="ritual-inside" id="full-inside">
