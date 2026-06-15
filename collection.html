@@ -403,10 +403,10 @@
     <a href="index.html" class="wordmark">S E S E</a>
     <nav class="nav-center">
       <a href="collection.html" class="active">Shop</a>
-      <a href="collection.html#bundles">Routines</a>
-      <a href="#">Cleanse &amp; Prep</a>
-      <a href="#">Serums</a>
-      <a href="#">Moisturize</a>
+      <a href="collection.html?c=bundles">Routines</a>
+      <a href="collection.html?c=cleanse">Cleanse &amp; Prep</a>
+      <a href="collection.html?c=serums">Serums</a>
+      <a href="collection.html?c=moisturize">Moisturize</a>
       <a href="about.html">About</a>
     </nav>
     <div class="nav-right">
@@ -428,11 +428,11 @@
   <!-- Filter bar -->
   <div class="filter-bar">
     <span class="filter-label">Filter</span>
-    <button class="filter-pill active">All</button>
-    <button class="filter-pill">Cleanse &amp; Prep</button>
-    <button class="filter-pill">Serums</button>
-    <button class="filter-pill">Moisturize &amp; Protect</button>
-    <button class="filter-pill">Routines &amp; Bundles</button>
+    <button class="filter-pill" data-cat="">All</button>
+    <button class="filter-pill" data-cat="cleanse">Cleanse &amp; Prep</button>
+    <button class="filter-pill" data-cat="serums">Serums</button>
+    <button class="filter-pill" data-cat="moisturize">Moisturize &amp; Protect</button>
+    <button class="filter-pill" data-cat="bundles">Routines &amp; Bundles</button>
   </div>
 
   <!-- Products grid -->
@@ -440,7 +440,7 @@
     <div class="product-grid">
 
       <!-- Cleansing Foam -->
-      <div class="prod-card">
+      <div class="prod-card" data-cat="cleanse">
         <div class="prod-img" style="background-color:#E3EEF5;"><img class="prod-photo" src="project/assets/products-new/cleansing-foam-hp.png" alt="Cleansing Foam" /></div>
         <div class="prod-meta">
           <div class="prod-name">Cleansing Foam</div>
@@ -456,7 +456,7 @@
       </div>
 
       <!-- Hydrating Toner -->
-      <div class="prod-card">
+      <div class="prod-card" data-cat="cleanse">
         <div class="prod-img" style="background-color:#E6EFE9;"><img class="prod-photo" src="project/assets/products-new/hydrating-toner-hp.png" alt="Hydrating Toner" /></div>
         <div class="prod-meta">
           <div class="prod-name">Hydrating Toner</div>
@@ -472,7 +472,7 @@
       </div>
 
       <!-- Vitamin C Serum -->
-      <div class="prod-card">
+      <div class="prod-card" data-cat="serums">
         <div class="prod-img" style="background-color:#FCEAD0;"><img class="prod-photo" src="project/assets/products-new/vitamin-c-serum-hp.png" alt="Vitamin C Serum" /></div>
         <div class="prod-meta">
           <div class="prod-name">Vitamin C Serum</div>
@@ -488,7 +488,7 @@
       </div>
 
       <!-- Peptide Serum -->
-      <div class="prod-card">
+      <div class="prod-card" data-cat="serums">
         <div class="prod-img" style="background-color:#FCEAD0;"><img class="prod-photo" src="project/assets/products-new/peptide-serum-hp.png" alt="Peptide Serum" /></div>
         <div class="prod-meta">
           <div class="prod-name">Peptide Serum</div>
@@ -504,7 +504,7 @@
       </div>
 
       <!-- Retinol Alternative Serum -->
-      <div class="prod-card">
+      <div class="prod-card" data-cat="serums">
         <div class="prod-img" style="background-color:#F5EAE4;"><img class="prod-photo" src="project/assets/products-new/retinol-alt-serum-hp.png" alt="Retinol Alt Serum" /></div>
         <div class="prod-meta">
           <div class="prod-name">Retinol Alternative Serum</div>
@@ -520,7 +520,7 @@
       </div>
 
       <!-- Firming Day Cream -->
-      <div class="prod-card">
+      <div class="prod-card" data-cat="moisturize">
         <div class="prod-img" style="background-color:#FCE8EB;"><img class="prod-photo" src="project/assets/products-new/firming-day-cream-hp.png" alt="Firming Day Cream" /></div>
         <div class="prod-meta">
           <div class="prod-name">Firming Day Cream</div>
@@ -536,7 +536,7 @@
       </div>
 
       <!-- Ceramide Night Cream -->
-      <div class="prod-card">
+      <div class="prod-card" data-cat="moisturize">
         <div class="prod-img" style="background-color:#EFDFC2;"><img class="prod-photo" src="project/assets/products-new/ceramide-night-cream-hp.png" alt="Ceramide Night Cream" /></div>
         <div class="prod-meta">
           <div class="prod-name">Ceramide Night Cream</div>
@@ -552,7 +552,7 @@
       </div>
 
       <!-- Smoothing Eye Cream -->
-      <div class="prod-card">
+      <div class="prod-card" data-cat="moisturize">
         <div class="prod-img" style="background-color:#C9D7C9;"><img class="prod-photo" src="project/assets/products-new/smoothing-eye-cream-hp.png" alt="Smoothing Eye Cream" /></div>
         <div class="prod-meta">
           <div class="prod-name">Smoothing Eye Cream</div>
@@ -568,7 +568,7 @@
       </div>
 
       <!-- SPF 50 Stick -->
-      <div class="prod-card">
+      <div class="prod-card" data-cat="moisturize">
         <div class="prod-img" style="background-color:#E8D5B0;"><img class="prod-photo" src="project/assets/products-new/spf50-stick-hp.png" alt="Spf50 Stick" /></div>
         <div class="prod-meta">
           <div class="prod-name">SPF 50 Sunscreen Stick</div>
@@ -884,13 +884,46 @@ document.querySelectorAll('.btn-add').forEach(btn => {
   btn.addEventListener('click', () => handleAdd(btn));
 });
 
-// Filter pills (decorative)
+// Category filter
+const CAT_MAP = {
+  'cleanse':    'cleanse',
+  'serums':     'serums',
+  'moisturize': 'moisturize',
+};
+
+function applyFilter(cat) {
+  const cards = document.querySelectorAll('.prod-card');
+  const productsSection = document.querySelector('.products-section');
+  const bundlesSection = document.getElementById('bundles');
+  if (cat === 'bundles') {
+    productsSection.style.display = 'none';
+    bundlesSection.style.display = '';
+    return;
+  }
+  productsSection.style.display = '';
+  bundlesSection.style.display = cat ? 'none' : '';
+  cards.forEach(c => {
+    c.style.display = (!cat || c.dataset.cat === cat) ? '' : 'none';
+  });
+  document.querySelectorAll('.filter-pill').forEach(p => {
+    const pc = p.dataset.cat || '';
+    p.classList.toggle('active', pc === (cat || ''));
+  });
+}
+
 document.querySelectorAll('.filter-pill').forEach(pill => {
   pill.addEventListener('click', () => {
-    document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
-    pill.classList.add('active');
+    const cat = pill.dataset.cat || '';
+    const url = new URL(window.location);
+    if (cat) url.searchParams.set('c', cat); else url.searchParams.delete('c');
+    window.history.replaceState({}, '', url);
+    applyFilter(cat);
   });
 });
+
+// Apply filter from URL on load
+const urlCat = new URLSearchParams(window.location.search).get('c') || '';
+applyFilter(urlCat);
 
 // Init cart count
 (async () => {
