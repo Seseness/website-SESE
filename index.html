@@ -464,6 +464,25 @@
     .ritual--full  .ritual-go { background: rgba(42,38,32,0.12); }
     .ritual-bottles { position: relative; height: 220px; align-self: stretch; }
     .ritual-bottles img { position: absolute; bottom: 0; max-height: 100%; object-fit: contain; }
+    .ritual-inside-wrap { margin-top: 14px; }
+    .ritual-inside-btn {
+      background: none; border: 1px solid currentColor; color: inherit;
+      opacity: 0.7; padding: 6px 14px; border-radius: 20px;
+      font-size: 12px; letter-spacing: 0.08em; cursor: pointer;
+      font-family: var(--font-ui);
+    }
+    .ritual-inside-btn:hover { opacity: 1; }
+    .ritual-inside { display: none; margin-top: 12px; }
+    .ritual-inside.open { display: block; }
+    .ritual-inside ul { list-style: none; margin: 0; padding: 0; }
+    .ritual-inside li {
+      display: flex; align-items: center; gap: 12px; padding: 7px 0;
+      border-bottom: 1px solid rgba(241,235,224,0.15); font-size: 13px;
+    }
+    .ritual-inside li:last-child { border-bottom: none; }
+    .ritual-inside .fi-num { color: inherit; opacity: 0.4; }
+    .ritual-inside li a { color: inherit; text-decoration: none; }
+    .ritual-inside li a:hover { text-decoration: underline; }
     .ritual--night .ritual-bottles img { filter: drop-shadow(0 14px 18px rgba(0,0,0,0.4)); }
     .ritual--full  .ritual-bottles img { filter: drop-shadow(0 14px 18px rgba(42,38,32,0.18)); }
     .ritual--night .rb1 { left: 0;   height: 80%; transform: rotate(-3deg); }
@@ -1007,16 +1026,28 @@
 
   <!-- Ritual bundles -->
   <section class="rituals">
-    <a class="ritual ritual--night" data-product="beauty-sleep-ritual" href="product.html?p=beauty-sleep-ritual">
+    <div class="ritual ritual--night" data-product="beauty-sleep-ritual" onclick="location.href='product.html?p=beauty-sleep-ritual'">
       <div class="ritual-head">
         <span class="ritual-label">Night ritual</span>
         <h3>The Beauty<br/><em>Sleep Ritual.</em></h3>
         <span class="ritual-go">→</span>
+        <div class="ritual-inside-wrap">
+          <button class="ritual-inside-btn" id="night-inside-btn" onclick="event.stopPropagation(); toggleNightInside()">What's inside?</button>
+          <div class="ritual-inside" id="night-inside">
+            <ul>
+              <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam" onclick="event.stopPropagation()">Foaming Cleanser</a></li>
+              <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner" onclick="event.stopPropagation()">Hydrating Toner</a></li>
+              <li><span class="fi-num">03</span><a href="product.html?p=smoothing-eye-cream" onclick="event.stopPropagation()">Smoothing Eye Cream</a></li>
+              <li><span class="fi-num">04</span><a href="product.html?p=retinol-alt-serum" onclick="event.stopPropagation()">Retinol Alt. Serum</a></li>
+              <li><span class="fi-num">05</span><a href="product.html?p=ceramide-night-cream" onclick="event.stopPropagation()">Ceramide Night Cream</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="ritual-bottles">
         <img src="project/assets/products-new/bundle-beauty-sleep.png" alt="The Beauty Sleep Ritual" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
       </div>
-    </a>
+    </div>
 
     <a class="ritual ritual--full" data-product="full-ritual" href="product.html?p=full-ritual">
       <div class="ritual-head">
@@ -1152,6 +1183,12 @@
 function toggleInside() {
   const panel = document.getElementById('forever-inside');
   const btn = document.getElementById('whats-inside-btn');
+  const open = panel.classList.toggle('open');
+  btn.textContent = open ? 'Hide contents' : 'What\'s inside?';
+}
+function toggleNightInside() {
+  const panel = document.getElementById('night-inside');
+  const btn = document.getElementById('night-inside-btn');
   const open = panel.classList.toggle('open');
   btn.textContent = open ? 'Hide contents' : 'What\'s inside?';
 }
