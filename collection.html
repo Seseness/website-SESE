@@ -273,7 +273,7 @@
       overflow: hidden;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 40% auto;
+      background-size: cover;
       transition: box-shadow .42s var(--ease-out);
     }
     .bundle-meta { padding: 20px 4px 0; flex: 1; display: flex; flex-direction: column; }
@@ -283,16 +283,32 @@
     }
     .bundle-tag {
       font-size: 13px; line-height: 1.5; color: var(--ink-3);
-      margin: 0 0 16px;
+      margin: 0 0 12px;
     }
+    .bundle-products { margin: 0 0 16px; }
+    .bundle-products ul { list-style: none; margin: 0; padding: 0; }
+    .bundle-products li {
+      display: flex; align-items: center; gap: 12px;
+      padding: 6px 0; border-bottom: 1px solid var(--line-soft);
+      font-size: 13px; color: var(--ink);
+    }
+    .bundle-products li:last-child { border-bottom: none; }
+    .bundle-products li a { color: inherit; text-decoration: none; }
+    .bundle-products li a:hover { text-decoration: underline; }
     .bundle-row {
       margin-top: auto;
       display: flex; align-items: center; justify-content: space-between;
       gap: 10px;
     }
-    .bundle-price {
-      font-size: 20px; color: var(--ink);
+    .bundle-price { font-size: 20px; color: var(--ink); }
+    .bundle-was { font-size: 14px; color: var(--ink-3); text-decoration: line-through; margin-left: 8px; }
+    .fi-num { font-size: 10px; letter-spacing: 0.22em; color: rgba(26,26,26,0.4); min-width: 20px; font-family: var(--font-ui); }
+    .bundle-card--wide {
+      grid-column: 1 / -1;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
     }
+    .bundle-card--wide .bundle-img { aspect-ratio: auto; min-height: 340px; }
+    .bundle-card--wide .bundle-meta { padding-top: 0; }
 
     /* ── Footer ── */
     .foot-wrap { margin-top: 0; background: #FAF5EC; color: #2A2620; }
@@ -387,7 +403,7 @@
     <a href="index.html" class="wordmark">S E S E</a>
     <nav class="nav-center">
       <a href="collection.html" class="active">Shop</a>
-      <a href="#">Routines</a>
+      <a href="collection.html#bundles">Routines</a>
       <a href="#">Cleanse &amp; Prep</a>
       <a href="#">Serums</a>
       <a href="#">Moisturize</a>
@@ -571,7 +587,7 @@
   </div>
 
   <!-- Bundles section -->
-  <div class="bundles-section">
+  <div class="bundles-section" id="bundles">
     <div class="bundles-heading">
       <div>
         <div class="eyebrow" style="font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--ink-3);margin-bottom:10px;display:flex;align-items:center;gap:10px"><span style="display:inline-block;width:22px;height:1px;background:var(--ink-3)"></span>Best value</div>
@@ -580,17 +596,77 @@
     </div>
     <div class="bundle-grid">
 
-      <!-- Starter Bundle -->
-      <div class="bundle-card">
-        <div class="bundle-img" style="background-color:#E8D5B0;background-image:url('project/assets/products-new/peptide-serum-hp.png')"></div>
+      <!-- Forever Bundle -->
+      <div class="bundle-card" onclick="location.href='product.html?p=forever-bundle'">
+        <div class="bundle-img" style="background-color:#DCEAF1;background-image:url('project/assets/products-new/bundle-forever.jpg')"></div>
         <div class="bundle-meta">
-          <div class="bundle-name">Complete Anti-Aging Starter Routine</div>
-          <div class="bundle-tag">5 products · Best Value</div>
+          <div class="bundle-name">The Forever Bundle</div>
+          <div class="bundle-tag">5 products · Morning ritual</div>
+          <div class="bundle-products">
+            <ul>
+              <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam" onclick="event.stopPropagation()">Foaming Cleanser</a></li>
+              <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner" onclick="event.stopPropagation()">Hydrating Toner</a></li>
+              <li><span class="fi-num">03</span><a href="product.html?p=peptide-serum" onclick="event.stopPropagation()">Peptide Firming Serum</a></li>
+              <li><span class="fi-num">04</span><a href="product.html?p=firming-day-cream" onclick="event.stopPropagation()">Firming Day Cream</a></li>
+              <li><span class="fi-num">05</span><a href="product.html?p=spf50-stick" onclick="event.stopPropagation()">SPF 50 Mineral Stick</a></li>
+            </ul>
+          </div>
           <div class="bundle-row">
-            <span class="bundle-price">€168</span>
+            <span class="bundle-price">€140 <span class="bundle-was">€186</span></span>
             <div class="prod-actions">
-              <a href="product.html?p=starter-bundle" class="btn-view">View bundle</a>
-              <button class="btn-add" data-product="starter-bundle">Add +</button>
+              <a href="product.html?p=forever-bundle" class="btn-view" onclick="event.stopPropagation()">View bundle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beauty Sleep Ritual -->
+      <div class="bundle-card" onclick="location.href='product.html?p=beauty-sleep-ritual'">
+        <div class="bundle-img" style="background-color:#1A2030;background-image:url('project/assets/products-new/bundle-beauty-sleep.png')"></div>
+        <div class="bundle-meta">
+          <div class="bundle-name">The Beauty Sleep Ritual</div>
+          <div class="bundle-tag">5 products · Night ritual</div>
+          <div class="bundle-products">
+            <ul>
+              <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam" onclick="event.stopPropagation()">Foaming Cleanser</a></li>
+              <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner" onclick="event.stopPropagation()">Hydrating Toner</a></li>
+              <li><span class="fi-num">03</span><a href="product.html?p=smoothing-eye-cream" onclick="event.stopPropagation()">Smoothing Eye Cream</a></li>
+              <li><span class="fi-num">04</span><a href="product.html?p=retinol-alt-serum" onclick="event.stopPropagation()">Retinol Alt. Serum</a></li>
+              <li><span class="fi-num">05</span><a href="product.html?p=ceramide-night-cream" onclick="event.stopPropagation()">Ceramide Night Cream</a></li>
+            </ul>
+          </div>
+          <div class="bundle-row">
+            <span class="bundle-price">€135</span>
+            <div class="prod-actions">
+              <a href="product.html?p=beauty-sleep-ritual" class="btn-view" onclick="event.stopPropagation()">View bundle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Ritual – full width -->
+      <div class="bundle-card bundle-card--wide" onclick="location.href='product.html?p=full-ritual'">
+        <div class="bundle-img" style="background-color:#EAD6B7;background-image:url('project/assets/products-new/bundle-full-ritual.jpg')"></div>
+        <div class="bundle-meta">
+          <div class="bundle-name">The Full Ritual</div>
+          <div class="bundle-tag">9 products · Complete edit</div>
+          <div class="bundle-products">
+            <ul>
+              <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam" onclick="event.stopPropagation()">Foaming Cleanser</a></li>
+              <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner" onclick="event.stopPropagation()">Hydrating Toner</a></li>
+              <li><span class="fi-num">03</span><a href="product.html?p=vitamin-c-serum" onclick="event.stopPropagation()">Vitamin C Serum</a></li>
+              <li><span class="fi-num">04</span><a href="product.html?p=peptide-serum" onclick="event.stopPropagation()">Peptide Firming Serum</a></li>
+              <li><span class="fi-num">05</span><a href="product.html?p=retinol-alt-serum" onclick="event.stopPropagation()">Retinol Alt. Serum</a></li>
+              <li><span class="fi-num">06</span><a href="product.html?p=firming-day-cream" onclick="event.stopPropagation()">Firming Day Cream</a></li>
+              <li><span class="fi-num">07</span><a href="product.html?p=ceramide-night-cream" onclick="event.stopPropagation()">Ceramide Night Cream</a></li>
+              <li><span class="fi-num">08</span><a href="product.html?p=smoothing-eye-cream" onclick="event.stopPropagation()">Smoothing Eye Cream</a></li>
+              <li><span class="fi-num">09</span><a href="product.html?p=spf50-stick" onclick="event.stopPropagation()">SPF 50 Mineral Stick</a></li>
+            </ul>
+          </div>
+          <div class="bundle-row">
+            <span class="bundle-price">€260</span>
+            <div class="prod-actions">
+              <a href="product.html?p=full-ritual" class="btn-view" onclick="event.stopPropagation()">View bundle</a>
             </div>
           </div>
         </div>
