@@ -477,8 +477,9 @@
     .ritual-inside ul { list-style: none; margin: 0; padding: 0; }
     .ritual-inside li {
       display: flex; align-items: center; gap: 12px; padding: 7px 0;
-      border-bottom: 1px solid rgba(241,235,224,0.15); font-size: 13px;
+      border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 13px;
     }
+    .ritual--full .ritual-inside li { border-bottom-color: rgba(42,38,32,0.15); }
     .ritual-inside li:last-child { border-bottom: none; }
     .ritual-inside .fi-num { color: inherit; opacity: 0.4; }
     .ritual-inside li a { color: inherit; text-decoration: none; }
@@ -1049,16 +1050,32 @@
       </div>
     </div>
 
-    <a class="ritual ritual--full" data-product="full-ritual" href="product.html?p=full-ritual">
+    <div class="ritual ritual--full" data-product="full-ritual" onclick="location.href='product.html?p=full-ritual'">
       <div class="ritual-head">
         <span class="ritual-label">Complete edit</span>
         <h3>The Full<br/><em>Ritual.</em></h3>
         <span class="ritual-go">→</span>
+        <div class="ritual-inside-wrap">
+          <button class="ritual-inside-btn" id="full-inside-btn" onclick="event.stopPropagation(); toggleFullInside()">What's inside?</button>
+          <div class="ritual-inside" id="full-inside">
+            <ul>
+              <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam" onclick="event.stopPropagation()">Foaming Cleanser</a></li>
+              <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner" onclick="event.stopPropagation()">Hydrating Toner</a></li>
+              <li><span class="fi-num">03</span><a href="product.html?p=vitamin-c-serum" onclick="event.stopPropagation()">Vitamin C Serum</a></li>
+              <li><span class="fi-num">04</span><a href="product.html?p=peptide-serum" onclick="event.stopPropagation()">Peptide Firming Serum</a></li>
+              <li><span class="fi-num">05</span><a href="product.html?p=retinol-alt-serum" onclick="event.stopPropagation()">Retinol Alt. Serum</a></li>
+              <li><span class="fi-num">06</span><a href="product.html?p=firming-day-cream" onclick="event.stopPropagation()">Firming Day Cream</a></li>
+              <li><span class="fi-num">07</span><a href="product.html?p=ceramide-night-cream" onclick="event.stopPropagation()">Ceramide Night Cream</a></li>
+              <li><span class="fi-num">08</span><a href="product.html?p=smoothing-eye-cream" onclick="event.stopPropagation()">Smoothing Eye Cream</a></li>
+              <li><span class="fi-num">09</span><a href="product.html?p=spf50-stick" onclick="event.stopPropagation()">SPF 50 Mineral Stick</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="ritual-bottles">
         <img src="project/assets/products-new/bundle-full-ritual.jpg" alt="The Full Ritual" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
       </div>
-    </a>
+    </div>
   </section>
 
   <!-- Journal -->
@@ -1189,6 +1206,12 @@ function toggleInside() {
 function toggleNightInside() {
   const panel = document.getElementById('night-inside');
   const btn = document.getElementById('night-inside-btn');
+  const open = panel.classList.toggle('open');
+  btn.textContent = open ? 'Hide contents' : 'What\'s inside?';
+}
+function toggleFullInside() {
+  const panel = document.getElementById('full-inside');
+  const btn = document.getElementById('full-inside-btn');
   const open = panel.classList.toggle('open');
   btn.textContent = open ? 'Hide contents' : 'What\'s inside?';
 }
