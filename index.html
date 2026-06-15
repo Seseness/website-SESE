@@ -465,6 +465,17 @@
     .ritual-bottles { position: relative; height: 220px; align-self: stretch; }
     .ritual-bottles img { position: absolute; bottom: 0; max-height: 100%; object-fit: contain; }
     .ritual-price { font-size: 28px; font-weight: 300; margin: 10px 0 0; letter-spacing: -0.01em; }
+    .ritual-cart-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.5);
+      color: inherit; padding: 9px 18px; border-radius: 999px;
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      cursor: pointer; font-family: var(--font-ui); margin-top: 16px;
+      transition: background 0.2s;
+    }
+    .ritual-cart-btn:hover { background: rgba(255,255,255,0.35); }
+    .ritual--full .ritual-cart-btn { background: rgba(42,38,32,0.08); border-color: rgba(42,38,32,0.3); }
+    .ritual--full .ritual-cart-btn:hover { background: rgba(42,38,32,0.18); }
     .ritual-inside-wrap { margin-top: 14px; }
     .ritual-inside-btn {
       background: none; border: 1px solid currentColor; color: inherit;
@@ -1006,7 +1017,7 @@
       </div>
       <div class="forever-ctas">
         <button class="btn btn--white" data-product="forever-bundle" id="bundle-btn">
-          Start your routine <span class="arrow">→</span>
+          Add to cart <span class="arrow">→</span>
         </button>
         <button class="btn btn--outline-dark" id="whats-inside-btn" onclick="toggleInside()">What's inside?</button>
       </div>
@@ -1033,6 +1044,7 @@
         <span class="ritual-label">Night ritual</span>
         <h3>The Beauty<br/><em>Sleep Ritual.</em></h3>
         <p class="ritual-price">€135</p>
+        <button class="ritual-cart-btn" id="night-cart-btn" onclick="event.stopPropagation()">Add to cart →</button>
         <div class="ritual-inside-wrap">
           <button class="ritual-inside-btn" id="night-inside-btn" onclick="event.stopPropagation(); toggleNightInside()">What's inside?</button>
           <div class="ritual-inside" id="night-inside">
@@ -1056,6 +1068,7 @@
         <span class="ritual-label">Complete edit</span>
         <h3>The Full<br/><em>Ritual.</em></h3>
         <p class="ritual-price">€260</p>
+        <button class="ritual-cart-btn" id="full-cart-btn" onclick="event.stopPropagation()">Add to cart →</button>
         <div class="ritual-inside-wrap">
           <button class="ritual-inside-btn" id="full-inside-btn" onclick="event.stopPropagation(); toggleFullInside()">What's inside?</button>
           <div class="ritual-inside" id="full-inside">
@@ -1400,6 +1413,35 @@ document.getElementById('bundle-btn').addEventListener('click', async () => {
     console.error(err);
   }
 });
+
+// =============================================================
+//  Ritual bundle buttons
+// =============================================================
+['night-cart-btn', 'beauty-sleep-ritual', 'full-cart-btn', 'full-ritual'].reduce((acc, _, i, arr) => {
+  if (i % 2 !== 0) return acc;
+  const [btnId, productKey] = [arr[i], arr[i + 1]];
+  document.getElementById(btnId).addEventListener('click', async (e) => {
+    e.stopPropagation();
+    const btn = document.getElementById(btnId);
+    const variantId = SHOPIFY.variants[productKey];
+    if (!isConfigured() || variantId.includes('REPLACE_ME')) {
+      showToast('Configure Shopify variant IDs to enable checkout.');
+      return;
+    }
+    btn.classList.add('loading');
+    try {
+      const cart = await Cart.addToCart(variantId);
+      updateCartCount(cart.totalQuantity);
+      showToast('Bundle added — taking you to checkout…');
+      setTimeout(() => { window.location.href = cart.checkoutUrl; }, 1000);
+    } catch (err) {
+      btn.classList.remove('loading');
+      showToast('Could not add to cart. Please try again.');
+      console.error(err);
+    }
+  });
+  return acc;
+}, null);
 
 // =============================================================
 //  Cart button — go to checkout
