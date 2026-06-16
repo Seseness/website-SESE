@@ -413,10 +413,10 @@
     <a href="index.html" class="wordmark">S E S E</a>
     <nav class="nav-center">
       <a href="collection.html" class="active">Shop</a>
-      <a href="collection.html?c=bundles">Routines</a>
-      <a href="collection.html?c=cleanse">Cleanse &amp; Prep</a>
-      <a href="collection.html?c=serums">Serums</a>
-      <a href="collection.html?c=moisturize">Moisturize</a>
+      <a href="collection.html#bundles">Routines</a>
+      <a href="collection.html#cleanse">Cleanse &amp; Prep</a>
+      <a href="collection.html#serums">Serums</a>
+      <a href="collection.html#moisturize">Moisturize</a>
       <a href="about.html">About</a>
     </nav>
     <div class="nav-right">
@@ -841,16 +841,18 @@ function applyFilter(cat) {
   const cards = document.querySelectorAll('.prod-card');
   const productsSection = document.querySelector('.products-section');
   const bundlesSection = document.getElementById('bundles');
+
   if (cat === 'bundles') {
     productsSection.style.display = 'none';
     bundlesSection.style.display = '';
-    return;
+  } else {
+    productsSection.style.display = '';
+    bundlesSection.style.display = cat ? 'none' : '';
+    cards.forEach(c => {
+      c.style.display = (!cat || c.dataset.cat === cat) ? '' : 'none';
+    });
   }
-  productsSection.style.display = '';
-  bundlesSection.style.display = cat ? 'none' : '';
-  cards.forEach(c => {
-    c.style.display = (!cat || c.dataset.cat === cat) ? '' : 'none';
-  });
+
   document.querySelectorAll('.filter-pill').forEach(p => {
     const pc = p.dataset.cat || '';
     p.classList.toggle('active', pc === (cat || ''));
@@ -858,10 +860,10 @@ function applyFilter(cat) {
 
   const navHrefs = {
     '':          'collection.html',
-    'bundles':   'collection.html?c=bundles',
-    'cleanse':   'collection.html?c=cleanse',
-    'serums':    'collection.html?c=serums',
-    'moisturize':'collection.html?c=moisturize',
+    'bundles':   'collection.html#bundles',
+    'cleanse':   'collection.html#cleanse',
+    'serums':    'collection.html#serums',
+    'moisturize':'collection.html#moisturize',
   };
   document.querySelectorAll('.nav-center a').forEach(a => {
     a.classList.toggle('active', a.getAttribute('href') === navHrefs[cat || '']);
@@ -872,15 +874,19 @@ document.querySelectorAll('.filter-pill').forEach(pill => {
   pill.addEventListener('click', () => {
     const cat = pill.dataset.cat || '';
     const url = new URL(window.location);
-    if (cat) url.searchParams.set('c', cat); else url.searchParams.delete('c');
+    url.hash = cat || '';
     window.history.replaceState({}, '', url);
     applyFilter(cat);
   });
 });
 
-// Apply filter from URL on load
-const urlCat = new URLSearchParams(window.location.search).get('c') || '';
-applyFilter(urlCat);
+// Apply filter from the URL hash (hashes survive static-host redirects that
+// strip query strings) on load and whenever the hash changes.
+function applyFilterFromHash() {
+  applyFilter(window.location.hash.replace('#', ''));
+}
+window.addEventListener('hashchange', applyFilterFromHash);
+applyFilterFromHash();
 </script>
 </body>
 </html>
