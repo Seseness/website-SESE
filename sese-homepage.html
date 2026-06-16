@@ -396,26 +396,6 @@
     .forever-pricing .was { font-size: 17px; color: rgba(15,42,54,0.55); text-decoration: line-through; }
     .forever-pricing .save { font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #0F2A36; background: rgba(255,255,255,0.6); padding: 6px 10px; border-radius: 999px; }
     .forever-ctas { display: inline-flex; gap: 12px; }
-    .forever-inside {
-      display: none; margin-top: 28px;
-    }
-    .forever-inside.open { display: block; }
-    .forever-inside ul { list-style: none; margin: 0; padding: 0; }
-    .forever-inside li {
-      display: flex; align-items: center; gap: 14px;
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(15,42,54,0.12);
-      font-size: 15px; color: #0F2A36;
-    }
-    .forever-inside li:last-child { border-bottom: none; }
-    .fi-num {
-      font-size: 10px; letter-spacing: 0.22em; color: rgba(15,42,54,0.45);
-      font-family: var(--font-ui); min-width: 20px;
-    }
-    .forever-inside li a {
-      color: inherit; text-decoration: none;
-    }
-    .forever-inside li a:hover { text-decoration: underline; }
 
     .forever-art { position: relative; height: 460px; display: flex; align-items: center; justify-content: center; }
     .forever-art img { height: 100%; width: 100%; object-fit: cover; border-radius: 20px; }
@@ -482,18 +462,6 @@
       font-family: var(--font-ui);
     }
     .ritual-inside-btn:hover { opacity: 1; }
-    .ritual-inside { display: none; margin-top: 12px; }
-    .ritual-inside.open { display: block; }
-    .ritual-inside ul { list-style: none; margin: 0; padding: 0; }
-    .ritual-inside li {
-      display: flex; align-items: center; gap: 12px; padding: 7px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 13px;
-    }
-    .ritual--full .ritual-inside li { border-bottom-color: rgba(42,38,32,0.15); }
-    .ritual-inside li:last-child { border-bottom: none; }
-    .ritual-inside .fi-num { color: inherit; opacity: 0.4; }
-    .ritual-inside li a { color: inherit; text-decoration: none; }
-    .ritual-inside li a:hover { text-decoration: underline; }
     .ritual--night .ritual-bottles img { filter: drop-shadow(0 14px 18px rgba(0,0,0,0.4)); }
     .ritual--full  .ritual-bottles img { filter: drop-shadow(0 14px 18px rgba(42,38,32,0.18)); }
     .ritual--night .rb1 { left: 0;   height: 80%; transform: rotate(-3deg); }
@@ -1015,16 +983,7 @@
         <button class="btn btn--white" data-product="forever-bundle" id="bundle-btn">
           Add →
         </button>
-        <button class="btn btn--outline-dark" id="whats-inside-btn" onclick="toggleInside()">What's inside?</button>
-      </div>
-      <div class="forever-inside" id="forever-inside">
-        <ul>
-          <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam">Foaming Cleanser</a></li>
-          <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner">Hydrating Toner</a></li>
-          <li><span class="fi-num">03</span><a href="product.html?p=peptide-serum">Peptide Firming Serum</a></li>
-          <li><span class="fi-num">04</span><a href="product.html?p=firming-day-cream">Firming Day Cream</a></li>
-          <li><span class="fi-num">05</span><a href="product.html?p=spf50-stick">SPF 50 Mineral Stick</a></li>
-        </ul>
+        <a class="btn btn--outline-dark" href="bundle-contents.html?b=forever-routine">What's inside?</a>
       </div>
     </div>
     <div class="forever-art">
@@ -1042,16 +1001,7 @@
         <p class="ritual-price">€135</p>
         <button class="ritual-cart-btn" id="night-cart-btn" onclick="event.stopPropagation()">Add →</button>
         <div class="ritual-inside-wrap">
-          <button class="ritual-inside-btn" id="night-inside-btn" onclick="event.stopPropagation(); toggleNightInside()">What's inside?</button>
-          <div class="ritual-inside" id="night-inside">
-            <ul>
-              <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam" onclick="event.stopPropagation()">Foaming Cleanser</a></li>
-              <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner" onclick="event.stopPropagation()">Hydrating Toner</a></li>
-              <li><span class="fi-num">03</span><a href="product.html?p=smoothing-eye-cream" onclick="event.stopPropagation()">Smoothing Eye Cream</a></li>
-              <li><span class="fi-num">04</span><a href="product.html?p=retinol-alt-serum" onclick="event.stopPropagation()">Retinol Alt. Serum</a></li>
-              <li><span class="fi-num">05</span><a href="product.html?p=ceramide-night-cream" onclick="event.stopPropagation()">Ceramide Night Cream</a></li>
-            </ul>
-          </div>
+          <a class="ritual-inside-btn" href="bundle-contents.html?b=beauty-sleep-ritual" onclick="event.stopPropagation()">What's inside?</a>
         </div>
       </div>
       <div class="ritual-bottles">
@@ -1066,20 +1016,7 @@
         <p class="ritual-price">€260</p>
         <button class="ritual-cart-btn" id="full-cart-btn" onclick="event.stopPropagation()">Add →</button>
         <div class="ritual-inside-wrap">
-          <button class="ritual-inside-btn" id="full-inside-btn" onclick="event.stopPropagation(); toggleFullInside()">What's inside?</button>
-          <div class="ritual-inside" id="full-inside">
-            <ul>
-              <li><span class="fi-num">01</span><a href="product.html?p=cleansing-foam" onclick="event.stopPropagation()">Foaming Cleanser</a></li>
-              <li><span class="fi-num">02</span><a href="product.html?p=hydrating-toner" onclick="event.stopPropagation()">Hydrating Toner</a></li>
-              <li><span class="fi-num">03</span><a href="product.html?p=vitamin-c-serum" onclick="event.stopPropagation()">Vitamin C Serum</a></li>
-              <li><span class="fi-num">04</span><a href="product.html?p=peptide-serum" onclick="event.stopPropagation()">Peptide Firming Serum</a></li>
-              <li><span class="fi-num">05</span><a href="product.html?p=retinol-alt-serum" onclick="event.stopPropagation()">Retinol Alt. Serum</a></li>
-              <li><span class="fi-num">06</span><a href="product.html?p=firming-day-cream" onclick="event.stopPropagation()">Firming Day Cream</a></li>
-              <li><span class="fi-num">07</span><a href="product.html?p=ceramide-night-cream" onclick="event.stopPropagation()">Ceramide Night Cream</a></li>
-              <li><span class="fi-num">08</span><a href="product.html?p=smoothing-eye-cream" onclick="event.stopPropagation()">Smoothing Eye Cream</a></li>
-              <li><span class="fi-num">09</span><a href="product.html?p=spf50-stick" onclick="event.stopPropagation()">SPF 50 Mineral Stick</a></li>
-            </ul>
-          </div>
+          <a class="ritual-inside-btn" href="bundle-contents.html?b=full-ritual" onclick="event.stopPropagation()">What's inside?</a>
         </div>
       </div>
       <div class="ritual-bottles">
@@ -1205,26 +1142,6 @@
 
 <div class="toast" id="toast"></div>
 
-<script>
-function toggleInside() {
-  const panel = document.getElementById('forever-inside');
-  const btn = document.getElementById('whats-inside-btn');
-  const open = panel.classList.toggle('open');
-  btn.textContent = open ? 'Hide contents' : 'What\'s inside?';
-}
-function toggleNightInside() {
-  const panel = document.getElementById('night-inside');
-  const btn = document.getElementById('night-inside-btn');
-  const open = panel.classList.toggle('open');
-  btn.textContent = open ? 'Hide contents' : 'What\'s inside?';
-}
-function toggleFullInside() {
-  const panel = document.getElementById('full-inside');
-  const btn = document.getElementById('full-inside-btn');
-  const open = panel.classList.toggle('open');
-  btn.textContent = open ? 'Hide contents' : 'What\'s inside?';
-}
-</script>
 <script>
 // =============================================================
 //  SHOPIFY STOREFRONT API CONFIGURATION
