@@ -214,18 +214,31 @@
     /* footer */
     .foot-wrap { margin-top:128px; background:#FAF5EC; color:#2A2620; }
     .foot-wrap .page { background: #FAF5EC; }
-    .foot-top { padding:80px 56px 56px; display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:64px; }
+    .foot-top { padding:80px 56px 56px; display:grid; grid-template-columns:1.2fr 1px 1fr 1px 1fr; gap:48px; align-items:stretch; }
+    .foot-divider { width:1px; background:rgba(42,38,32,0.22); align-self:center; height:60%; }
     .foot-col h5 { margin:0 0 22px; font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:rgba(42,38,32,0.6); font-weight:300; }
-    .foot-brand .wm { font-size:30px; letter-spacing:0.34em; margin-bottom:18px; }
-    .foot-brand .tag { font-style:italic; font-size:18px; line-height:1.5; max-width:360px; margin-bottom:32px; }
-    .foot-brand .contact { font-size:14px; line-height:1.75; }
-    .foot-brand .contact a { border-bottom:1px solid rgba(42,38,32,0.25); }
+    .foot-wm { font-size:30px; letter-spacing:0.34em; color:#2A2620; margin-bottom:18px; }
+    .foot-tag { font-style:italic; font-size:18px; line-height:1.5; color:#2A2620; max-width:360px; margin-bottom:32px; }
+    .foot-contact { font-size:14px; line-height:1.75; }
+    .foot-contact a { border-bottom:1px solid rgba(42,38,32,0.25); }
+    .foot-contact a:hover { border-bottom-color:#2A2620; }
+    .foot-socials { margin-top:24px; display:inline-flex; gap:10px; }
+    .foot-socials .circ { width:38px; height:38px; border-radius:50%; border:1px solid rgba(42,38,32,0.25); display:inline-flex; align-items:center; justify-content:center; transition:background .28s ease; }
+    .foot-socials .circ svg { width:16px; height:16px; stroke:#2A2620; fill:none; stroke-width:1.4; }
+    .foot-socials .circ:hover { background:#2A2620; }
+    .foot-socials .circ:hover svg { stroke:#FAF5EC; }
+    .newsletter { margin-top:6px; display:flex; align-items:center; border-bottom:1px solid rgba(42,38,32,0.3); padding-bottom:10px; max-width:320px; }
+    .newsletter input { flex:1; background:transparent; border:0; outline:0; font-family:inherit; font-weight:300; font-size:14px; color:#2A2620; }
+    .newsletter input::placeholder { color:rgba(42,38,32,0.5); }
+    .newsletter button { background:transparent; border:0; padding:0; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:#2A2620; cursor:pointer; }
     .foot-col ul { list-style:none; margin:0; padding:0; }
     .foot-col li { padding:6px 0; font-size:15px; }
     .foot-col li a:hover { opacity:0.6; }
     .foot-bot { border-top:1px solid rgba(42,38,32,0.2); padding:24px 56px 32px; display:flex; align-items:center; justify-content:space-between; gap:24px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:rgba(42,38,32,0.7); }
     .pay { display:inline-flex; align-items:center; gap:10px; }
     .pay .chip { padding:6px 10px; background:rgba(255,255,255,0.4); border:1px solid rgba(42,38,32,0.18); border-radius:6px; font-size:10px; letter-spacing:0.18em; }
+    .lang-foot { display:inline-flex; gap:10px; align-items:center; }
+    .lang-foot .sep { opacity:0.4; }
 
     /* toast */
     #toast { position:fixed; bottom:32px; left:50%; transform:translateX(-50%) translateY(20px); background:var(--ink); color:var(--bg-page); padding:14px 28px; border-radius:999px; font-size:12px; letter-spacing:0.18em; text-transform:uppercase; opacity:0; transition:opacity .32s,transform .32s; pointer-events:none; z-index:999; white-space:nowrap; }
@@ -990,26 +1003,62 @@ function renderPage(key) {
 
   <!-- Footer -->
   <footer class="foot-wrap">
-    <div>
+    <div class="page">
       <div class="foot-top">
-        <div class="foot-col foot-brand">
-          <div class="wm">S E S E</div>
-          <div class="tag">Unlock your skin's <em>timeless beauty.</em></div>
-          <div class="contact"><a href="mailto:customerservice@sese.be">customerservice@sese.be</a><br/>Instagram · <a>@sese.be_</a></div>
-        </div>
         <div class="foot-col">
-          <h5>Customer service</h5>
-          <ul><li><a>FAQ</a></li><li><a>Shipping &amp; Delivery</a></li><li><a>Returns &amp; Refunds</a></li><li><a>Track my order</a></li></ul>
+          <div class="foot-wm">S E S E</div>
+          <div class="foot-tag">Unlock your skin's <em>timeless beauty.</em></div>
+          <div class="foot-contact">
+            <a href="mailto:customerservice@sese.be">customerservice@sese.be</a>
+          </div>
+          <div class="foot-socials">
+            <a class="circ" href="#" title="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+            <a class="circ" href="#" title="Facebook"><svg viewBox="0 0 24 24"><path d="M14 4h-2a3 3 0 00-3 3v3H7v3h2v8h3v-8h2.5l.5-3H12V7a1 1 0 011-1h2V4z"/></svg></a>
+            <a class="circ" href="#" title="Pinterest"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M11 7c2 0 4 1.5 4 4s-1.5 4-3.5 4c-.8 0-1.5-.4-1.7-1l-.5 2.5L8 21"/></svg></a>
+          </div>
+          <div style="margin-top:28px">
+            <h5 style="margin-bottom:10px">Newsletter</h5>
+            <form class="newsletter" onsubmit="event.preventDefault()">
+              <input type="email" placeholder="Your email" />
+              <button type="submit">Subscribe &rarr;</button>
+            </form>
+          </div>
         </div>
+        <div class="foot-divider"></div>
         <div class="foot-col">
-          <h5>Legal</h5>
-          <ul><li><a>About Us</a></li><li><a>Privacy Policy</a></li><li><a>Terms &amp; Conditions</a></li><li><a>Cookie Policy</a></li></ul>
+          <h5>Klantenservice</h5>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="shipping.html">Shipping &amp; Delivery</a></li>
+            <li><a href="returns.html">Returns &amp; Refunds</a></li>
+            <li><a href="#">Track my order</a></li>
+          </ul>
+        </div>
+        <div class="foot-divider"></div>
+        <div class="foot-col">
+          <h5>Beleid &amp; info</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="withdrawal.html">Right of Withdrawal</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
         </div>
       </div>
       <div class="foot-bot">
-        <div>© 2025 SESE · Made on the Belgian coast</div>
-        <div class="pay"><span class="chip">VISA</span><span class="chip">Mastercard</span><span class="chip">Bancontact</span><span class="chip">PayPal</span><span class="chip">Apple Pay</span></div>
-        <div>NL · EN</div>
+        <div>© 2026 SESE · Based in Belgium</div>
+        <div class="pay">
+          <span class="chip">VISA</span>
+          <span class="chip">Mastercard</span>
+          <span class="chip">Bancontact</span>
+          <span class="chip">PayPal</span>
+          <span class="chip">Apple&nbsp;Pay</span>
+        </div>
+        <div class="lang-foot">
+          <span>NL</span><span class="sep">·</span><span style="color:#2A2620;font-weight:400">EN</span><span class="sep">·</span><span>FR</span>
+        </div>
       </div>
     </div>
   </footer>
