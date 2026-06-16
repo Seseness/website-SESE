@@ -295,7 +295,7 @@
   <div class="nav-right">
     <span class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
     <span>EN · NL</span>
-    <button class="cart-btn" id="cart-btn"><span class="cart-dot"></span><span>Cart · <span id="cart-count">0</span></span></button>
+    <button class="cart-btn" id="cart-btn"><span class="cart-dot"></span><span>Cart</span></button>
   </div>
 </header>
 
@@ -755,9 +755,7 @@ const TRUSTPILOT_URL = 'https://www.trustpilot.com/review/YOUR_STORE.myshopify.c
 //  SHOPIFY CONFIG (fill in before launch)
 // =============================================================
 const SHOPIFY = {
-  domain: 'YOUR_STORE.myshopify.com',
-  token:  'YOUR_STOREFRONT_ACCESS_TOKEN',
-  apiVersion: '2024-01',
+  domain: 'sese-8214.myshopify.com',
   variants: {
     'cleansing-foam':       'gid://shopify/ProductVariant/REPLACE_ME',
     'hydrating-toner':      'gid://shopify/ProductVariant/REPLACE_ME',
@@ -766,52 +764,22 @@ const SHOPIFY = {
     'retinol-alt-serum':    'gid://shopify/ProductVariant/REPLACE_ME',
     'firming-day-cream':    'gid://shopify/ProductVariant/REPLACE_ME',
     'ceramide-night-cream': 'gid://shopify/ProductVariant/REPLACE_ME',
-    'smoothing-eye-cream':  'gid://shopify/ProductVariant/REPLACE_ME',
+    'smoothing-eye-cream':  'gid://shopify/ProductVariant/15788863947136',
     'spf50-stick':          'gid://shopify/ProductVariant/REPLACE_ME',
   },
 };
 
 function isConfigured() {
-  return !SHOPIFY.domain.includes('YOUR_STORE') && !SHOPIFY.token.includes('YOUR_STOREFRONT');
+  return !SHOPIFY.domain.startsWith('YOUR_');
 }
 
-const CART_KEY = 'sese_cart_id';
-function endpoint() { return `https://${SHOPIFY.domain}/api/${SHOPIFY.apiVersion}/graphql.json`; }
-async function gql(query, variables) {
-  const res = await fetch(endpoint(), {
-    method:'POST', headers:{'Content-Type':'application/json','X-Shopify-Storefront-Access-Token':SHOPIFY.token},
-    body: JSON.stringify({ query, variables }),
-  });
-  if (!res.ok) throw new Error(`Shopify API ${res.status}`);
-  const { data, errors } = await res.json();
-  if (errors?.length) throw new Error(errors[0].message);
-  return data;
+// =============================================================
+//  Direct-to-Shopify-cart links
+// =============================================================
+function shopifyCartAddUrl(variantId, quantity = 1) {
+  const numericId = variantId.split('/').pop();
+  return `https://${SHOPIFY.domain}/cart/add?id=${numericId}&quantity=${quantity}&return_to=/cart`;
 }
-const Cart = {
-  async addToCart(variantId, qty=1) {
-    const cartId = localStorage.getItem(CART_KEY);
-    if (cartId) {
-      const data = await gql(`mutation cartAdd($id:ID!,$lines:[CartLineInput!]!){cartLinesAdd(cartId:$id,lines:$lines){cart{id checkoutUrl totalQuantity}}}`,{id:cartId,lines:[{merchandiseId:variantId,quantity:qty}]});
-      return data.cartLinesAdd.cart;
-    } else {
-      const data = await gql(`mutation cartCreate($lines:[CartLineInput!]){cartCreate(input:{lines:$lines}){cart{id checkoutUrl totalQuantity}}}`,{lines:[{merchandiseId:variantId,quantity:qty}]});
-      const { cart, userErrors } = data.cartCreate;
-      if (userErrors?.length) throw new Error(userErrors[0].message);
-      localStorage.setItem(CART_KEY, cart.id);
-      return cart;
-    }
-  },
-  async getCart() {
-    const cartId = localStorage.getItem(CART_KEY);
-    if (!cartId) return null;
-    const data = await gql(`query{cart(id:"${cartId}"){id checkoutUrl totalQuantity}}`);
-    return data.cart;
-  },
-  async goToCheckout() {
-    const cart = await this.getCart();
-    if (cart?.checkoutUrl) window.location.href = cart.checkoutUrl;
-  },
-};
 
 function showToast(msg) {
   const t = document.getElementById('toast');
@@ -820,7 +788,6 @@ function showToast(msg) {
   clearTimeout(t._timer);
   t._timer = setTimeout(() => t.classList.remove('show'), 3200);
 }
-function updateCartCount(n) { document.getElementById('cart-count').textContent = n; }
 
 // =============================================================
 //  RENDER
@@ -1098,62 +1065,36 @@ function bindEvents(key, p) {
   document.getElementById('qty-minus').addEventListener('click', () => { qty = Math.max(1, qty-1); document.getElementById('qty-val').textContent = qty; });
   document.getElementById('qty-plus').addEventListener('click',  () => { qty++; document.getElementById('qty-val').textContent = qty; });
 
-  // add to cart (main)
-  document.getElementById('add-cart-btn').addEventListener('click', async () => {
+  // add to cart (main) — link straight to the Shopify cart
+  document.getElementById('add-cart-btn').addEventListener('click', () => {
     const variantId = SHOPIFY.variants[key];
-    if (!isConfigured() || variantId.includes('REPLACE_ME')) {
+    if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
       showToast('Configure Shopify variant IDs to enable checkout.');
       return;
     }
-    const btn = document.getElementById('add-cart-btn');
-    btn.classList.add('loading');
-    try {
-      const cart = await Cart.addToCart(variantId, qty);
-      updateCartCount(cart.totalQuantity);
-      btn.classList.remove('loading');
-      btn.classList.add('added');
-      btn.querySelector('span').textContent = 'Added ✓';
-      showToast('Added to cart.');
-      setTimeout(() => { btn.classList.remove('added'); btn.querySelector('span').textContent = 'Add to cart'; }, 2200);
-    } catch(err) {
-      btn.classList.remove('loading');
-      showToast('Could not add to cart. Please try again.');
-      console.error(err);
-    }
+    window.location.href = shopifyCartAddUrl(variantId, qty);
   });
 
   // cart button in nav
-  document.getElementById('cart-btn').addEventListener('click', async () => {
+  document.getElementById('cart-btn').addEventListener('click', () => {
     if (!isConfigured()) { showToast('Configure Shopify to enable checkout.'); return; }
-    try { await Cart.goToCheckout(); } catch(e) { showToast('Could not load cart.'); }
+    window.location.href = `https://${SHOPIFY.domain}/cart`;
   });
 
   // pair with quick-add buttons
   document.querySelectorAll('.pcard .add').forEach(btn => {
-    btn.addEventListener('click', async (e) => {
+    btn.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
       const pid = btn.dataset.product;
       const variantId = SHOPIFY.variants[pid];
-      if (!isConfigured() || variantId.includes('REPLACE_ME')) {
+      if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
         showToast('Configure Shopify to enable checkout.');
         return;
       }
-      try {
-        const cart = await Cart.addToCart(variantId, 1);
-        updateCartCount(cart.totalQuantity);
-        showToast(`${PRODUCT_NAMES[pid]} added to cart.`);
-      } catch(err) {
-        showToast('Could not add to cart.');
-      }
+      window.location.href = shopifyCartAddUrl(variantId, 1);
     });
   });
-
-  // load cart count
-  (async () => {
-    if (!isConfigured()) return;
-    try { const cart = await Cart.getCart(); if (cart) updateCartCount(cart.totalQuantity); } catch(_) {}
-  })();
 }
 
 // init

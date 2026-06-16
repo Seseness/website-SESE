@@ -760,7 +760,7 @@
       <span>EN · NL · FR</span>
       <button class="cart-btn" id="cart-btn">
         <span class="cart-dot"></span>
-        <span>Cart · <span id="cart-count">0</span></span>
+        <span>Cart</span>
       </button>
     </div>
   </header>
@@ -1170,86 +1170,19 @@ const SHOPIFY = {
 };
 
 // =============================================================
-//  Shopify Storefront Cart
+//  Direct-to-Shopify-cart links
+//  Every "Add" button sends the shopper straight to the native
+//  Shopify cart (via the /cart/add permalink) instead of going
+//  through a custom Storefront API cart.
 // =============================================================
-const Cart = (() => {
-  const CART_KEY = 'sese_cart_id';
-
-  async function gql(query, variables = {}) {
-    const res = await fetch('/api/shopify', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ query, variables }),
-    });
-    if (!res.ok) throw new Error(`Shopify API ${res.status}`);
-    const { data, errors } = await res.json();
-    if (errors?.length) throw new Error(errors[0].message);
-    return data;
-  }
-
-  async function createCart(variantId, quantity = 1) {
-    const data = await gql(`
-      mutation cartCreate($lines: [CartLineInput!]) {
-        cartCreate(input: { lines: $lines }) {
-          cart { id checkoutUrl totalQuantity }
-          userErrors { field message }
-        }
-      }
-    `, { lines: [{ merchandiseId: variantId, quantity }] });
-    const { cart, userErrors } = data.cartCreate;
-    if (userErrors?.length) throw new Error(userErrors[0].message);
-    localStorage.setItem(CART_KEY, cart.id);
-    return cart;
-  }
-
-  async function addToCart(variantId, quantity = 1) {
-    const cartId = localStorage.getItem(CART_KEY);
-    if (!cartId) return createCart(variantId, quantity);
-    const data = await gql(`
-      mutation cartLinesAdd($cartId: ID!, $lines: [CartLineInput!]!) {
-        cartLinesAdd(cartId: $cartId, lines: $lines) {
-          cart { id checkoutUrl totalQuantity }
-          userErrors { field message }
-        }
-      }
-    `, { cartId, lines: [{ merchandiseId: variantId, quantity }] });
-    const { cart, userErrors } = data.cartLinesAdd;
-    if (userErrors?.length) throw new Error(userErrors[0].message);
-    return cart;
-  }
-
-  async function getCart() {
-    const cartId = localStorage.getItem(CART_KEY);
-    if (!cartId) return null;
-    const data = await gql(`
-      query getCart($cartId: ID!) {
-        cart(id: $cartId) { id checkoutUrl totalQuantity }
-      }
-    `, { cartId });
-    return data.cart;
-  }
-
-  async function goToCheckout() {
-    const cart = await getCart();
-    if (cart?.checkoutUrl) {
-      window.location.href = cart.checkoutUrl;
-    } else {
-      showToast('Your cart is empty.');
-    }
-  }
-
-  return { addToCart, getCart, goToCheckout };
-})();
+function shopifyCartAddUrl(variantId, quantity = 1) {
+  const numericId = variantId.split('/').pop();
+  return `https://${SHOPIFY.domain}/cart/add?id=${numericId}&quantity=${quantity}&return_to=/cart`;
+}
 
 // =============================================================
 //  UI helpers
 // =============================================================
-function updateCartCount(n) {
-  document.getElementById('cart-count').textContent = n;
-}
-
 let toastTimer;
 function showToast(msg) {
   const el = document.getElementById('toast');
@@ -1265,122 +1198,59 @@ function isConfigured() {
 }
 
 // =============================================================
-//  Add to cart — product cards
+//  Add to cart — product cards (link straight to Shopify cart)
 // =============================================================
 document.querySelectorAll('.card-add').forEach(btn => {
-  btn.addEventListener('click', async (e) => {
+  btn.addEventListener('click', (e) => {
     e.stopPropagation();
     const productKey = btn.dataset.product;
     const variantId  = SHOPIFY.variants[productKey];
 
-    if (!isConfigured() || variantId.includes('REPLACE_ME')) {
+    if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
       showToast('Configure Shopify variant IDs to enable checkout.');
       return;
     }
-
-    btn.classList.add('loading');
-    btn.textContent = '…';
-
-    try {
-      const cart = await Cart.addToCart(variantId);
-      updateCartCount(cart.totalQuantity);
-      btn.classList.remove('loading');
-      btn.classList.add('added');
-      btn.textContent = 'Added ✓';
-      showToast('Added to cart.');
-      setTimeout(() => {
-        btn.classList.remove('added');
-        btn.innerHTML = 'Add <span>+</span>';
-      }, 2200);
-    } catch (err) {
-      btn.classList.remove('loading');
-      btn.innerHTML = 'Add <span>+</span>';
-      showToast('Could not add to cart. Please try again.');
-      console.error(err);
-    }
+    window.location.href = shopifyCartAddUrl(variantId);
   });
 });
 
 // =============================================================
 //  Add to cart — Forever Routine
 // =============================================================
-document.getElementById('bundle-btn').addEventListener('click', async () => {
-  const btn = document.getElementById('bundle-btn');
+document.getElementById('bundle-btn').addEventListener('click', () => {
   const variantId = SHOPIFY.variants['forever-bundle'];
-
-  if (!isConfigured() || variantId.includes('REPLACE_ME')) {
+  if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
     showToast('Configure Shopify variant IDs to enable checkout.');
     return;
   }
-
-  btn.classList.add('loading');
-  try {
-    const cart = await Cart.addToCart(variantId);
-    updateCartCount(cart.totalQuantity);
-    showToast('Bundle added — taking you to checkout…');
-    setTimeout(() => { window.location.href = cart.checkoutUrl; }, 1000);
-  } catch (err) {
-    btn.classList.remove('loading');
-    showToast('Could not add to cart. Please try again.');
-    console.error(err);
-  }
+  window.location.href = shopifyCartAddUrl(variantId);
 });
 
 // =============================================================
 //  Ritual bundle buttons
 // =============================================================
-['night-cart-btn', 'beauty-sleep-ritual', 'full-cart-btn', 'full-ritual'].reduce((acc, _, i, arr) => {
-  if (i % 2 !== 0) return acc;
-  const [btnId, productKey] = [arr[i], arr[i + 1]];
-  document.getElementById(btnId).addEventListener('click', async (e) => {
+[['night-cart-btn', 'beauty-sleep-ritual'], ['full-cart-btn', 'full-ritual']].forEach(([btnId, productKey]) => {
+  document.getElementById(btnId).addEventListener('click', (e) => {
     e.stopPropagation();
-    const btn = document.getElementById(btnId);
     const variantId = SHOPIFY.variants[productKey];
-    if (!isConfigured() || variantId.includes('REPLACE_ME')) {
+    if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
       showToast('Configure Shopify variant IDs to enable checkout.');
       return;
     }
-    btn.classList.add('loading');
-    try {
-      const cart = await Cart.addToCart(variantId);
-      updateCartCount(cart.totalQuantity);
-      showToast('Bundle added — taking you to checkout…');
-      setTimeout(() => { window.location.href = cart.checkoutUrl; }, 1000);
-    } catch (err) {
-      btn.classList.remove('loading');
-      showToast('Could not add to cart. Please try again.');
-      console.error(err);
-    }
+    window.location.href = shopifyCartAddUrl(variantId);
   });
-  return acc;
-}, null);
+});
 
 // =============================================================
-//  Cart button — go to checkout
+//  Cart button — go straight to the Shopify cart
 // =============================================================
-document.getElementById('cart-btn').addEventListener('click', async () => {
+document.getElementById('cart-btn').addEventListener('click', () => {
   if (!isConfigured()) {
     showToast('Configure Shopify to enable checkout.');
     return;
   }
-  try {
-    await Cart.goToCheckout();
-  } catch (err) {
-    showToast('Could not load cart. Please try again.');
-    console.error(err);
-  }
+  window.location.href = `https://${SHOPIFY.domain}/cart`;
 });
-
-// =============================================================
-//  Load cart count on page load
-// =============================================================
-(async () => {
-  if (!isConfigured()) return;
-  try {
-    const cart = await Cart.getCart();
-    if (cart) updateCartCount(cart.totalQuantity);
-  } catch (_) { /* silent */ }
-})();
 
 // =============================================================
 //  Carousel arrows

@@ -423,7 +423,7 @@
       <span>EN · NL · FR</span>
       <button class="cart-btn" id="cart-btn">
         <span class="cart-dot"></span>
-        <span>Cart · <span id="cart-count">0</span></span>
+        <span>Cart</span>
       </button>
     </div>
   </header>
@@ -764,9 +764,7 @@
 //  Replace these values before going live.
 // =============================================================
 const SHOPIFY = {
-  domain:     'YOUR_STORE.myshopify.com',
-  token:      'YOUR_STOREFRONT_ACCESS_TOKEN',
-  apiVersion: '2024-01',
+  domain:     'sese-8214.myshopify.com',
   variants: {
     'cleansing-foam':       'gid://shopify/ProductVariant/REPLACE_ME',
     'hydrating-toner':      'gid://shopify/ProductVariant/REPLACE_ME',
@@ -775,85 +773,23 @@ const SHOPIFY = {
     'retinol-alt-serum':    'gid://shopify/ProductVariant/REPLACE_ME',
     'firming-day-cream':    'gid://shopify/ProductVariant/REPLACE_ME',
     'ceramide-night-cream': 'gid://shopify/ProductVariant/REPLACE_ME',
-    'smoothing-eye-cream':  'gid://shopify/ProductVariant/REPLACE_ME',
+    'smoothing-eye-cream':  'gid://shopify/ProductVariant/15788863947136',
     'spf50-stick':          'gid://shopify/ProductVariant/REPLACE_ME',
     'starter-bundle':       'gid://shopify/ProductVariant/REPLACE_ME',
   }
 };
 
 function isConfigured() {
-  return SHOPIFY.domain !== 'YOUR_STORE.myshopify.com' && SHOPIFY.token !== 'YOUR_STOREFRONT_ACCESS_TOKEN';
+  return !SHOPIFY.domain.startsWith('YOUR_');
 }
 
 // =============================================================
-//  Shopify Storefront Cart
+//  Direct-to-Shopify-cart links
 // =============================================================
-const Cart = (() => {
-  const CART_KEY = 'sese_cart_id';
-
-  function endpoint() {
-    return `https://${SHOPIFY.domain}/api/${SHOPIFY.apiVersion}/graphql.json`;
-  }
-
-  async function gql(query, variables = {}) {
-    const res = await fetch(endpoint(), {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-Shopify-Storefront-Access-Token': SHOPIFY.token,
-      },
-      body: JSON.stringify({ query, variables }),
-    });
-    if (!res.ok) throw new Error(`Shopify API ${res.status}`);
-    const { data, errors } = await res.json();
-    if (errors?.length) throw new Error(errors[0].message);
-    return data;
-  }
-
-  async function createCart(variantId, quantity = 1) {
-    const data = await gql(`
-      mutation cartCreate($lines: [CartLineInput!]) {
-        cartCreate(input: { lines: $lines }) {
-          cart { id checkoutUrl totalQuantity }
-          userErrors { field message }
-        }
-      }
-    `, { lines: [{ merchandiseId: variantId, quantity }] });
-    const { cart, userErrors } = data.cartCreate;
-    if (userErrors?.length) throw new Error(userErrors[0].message);
-    localStorage.setItem(CART_KEY, cart.id);
-    return cart;
-  }
-
-  async function addToCart(variantId, quantity = 1) {
-    const cartId = localStorage.getItem(CART_KEY);
-    if (!cartId) return createCart(variantId, quantity);
-    const data = await gql(`
-      mutation cartLinesAdd($cartId: ID!, $lines: [CartLineInput!]!) {
-        cartLinesAdd(cartId: $cartId, lines: $lines) {
-          cart { id checkoutUrl totalQuantity }
-          userErrors { field message }
-        }
-      }
-    `, { cartId, lines: [{ merchandiseId: variantId, quantity }] });
-    const { cart, userErrors } = data.cartLinesAdd;
-    if (userErrors?.length) throw new Error(userErrors[0].message);
-    return cart;
-  }
-
-  async function getCart() {
-    const cartId = localStorage.getItem(CART_KEY);
-    if (!cartId) return null;
-    const data = await gql(`
-      query getCart($cartId: ID!) {
-        cart(id: $cartId) { id checkoutUrl totalQuantity }
-      }
-    `, { cartId });
-    return data.cart;
-  }
-
-  return { addToCart, getCart };
-})();
+function shopifyCartAddUrl(variantId, quantity = 1) {
+  const numericId = variantId.split('/').pop();
+  return `https://${SHOPIFY.domain}/cart/add?id=${numericId}&quantity=${quantity}&return_to=/cart`;
+}
 
 // =============================================================
 //  UI helpers
@@ -867,11 +803,7 @@ function showToast(msg) {
   toastTimer = setTimeout(() => t.classList.remove('show'), 3000);
 }
 
-function updateCount(n) {
-  document.getElementById('cart-count').textContent = n;
-}
-
-async function handleAdd(btn) {
+function handleAdd(btn) {
   const productKey = btn.dataset.product;
   if (!isConfigured()) {
     showToast('Shop not configured yet — coming soon');
@@ -882,28 +814,20 @@ async function handleAdd(btn) {
     showToast('Product not available yet');
     return;
   }
-  btn.classList.add('loading');
-  try {
-    const cart = await Cart.addToCart(variantId);
-    updateCount(cart.totalQuantity);
-    btn.classList.remove('loading');
-    btn.classList.add('added');
-    btn.textContent = 'Added ✓';
-    setTimeout(() => {
-      btn.classList.remove('added');
-      btn.textContent = 'Add +';
-    }, 2200);
-    showToast('Added to cart');
-  } catch (e) {
-    btn.classList.remove('loading');
-    showToast('Could not add to cart');
-    console.error(e);
-  }
+  window.location.href = shopifyCartAddUrl(variantId);
 }
 
 // Attach events
 document.querySelectorAll('.btn-add').forEach(btn => {
   btn.addEventListener('click', () => handleAdd(btn));
+});
+
+document.getElementById('cart-btn').addEventListener('click', () => {
+  if (!isConfigured()) {
+    showToast('Shop not configured yet — coming soon');
+    return;
+  }
+  window.location.href = `https://${SHOPIFY.domain}/cart`;
 });
 
 // Category filter
@@ -946,15 +870,6 @@ document.querySelectorAll('.filter-pill').forEach(pill => {
 // Apply filter from URL on load
 const urlCat = new URLSearchParams(window.location.search).get('c') || '';
 applyFilter(urlCat);
-
-// Init cart count
-(async () => {
-  if (!isConfigured()) return;
-  try {
-    const cart = await Cart.getCart();
-    if (cart) updateCount(cart.totalQuantity);
-  } catch (e) {}
-})();
 </script>
 </body>
 </html>
