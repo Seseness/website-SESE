@@ -855,6 +855,17 @@ function applyFilter(cat) {
     const pc = p.dataset.cat || '';
     p.classList.toggle('active', pc === (cat || ''));
   });
+
+  const navHrefs = {
+    '':          'collection.html',
+    'bundles':   'collection.html?c=bundles',
+    'cleanse':   'collection.html?c=cleanse',
+    'serums':    'collection.html?c=serums',
+    'moisturize':'collection.html?c=moisturize',
+  };
+  document.querySelectorAll('.nav-center a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === navHrefs[cat || '']);
+  });
 }
 
 document.querySelectorAll('.filter-pill').forEach(pill => {
