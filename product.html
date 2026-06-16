@@ -67,10 +67,8 @@
     .thumb img { width:70%; height:70%; object-fit:contain; border-radius:8px; display:block; }
     .thumb.active { border-color:var(--ink); }
     .thumb:hover { border-color:var(--line-strong); }
-    .main-img { position:relative; aspect-ratio:4/5; border-radius:20px; display:flex; align-items:flex-end; justify-content:center; }
+    .main-img { position:relative; aspect-ratio:4/5; border-radius:20px; display:flex; align-items:center; justify-content:center; }
     .main-img img { max-width:78%; max-height:92%; object-fit:contain; border-radius:14px; }
-    .corner-tag { position:absolute; top:22px; left:22px; display:inline-flex; align-items:center; gap:10px; padding:8px 14px; background:rgba(255,255,255,0.86); border-radius:999px; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; }
-    .corner-tag .dot { width:6px; height:6px; border-radius:50%; background:var(--green); }
     .corner-r { position:absolute; top:22px; right:22px; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; color:var(--ink-2); text-align:right; }
     .zoom-btn { position:absolute; bottom:22px; right:22px; width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,0.9); display:inline-flex; align-items:center; justify-content:center; box-shadow:0 8px 20px rgba(26,26,26,0.08); border:0; }
     .zoom-btn svg { width:16px; height:16px; stroke:var(--ink); fill:none; stroke-width:1.4; }
@@ -893,7 +891,6 @@ function renderPage(key) {
     <div class="gallery">
       <div class="thumbs" id="thumbs">${thumbsHtml}</div>
       <div class="main-img" id="main-img-wrap" style="background-color:${p.imgs[0].bg}">
-        <span class="corner-tag"><span class="dot"></span>${p.step}</span>
         <div class="corner-r"><div>${p.size}</div></div>
         <img id="main-img" src="${p.imgs[0].src}" alt="SESE ${p.name}" />
         <button class="zoom-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></button>
