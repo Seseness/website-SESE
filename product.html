@@ -747,6 +747,11 @@ const ROUTINE_STEPS = [
 ];
 
 // =============================================================
+//  TRUSTPILOT (fill in once the store is live on Shopify)
+// =============================================================
+const TRUSTPILOT_URL = 'https://www.trustpilot.com/review/YOUR_STORE.myshopify.com';
+
+// =============================================================
 //  SHOPIFY CONFIG (fill in before launch)
 // =============================================================
 const SHOPIFY = {
@@ -902,7 +907,7 @@ function renderPage(key) {
       <h1>${p.nameBreak}</h1>
       <p class="tagline">${p.tagline}</p>
       <div class="chips">${chipsHtml}</div>
-      <div class="reviews"><span class="stars">★★★★★</span><span>4.8 · </span><a>206 honest reviews</a></div>
+      <div class="reviews"><span class="stars">★★★★★</span><span>4.8 · </span><a href="${TRUSTPILOT_URL}" target="_blank" rel="noopener">206 honest reviews</a></div>
       <div class="pricing">
         <span class="now">${p.price}</span>
         <span class="vol">${p.vol} · ${p.volPrice}</span>
