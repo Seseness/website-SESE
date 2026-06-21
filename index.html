@@ -550,7 +550,8 @@
       border-top: 1px solid var(--line-soft);
       border-bottom: 1px solid var(--line-soft);
     }
-    .journal-foot a { color: var(--ink); }
+    .journal-foot a { color: var(--ink); transition: text-decoration 0.2s; }
+    .journal-foot a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
     /* ── Footer ── */
     .foot-wrap { margin-top: 96px; background: #FAF5EC; color: #2A2620; }
