@@ -150,7 +150,7 @@
       position: relative; aspect-ratio: 4/3.36;
       border-radius: 20px; overflow: hidden;
     }
-    .bundle-hero-img img { width: 100%; height: 100%; object-fit: contain; object-position: center; border-radius: 16px; }
+    .bundle-hero-img img { width: 78%; height: 78%; object-fit: contain; object-position: center; border-radius: 16px; display: block; }
 
     /* ── Contents list ── */
     .contents-head { padding: 56px 56px 8px; }
@@ -394,6 +394,7 @@ const BUNDLES = {
     desc: 'Five morning essentials, one timeless ritual. Everything your skin needs to start the day — cleanse, hydrate, firm and protect.',
     price: '€140',
     img: 'project/assets/products-new/bundle-forever.jpg',
+    bg: '#DCEAF1',
     products: ['cleansing-foam', 'hydrating-toner', 'peptide-serum', 'firming-day-cream', 'spf50-stick'],
   },
   'beauty-sleep-ritual': {
@@ -403,6 +404,7 @@ const BUNDLES = {
     desc: 'Everything your skin needs to wind down — cleanse, hydrate, treat and repair while you sleep.',
     price: '€135',
     img: 'project/assets/products-new/bundle-beauty-sleep.png',
+    bg: '#1A2030',
     products: ['cleansing-foam', 'hydrating-toner', 'smoothing-eye-cream', 'retinol-alt-serum', 'ceramide-night-cream'],
   },
   'full-ritual': {
@@ -412,6 +414,7 @@ const BUNDLES = {
     desc: 'The entire SESE line in one box — every step for morning and night, nothing left out.',
     price: '€260',
     img: 'project/assets/products-new/bundle-full-ritual.jpg',
+    bg: '#EAD6B7',
     products: ['cleansing-foam', 'hydrating-toner', 'vitamin-c-serum', 'peptide-serum', 'retinol-alt-serum', 'firming-day-cream', 'ceramide-night-cream', 'smoothing-eye-cream', 'spf50-stick'],
   },
 };
@@ -451,7 +454,7 @@ document.getElementById('root').innerHTML = `
         <a class="btn btn--ghost" href="product.html?p=${bundleKey}">View bundle page →</a>
       </div>
     </div>
-    <div class="bundle-hero-img">
+    <div class="bundle-hero-img" style="background-color:${bundle.bg}">
       <img src="${bundle.img}" alt="${bundle.name}" />
     </div>
   </section>
