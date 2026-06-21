@@ -272,10 +272,13 @@
       aspect-ratio: 16 / 9;
       border-radius: 16px;
       overflow: hidden;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
+      display: flex; align-items: center; justify-content: center;
       transition: box-shadow .42s var(--ease-out);
+    }
+    .bundle-img img {
+      width: 78%; height: 78%;
+      object-fit: contain; object-position: center;
+      border-radius: 14px; display: block;
     }
     .bundle-meta { padding: 20px 4px 0; flex: 1; display: flex; flex-direction: column; }
     .bundle-name {
@@ -608,7 +611,7 @@
 
       <!-- Forever Routine -->
       <div class="bundle-card" onclick="location.href='product.html?p=forever-bundle'">
-        <div class="bundle-img" style="background-color:#DCEAF1;background-image:url('project/assets/products-new/bundle-forever.jpg')"></div>
+        <div class="bundle-img" style="background-color:#DCEAF1;"><img src="project/assets/products-new/bundle-forever.jpg" alt="The Forever Routine" /></div>
         <div class="bundle-meta">
           <div class="bundle-name">The Forever Routine</div>
           <div class="bundle-tag">5 products · Morning ritual</div>
@@ -629,7 +632,7 @@
 
       <!-- Beauty Sleep Ritual -->
       <div class="bundle-card" onclick="location.href='product.html?p=beauty-sleep-ritual'">
-        <div class="bundle-img" style="background-color:#1A2030;background-image:url('project/assets/products-new/bundle-beauty-sleep.png')"></div>
+        <div class="bundle-img" style="background-color:#1A2030;"><img src="project/assets/products-new/bundle-beauty-sleep.png" alt="The Beauty Sleep Ritual" /></div>
         <div class="bundle-meta">
           <div class="bundle-name">The Beauty Sleep Ritual</div>
           <div class="bundle-tag">5 products · Night ritual</div>
@@ -650,7 +653,7 @@
 
       <!-- Full Ritual – full width -->
       <div class="bundle-card bundle-card--wide" onclick="location.href='product.html?p=full-ritual'">
-        <div class="bundle-img" style="background-color:#EAD6B7;background-image:url('project/assets/products-new/bundle-full-ritual.jpg')"></div>
+        <div class="bundle-img" style="background-color:#EAD6B7;"><img src="project/assets/products-new/bundle-full-ritual.jpg" alt="The Full Ritual" /></div>
         <div class="bundle-meta">
           <div class="bundle-name">The Full Ritual</div>
           <div class="bundle-tag">9 products · Complete edit</div>
