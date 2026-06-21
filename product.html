@@ -908,13 +908,8 @@ function renderPage(key) {
     <div class="cta"><a href="index.html">See the full ritual →</a></div>
   </section>` : ''}
 
-  <!-- Ingredients + How to use -->
-  <section class="section-grid">
-    <div>
-      <div class="eb">Key ingredients</div>
-      <h2>${p.ingTitle}</h2>
-      <div class="ingredients-card"><div class="ingredients-list">${ingsHtml}</div></div>
-    </div>
+  <!-- How to use -->
+  <section class="section-grid" style="grid-template-columns:1fr">
     <div>
       <div class="eb">How to use</div>
       <h2>${p.howTitle}</h2>
@@ -958,7 +953,11 @@ function renderPage(key) {
   <!-- INCI -->
   <details class="inci">
     <summary><span>Full ingredient list (INCI)</span><span style="font-size:18px;">+</span></summary>
-    <div class="body">${p.inci}<br><br><em>${p.inciNote}</em></div>
+    <div class="body">
+      <div class="eb" style="margin-bottom:12px">Key ingredients</div>
+      <div class="ingredients-list" style="margin-bottom:24px;border-bottom:1px solid var(--line-soft);padding-bottom:24px">${ingsHtml}</div>
+      ${p.inci}<br><br><em>${p.inciNote}</em>
+    </div>
   </details>
 
   <!-- Pairs with -->
