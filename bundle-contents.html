@@ -403,6 +403,7 @@ const BUNDLES = {
     desc: 'Everything your skin needs to wind down — cleanse, hydrate, treat and repair while you sleep.',
     price: '€135',
     img: 'project/assets/products-new/bundle-beauty-sleep.png',
+    imgPosition: 'center 75%',
     products: ['cleansing-foam', 'hydrating-toner', 'smoothing-eye-cream', 'retinol-alt-serum', 'ceramide-night-cream'],
   },
   'full-ritual': {
@@ -452,7 +453,7 @@ document.getElementById('root').innerHTML = `
       </div>
     </div>
     <div class="bundle-hero-img">
-      <img src="${bundle.img}" alt="${bundle.name}" />
+      <img src="${bundle.img}" alt="${bundle.name}" style="object-position:${bundle.imgPosition||'center'}" />
     </div>
   </section>
 
