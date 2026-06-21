@@ -221,9 +221,9 @@
 
     /* ── Cert scroller ── */
     .cert-scroller { margin: 80px 0 0; overflow: hidden; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); padding: 28px 0; background: var(--bg-page); }
-    .cert-track { display: flex; gap: 56px; align-items: center; width: max-content; animation: certScroll 28s linear infinite; }
+    .cert-track { display: flex; gap: 56px; align-items: center; width: max-content; will-change: transform; }
     .cert-track:hover { animation-play-state: paused; }
-    @keyframes certScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    @keyframes certScroll { 0% { transform: translateX(0); } 100% { transform: translateX(var(--scroll-dist, -50%)); } }
     .cert-badge { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; flex-shrink: 0; opacity: 0.65; transition: opacity 0.2s; }
     .cert-badge:hover { opacity: 1; }
     .cert-badge svg { width: 64px; height: 64px; }
@@ -1176,6 +1176,20 @@
 
 <div class="toast" id="toast"></div>
 
+<script>
+// Cert scroller — measure first half width and animate exactly that many px
+(function() {
+  const track = document.querySelector('.cert-track');
+  if (!track) return;
+  const items = track.querySelectorAll('.cert-badge');
+  const half = Math.floor(items.length / 2);
+  let w = 0;
+  // sum width + gap (56px) for first half
+  for (let i = 0; i < half; i++) w += items[i].offsetWidth + 56;
+  track.style.setProperty('--scroll-dist', '-' + w + 'px');
+  track.style.animation = 'certScroll ' + (half * 4) + 's linear infinite';
+})();
+</script>
 <script>
 // =============================================================
 //  SHOPIFY STOREFRONT API CONFIGURATION
