@@ -147,17 +147,12 @@
       aspect-ratio: 4/3;
       border-radius: 18px;
       overflow: hidden;
-      background: linear-gradient(155deg, #EFDFC2 0%, #D9BE8E 100%);
-      display: flex; align-items: center; justify-content: center;
       position: relative;
     }
-    .featured-img-inner {
-      position: absolute; inset: 0;
-      background: repeating-linear-gradient(135deg, transparent 0 18px, rgba(255,255,255,0.12) 18px 19px);
-      display: flex; align-items: center; justify-content: center;
-      font-family: var(--font-ui);
-      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
-      color: rgba(42,38,32,0.5);
+    .featured-img img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center 30%;
+      display: block;
     }
     .featured-body {}
     .featured-meta {
@@ -355,7 +350,7 @@
     <div class="featured-label">Latest article</div>
     <div class="featured-post">
       <div class="featured-img">
-        <div class="featured-img-inner">Journal · Issue No. 03</div>
+        <img src="project/assets/journal-cover.jpg" alt="Journal cover" />
       </div>
       <div class="featured-body">
         <div class="featured-meta">
