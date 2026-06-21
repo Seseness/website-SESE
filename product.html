@@ -908,8 +908,13 @@ function renderPage(key) {
     <div class="cta"><a href="index.html">See the full ritual →</a></div>
   </section>` : ''}
 
-  <!-- How to use -->
-  <section class="section-grid" style="grid-template-columns:1fr">
+  <!-- FAQ + How to use -->
+  <section class="section-grid">
+    <div>
+      <div class="eb">Honest answers</div>
+      <h2>${p.faqTitle}</h2>
+      <div class="faq-list">${faqsHtml}</div>
+    </div>
     <div>
       <div class="eb">How to use</div>
       <h2>${p.howTitle}</h2>
@@ -939,16 +944,6 @@ function renderPage(key) {
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="faq-wrap">
-    <div class="head">
-      <div class="eb">Honest answers</div>
-      <h2>${p.faqTitle}</h2>
-      <p>Not finding what you need? Our care team replies in one working day.</p>
-      <a style="display:inline-flex;align-items:center;gap:10px;margin-top:14px;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;border-bottom:1px solid var(--line-default);padding-bottom:3px;">Ask a question →</a>
-    </div>
-    <div class="faq-list">${faqsHtml}</div>
-  </section>
 
   <!-- INCI -->
   <details class="inci">
