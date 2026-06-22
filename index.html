@@ -1177,16 +1177,15 @@
 <div class="toast" id="toast"></div>
 
 <script>
-// Cert scroller — measure first half width and animate exactly that many px
+// Cert scroller — measure exact distance from item[0] to item[half] for seamless loop
 (function() {
   const track = document.querySelector('.cert-track');
   if (!track) return;
   const items = track.querySelectorAll('.cert-badge');
   const half = Math.floor(items.length / 2);
-  let w = 0;
-  // sum width + gap (56px) for first half
-  for (let i = 0; i < half; i++) w += items[i].offsetWidth + 56;
-  track.style.setProperty('--scroll-dist', '-' + w + 'px');
+  // Measure exact pixel distance between start of set 1 and start of set 2
+  const dist = items[half].offsetLeft - items[0].offsetLeft;
+  track.style.setProperty('--scroll-dist', '-' + dist + 'px');
   track.style.animation = 'certScroll ' + (half * 4) + 's linear infinite';
 })();
 </script>
