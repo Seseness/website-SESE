@@ -1164,12 +1164,13 @@ function getPostId() {
 }
 
 function getRelated(currentId, count = 3) {
-  const others = POSTS.filter(p => p.id !== currentId);
+  // Only show the 4 real published posts (id 1-4)
+  const others = POSTS.filter(p => p.id >= 1 && p.id <= 4 && p.id !== currentId);
   // Pick a spread of posts
   const picks = [];
-  const step = Math.floor(others.length / count);
+  const step = Math.max(1, Math.floor(others.length / count));
   for (let i = 0; i < count; i++) {
-    picks.push(others[(currentId + i * step - 1) % others.length]);
+    picks.push(others[i % others.length]);
   }
   return picks;
 }
