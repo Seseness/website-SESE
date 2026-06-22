@@ -222,8 +222,6 @@
     /* ── Cert scroller ── */
     .cert-scroller { margin: 80px 0 0; overflow: hidden; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); padding: 28px 0; background: var(--bg-page); }
     .cert-track { display: flex; gap: 56px; align-items: center; width: max-content; will-change: transform; }
-    .cert-track:hover { animation-play-state: paused; }
-    @keyframes certScroll { 0% { transform: translateX(0); } 100% { transform: translateX(var(--scroll-dist, -50%)); } }
     .cert-badge { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; flex-shrink: 0; opacity: 0.65; transition: opacity 0.2s; }
     .cert-badge:hover { opacity: 1; }
     .cert-badge svg { width: 56px; height: 56px; } .cert-badge svg[viewBox="0 0 80 96"] { width: 46px; height: 55px; } .cert-badge svg[viewBox="0 0 90 56"] { width: 80px; height: 50px; }
@@ -1177,16 +1175,34 @@
 <div class="toast" id="toast"></div>
 
 <script>
-// Cert scroller — measure exact distance from item[0] to item[half] for seamless loop
+// Cert scroller — seamless RAF-based infinite scroll (no CSS animation flash)
 (function() {
   const track = document.querySelector('.cert-track');
   if (!track) return;
   const items = track.querySelectorAll('.cert-badge');
   const half = Math.floor(items.length / 2);
-  // Measure exact pixel distance between start of set 1 and start of set 2
-  const dist = items[half].offsetLeft - items[0].offsetLeft;
-  track.style.setProperty('--scroll-dist', '-' + dist + 'px');
-  track.style.animation = 'certScroll ' + (half * 4) + 's linear infinite';
+  let setWidth = 0;
+  let pos = 0;
+  let paused = false;
+  const speed = 0.6; // px per frame (~36px/sec at 60fps)
+
+  const init = () => {
+    setWidth = items[half].offsetLeft - items[0].offsetLeft;
+  };
+
+  track.addEventListener('mouseenter', () => { paused = true; });
+  track.addEventListener('mouseleave', () => { paused = false; });
+
+  const tick = () => {
+    if (!paused && setWidth > 0) {
+      pos -= speed;
+      if (pos <= -setWidth) pos += setWidth; // instant seamless snap
+      track.style.transform = 'translateX(' + pos + 'px)';
+    }
+    requestAnimationFrame(tick);
+  };
+
+  window.addEventListener('load', () => { init(); requestAnimationFrame(tick); });
 })();
 </script>
 <script>
