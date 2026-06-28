@@ -132,7 +132,54 @@
       .page-header h1 { font-size: 24px; }
       .nav { padding: 14px 16px; }
     }
-  </style>
+  
+/* Fluid typography */
+html { font-size: clamp(14px, 1.5vw, 16px); }
+h1 { font-size: clamp(28px, 5vw + 8px, 80px); }
+h2 { font-size: clamp(22px, 3.5vw + 6px, 52px); }
+h3 { font-size: clamp(18px, 2.5vw + 4px, 36px); }
+p, li { font-size: clamp(14px, 1.2vw + 4px, 18px); }
+
+/* ── Hamburger / Mobile nav ── */
+.hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 44px; height: 44px; cursor: pointer; background: none; border: none; padding: 4px; }
+.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: transform .28s ease, opacity .28s ease; }
+.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.nav-drawer { position: fixed; inset: 0; z-index: 9999; pointer-events: none; }
+.nav-drawer-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.4); opacity: 0; transition: opacity .32s ease; }
+.nav-drawer-panel { position: absolute; top: 0; right: 0; width: min(320px, 85vw); height: 100%; background: var(--bg-nav, #FAF5EC); padding: 80px 40px 40px; transform: translateX(100%); transition: transform .32s ease; display: flex; flex-direction: column; gap: 0; overflow-y: auto; }
+.nav-drawer.open { pointer-events: auto; }
+.nav-drawer.open .nav-drawer-overlay { opacity: 1; }
+.nav-drawer.open .nav-drawer-panel { transform: translateX(0); }
+.nav-drawer-panel a { display: block; padding: 14px 0; font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink, #1A1A1A); border-bottom: 1px solid rgba(26,26,26,0.08); min-height: 44px; display: flex; align-items: center; }
+.nav-drawer-close { position: absolute; top: 20px; right: 20px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; cursor: pointer; background: none; border: none; font-size: 24px; color: var(--ink, #1A1A1A); }
+.nav-drawer-lang { margin-top: 24px; display: flex; gap: 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; }
+.nav-drawer-lang a, .nav-drawer-lang span { min-height: 44px; display: flex; align-items: center; padding: 0 4px; }
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav-center { display: none !important; }
+  .nav-lang-inline { display: none; }
+}
+
+/* Touch targets */
+button, .btn, .cart-btn, .btn-add, .btn-view, .filter-pill, .nav-center a, .qty-btn {
+  min-height: 44px;
+}
+.qty-btn { min-width: 44px; }
+
+/* Prevent horizontal overflow */
+html, body { overflow-x: hidden; max-width: 100%; }
+* { box-sizing: border-box; }
+
+/* Mobile base layout */
+@media (max-width: 480px) {
+  .page { width: 100% !important; max-width: 100% !important; }
+  .nav { padding: 16px 20px !important; }
+  .wordmark { font-size: 20px !important; }
+}
+
+</style>
 </head>
 <body>
 
@@ -163,6 +210,8 @@
         <span class="cart-dot"></span>
         <span>Cart · 0</span>
       </button>
+    
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -359,5 +408,37 @@
   </div>
 </footer>
 
+
+<div class="nav-drawer" id="nav-drawer">
+  <div class="nav-drawer-overlay"></div>
+  <div class="nav-drawer-panel">
+    <button class="nav-drawer-close" aria-label="Close">&#x00D7;</button>
+    <a href="collection.html">Shop</a>
+    <a href="collection.html#bundles">Routines</a>
+    <a href="collection.html#cleanse">Cleanse &amp; Prep</a>
+    <a href="collection.html#serums">Serums</a>
+    <a href="collection.html#moisturize">Moisturize</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Journal</a>
+    <div class="nav-drawer-lang">
+      <span style="font-weight:400">EN</span>
+      <a href="nl/terms.html">NL</a>
+      <a href="fr/terms.html">FR</a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var btn = document.getElementById('hamburger-btn');
+  var drawer = document.getElementById('nav-drawer');
+  var overlay = drawer ? drawer.querySelector('.nav-drawer-overlay') : null;
+  var closeBtn = drawer ? drawer.querySelector('.nav-drawer-close') : null;
+  function open(){ btn.classList.add('open'); drawer.classList.add('open'); document.body.style.overflow='hidden'; }
+  function close(){ btn.classList.remove('open'); drawer.classList.remove('open'); document.body.style.overflow=''; }
+  if(btn) btn.addEventListener('click', function(){ drawer.classList.contains('open') ? close() : open(); });
+  if(overlay) overlay.addEventListener('click', close);
+  if(closeBtn) closeBtn.addEventListener('click', close);
+})();
+</script>
 </body>
 </html>

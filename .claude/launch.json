@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sese-site",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "4500", "/Users/noi/Desktop/website-SESE"],
+      "port": 4500
+    }
+  ]
+}
