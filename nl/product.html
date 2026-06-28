@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>SESE — Product</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="project/colors_and_type.css" />
+  <link rel="stylesheet" href="../project/colors_and_type.css" />
   <style>
     :root {
       --bg-page:      #FAF5EC;
@@ -33,26 +33,26 @@
     .announce .dot { opacity:0.45; margin:0 16px; }
 
     /* nav */
-    .nav { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; padding:26px 56px; border-bottom:1px solid var(--line-soft); }
+    .nav { display:grid; grid-template-columns:1fr auto 1fr; align-artikelen:center; padding:26px 56px; border-bottom:1px solid var(--line-soft); }
     .nav .wordmark { font-size:26px; letter-spacing:0.34em; color:var(--ink); }
     .nav-center { display:inline-flex; gap:36px; font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-2); }
     .nav-center a { position:relative; padding:6px 0; transition:color .28s var(--ease-out); }
     .nav-center a::after { content:""; position:absolute; left:50%; bottom:-2px; transform:translateX(-50%); width:0; height:1px; background:var(--ink); transition:width .32s var(--ease-out); }
     .nav-center a:hover { color:var(--ink); }
     .nav-center a:hover::after { width:22px; }
-    .nav-right { display:flex; justify-content:flex-end; align-items:center; gap:22px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-2); }
-    .nav-right .icon { width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; }
+    .nav-right { display:flex; justify-content:flex-end; align-artikelen:center; gap:22px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-2); }
+    .nav-right .icon { width:22px; height:22px; display:inline-flex; align-artikelen:center; justify-content:center; cursor:pointer; }
     .nav-right .icon svg { width:18px; height:18px; stroke:currentColor; fill:none; stroke-width:1.25; }
-    .cart-btn { display:inline-flex; align-items:center; gap:8px; padding:8px 16px; border:1px solid var(--line-default); border-radius:999px; background:transparent; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-2); cursor:pointer; }
+    .cart-btn { display:inline-flex; align-artikelen:center; gap:8px; padding:8px 16px; border:1px solid var(--line-default); border-radius:999px; background:transparent; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-2); cursor:pointer; }
     .cart-dot { width:6px; height:6px; border-radius:50%; background:var(--blue); display:inline-block; }
 
     /* crumbs */
-    .crumbs { padding:22px 56px 0; display:flex; align-items:center; gap:10px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-3); }
+    .crumbs { padding:22px 56px 0; display:flex; align-artikelen:center; gap:10px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-3); }
     .crumbs .sep { opacity:0.5; }
     .crumbs .cur { color:var(--ink); }
 
     /* buttons */
-    .btn { display:inline-flex; align-items:center; justify-content:center; gap:12px; padding:16px 28px; font-size:11px; letter-spacing:0.24em; text-transform:uppercase; border-radius:999px; border:1px solid transparent; transition:background .32s var(--ease-out),color .32s var(--ease-out),border-color .32s var(--ease-out),transform .15s var(--ease-out); }
+    .btn { display:inline-flex; align-artikelen:center; justify-content:center; gap:12px; padding:16px 28px; font-size:11px; letter-spacing:0.24em; text-transform:uppercase; border-radius:999px; border:1px solid transparent; transition:background .32s var(--ease-out),color .32s var(--ease-out),border-color .32s var(--ease-out),transform .15s var(--ease-out); }
     .btn:active { transform:scale(0.985); }
     .btn--dark { background:var(--ink); color:var(--bg-page); border-color:var(--ink); }
     .btn--dark:hover { background:#2A2A2A; }
@@ -61,57 +61,57 @@
 
     /* pdp layout */
     .pdp { padding:28px 56px 0; display:grid; grid-template-columns:1.05fr 1fr; gap:56px; }
-    .gallery { display:grid; grid-template-columns:96px 1fr; gap:18px; align-items:start; }
+    .gallery { display:grid; grid-template-columns:96px 1fr; gap:18px; align-artikelen:start; }
     .thumbs { display:flex; flex-direction:column; gap:12px; }
-    .thumb { width:96px; height:96px; border-radius:12px; border:1px solid var(--line-soft); cursor:pointer; transition:border-color .28s var(--ease-out); display:flex; align-items:center; justify-content:center; }
+    .thumb { width:96px; height:96px; border-radius:12px; border:1px solid var(--line-soft); cursor:pointer; transition:border-color .28s var(--ease-out); display:flex; align-artikelen:center; justify-content:center; }
     .thumb img { width:70%; height:70%; object-fit:contain; border-radius:8px; display:block; }
     .thumb.active { border-color:var(--ink); }
     .thumb:hover { border-color:var(--line-strong); }
-    .main-img { position:relative; aspect-ratio:4/5; border-radius:20px; display:flex; align-items:center; justify-content:center; }
+    .main-img { position:relative; aspect-ratio:4/5; border-radius:20px; display:flex; align-artikelen:center; justify-content:center; }
     .main-img img { max-width:78%; max-height:92%; object-fit:contain; border-radius:14px; }
     .corner-r { position:absolute; top:22px; right:22px; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; color:var(--ink-2); text-align:right; }
-    .zoom-btn { position:absolute; bottom:22px; right:22px; width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,0.9); display:inline-flex; align-items:center; justify-content:center; box-shadow:0 8px 20px rgba(26,26,26,0.08); border:0; }
+    .zoom-btn { position:absolute; bottom:22px; right:22px; width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,0.9); display:inline-flex; align-artikelen:center; justify-content:center; box-shadow:0 8px 20px rgba(26,26,26,0.08); border:0; }
     .zoom-btn svg { width:16px; height:16px; stroke:var(--ink); fill:none; stroke-width:1.4; }
 
     /* buy panel */
     .buy { padding-top:8px; }
-    .buy .eyebrow { display:flex; align-items:center; gap:14px; font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink-3); margin-bottom:18px; }
+    .buy .eyebrow { display:flex; align-artikelen:center; gap:14px; font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink-3); margin-bottom:18px; }
     .buy .eyebrow:
     .buy h1 { margin:0; font-size:60px; line-height:0.98; letter-spacing:0.005em; font-weight:300; }
     .buy .tagline { margin:16px 0 24px; font-size:18px; line-height:1.5; color:var(--ink-2); max-width:480px; font-style:italic; }
     .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px; }
-    .chip { padding:7px 12px; border-radius:999px; border:1px solid var(--line-default); font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--ink-2); display:inline-flex; align-items:center; gap:8px; }
+    .chip { padding:7px 12px; border-radius:999px; border:1px solid var(--line-default); font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--ink-2); display:inline-flex; align-artikelen:center; gap:8px; }
     .chip .d { width:5px; height:5px; border-radius:50%; background:var(--green); }
-    .reviews { display:flex; align-items:center; gap:12px; margin-bottom:28px; font-size:13px; color:var(--ink-2); }
+    .reviews { display:flex; align-artikelen:center; gap:12px; margin-bottom:28px; font-size:13px; color:var(--ink-2); }
     .stars { letter-spacing:0.08em; color:var(--blue); font-size:14px; }
-    .pricing { display:flex; align-items:baseline; gap:16px; padding:22px 0; border-top:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft); }
+    .pricing { display:flex; align-artikelen:baseline; gap:16px; padding:22px 0; border-top:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft); }
     .pricing .now { font-size:32px; }
     .pricing .vol { font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-3); }
-    .pricing .stock { margin-left:auto; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--green); display:inline-flex; align-items:center; gap:8px; }
+    .pricing .stock { margin-left:auto; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--green); display:inline-flex; align-artikelen:center; gap:8px; }
     .pricing .stock .d { width:6px; height:6px; border-radius:50%; background:var(--green); }
     .buy-row { display:grid; grid-template-columns:130px 1fr; gap:12px; margin:24px 0 12px; }
-    .qty { display:inline-flex; align-items:center; justify-content:space-between; padding:0 14px; border-radius:999px; border:1px solid var(--line-default); height:52px; font-size:16px; }
+    .qty { display:inline-flex; align-artikelen:center; justify-content:space-between; padding:0 14px; border-radius:999px; border:1px solid var(--line-default); height:52px; font-size:16px; }
     .qty button { width:28px; height:28px; border-radius:50%; background:transparent; border:0; font-size:16px; color:var(--ink-2); }
     .qty button:hover { color:var(--ink); }
     .qty .v { min-width:24px; text-align:center; }
-    .add-cart { height:52px; border-radius:999px; background:var(--ink); color:var(--bg-page); border:0; font-size:11px; letter-spacing:0.28em; text-transform:uppercase; display:inline-flex; align-items:center; justify-content:space-between; padding:0 22px 0 28px; transition:background .28s; }
-    .add-cart .right { display:inline-flex; align-items:center; gap:12px; }
+    .add-cart { height:52px; border-radius:999px; background:var(--ink); color:var(--bg-page); border:0; font-size:11px; letter-spacing:0.28em; text-transform:uppercase; display:inline-flex; align-artikelen:center; justify-content:space-between; padding:0 22px 0 28px; transition:background .28s; }
+    .add-cart .right { display:inline-flex; align-artikelen:center; gap:12px; }
     .add-cart:hover { background:#2A2A2A; }
     .add-cart.loading { opacity:0.6; pointer-events:none; }
     .add-cart.added { background:var(--green); }
-    .ship-line { display:flex; align-items:center; gap:14px; font-size:12px; color:var(--ink-2); padding:14px 0 0; }
-    .ship-line .row { display:inline-flex; align-items:center; gap:8px; }
-    .ship-line .ic { width:16px; height:16px; display:inline-flex; align-items:center; justify-content:center; color:var(--blue); }
+    .ship-line { display:flex; align-artikelen:center; gap:14px; font-size:12px; color:var(--ink-2); padding:14px 0 0; }
+    .ship-line .row { display:inline-flex; align-artikelen:center; gap:8px; }
+    .ship-line .ic { width:16px; height:16px; display:inline-flex; align-artikelen:center; justify-content:center; color:var(--blue); }
     .ship-line .ic svg { width:16px; height:16px; stroke:currentColor; fill:none; stroke-width:1.4; }
     .quick-cards { margin-top:28px; display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-    .quick { border:1px solid var(--line-soft); background:var(--bg-elev); border-radius:14px; padding:16px; display:flex; gap:12px; align-items:flex-start; }
-    .quick .qi { width:32px; height:32px; flex:0 0 32px; border-radius:50%; border:1px solid var(--line-default); display:inline-flex; align-items:center; justify-content:center; }
+    .quick { border:1px solid var(--line-soft); background:var(--bg-elev); border-radius:14px; padding:16px; display:flex; gap:12px; align-artikelen:flex-start; }
+    .quick .qi { width:32px; height:32px; flex:0 0 32px; border-radius:50%; border:1px solid var(--line-default); display:inline-flex; align-artikelen:center; justify-content:center; }
     .quick .qi svg { width:16px; height:16px; stroke:var(--ink); fill:none; stroke-width:1.3; }
     .quick .qt { font-size:13px; color:var(--ink); line-height:1.3; margin-bottom:2px; }
     .quick .qs { font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-3); }
 
     /* routine strip */
-    .routine-strip { margin:96px 56px 0; padding:36px 44px; background:var(--bg-elev); border:1px solid var(--line-soft); border-radius:var(--radius-card); display:grid; grid-template-columns:auto 1fr auto; gap:40px; align-items:center; }
+    .routine-strip { margin:96px 56px 0; padding:36px 44px; background:var(--bg-elev); border:1px solid var(--line-soft); border-radius:var(--radius-card); display:grid; grid-template-columns:auto 1fr auto; gap:40px; align-artikelen:center; }
     .routine-strip .heading { max-width:220px; }
     .routine-strip .eb { font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink-3); margin-bottom:8px; }
     .routine-strip .heading h3 { margin:0; font-size:22px; line-height:1.25; font-weight:300; }
@@ -123,33 +123,33 @@
     .routine-strip .step.active .n { color:var(--blue); }
     .routine-strip .step .l { font-size:14px; color:var(--ink-2); }
     .routine-strip .step.active .l { color:var(--blue); font-style:italic; }
-    .routine-strip .cta a { display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:999px; border:1px solid var(--line-default); font-size:11px; letter-spacing:0.22em; text-transform:uppercase; transition:background .28s,color .28s,border-color .28s; }
+    .routine-strip .cta a { display:inline-flex; align-artikelen:center; gap:10px; padding:12px 18px; border-radius:999px; border:1px solid var(--line-default); font-size:11px; letter-spacing:0.22em; text-transform:uppercase; transition:background .28s,color .28s,border-color .28s; }
     .routine-strip .cta a:hover { background:var(--ink); color:var(--bg-page); border-color:var(--ink); }
 
     /* ingredients + how to */
     .section-grid { margin:96px 56px 0; display:grid; grid-template-columns:1fr 1fr; gap:64px; }
-    .section-grid .eb { font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink-3); margin-bottom:14px; display:flex; align-items:center; gap:10px; }
+    .section-grid .eb { font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink-3); margin-bottom:14px; display:flex; align-artikelen:center; gap:10px; }
     .section-grid .eb:
     .section-grid h2 { margin:0 0 18px; font-size:36px; line-height:1.05; font-weight:300; }
     .section-grid h2 em { font-style:italic; }
     .ingredients-card,.howto { background:var(--bg-elev); border:1px solid var(--line-soft); border-radius:var(--radius-card); padding:28px; }
     .ingredients-list { display:flex; flex-direction:column; }
-    .ing { padding:18px 0; border-bottom:1px solid var(--line-soft); display:grid; grid-template-columns:56px 1fr auto; gap:18px; align-items:center; }
+    .ing { padding:18px 0; border-bottom:1px solid var(--line-soft); display:grid; grid-template-columns:56px 1fr auto; gap:18px; align-artikelen:center; }
     .ing:last-child { border-bottom:0; }
-    .swatch { width:56px; height:56px; border-radius:14px; display:inline-flex; align-items:center; justify-content:center; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; }
+    .swatch { width:56px; height:56px; border-radius:14px; display:inline-flex; align-artikelen:center; justify-content:center; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; }
     .ing .nm { font-size:17px; color:var(--ink); }
     .ing .ds { font-size:13px; color:var(--ink-3); margin-top:2px; }
     .ing .pct { font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-2); }
     .steps2 { display:flex; flex-direction:column; gap:18px; }
-    .step2 { display:grid; grid-template-columns:56px 1fr; gap:18px; align-items:flex-start; padding:8px 0; }
-    .step2 .num { width:56px; height:56px; border-radius:50%; background:var(--bg-page); border:1px solid var(--line-default); display:inline-flex; align-items:center; justify-content:center; font-size:14px; letter-spacing:0.22em; }
+    .step2 { display:grid; grid-template-columns:56px 1fr; gap:18px; align-artikelen:flex-start; padding:8px 0; }
+    .step2 .num { width:56px; height:56px; border-radius:50%; background:var(--bg-page); border:1px solid var(--line-default); display:inline-flex; align-artikelen:center; justify-content:center; font-size:14px; letter-spacing:0.22em; }
     .step2 .h { font-size:17px; color:var(--ink); margin-bottom:6px; }
     .step2 .p { font-size:14px; color:var(--ink-2); line-height:1.6; }
 
     /* certs */
-    .certs { margin:80px 56px 0; padding:28px 44px; background:var(--bg-sand-soft); border-radius:var(--radius-card); display:grid; grid-template-columns:1fr 1fr 1fr 1fr 1fr; gap:24px; align-items:center; }
-    .cert { display:flex; align-items:center; gap:12px; color:#2A2620; }
-    .cert .b { width:40px; height:40px; flex:0 0 40px; border-radius:50%; border:1px solid rgba(42,38,32,0.22); display:inline-flex; align-items:center; justify-content:center; }
+    .certs { margin:80px 56px 0; padding:28px 44px; background:var(--bg-sand-soft); border-radius:var(--radius-card); display:grid; grid-template-columns:1fr 1fr 1fr 1fr 1fr; gap:24px; align-artikelen:center; }
+    .cert { display:flex; align-artikelen:center; gap:12px; color:#2A2620; }
+    .cert .b { width:40px; height:40px; flex:0 0 40px; border-radius:50%; border:1px solid rgba(42,38,32,0.22); display:inline-flex; align-artikelen:center; justify-content:center; }
     .cert .b svg { width:18px; height:18px; stroke:#2A2620; fill:none; stroke-width:1.3; }
     .cert .t { font-size:12px; line-height:1.2; }
     .cert .s { font-size:10px; letter-spacing:0.22em; text-transform:uppercase; color:rgba(42,38,32,0.65); margin-top:2px; }
@@ -157,7 +157,7 @@
     /* benefit */
     /* HIDDEN — restore to display:grid once product has 5+ reviews */
     .benefit { display:none; }
-    .benefit .visual { aspect-ratio:5/6; border-radius:var(--radius-card); position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+    .benefit .visual { aspect-ratio:5/6; border-radius:var(--radius-card); position:relative; overflow:hidden; display:flex; align-artikelen:center; justify-content:center; }
     .benefit .visual .pull { position:absolute; left:24px; bottom:24px; right:24px; font-size:28px; line-height:1.18; color:#1A1A1A; font-style:italic; }
     .benefit .visual .credit { position:absolute; left:24px; top:24px; font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(26,26,26,0.6); }
     .benefit .copy { display:flex; flex-direction:column; justify-content:center; }
@@ -170,30 +170,30 @@
     .benefit-stats .bs .l { font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-3); margin-top:10px; max-width:180px; line-height:1.4; }
 
     /* faq */
-    .faq-wrap { margin:96px 56px 0; display:grid; grid-template-columns:1fr 1.5fr; gap:72px; align-items:flex-start; }
-    .faq-wrap .head .eb { font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink-3); margin-bottom:14px; display:flex; align-items:center; gap:10px; }
+    .faq-wrap { margin:96px 56px 0; display:grid; grid-template-columns:1fr 1.5fr; gap:72px; align-artikelen:flex-start; }
+    .faq-wrap .head .eb { font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink-3); margin-bottom:14px; display:flex; align-artikelen:center; gap:10px; }
     .faq-wrap .head .eb:
     .faq-wrap h2 { margin:0 0 22px; font-size:40px; line-height:1.05; font-weight:300; }
     .faq-wrap h2 em { font-style:italic; }
     .faq-wrap .head p { font-size:14px; line-height:1.65; color:var(--ink-2); max-width:280px; }
     .faq-list { border-top:1px solid var(--line-default); }
-    .faq-item { border-bottom:1px solid var(--line-default); }
-    .faq-item summary { list-style:none; padding:24px 0; display:flex; align-items:center; justify-content:space-between; cursor:pointer; font-size:20px; line-height:1.3; }
-    .faq-item summary::-webkit-details-marker { display:none; }
-    .faq-item .ic { width:36px; height:36px; border-radius:50%; border:1px solid var(--line-default); display:inline-flex; align-items:center; justify-content:center; font-size:18px; color:var(--ink-2); transition:transform .32s var(--ease-out),background .32s,color .32s; flex:0 0 36px; margin-left:24px; }
-    .faq-item[open] .ic { background:var(--ink); color:var(--bg-page); border-color:var(--ink); transform:rotate(45deg); }
-    .faq-item .answer { padding:0 60px 28px 0; font-size:15px; line-height:1.7; color:var(--ink-2); max-width:720px; }
+    .faq-artikel { border-bottom:1px solid var(--line-default); }
+    .faq-artikel summary { list-style:none; padding:24px 0; display:flex; align-artikelen:center; justify-content:space-between; cursor:pointer; font-size:20px; line-height:1.3; }
+    .faq-artikel summary::-webkit-details-marker { display:none; }
+    .faq-artikel .ic { width:36px; height:36px; border-radius:50%; border:1px solid var(--line-default); display:inline-flex; align-artikelen:center; justify-content:center; font-size:18px; color:var(--ink-2); transition:transform .32s var(--ease-out),background .32s,color .32s; flex:0 0 36px; margin-left:24px; }
+    .faq-artikel[open] .ic { background:var(--ink); color:var(--bg-page); border-color:var(--ink); transform:rotate(45deg); }
+    .faq-artikel .answer { padding:0 60px 28px 0; font-size:15px; line-height:1.7; color:var(--ink-2); max-width:720px; }
 
     /* inci */
     .inci { margin:36px 56px 0; border:1px solid var(--line-soft); background:var(--bg-elev); border-radius:var(--radius-card); }
-    .inci summary { padding:24px 28px; display:flex; justify-content:space-between; align-items:center; cursor:pointer; list-style:none; font-size:14px; letter-spacing:0.22em; text-transform:uppercase; }
+    .inci summary { padding:24px 28px; display:flex; justify-content:space-between; align-artikelen:center; cursor:pointer; list-style:none; font-size:14px; letter-spacing:0.22em; text-transform:uppercase; }
     .inci summary::-webkit-details-marker { display:none; }
     .inci .body { padding:0 28px 28px; font-size:13px; line-height:1.8; color:var(--ink-2); }
 
     /* pair with */
     .pair-with { margin:96px 56px 0; }
-    .pair-with .sec-head { display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:28px; }
-    .pair-with .eb { font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink-3); margin-bottom:12px; display:flex; align-items:center; gap:10px; }
+    .pair-with .sec-head { display:flex; align-artikelen:end; justify-content:space-between; gap:24px; margin-bottom:28px; }
+    .pair-with .eb { font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink-3); margin-bottom:12px; display:flex; align-artikelen:center; gap:10px; }
     .pair-with .eb:
     .pair-with h3 { margin:0; font-size:36px; line-height:1.06; font-weight:300; }
     .pair-with h3 em { font-style:italic; }
@@ -201,19 +201,19 @@
     .pair-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
     .pcard { background:var(--bg-elev); border:1px solid var(--line-soft); border-radius:var(--radius-card); padding:14px 14px 20px; cursor:pointer; transition:transform .42s var(--ease-out),box-shadow .42s var(--ease-out); display:block; }
     .pcard:hover { transform:translateY(-3px); box-shadow:0 22px 40px -22px rgba(26,26,26,0.2); }
-    .pcard .pic2 { height:240px; border-radius:20px; display:flex; align-items:center; justify-content:center; }
+    .pcard .pic2 { height:240px; border-radius:20px; display:flex; align-artikelen:center; justify-content:center; }
     .pcard .pic2 img { width:70%; height:70%; object-fit:contain; border-radius:20px; background:#fff; display:block; }
     .pcard .m { padding:16px 4px 0; }
     .pcard .nm { font-size:17px; }
     .pcard .sb { font-size:12px; letter-spacing:0.18em; text-transform:uppercase; color:var(--ink-3); margin-top:4px; }
-    .pcard .pr { display:flex; justify-content:space-between; align-items:center; margin-top:14px; }
+    .pcard .pr { display:flex; justify-content:space-between; align-artikelen:center; margin-top:14px; }
     .pcard .pr .price { font-size:16px; }
     .pcard .pr .add { font-size:11px; letter-spacing:0.22em; text-transform:uppercase; padding:8px 12px; border-radius:999px; border:1px solid var(--line-default); background:transparent; }
 
     /* footer */
     .foot-wrap { margin-top:128px; background:#FAF5EC; color:#2A2620; }
     .foot-wrap .page { background: #FAF5EC; }
-    .foot-top { padding:80px 56px 56px; display:grid; grid-template-columns:1.2fr 1px 1fr 1px 1fr; gap:48px; align-items:stretch; }
+    .foot-top { padding:80px 56px 56px; display:grid; grid-template-columns:1.2fr 1px 1fr 1px 1fr; gap:48px; align-artikelen:stretch; }
     .foot-divider { width:1px; background:rgba(42,38,32,0.22); align-self:center; height:60%; }
     .foot-col h5 { margin:0 0 22px; font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:rgba(42,38,32,0.6); font-weight:300; }
     .foot-wm { font-size:30px; letter-spacing:0.34em; color:#2A2620; margin-bottom:18px; }
@@ -222,21 +222,21 @@
     .foot-contact a { border-bottom:1px solid rgba(42,38,32,0.25); }
     .foot-contact a:hover { border-bottom-color:#2A2620; }
     .foot-socials { margin-top:24px; display:inline-flex; gap:10px; }
-    .foot-socials .circ { width:38px; height:38px; border-radius:50%; border:1px solid rgba(42,38,32,0.25); display:inline-flex; align-items:center; justify-content:center; transition:background .28s ease; }
+    .foot-socials .circ { width:38px; height:38px; border-radius:50%; border:1px solid rgba(42,38,32,0.25); display:inline-flex; align-artikelen:center; justify-content:center; transition:background .28s ease; }
     .foot-socials .circ svg { width:16px; height:16px; stroke:#2A2620; fill:none; stroke-width:1.4; }
     .foot-socials .circ:hover { background:#2A2620; }
     .foot-socials .circ:hover svg { stroke:#FAF5EC; }
-    .newsletter { margin-top:6px; display:flex; align-items:center; border-bottom:1px solid rgba(42,38,32,0.3); padding-bottom:10px; max-width:320px; }
+    .newsletter { margin-top:6px; display:flex; align-artikelen:center; border-bottom:1px solid rgba(42,38,32,0.3); padding-bottom:10px; max-width:320px; }
     .newsletter input { flex:1; background:transparent; border:0; outline:0; font-family:inherit; font-weight:300; font-size:14px; color:#2A2620; }
     .newsletter input::placeholder { color:rgba(42,38,32,0.5); }
     .newsletter button { background:transparent; border:0; padding:0; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:#2A2620; cursor:pointer; }
     .foot-col ul { list-style:none; margin:0; padding:0; }
     .foot-col li { padding:6px 0; font-size:15px; }
     .foot-col li a:hover { opacity:0.6; }
-    .foot-bot { border-top:1px solid rgba(42,38,32,0.2); padding:24px 56px 32px; display:flex; align-items:center; justify-content:space-between; gap:24px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:rgba(42,38,32,0.7); }
-    .pay { display:inline-flex; align-items:center; gap:10px; }
+    .foot-bot { border-top:1px solid rgba(42,38,32,0.2); padding:24px 56px 32px; display:flex; align-artikelen:center; justify-content:space-between; gap:24px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:rgba(42,38,32,0.7); }
+    .pay { display:inline-flex; align-artikelen:center; gap:10px; }
     .pay .chip { padding:6px 10px; background:rgba(255,255,255,0.4); border:1px solid rgba(42,38,32,0.18); border-radius:6px; font-size:10px; letter-spacing:0.18em; }
-    .lang-foot { display:inline-flex; gap:10px; align-items:center; }
+    .lang-foot { display:inline-flex; gap:10px; align-artikelen:center; }
     .lang-foot .sep { opacity:0.4; }
 
     /* toast */
@@ -266,7 +266,7 @@
       .pair-with { margin:48px 24px 0; }
       .pair-grid { grid-template-columns:1fr 1fr; }
       .foot-top { padding:48px 24px 32px; grid-template-columns:1fr; gap:40px; }
-      .foot-bot { padding:20px 24px 24px; flex-direction:column; align-items:flex-start; gap:12px; }
+      .foot-bot { padding:20px 24px 24px; flex-direction:column; align-artikelen:flex-start; gap:12px; }
       .crumbs { padding:16px 24px 0; }
     }
   
@@ -300,25 +300,25 @@
 <div id="toast"></div>
 
 <div class="announce">
-    <span>Free shipping over €100</span>
+    <span>Gratis verzending vanaf €100</span>
     <span class="dot">·</span>
-    <span>All products COSMOS Natural Certified · Vegan</span>
+    <span>All producten COSMOS Natuurlijk Gecertificeerd · Veganistisch</span>
   </div>
 
 <header class="nav">
   <a href="index.html" class="wordmark">S E S E</a>
   <nav class="nav-center">
-      <a href="collection.html">Shop</a>
+      <a href="collection.html">Winkel</a>
       <a href="collection.html#bundles">Routines</a>
       <a href="collection.html#cleanse">Cleanse &amp; Prep</a>
       <a href="collection.html#serums">Serums</a>
       <a href="collection.html#moisturize">Moisturize</a>
-      <a href="about.html">About</a>
+      <a href="about.html">Over ons</a>
     </nav>
   <div class="nav-right">
     <span class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
-    <span><span style="font-weight:400">EN</span> · <a href="nl/product.html" style="color:inherit;opacity:0.5">NL</a> · <a href="fr/product.html" style="color:inherit;opacity:0.5">FR</a></span>
-    <button class="cart-btn" id="cart-btn"><span class="cart-dot"></span><span>Cart</span></button>
+    <span><a href="../product.html" style="color:inherit;opacity:0.5">EN</a> · <span style="font-weight:400">NL</span> · <a href="../fr/product.html" style="color:inherit;opacity:0.5">FR</a></span>
+    <button class="cart-btn" id="cart-btn"><span class="cart-dot"></span><span>Winkelwagen</span></button>
   </div>
 </header>
 
@@ -337,10 +337,10 @@ const PRODUCTS = {
     tagline: 'Removes the day gently, leaves the barrier intact — the kind of cleanse that feels like almost nothing happened, except everything that needed to go is gone.',
     chips: ['Gel-to-foam','Gentle','AM / PM','All skin types'],
     color: '#E3EEF5',
-    img: 'project/assets/products-new/cleansing-foam-hp.png',
+    img: 'project/assets/producten-new/cleansing-foam-hp.png',
     imgs: [
-      { src:'project/assets/products-new/cleansing-foam-hp.png', bg:'#E3EEF5' },
-      { src:'project/assets/products-new/cleansing-foam-textuur.jpg', bg:'#EDF4F8' },
+      { src:'project/assets/producten-new/cleansing-foam-hp.png', bg:'#E3EEF5' },
+      { src:'project/assets/producten-new/cleansing-foam-textuur.jpg', bg:'#EDF4F8' },
     ],
     sku: 'No. 01 · Cleanse', size: '150 ml',
     quickInfo: [['Gentle formula','Sulfate-free'],['Use AM & PM','First step, both routines']],
@@ -354,7 +354,7 @@ const PRODUCTS = {
     ],
     ingTitle: 'Clean start, <em>calm finish.</em>',
     howTitle: 'Twenty seconds. <em>Twice a day.</em>',
-    howSteps: [
+    howStaps: [
       { h:'Wet your face', p:'Lukewarm water opens the pores gently. Cool water is fine for the morning rinse.' },
       { h:'One to two pumps', p:'Work the gel between your palms first — it transforms into a light foam with just a little water.' },
       { h:'Massage in slow circles', p:'Thirty seconds is enough. Focus on the T-zone and jaw, be gentle around eyes.' },
@@ -383,10 +383,10 @@ const PRODUCTS = {
     tagline: 'A weightless mist that resets skin\'s pH and opens the door for everything that follows — preps in thirty seconds, works for hours.',
     chips: ['Weightless mist','pH-balancing','AM / PM','All skin types'],
     color: '#E6EFE9',
-    img: 'project/assets/products-new/hydrating-toner-hp.png',
+    img: 'project/assets/producten-new/hydrating-toner-hp.png',
     imgs: [
-      { src:'project/assets/products-new/hydrating-toner-hp.png', bg:'#E6EFE9' },
-      { src:'project/assets/products-new/hydrating-toner-textuur.jpg', bg:'#ECF3EC' },
+      { src:'project/assets/producten-new/hydrating-toner-hp.png', bg:'#E6EFE9' },
+      { src:'project/assets/producten-new/hydrating-toner-textuur.jpg', bg:'#ECF3EC' },
     ],
     sku: 'No. 02 · Tone', size: '200 ml',
     quickInfo: [['All skin types','Alcohol-free'],['After cleansing','Before serum & cream']],
@@ -400,7 +400,7 @@ const PRODUCTS = {
     ],
     ingTitle: 'The bridge <em>between clean and treated.</em>',
     howTitle: 'Mist. Pat. Done.',
-    howSteps: [
+    howStaps: [
       { h:'Cleanse first', p:'Always apply to freshly cleansed skin. Toner on uncleansed skin just layers residue.' },
       { h:'Mist or pour and pat', p:'Hold 20 cm from face and mist evenly, or pour a small amount and press gently into skin with clean palms.' },
       { h:'No rubbing, no cotton pads', p:'Cotton pads absorb product and drag skin. Palms press it in without waste.' },
@@ -429,10 +429,10 @@ const PRODUCTS = {
     tagline: 'A stable 12% ascorbic acid that brightens without burning — the morning glow you build over weeks, not the kind you borrow.',
     chips: ['Brightens','Evens tone','AM only','Stable 12% VC'],
     color: '#FCEAD0',
-    img: 'project/assets/products-new/vitamin-c-serum-hp.png',
+    img: 'project/assets/producten-new/vitamin-c-serum-hp.png',
     imgs: [
-      { src:'project/assets/products-new/vitamin-c-serum-hp.png', bg:'#FCEAD0' },
-      { src:'project/assets/products-new/vitamin-c-serum-textuur.jpg', bg:'#FEF0E0' },
+      { src:'project/assets/producten-new/vitamin-c-serum-hp.png', bg:'#FCEAD0' },
+      { src:'project/assets/producten-new/vitamin-c-serum-textuur.jpg', bg:'#FEF0E0' },
     ],
     sku: 'No. 03 · Treat · AM', size: '30 ml',
     quickInfo: [['Morning use only','Pairs with SPF 50'],['All skin types','Patch-test if reactive']],
@@ -446,7 +446,7 @@ const PRODUCTS = {
     ],
     ingTitle: 'Stable actives, <em>honest results.</em>',
     howTitle: 'Three drops. <em>Every morning.</em>',
-    howSteps: [
+    howStaps: [
       { h:'After cleansing and toner', p:'Apply to clean, toned skin. Vitamin C absorbs best on a pH-balanced base.' },
       { h:'Warm three drops in your palms', p:'Press firmly across cheeks, forehead, chin and neck. Pat — don\'t rub.' },
       { h:'Wait sixty seconds', p:'Let the serum absorb fully before layering moisturiser on top.' },
@@ -475,10 +475,10 @@ const PRODUCTS = {
     tagline: 'Firms, smooths and supports skin\'s natural elasticity — a quiet, daily firming that earns its keep over weeks, not minutes.',
     chips: ['Firms','Smooths','AM / PM','All skin types'],
     color: '#FCEAD0',
-    img: 'project/assets/products-new/peptide-serum-hp.png',
+    img: 'project/assets/producten-new/peptide-serum-hp.png',
     imgs: [
-      { src:'project/assets/products-new/peptide-serum-hp.png', bg:'#FCEAD0' },
-      { src:'project/assets/products-new/peptide-serum-textuur.jpg', bg:'#FEF0E0' },
+      { src:'project/assets/producten-new/peptide-serum-hp.png', bg:'#FCEAD0' },
+      { src:'project/assets/producten-new/peptide-serum-textuur.jpg', bg:'#FEF0E0' },
     ],
     sku: 'No. 03 · Treat', size: '30 ml',
     quickInfo: [['All skin types','Fragrance-free'],['Use AM & PM','After toner, before cream']],
@@ -492,7 +492,7 @@ const PRODUCTS = {
     ],
     ingTitle: 'Honest helpers, <em>not heroes.</em>',
     howTitle: 'Three slow drops, <em>twice a day.</em>',
-    howSteps: [
+    howStaps: [
       { h:'Cleanse and tone', p:'Start on a clean, slightly damp face. SESE Cleansing Foam, then a mist of Hydrating Toner.' },
       { h:'Warm three to four drops', p:'Press the pump and warm the serum between fingertips. Pat — never rub — across cheeks, forehead, neck.' },
       { h:'Let it settle, then layer', p:'Wait ~60 seconds. Follow with Firming Day Cream in the morning, Ceramide Night Cream in the evening.' },
@@ -522,10 +522,10 @@ const PRODUCTS = {
     tagline: 'The renewal of retinol without the sting — Bakuchiol and PHAs that smooth fine lines gently, for the skin that wants results without a transition phase.',
     chips: ['Renews','Smooths lines','PM use','Sensitive-safe'],
     color: '#F5EAE4',
-    img: 'project/assets/products-new/retinol-alt-serum-hp.png',
+    img: 'project/assets/producten-new/retinol-alt-serum-hp.png',
     imgs: [
-      { src:'project/assets/products-new/retinol-alt-serum-hp.png', bg:'#F5EAE4' },
-      { src:'project/assets/products-new/retinol-alt-serum-textuur.jpg', bg:'#EFE0D8' },
+      { src:'project/assets/producten-new/retinol-alt-serum-hp.png', bg:'#F5EAE4' },
+      { src:'project/assets/producten-new/retinol-alt-serum-textuur.jpg', bg:'#EFE0D8' },
     ],
     sku: 'No. 03 · Treat · PM', size: '30 ml',
     quickInfo: [['Evening use only','Sensitive skin welcome'],['After toner','Before night cream']],
@@ -539,7 +539,7 @@ const PRODUCTS = {
     ],
     ingTitle: 'Renewal without <em>the reaction.</em>',
     howTitle: 'Evening only. <em>One step before bed.</em>',
-    howSteps: [
+    howStaps: [
       { h:'Evening routine only', p:'Apply after cleansing and toning. Bakuchiol can cause mild photosensitivity — evenings only.' },
       { h:'Three to four drops, patted in', p:'Warm between palms, press across the full face, neck, and décolleté. Don\'t rush.' },
       { h:'Wait, then layer night cream', p:'Allow sixty seconds for the serum to absorb, then apply Ceramide Night Cream on top.' },
@@ -568,10 +568,10 @@ const PRODUCTS = {
     tagline: 'Light enough to wear under makeup, firm enough to matter — a day cream that holds the work of your serum in place and keeps moisture in for eight hours.',
     chips: ['Firms','Light texture','AM use','Normal to dry'],
     color: '#FCE8EB',
-    img: 'project/assets/products-new/firming-day-cream-hp.png',
+    img: 'project/assets/producten-new/firming-day-cream-hp.png',
     imgs: [
-      { src:'project/assets/products-new/firming-day-cream-hp.png', bg:'#FCE8EB' },
-      { src:'project/assets/products-new/ceramide-night-cream-textuur.jpg', bg:'#F5DEE2' },
+      { src:'project/assets/producten-new/firming-day-cream-hp.png', bg:'#FCE8EB' },
+      { src:'project/assets/producten-new/ceramide-night-cream-textuur.jpg', bg:'#F5DEE2' },
     ],
     sku: 'No. 04 · Moisturise · AM', size: '50 ml',
     quickInfo: [['Normal to dry skin','Under makeup or SPF'],['Morning use','After serum, before SPF']],
@@ -585,7 +585,7 @@ const PRODUCTS = {
     ],
     ingTitle: 'Light but <em>genuinely moisturising.</em>',
     howTitle: 'One step between <em>serum and SPF.</em>',
-    howSteps: [
+    howStaps: [
       { h:'After your morning serum', p:'Apply after the serum has absorbed — about sixty seconds after patting it in.' },
       { h:'Pea-size amount, warmed first', p:'Take a pea-sized amount and warm it between fingertips before pressing into skin. It melts in.' },
       { h:'Face, neck, décolleté', p:'Don\'t stop at the jaw. Press upward and outward. The neck ages as fast as the face.' },
@@ -614,10 +614,10 @@ const PRODUCTS = {
     tagline: 'While you sleep, ceramides rebuild what the day took — a repair cream that earns its rest and leaves skin softer by morning.',
     chips: ['Repairs barrier','Rich texture','PM use','Dry & mature'],
     color: '#EFDFC2',
-    img: 'project/assets/products-new/ceramide-night-cream-hp.png',
+    img: 'project/assets/producten-new/ceramide-night-cream-hp.png',
     imgs: [
-      { src:'project/assets/products-new/ceramide-night-cream-hp.png', bg:'#EFDFC2' },
-      { src:'project/assets/products-new/firming-day-cream-textuur.jpg', bg:'#F5EAD0' },
+      { src:'project/assets/producten-new/ceramide-night-cream-hp.png', bg:'#EFDFC2' },
+      { src:'project/assets/producten-new/firming-day-cream-textuur.jpg', bg:'#F5EAD0' },
     ],
     sku: 'No. 04 · Moisturise · PM', size: '50 ml',
     quickInfo: [['Dry & mature skin','Fragrance-free'],['Evening use','Last step of PM routine']],
@@ -631,7 +631,7 @@ const PRODUCTS = {
     ],
     ingTitle: 'Ceramides that rebuild. <em>Overnight.</em>',
     howTitle: 'The last step. <em>Every evening.</em>',
-    howSteps: [
+    howStaps: [
       { h:'After your evening serum', p:'Apply as the final step of your evening routine — after cleansing, toning, and serum.' },
       { h:'A generous amount', p:'This is the night — don\'t be conservative. A little more than the day cream, pressed in firmly.' },
       { h:'Neck and décolleté too', p:'The neck loses ceramides and collagen just as fast. Extend down to the chest.' },
@@ -660,10 +660,10 @@ const PRODUCTS = {
     tagline: 'The eye area tells a different story — this one softens the line, reduces the dark, and does it gently enough for the most delicate skin on your face.',
     chips: ['Cools','Brightens','AM / PM','Gentle tap'],
     color: '#C9D7C9',
-    img: 'project/assets/products-new/smoothing-eye-cream-hp.png',
+    img: 'project/assets/producten-new/smoothing-eye-cream-hp.png',
     imgs: [
-      { src:'project/assets/products-new/smoothing-eye-cream-hp.png', bg:'#C9D7C9' },
-      { src:'project/assets/products-new/smoothing-eye-cream-textuur.jpg', bg:'#D8E4D8' },
+      { src:'project/assets/producten-new/smoothing-eye-cream-hp.png', bg:'#C9D7C9' },
+      { src:'project/assets/producten-new/smoothing-eye-cream-textuur.jpg', bg:'#D8E4D8' },
     ],
     sku: 'Targeted · Eye', size: '15 ml',
     quickInfo: [['Delicate eye area','No fragrance, no essential oils'],['Use AM & PM','Tap gently — never rub']],
@@ -677,7 +677,7 @@ const PRODUCTS = {
     ],
     ingTitle: 'Targeted actives for <em>delicate skin.</em>',
     howTitle: 'Ring finger. <em>Tap, don\'t rub.</em>',
-    howSteps: [
+    howStaps: [
       { h:'After serum, before moisturiser', p:'Apply after serums have absorbed but before day or night cream.' },
       { h:'Ring finger only', p:'The ring finger exerts the least pressure. This area has no subcutaneous fat — drag causes damage over time.' },
       { h:'Dot and tap along the orbital bone', p:'Apply small dots along the orbital bone (the bony ridge under and above the eye). Tap to blend — never drag inward.' },
@@ -706,10 +706,10 @@ const PRODUCTS = {
     tagline: 'The step most skipped, the step that matters most — a mineral SPF 50 in a pocket stick for faces that forget, then remember.',
     chips: ['SPF 50','Mineral filter','No white cast','Reapply-easy'],
     color: '#E8D5B0',
-    img: 'project/assets/products-new/spf50-stick-hp.png',
+    img: 'project/assets/producten-new/spf50-stick-hp.png',
     imgs: [
-      { src:'project/assets/products-new/spf50-stick-hp.png', bg:'#E8D5B0' },
-      { src:'project/assets/products-new/spf50-stick-textuur.jpg', bg:'#F0E2C0' },
+      { src:'project/assets/producten-new/spf50-stick-hp.png', bg:'#E8D5B0' },
+      { src:'project/assets/producten-new/spf50-stick-textuur.jpg', bg:'#F0E2C0' },
     ],
     sku: 'No. 05 · Protect', size: '12 g',
     quickInfo: [['Morning — final step','Reapply every 2h outdoors'],['UVA/UVB protection','']],
@@ -723,7 +723,7 @@ const PRODUCTS = {
     ],
     ingTitle: 'Mineral filters. <em>Nothing else to worry about.</em>',
     howTitle: 'Last step. <em>Every single morning.</em>',
-    howSteps: [
+    howStaps: [
       { h:'Final step of morning routine', p:'After moisturiser or day cream has absorbed. SPF on top of everything — not under.' },
       { h:'Two to three swipes per zone', p:'Swipe directly across forehead, each cheek, nose, chin. Then blend lightly with fingertips.' },
       { h:'Don\'t forget ears and neck', p:'UV damage is cumulative everywhere. Two extra seconds per side.' },
@@ -742,7 +742,7 @@ const PRODUCTS = {
       { q:'Is it suitable for children?', a:'Mineral-only SPF is generally considered safer for children\'s skin. However, this formula is designed and tested for adult facial use. For children, consult a paediatric dermatologist.' },
     ],
     inci: 'Zinc Oxide (20%), Titanium Dioxide (5%), Caprylic/Capric Triglyceride, Butyrospermum Parkii (Shea) Butter, Simmondsia Chinensis (Jojoba) Seed Oil, Candelilla Cera, Euphorbia Cerifera (Candelilla) Wax, Tocopherol, Mica, CI 77491, CI 77492.',
-    inciNote: '78.4% naturally derived. Vegan formula. No chemical UV filters, fragrance, or oxybenzone.',
+    inciNote: '78.4% naturally derived. Veganistisch formula. No chemical UV filters, fragrance, or oxybenzone.',
     pairs: ['firming-day-cream','vitamin-c-serum','peptide-serum','hydrating-toner'],
   },
 };
@@ -768,7 +768,7 @@ const ROUTINE_STEPS = [
 ];
 
 // =============================================================
-//  TRUSTPILOT (fill in once the store is live on Shopify)
+//  TRUSTPILOT (fill in once the store is live on Winkelify)
 // =============================================================
 const TRUSTPILOT_URL = 'https://www.trustpilot.com/review/YOUR_STORE.myshopify.com';
 
@@ -795,9 +795,9 @@ function isConfigured() {
 }
 
 // =============================================================
-//  Direct-to-Shopify-cart links
+//  Direct-to-Winkelify-cart links
 // =============================================================
-function shopifyCartAddUrl(variantId, quantity = 1) {
+function shopifyWinkelwagenAddUrl(variantId, quantity = 1) {
   const numericId = variantId.split('/').pop();
   return `https://${SHOPIFY.domain}/cart/add?id=${numericId}&quantity=${quantity}&return_to=https://sese-8214.myshopify.com/cart`;
 }
@@ -821,7 +821,7 @@ function renderPage(key) {
 
   // crumbs
   document.getElementById('crumbs').innerHTML =
-    `<a href="index.html">Shop</a><span class="sep">·</span><span class="cur">${p.name}</span>`;
+    `<a href="index.html">Winkel</a><span class="sep">·</span><span class="cur">${p.name}</span>`;
 
   const root = document.getElementById('pdp-root');
 
@@ -839,7 +839,7 @@ function renderPage(key) {
   ).join('');
 
   // routine strip
-  const routineSteps = ROUTINE_STEPS.map((s,i) => {
+  const routineStaps = ROUTINE_STEPS.map((s,i) => {
     const isActive = i === p.routineActive;
     return `<div class="step${isActive?' active':''}"><div class="n">${s.n}${isActive?' · This':''}</div><div class="l">${s.l}</div></div>`;
   }).join('');
@@ -850,7 +850,7 @@ function renderPage(key) {
   ).join('');
 
   // how to use
-  const howHtml = p.howSteps.map((s,i) =>
+  const howHtml = p.howStaps.map((s,i) =>
     `<div class="step2"><span class="num">0${i+1}</span><div><div class="h">${s.h}</div><div class="p">${s.p}</div></div></div>`
   ).join('');
 
@@ -861,7 +861,7 @@ function renderPage(key) {
 
   // faqs
   const faqsHtml = p.faqs.map((f,i) =>
-    `<details class="faq-item"${i===0?' open':''}><summary>${f.q}<span class="ic">+</span></summary><div class="answer">${f.a}</div></details>`
+    `<details class="faq-artikel"${i===0?' open':''}><summary>${f.q}<span class="ic">+</span></summary><div class="answer">${f.a}</div></details>`
   ).join('');
 
   // pairs
@@ -899,7 +899,7 @@ function renderPage(key) {
       <div class="pricing">
         <span class="now">${p.price}</span>
         <span class="vol">${p.vol} · ${p.volPrice}</span>
-        <span class="stock"><span class="d"></span>In stock · Ships 1–2 days</span>
+        <span class="stock"><span class="d"></span>Op voorraad · Ships 1–2 days</span>
       </div>
       <div class="buy-row">
         <div class="qty">
@@ -908,14 +908,14 @@ function renderPage(key) {
           <button id="qty-plus">+</button>
         </div>
         <button class="add-cart" id="add-cart-btn">
-          <span>Add to cart</span>
+          <span>In winkelwagen</span>
           <span class="right"><span id="add-price">${p.price}</span><span style="font-size:13px;">→</span></span>
         </button>
       </div>
       <div class="ship-line">
-        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="9" rx="1.5"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></span>Free shipping over €100</span>
+        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="9" rx="1.5"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></span>Gratis verzending vanaf €100</span>
         <span style="opacity:0.4;">·</span>
-        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>COSMOS Natural Certified</span>
+        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>COSMOS Natuurlijk Gecertificeerd</span>
       </div>
       <div class="quick-cards">${quickHtml}</div>
     </aside>
@@ -924,20 +924,20 @@ function renderPage(key) {
   <!-- Routine strip -->
   ${p.routineActive >= 0 ? `
   <section class="routine-strip">
-    <div class="heading"><div class="eb">Where it fits</div><h3>Step <em>${ROUTINE_STEPS[p.routineActive].n} · ${ROUTINE_STEPS[p.routineActive].l}</em> in the SESE ritual.</h3></div>
-    <div class="steps">${routineSteps}</div>
+    <div class="heading"><div class="eb">Where it fits</div><h3>Stap <em>${ROUTINE_STEPS[p.routineActive].n} · ${ROUTINE_STEPS[p.routineActive].l}</em> in het SESE ritueel.</h3></div>
+    <div class="steps">${routineStaps}</div>
     <div class="cta"><a href="bundle-contents.html?b=full-ritual">See the full ritual →</a></div>
   </section>` : ''}
 
-  <!-- How to use + FAQ -->
+  <!-- Gebruiksaanwijzing + Veelgestelde vragen -->
   <section class="section-grid">
     <div>
-      <div class="eb">How to use</div>
+      <div class="eb">Gebruiksaanwijzing</div>
       <h2>${p.howTitle}</h2>
       <div class="howto"><div class="steps2">${howHtml}</div></div>
     </div>
     <div>
-      <div class="eb">Honest answers</div>
+      <div class="eb">Eerlijke antwoorden</div>
       <h2>${p.faqTitle}</h2>
       <div class="faq-list">${faqsHtml}</div>
     </div>
@@ -945,8 +945,8 @@ function renderPage(key) {
 
   <!-- Certs -->
   <section class="certs">
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natural</div><div class="s">Certified</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12c2-4 5-6 7-6s5 2 7 6c-2 4-5 6-7 6s-5-2-7-6z"/><circle cx="12" cy="12" r="2"/></svg></span><div><div class="t">Vegan</div><div class="s">No animal derivatives</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natureel</div><div class="s">Certified</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12c2-4 5-6 7-6s5 2 7 6c-2 4-5 6-7 6s-5-2-7-6z"/><circle cx="12" cy="12" r="2"/></svg></span><div><div class="t">Veganistisch</div><div class="s">No animal derivatives</div></div></div>
     <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0v3l1 2H4l1-2v-3z"/><path d="M10 19a2 2 0 004 0"/></svg></span><div><div class="t">Cruelty-free</div><div class="s">Leaping Bunny</div></div></div>
     <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Gluten-free</div><div class="s">Tested formula</div></div></div>
     <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Coastal botanicals</div></div></div>
@@ -980,7 +980,7 @@ function renderPage(key) {
   <section class="pair-with">
     <div class="sec-head">
       <div><div class="eb">Make it a ritual</div><h3>Pairs <em>quietly</em> with.</h3></div>
-      <a href="index.html" class="all">Shop all products →</a>
+      <a href="index.html" class="all">Winkel all producten →</a>
     </div>
     <div class="pair-grid">${pairsHtml}</div>
   </section>
@@ -1001,38 +1001,38 @@ function renderPage(key) {
             <a class="circ" href="#" title="Pinterest"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M11 7c2 0 4 1.5 4 4s-1.5 4-3.5 4c-.8 0-1.5-.4-1.7-1l-.5 2.5L8 21"/></svg></a>
           </div>
           <div style="margin-top:28px">
-            <h5 style="margin-bottom:10px">Newsletter</h5>
+            <h5 style="margin-bottom:10px">Nieuwsbrief</h5>
             <form class="newsletter" onsubmit="event.preventDefault()">
-              <input type="email" placeholder="Your email" />
-              <button type="submit">Subscribe &rarr;</button>
+              <input type="email" placeholder="Jouw e-mail" />
+              <button type="submit">Inschrijven &rarr;</button>
             </form>
           </div>
         </div>
         <div class="foot-divider"></div>
         <div class="foot-col">
-          <h5>Customer Service</h5>
+          <h5>Klantenservice</h5>
           <ul>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faq.html">Veelgestelde vragen</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="shipping.html">Shipping &amp; Delivery</a></li>
             <li><a href="returns.html">Returns &amp; Refunds</a></li>
-            <li><a href="#">Track my order</a></li>
+            <li><a href="#">Volg mijn bestelling</a></li>
           </ul>
         </div>
         <div class="foot-divider"></div>
         <div class="foot-col">
-          <h5>About &amp; Policies</h5>
+          <h5>Over ons &amp; Policies</h5>
           <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="about.html">Over ons Us</a></li>
+            <li><a href="privacy.html">Privacybeleid</a></li>
             <li><a href="terms.html">Terms &amp; Conditions</a></li>
-            <li><a href="withdrawal.html">Right of Withdrawal</a></li>
-            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="withdrawal.html">Herroepingsrecht</a></li>
+            <li><a href="cookie-policy.html">Cookiebeleid</a></li>
           </ul>
         </div>
       </div>
       <div class="foot-bot">
-        <div>© 2026 SESE · Based in Belgium</div>
+        <div>© 2026 SESE · Gevestigd in België</div>
         <div class="pay">
           <span class="chip">VISA</span>
           <span class="chip">Mastercard</span>
@@ -1041,7 +1041,7 @@ function renderPage(key) {
           <span class="chip">Apple&nbsp;Pay</span>
         </div>
         <div class="lang-foot">
-          <span>NL</span><span class="sep">·</span><span style="color:#2A2620;font-weight:400">EN</span><span class="sep">·</span><span>FR</span>
+          <span>NL</span><span class="sep">·</span><a href="../product.html" style="color:#2A2620;opacity:0.5">EN</a><span class="sep">·</span><a href="../fr/product.html" style="color:#2A2620;opacity:0.5">FR</a>
         </div>
       </div>
     </div>
@@ -1054,9 +1054,9 @@ function renderPage(key) {
 function renderNotFound() {
   document.getElementById('pdp-root').innerHTML = `
     <div class="not-found">
-      <h2>Product not found.</h2>
+      <h2>Product niet gevonden.</h2>
       <p>The product you're looking for doesn't exist or has been moved.</p>
-      <a href="index.html" class="btn btn--dark">Back to shop</a>
+      <a href="index.html" class="btn btn--dark">Terug naar de winkel</a>
     </div>`;
 }
 
@@ -1080,19 +1080,19 @@ function bindEvents(key, p) {
   document.getElementById('qty-minus').addEventListener('click', () => { qty = Math.max(1, qty-1); document.getElementById('qty-val').textContent = qty; });
   document.getElementById('qty-plus').addEventListener('click',  () => { qty++; document.getElementById('qty-val').textContent = qty; });
 
-  // add to cart (main) — link straight to the Shopify cart
+  // add to cart (main) — link straight to the Winkelify cart
   document.getElementById('add-cart-btn').addEventListener('click', () => {
     const variantId = SHOPIFY.variants[key];
     if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
-      showToast('Configure Shopify variant IDs to enable checkout.');
+      showToast('Configure Winkelify variant IDs to enable checkout.');
       return;
     }
-    SESECart.add(p.key, qty); showToast('Added to cart.'); btn.classList.add('added'); btn.querySelector('.right').textContent = 'Added ✓'; setTimeout(() => { btn.classList.remove('added'); btn.querySelector('.right').textContent = '→'; }, 2000);
+    SESEWinkelwagen.add(p.key, qty); showToast('Added to cart.'); btn.classList.add('added'); btn.querySelector('.right').textContent = 'Added ✓'; setTimeout(() => { btn.classList.remove('added'); btn.querySelector('.right').textContent = '→'; }, 2000);
   });
 
   // cart button in nav
   document.getElementById('cart-btn').addEventListener('click', () => {
-    if (!isConfigured()) { showToast('Configure Shopify to enable checkout.'); return; }
+    if (!isConfigured()) { showToast('Configure Winkelify to enable checkout.'); return; }
     window.location.href = 'cart.html';
   });
 
@@ -1104,10 +1104,10 @@ function bindEvents(key, p) {
       const pid = btn.dataset.product;
       const variantId = SHOPIFY.variants[pid];
       if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
-        showToast('Configure Shopify to enable checkout.');
+        showToast('Configure Winkelify to enable checkout.');
         return;
       }
-      SESECart.add(pid); showToast('Added to cart.');
+      SESEWinkelwagen.add(pid); showToast('Added to cart.');
     });
   });
 }
@@ -1116,6 +1116,6 @@ function bindEvents(key, p) {
 const key = new URLSearchParams(location.search).get('p') || '';
 renderPage(key);
 </script>
-<script src="project/js/sese-cart.js"></script>
+<script src="../project/js/sese-cart.js"></script>
 </body>
 </html>

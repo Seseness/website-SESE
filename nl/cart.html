@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cart — SESE</title>
+  <title>Winkelwagen — SESE</title>
   <style>
     @font-face {
       font-family: "Todes";
-      src: url("project/fonts/Todes-Light.otf") format("opentype");
+      src: url("../project/fonts/Todes-Light.otf") format("opentype");
       font-weight: 300; font-style: normal; font-display: swap;
     }
     :root {
@@ -31,34 +31,34 @@
     .announce .dot { opacity: 0.45; margin: 0 16px; }
 
     /* Nav */
-    .nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 26px 56px; background: var(--bg-nav); border-bottom: 1px solid var(--line-soft); }
+    .nav { display: grid; grid-template-columns: 1fr auto 1fr; align-artikelen: center; padding: 26px 56px; background: var(--bg-nav); border-bottom: 1px solid var(--line-soft); }
     .wordmark { font-size: 26px; letter-spacing: 0.34em; color: var(--ink); }
     .nav-center { display: inline-flex; gap: 36px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-2); }
     .nav-center a { position: relative; padding: 6px 0; transition: color .28s var(--ease-out); }
     .nav-center a:hover { color: var(--ink); }
-    .nav-right { display: flex; justify-content: flex-end; align-items: center; gap: 22px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-2); }
-    .cart-btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border: 1px solid var(--line-default) !important; border-radius: 999px; cursor: pointer; color: var(--ink-2); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; transition: background .28s; }
+    .nav-right { display: flex; justify-content: flex-end; align-artikelen: center; gap: 22px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-2); }
+    .cart-btn { display: inline-flex; align-artikelen: center; gap: 8px; padding: 8px 16px; border: 1px solid var(--line-default) !important; border-radius: 999px; cursor: pointer; color: var(--ink-2); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; transition: background .28s; }
     .cart-btn:hover { background: rgba(26,26,26,0.04); }
     .cart-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue); display: inline-block; }
 
-    /* Cart layout */
-    .cart-wrap { padding: 64px 56px 120px; display: grid; grid-template-columns: 1fr 360px; gap: 64px; align-items: start; }
+    /* Winkelwagen layout */
+    .cart-wrap { padding: 64px 56px 120px; display: grid; grid-template-columns: 1fr 360px; gap: 64px; align-artikelen: start; }
     .cart-header { margin-bottom: 32px; }
     .cart-header h1 { font-size: 52px; font-weight: 300; margin: 0 0 8px; }
     .cart-header .count { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-3); }
 
     /* Item rows */
-    .cart-items { border-top: 1px solid var(--line-soft); }
-    .cart-item { display: grid; grid-template-columns: 100px 1fr auto; gap: 24px; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--line-soft); }
-    .item-img { width: 100px; height: 100px; border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .item-img img { width: 82%; height: 82%; object-fit: contain; border-radius: 10px; background: #fff; display: block; }
-    .item-info { display: flex; flex-direction: column; gap: 4px; }
-    .item-name { font-size: 18px; color: var(--ink); }
-    .item-price { font-size: 14px; color: var(--ink-3); letter-spacing: 0.04em; }
-    .item-controls { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
-    .item-line-price { font-size: 18px; color: var(--ink); }
-    .qty-row { display: inline-flex; align-items: center; gap: 0; border: 1px solid var(--line-default); border-radius: 999px; overflow: hidden; }
-    .qty-btn { width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; color: var(--ink-2); transition: background .2s; cursor: pointer; background: none; border: none; }
+    .cart-artikelen { border-top: 1px solid var(--line-soft); }
+    .cart-artikel { display: grid; grid-template-columns: 100px 1fr auto; gap: 24px; align-artikelen: center; padding: 24px 0; border-bottom: 1px solid var(--line-soft); }
+    .artikel-img { width: 100px; height: 100px; border-radius: 14px; display: flex; align-artikelen: center; justify-content: center; flex-shrink: 0; }
+    .artikel-img img { width: 82%; height: 82%; object-fit: contain; border-radius: 10px; background: #fff; display: block; }
+    .artikel-info { display: flex; flex-direction: column; gap: 4px; }
+    .artikel-name { font-size: 18px; color: var(--ink); }
+    .artikel-price { font-size: 14px; color: var(--ink-3); letter-spacing: 0.04em; }
+    .artikel-controls { display: flex; flex-direction: column; align-artikelen: flex-end; gap: 12px; }
+    .artikel-line-price { font-size: 18px; color: var(--ink); }
+    .qty-row { display: inline-flex; align-artikelen: center; gap: 0; border: 1px solid var(--line-default); border-radius: 999px; overflow: hidden; }
+    .qty-btn { width: 36px; height: 36px; display: inline-flex; align-artikelen: center; justify-content: center; font-size: 18px; color: var(--ink-2); transition: background .2s; cursor: pointer; background: none; border: none; }
     .qty-btn:hover { background: rgba(26,26,26,0.06); }
     .qty-val { min-width: 32px; text-align: center; font-size: 15px; }
     .remove-btn { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-3); cursor: pointer; background: none; border: none; transition: color .2s; }
@@ -68,7 +68,7 @@
     .cart-empty { padding: 80px 0; text-align: center; }
     .cart-empty h2 { font-size: 32px; font-weight: 300; margin: 0 0 16px; }
     .cart-empty p { color: var(--ink-3); font-size: 16px; margin: 0 0 32px; }
-    .btn-shop { display: inline-flex; align-items: center; gap: 10px; background: var(--ink); color: #fff; padding: 14px 28px; border-radius: 999px; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; transition: background .28s; }
+    .btn-shop { display: inline-flex; align-artikelen: center; gap: 10px; background: var(--ink); color: #fff; padding: 14px 28px; border-radius: 999px; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; transition: background .28s; }
     .btn-shop:hover { background: var(--blue); }
 
     /* Summary */
@@ -85,7 +85,7 @@
     /* Footer */
     .foot-wrap { margin-top: 0; background: #FAF5EC; color: #2A2620; }
     .foot-wrap .page { background: #FAF5EC; }
-    .foot-top { padding: 80px 56px 56px; display: grid; grid-template-columns: 1.2fr 1px 1fr 1px 1fr; gap: 48px; align-items: stretch; }
+    .foot-top { padding: 80px 56px 56px; display: grid; grid-template-columns: 1.2fr 1px 1fr 1px 1fr; gap: 48px; align-artikelen: stretch; }
     .foot-divider { width: 1px; background: rgba(42,38,32,0.22); align-self: center; height: 60%; }
     .foot-col h5 { margin: 0 0 22px; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(42,38,32,0.6); font-weight: 300; }
     .foot-wm { font-size: 30px; letter-spacing: 0.34em; color: #2A2620; margin-bottom: 18px; }
@@ -94,21 +94,21 @@
     .foot-contact a { border-bottom: 1px solid rgba(42,38,32,0.25); }
     .foot-contact a:hover { border-bottom-color: #2A2620; }
     .foot-socials { margin-top: 24px; display: inline-flex; gap: 10px; }
-    .foot-socials .circ { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(42,38,32,0.25); display: inline-flex; align-items: center; justify-content: center; transition: background .28s ease; }
+    .foot-socials .circ { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(42,38,32,0.25); display: inline-flex; align-artikelen: center; justify-content: center; transition: background .28s ease; }
     .foot-socials .circ svg { width: 16px; height: 16px; stroke: #2A2620; fill: none; stroke-width: 1.4; }
     .foot-socials .circ:hover { background: #2A2620; }
     .foot-socials .circ:hover svg { stroke: #FAF5EC; }
-    .newsletter { margin-top: 6px; display: flex; align-items: center; border-bottom: 1px solid rgba(42,38,32,0.3); padding-bottom: 10px; max-width: 320px; }
+    .newsletter { margin-top: 6px; display: flex; align-artikelen: center; border-bottom: 1px solid rgba(42,38,32,0.3); padding-bottom: 10px; max-width: 320px; }
     .newsletter input { flex: 1; background: transparent; border: 0; outline: 0; font-family: inherit; font-weight: 300; font-size: 14px; color: #2A2620; }
     .newsletter input::placeholder { color: rgba(42,38,32,0.5); }
     .newsletter button { background: transparent; border: 0; padding: 0; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #2A2620; cursor: pointer; }
     .foot-col ul { list-style: none; margin: 0; padding: 0; }
     .foot-col li { padding: 6px 0; font-size: 15px; }
     .foot-col li a:hover { opacity: 0.6; }
-    .foot-bot { border-top: 1px solid rgba(42,38,32,0.2); padding: 24px 56px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(42,38,32,0.7); }
-    .pay { display: inline-flex; align-items: center; gap: 10px; }
+    .foot-bot { border-top: 1px solid rgba(42,38,32,0.2); padding: 24px 56px 32px; display: flex; align-artikelen: center; justify-content: space-between; gap: 24px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(42,38,32,0.7); }
+    .pay { display: inline-flex; align-artikelen: center; gap: 10px; }
     .pay .chip { padding: 6px 10px; background: rgba(255,255,255,0.4); border: 1px solid rgba(42,38,32,0.18); border-radius: 6px; font-size: 10px; letter-spacing: 0.18em; }
-    .lang-foot { display: inline-flex; gap: 10px; align-items: center; }
+    .lang-foot { display: inline-flex; gap: 10px; align-artikelen: center; }
     .lang-foot .sep { opacity: 0.4; }
 
     @media(max-width: 900px) {
@@ -118,11 +118,11 @@
       .cart-summary { position: static; }
       .foot-top { grid-template-columns: 1fr; gap: 36px; padding: 48px 24px; }
       .foot-divider { display: none; }
-      .foot-bot { flex-direction: column; align-items: flex-start; gap: 14px; padding: 16px 24px 24px; }
+      .foot-bot { flex-direction: column; align-artikelen: flex-start; gap: 14px; padding: 16px 24px 24px; }
     }
   
     @media (max-width: 480px) {
-      .cart-item { grid-template-columns: 72px 1fr auto; gap: 12px; }
+      .cart-artikel { grid-template-columns: 72px 1fr auto; gap: 12px; }
       .cart-summary { padding: 24px 20px; }
       .cart-wrap h1 { font-size: 36px; }
       .cart-wrap { padding: 32px 20px 60px; }
@@ -130,7 +130,7 @@
 
     @media (max-width: 375px) {
       .cart-wrap h1 { font-size: 28px; }
-      .cart-item { grid-template-columns: 60px 1fr auto; gap: 10px; }
+      .cart-artikel { grid-template-columns: 60px 1fr auto; gap: 10px; }
     }
 </style>
 </head>
@@ -139,34 +139,34 @@
 
   <!-- Announcement -->
   <div class="announce">
-    <span>Free shipping over €100</span>
+    <span>Gratis verzending vanaf €100</span>
     <span class="dot">·</span>
-    <span>All products COSMOS Natural Certified</span>
+    <span>Alle producten COSMOS Natuurlijk Gecertificeerd</span>
     <span class="dot">·</span>
-    <span>Vegan</span>
+    <span>Veganistisch</span>
   </div>
 
   <!-- Nav -->
   <header class="nav">
     <a href="index.html" class="wordmark">S E S E</a>
     <nav class="nav-center">
-      <a href="collection.html">Shop</a>
+      <a href="collection.html">Winkel</a>
       <a href="collection.html#bundles">Routines</a>
-      <a href="collection.html#cleanse">Cleanse &amp; Prep</a>
+      <a href="collection.html#cleanse">Reinigen &amp; Prep</a>
       <a href="collection.html#serums">Serums</a>
-      <a href="collection.html#moisturize">Moisturize</a>
-      <a href="about.html">About</a>
+      <a href="collection.html#moisturize">Hydrateren</a>
+      <a href="about.html">Over ons</a>
     </nav>
     <div class="nav-right">
-      <span style="font-weight:400">EN</span> · <a href="nl/cart.html" style="color:inherit;opacity:0.5">NL</a> · <a href="fr/cart.html" style="color:inherit;opacity:0.5">FR</a>
+      <span><a href="../cart.html" style="color:inherit;opacity:0.5">EN</a> · <span style="font-weight:400">NL</span> · <a href="../fr/cart.html" style="color:inherit;opacity:0.5">FR</a></span>
       <button class="cart-btn" id="cart-btn">
         <span class="cart-dot"></span>
-        <span>Cart · <span id="cart-count">0</span></span>
+        <span>Winkelwagen · <span id="cart-count">0</span></span>
       </button>
     </div>
   </header>
 
-  <!-- Cart -->
+  <!-- Winkelwagen -->
   <div class="cart-wrap" id="cart-wrap">
     <!-- Rendered by JS -->
   </div>
@@ -189,38 +189,38 @@
           <a class="circ" href="#" title="Pinterest"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M11 7c2 0 4 1.5 4 4s-1.5 4-3.5 4c-.8 0-1.5-.4-1.7-1l-.5 2.5L8 21"/></svg></a>
         </div>
         <div style="margin-top:28px">
-          <h5 style="margin-bottom:10px">Newsletter</h5>
+          <h5 style="margin-bottom:10px">Nieuwsbrief</h5>
           <form class="newsletter" onsubmit="event.preventDefault()">
-            <input type="email" placeholder="Your email" />
-            <button type="submit">Subscribe →</button>
+            <input type="email" placeholder="Jouw e-mail" />
+            <button type="submit">Inschrijven →</button>
           </form>
         </div>
       </div>
       <div class="foot-divider"></div>
       <div class="foot-col">
-        <h5>Customer Service</h5>
+        <h5>Klantenservice</h5>
         <ul>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="faq.html">Veelgestelde vragen</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="shipping.html">Shipping &amp; Delivery</a></li>
-          <li><a href="returns.html">Returns &amp; Refunds</a></li>
-          <li><a href="#">Track my order</a></li>
+          <li><a href="shipping.html">Verzending &amp; Delivery</a></li>
+          <li><a href="returns.html">Retourzendingen &amp; Terugbetalingen</a></li>
+          <li><a href="#">Volg mijn bestelling</a></li>
         </ul>
       </div>
       <div class="foot-divider"></div>
       <div class="foot-col">
-        <h5>About &amp; Policies</h5>
+        <h5>Over ons &amp; Policies</h5>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-          <li><a href="withdrawal.html">Right of Withdrawal</a></li>
-          <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          <li><a href="about.html">Over ons</a></li>
+          <li><a href="privacy.html">Privacybeleid</a></li>
+          <li><a href="terms.html">Algemene voorwaarden</a></li>
+          <li><a href="withdrawal.html">Herroepingsrecht</a></li>
+          <li><a href="cookie-policy.html">Cookiebeleid</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bot">
-      <div>© 2026 SESE · Based in Belgium</div>
+      <div>© 2026 SESE · Gevestigd in België</div>
       <div class="pay">
         <span class="chip">VISA</span><span class="chip">Mastercard</span>
         <span class="chip">Bancontact</span><span class="chip">PayPal</span>
@@ -233,83 +233,83 @@
   </div>
 </footer>
 
-<script src="project/js/sese-cart.js"></script>
+<script src="../project/js/sese-cart.js"></script>
 <script>
-function renderCart() {
-  const cart = SESECart.get();
+function renderWinkelwagen() {
+  const cart = SESEWinkelwagen.get();
   const wrap = document.getElementById('cart-wrap');
 
-  if (!cart.items.length) {
+  if (!cart.artikelen.length) {
     wrap.innerHTML = `
       <div class="cart-empty" style="grid-column:1/-1">
-        <h2>Your cart is empty</h2>
-        <p>Discover our skincare range and find what your skin needs.</p>
-        <a href="collection.html" class="btn-shop">Shop all products →</a>
+        <h2>Jouw winkelwagen is leeg</h2>
+        <p>Ontdek ons huidverzorgingsassortiment and find what your skin needs.</p>
+        <a href="collection.html" class="btn-shop">Bekijk alle producten →</a>
       </div>`;
     return;
   }
 
-  const itemsHtml = cart.items.map(item => {
-    const p = PRODUCT_CATALOGUE[item.key];
+  const artikelenHtml = cart.artikelen.map(artikel => {
+    const p = PRODUCT_CATALOGUE[artikel.key];
     if (!p) return '';
     return `
-      <div class="cart-item" data-key="${item.key}">
-        <div class="item-img" style="background-color:${p.bg}">
+      <div class="cart-artikel" data-key="${artikel.key}">
+        <div class="artikel-img" style="background-color:${p.bg}">
           <img src="${p.img}" alt="${p.name}" />
         </div>
-        <div class="item-info">
-          <div class="item-name">${p.name}</div>
-          <div class="item-price">€${p.price}</div>
+        <div class="artikel-info">
+          <div class="artikel-name">${p.name}</div>
+          <div class="artikel-price">€${p.price}</div>
         </div>
-        <div class="item-controls">
-          <div class="item-line-price">€${(p.price * item.qty).toFixed(0)}</div>
+        <div class="artikel-controls">
+          <div class="artikel-line-price">€${(p.price * artikel.qty).toFixed(0)}</div>
           <div class="qty-row">
-            <button class="qty-btn" onclick="changeQty('${item.key}', -1)">−</button>
-            <span class="qty-val">${item.qty}</span>
-            <button class="qty-btn" onclick="changeQty('${item.key}', 1)">+</button>
+            <button class="qty-btn" onclick="changeQty('${artikel.key}', -1)">−</button>
+            <span class="qty-val">${artikel.qty}</span>
+            <button class="qty-btn" onclick="changeQty('${artikel.key}', 1)">+</button>
           </div>
-          <button class="remove-btn" onclick="removeItem('${item.key}')">Remove</button>
+          <button class="remove-btn" onclick="removeItem('${artikel.key}')">Verwijderen</button>
         </div>
       </div>`;
   }).join('');
 
-  const sub = SESECart.subtotal();
-  const shipping = sub >= 100 ? 'Free' : '€4.95';
+  const sub = SESEWinkelwagen.subtotal();
+  const shipping = sub >= 100 ? 'Gratis' : '€4.95';
   const total = sub >= 100 ? sub : sub + 4.95;
 
   wrap.innerHTML = `
     <div>
       <div class="cart-header">
-        <h1>Your Cart</h1>
-        <div class="count">${SESECart.count()} item${SESECart.count() !== 1 ? 's' : ''}</div>
+        <h1>Your Winkelwagen</h1>
+        <div class="count">${SESEWinkelwagen.count()} artikel${SESEWinkelwagen.count() !== 1 ? 's' : ''}</div>
       </div>
-      <div class="cart-items">${itemsHtml}</div>
+      <div class="cart-artikelen">${artikelenHtml}</div>
     </div>
     <div class="cart-summary">
       <div class="summary-title">Order summary</div>
-      <div class="summary-row"><span>Subtotal</span><span>€${sub.toFixed(0)}</span></div>
-      <div class="summary-row"><span>Shipping</span><span>${shipping}</span></div>
-      <div class="summary-row total"><span>Total</span><span>€${total.toFixed(2)}</span></div>
-      <div class="summary-note">${sub < 100 ? 'Add €'+(100-sub).toFixed(0)+' more for free shipping.' : '✓ Free shipping applied.'}</div>
-      <button class="btn-checkout" onclick="window.location.href=SESECart.checkoutUrl()">Proceed to checkout →</button>
-      <button class="btn-continue" onclick="window.location.href='collection.html'">Continue shopping</button>
+      <div class="summary-row"><span>Subtotaal</span><span>€${sub.toFixed(0)}</span></div>
+      <div class="summary-row"><span>Verzending</span><span>${shipping}</span></div>
+      <div class="summary-row total"><span>Totaal</span><span>€${total.toFixed(2)}</span></div>
+      <div class="summary-note">${sub < 100 ? 'Add €'+(100-sub).toFixed(0)+' more for free shipping.' : '✓ Gratis shipping applied.'}</div>
+      <button class="btn-checkout" onclick="window.location.href=SESEWinkelwagen.checkoutUrl()">Naar afrekenen →</button>
+      <button class="btn-continue" onclick="window.location.href='collection.html'">Verder winkelen</button>
     </div>`;
 }
 
 function changeQty(key, delta) {
-  const cart = SESECart.get();
-  const item = cart.items.find(i => i.key === key);
-  if (item) SESECart.update(key, item.qty + delta);
-  renderCart();
+  const cart = SESEWinkelwagen.get();
+  const artikel = cart.artikelen.find(i => i.key === key);
+  if (artikel) SESEWinkelwagen.update(key, artikel.qty + delta);
+  renderWinkelwagen();
 }
 
 function removeItem(key) {
-  SESECart.remove(key);
-  renderCart();
+  SESEWinkelwagen.remove(key);
+  renderWinkelwagen();
 }
 
-window.addEventListener('sese-cart-updated', renderCart);
-renderCart();
+window.addEventListener('sese-cart-updated', renderWinkelwagen);
+renderWinkelwagen();
 </script>
 </body>
 </html>

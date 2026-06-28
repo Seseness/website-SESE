@@ -8,7 +8,7 @@
   <style>
     @font-face {
       font-family: "Todes";
-      src: url("project/fonts/Todes-Light.otf") format("opentype");
+      src: url("../project/fonts/Todes-Light.otf") format("opentype");
       font-weight: 300;
       font-style: normal;
       font-display: swap;
@@ -64,7 +64,7 @@
     .nav {
       display: grid;
       grid-template-columns: 1fr auto 1fr;
-      align-items: center;
+      align-articles: center;
       padding: 26px 56px;
       background: var(--bg-nav);
       border-bottom: 1px solid var(--line-soft);
@@ -89,13 +89,13 @@
     .nav-center a:hover::after,
     .nav-center a.active::after { width: 22px; }
     .nav-right {
-      display: flex; justify-content: flex-end; align-items: center;
+      display: flex; justify-content: flex-end; align-articles: center;
       gap: 22px;
       font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
       color: var(--ink-2);
     }
     .cart-btn {
-      display: inline-flex; align-items: center; gap: 8px;
+      display: inline-flex; align-articles: center; gap: 8px;
       padding: 8px 16px;
       border: 1px solid var(--line-default) !important;
       border-radius: 999px;
@@ -116,7 +116,7 @@
     .blog-hero-eyebrow {
       font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
       color: var(--ink-3); margin-bottom: 24px;
-      display: flex; align-items: center; gap: 10px;
+      display: flex; align-articles: center; gap: 10px;
     }
     .blog-hero h1 {
       margin: 0 0 20px;
@@ -137,11 +137,11 @@
     .featured-label {
       font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
       color: var(--ink-3); margin-bottom: 32px;
-      display: flex; align-items: center; gap: 10px;
+      display: flex; align-articles: center; gap: 10px;
     }
     .featured-post {
       display: grid; grid-template-columns: 1fr 1fr;
-      gap: 64px; align-items: center;
+      gap: 64px; align-articles: center;
     }
     .featured-img {
       aspect-ratio: 4/3;
@@ -158,7 +158,7 @@
     .featured-meta {
       font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
       color: var(--ink-3); margin-bottom: 20px;
-      display: flex; align-items: center; gap: 16px;
+      display: flex; align-articles: center; gap: 16px;
     }
     .featured-meta .sep { opacity: 0.4; }
     .featured-body h2 {
@@ -173,7 +173,7 @@
       max-width: 540px;
     }
     .read-more {
-      display: inline-flex; align-items: center; gap: 14px;
+      display: inline-flex; align-articles: center; gap: 14px;
       font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase;
       color: var(--ink);
       border-bottom: 1px solid var(--line-default);
@@ -189,7 +189,7 @@
     .grid-section-label {
       font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
       color: var(--ink-3); margin-bottom: 40px;
-      display: flex; align-items: center; gap: 10px;
+      display: flex; align-articles: center; gap: 10px;
     }
     .posts-grid {
       display: grid;
@@ -229,7 +229,7 @@
       margin-top: auto;
       font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
       color: var(--ink-3);
-      display: inline-flex; align-items: center; gap: 8px;
+      display: inline-flex; align-articles: center; gap: 8px;
       transition: color .28s var(--ease-out);
     }
     .post-card:hover .post-card-link { color: var(--ink); }
@@ -241,7 +241,7 @@
       padding: 80px 56px 56px;
       display: grid;
       grid-template-columns: 1.2fr 1px 1fr 1px 1fr;
-      gap: 48px; align-items: stretch;
+      gap: 48px; align-articles: stretch;
     }
     .foot-divider { width: 1px; background: rgba(42,38,32,0.22); align-self: center; height: 60%; }
     .foot-col h5 { margin: 0 0 22px; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(42,38,32,0.6); font-weight: 300; }
@@ -251,11 +251,11 @@
     .foot-contact a { border-bottom: 1px solid rgba(42,38,32,0.25); }
     .foot-contact a:hover { border-bottom-color: #2A2620; }
     .foot-socials { margin-top: 24px; display: inline-flex; gap: 10px; }
-    .foot-socials .circ { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(42,38,32,0.25); display: inline-flex; align-items: center; justify-content: center; transition: background .28s ease; }
+    .foot-socials .circ { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(42,38,32,0.25); display: inline-flex; align-articles: center; justify-content: center; transition: background .28s ease; }
     .foot-socials .circ svg { width: 16px; height: 16px; stroke: #2A2620; fill: none; stroke-width: 1.4; }
     .foot-socials .circ:hover { background: #2A2620; }
     .foot-socials .circ:hover svg { stroke: #FAF5EC; }
-    .newsletter { margin-top: 6px; display: flex; align-items: center; border-bottom: 1px solid rgba(42,38,32,0.3); padding-bottom: 10px; max-width: 320px; }
+    .newsletter { margin-top: 6px; display: flex; align-articles: center; border-bottom: 1px solid rgba(42,38,32,0.3); padding-bottom: 10px; max-width: 320px; }
     .newsletter input { flex: 1; background: transparent; border: 0; outline: 0; font-family: inherit; font-weight: 300; font-size: 14px; color: #2A2620; }
     .newsletter input::placeholder { color: rgba(42,38,32,0.5); }
     .newsletter button { background: transparent; border: 0; padding: 0; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #2A2620; cursor: pointer; }
@@ -265,19 +265,19 @@
     .foot-bot {
       border-top: 1px solid rgba(42,38,32,0.2);
       padding: 24px 56px 32px;
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex; align-articles: center; justify-content: space-between;
       gap: 24px;
       font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
       color: rgba(42,38,32,0.7);
     }
-    .pay { display: inline-flex; align-items: center; gap: 10px; }
+    .pay { display: inline-flex; align-articles: center; gap: 10px; }
     .pay .chip {
       padding: 6px 10px; background: rgba(255,255,255,0.4);
       border: 1px solid rgba(42,38,32,0.18); border-radius: 6px;
       font-size: 10px; letter-spacing: 0.18em; color: #2A2620;
       font-family: var(--font-ui); font-weight: 500;
     }
-    .lang-foot { display: inline-flex; gap: 10px; align-items: center; }
+    .lang-foot { display: inline-flex; gap: 10px; align-articles: center; }
     .lang-foot .sep { opacity: 0.4; }
 
     /* ── Responsive ── */
@@ -301,7 +301,7 @@
       .posts-grid { grid-template-columns: 1fr; gap: 40px; }
       .foot-top { grid-template-columns: 1fr; gap: 32px; padding: 48px 20px 36px; }
       .foot-divider { display: none; }
-      .foot-bot { flex-direction: column; align-items: flex-start; gap: 16px; padding: 20px 20px 28px; }
+      .foot-bot { flex-direction: column; align-articles: flex-start; gap: 16px; padding: 20px 20px 28px; }
     }
   
     /* ── Responsive 900px ── */
@@ -332,66 +332,66 @@
 
   <!-- Announcement -->
   <div class="announce">
-    <span>Free shipping over €100</span>
+    <span>Livraison gratuite dès €100</span>
     <span class="dot">·</span>
-    <span>All products COSMOS Natural Certified · Vegan</span>
+    <span>Tous les produits certifiés COSMOS Naturel · Végan</span>
   </div>
 
   <!-- Nav -->
   <header class="nav">
     <a href="index.html" class="wordmark">S E S E</a>
     <nav class="nav-center">
-      <a href="collection.html">Shop</a>
+      <a href="collection.html">Boutique</a>
       <a href="collection.html#bundles">Routines</a>
-      <a href="collection.html#cleanse">Cleanse &amp; Prep</a>
-      <a href="collection.html#serums">Serums</a>
-      <a href="collection.html#moisturize">Moisturize</a>
-      <a href="about.html">About</a>
+      <a href="collection.html#cleanse">Nettoyer &amp; Préparer</a>
+      <a href="collection.html#serums">Sérums</a>
+      <a href="collection.html#moisturize">Hydrater</a>
+      <a href="about.html">À propos</a>
     </nav>
     <div class="nav-right">
-      <span style="font-weight:400">EN</span> · <a href="nl/blog.html" style="color:inherit;opacity:0.5">NL</a> · <a href="fr/blog.html" style="color:inherit;opacity:0.5">FR</a>
+      <span><a href="../blog.html" style="color:inherit;opacity:0.5">EN</a> · <a href="../nl/blog.html" style="color:inherit;opacity:0.5">NL</a> · <span style="font-weight:400">FR</span></span>
       <button class="cart-btn">
         <span class="cart-dot"></span>
-        <span>Cart · 0</span>
+        <span>Panier · 0</span>
       </button>
     </div>
   </header>
 
   <!-- Blog Hero -->
   <div class="blog-hero">
-    <div class="blog-hero-eyebrow">From the journal</div>
+    <div class="blog-hero-eyebrow">Du journal</div>
     <h1>The Journal</h1>
     <p class="blog-hero-sub">Skincare stories, ingredient guides, and honest advice.</p>
   </div>
 
   <!-- Featured post (latest) -->
   <div class="featured-wrap">
-    <div class="featured-label">Latest article</div>
+    <div class="featured-label">Dernier article</div>
     <div class="featured-post">
       <div class="featured-img">
-        <img src="project/assets/journal-cover.jpg" alt="Journal cover" />
+        <img src="../project/assets/journal-cover.jpg" alt="Journal cover" />
       </div>
       <div class="featured-body">
         <div class="featured-meta">
           <span>June 22, 2026</span>
           <span class="sep">·</span>
-          <span>5 min read</span>
+          <span>5 min de lecture</span>
         </div>
         <a href="blog-post.html?p=4" style="color:inherit;text-decoration:none;"><h2>Vitamin C, Peptides or Retinol Alternative —<br/><em>which serum is truly right for you?</em></h2></a>
-        <p class="featured-excerpt">Serums are the most powerful step in your routine. But which one do you choose when you see all three on the shelf? We explain it honestly — without jargon.</p>
-        <a href="blog-post.html?p=4" class="read-more">Read more →</a>
+        <p class="featured-excerpt">Sérums are the most powerful step in your routine. But which one do you choose when you see all three on the shelf? We explain it honestly — without jargon.</p>
+        <a href="blog-post.html?p=4" class="read-more">Lire la suite →</a>
       </div>
     </div>
   </div>
 
   <!-- Grid posts (older, newest first) -->
   <div class="grid-section">
-    <div class="grid-section-label">More from the journal</div>
+    <div class="grid-section-label">Plus du journal</div>
     <div class="posts-grid">
 
       <div class="post-card">
         <div class="post-card-num">No. 03</div>
-        <div class="post-card-date">June 15, 2026 · 4 min read</div>
+        <div class="post-card-date">June 15, 2026 · 4 min de lecture</div>
         <a href="blog-post.html?p=3" style="color:inherit;text-decoration:none;"><h3>SPF is the best anti-aging product you should be using every single day — here is why</h3></a>
         <p class="post-card-excerpt">The sun is not your enemy. But without protection, it is the single biggest cause of visible skin aging. Here is what you need to know — and how to protect yourself.</p>
         <a href="blog-post.html?p=3" class="post-card-link">Read →</a>
@@ -399,7 +399,7 @@
 
       <div class="post-card">
         <div class="post-card-num">No. 02</div>
-        <div class="post-card-date">June 8, 2026 · 5 min read</div>
+        <div class="post-card-date">June 8, 2026 · 5 min de lecture</div>
         <a href="blog-post.html?p=2" style="color:inherit;text-decoration:none;"><h3>The perfect daily routine in 5 steps — for skin that keeps glowing after 35</h3></a>
         <p class="post-card-excerpt">No complicated 12-step routine. No expensive serums that go unused. Just five steps that truly work — every day, in less than ten minutes.</p>
         <a href="blog-post.html?p=2" class="post-card-link">Read →</a>
@@ -407,7 +407,7 @@
 
       <div class="post-card">
         <div class="post-card-num">No. 01</div>
-        <div class="post-card-date">June 1, 2026 · 4 min read</div>
+        <div class="post-card-date">June 1, 2026 · 4 min de lecture</div>
         <a href="blog-post.html?p=1" style="color:inherit;text-decoration:none;"><h3>Healthy skin is the most beautiful accessory you can wear</h3></a>
         <p class="post-card-excerpt">Why we at SESE believe that a good skincare routine is far more than a beauty ritual — and how that conviction changes everything.</p>
         <a href="blog-post.html?p=1" class="post-card-link">Read →</a>
@@ -437,8 +437,8 @@
         <div style="margin-top:28px">
           <h5 style="margin-bottom:10px">Newsletter</h5>
           <form class="newsletter" onsubmit="event.preventDefault()">
-            <input type="email" placeholder="Your email" />
-            <button type="submit">Subscribe &rarr;</button>
+            <input type="email" placeholder="Votre e-mail" />
+            <button type="submit">S'abonner &rarr;</button>
           </form>
         </div>
       </div>
@@ -446,13 +446,13 @@
       <div class="foot-divider"></div>
 
       <div class="foot-col">
-        <h5>Customer Service</h5>
+        <h5>Service client</h5>
         <ul>
           <li><a href="#">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="#">Shipping &amp; Delivery</a></li>
-          <li><a href="#">Returns &amp; Refunds</a></li>
-          <li><a href="#">Track my order</a></li>
+          <li><a href="#">Livraison &amp; Delivery</a></li>
+          <li><a href="#">Retours &amp; Remboursements</a></li>
+          <li><a href="#">Suivre ma commande</a></li>
         </ul>
       </div>
 
@@ -461,18 +461,18 @@
       <div class="foot-col">
         <h5>Beleid &amp; Info</h5>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li><a href="#">Right of Withdrawal</a></li>
-          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Conditions générales</a></li>
+          <li><a href="#">Droit de rétractation</a></li>
+          <li><a href="#">Politique de cookies</a></li>
         </ul>
       </div>
 
     </div>
 
     <div class="foot-bot">
-      <div>© 2026 SESE · Based in Belgium</div>
+      <div>© 2026 SESE · Basé en Belgique</div>
       <div class="pay">
         <span class="chip">VISA</span>
         <span class="chip">Mastercard</span>

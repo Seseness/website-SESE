@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Right of Withdrawal — SESE</title>
+  <title>Droit de rétractation — SESE</title>
   <meta name="description" content="Your legal right to cancel an order within 14 days — SESE, sese.be." />
   <style>
     @font-face {
       font-family: "Todes";
-      src: url("project/fonts/Todes-Light.otf") format("opentype");
+      src: url("../project/fonts/Todes-Light.otf") format("opentype");
       font-weight: 300; font-style: normal; font-display: swap;
     }
     :root {
@@ -27,23 +27,23 @@
     .page { width: 1440px; max-width: 100%; margin: 0 auto; background: #fff; }
     .announce { background: var(--blue); color: #FFFCF5; text-align: center; padding: 11px 0; font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; }
     .announce .dot { opacity: 0.45; margin: 0 16px; }
-    .nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 26px 56px; background: var(--bg-nav); border-bottom: 1px solid var(--line-soft); }
+    .nav { display: grid; grid-template-columns: 1fr auto 1fr; align-articles: center; padding: 26px 56px; background: var(--bg-nav); border-bottom: 1px solid var(--line-soft); }
     .wordmark { font-size: 26px; letter-spacing: 0.34em; color: var(--ink); }
     .nav-center { display: inline-flex; gap: 36px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-2); }
     .nav-center a { position: relative; padding: 6px 0; transition: color .28s var(--ease-out); }
     .nav-center a:hover { color: var(--ink); }
-    .nav-right { display: flex; justify-content: flex-end; align-items: center; gap: 22px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-2); }
-    .nav-icon { width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+    .nav-right { display: flex; justify-content: flex-end; align-articles: center; gap: 22px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-2); }
+    .nav-icon { width: 22px; height: 22px; display: inline-flex; align-articles: center; justify-content: center; cursor: pointer; }
     .nav-icon svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.25; }
-    .cart-btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border: 1px solid var(--line-default) !important; border-radius: 999px; cursor: pointer; color: var(--ink-2); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; }
+    .cart-btn { display: inline-flex; align-articles: center; gap: 8px; padding: 8px 16px; border: 1px solid var(--line-default) !important; border-radius: 999px; cursor: pointer; color: var(--ink-2); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; }
     .cart-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue); display: inline-block; }
     .page-header { max-width: 960px; margin: 0 auto; padding: 80px 56px 64px; border-bottom: 1px solid var(--line-soft); }
-    .page-eyebrow { font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+    .page-eyebrow { font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase; color: var(--ink-3); display: flex; align-articles: center; gap: 12px; margin-bottom: 24px; }
     .page-header h1 { font-size: 56px; font-weight: 300; line-height: 1.05; margin: 0 0 20px; color: var(--ink); }
     .page-header .subtitle { font-size: 18px; line-height: 1.7; color: var(--ink-3); margin: 0; max-width: 580px; }
     .content-wrap { max-width: 960px; margin: 0 auto; padding: 0 56px 120px; }
     .content-section { padding: 64px 0 0; border-top: 1px solid var(--line-soft); margin-top: 64px; }
-    .section-eyebrow { font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+    .section-eyebrow { font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase; color: var(--ink-3); display: flex; align-articles: center; gap: 12px; margin-bottom: 28px; }
     .section-title { font-size: 32px; font-weight: 300; color: var(--ink); margin: 0 0 32px; }
     .content-section p { font-size: 17px; line-height: 1.8; color: var(--ink-2); margin: 0 0 20px; max-width: 740px; }
     .content-section p:last-of-type { margin-bottom: 0; }
@@ -60,7 +60,7 @@
     .form-box { background: var(--bg-nav); border: 1px solid var(--line-soft); border-radius: 12px; padding: 32px; margin-top: 24px; }
     .form-box .form-label { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 16px; }
     .form-box pre { font-family: var(--font-display); font-size: 15px; line-height: 1.9; color: var(--ink-2); margin: 0; white-space: pre-wrap; }
-    .contact-strip { margin-top: 80px; padding: 48px 56px; background: var(--bg-nav); border-radius: 16px; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+    .contact-strip { margin-top: 80px; padding: 48px 56px; background: var(--bg-nav); border-radius: 16px; display: flex; align-articles: center; justify-content: space-between; gap: 40px; }
     .contact-strip-text .eyebrow-sm { font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 10px; }
     .contact-strip-text h3 { font-size: 28px; font-weight: 300; color: var(--ink); margin: 0; }
     .contact-strip-details { text-align: right; }
@@ -68,7 +68,7 @@
     .contact-strip-details a { border-bottom: 1px solid var(--line-default); }
     .foot-wrap { margin-top: 0; background: #FAF5EC; color: #2A2620; }
     .foot-wrap .page { background: #FAF5EC; }
-    .foot-top { padding: 80px 56px 56px; display: grid; grid-template-columns: 1.2fr 1px 1fr 1px 1fr; gap: 48px; align-items: stretch; }
+    .foot-top { padding: 80px 56px 56px; display: grid; grid-template-columns: 1.2fr 1px 1fr 1px 1fr; gap: 48px; align-articles: stretch; }
     .foot-divider { width: 1px; background: rgba(42,38,32,0.22); align-self: center; height: 60%; }
     .foot-col h5 { margin: 0 0 22px; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(42,38,32,0.6); font-weight: 300; }
     .foot-wm { font-size: 30px; letter-spacing: 0.34em; color: #2A2620; margin-bottom: 18px; }
@@ -76,21 +76,21 @@
     .foot-contact { font-size: 14px; line-height: 1.75; }
     .foot-contact a { border-bottom: 1px solid rgba(42,38,32,0.25); }
     .foot-socials { margin-top: 24px; display: inline-flex; gap: 10px; }
-    .foot-socials .circ { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(42,38,32,0.25); display: inline-flex; align-items: center; justify-content: center; transition: background .28s ease; }
+    .foot-socials .circ { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(42,38,32,0.25); display: inline-flex; align-articles: center; justify-content: center; transition: background .28s ease; }
     .foot-socials .circ svg { width: 16px; height: 16px; stroke: #2A2620; fill: none; stroke-width: 1.4; }
     .foot-socials .circ:hover { background: #2A2620; }
     .foot-socials .circ:hover svg { stroke: #FAF5EC; }
-    .newsletter { margin-top: 6px; display: flex; align-items: center; border-bottom: 1px solid rgba(42,38,32,0.3); padding-bottom: 10px; max-width: 320px; }
+    .newsletter { margin-top: 6px; display: flex; align-articles: center; border-bottom: 1px solid rgba(42,38,32,0.3); padding-bottom: 10px; max-width: 320px; }
     .newsletter input { flex: 1; background: transparent; border: 0; outline: 0; font-family: inherit; font-weight: 300; font-size: 14px; color: #2A2620; }
     .newsletter input::placeholder { color: rgba(42,38,32,0.5); }
     .newsletter button { background: transparent; border: 0; padding: 0; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #2A2620; cursor: pointer; }
     .foot-col ul { list-style: none; margin: 0; padding: 0; }
     .foot-col li { padding: 6px 0; font-size: 15px; }
     .foot-col li a:hover { opacity: 0.6; }
-    .foot-bot { border-top: 1px solid rgba(42,38,32,0.2); padding: 24px 56px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(42,38,32,0.7); }
-    .pay { display: inline-flex; align-items: center; gap: 10px; }
+    .foot-bot { border-top: 1px solid rgba(42,38,32,0.2); padding: 24px 56px 32px; display: flex; align-articles: center; justify-content: space-between; gap: 24px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(42,38,32,0.7); }
+    .pay { display: inline-flex; align-articles: center; gap: 10px; }
     .pay .chip { padding: 6px 10px; background: rgba(255,255,255,0.4); border: 1px solid rgba(42,38,32,0.18); border-radius: 6px; font-size: 10px; letter-spacing: 0.18em; color: #2A2620; font-family: var(--font-ui); font-weight: 500; }
-    .lang-foot { display: inline-flex; gap: 10px; align-items: center; }
+    .lang-foot { display: inline-flex; gap: 10px; align-articles: center; }
     .lang-foot .sep { opacity: 0.4; }
     @media (max-width: 768px) {
       .nav { padding: 20px 24px; grid-template-columns: 1fr auto; }
@@ -102,7 +102,7 @@
       .contact-strip-details { text-align: left; }
       .foot-top { grid-template-columns: 1fr; padding: 48px 24px 40px; gap: 32px; }
       .foot-divider { display: none; }
-      .foot-bot { flex-direction: column; align-items: flex-start; padding: 20px 24px 28px; gap: 16px; }
+      .foot-bot { flex-direction: column; align-articles: flex-start; padding: 20px 24px 28px; gap: 16px; }
     }
 
     @media (max-width: 480px) {
@@ -129,29 +129,29 @@
 <div class="page">
 
   <div class="announce">
-    <span>Free shipping over €100</span>
+    <span>Livraison gratuite dès €100</span>
     <span class="dot">·</span>
-    <span>All products COSMOS Natural Certified · Vegan</span>
+    <span>Tous les produits certifiés COSMOS Naturel · Végan</span>
   </div>
 
   <header class="nav">
     <a href="index.html" class="wordmark">S E S E</a>
     <nav class="nav-center">
-      <a href="collection.html">Shop</a>
+      <a href="collection.html">Boutique</a>
       <a href="collection.html#bundles">Routines</a>
-      <a href="collection.html#cleanse">Cleanse &amp; Prep</a>
-      <a href="collection.html#serums">Serums</a>
-      <a href="collection.html#moisturize">Moisturize</a>
-      <a href="about.html">About</a>
+      <a href="collection.html#cleanse">Nettoyer &amp; Préparer</a>
+      <a href="collection.html#serums">Sérums</a>
+      <a href="collection.html#moisturize">Hydrater</a>
+      <a href="about.html">À propos</a>
     </nav>
     <div class="nav-right">
       <span class="nav-icon" title="Search">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
       </span>
-      <span style="font-weight:400">EN</span> · <a href="nl/withdrawal.html" style="color:inherit;opacity:0.5">NL</a> · <a href="fr/withdrawal.html" style="color:inherit;opacity:0.5">FR</a>
+      <span><a href="../withdrawal.html" style="color:inherit;opacity:0.5">EN</a> · <a href="../nl/withdrawal.html" style="color:inherit;opacity:0.5">NL</a> · <span style="font-weight:400">FR</span></span>
       <button class="cart-btn">
         <span class="cart-dot"></span>
-        <span>Cart · 0</span>
+        <span>Panier · 0</span>
       </button>
     </div>
   </header>
@@ -176,8 +176,8 @@
           <tr><td>Return deadline</td><td>14 calendar days after notifying us of your withdrawal</td></tr>
           <tr><td>Refund deadline</td><td>Within 14 days of receiving the returned goods</td></tr>
           <tr><td>Return costs</td><td>At the customer's expense, unless stated otherwise</td></tr>
-          <tr><td>SESE extra guarantee</td><td>30-day satisfaction guarantee on unopened products</td></tr>
-          <tr><td>Exception</td><td>Opened cosmetic products (hygiene — see §4)</td></tr>
+          <tr><td>SESE extra guarantee</td><td>30-day satisfaction guarantee on unopened produits</td></tr>
+          <tr><td>Exception</td><td>Opened cosmetic produits (hygiene — see §4)</td></tr>
           <tr><td>Legal basis</td><td>EU Directive 2011/83/EU · WER Art. VI.47–VI.53</td></tr>
         </tbody>
       </table>
@@ -206,8 +206,8 @@
       <ol>
         <li>Send an email to <a href="mailto:customerservice@sese.be" style="border-bottom:1px solid var(--line-default)">customerservice@sese.be</a> stating your name, order number, and your intention to withdraw from the contract.</li>
         <li>You will receive a confirmation within 1–2 business days, including the return address.</li>
-        <li>Return the products within 14 calendar days of notifying us.</li>
-        <li>Pack the products carefully in the original packaging or equivalent packaging.</li>
+        <li>Return the produits within 14 calendar days of notifying us.</li>
+        <li>Pack the produits carefully in the original packaging or equivalent packaging.</li>
         <li>Send by tracked or registered post — you are responsible for the goods until they reach us.</li>
       </ol>
       <p>The return address will be provided in the confirmation email. Never send a return without prior confirmation from us.</p>
@@ -218,10 +218,10 @@
       <div class="section-eyebrow">04</div>
       <div class="section-title">Exception — Cosmetic Products</div>
       <div class="warning-box">
-        <p><strong>Important:</strong> The right of withdrawal does NOT apply to cosmetic products whose seal has been broken after delivery, for reasons of health protection or hygiene.</p>
+        <p><strong>Important:</strong> The right of withdrawal does NOT apply to cosmetic produits whose seal has been broken after delivery, for reasons of health protection or hygiene.</p>
         <p>Legal basis: Article VI.53, 5° Code of Economic Law (BE) and Article 16(e) Directive 2011/83/EU.</p>
       </div>
-      <p>Skincare and cosmetic products at SESE can only be returned if ALL of the following conditions are met:</p>
+      <p>Skincare and cosmetic produits at SESE can only be returned if ALL of the following conditions are met:</p>
       <ul>
         <li>The product is unused</li>
         <li>The product is unopened</li>
@@ -229,7 +229,7 @@
         <li>The product is in its original condition and packaging</li>
       </ul>
       <p>Products that have been opened, used, or whose seal has been broken cannot be accepted back for hygiene reasons required by law — unless the product is demonstrably defective or incorrectly delivered.</p>
-      <p>SESE reserves the right to refuse returns that do not meet the above conditions. In that case, the products will be returned to the customer at the customer's expense.</p>
+      <p>SESE reserves the right to refuse returns that do not meet the above conditions. In that case, the produits will be returned to the customer at the customer's expense.</p>
     </div>
 
     <div class="content-section">
@@ -251,7 +251,7 @@
     <div class="content-section">
       <div class="section-eyebrow">06</div>
       <div class="section-title">SESE 30-Day Satisfaction Guarantee</div>
-      <p>In addition to the legal 14-day right of withdrawal, SESE offers an extra 30-day satisfaction guarantee on unopened products. This is a voluntary, commercial guarantee — supplementary to and never limiting your legal rights.</p>
+      <p>In addition to the legal 14-day right of withdrawal, SESE offers an extra 30-day satisfaction guarantee on unopened produits. This is a voluntary, commercial guarantee — supplementary to and never limiting your legal rights.</p>
       <p>Conditions of the SESE 30-day guarantee:</p>
       <ul>
         <li>Return notification made within 30 calendar days of receiving the order</li>
@@ -327,36 +327,36 @@ Date: .........................................................................<
         <div style="margin-top:28px">
           <h5 style="margin-bottom:10px">Newsletter</h5>
           <form class="newsletter" onsubmit="event.preventDefault()">
-            <input type="email" placeholder="Your email" />
-            <button type="submit">Subscribe &rarr;</button>
+            <input type="email" placeholder="Votre e-mail" />
+            <button type="submit">S'abonner &rarr;</button>
           </form>
         </div>
       </div>
       <div class="foot-divider"></div>
       <div class="foot-col">
-        <h5>Customer Service</h5>
+        <h5>Service client</h5>
         <ul>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="shipping.html">Shipping &amp; Delivery</a></li>
-          <li><a href="returns.html">Returns &amp; Refunds</a></li>
-          <li><a href="#">Track my order</a></li>
+          <li><a href="shipping.html">Livraison &amp; Delivery</a></li>
+          <li><a href="returns.html">Retours &amp; Remboursements</a></li>
+          <li><a href="#">Suivre ma commande</a></li>
         </ul>
       </div>
       <div class="foot-divider"></div>
       <div class="foot-col">
-        <h5>About &amp; Policies</h5>
+        <h5>À propos &amp; Policies</h5>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-          <li><a href="withdrawal.html">Right of Withdrawal</a></li>
-          <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="privacy.html">Politique de confidentialité</a></li>
+          <li><a href="terms.html">Conditions générales</a></li>
+          <li><a href="withdrawal.html">Droit de rétractation</a></li>
+          <li><a href="cookie-policy.html">Politique de cookies</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bot">
-      <div>© 2026 SESE · Based in Belgium</div>
+      <div>© 2026 SESE · Basé en Belgique</div>
       <div class="pay">
         <span class="chip">VISA</span>
         <span class="chip">Mastercard</span>
