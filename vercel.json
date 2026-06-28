@@ -1,7 +1,3 @@
 {
-  "cleanUrls": false,
-  "rewrites": [
-    { "source": "/cart/:path*", "destination": "https://sese-8214.myshopify.com/cart/:path*" },
-    { "source": "/cart", "destination": "https://sese-8214.myshopify.com/cart" }
-  ]
+  "cleanUrls": false
 }
