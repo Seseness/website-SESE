@@ -776,7 +776,7 @@ function isConfigured() {
 // =============================================================
 function shopifyCartAddUrl(variantId, quantity = 1) {
   const numericId = variantId.split('/').pop();
-  return `https://${SHOPIFY.domain}/cart/add?id=${numericId}&quantity=${quantity}&return_to=/cart`;
+  return `https://${SHOPIFY.domain}/cart/add?id=${numericId}&quantity=${quantity}&return_to=https://sese-8214.myshopify.com/cart`;
 }
 
 // =============================================================
