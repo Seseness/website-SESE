@@ -1063,13 +1063,13 @@ function bindEvents(key, p) {
       showToast('Configure Shopify variant IDs to enable checkout.');
       return;
     }
-    window.location.href = shopifyCartAddUrl(variantId, qty);
+    SESECart.add(p.key, qty); showToast('Added to cart.'); btn.classList.add('added'); btn.querySelector('.right').textContent = 'Added ✓'; setTimeout(() => { btn.classList.remove('added'); btn.querySelector('.right').textContent = '→'; }, 2000);
   });
 
   // cart button in nav
   document.getElementById('cart-btn').addEventListener('click', () => {
     if (!isConfigured()) { showToast('Configure Shopify to enable checkout.'); return; }
-    window.location.href = `https://${SHOPIFY.domain}/cart`;
+    window.location.href = 'cart.html';
   });
 
   // pair with quick-add buttons
@@ -1083,7 +1083,7 @@ function bindEvents(key, p) {
         showToast('Configure Shopify to enable checkout.');
         return;
       }
-      window.location.href = shopifyCartAddUrl(variantId, 1);
+      SESECart.add(pid); showToast('Added to cart.');
     });
   });
 }
@@ -1092,5 +1092,6 @@ function bindEvents(key, p) {
 const key = new URLSearchParams(location.search).get('p') || '';
 renderPage(key);
 </script>
+<script src="project/js/sese-cart.js"></script>
 </body>
 </html>

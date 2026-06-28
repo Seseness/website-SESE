@@ -1273,7 +1273,7 @@ document.querySelectorAll('.card-add').forEach(btn => {
       showToast('Configure Shopify variant IDs to enable checkout.');
       return;
     }
-    window.location.href = shopifyCartAddUrl(variantId);
+    SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
   });
 });
 
@@ -1286,7 +1286,7 @@ document.getElementById('bundle-btn').addEventListener('click', () => {
     showToast('Configure Shopify variant IDs to enable checkout.');
     return;
   }
-  window.location.href = shopifyCartAddUrl(variantId);
+  SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
 });
 
 // =============================================================
@@ -1300,7 +1300,7 @@ document.getElementById('bundle-btn').addEventListener('click', () => {
       showToast('Configure Shopify variant IDs to enable checkout.');
       return;
     }
-    window.location.href = shopifyCartAddUrl(variantId);
+    SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
   });
 });
 
@@ -1312,7 +1312,7 @@ document.getElementById('cart-btn').addEventListener('click', () => {
     showToast('Configure Shopify to enable checkout.');
     return;
   }
-  window.location.href = `https://${SHOPIFY.domain}/cart`;
+  window.location.href = 'cart.html';
 });
 
 // =============================================================
@@ -1339,5 +1339,6 @@ document.querySelectorAll('.card').forEach(card => {
 });
 </script>
 
+<script src="project/js/sese-cart.js"></script>
 </body>
 </html>

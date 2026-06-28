@@ -802,7 +802,7 @@ function handleAdd(btn) {
     showToast('Product not available yet');
     return;
   }
-  window.location.href = shopifyCartAddUrl(variantId);
+  SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
 }
 
 // Attach events
@@ -815,7 +815,7 @@ document.getElementById('cart-btn').addEventListener('click', () => {
     showToast('Shop not configured yet — coming soon');
     return;
   }
-  window.location.href = `https://${SHOPIFY.domain}/cart`;
+  window.location.href = 'cart.html';
 });
 
 // Category filter
@@ -876,5 +876,6 @@ function applyFilterFromHash() {
 window.addEventListener('hashchange', applyFilterFromHash);
 applyFilterFromHash();
 </script>
+<script src="project/js/sese-cart.js"></script>
 </body>
 </html>

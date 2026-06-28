@@ -499,7 +499,7 @@ document.getElementById('cart-btn').addEventListener('click', () => {
     showToast('Configure Shopify to enable checkout.');
     return;
   }
-  window.location.href = `https://${SHOPIFY.domain}/cart`;
+  window.location.href = 'cart.html';
 });
 
 document.getElementById('bundle-add-btn').addEventListener('click', () => {
@@ -512,8 +512,9 @@ document.getElementById('bundle-add-btn').addEventListener('click', () => {
     showToast('Product not available yet');
     return;
   }
-  window.location.href = shopifyCartAddUrl(variantId);
+  SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
 });
 </script>
+<script src="project/js/sese-cart.js"></script>
 </body>
 </html>
