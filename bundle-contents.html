@@ -251,6 +251,34 @@
       .foot-divider { display: none; }
       .foot-bot { flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px 24px 24px; }
     }
+
+    @media (max-width: 768px) {
+      .nav { padding: 20px 24px; grid-template-columns: 1fr auto; }
+      .nav-center { display: none; }
+      .bundle-hero { padding: 32px 24px; grid-template-columns: 1fr; gap: 32px; }
+      .bundle-hero-text h1 { font-size: 36px; }
+      .contents-head { padding: 40px 24px 8px; }
+      .contents-list { padding: 16px 24px 64px; }
+      .content-row { grid-template-columns: 48px 100px 1fr; gap: 16px; }
+      .content-img { width: 100px; height: 100px; }
+      .content-body .name { font-size: 17px; }
+      .foot-top { padding: 48px 24px 32px; grid-template-columns: 1fr; }
+      .foot-divider { display: none; }
+      .foot-bot { padding: 16px 24px 24px; flex-direction: column; gap: 12px; }
+    }
+    @media (max-width: 480px) {
+      .bundle-hero-text h1 { font-size: 28px; }
+      .bundle-hero { padding: 24px 20px; }
+      .bundle-hero-img { aspect-ratio: 4/3; }
+      .contents-head { padding: 32px 20px 4px; }
+      .contents-head h2 { font-size: 26px; }
+      .contents-list { padding: 12px 20px 48px; }
+      .content-row { grid-template-columns: 36px 80px 1fr; gap: 12px; padding: 20px 0; }
+      .content-img { width: 80px; height: 80px; border-radius: 10px; }
+      .content-body .name { font-size: 15px; }
+      .content-body .desc { font-size: 13px; }
+      .btn-checkout, .btn-continue { padding: 14px; font-size: 10px; }
+    }
   </style>
 </head>
 <body>
