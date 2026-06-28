@@ -363,7 +363,32 @@
       .foot-divider { display: none; }
       .foot-bot { flex-direction: column; align-items: flex-start; padding: 24px 24px 32px; gap: 16px; }
     }
-  </style>
+  
+    /* ── Tablet 1024px ── */
+    @media (max-width: 1024px) {
+      .story-section { grid-template-columns: 200px 1fr; gap: 40px; }
+    }
+
+    /* ── Phone 480px ── */
+    @media (max-width: 480px) {
+      .about-hero { padding: 100px 24px 64px; }
+      .about-hero blockquote { font-size: 28px; }
+      .about-hero blockquote::before { font-size: 56px; }
+      .story-section,
+      .philosophy-inner,
+      .products-section,
+      .closing-section { padding: 40px 20px; }
+      .philosophy-section { padding: 40px 0; }
+      .tagline-close { padding: 40px 20px 56px; }
+      .tagline-close p { font-size: 22px; }
+    }
+
+    /* ── Small phone 375px ── */
+    @media (max-width: 375px) {
+      .about-hero blockquote { font-size: 24px; }
+      .story-body p:first-child { font-size: 18px; }
+    }
+</style>
 </head>
 <body>
 

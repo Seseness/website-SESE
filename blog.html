@@ -303,7 +303,28 @@
       .foot-divider { display: none; }
       .foot-bot { flex-direction: column; align-items: flex-start; gap: 16px; padding: 20px 20px 28px; }
     }
-  </style>
+  
+    /* ── Responsive 900px ── */
+    @media (max-width: 900px) {
+      .featured-post { grid-template-columns: 1fr; gap: 32px; }
+      .featured-image { min-height: 260px; }
+    }
+
+    /* ── Responsive 480px ── */
+    @media (max-width: 480px) {
+      .blog-hero h1 { font-size: 36px; }
+      .blog-hero { padding: 48px 20px 40px; }
+      .blog-hero-sub { font-size: 15px; }
+      .posts-grid { grid-template-columns: 1fr; gap: 32px; }
+      .featured-wrap, .grid-section { padding-left: 20px; padding-right: 20px; }
+    }
+
+    /* ── Responsive 375px ── */
+    @media (max-width: 375px) {
+      .blog-hero h1 { font-size: 30px; }
+      .featured-body h2 { font-size: 26px; }
+    }
+</style>
 </head>
 <body>
 

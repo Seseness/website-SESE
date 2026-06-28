@@ -269,7 +269,31 @@
       .foot-bot { padding:20px 24px 24px; flex-direction:column; align-items:flex-start; gap:12px; }
       .crumbs { padding:16px 24px 0; }
     }
-  </style>
+  
+    @media (max-width: 1024px) {
+      .pdp { grid-template-columns: 360px 1fr; gap: 40px; padding: 24px 32px 0; }
+      .gallery { grid-template-columns: 56px 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .pdp { padding: 20px 20px 0; }
+      .gallery { grid-template-columns: 1fr; }
+      .main-img { aspect-ratio: 1/1; }
+      .thumb { width: 64px; height: 64px; }
+      .thumbs { flex-direction: row; gap: 8px; }
+      .buy h1 { font-size: 36px; }
+      .buy { padding: 0 20px; }
+      .routine-strip { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .routine-strip .steps { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .pair-grid { grid-template-columns: 1fr; }
+      .crumbs { padding: 12px 20px 0; }
+    }
+
+    @media (max-width: 375px) {
+      .buy h1 { font-size: 30px; }
+      .thumb { width: 56px; height: 56px; }
+    }
+</style>
 </head>
 <body>
 

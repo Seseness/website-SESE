@@ -397,7 +397,26 @@
       .foot-divider { display: none; }
       .foot-bot { flex-direction: column; align-items: flex-start; gap: 16px; padding: 20px 20px 28px; }
     }
-  </style>
+  
+    /* ── Responsive 480px ── */
+    @media (max-width: 480px) {
+      .article-header { padding: 48px 20px 32px; }
+      .article-header h1 { font-size: 32px; }
+      .article-lead { font-size: 16px; }
+      .article-body { padding: 0 20px 60px; font-size: 15px; }
+      .article-image { padding: 20px 20px; }
+      .related-section { padding: 40px 20px 60px; }
+      .related-grid { grid-template-columns: 1fr; gap: 24px; }
+      .article-cta { padding: 40px 20px; }
+      .article-cta h3 { font-size: 24px; }
+    }
+
+    /* ── Responsive 375px ── */
+    @media (max-width: 375px) {
+      .article-header h1 { font-size: 26px; }
+      .article-lead { font-size: 15px; }
+    }
+</style>
 </head>
 <body>
 

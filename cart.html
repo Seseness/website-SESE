@@ -120,7 +120,19 @@
       .foot-divider { display: none; }
       .foot-bot { flex-direction: column; align-items: flex-start; gap: 14px; padding: 16px 24px 24px; }
     }
-  </style>
+  
+    @media (max-width: 480px) {
+      .cart-item { grid-template-columns: 72px 1fr auto; gap: 12px; }
+      .cart-summary { padding: 24px 20px; }
+      .cart-wrap h1 { font-size: 36px; }
+      .cart-wrap { padding: 32px 20px 60px; }
+    }
+
+    @media (max-width: 375px) {
+      .cart-wrap h1 { font-size: 28px; }
+      .cart-item { grid-template-columns: 60px 1fr auto; gap: 10px; }
+    }
+</style>
 </head>
 <body>
 <div class="page">
