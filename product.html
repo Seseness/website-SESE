@@ -340,6 +340,107 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .wordmark { font-size: 20px !important; }
 }
 
+
+
+/* ============================================================
+   SESE PREMIUM MOBILE OPTIMIZATION
+   ============================================================ */
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden; }
+  .page { width: 100% !important; max-width: 100% !important; overflow-x: hidden; }
+
+  /* === SESE Premium Mobile Optimization === */
+  /* NAV */
+  .nav {
+    padding: 16px 20px !important;
+    grid-template-columns: 1fr auto !important;
+    position: sticky; top: 0; z-index: 100;
+    background: var(--bg-nav, #FAF5EC);
+  }
+  .nav-center { display: none !important; }
+  .wordmark { font-size: clamp(18px, 5vw, 24px) !important; letter-spacing: 0.28em !important; }
+  .nav-right { gap: 12px !important; }
+  .cart-btn { padding: 8px 12px !important; font-size: 10px !important; min-height: 40px; }
+
+  /* ANNOUNCE BAR */
+  .announce { font-size: 9px !important; letter-spacing: 0.16em !important; padding: 10px 16px !important; line-height: 1.5; }
+  .announce .dot { margin: 0 8px !important; }
+
+  /* FOOTER */
+  .foot-top { grid-template-columns: 1fr !important; padding: 48px 24px 40px !important; gap: 32px !important; }
+  .foot-divider { display: none !important; }
+  .foot-bot { flex-direction: column !important; gap: 16px !important; padding: 20px 24px 28px !important; align-items: flex-start !important; }
+  .pay { flex-wrap: wrap !important; gap: 8px !important; }
+  .foot-wm { font-size: 22px !important; }
+  .foot-tag { font-size: 16px !important; }
+  .newsletter { max-width: 100% !important; }
+
+  /* BUTTONS - touch friendly */
+  .btn { min-height: 48px !important; padding: 14px 24px !important; font-size: 10px !important; width: 100%; justify-content: center; }
+  .btn-add, .btn-view { min-height: 44px !important; }
+  .filter-pill { min-height: 40px !important; padding: 8px 16px !important; }
+
+
+  .pdp { padding: 0 !important; flex-direction: column !important; gap: 0 !important; }
+  .gallery { grid-template-columns: 80px 1fr !important; gap: 12px !important; margin: 16px 16px 0 !important; }
+  .thumbs { gap: 8px !important; }
+  .thumb { width: 72px !important; height: 72px !important; }
+  .main-img { aspect-ratio: 1/1 !important; border-radius: 16px !important; }
+  .main-img img { max-width: 82% !important; max-height: 82% !important; border-radius: 12px !important; }
+  .buy { padding: 24px 20px 0 !important; }
+  .buy h1 { font-size: clamp(24px, 6vw, 36px) !important; line-height: 1.1 !important; }
+  .buy .tagline { font-size: clamp(15px, 3.5vw, 18px) !important; line-height: 1.6 !important; }
+  .chips { gap: 8px !important; flex-wrap: wrap !important; }
+  .chip { padding: 6px 12px !important; font-size: 10px !important; }
+  .buy-row { flex-direction: column !important; gap: 10px !important; }
+  .qty { width: 100% !important; }
+  .add-cart { width: 100% !important; min-height: 52px !important; font-size: 10px !important; }
+  .ship-line { flex-direction: column !important; gap: 8px !important; font-size: 11px !important; }
+  .quick-cards { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  .routine-strip {
+    margin: 40px 16px 0 !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding: 24px 20px !important;
+  }
+  .routine-strip .steps { grid-template-columns: repeat(5, 1fr) !important; gap: 6px !important; overflow-x: auto; }
+  .routine-strip .step { padding: 10px 6px !important; font-size: 10px !important; }
+  .section-grid {
+    margin: 40px 16px 0 !important;
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    padding: 32px 20px !important;
+  }
+  .pair-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 14px !important; }
+  .pcard .pic2 { height: 42vw !important; }
+  .benefit { margin: 40px 16px 0 !important; grid-template-columns: 1fr !important; gap: 24px !important; }
+  .benefit .visual { aspect-ratio: 4/3 !important; border-radius: 16px !important; }
+  .benefit .pull { font-size: clamp(16px, 4vw, 22px) !important; padding: 0 16px 16px !important; }
+  .benefit-stats { grid-template-columns: repeat(3, 1fr) !important; }
+  .benefit-stats .bs .n { font-size: clamp(24px, 6vw, 44px) !important; }
+  .inci, .ingredients-card, .howto, .faq-wrap { margin: 32px 16px 0 !important; }
+  .faq-wrap { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .faq-item summary { font-size: clamp(14px, 3.5vw, 18px) !important; padding: 18px 0 !important; }
+  .pair-with { margin: 40px 16px 0 !important; }
+  .pricing .now { font-size: clamp(24px, 6vw, 36px) !important; }
+  .certs { margin: 40px 16px 0 !important; grid-template-columns: repeat(3, 1fr) !important; gap: 12px !important; padding: 20px 16px !important; }
+  .cert .t { font-size: 11px !important; }
+  .cert .s { font-size: 9px !important; }
+}
+
+@media (max-width: 480px) {
+
+  .nav { padding: 14px 16px !important; }
+  .wordmark { font-size: 18px !important; letter-spacing: 0.24em !important; }
+
+
+  .gallery { grid-template-columns: 64px 1fr !important; margin: 12px 12px 0 !important; }
+  .thumb { width: 60px !important; height: 60px !important; }
+  .pair-grid { grid-template-columns: 1fr !important; }
+  .quick-cards { grid-template-columns: 1fr !important; }
+  .certs { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
 </style>
 </head>
 <body>

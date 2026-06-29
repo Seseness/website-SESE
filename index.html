@@ -828,6 +828,169 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .wordmark { font-size: 20px !important; }
 }
 
+
+
+/* ============================================================
+   SESE PREMIUM MOBILE OPTIMIZATION
+   ============================================================ */
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden; }
+  .page { width: 100% !important; max-width: 100% !important; overflow-x: hidden; }
+
+  /* === SESE Premium Mobile Optimization === */
+  /* NAV */
+  .nav {
+    padding: 16px 20px !important;
+    grid-template-columns: 1fr auto !important;
+    position: sticky; top: 0; z-index: 100;
+    background: var(--bg-nav, #FAF5EC);
+  }
+  .nav-center { display: none !important; }
+  .wordmark { font-size: clamp(18px, 5vw, 24px) !important; letter-spacing: 0.28em !important; }
+  .nav-right { gap: 12px !important; }
+  .cart-btn { padding: 8px 12px !important; font-size: 10px !important; min-height: 40px; }
+
+  /* ANNOUNCE BAR */
+  .announce { font-size: 9px !important; letter-spacing: 0.16em !important; padding: 10px 16px !important; line-height: 1.5; }
+  .announce .dot { margin: 0 8px !important; }
+
+  /* FOOTER */
+  .foot-top { grid-template-columns: 1fr !important; padding: 48px 24px 40px !important; gap: 32px !important; }
+  .foot-divider { display: none !important; }
+  .foot-bot { flex-direction: column !important; gap: 16px !important; padding: 20px 24px 28px !important; align-items: flex-start !important; }
+  .pay { flex-wrap: wrap !important; gap: 8px !important; }
+  .foot-wm { font-size: 22px !important; }
+  .foot-tag { font-size: 16px !important; }
+  .newsletter { max-width: 100% !important; }
+
+  /* BUTTONS - touch friendly */
+  .btn { min-height: 48px !important; padding: 14px 24px !important; font-size: 10px !important; width: 100%; justify-content: center; }
+  .btn-add, .btn-view { min-height: 44px !important; }
+  .filter-pill { min-height: 40px !important; padding: 8px 16px !important; }
+
+
+  /* HERO */
+  .hero {
+    margin: 12px 12px 0 !important;
+    height: 70vh !important;
+    min-height: 420px !important;
+    border-radius: 18px !important;
+  }
+  .hero .content {
+    padding: 32px 24px 40px !important;
+    max-width: 100% !important;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 7vw, 48px) !important;
+    line-height: 1.05 !important;
+    margin-bottom: 12px;
+  }
+  .hero .subtitle { font-size: clamp(14px, 3.5vw, 18px) !important; margin: 12px 0 0 !important; }
+  .hero .lede { font-size: 14px !important; margin: 12px 0 24px !important; display: none; }
+  .hero-ctas { flex-direction: column !important; gap: 10px !important; width: 100%; }
+  .hero-ctas .btn { width: 100% !important; justify-content: center; }
+  .hero-eyebrow { margin-bottom: 16px !important; font-size: 10px !important; }
+  .hero-discover, .hero-shop-top { display: none !important; }
+
+  /* USPs */
+  .usps { padding: 20px 16px !important; }
+  .usp { flex-direction: column; gap: 6px; text-align: center; }
+  .usps-grid, .usps {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* CERT SCROLLER */
+  .cert-scroller { margin: 40px 0 0 !important; }
+
+  /* CAROUSEL */
+  .carousel { padding: 0 16px !important; overflow-x: auto !important; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .carousel::-webkit-scrollbar { display: none; }
+  .carousel-track { grid-template-columns: repeat(9, 72vw) !important; gap: 12px !important; }
+  .card { border-radius: 14px !important; }
+  .card-pic { height: 52vw !important; max-height: 260px !important; margin: 6px !important; }
+  .card-name { font-size: clamp(14px, 3.5vw, 18px) !important; }
+  .card-tag { font-size: 12px !important; display: none; }
+  .card-price { font-size: 16px !important; }
+  .card-add { min-height: 40px !important; padding: 6px 14px !important; font-size: 10px !important; }
+  .sec-head { padding: 40px 20px 24px !important; }
+  .sec-head h2 { font-size: clamp(24px, 6vw, 40px) !important; }
+
+  /* FOREVER BUNDLE */
+  .forever {
+    margin: 40px 12px 0 !important;
+    padding: 32px 24px !important;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    border-radius: 18px !important;
+  }
+  .forever h2 { font-size: clamp(28px, 7vw, 48px) !important; }
+  .forever-art { height: 56vw !important; max-height: 280px !important; }
+  .forever-ctas { flex-direction: column !important; gap: 10px !important; }
+  .forever-ctas .btn { width: 100% !important; justify-content: center !important; }
+  .forever-pricing { flex-wrap: wrap !important; gap: 8px !important; }
+  .forever-pricing .now { font-size: 28px !important; }
+  .forever-inside { margin-top: 8px !important; }
+
+  /* RITUALS */
+  .rituals {
+    margin: 12px 12px 0 !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .ritual { border-radius: 18px !important; padding: 28px 24px !important; }
+  .ritual-head h3 { font-size: clamp(22px, 6vw, 36px) !important; }
+  .ritual-price { font-size: 24px !important; }
+  .ritual-btns { gap: 8px !important; flex-wrap: wrap !important; }
+  .ritual-cart-btn { min-height: 44px !important; }
+  .ritual-inside-btn { min-height: 40px !important; }
+  .ritual-bottles { height: 180px !important; }
+
+  /* ABOUT */
+  .about {
+    margin: 40px 12px 0 !important;
+    grid-template-columns: 1fr !important;
+    padding: 28px 24px !important;
+    gap: 24px !important;
+    border-radius: 18px !important;
+  }
+  .about-visual { aspect-ratio: 4/3 !important; border-radius: 14px !important; }
+  .about-body h3 { font-size: clamp(22px, 5vw, 32px) !important; }
+  .about-body .links { flex-direction: column !important; gap: 10px !important; }
+
+  /* JOURNAL */
+  .journal { margin: 12px 12px 0 !important; border-radius: 18px !important; flex-direction: column !important; }
+  .journal-cover { min-height: 52vw !important; max-height: 260px !important; border-radius: 18px 18px 0 0 !important; }
+  .journal-body { padding: 24px !important; }
+  .journal-body h3 { font-size: clamp(18px, 4.5vw, 28px) !important; }
+  .journal-foot {
+    margin: 0 12px 0 !important;
+    padding: 20px 20px !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: flex-start !important;
+  }
+
+  /* BLOG HEAD */
+  .blog-head, .sec-head { flex-direction: column !important; gap: 8px !important; align-items: flex-start !important; }
+}
+
+@media (max-width: 480px) {
+
+  .nav { padding: 14px 16px !important; }
+  .wordmark { font-size: 18px !important; letter-spacing: 0.24em !important; }
+
+
+  .hero { height: 78vh !important; margin: 8px 8px 0 !important; }
+  .hero h1 { font-size: clamp(24px, 8vw, 36px) !important; }
+  .carousel-track { grid-template-columns: repeat(9, 84vw) !important; }
+  .forever { margin: 32px 8px 0 !important; }
+  .rituals { margin: 8px 8px 0 !important; }
+  .about { margin: 32px 8px 0 !important; }
+  .journal { margin: 8px 8px 0 !important; }
+}
+
 </style>
 </head>
 <body>
