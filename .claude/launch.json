@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "sese-site",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "-l", "4500", "/Users/noi/Desktop/website-SESE"],
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-c", "import http.server, socketserver, os, sys; os.chdir(sys.argv[1]); socketserver.TCPServer(('127.0.0.1', 4500), http.server.SimpleHTTPRequestHandler).serve_forever()", "/Users/sese/Library/Mobile Documents/com~apple~CloudDocs/website-SESE"],
       "port": 4500
     }
   ]

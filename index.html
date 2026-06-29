@@ -991,6 +991,12 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .journal { margin: 8px 8px 0 !important; }
 }
 
+
+/* Force hamburger visible on mobile */
+@media (max-width: 768px) {
+  .hamburger { display: flex !important; }
+  .hamburger span { background: var(--ink, #1A1A1A) !important; height: 1.5px !important; width: 22px !important; }
+}
 </style>
 </head>
 <body>
