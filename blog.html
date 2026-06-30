@@ -482,57 +482,8 @@ html, body { overflow-x: hidden; max-width: 100%; }
     <p class="blog-hero-sub">Skincare stories, ingredient guides, and honest advice.</p>
   </div>
 
-  <!-- Featured post (latest) -->
-  <div class="featured-wrap">
-    <div class="featured-label">Latest article</div>
-    <div class="featured-post">
-      <div class="featured-img">
-        <img src="project/assets/journal-cover.jpg" alt="Journal cover" />
-      </div>
-      <div class="featured-body">
-        <div class="featured-meta">
-          <span>June 22, 2026</span>
-          <span class="sep">·</span>
-          <span>5 min read</span>
-        </div>
-        <a href="blog-post.html?p=4" style="color:inherit;text-decoration:none;"><h2>Vitamin C, Peptides or Retinol Alternative —<br/><em>which serum is truly right for you?</em></h2></a>
-        <p class="featured-excerpt">Serums are the most powerful step in your routine. But which one do you choose when you see all three on the shelf? We explain it honestly — without jargon.</p>
-        <a href="blog-post.html?p=4" class="read-more">Read more →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Grid posts (older, newest first) -->
-  <div class="grid-section">
-    <div class="grid-section-label">More from the journal</div>
-    <div class="posts-grid">
-
-      <div class="post-card">
-        <div class="post-card-num">No. 03</div>
-        <div class="post-card-date">June 15, 2026 · 4 min read</div>
-        <a href="blog-post.html?p=3" style="color:inherit;text-decoration:none;"><h3>SPF is the best anti-aging product you should be using every single day — here is why</h3></a>
-        <p class="post-card-excerpt">The sun is not your enemy. But without protection, it is the single biggest cause of visible skin aging. Here is what you need to know — and how to protect yourself.</p>
-        <a href="blog-post.html?p=3" class="post-card-link">Read →</a>
-      </div>
-
-      <div class="post-card">
-        <div class="post-card-num">No. 02</div>
-        <div class="post-card-date">June 8, 2026 · 5 min read</div>
-        <a href="blog-post.html?p=2" style="color:inherit;text-decoration:none;"><h3>The perfect daily routine in 5 steps — for skin that keeps glowing after 35</h3></a>
-        <p class="post-card-excerpt">No complicated 12-step routine. No expensive serums that go unused. Just five steps that truly work — every day, in less than ten minutes.</p>
-        <a href="blog-post.html?p=2" class="post-card-link">Read →</a>
-      </div>
-
-      <div class="post-card">
-        <div class="post-card-num">No. 01</div>
-        <div class="post-card-date">June 1, 2026 · 4 min read</div>
-        <a href="blog-post.html?p=1" style="color:inherit;text-decoration:none;"><h3>Healthy skin is the most beautiful accessory you can wear</h3></a>
-        <p class="post-card-excerpt">Why we at SESE believe that a good skincare routine is far more than a beauty ritual — and how that conviction changes everything.</p>
-        <a href="blog-post.html?p=1" class="post-card-link">Read →</a>
-      </div>
-
-    </div>
-  </div>
+  <div id="blog-featured"></div>
+  <div id="blog-grid"></div>
 
 </div><!-- /.page -->
 
@@ -635,6 +586,57 @@ html, body { overflow-x: hidden; max-width: 100%; }
   if(btn) btn.addEventListener('click', function(){ drawer.classList.contains('open') ? close() : open(); });
   if(overlay) overlay.addEventListener('click', close);
   if(closeBtn) closeBtn.addEventListener('click', close);
+})();
+</script>
+
+<script src="project/js/posts-data.js"></script>
+<script>
+(function() {
+  var published = POSTS.filter(function(p) { return p.published; });
+  published.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
+  var featured = published[0];
+  var rest = published.slice(1).reverse(); // oldest first for "No. 01, 02..." numbering
+
+  if (featured) {
+    var coverImg = featured.image || 'project/assets/journal-cover.jpg';
+    var url = 'blog-post.html?p=' + featured.id;
+    document.getElementById('blog-featured').innerHTML =
+      '<div class="featured-wrap">' +
+        '<div class="featured-label">Latest article</div>' +
+        '<div class="featured-post">' +
+          '<div class="featured-img"><img src="' + coverImg + '" alt="Journal cover" /></div>' +
+          '<div class="featured-body">' +
+            '<div class="featured-meta">' +
+              '<span>' + featured.date + '</span>' +
+              '<span class="sep">·</span>' +
+              '<span>' + featured.readtime + '</span>' +
+            '</div>' +
+            '<a href="' + url + '" style="color:inherit;text-decoration:none;"><h2>' + (featured.titleHtml || featured.title) + '</h2></a>' +
+            '<p class="featured-excerpt">' + featured.excerpt + '</p>' +
+            '<a href="' + url + '" class="read-more">Read more →</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
+
+  if (rest.length) {
+    var cards = rest.map(function(p, i) {
+      var num = String(i + 1).padStart(2, '0');
+      var u = 'blog-post.html?p=' + p.id;
+      return '<div class="post-card">' +
+        '<div class="post-card-num">No. ' + num + '</div>' +
+        '<div class="post-card-date">' + p.date + ' · ' + p.readtime + '</div>' +
+        '<a href="' + u + '" style="color:inherit;text-decoration:none;"><h3>' + (p.titleHtml || p.title) + '</h3></a>' +
+        '<p class="post-card-excerpt">' + p.excerpt + '</p>' +
+        '<a href="' + u + '" class="post-card-link">Read →</a>' +
+      '</div>';
+    }).join('');
+    document.getElementById('blog-grid').innerHTML =
+      '<div class="grid-section">' +
+        '<div class="grid-section-label">More from the journal</div>' +
+        '<div class="posts-grid">' + cards + '</div>' +
+      '</div>';
+  }
 })();
 </script>
 </body>
