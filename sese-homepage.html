@@ -1336,32 +1336,8 @@ html, body { overflow-x: hidden; max-width: 100%; }
     </div>
   </div>
 
-  <a class="journal" href="blog-post.html?p=4">
-    <div class="journal-cover">
-      <img class="cover-img" src="project/assets/journal-cover.jpg" alt="Journal cover" />
-      <div class="meta-top">
-        <span class="pill">Most recent</span>
-        <span>June 22, 2026 · 5 min read</span>
-      </div>
-    </div>
-    <div class="journal-body">
-      <div class="jeb">Serums · Ingredients</div>
-      <h3>Vitamin C, Peptides or Retinol Alternative —<br/><em>which serum is truly right for you?</em></h3>
-      <div class="excerpt">
-        <p>Serums are the most powerful step in your routine. But which one do you choose when you see all three on the shelf?</p>
-        <p>We explain it honestly — without jargon.</p>
-      </div>
-
-      <span class="more">Continue reading on the journal <span class="arc">→</span></span>
-    </div>
-  </a>
-
-  <div class="journal-foot">
-    <span>Also recent in the journal</span>
-    <span><a href="blog-post.html?p=3">SPF is the best anti-aging product →</a></span>
-    <span><a href="blog-post.html?p=2">The perfect daily routine in 5 steps →</a></span>
-    <span><a href="blog.html">Visit the journal →</a></span>
-  </div>
+  <div id="journal-slot"></div>
+  <div id="journal-foot-slot" class="journal-foot"></div>
 
 </div><!-- /.page -->
 
@@ -1638,6 +1614,44 @@ document.querySelectorAll('.card').forEach(card => {
   if(btn) btn.addEventListener('click', function(){ drawer.classList.contains('open') ? close() : open(); });
   if(overlay) overlay.addEventListener('click', close);
   if(closeBtn) closeBtn.addEventListener('click', close);
+})();
+</script>
+
+<script src="project/js/posts-data.js"></script>
+<script>
+(function() {
+  var published = POSTS.filter(function(p) { return p.published; });
+  published.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
+  var post = published[0];
+  if (!post) return;
+
+  var coverImg = post.image || 'project/assets/journal-cover.jpg';
+  var others = published.filter(function(p) { return p.id !== post.id; }).slice(0, 2);
+
+  document.getElementById('journal-slot').innerHTML =
+    '<a class="journal" href="blog-post.html?p=' + post.id + '">' +
+      '<div class="journal-cover">' +
+        '<img class="cover-img" src="' + coverImg + '" alt="Journal cover" />' +
+        '<div class="meta-top">' +
+          '<span class="pill">Most recent</span>' +
+          '<span>' + post.date + ' · ' + post.readtime + '</span>' +
+        '</div>' +
+      '</div>' +
+      '<div class="journal-body">' +
+        '<div class="jeb">' + (post.category || '') + '</div>' +
+        '<h3>' + (post.titleHtml || post.title) + '</h3>' +
+        '<div class="excerpt"><p>' + post.excerpt + '</p></div>' +
+        '<span class="more">Continue reading on the journal <span class="arc">→</span></span>' +
+      '</div>' +
+    '</a>';
+
+  var footLinks = others.map(function(p) {
+    return '<span><a href="blog-post.html?p=' + p.id + '">' + p.title + ' →</a></span>';
+  }).join('');
+  document.getElementById('journal-foot-slot').innerHTML =
+    '<span>Also recent in the journal</span>' +
+    footLinks +
+    '<span><a href="blog.html">Visit the journal →</a></span>';
 })();
 </script>
 </body>
