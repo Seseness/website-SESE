@@ -755,7 +755,7 @@ document.getElementById('bundle-add-btn').addEventListener('click', () => {
     showToast('Product not available yet');
     return;
   }
-  SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
+  window.location.href = shopifyCartAddUrl(variantId);
 });
 </script>
 <script src="project/js/sese-cart.js"></script>
