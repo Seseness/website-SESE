@@ -364,7 +364,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
     </nav>
   <div class="nav-right">
     <span class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
-    <span><a href="../product.html" style="color:inherit;opacity:0.5">EN</a> · <span style="font-weight:400">NL</span> · <a href="../fr/product.html" style="color:inherit;opacity:0.5">FR</a></span>
+    <span><a href="../product.html" style="color:inherit;opacity:0.5">EN</a> · <span style="font-weight:400">NL</span> · <a style="display:none" href="../fr/product.html" style="color:inherit;opacity:0.5">FR</a></span>
     <button class="cart-btn" id="cart-btn"><span class="cart-dot"></span><span>Winkelwagen</span></button>
   
       <button class="hamburger" id="hamburger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -1091,7 +1091,7 @@ function renderPage(key) {
           <span class="chip">Apple&nbsp;Pay</span>
         </div>
         <div class="lang-foot">
-          <span>NL</span><span class="sep">·</span><a href="../product.html" style="color:#2A2620;opacity:0.5">EN</a><span class="sep">·</span><a href="../fr/product.html" style="color:#2A2620;opacity:0.5">FR</a>
+          <span style="display:none">NL</span><span class="sep" style="display:none">·</span><a href="../product.html" style="color:#2A2620;opacity:0.5">EN</a><span class="sep">·</span><a style="display:none" href="../fr/product.html" style="color:#2A2620;opacity:0.5">FR</a>
         </div>
       </div>
     </div>
@@ -1182,7 +1182,7 @@ renderPage(key);
     <div class="nav-drawer-lang">
       <a href="../product.html">EN</a>
       <span style="font-weight:400">NL</span>
-      <a href="../fr/product.html">FR</a>
+      <a style="display:none" href="../fr/product.html">FR</a>
     </div>
   </div>
 </div>

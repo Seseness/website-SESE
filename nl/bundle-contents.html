@@ -351,7 +351,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
       <a href="about.html">Over ons</a>
     </nav>
     <div class="nav-right">
-      <span><a href="../bundle-contents.html" style="color:inherit;opacity:0.5">EN</a> · <span style="font-weight:400">NL</span> · <a href="../fr/bundle-contents.html" style="color:inherit;opacity:0.5">FR</a></span>
+      <span><a href="../bundle-contents.html" style="color:inherit;opacity:0.5">EN</a> · <span style="font-weight:400">NL</span> · <a style="display:none" href="../fr/bundle-contents.html" style="color:inherit;opacity:0.5">FR</a></span>
       <button class="cart-btn" id="cart-btn">
         <span class="cart-dot"></span>
         <span>Winkelwagen</span>
@@ -433,7 +433,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
         <span class="chip">Apple&nbsp;Pay</span>
       </div>
       <div class="lang-foot">
-        <span>NL</span><span class="sep">·</span><span style="color:#2A2620;font-weight:400">EN</span><span class="sep">·</span><span>FR</span>
+        <span style="display:none">NL</span><span class="sep" style="display:none">·</span><span style="color:#2A2620;font-weight:400">EN</span><span class="sep" style="display:none">·</span><span style="display:none">FR</span>
       </div>
     </div>
   </div>
@@ -609,7 +609,7 @@ document.getElementById('bundle-add-btn').addEventListener('click', () => {
     <div class="nav-drawer-lang">
       <a href="../bundle-contents.html">EN</a>
       <span style="font-weight:400">NL</span>
-      <a href="../fr/bundle-contents.html">FR</a>
+      <a style="display:none" href="../fr/bundle-contents.html">FR</a>
     </div>
   </div>
 </div>
