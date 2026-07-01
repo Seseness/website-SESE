@@ -382,10 +382,11 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
 
   .pdp { padding: 0 !important; display: grid !important; grid-template-columns: 1fr !important; gap: 0 !important; }
-  .gallery { grid-template-columns: 80px 1fr !important; gap: 12px !important; margin: 16px 16px 0 !important; }
-  .thumbs { gap: 8px !important; }
-  .thumb { width: 72px !important; height: 72px !important; }
-  .main-img { aspect-ratio: 1/1 !important; border-radius: 16px !important; }
+  .gallery { display: flex !important; flex-direction: column !important; gap: 0 !important; margin: 16px 16px 0 !important; }
+  .main-img { order: 1 !important; aspect-ratio: 1/1 !important; border-radius: 16px !important; }
+  .thumbs { order: 2 !important; flex-direction: row !important; gap: 8px !important; overflow-x: auto !important; padding: 12px 0 4px !important; scrollbar-width: none !important; }
+  .thumbs::-webkit-scrollbar { display: none; }
+  .thumb { width: 64px !important; height: 64px !important; flex-shrink: 0 !important; }
   .main-img img { max-width: 82% !important; max-height: 82% !important; border-radius: 12px !important; }
   .buy { padding: 24px 20px 0 !important; }
   .buy h1 { font-size: clamp(24px, 6vw, 36px) !important; line-height: 1.1 !important; }
@@ -434,8 +435,8 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .wordmark { font-size: 18px !important; letter-spacing: 0.24em !important; }
 
 
-  .gallery { grid-template-columns: 64px 1fr !important; margin: 12px 12px 0 !important; }
-  .thumb { width: 60px !important; height: 60px !important; }
+  .gallery { margin: 12px 12px 0 !important; }
+  .thumb { width: 56px !important; height: 56px !important; }
   .pair-grid { grid-template-columns: 1fr !important; }
   .quick-cards { grid-template-columns: 1fr !important; }
   .certs { grid-template-columns: repeat(2, 1fr) !important; }
