@@ -1538,7 +1538,7 @@ document.getElementById('bundle-btn').addEventListener('click', () => {
     showToast('Configure Shopify variant IDs to enable checkout.');
     return;
   }
-  SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
+  window.location.href = shopifyCartAddUrl(variantId);
 });
 
 // =============================================================
@@ -1552,7 +1552,7 @@ document.getElementById('bundle-btn').addEventListener('click', () => {
       showToast('Configure Shopify variant IDs to enable checkout.');
       return;
     }
-    SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
+    window.location.href = shopifyCartAddUrl(variantId);
   });
 });
 
