@@ -374,7 +374,8 @@ html, body { overflow-x: hidden; max-width: 100%; }
     gap: 24px !important;
   }
   .bundle-hero-text h1 { font-size: clamp(24px, 6vw, 40px) !important; }
-  .bundle-hero-img { aspect-ratio: 16/9 !important; border-radius: 16px !important; }
+  .bundle-hero-img { aspect-ratio: 3/2 !important; border-radius: 16px !important; }
+  .bundle-hero-img img { object-position: var(--mobile-pos, center) !important; }
   .bundle-hero-ctas { flex-direction: column !important; gap: 10px !important; }
   .bundle-hero-ctas .btn { width: 100% !important; justify-content: center !important; min-height: 52px !important; }
   .contents-head { padding: 32px 20px 8px !important; }
@@ -640,6 +641,7 @@ const BUNDLES = {
     price: '€135',
     img: 'project/assets/products-new/bundle-beauty-sleep.png',
     imgPosition: 'center 80%',
+    mobileImgPosition: 'center 20%',
     products: ['cleansing-foam', 'hydrating-toner', 'smoothing-eye-cream', 'retinol-alt-serum', 'ceramide-night-cream'],
   },
   'full-ritual': {
@@ -687,7 +689,7 @@ document.getElementById('root').innerHTML = `
         <button class="btn btn--dark" id="bundle-add-btn">Add to cart →</button>
       </div>
     </div>
-    <div class="bundle-hero-img">
+    <div class="bundle-hero-img" style="--mobile-pos:${bundle.mobileImgPosition||bundle.imgPosition||'center'}">
       <img src="${bundle.img}" alt="${bundle.name}" style="object-position:${bundle.imgPosition||'center'}" />
     </div>
   </section>
