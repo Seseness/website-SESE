@@ -412,9 +412,18 @@ html, body { overflow-x: hidden; max-width: 100%; }
     gap: 32px !important;
     padding: 32px 20px !important;
   }
-  .pair-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 14px !important; }
-  .pcard .pic2 { height: 42vw !important; }
-  .pcard .pic2 img { width: 92% !important; height: 92% !important; }
+  /* Pairs section — compact row layout on mobile */
+  .pair-grid { display: flex !important; flex-direction: column !important; gap: 0 !important; }
+  .pcard { display: grid !important; grid-template-columns: 72px 1fr auto !important; align-items: center !important; gap: 14px !important; padding: 16px 0 !important; border-radius: 0 !important; border: none !important; border-bottom: 1px solid var(--line-soft) !important; background: none !important; }
+  .pcard:last-child { border-bottom: none !important; }
+  .pcard .pic2 { width: 72px !important; height: 72px !important; border-radius: 14px !important; flex-shrink: 0 !important; }
+  .pcard .pic2 img { width: 80% !important; height: 80% !important; }
+  .pcard .m { padding: 0 !important; }
+  .pcard .nm { font-size: 15px !important; }
+  .pcard .sb { font-size: 10px !important; margin-top: 2px !important; }
+  .pcard .pr { flex-direction: column !important; align-items: flex-end !important; gap: 6px !important; margin-top: 0 !important; }
+  .pcard .pr .price { font-size: 14px !important; }
+  .pcard .pr .add { font-size: 10px !important; padding: 6px 10px !important; white-space: nowrap !important; }
   .benefit { margin: 40px 16px 0 !important; grid-template-columns: 1fr !important; gap: 24px !important; }
   .benefit .visual { aspect-ratio: 4/3 !important; border-radius: 16px !important; }
   .benefit .pull { font-size: clamp(16px, 4vw, 22px) !important; padding: 0 16px 16px !important; }
