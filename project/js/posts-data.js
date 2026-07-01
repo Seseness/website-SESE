@@ -8,55 +8,6 @@
 // =============================================================
 const POSTS = [
   {
-    id: 11,
-    published: true,
-    category: "Ingredients · Eye care",
-    title: "The most forgotten step in your routine: why you also need an eye cream",
-    titleHtml: "The most forgotten step in your routine: why you also need an eye cream",
-    date: "July 1, 2026",
-    readtime: "4 min read",
-    excerpt: "The skin around your eyes is five times thinner than the rest of your face, has no sebaceous glands, and moves thousands of times a day. And yet this is the area most people neglect the most.",
-    image: null,
-    sources: [
-      "Berardesca, E. et al. (2010). Periorbital skin. <em>Journal of Cosmetic Dermatology.</em>",
-      "Kligman, A.M. (1979). Perspectives and problems in cutaneous gerontology. <em>Journal of Investigative Dermatology.</em>",
-      "Draelos, Z.D. (2012). Eye cosmetics. <em>Dermatologic Clinics.</em>"
-    ],
-    fullBody: `<h2>Why the eye area is so different</h2>
-
-<p>The skin around the eyes is fundamentally different from the rest of the face. It is extremely thin — sometimes just 0.5 mm — and lacks the sebaceous glands that produce a natural lipid film elsewhere on the face. This means it dries out faster, is more sensitive to external irritants and shows the first signs of aging sooner: fine lines, puffiness, dark circles.</p>
-
-<p>On top of that, the average person blinks between 10,000 and 15,000 times per day. All those small muscle movements create mechanical tension on a skin that is already more fragile than the rest of the face. It is no coincidence that the eye area is the first place where wrinkles appear.</p>
-
-<h2>When should you start?</h2>
-
-<p>This is the question we receive most often. And the honest answer is: as early as possible. Prevention works. You do not need to have visible wrinkles to benefit from an eye cream. Starting in your late twenties or early thirties is ideal — but for those who start later: better late than never.</p>
-
-<p>We ourselves started late. And that is exactly why we write about it so openly — because we wish someone had told us sooner.</p>
-
-<h2>How do you apply eye cream correctly?</h2>
-
-<p>This is where it often goes wrong. Many people rub the cream in or pull at the skin. That is exactly what you should not do — pulling accelerates the formation of wrinkles. The right technique is tapping: use your ring finger (which exerts the least pressure) and gently tap the cream from the inner corner outward.</p>
-
-<p><em>✦ &nbsp;Always use your ring finger — it exerts the least pressure.</em></p>
-
-<p><em>✦ &nbsp;Tap gently — never rub or pull the skin around the eyes.</em></p>
-
-<p><em>✦ &nbsp;Apply along the lower eye socket and on the orbital bone, not too close to the lash line.</em></p>
-
-<h2>The SESE Smoothing Eye Cream — what does it do?</h2>
-
-<p>The SESE Smoothing Eye Cream is formulated for the specific needs of the eye area. Its light, fast-absorbing texture hydrates intensely without feeling heavy or irritating the eyes. The cream works on fine lines, softens the skin and supports the regeneration of the delicate eye zone.</p>
-
-<p>Suitable for both morning and evening routines. For all skin types. COSMOS Natural certified and vegan — like all SESE products.</p>
-
-<h2>Integrate it into your existing routine</h2>
-
-<p>You do not need to change anything drastically. The eye cream fits perfectly after your serum and before your day or night cream. Morning and evening, a small amount, gently tapped in. That is all it takes.</p>
-
-<p><em>✦ &nbsp;Small gestures, repeated consistently — that is where the magic of skincare lies.</em></p>`
-  },
-  {
     id: 1,
     published: true,
     category: "About SESE",
