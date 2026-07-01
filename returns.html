@@ -455,7 +455,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
         </div>
         <div style="margin-top:28px">
           <h5 style="margin-bottom:10px">Newsletter</h5>
-          <form class="newsletter" onsubmit="event.preventDefault()">
+          <form class="newsletter" onsubmit="handleNewsletterSubmit(event)">
             <input type="email" placeholder="Your email" />
             <button type="submit">Subscribe &rarr;</button>
           </form>
@@ -529,5 +529,6 @@ html, body { overflow-x: hidden; max-width: 100%; }
   if(closeBtn) closeBtn.addEventListener('click', close);
 })();
 </script>
+<script src="project/js/newsletter.js"></script>
 </body>
 </html>
