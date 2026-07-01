@@ -1009,6 +1009,18 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .hamburger span { background: #1A1A1A !important; }
   .hamburger { opacity: 1 !important; visibility: visible !important; }
 }
+
+/* Mobile landscape: force mobile nav layout when height ≤ 500px */
+@media (orientation: landscape) and (max-height: 500px) {
+  .nav { padding: 10px 20px !important; grid-template-columns: 1fr auto !important; align-items: center !important; }
+  .nav-center { display: none !important; }
+  .hamburger { display: flex !important; opacity: 1 !important; visibility: visible !important; }
+  .hamburger span { background: #1A1A1A !important; }
+  .wordmark { font-size: 18px !important; letter-spacing: 0.28em !important; white-space: nowrap !important; }
+  .nav-right { gap: 12px !important; align-items: center !important; display: flex !important; }
+  .cart-btn { align-items: center !important; padding: 6px 10px !important; font-size: 10px !important; }
+  .nav-icon { display: inline-flex !important; align-items: center !important; }
+}
 </style>
 </head>
 <body>
