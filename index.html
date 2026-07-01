@@ -168,7 +168,7 @@
     .hero .content {
       position: relative; z-index: 2;
       height: 100%;
-      padding: 96px 80px 200px;
+      padding: 96px 80px 132px;
       display: flex; flex-direction: column; justify-content: flex-end;
       max-width: 880px;
     }
@@ -675,7 +675,7 @@
       .nav-center { display: none; }
       .wordmark { font-size: 18px; letter-spacing: 0.3em; white-space: nowrap; }
       .nav-right { gap: 12px; }
-      .nav-right > span:not(.nav-icon):not(.cart-dot) { display: none; }
+      .nav-right span:not(.nav-icon):not(.cart-dot) { display: none; }
 
       /* Hero */
       .hero { margin: 10px 16px 0; height: 520px; border-radius: 18px; }
@@ -781,246 +781,6 @@
       .card { min-width: 190px; }
       .wordmark { font-size: 16px; }
     }
-
-/* Fluid typography */
-html { font-size: clamp(14px, 1.5vw, 16px); }
-h1 { font-size: clamp(28px, 5vw + 8px, 80px); }
-h2 { font-size: clamp(22px, 3.5vw + 6px, 52px); }
-h3 { font-size: clamp(18px, 2.5vw + 4px, 36px); }
-p, li { font-size: clamp(14px, 1.2vw + 4px, 18px); }
-
-/* ── Hamburger / Mobile nav ── */
-.hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 44px; height: 44px; cursor: pointer; background: none; border: none; padding: 4px; }
-.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: transform .28s ease, opacity .28s ease; }
-.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-.nav-drawer { position: fixed; inset: 0; z-index: 9999; pointer-events: none; }
-.nav-drawer-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.4); opacity: 0; transition: opacity .32s ease; }
-.nav-drawer-panel { position: absolute; top: 0; right: 0; width: min(320px, 85vw); height: 100%; background: var(--bg-nav, #FAF5EC); padding: 80px 40px 40px; transform: translateX(100%); transition: transform .32s ease; display: flex; flex-direction: column; gap: 0; overflow-y: auto; }
-.nav-drawer.open { pointer-events: auto; }
-.nav-drawer.open .nav-drawer-overlay { opacity: 1; }
-.nav-drawer.open .nav-drawer-panel { transform: translateX(0); }
-.nav-drawer-panel a { display: block; padding: 14px 0; font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink, #1A1A1A); border-bottom: 1px solid rgba(26,26,26,0.08); min-height: 44px; display: flex; align-items: center; }
-.nav-drawer-close { position: absolute; top: 20px; right: 20px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; cursor: pointer; background: none; border: none; font-size: 24px; color: var(--ink, #1A1A1A); }
-.nav-drawer-lang { margin-top: 24px; display: flex; gap: 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; }
-.nav-drawer-lang a, .nav-drawer-lang span { min-height: 44px; display: flex; align-items: center; padding: 0 4px; }
-@media (max-width: 768px) {
-  .hamburger { display: flex; }
-  .nav-center { display: none !important; }
-  .nav-lang-inline { display: none; }
-}
-
-/* Touch targets */
-button, .btn, .cart-btn, .btn-add, .btn-view, .filter-pill, .nav-center a, .qty-btn {
-  min-height: 44px;
-}
-.qty-btn { min-width: 44px; }
-
-/* Prevent horizontal overflow */
-html, body { overflow-x: hidden; max-width: 100%; }
-* { box-sizing: border-box; }
-
-/* Mobile base layout */
-@media (max-width: 480px) {
-  .page { width: 100% !important; max-width: 100% !important; }
-  .nav { padding: 16px 20px !important; }
-  .wordmark { font-size: 20px !important; }
-}
-
-
-
-/* ============================================================
-   SESE PREMIUM MOBILE OPTIMIZATION
-   ============================================================ */
-@media (max-width: 768px) {
-  html, body { overflow-x: hidden; }
-  .page { width: 100% !important; max-width: 100% !important; overflow-x: hidden; }
-
-  /* === SESE Premium Mobile Optimization === */
-  /* NAV */
-  .nav {
-    padding: 16px 20px !important;
-    grid-template-columns: 1fr auto !important;
-    position: sticky; top: 0; z-index: 100;
-    background: var(--bg-nav, #FAF5EC);
-  }
-  .nav-center { display: none !important; }
-  .wordmark { font-size: clamp(18px, 5vw, 24px) !important; letter-spacing: 0.28em !important; }
-  .nav-right { gap: 12px !important; }
-  .cart-btn { padding: 8px 12px !important; font-size: 10px !important; min-height: 40px; }
-
-  /* ANNOUNCE BAR */
-  .announce { font-size: 9px !important; letter-spacing: 0.16em !important; padding: 10px 16px !important; line-height: 1.5; }
-  .announce .dot { margin: 0 8px !important; }
-
-  /* FOOTER */
-  .foot-top { grid-template-columns: 1fr !important; padding: 48px 24px 40px !important; gap: 32px !important; }
-  .foot-divider { display: none !important; }
-  .foot-bot { flex-direction: column !important; gap: 16px !important; padding: 20px 24px 28px !important; align-items: flex-start !important; }
-  .pay { flex-wrap: wrap !important; gap: 8px !important; }
-  .foot-wm { font-size: 22px !important; }
-  .foot-tag { font-size: 16px !important; }
-  .newsletter { max-width: 100% !important; }
-
-  /* BUTTONS - touch friendly */
-  .btn { min-height: 48px !important; padding: 14px 24px !important; font-size: 10px !important; width: 100%; justify-content: center; }
-  .btn-add, .btn-view { min-height: 44px !important; }
-  .filter-pill { min-height: 40px !important; padding: 8px 16px !important; }
-
-
-  /* HERO */
-  .hero {
-    margin: 12px 12px 0 !important;
-    height: 70vh !important;
-    min-height: 420px !important;
-    border-radius: 18px !important;
-  }
-  .hero .content {
-    padding: 32px 24px 0 !important;
-    max-width: 100% !important;
-    justify-content: flex-start !important;
-    height: auto !important;
-  }
-  .hero .overlay {
-    background: linear-gradient(180deg, rgba(250,245,236,0.68) 0%, rgba(250,245,236,0.18) 55%, rgba(250,245,236,0.0) 100%) !important;
-  }
-  .hero h1 {
-    font-size: clamp(28px, 7vw, 48px) !important;
-    line-height: 1.05 !important;
-    margin-bottom: 12px;
-  }
-  .hero .subtitle { font-size: clamp(14px, 3.5vw, 18px) !important; margin: 12px 0 0 !important; }
-  .hero .lede { font-size: 14px !important; margin: 12px 0 24px !important; display: none; }
-  .hero-ctas { flex-direction: column !important; gap: 10px !important; width: 100%; }
-  .hero-ctas .btn { width: 100% !important; justify-content: center; }
-  .hero-eyebrow { margin-bottom: 16px !important; font-size: 10px !important; }
-  .hero-discover, .hero-shop-top { display: none !important; }
-
-  /* USPs */
-  .usps { padding: 20px 16px !important; }
-  .usp { flex-direction: column; gap: 6px; text-align: center; }
-  .usps-grid, .usps {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 16px !important;
-  }
-
-  /* CERT SCROLLER */
-  .cert-scroller { margin: 40px 0 0 !important; }
-
-  /* CAROUSEL */
-  .carousel { padding: 0 16px !important; overflow-x: auto !important; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
-  .carousel::-webkit-scrollbar { display: none; }
-  .carousel-track { grid-template-columns: repeat(9, 72vw) !important; gap: 12px !important; }
-  .card { border-radius: 14px !important; }
-  .card-pic { height: 52vw !important; max-height: 260px !important; margin: 2px !important; }
-  .card-pic img.product-img { width: 92% !important; height: 92% !important; border-radius: 14px !important; }
-  .card-name { font-size: clamp(14px, 3.5vw, 18px) !important; }
-  .card-tag { font-size: 12px !important; display: none; }
-  .card-price { font-size: 16px !important; }
-  .card-add { min-height: 40px !important; padding: 6px 14px !important; font-size: 10px !important; }
-  .sec-head { padding: 40px 20px 24px !important; }
-  .sec-head h2 { font-size: clamp(24px, 6vw, 40px) !important; }
-  #essentials .head-aside a { color: #FFFCF5 !important; border-bottom: none !important; display: inline-flex !important; align-items: center !important; padding: 9px 14px !important; border-radius: 999px !important; border: 1px solid var(--blue) !important; background: var(--blue) !important; font-size: 11px !important; letter-spacing: 0.22em !important; text-transform: uppercase !important; font-family: var(--font-display) !important; font-weight: 300 !important; }
-
-  /* FOREVER BUNDLE */
-  .forever {
-    margin: 40px 12px 0 !important;
-    padding: 32px 24px !important;
-    grid-template-columns: 1fr !important;
-    gap: 28px !important;
-    border-radius: 18px !important;
-  }
-  .forever h2 { font-size: clamp(28px, 7vw, 48px) !important; }
-  .forever-art { height: 56vw !important; max-height: 280px !important; }
-  .forever-ctas { flex-direction: column !important; gap: 10px !important; }
-  .forever-ctas .btn { width: 100% !important; justify-content: center !important; }
-  .forever-pricing { flex-wrap: wrap !important; gap: 8px !important; }
-  .forever-pricing .now { font-size: 28px !important; }
-  .forever-inside { margin-top: 8px !important; }
-
-  /* RITUALS */
-  .rituals {
-    margin: 12px 12px 0 !important;
-    grid-template-columns: 1fr !important;
-    gap: 12px !important;
-  }
-  .ritual { border-radius: 18px !important; padding: 28px 24px !important; }
-  .ritual-head h3 { font-size: clamp(22px, 6vw, 36px) !important; }
-  .ritual-price { font-size: 24px !important; }
-  .ritual-btns { gap: 8px !important; flex-wrap: wrap !important; }
-  .ritual-cart-btn { min-height: 44px !important; }
-  .ritual-inside-btn { min-height: 40px !important; }
-  .ritual-bottles { height: 180px !important; }
-
-  /* ABOUT */
-  .about {
-    margin: 40px 12px 0 !important;
-    grid-template-columns: 1fr !important;
-    padding: 28px 24px !important;
-    gap: 24px !important;
-    border-radius: 18px !important;
-  }
-  .about-visual { aspect-ratio: 4/3 !important; border-radius: 14px !important; }
-  .about-body h3 { font-size: clamp(22px, 5vw, 32px) !important; }
-  .about-body .links { flex-direction: column !important; gap: 10px !important; }
-
-  /* JOURNAL */
-  .journal { margin: 12px 12px 0 !important; border-radius: 18px !important; flex-direction: column !important; }
-  .journal-cover { min-height: 52vw !important; max-height: 260px !important; border-radius: 18px 18px 0 0 !important; }
-  .journal-body { padding: 24px !important; }
-  .journal-body h3 { font-size: clamp(18px, 4.5vw, 28px) !important; }
-  .journal-foot {
-    margin: 0 12px 0 !important;
-    padding: 20px 20px !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-    align-items: flex-start !important;
-  }
-
-  /* BLOG HEAD */
-  .blog-head, .sec-head { flex-direction: column !important; gap: 8px !important; align-items: flex-start !important; }
-}
-
-@media (max-width: 480px) {
-
-  .nav { padding: 14px 16px !important; }
-  .wordmark { font-size: 18px !important; letter-spacing: 0.24em !important; }
-
-
-  .hero { height: 78vh !important; margin: 8px 8px 0 !important; }
-  .hero h1 { font-size: clamp(24px, 8vw, 36px) !important; }
-  .carousel-track { grid-template-columns: repeat(9, 84vw) !important; }
-  .forever { margin: 32px 8px 0 !important; }
-  .rituals { margin: 8px 8px 0 !important; }
-  .about { margin: 32px 8px 0 !important; }
-  .journal { margin: 8px 8px 0 !important; }
-}
-
-
-/* Force hamburger visible on mobile */
-@media (max-width: 768px) {
-  .hamburger { display: flex !important; }
-  .hamburger span { background: var(--ink, #1A1A1A) !important; height: 1.5px !important; width: 22px !important; }
-}
-
-@media (max-width: 768px) {
-  .hamburger span { background: #1A1A1A !important; }
-  .hamburger { opacity: 1 !important; visibility: visible !important; }
-}
-
-/* Mobile landscape: force mobile nav layout when height ≤ 500px */
-@media (orientation: landscape) and (max-height: 500px) {
-  .nav { padding: 10px 20px !important; grid-template-columns: 1fr auto !important; align-items: center !important; }
-  .nav-center { display: none !important; }
-  .hamburger { display: flex !important; opacity: 1 !important; visibility: visible !important; }
-  .hamburger span { background: #1A1A1A !important; }
-  .wordmark { font-size: 18px !important; letter-spacing: 0.28em !important; white-space: nowrap !important; }
-  .nav-right { gap: 12px !important; align-items: center !important; display: flex !important; }
-  .cart-btn { align-items: center !important; padding: 6px 10px !important; font-size: 10px !important; }
-  .nav-icon { display: inline-flex !important; align-items: center !important; }
-}
 </style>
 </head>
 <body>
@@ -1049,13 +809,11 @@ html, body { overflow-x: hidden; max-width: 100%; }
       <span class="nav-icon" title="Search">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
       </span>
-      <span style="font-weight:400;letter-spacing:0.22em">EN</span>
+      <span>EN · NL · FR</span>
       <button class="cart-btn" id="cart-btn">
         <span class="cart-dot"></span>
         <span>Cart</span>
       </button>
-    
-      <button class="hamburger" id="hamburger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -1322,7 +1080,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
         </div>
       </div>
       <div class="ritual-bottles">
-        <img src="project/assets/products-new/bundle-beauty-sleep.png" alt="The Beauty Sleep Ritual" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;" />
+        <img src="project/assets/products-new/bundle-beauty-sleep.png" alt="The Beauty Sleep Ritual" style="width:100%;height:100%;object-fit:cover;object-position:center 80%;" />
       </div>
     </div>
 
@@ -1355,8 +1113,32 @@ html, body { overflow-x: hidden; max-width: 100%; }
     </div>
   </div>
 
-  <div id="journal-slot"></div>
-  <div id="journal-foot-slot" class="journal-foot"></div>
+  <a class="journal" href="blog-post.html?p=4">
+    <div class="journal-cover">
+      <img class="cover-img" src="project/assets/journal-cover.jpg" alt="Journal cover" />
+      <div class="meta-top">
+        <span class="pill">Most recent</span>
+        <span>June 22, 2026 · 5 min read</span>
+      </div>
+    </div>
+    <div class="journal-body">
+      <div class="jeb">Serums · Ingredients</div>
+      <h3>Vitamin C, Peptides or Retinol Alternative —<br/><em>which serum is truly right for you?</em></h3>
+      <div class="excerpt">
+        <p>Serums are the most powerful step in your routine. But which one do you choose when you see all three on the shelf?</p>
+        <p>We explain it honestly — without jargon.</p>
+      </div>
+
+      <span class="more">Continue reading on the journal <span class="arc">→</span></span>
+    </div>
+  </a>
+
+  <div class="journal-foot">
+    <span>Also recent in the journal</span>
+    <span><a href="blog-post.html?p=3">SPF is the best anti-aging product →</a></span>
+    <span><a href="blog-post.html?p=2">The perfect daily routine in 5 steps →</a></span>
+    <span><a href="blog.html">Visit the journal →</a></span>
+  </div>
 
 </div><!-- /.page -->
 
@@ -1369,25 +1151,22 @@ html, body { overflow-x: hidden; max-width: 100%; }
         <div class="foot-wm">S E S E</div>
         <div class="foot-tag">Unlock your skin's <em>timeless beauty.</em></div>
         <div class="foot-contact">
-          <a href="mailto:info@sese.be">info@sese.be</a>
+          <a href="mailto:customerservice@sese.be">customerservice@sese.be</a>
         </div>
         <div class="foot-socials">
-          <a class="circ" href="https://www.instagram.com/sese.skin.official/" target="_blank" rel="noopener" title="Instagram">
+          <a class="circ" href="#" title="Instagram">
             <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
           </a>
-          <a class="circ" href="https://www.facebook.com/profile.php?id=61576537267584" target="_blank" rel="noopener" title="Facebook">
+          <a class="circ" href="#" title="Facebook">
             <svg viewBox="0 0 24 24"><path d="M14 4h-2a3 3 0 00-3 3v3H7v3h2v8h3v-8h2.5l.5-3H12V7a1 1 0 011-1h2V4z"/></svg>
           </a>
-          <a class="circ" href="https://www.tiktok.com/@sese.skin.official?_r=1&amp;_t=ZN-97ebiVk2Zjq" target="_blank" rel="noopener" title="TikTok">
-            <svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
-          </a>
-          <a class="circ" href="https://www.linkedin.com/company/112362041" target="_blank" rel="noopener" title="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <a class="circ" href="#" title="Pinterest">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M11 7c2 0 4 1.5 4 4s-1.5 4-3.5 4c-.8 0-1.5-.4-1.7-1l-.5 2.5L8 21"/></svg>
           </a>
         </div>
         <div style="margin-top:28px">
           <h5 style="margin-bottom:10px">Newsletter</h5>
-          <form class="newsletter" onsubmit="handleNewsletterSubmit(event)">
+          <form class="newsletter" onsubmit="event.preventDefault()">
             <input type="email" placeholder="Your email" />
             <button type="submit">Subscribe →</button>
           </form>
@@ -1403,6 +1182,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
           <li><a href="blog.html">Blog</a></li>
           <li><a href="shipping.html">Shipping &amp; Delivery</a></li>
           <li><a href="returns.html">Returns &amp; Refunds</a></li>
+          <li><a href="#">Track my order</a></li>
         </ul>
       </div>
 
@@ -1431,7 +1211,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
         <span class="chip">Apple&nbsp;Pay</span>
       </div>
       <div class="lang-foot">
-        <span style="display:none">NL</span><span class="sep" style="display:none">·</span><span style="color:#2A2620;font-weight:400">EN</span><span class="sep" style="display:none">·</span><span style="display:none">FR</span>
+        <span>NL</span><span class="sep">·</span><span style="color:#2A2620;font-weight:400">EN</span><span class="sep">·</span><span>FR</span>
       </div>
     </div>
   </div>
@@ -1482,15 +1262,15 @@ const SHOPIFY = {
   // Map each product key to its Shopify ProductVariant GID.
   // Format: 'gid://shopify/ProductVariant/123456789'
   variants: {
-    'cleansing-foam':       'gid://shopify/ProductVariant/58352279748992',
-    'hydrating-toner':      'gid://shopify/ProductVariant/58352287154560',
-    'vitamin-c-serum':      'gid://shopify/ProductVariant/58352288891264',
-    'peptide-serum':        'gid://shopify/ProductVariant/58352290038144',
-    'retinol-alt-serum':    'gid://shopify/ProductVariant/58352292692352',
-    'firming-day-cream':    'gid://shopify/ProductVariant/58352294691200',
-    'ceramide-night-cream': 'gid://shopify/ProductVariant/58352298262912',
-    'smoothing-eye-cream':  'gid://shopify/ProductVariant/58352300097920',
-    'spf50-stick':          'gid://shopify/ProductVariant/58352302162304',
+    'cleansing-foam':       'gid://shopify/ProductVariant/58270777049472',
+    'hydrating-toner':      'gid://shopify/ProductVariant/58270797693312',
+    'vitamin-c-serum':      'gid://shopify/ProductVariant/58270831509888',
+    'peptide-serum':        'gid://shopify/ProductVariant/58270806049152',
+    'retinol-alt-serum':    'gid://shopify/ProductVariant/58270807392640',
+    'firming-day-cream':    'gid://shopify/ProductVariant/58270793138560',
+    'ceramide-night-cream': 'gid://shopify/ProductVariant/58270801527168',
+    'smoothing-eye-cream':  'gid://shopify/ProductVariant/58245768839552',
+    'spf50-stick':          'gid://shopify/ProductVariant/58270809096576',
     'forever-bundle':       'gid://shopify/ProductVariant/58276013179264',
     'beauty-sleep-ritual':  'gid://shopify/ProductVariant/58276035199360',
     'full-ritual':          'gid://shopify/ProductVariant/58276049748352',
@@ -1546,9 +1326,12 @@ document.querySelectorAll('.card-add').forEach(btn => {
 //  Add to cart — Forever Routine
 // =============================================================
 document.getElementById('bundle-btn').addEventListener('click', () => {
-  if (!isConfigured()) { showToast('Shop not configured yet — coming soon'); return; }
-  const btn = document.getElementById('bundle-btn');
-  SESECart.add('forever-bundle'); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
+  const variantId = SHOPIFY.variants['forever-bundle'];
+  if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
+    showToast('Configure Shopify variant IDs to enable checkout.');
+    return;
+  }
+  SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
 });
 
 // =============================================================
@@ -1557,8 +1340,11 @@ document.getElementById('bundle-btn').addEventListener('click', () => {
 [['night-cart-btn', 'beauty-sleep-ritual'], ['full-cart-btn', 'full-ritual']].forEach(([btnId, productKey]) => {
   document.getElementById(btnId).addEventListener('click', (e) => {
     e.stopPropagation();
-    if (!isConfigured()) { showToast('Shop not configured yet — coming soon'); return; }
-    const btn = document.getElementById(btnId);
+    const variantId = SHOPIFY.variants[productKey];
+    if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
+      showToast('Configure Shopify variant IDs to enable checkout.');
+      return;
+    }
     SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
   });
 });
@@ -1599,76 +1385,5 @@ document.querySelectorAll('.card').forEach(card => {
 </script>
 
 <script src="project/js/sese-cart.js"></script>
-
-<div class="nav-drawer" id="nav-drawer">
-  <div class="nav-drawer-overlay"></div>
-  <div class="nav-drawer-panel">
-    <button class="nav-drawer-close" aria-label="Close">&#x00D7;</button>
-    <a href="collection.html">Shop</a>
-    <a href="collection.html#bundles">Routines</a>
-    <a href="collection.html#cleanse">Cleanse &amp; Prep</a>
-    <a href="collection.html#serums">Serums</a>
-    <a href="collection.html#moisturize">Moisturize</a>
-    <a href="about.html">About</a>
-    <a href="blog.html">Journal</a>
-    <div class="nav-drawer-lang">
-      <span style="font-weight:400">EN</span>
-      <a style="display:none" href="nl/index.html">NL</a>
-      <a style="display:none" href="fr/index.html">FR</a>
-    </div>
-  </div>
-</div>
-<script>
-(function(){
-  var btn = document.getElementById('hamburger-btn');
-  var drawer = document.getElementById('nav-drawer');
-  var overlay = drawer ? drawer.querySelector('.nav-drawer-overlay') : null;
-  var closeBtn = drawer ? drawer.querySelector('.nav-drawer-close') : null;
-  function open(){ btn.classList.add('open'); drawer.classList.add('open'); document.body.style.overflow='hidden'; }
-  function close(){ btn.classList.remove('open'); drawer.classList.remove('open'); document.body.style.overflow=''; }
-  if(btn) btn.addEventListener('click', function(){ drawer.classList.contains('open') ? close() : open(); });
-  if(overlay) overlay.addEventListener('click', close);
-  if(closeBtn) closeBtn.addEventListener('click', close);
-})();
-</script>
-
-<script src="project/js/posts-data.js"></script>
-<script>
-(function() {
-  var published = POSTS.filter(function(p) { return p.published; });
-  published.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
-  var post = published[0];
-  if (!post) return;
-
-  var coverImg = post.image || 'project/assets/journal-cover.jpg';
-  var others = published.filter(function(p) { return p.id !== post.id; }).slice(0, 2);
-
-  document.getElementById('journal-slot').innerHTML =
-    '<a class="journal" href="blog-post.html?p=' + post.id + '">' +
-      '<div class="journal-cover">' +
-        '<img class="cover-img" src="' + coverImg + '" alt="Journal cover" />' +
-        '<div class="meta-top">' +
-          '<span class="pill">Most recent</span>' +
-          '<span>' + post.date + ' · ' + post.readtime + '</span>' +
-        '</div>' +
-      '</div>' +
-      '<div class="journal-body">' +
-        '<div class="jeb">' + (post.category || '') + '</div>' +
-        '<h3>' + (post.titleHtml || post.title) + '</h3>' +
-        '<div class="excerpt"><p>' + post.excerpt + '</p></div>' +
-        '<span class="more">Continue reading on the journal <span class="arc">→</span></span>' +
-      '</div>' +
-    '</a>';
-
-  var footLinks = others.map(function(p) {
-    return '<span><a href="blog-post.html?p=' + p.id + '">' + p.title + ' →</a></span>';
-  }).join('');
-  document.getElementById('journal-foot-slot').innerHTML =
-    '<span>Also recent in the journal</span>' +
-    footLinks +
-    '<span><a href="blog.html">Visit the journal →</a></span>';
-})();
-</script>
-<script src="project/js/newsletter.js"></script>
 </body>
 </html>
