@@ -1533,12 +1533,9 @@ document.querySelectorAll('.card-add').forEach(btn => {
 //  Add to cart — Forever Routine
 // =============================================================
 document.getElementById('bundle-btn').addEventListener('click', () => {
-  const variantId = SHOPIFY.variants['forever-bundle'];
-  if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
-    showToast('Configure Shopify variant IDs to enable checkout.');
-    return;
-  }
-  window.location.href = shopifyCartAddUrl(variantId);
+  if (!isConfigured()) { showToast('Shop not configured yet — coming soon'); return; }
+  const btn = document.getElementById('bundle-btn');
+  SESECart.add('forever-bundle'); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
 });
 
 // =============================================================
@@ -1547,12 +1544,9 @@ document.getElementById('bundle-btn').addEventListener('click', () => {
 [['night-cart-btn', 'beauty-sleep-ritual'], ['full-cart-btn', 'full-ritual']].forEach(([btnId, productKey]) => {
   document.getElementById(btnId).addEventListener('click', (e) => {
     e.stopPropagation();
-    const variantId = SHOPIFY.variants[productKey];
-    if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
-      showToast('Configure Shopify variant IDs to enable checkout.');
-      return;
-    }
-    window.location.href = shopifyCartAddUrl(variantId);
+    if (!isConfigured()) { showToast('Shop not configured yet — coming soon'); return; }
+    const btn = document.getElementById(btnId);
+    SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
   });
 });
 
