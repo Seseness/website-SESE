@@ -750,12 +750,10 @@ document.getElementById('bundle-add-btn').addEventListener('click', () => {
     showToast('Configure Shopify variant IDs to enable checkout.');
     return;
   }
-  const variantId = SHOPIFY.variants[bundleKey];
-  if (!variantId || variantId.includes('REPLACE_ME')) {
-    showToast('Product not available yet');
-    return;
-  }
-  window.location.href = shopifyCartAddUrl(variantId);
+  if (!isConfigured()) { showToast('Shop not configured yet — coming soon'); return; }
+  const btn = document.getElementById('bundle-add-btn');
+  SESECart.add(bundleKey === 'forever-routine' ? 'forever-bundle' : bundleKey);
+  showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
 });
 </script>
 <script src="project/js/sese-cart.js"></script>
