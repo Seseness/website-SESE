@@ -1343,11 +1343,15 @@ function renderPost(post) {
 }
 
 // Init
-const currentPost = POSTS.find(p => p.id === getPostId());
-if (currentPost) {
-  renderPost(currentPost);
-} else {
-  document.getElementById('article-container').innerHTML = '<div style="padding:80px 56px;text-align:center;color:#7A7770;">Post not found. <a href="blog.html" style="border-bottom:1px solid currentColor">Return to Journal →</a></div>';
+const articleContainer = document.getElementById('article-container');
+const wasSSR = articleContainer && articleContainer.dataset.ssr === 'true';
+if (!wasSSR) {
+  const currentPost = POSTS.find(p => p.id === getPostId());
+  if (currentPost) {
+    renderPost(currentPost);
+  } else {
+    articleContainer.innerHTML = '<div style="padding:80px 56px;text-align:center;color:#7A7770;">Post not found. <a href="blog.html" style="border-bottom:1px solid currentColor">Return to Journal →</a></div>';
+  }
 }
 </script>
 

@@ -1331,7 +1331,14 @@ function bindEvents(key, p) {
 
 // init
 const key = new URLSearchParams(location.search).get('p') || '';
-renderPage(key);
+const pdpRoot = document.getElementById('pdp-root');
+const wasSSR = pdpRoot && pdpRoot.dataset.ssr === 'true';
+if (wasSSR) {
+  const p = PRODUCTS[key];
+  if (p) { bindEvents(key, p); }
+} else {
+  renderPage(key);
+}
 </script>
 <script src="project/js/sese-cart.js"></script>
 
