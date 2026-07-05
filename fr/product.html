@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>SESE — Product</title>
+  <link rel="canonical" id="canonical-link" href="https://www.sese.be/fr/product.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../project/colors_and_type.css" />
   <style>
@@ -867,6 +868,7 @@ function renderPage(key) {
   if (!p) { renderNotFound(); return; }
 
   document.title = `SESE — ${p.name}`;
+  document.getElementById('canonical-link').href = 'https://www.sese.be/fr/product.html?p=' + key;
 
   // crumbs
   document.getElementById('crumbs').innerHTML =

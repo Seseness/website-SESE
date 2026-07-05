@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Journal — SESE</title>
   <meta name="description" content="Skincare stories and honest advice from SESE." />
+  <link rel="canonical" id="canonical-link" href="https://www.sese.be/fr/blog-post.html" />
   <style>
     @font-face {
       font-family: "Todes";
@@ -1245,6 +1246,7 @@ function getRelated(currentId, count = 3) {
 function renderPost(post) {
   // Update title
   document.title = post.title + ' — SESE';
+  document.getElementById('canonical-link').href = 'https://www.sese.be/fr/blog-post.html?p=' + post.id;
   document.getElementById('breadcrumb-title').textContent = post.title;
 
   // Build article header
