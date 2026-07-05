@@ -250,7 +250,7 @@ const POSTS = [
     date: "June 14, 2026",
     readtime: "5 min read",
     excerpt: "Lightest to heaviest. Actives before occlusives. There is a logic to the order — and it makes everything work better.",
-    image: "project/assets/products/vitamin-c-serum-studio.jpg",
+    image: "project/assets/products-new/vitamin-c-serum-studio.jpg",
     sources: [
       "Schagen, S.K. et al. (2012). Discovering the link between nutrition and skin aging. <em>Dermato-Endocrinology.</em>",
       "Katayama, K. et al. (1993). A pentapeptide from type I procollagen promotes extracellular matrix production. <em>Journal of Biological Chemistry.</em>",

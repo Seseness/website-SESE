@@ -305,7 +305,7 @@ function renderPanier() {
     return `
       <div class="cart-article" data-key="${article.key}">
         <div class="article-img" style="background-color:${p.bg}">
-          <img src="${p.img}" alt="${p.name}" />
+          <picture><source srcset="${p.img.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${p.img}" alt="${p.name}" loading="lazy" /></picture>
         </div>
         <div class="article-info">
           <div class="article-name">${p.name}</div>

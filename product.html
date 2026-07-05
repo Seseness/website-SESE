@@ -1000,7 +1000,7 @@ function renderPage(key) {
 
   // thumbs html
   const thumbsHtml = p.imgs.map((im, i) =>
-    `<div class="thumb${i===0?' active':''}" data-src="${im.src}" data-bg="${im.bg}" style="background-color:${im.bg}"><img src="${im.src}" alt="" /></div>`
+    `<div class="thumb${i===0?' active':''}" data-src="${im.src}" data-bg="${im.bg}" style="background-color:${im.bg}"><picture><source srcset="${im.src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${im.src}" alt="" loading="lazy" /></picture></div>`
   ).join('') + (p.imgs.length < 4 ? `<div class="thumb" style="background-color:${p.color};opacity:0.4;"></div>`.repeat(4-p.imgs.length) : '');
 
   // chips html
@@ -1042,7 +1042,7 @@ function renderPage(key) {
     const pp = PRODUCTS[pid];
     if (!pp) return '';
     return `<a class="pcard" href="product.html?p=${pid}">
-      <div class="pic2" style="background-color:${pp.color}"><img src="${pp.img}" alt="${pp.name}" /></div>
+      <div class="pic2" style="background-color:${pp.color}"><picture><source srcset="${pp.img.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${pp.img}" alt="${pp.name}" loading="lazy" /></picture></div>
       <div class="m">
         <div class="nm">${pp.name}</div>
         <div class="sb">${pp.step}</div>
@@ -1058,7 +1058,7 @@ function renderPage(key) {
       <div class="thumbs" id="thumbs">${thumbsHtml}</div>
       <div class="main-img" id="main-img-wrap" style="background-color:${p.imgs[0].bg}">
         <div class="corner-r"><div>${p.size}</div></div>
-        <img id="main-img" src="${p.imgs[0].src}" alt="SESE ${p.name}" />
+        <picture><source srcset="${p.imgs[0].src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img id="main-img" src="${p.imgs[0].src}" alt="SESE ${p.name}" /></picture>
         <button class="zoom-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></button>
       </div>
     </div>

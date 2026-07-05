@@ -604,7 +604,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
       '<div class="featured-wrap">' +
         '<div class="featured-label">Latest article</div>' +
         '<div class="featured-post">' +
-          '<div class="featured-img"><img src="' + coverImg + '" alt="Journal cover" /></div>' +
+          '<div class="featured-img"><picture><source srcset="' + coverImg.replace(/\.(jpg|jpeg|png)$/i, '.webp') + '" type="image/webp"><img src="' + coverImg + '" alt="Journal cover" /></picture></div>' +
           '<div class="featured-body">' +
             '<div class="featured-meta">' +
               '<span>' + featured.date + '</span>' +

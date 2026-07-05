@@ -380,7 +380,7 @@ function renderCart() {
     return `
       <div class="cart-item" data-key="${item.key}">
         <div class="item-img${['forever-bundle','beauty-sleep-ritual','full-ritual'].includes(item.key) ? ' item-img--bundle' : ''}" style="background-color:${p.bg}">
-          <img src="${p.img}" alt="${p.name}" />
+          <picture><source srcset="${p.img.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${p.img}" alt="${p.name}" loading="lazy" /></picture>
         </div>
         <div class="item-info">
           <div class="item-name">${p.name}</div>
