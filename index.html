@@ -822,6 +822,17 @@
   .nav-center { display: none !important; }
   .nav-lang-inline { display: none; }
 }
+
+/* Force hamburger visible on mobile */
+@media (max-width: 768px) {
+  .hamburger { display: flex !important; }
+  .hamburger span { background: var(--ink, #1A1A1A) !important; height: 1.5px !important; width: 22px !important; }
+}
+
+@media (max-width: 768px) {
+  .hamburger span { background: #1A1A1A !important; }
+  .hamburger { opacity: 1 !important; visibility: visible !important; }
+}
 </style>
 </head>
 <body>
