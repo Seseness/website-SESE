@@ -1160,7 +1160,10 @@ function bindEvents(key, p) {
       const src = t.dataset.src;
       const bg  = t.dataset.bg;
       if (src) {
-        document.getElementById('main-img').src = src;
+        const mainImg = document.getElementById('main-img');
+        mainImg.src = src;
+        const source = mainImg.closest('picture').querySelector('source');
+        if (source) source.srcset = src.replace(/\.(png|jpg)$/, '.webp');
         document.getElementById('main-img-wrap').style.backgroundColor = bg;
       }
     });
