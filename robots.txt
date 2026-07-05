@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /cart.html
+Disallow: /coming-soon.html
+
+Sitemap: https://www.sese.be/sitemap.xml
