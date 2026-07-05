@@ -712,7 +712,17 @@
       /* Section header */
       .section-head { flex-direction: column; align-items: flex-start; gap: 12px; padding: 0 16px; margin-bottom: 20px; }
       .section-head h2 { font-size: 28px; }
-      #essentials .head-aside a { color: var(--blue); border-bottom-color: var(--blue); }
+      #essentials .head-aside a {
+        display: inline-flex; align-items: center; gap: 12px;
+        padding: 16px 28px;
+        font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase;
+        border-radius: 999px;
+        background: var(--blue);
+        color: #FFFCF5;
+        border: none;
+        font-family: var(--font-display); font-weight: 300;
+      }
+      #essentials .head-aside a:hover { background: var(--blue-dark); }
       .view-all { align-self: flex-start; }
 
       /* Carousel — horizontal scroll */
