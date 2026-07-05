@@ -802,11 +802,12 @@
     }
 
 /* ── Hamburger / Mobile nav ── */
-.hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 44px; height: 44px; cursor: pointer; background: none; border: none; padding: 4px; }
-.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: transform .28s ease, opacity .28s ease; }
-.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.hamburger { display: none; align-items: center; justify-content: center; width: 44px; height: 44px; cursor: pointer; background: none; border: none; padding: 4px; }
+.hamburger svg { width: 22px; height: 22px; overflow: visible; }
+.hamburger .bar { stroke: var(--ink, #1A1A1A); stroke-width: 1.8; stroke-linecap: round; transition: transform .28s ease, opacity .28s ease; transform-origin: 12px 12px; }
+.hamburger.open .bar1 { transform: translateY(6px) rotate(45deg); }
+.hamburger.open .bar2 { opacity: 0; }
+.hamburger.open .bar3 { transform: translateY(-6px) rotate(-45deg); }
 .nav-drawer { position: fixed; inset: 0; z-index: 9999; pointer-events: none; }
 .nav-drawer-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.4); opacity: 0; transition: opacity .32s ease; }
 .nav-drawer-panel { position: absolute; top: 0; right: 0; width: min(320px, 85vw); height: 100%; background: var(--bg-nav, #FAF5EC); padding: 80px 40px 40px; transform: translateX(100%); transition: transform .32s ease; display: flex; flex-direction: column; gap: 0; overflow-y: auto; }
@@ -821,17 +822,6 @@
   .hamburger { display: flex; }
   .nav-center { display: none !important; }
   .nav-lang-inline { display: none; }
-}
-
-/* Force hamburger visible on mobile */
-@media (max-width: 768px) {
-  .hamburger { display: flex !important; }
-  .hamburger span { background: var(--ink, #1A1A1A) !important; height: 1.5px !important; width: 22px !important; }
-}
-
-@media (max-width: 768px) {
-  .hamburger span { background: #1A1A1A !important; }
-  .hamburger { opacity: 1 !important; visibility: visible !important; }
 }
 </style>
 </head>
@@ -866,7 +856,9 @@
         <span class="cart-dot"></span>
         <span>Cart</span>
       </button>
-      <button class="hamburger" id="hamburger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><line class="bar bar1" x1="3" y1="7" x2="21" y2="7"/><line class="bar bar2" x1="3" y1="12" x2="21" y2="12"/><line class="bar bar3" x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
     </div>
   </header>
 
