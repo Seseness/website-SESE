@@ -254,7 +254,7 @@ const POSTS = [
 
 <p>Small gestures, repeated consistently. That is where the magic of skincare lies.</p>
 
-<p><a href="product.html?p=smoothing-eye-cream">Discover the Smoothing Eye Cream →</a></p>`
+<p><a href="product.html?p=smoothing-eye-cream" class="btn-cta">Discover the Smoothing Eye Cream →</a></p>`
   },
   {
     id: 99,
