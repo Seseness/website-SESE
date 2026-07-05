@@ -670,12 +670,12 @@ html, body { overflow-x: hidden; max-width: 100%; }
 function getPostId() {
   const params = new URLSearchParams(window.location.search);
   const p = parseInt(params.get('p'), 10);
-  return (p >= 1 && p <= 10) ? p : 1;
+  return POSTS.some(post => post.id === p) ? p : 1;
 }
 
 function getRelated(currentId, count = 3) {
-  // Only show the 4 real published posts (id 1-4)
-  const others = POSTS.filter(p => p.id >= 1 && p.id <= 4 && p.id !== currentId);
+  // Only show published posts
+  const others = POSTS.filter(p => p.published && p.id !== currentId);
   // Pick a spread of posts
   const picks = [];
   const step = Math.max(1, Math.floor(others.length / count));
