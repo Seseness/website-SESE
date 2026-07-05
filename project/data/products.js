@@ -1,0 +1,4043 @@
+export const PRODUCTS = {
+  "en": {
+    "cleansing-foam": {
+      "name": "Cleansing Foam",
+      "nameBreak": "Cleansing<br>Foam.",
+      "step": "01 · Cleanse",
+      "stepNum": 1,
+      "price": "€26",
+      "vol": "150 ml",
+      "volPrice": "€0.17/ml",
+      "tagline": "Removes the day gently, leaves the barrier intact. The kind of cleanse that feels like almost nothing happened, except everything that needed to go is gone.",
+      "chips": [
+        "Gel-to-foam",
+        "Gentle",
+        "AM / PM",
+        "All skin types"
+      ],
+      "color": "#E3EEF5",
+      "img": "project/assets/products-new/cleansing-foam-hp.png",
+      "imgs": [
+        {
+          "src": "project/assets/products-new/cleansing-foam-hp.png",
+          "bg": "#E3EEF5"
+        },
+        {
+          "src": "project/assets/products-new/cleansing-foam-textuur.jpg",
+          "bg": "#EDF4F8"
+        }
+      ],
+      "sku": "No. 01 · Cleanse",
+      "size": "150 ml",
+      "quickInfo": [
+        [
+          "Gentle formula",
+          "Sulfate-free"
+        ],
+        [
+          "Use AM & PM",
+          "First step, both routines"
+        ]
+      ],
+      "routineActive": 0,
+      "ingredients": [
+        {
+          "abbr": "ALO",
+          "bg": "#E6EFE9",
+          "nm": "Aloe Barbadensis Leaf Juice",
+          "ds": "Calms and soothes while cleansing.",
+          "pct": "Base"
+        },
+        {
+          "abbr": "CG",
+          "bg": "#E3EEF5",
+          "nm": "Coco-Glucoside",
+          "ds": "Gentle, plant-derived surfactant.",
+          "pct": "—"
+        },
+        {
+          "abbr": "GLA",
+          "bg": "#FAF7C9",
+          "nm": "Gluconolactone (PHA)",
+          "ds": "Softly resurfaces without irritation.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "PAN",
+          "bg": "#E6EFE9",
+          "nm": "Panthenol",
+          "ds": "Draws moisture in and supports the barrier.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "CAM",
+          "bg": "#FCE8EB",
+          "nm": "Chamomile Extract",
+          "ds": "Botanical anti-redness, visibly calms skin.",
+          "pct": "0.5%"
+        }
+      ],
+      "ingTitle": "Clean start, <em>calm finish.</em>",
+      "howTitle": "Twenty seconds. <em>Twice a day.</em>",
+      "howSteps": [
+        {
+          "h": "Wet your face",
+          "p": "Lukewarm water opens the pores gently. Cool water is fine for the morning rinse."
+        },
+        {
+          "h": "One to two pumps",
+          "p": "Work the gel between your palms first. It transforms into a light foam with just a little water."
+        },
+        {
+          "h": "Massage in slow circles",
+          "p": "Thirty seconds is enough. Focus on the T-zone and jaw, be gentle around eyes."
+        },
+        {
+          "h": "Rinse and pat dry",
+          "p": "Always pat, never rub. Your skin is ready for toner."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#C5DAEA,#A0C4D6)",
+      "quote": "\"I didn't expect a cleanser to make a difference. This one changed my morning.\"",
+      "benefitTitle": "The cleanest start <em>to better skin.</em>",
+      "benefitBody": [
+        "Most skin concerns start at the cleanse. Strip the barrier and the rest of your routine fights against itself. Foam gently, rinse completely, and let everything else do its job.",
+        "No sulfates, no parabens, no tight feeling after. Just clean."
+      ],
+      "stats": [
+        {
+          "n": "98",
+          "suf": "%",
+          "l": "Said skin felt calm — not stripped"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Sulfates, parabens, fragrance"
+        },
+        {
+          "n": "12",
+          "suf": "w",
+          "l": "PAO — stable after opening"
+        }
+      ],
+      "faqTitle": "Questions about <em>this cleanser.</em>",
+      "faqs": [
+        {
+          "q": "Can I use it to remove makeup?",
+          "a": "It removes light makeup effectively. For full coverage or SPF, we recommend a dedicated makeup remover or micellar water first, then follow with Cleansing Foam."
+        },
+        {
+          "q": "Is it safe for sensitive or reactive skin?",
+          "a": "Yes. The formula is fragrance-free, sulfate-free, and uses a single mild PHA rather than AHAs or BHAs. If your skin is severely reactive, patch-test for two evenings."
+        },
+        {
+          "q": "Can I use it twice a day?",
+          "a": "Yes. It's designed for both morning and evening. The Gluconolactone dose is low enough for daily double use."
+        },
+        {
+          "q": "What does \"gel-to-foam\" mean exactly?",
+          "a": "The product dispenses as a light gel and transforms into a soft foam when it meets water. No pump aerosol needed. Just your hands and a little water."
+        }
+      ],
+      "inci": "Aqua, Aloe Barbadensis Leaf Juice, Glycerin, Coco-Glucoside, Gluconolactone, Panthenol, Chamomilla Recutita Flower Extract, Sodium Cocoyl Glutamate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "95.2% naturally derived. 100% vegan. No fragrance, sulfates, or parabens.",
+      "pairs": [
+        "hydrating-toner",
+        "peptide-serum",
+        "firming-day-cream",
+        "ceramide-night-cream"
+      ]
+    },
+    "hydrating-toner": {
+      "name": "Hydrating Toner",
+      "nameBreak": "Hydrating<br>Toner.",
+      "step": "02 · Tone",
+      "stepNum": 2,
+      "price": "€24",
+      "vol": "200 ml",
+      "volPrice": "€0.12/ml",
+      "tagline": "A weightless mist that resets skin's pH and opens the door for everything that follows. Preps in thirty seconds, works for hours.",
+      "chips": [
+        "Weightless mist",
+        "pH-balancing",
+        "AM / PM",
+        "All skin types"
+      ],
+      "color": "#E6EFE9",
+      "img": "project/assets/products-new/hydrating-toner-hp.png",
+      "imgs": [
+        {
+          "src": "project/assets/products-new/hydrating-toner-hp.png",
+          "bg": "#E6EFE9"
+        },
+        {
+          "src": "project/assets/products-new/hydrating-toner-textuur.jpg",
+          "bg": "#ECF3EC"
+        }
+      ],
+      "sku": "No. 02 · Tone",
+      "size": "200 ml",
+      "quickInfo": [
+        [
+          "All skin types",
+          "Alcohol-free"
+        ],
+        [
+          "After cleansing",
+          "Before serum & cream"
+        ]
+      ],
+      "routineActive": 1,
+      "ingredients": [
+        {
+          "abbr": "RW",
+          "bg": "#FCE8EB",
+          "nm": "Rose Water",
+          "ds": "Botanical base — softly hydrating and calming.",
+          "pct": "Base"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Brightens, tightens pores, strengthens barrier.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E6EFE9",
+          "nm": "Sodium Hyaluronate",
+          "ds": "Pulls water into the upper layers of skin.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "CER",
+          "bg": "#FAF7C9",
+          "nm": "Ceramide NP",
+          "ds": "Lipid molecule that locks moisture in.",
+          "pct": "0.2%"
+        },
+        {
+          "abbr": "BET",
+          "bg": "#E3EEF5",
+          "nm": "Betaine",
+          "ds": "Gentle humectant from sugar beet.",
+          "pct": "2%"
+        }
+      ],
+      "ingTitle": "The bridge <em>between clean and treated.</em>",
+      "howTitle": "Mist. Pat. Done.",
+      "howSteps": [
+        {
+          "h": "Cleanse first",
+          "p": "Always apply to freshly cleansed skin. Toner on uncleansed skin just layers residue."
+        },
+        {
+          "h": "Mist or pour and pat",
+          "p": "Hold 20 cm from face and mist evenly, or pour a small amount and press gently into skin with clean palms."
+        },
+        {
+          "h": "No rubbing, no cotton pads",
+          "p": "Cotton pads absorb product and drag skin. Palms press it in without waste."
+        },
+        {
+          "h": "Move directly to serum",
+          "p": "Apply your serum within 30 seconds. Toned, damp skin absorbs actives significantly better."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#C9D7C9,#A3BFA3)",
+      "quote": "\"I thought toners were old-fashioned. This one made everything else work better.\"",
+      "benefitTitle": "Not a toner in the old sense. <em>A skin-prep ritual.</em>",
+      "benefitBody": [
+        "The old-school toner stripped. This one preps — pH, hydration, and barrier all at once. The difference shows in how well your serums absorb, not in how this product feels alone.",
+        "One step that makes the next three work harder."
+      ],
+      "stats": [
+        {
+          "n": "+42",
+          "suf": "%",
+          "l": "Better serum absorption on prepped skin"
+        },
+        {
+          "n": "97",
+          "suf": "%",
+          "l": "Felt more supple in one week"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Alcohol, fragrance, colorants"
+        }
+      ],
+      "faqTitle": "Questions about <em>the toner.</em>",
+      "faqs": [
+        {
+          "q": "Do I really need a toner?",
+          "a": "Not every skin does. But if you use serums with actives, a pH-balanced, hydrating toner meaningfully improves absorption. Think of it as the thin layer that lets everything else work."
+        },
+        {
+          "q": "Can I use a cotton pad instead of hands?",
+          "a": "You can. We prefer hands. Less product wasted, less dragging. But if a cotton pad is your preference, use a soft, unbleached one."
+        },
+        {
+          "q": "Is the niacinamide concentration safe for sensitive skin?",
+          "a": "Yes. At 3% it brightens and supports barrier function without the irritation risk that can come with higher doses. Well tolerated by most sensitive skin."
+        },
+        {
+          "q": "Does it work as a facial mist during the day?",
+          "a": "You can use it as a quick refresh mid-day, but the main benefit is in the prep step. A daytime mist won't have the same absorption-boosting effect."
+        }
+      ],
+      "inci": "Aqua, Rosa Damascena Flower Water, Glycerin, Niacinamide (3%), Propanediol, Sodium Hyaluronate, Ceramide NP, Betaine, Panthenol, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "96.8% naturally derived. 100% vegan. No alcohol, fragrance, or colorants.",
+      "pairs": [
+        "cleansing-foam",
+        "vitamin-c-serum",
+        "peptide-serum",
+        "spf50-stick"
+      ]
+    },
+    "vitamin-c-serum": {
+      "name": "Vitamin C Serum",
+      "nameBreak": "Vitamin C<br>Serum.",
+      "step": "03 · Treat · AM",
+      "stepNum": 2,
+      "price": "€34",
+      "vol": "30 ml",
+      "volPrice": "€1.13/ml",
+      "tagline": "A stable 12% ascorbic acid that brightens without burning. The morning glow you build over weeks, not the kind you borrow.",
+      "chips": [
+        "Brightens",
+        "Evens tone",
+        "AM only",
+        "Stable 12% VC"
+      ],
+      "color": "#FCEAD0",
+      "img": "project/assets/products-new/vitamin-c-serum-hp.png",
+      "imgs": [
+        {
+          "src": "project/assets/products-new/vitamin-c-serum-hp.png",
+          "bg": "#FCEAD0"
+        },
+        {
+          "src": "project/assets/products-new/vitamin-c-serum-textuur.jpg",
+          "bg": "#FEF0E0"
+        }
+      ],
+      "sku": "No. 03 · Treat · AM",
+      "size": "30 ml",
+      "quickInfo": [
+        [
+          "Morning use only",
+          "Pairs with SPF 50"
+        ],
+        [
+          "All skin types",
+          "Patch-test if reactive"
+        ]
+      ],
+      "routineActive": 2,
+      "ingredients": [
+        {
+          "abbr": "VC",
+          "bg": "#FCEAD0",
+          "nm": "Ascorbic Acid",
+          "ds": "Pure vitamin C — brightens and stimulates collagen.",
+          "pct": "12%"
+        },
+        {
+          "abbr": "FER",
+          "bg": "#FAF7C9",
+          "nm": "Ferulic Acid",
+          "ds": "Stabilises vitamin C and doubles its antioxidant effect.",
+          "pct": "0.5%"
+        },
+        {
+          "abbr": "VE",
+          "bg": "#E6EFE9",
+          "nm": "Tocopherol (Vitamin E)",
+          "ds": "Antioxidant synergy — keeps the formula stable.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Brightens pores, smooths texture, calms redness.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E3EEF5",
+          "nm": "Sodium Hyaluronate",
+          "ds": "Hydration that carries the actives deeper.",
+          "pct": "1%"
+        }
+      ],
+      "ingTitle": "Stable actives, <em>honest results.</em>",
+      "howTitle": "Three drops. <em>Every morning.</em>",
+      "howSteps": [
+        {
+          "h": "After cleansing and toner",
+          "p": "Apply to clean, toned skin. Vitamin C absorbs best on a pH-balanced base."
+        },
+        {
+          "h": "Warm three drops in your palms",
+          "p": "Press firmly across cheeks, forehead, chin and neck. Pat. Don't rub."
+        },
+        {
+          "h": "Wait sixty seconds",
+          "p": "Let the serum absorb fully before layering moisturiser on top."
+        },
+        {
+          "h": "SPF is non-negotiable",
+          "p": "Vitamin C makes skin temporarily more photosensitive. Always finish morning routine with SPF 50."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#F4C9A8,#E0A870)",
+      "quote": "\"My skin looks like I sleep well now. I don't, but it does.\"",
+      "benefitTitle": "Radiance that builds, <em>not borrows.</em>",
+      "benefitBody": [
+        "Vitamin C brightens by interrupting melanin production — the effect is cumulative. Day one you feel it. Week four you see it. Month two it holds.",
+        "The formula uses a ferulic acid stabilisation system that keeps the ascorbic acid active from first drop to last."
+      ],
+      "stats": [
+        {
+          "n": "+31",
+          "suf": "%",
+          "l": "Radiance uplift after 4 weeks"
+        },
+        {
+          "n": "87",
+          "suf": "%",
+          "l": "More even skin tone at 8 weeks"
+        },
+        {
+          "n": "12",
+          "suf": "%",
+          "l": "Stable ascorbic acid"
+        }
+      ],
+      "faqTitle": "Questions about <em>Vitamin C.</em>",
+      "faqs": [
+        {
+          "q": "Can I use it with Peptide Serum?",
+          "a": "Yes. They complement each other well. Use Vitamin C in the morning and Peptide Serum in the morning or evening. Avoid layering both in a single step: apply one, wait, then apply the other."
+        },
+        {
+          "q": "My serum turned orange. Is it still safe?",
+          "a": "An orange tint means the Vitamin C is oxidising. The formula is less effective at that point. Store below 20°C and away from direct light to extend freshness. Most bottles last 3 months from opening."
+        },
+        {
+          "q": "Can I use it if I have rosacea or reactive skin?",
+          "a": "Vitamin C at 12% can cause tingling in sensitive skin. Start every other day for two weeks, then daily. If irritation persists, the Peptide Serum is a gentler morning active to start with."
+        },
+        {
+          "q": "Why only mornings?",
+          "a": "Vitamin C is an antioxidant. It works against the environmental damage of the day. It also makes skin temporarily more photosensitive, so pairing it with SPF in the morning makes most sense."
+        }
+      ],
+      "inci": "Aqua, Ascorbic Acid (12%), Glycerin, Propanediol, Niacinamide (3%), Ferulic Acid, Tocopherol, Sodium Hyaluronate, Panthenol, Xanthan Gum, Citric Acid, Sodium Benzoate, Potassium Sorbate.",
+      "inciNote": "89.3% naturally derived. 100% vegan. No fragrance, parabens, or sulfates.",
+      "pairs": [
+        "hydrating-toner",
+        "peptide-serum",
+        "firming-day-cream",
+        "spf50-stick"
+      ]
+    },
+    "peptide-serum": {
+      "name": "Peptide Serum",
+      "nameBreak": "Peptide<br>Serum.",
+      "step": "03 · Treat · AM/PM",
+      "stepNum": 2,
+      "price": "€34",
+      "vol": "30 ml",
+      "volPrice": "€1.13/ml",
+      "tagline": "Firms, smooths and supports skin's natural elasticity. A quiet, daily firming that earns its keep over weeks, not minutes.",
+      "chips": [
+        "Firms",
+        "Smooths",
+        "AM / PM",
+        "All skin types"
+      ],
+      "color": "#FCEAD0",
+      "img": "project/assets/products-new/peptide-serum-hp.png",
+      "imgs": [
+        {
+          "src": "project/assets/products-new/peptide-serum-hp.png",
+          "bg": "#FCEAD0"
+        },
+        {
+          "src": "project/assets/products-new/peptide-serum-textuur.jpg",
+          "bg": "#FEF0E0"
+        }
+      ],
+      "sku": "No. 03 · Treat",
+      "size": "30 ml",
+      "quickInfo": [
+        [
+          "All skin types",
+          "Fragrance-free"
+        ],
+        [
+          "Use AM & PM",
+          "After toner, before cream"
+        ]
+      ],
+      "routineActive": 2,
+      "ingredients": [
+        {
+          "abbr": "PEP",
+          "bg": "#FCEAD0",
+          "nm": "Hydroxyproline Peptide",
+          "ds": "Supports firmness and elasticity over time.",
+          "pct": "2.5%"
+        },
+        {
+          "abbr": "AL",
+          "bg": "#E3EEF5",
+          "nm": "Aloe Juice",
+          "ds": "Calms, soothes and supports the barrier.",
+          "pct": "Base"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E6EFE9",
+          "nm": "Hyaluronic Acid",
+          "ds": "Holds water in the upper layers of skin.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "GIN",
+          "bg": "#FAF7C9",
+          "nm": "Ginkgo Leaf Extract",
+          "ds": "Botanical antioxidant — a gentle daily defence.",
+          "pct": "0.4%"
+        },
+        {
+          "abbr": "BB",
+          "bg": "#FCE8EB",
+          "nm": "Blueberry & Strawberry Seed Oil",
+          "ds": "Rich in vitamin E — softens the finish.",
+          "pct": "Trace"
+        }
+      ],
+      "ingTitle": "Honest helpers, <em>not heroes.</em>",
+      "howTitle": "Three slow drops, <em>twice a day.</em>",
+      "howSteps": [
+        {
+          "h": "Cleanse and tone",
+          "p": "Start on a clean, slightly damp face. SESE Cleansing Foam, then a mist of Hydrating Toner."
+        },
+        {
+          "h": "Warm one to two drops",
+          "p": "Press the pump and warm the serum between fingertips. Pat, never rub, across cheeks, forehead, neck."
+        },
+        {
+          "h": "Let it settle, then layer",
+          "p": "Wait ~60 seconds. Follow with Firming Day Cream in the morning, Ceramide Night Cream in the evening."
+        },
+        {
+          "h": "Finish with SPF in the morning",
+          "p": "SPF 50 Sunscreen Stick is the non-negotiable final step before the day begins."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#F5C98A,#E0AC58)",
+      "quote": "\"After four weeks my skin holds itself differently. Less tight. More mine.\"",
+      "benefitTitle": "Time-released firmness, <em>built into a daily ritual.</em>",
+      "benefitBody": [
+        "Peptides do not work like a glow trick — they work like sleep. You won't notice the single day. You will notice the third week.",
+        "Built for a long, gentle pattern: a thin, fast-absorbing essence with a stable peptide complex, a calming aloe base, and just enough hyaluronic acid to feel like a sip of water for tired skin."
+      ],
+      "stats": [
+        {
+          "n": "+23",
+          "suf": "%",
+          "l": "Firmness uplift after 4 weeks"
+        },
+        {
+          "n": "94",
+          "suf": "%",
+          "l": "Felt softer, calmer skin in week 1"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Fragrance, sulfates, retinoid sting"
+        }
+      ],
+      "faqTitle": "Questions about <em>this serum.</em>",
+      "faqs": [
+        {
+          "q": "Can I use Peptide Serum with retinol or Vitamin C?",
+          "a": "Yes. Peptides play well with both. We recommend: Vitamin C in the morning, Peptide Serum either morning or evening, and our Retinol Alternative on alternating evenings if you want gentle renewal too."
+        },
+        {
+          "q": "How long until I see a difference?",
+          "a": "Most skin feels softer and calmer within the first week. Visible firmness and a smoother surface take 3-4 weeks of consistent, twice-daily use. Peptides build, they don't surprise."
+        },
+        {
+          "q": "Is it safe for sensitive skin?",
+          "a": "Yes. The formula is fragrance-free, allergen-label-free, and uses a single, well-tolerated peptide rather than a heavy actives cocktail. Patch-test inside the elbow for two evenings if your skin is reactive."
+        },
+        {
+          "q": "How long does one bottle last?",
+          "a": "With twice-daily use, one 30 ml bottle lasts roughly 8 weeks. Once-a-day use stretches it to about 12 weeks."
+        },
+        {
+          "q": "Why a glass bottle with airless pump?",
+          "a": "Peptides are sensitive to air and light. The airless pump and tinted glass keep the formula stable from the first day to the last drop."
+        }
+      ],
+      "inci": "Aqua (Water), Aloe Barbadensis Leaf Juice, Glycerin, Propanediol, Sodium Hyaluronate, Hydroxyproline, Phytosteryl Oleate, Tocopherol, Vaccinium Myrtillus (Blueberry) Seed Oil, Fragaria Ananassa (Strawberry) Seed Oil, Ginkgo Biloba Leaf Extract, Sodium Phytate, Xanthan Gum, Citric Acid, Sodium Benzoate, Potassium Sorbate, Phenoxyethanol.",
+      "inciNote": "91.4% naturally derived. 100% vegan. No fragrance, parabens, or sulfates.",
+      "pairs": [
+        "cleansing-foam",
+        "hydrating-toner",
+        "firming-day-cream",
+        "spf50-stick"
+      ]
+    },
+    "retinol-alt-serum": {
+      "name": "Retinol Alternative Serum",
+      "nameBreak": "Retinol Alt.<br>Serum.",
+      "step": "03 · Treat · PM",
+      "stepNum": 2,
+      "price": "€26",
+      "vol": "30 ml",
+      "volPrice": "€0.87/ml",
+      "tagline": "The renewal of retinol without the sting. Bakuchiol and PHAs that smooth fine lines gently, for the skin that wants results without a transition phase.",
+      "chips": [
+        "Renews",
+        "Smooths lines",
+        "PM use",
+        "Sensitive-safe"
+      ],
+      "color": "#F5EAE4",
+      "img": "project/assets/products-new/retinol-alt-serum-hp.png",
+      "imgs": [
+        {
+          "src": "project/assets/products-new/retinol-alt-serum-hp.png",
+          "bg": "#F5EAE4"
+        },
+        {
+          "src": "project/assets/products-new/retinol-alt-serum-textuur.jpg",
+          "bg": "#EFE0D8"
+        }
+      ],
+      "sku": "No. 03 · Treat · PM",
+      "size": "30 ml",
+      "quickInfo": [
+        [
+          "Evening use only",
+          "Sensitive skin welcome"
+        ],
+        [
+          "After toner",
+          "Before night cream"
+        ]
+      ],
+      "routineActive": 2,
+      "ingredients": [
+        {
+          "abbr": "BAK",
+          "bg": "#FCE8EB",
+          "nm": "Bakuchiol",
+          "ds": "Plant-based retinol equivalent — renews without irritation.",
+          "pct": "1.5%"
+        },
+        {
+          "abbr": "GLA",
+          "bg": "#FAF7C9",
+          "nm": "Gluconolactone (PHA)",
+          "ds": "Gentle resurfacing — exfoliates while you sleep.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Minimises pores, calms, strengthens barrier.",
+          "pct": "5%"
+        },
+        {
+          "abbr": "SQL",
+          "bg": "#E6EFE9",
+          "nm": "Squalane",
+          "ds": "Lipid-identical moisture — absorbs in seconds.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "PAN",
+          "bg": "#E3EEF5",
+          "nm": "Panthenol",
+          "ds": "Soothes and reinforces barrier overnight.",
+          "pct": "1%"
+        }
+      ],
+      "ingTitle": "Renewal without <em>the reaction.</em>",
+      "howTitle": "Evening only. <em>One step before bed.</em>",
+      "howSteps": [
+        {
+          "h": "Evening routine only",
+          "p": "Apply after cleansing and toning. Bakuchiol can cause mild photosensitivity. Evenings only."
+        },
+        {
+          "h": "Three to four drops, patted in",
+          "p": "Warm between palms, press across the full face, neck, and décolleté. Don't rush."
+        },
+        {
+          "h": "Wait, then layer night cream",
+          "p": "Allow sixty seconds for the serum to absorb, then apply Ceramide Night Cream on top."
+        },
+        {
+          "h": "No retinol needed alongside this",
+          "p": "Bakuchiol and PHAs together already deliver renewal, adding prescription retinol on the same nights risks over-exfoliation."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#D8A48F,#C07F6A)",
+      "quote": "\"I'd tried retinol three times. This is the first one I've finished — and reordered.\"",
+      "benefitTitle": "All the renewal. <em>None of the adjustment phase.</em>",
+      "benefitBody": [
+        "Retinol works. But the peeling, the purging, the two months of red skin before things improve — that stops most people before the benefit arrives.",
+        "Bakuchiol activates the same renewal pathway, without the retinoid irritation. You get the smoothing, the fine-line reduction, the cellular turnover — every night, from the first night."
+      ],
+      "stats": [
+        {
+          "n": "0.5",
+          "suf": "%",
+          "l": "Retinol-equivalent efficacy from Bakuchiol"
+        },
+        {
+          "n": "96",
+          "suf": "%",
+          "l": "No irritation or adjustment phase"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Retinoids, fragrance, essential oils"
+        }
+      ],
+      "faqTitle": "Questions about <em>this serum.</em>",
+      "faqs": [
+        {
+          "q": "Can I use it if I'm pregnant or breastfeeding?",
+          "a": "Bakuchiol is widely considered the pregnancy-safe retinol alternative. However, we recommend consulting your doctor or midwife before introducing any new active to your routine during pregnancy."
+        },
+        {
+          "q": "Can I layer it with the Peptide Serum?",
+          "a": "Yes. Apply Retinol Alternative first, wait sixty seconds, then Peptide Serum. Or use Peptide in the morning and Retinol Alternative in the evening, which keeps your routine clean and your skin from overloading."
+        },
+        {
+          "q": "Will my skin peel or purge?",
+          "a": "Bakuchiol doesn't cause the same purging as retinol. Some skin may experience very mild flaking in the first week. If so, reduce to every other evening for two weeks, then daily."
+        },
+        {
+          "q": "How is this different from retinol?",
+          "a": "Retinol is a vitamin A derivative that directly converts to retinoic acid in skin. Bakuchiol is a plant compound (from Babchi seeds) that triggers similar cell-renewal receptors via a different pathway. Same destination, gentler road."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Bakuchiol (1.5%), Gluconolactone (3%), Niacinamide (5%), Squalane, Panthenol, Tocopherol, Sodium Hyaluronate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "93.1% naturally derived. 100% vegan. No retinoids, fragrance, or essential oils.",
+      "pairs": [
+        "cleansing-foam",
+        "hydrating-toner",
+        "ceramide-night-cream",
+        "smoothing-eye-cream"
+      ]
+    },
+    "firming-day-cream": {
+      "name": "Firming Day Cream",
+      "nameBreak": "Firming<br>Day Cream.",
+      "step": "04 · Moisturise · AM",
+      "stepNum": 3,
+      "price": "€36",
+      "vol": "50 ml",
+      "volPrice": "€0.72/ml",
+      "tagline": "Light enough to wear under makeup, firm enough to matter. A day cream that holds the work of your serum in place and keeps moisture in for eight hours.",
+      "chips": [
+        "Firms",
+        "Light texture",
+        "AM use",
+        "Normal to dry"
+      ],
+      "color": "#FCE8EB",
+      "img": "project/assets/products-new/firming-day-cream-hp.png",
+      "imgs": [
+        {
+          "src": "project/assets/products-new/firming-day-cream-hp.png",
+          "bg": "#FCE8EB"
+        },
+        {
+          "src": "project/assets/products-new/ceramide-night-cream-textuur.jpg",
+          "bg": "#F5DEE2"
+        }
+      ],
+      "sku": "No. 04 · Moisturise · AM",
+      "size": "50 ml",
+      "quickInfo": [
+        [
+          "Normal to dry skin",
+          "Under makeup or SPF"
+        ],
+        [
+          "Morning use",
+          "After serum, before SPF"
+        ]
+      ],
+      "routineActive": 3,
+      "ingredients": [
+        {
+          "abbr": "PEP",
+          "bg": "#FCE8EB",
+          "nm": "Peptide Complex",
+          "ds": "Supports collagen production and visible firmness.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "SHE",
+          "bg": "#FAF7C9",
+          "nm": "Shea Butter (light fraction)",
+          "ds": "Rich fatty acids — nourishes without heaviness.",
+          "pct": "4%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Brightens, tightens pores, improves texture.",
+          "pct": "4%"
+        },
+        {
+          "abbr": "SQL",
+          "bg": "#E6EFE9",
+          "nm": "Squalane",
+          "ds": "Skin-identical emollient — absorbs instantly.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "VE",
+          "bg": "#E6EFE9",
+          "nm": "Tocopherol (Vitamin E)",
+          "ds": "Antioxidant protection for the day ahead.",
+          "pct": "0.5%"
+        }
+      ],
+      "ingTitle": "Light but <em>genuinely moisturising.</em>",
+      "howTitle": "One step between <em>serum and SPF.</em>",
+      "howSteps": [
+        {
+          "h": "After your morning serum",
+          "p": "Apply after the serum has absorbed, about sixty seconds after patting it in."
+        },
+        {
+          "h": "Pea-size amount, warmed first",
+          "p": "Take a pea-sized amount and warm it between fingertips before pressing into skin. It melts in."
+        },
+        {
+          "h": "Face, neck, décolleté",
+          "p": "Don't stop at the jaw. Press upward and outward. The neck ages as fast as the face."
+        },
+        {
+          "h": "Follow with SPF",
+          "p": "The day cream has no SPF. Always finish with SESE SPF 50 Sunscreen Stick as the final morning step."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#E9B7A8,#CC8E7A)",
+      "quote": "\"Skin feels like it's holding itself differently. Less tired-looking by afternoon.\"",
+      "benefitTitle": "Daytime moisture that <em>doesn't disappear by noon.</em>",
+      "benefitBody": [
+        "Most day creams sit on the skin and evaporate. This one uses an occlusive-humectant layering system — it draws water in and holds it.",
+        "The peptide complex adds a second purpose: gradual, visible firming over weeks. One product, two reasons to use it every morning."
+      ],
+      "stats": [
+        {
+          "n": "8",
+          "suf": "h",
+          "l": "Sustained hydration"
+        },
+        {
+          "n": "+19",
+          "suf": "%",
+          "l": "Firmness after 6 weeks"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Heavy silicones, mineral oil, fragrance"
+        }
+      ],
+      "faqTitle": "Questions about <em>the day cream.</em>",
+      "faqs": [
+        {
+          "q": "Can I wear it under makeup?",
+          "a": "Yes. It's designed to sit comfortably under foundation and SPF without pilling or greasiness. Apply, wait two minutes for full absorption, then layer SPF on top."
+        },
+        {
+          "q": "Is it suitable for combination skin?",
+          "a": "The formula is designed for normal-to-dry skin. If you have combination skin, you may find the texture slightly rich on the T-zone. In that case, try a lighter amount or skip the nose and forehead."
+        },
+        {
+          "q": "Does it contain SPF?",
+          "a": "No, and intentionally so. Combining moisturiser and SPF in one product usually means lower efficacy in both. We recommend SESE SPF 50 Sunscreen Stick on top as a dedicated sun protection step."
+        },
+        {
+          "q": "Can I use it in the evening too?",
+          "a": "You can in a pinch, but the Ceramide Night Cream is formulated for overnight repair with richer actives. Using the day cream at night is not harmful, just not optimal."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Squalane, Niacinamide (4%), Hydroxyproline, Tocopherol, Glyceryl Stearate, Cetyl Alcohol, Sodium Hyaluronate, Xanthan Gum, Phenoxyethanol, Citric Acid.",
+      "inciNote": "87.6% naturally derived. 100% vegan. No fragrance, mineral oil, or heavy silicones.",
+      "pairs": [
+        "peptide-serum",
+        "vitamin-c-serum",
+        "spf50-stick",
+        "smoothing-eye-cream"
+      ]
+    },
+    "ceramide-night-cream": {
+      "name": "Ceramide Night Cream",
+      "nameBreak": "Ceramide<br>Night Cream.",
+      "step": "04 · Moisturise · PM",
+      "stepNum": 3,
+      "price": "€38",
+      "vol": "50 ml",
+      "volPrice": "€0.76/ml",
+      "tagline": "While you sleep, ceramides rebuild what the day took. A repair cream that earns its rest and leaves skin softer by morning.",
+      "chips": [
+        "Repairs barrier",
+        "Rich texture",
+        "PM use",
+        "Dry & mature"
+      ],
+      "color": "#EFDFC2",
+      "img": "project/assets/products-new/ceramide-night-cream-hp.png",
+      "imgs": [
+        {
+          "src": "project/assets/products-new/ceramide-night-cream-hp.png",
+          "bg": "#EFDFC2"
+        },
+        {
+          "src": "project/assets/products-new/firming-day-cream-textuur.jpg",
+          "bg": "#F5EAD0"
+        }
+      ],
+      "sku": "No. 04 · Moisturise · PM",
+      "size": "50 ml",
+      "quickInfo": [
+        [
+          "Dry & mature skin",
+          "Fragrance-free"
+        ],
+        [
+          "Evening use",
+          "Last step of PM routine"
+        ]
+      ],
+      "routineActive": 3,
+      "ingredients": [
+        {
+          "abbr": "CER",
+          "bg": "#EFDFC2",
+          "nm": "Ceramide NP",
+          "ds": "Lipid molecule that rebuilds the moisture barrier.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "SHE",
+          "bg": "#FAF7C9",
+          "nm": "Shea Butter",
+          "ds": "Deeply nourishing — softens and soothes overnight.",
+          "pct": "6%"
+        },
+        {
+          "abbr": "BAK",
+          "bg": "#FCE8EB",
+          "nm": "Bakuchiol",
+          "ds": "Gentle overnight renewal while skin regenerates.",
+          "pct": "0.5%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E3EEF5",
+          "nm": "Hyaluronic Acid",
+          "ds": "Deep hydration during the long sleep cycle.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "PAN",
+          "bg": "#E6EFE9",
+          "nm": "Panthenol",
+          "ds": "Soothes and supports skin integrity overnight.",
+          "pct": "1%"
+        }
+      ],
+      "ingTitle": "Ceramides that rebuild. <em>Overnight.</em>",
+      "howTitle": "The last step. <em>Every evening.</em>",
+      "howSteps": [
+        {
+          "h": "After your evening serum",
+          "p": "Apply as the final step of your evening routine. After cleansing, toning, and serum."
+        },
+        {
+          "h": "A generous amount",
+          "p": "This is the night. Don't be conservative. A little more than the day cream, pressed in firmly."
+        },
+        {
+          "h": "Neck and décolleté too",
+          "p": "The neck loses ceramides and collagen just as fast. Extend down to the chest."
+        },
+        {
+          "h": "Go to sleep",
+          "p": "That's it. The ceramide complex works best in the warmth of sleep, when skin's repair mechanisms are most active."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#EFDFC2,#D4C09A)",
+      "quote": "\"I wake up to different skin now. Less tight, more like it belongs to me again.\"",
+      "benefitTitle": "Sleep is when skin <em>does its best work.</em>",
+      "benefitBody": [
+        "Ceramides are the fats that hold your skin cells together — they make up around 50% of the skin barrier. Age, weather, and actives slowly deplete them.",
+        "This cream replenishes them overnight, when the barrier is in active repair mode. The result: less tightness in the morning, less sensitivity through the day."
+      ],
+      "stats": [
+        {
+          "n": "2",
+          "suf": "w",
+          "l": "Barrier restored in clinical measure"
+        },
+        {
+          "n": "91",
+          "suf": "%",
+          "l": "Softer skin in 7 mornings"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Fragrance, mineral oil, parabens"
+        }
+      ],
+      "faqTitle": "Questions about <em>the night cream.</em>",
+      "faqs": [
+        {
+          "q": "Is it suitable for sensitive or eczema-prone skin?",
+          "a": "Yes. Ceramides are naturally occurring skin lipids. They're among the most well-tolerated ingredients in skincare. The formula is fragrance-free and tested for sensitivity. If your skin is actively flared, patch-test first."
+        },
+        {
+          "q": "It feels quite rich. Is that normal?",
+          "a": "Yes. Night creams are designed to be richer than day creams. Your skin is in repair mode overnight and can make use of the extra nourishment. If it feels too heavy, try a slightly smaller amount."
+        },
+        {
+          "q": "Can I use it with the Retinol Alternative Serum?",
+          "a": "Yes and this is actually the intended pairing. Apply Retinol Alternative Serum first, let it absorb for sixty seconds, then layer Ceramide Night Cream on top. The cream's panthenol and ceramides buffer any serum-related sensitivity."
+        },
+        {
+          "q": "Can men use it?",
+          "a": "Skincare has no gender. The formula works on any skin that benefits from barrier repair and hydration, that's most skin types over 30."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Ceramide NP (1%), Squalane, Panthenol, Niacinamide, Bakuchiol (0.5%), Tocopherol, Sodium Hyaluronate, Glyceryl Stearate, Cetyl Alcohol, Phenoxyethanol, Citric Acid.",
+      "inciNote": "88.4% naturally derived. 100% vegan. No fragrance, mineral oil, or parabens.",
+      "pairs": [
+        "retinol-alt-serum",
+        "peptide-serum",
+        "cleansing-foam",
+        "smoothing-eye-cream"
+      ]
+    },
+    "smoothing-eye-cream": {
+      "name": "Smoothing Eye Cream",
+      "nameBreak": "Smoothing<br>Eye Cream.",
+      "step": "Targeted · Eye care",
+      "stepNum": -1,
+      "price": "€30",
+      "vol": "15 ml",
+      "volPrice": "€2.00/ml",
+      "tagline": "The eye area tells a different story. This one softens the line, reduces the dark, and does it gently enough for the most delicate skin on your face.",
+      "chips": [
+        "Cools",
+        "Brightens",
+        "AM / PM",
+        "Gentle tap"
+      ],
+      "color": "#C9D7C9",
+      "img": "project/assets/products-new/smoothing-eye-cream-hp.png",
+      "imgs": [
+        {
+          "src": "project/assets/products-new/smoothing-eye-cream-hp.png",
+          "bg": "#C9D7C9"
+        },
+        {
+          "src": "project/assets/products-new/smoothing-eye-cream-textuur.jpg",
+          "bg": "#D8E4D8"
+        }
+      ],
+      "sku": "Targeted · Eye",
+      "size": "15 ml",
+      "quickInfo": [
+        [
+          "Delicate eye area",
+          "No fragrance, no essential oils"
+        ],
+        [
+          "Use AM & PM",
+          "Tap gently — never rub"
+        ]
+      ],
+      "routineActive": -1,
+      "ingredients": [
+        {
+          "abbr": "CAF",
+          "bg": "#E6EFE9",
+          "nm": "Caffeine",
+          "ds": "Reduces puffiness and dark circles visibly.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "PEP",
+          "bg": "#C9D7C9",
+          "nm": "Peptide Complex",
+          "ds": "Supports elasticity in the fine orbital skin.",
+          "pct": "1.5%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E3EEF5",
+          "nm": "Hyaluronic Acid",
+          "ds": "Plumps fine lines from within.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "CUC",
+          "bg": "#E6EFE9",
+          "nm": "Cucumber Fruit Extract",
+          "ds": "Instantly cools and de-puffs.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Brightens under-eye discolouration over time.",
+          "pct": "3%"
+        }
+      ],
+      "ingTitle": "Targeted actives for <em>delicate skin.</em>",
+      "howTitle": "Ring finger. <em>Tap, don't rub.</em>",
+      "howSteps": [
+        {
+          "h": "After serum, before moisturiser",
+          "p": "Apply after serums have absorbed but before day or night cream."
+        },
+        {
+          "h": "Ring finger only",
+          "p": "The ring finger exerts the least pressure. This area has no subcutaneous fat. Drag causes damage over time."
+        },
+        {
+          "h": "Dot and tap along the orbital bone",
+          "p": "Apply small dots along the orbital bone (the bony ridge under and above the eye). Tap to blend. Never drag inward."
+        },
+        {
+          "h": "Morning and evening",
+          "p": "The caffeine de-puffs best in the morning. The peptides work overnight. Use both times for full benefit."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#B3C9B3,#8CAD8C)",
+      "quote": "\"People stopped asking if I was tired. That's all I needed.\"",
+      "benefitTitle": "The eye area is different. <em>It needs different.</em>",
+      "benefitBody": [
+        "The skin around the eye is 40% thinner than the rest of the face. It has no sebaceous glands, no subcutaneous fat, and is subject to thousands of micro-movements a day.",
+        "Standard moisturisers are too heavy, standard serums can sting. This cream is formulated specifically for that zone — with caffeine to de-puff, peptides to firm, and hyaluronic acid at the right molecular weight to reach where it's needed."
+      ],
+      "stats": [
+        {
+          "n": "-34",
+          "suf": "%",
+          "l": "Puffiness reduction in 4 weeks"
+        },
+        {
+          "n": "88",
+          "suf": "%",
+          "l": "Brighter under-eye at 6 weeks"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Fragrance, essential oils, sting"
+        }
+      ],
+      "faqTitle": "Questions about <em>the eye cream.</em>",
+      "faqs": [
+        {
+          "q": "Can I use it if I wear contact lenses?",
+          "a": "Yes. The formula is ophthalmologist-tested. Apply along the orbital bone and allow to absorb fully before inserting lenses."
+        },
+        {
+          "q": "Will it work on hooded or mature eyes?",
+          "a": "Yes. The peptide complex and caffeine address the two main concerns of mature eye areas: loss of firmness and dark circles. Hooding (orbital fat pad descent) is structural and no cream can address it, but texture and discolouration improve meaningfully."
+        },
+        {
+          "q": "How much do I need?",
+          "a": "A very small amount. About the size of a grain of rice per eye, per application. The tube lasts 3–4 months with daily use."
+        },
+        {
+          "q": "Can I use it on my lips or mouth area too?",
+          "a": "The formula is safe to use around the mouth. The skin there is similarly thin and prone to the same fine lines, so it works well in that area. It hasn't been specifically formulated or tested for the lips themselves, but it can be applied there with care."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Caffeine (2%), Sodium Hyaluronate, Hydroxyproline, Niacinamide (3%), Cucumis Sativus (Cucumber) Fruit Extract, Tocopherol, Panthenol, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "90.2% naturally derived. 100% vegan. No fragrance, parabens, or essential oils.",
+      "pairs": [
+        "peptide-serum",
+        "firming-day-cream",
+        "ceramide-night-cream",
+        "retinol-alt-serum"
+      ]
+    },
+    "spf50-stick": {
+      "name": "SPF 50 Sunscreen Stick",
+      "nameBreak": "SPF 50<br>Stick.",
+      "step": "05 · Protect",
+      "stepNum": 4,
+      "price": "€28",
+      "vol": "12 g",
+      "volPrice": "pocket-sized",
+      "tagline": "The step most skipped, the step that matters most. A mineral SPF 50 in a pocket stick for faces that forget, then remember.",
+      "chips": [
+        "SPF 50",
+        "Mineral filter",
+        "No white cast",
+        "Reapply-easy"
+      ],
+      "color": "#E8D5B0",
+      "img": "project/assets/products-new/spf50-stick-hp.png",
+      "imgs": [
+        {
+          "src": "project/assets/products-new/spf50-stick-hp.png",
+          "bg": "#E8D5B0"
+        },
+        {
+          "src": "project/assets/products-new/spf50-stick-textuur.jpg",
+          "bg": "#F0E2C0"
+        }
+      ],
+      "sku": "No. 05 · Protect",
+      "size": "12 g",
+      "quickInfo": [
+        [
+          "Morning — final step",
+          "Reapply every 2h outdoors"
+        ],
+        [
+          "UVA/UVB protection",
+          ""
+        ]
+      ],
+      "routineActive": 4,
+      "ingredients": [
+        {
+          "abbr": "ZnO",
+          "bg": "#E8D5B0",
+          "nm": "Zinc Oxide",
+          "ds": "Broad-spectrum mineral UV filter — safe and stable.",
+          "pct": "20%"
+        },
+        {
+          "abbr": "TiO",
+          "bg": "#FAF7C9",
+          "nm": "Titanium Dioxide",
+          "ds": "Supporting UV filter — adds UVB coverage.",
+          "pct": "5%"
+        },
+        {
+          "abbr": "SHE",
+          "bg": "#E6EFE9",
+          "nm": "Shea Butter",
+          "ds": "Smooth glide, skin-conditioning base.",
+          "pct": "8%"
+        },
+        {
+          "abbr": "JOJ",
+          "bg": "#E3EEF5",
+          "nm": "Jojoba Seed Oil",
+          "ds": "Lightweight emollient — no residue.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "VE",
+          "bg": "#FCE8EB",
+          "nm": "Tocopherol (Vitamin E)",
+          "ds": "Antioxidant support alongside UV defence.",
+          "pct": "0.5%"
+        }
+      ],
+      "ingTitle": "Mineral filters. <em>Nothing else to worry about.</em>",
+      "howTitle": "Last step. <em>Every single morning.</em>",
+      "howSteps": [
+        {
+          "h": "Final step of morning routine",
+          "p": "After moisturiser or day cream has been absorbed. SPF on top of everything, not under."
+        },
+        {
+          "h": "Two to three swipes per zone",
+          "p": "Swipe directly across forehead, each cheek, nose, chin. Then blend lightly with fingertips."
+        },
+        {
+          "h": "Don't forget ears and neck",
+          "p": "UV damage is cumulative everywhere. Two extra seconds per side."
+        },
+        {
+          "h": "Reapply every two hours outdoors",
+          "p": "No SPF lasts all day. The stick format is designed for easy reapplication, pocket it."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#E8D5B0,#C8A870)",
+      "quote": "\"I stopped skipping SPF because I stopped hating how it felt.\"",
+      "benefitTitle": "The step that protects <em>everything else you do.</em>",
+      "benefitBody": [
+        "UV is responsible for roughly 80% of visible skin ageing. Every serum, every cream, every ritual you do — SPF protects the investment.",
+        "The stick format exists for one reason: reapplication is the step everyone skips. Pull it out, swipe, done. No need to undo your makeup, no pump to spill, no excuse."
+      ],
+      "stats": [
+        {
+          "n": "50",
+          "suf": "+",
+          "l": "SPF rating, PA++++ broad spectrum"
+        },
+        {
+          "n": "94",
+          "suf": "%",
+          "l": "No white cast (fair to medium skin)"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Chemical UV filters, fragrance, oxybenzone"
+        }
+      ],
+      "faqTitle": "Questions about <em>SPF 50 Stick.</em>",
+      "faqs": [
+        {
+          "q": "Is it reef-safe?",
+          "a": "Yes. The formula uses only mineral UV filters (zinc oxide and titanium dioxide). Both are considered reef-safe. No oxybenzone, no octinoxate."
+        },
+        {
+          "q": "Will it leave a white cast?",
+          "a": "Less than most mineral sunscreens. The zinc particle size is optimised to minimise cast on fair to medium skin tones. Deeper skin tones may notice a slight brightness, blending with fingertips after application helps significantly."
+        },
+        {
+          "q": "Can I use it to reapply over makeup?",
+          "a": "Yes. That's the main reason it's a stick. Swipe directly over makeup, then blend lightly with a fingertip or a brush. Far easier than a liquid SPF reapplication."
+        },
+        {
+          "q": "Is it suitable for children?",
+          "a": "Mineral-only SPF is generally considered safer for children's skin. However, this formula is designed and tested for adult facial use. For children, consult a paediatric dermatologist."
+        }
+      ],
+      "inci": "Zinc Oxide (20%), Titanium Dioxide (5%), Caprylic/Capric Triglyceride, Butyrospermum Parkii (Shea) Butter, Simmondsia Chinensis (Jojoba) Seed Oil, Candelilla Cera, Euphorbia Cerifera (Candelilla) Wax, Tocopherol, Mica, CI 77491, CI 77492.",
+      "inciNote": "78.4% naturally derived. Vegan formula. No chemical UV filters, fragrance, or oxybenzone.",
+      "pairs": [
+        "firming-day-cream",
+        "vitamin-c-serum",
+        "peptide-serum",
+        "hydrating-toner"
+      ]
+    }
+  },
+  "nl": {
+    "cleansing-foam": {
+      "name": "Cleansing Foam",
+      "nameBreak": "Cleansing<br>Foam.",
+      "step": "01 · Cleanse",
+      "stepNum": 1,
+      "price": "€26",
+      "vol": "150 ml",
+      "volPrice": "€0.17/ml",
+      "tagline": "Verwijdert de dag zachtjes, laat de barrière intact — het soort reiniging dat aanvoelt alsof er bijna niets is gebeurd, behalve alles wat weg moest.",
+      "chips": [
+        "Gel-tot-schuim",
+        "Zacht",
+        "Ochtend/Avond",
+        "Alle huidtypes"
+      ],
+      "color": "#E3EEF5",
+      "img": "../project/assets/products-new/cleansing-foam-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/cleansing-foam-hp.png",
+          "bg": "#E3EEF5"
+        },
+        {
+          "src": "../project/assets/products-new/cleansing-foam-textuur.jpg",
+          "bg": "#EDF4F8"
+        }
+      ],
+      "sku": "No. 01 · Cleanse",
+      "size": "150 ml",
+      "quickInfo": [
+        [
+          "Zachte formule",
+          "Sulfaatvrij"
+        ],
+        [
+          "Ochtend & avond",
+          "Eerste stap, beide routines"
+        ]
+      ],
+      "routineActive": 0,
+      "ingredients": [
+        {
+          "abbr": "ALO",
+          "bg": "#E6EFE9",
+          "nm": "Aloe Barbadensis Leaf Juice",
+          "ds": "Kalmeert en sust tijdens het reinigen.",
+          "pct": "Base"
+        },
+        {
+          "abbr": "CG",
+          "bg": "#E3EEF5",
+          "nm": "Coco-Glucoside",
+          "ds": "Zachte, plantaardige tensioactief.",
+          "pct": "—"
+        },
+        {
+          "abbr": "GLA",
+          "bg": "#FAF7C9",
+          "nm": "Gluconolactone (PHA)",
+          "ds": "Resurfact zacht zonder irritatie.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "PAN",
+          "bg": "#E6EFE9",
+          "nm": "Panthenol",
+          "ds": "Trekt vocht aan en ondersteunt de barrière.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "CAM",
+          "bg": "#FCE8EB",
+          "nm": "Chamomile Extract",
+          "ds": "Botanische anti-roodheid, kalmeert de huid zichtbaar.",
+          "pct": "0.5%"
+        }
+      ],
+      "ingTitle": "Een schone start, <em>een rustgevend einde.</em>",
+      "howTitle": "Twintig seconden. <em>Twee keer per dag.</em>",
+      "howStaps": [
+        {
+          "h": "Maak het gezicht nat",
+          "p": "Lauw water opent de poriën zacht. Koud water is prima voor de ochtendspoeling."
+        },
+        {
+          "h": "Één tot twee pompen",
+          "p": "Werk het gel eerst tussen je handpalmen — het verandert in een lichte mousse met slechts een beetje water."
+        },
+        {
+          "h": "Masseer in langzame cirkels",
+          "p": "Dertig seconden is genoeg. Focus op de T-zone en de kaak, wees zacht rondom de ogen."
+        },
+        {
+          "h": "Spoel af en dep droog",
+          "p": "Altijd deppen — nooit wrijven. Je huid is klaar voor toner."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#C5DAEA,#A0C4D6)",
+      "quote": "\"Ik had niet verwacht dat een reiniger een verschil zou maken. Deze heeft mijn ochtend veranderd.\"",
+      "benefitTitle": "De schoonste start <em>voor een betere huid.</em>",
+      "benefitBody": [
+        "De meeste huidproblemen beginnen bij de reiniging. Verwijder de barrière en de rest van je routine werkt tegen zichzelf. Reinig zacht, spoel volledig, en laat alles zijn werk doen.",
+        "Geen sulfaten, geen parabenen, geen gespannen gevoel erna. Gewoon schoon."
+      ],
+      "stats": [
+        {
+          "n": "98",
+          "suf": "%",
+          "l": "Huid voelde kalm — niet gestript"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Sulfaten, parabenen, parfum"
+        },
+        {
+          "n": "12",
+          "suf": "w",
+          "l": "PAO — stabiel na opening"
+        }
+      ],
+      "faqTitle": "Vragen over <em>deze reiniger.</em>",
+      "faqs": [
+        {
+          "q": "Kan ik het gebruiken om make-up te verwijderen?",
+          "a": "Het verwijdert lichte make-up effectief. Voor volledige dekking of SPF, raden we een speciale make-up remover of micellair water aan, gevolgd door Cleansing Foam."
+        },
+        {
+          "q": "Is het veilig voor gevoelige of reactieve huid?",
+          "a": "Ja. De formule is geurvrij, sulfaatvrij en gebruikt een enkele milde PHA in plaats van AHA's of BHA's. Als je huid ernstig reactief is, doe dan twee avonden een patchtest."
+        },
+        {
+          "q": "Kan ik het twee keer per dag gebruiken?",
+          "a": "Ja — het is ontworpen voor zowel ochtend als avond. De gluconolactondosis is laag genoeg voor dagelijks dubbel gebruik."
+        },
+        {
+          "q": "Wat betekent \"gel-tot-schuim\" precies?",
+          "a": "Het product komt uit als een licht gel en verandert in een zachte mousse wanneer het water ontmoet. Geen pompspray nodig — gewoon je handen en een beetje water."
+        }
+      ],
+      "inci": "Aqua, Aloe Barbadensis Leaf Juice, Glycerin, Coco-Glucoside, Gluconolactone, Panthenol, Chamomilla Recutita Flower Extract, Sodium Cocoyl Glutamate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "95,2% natuurlijk afgeleid. 100% veganistisch. Zonder parfum, sulfaten of parabenen.",
+      "pairs": [
+        "hydrating-toner",
+        "peptide-serum",
+        "firming-day-cream",
+        "ceramide-night-cream"
+      ]
+    },
+    "hydrating-toner": {
+      "name": "Hydrating Toner",
+      "nameBreak": "Hydrating<br>Toner.",
+      "step": "02 · Tone",
+      "stepNum": 2,
+      "price": "€24",
+      "vol": "200 ml",
+      "volPrice": "€0.12/ml",
+      "tagline": "Een gewichtloze mist die de pH van de huid herstelt en de deur opent voor alles wat volgt — klaar in dertig seconden, werkt urenlang.",
+      "chips": [
+        "Gewichtloze mist",
+        "PH-balancerend",
+        "Ochtend/Avond",
+        "Alle huidtypes"
+      ],
+      "color": "#E6EFE9",
+      "img": "../project/assets/products-new/hydrating-toner-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/hydrating-toner-hp.png",
+          "bg": "#E6EFE9"
+        },
+        {
+          "src": "../project/assets/products-new/hydrating-toner-textuur.jpg",
+          "bg": "#ECF3EC"
+        }
+      ],
+      "sku": "No. 02 · Tone",
+      "size": "200 ml",
+      "quickInfo": [
+        [
+          "Alle huidtypes",
+          "Alcoholvrij"
+        ],
+        [
+          "Na reiniging",
+          "Voor serum & crème"
+        ]
+      ],
+      "routineActive": 1,
+      "ingredients": [
+        {
+          "abbr": "RW",
+          "bg": "#FCE8EB",
+          "nm": "Rose Water",
+          "ds": "Botanische basis — zacht vochtinbrengend en kalmerend.",
+          "pct": "Base"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Verheldert, strakke poriën, versterkt barrière.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E6EFE9",
+          "nm": "Sodium Hyaluronate",
+          "ds": "Trekt water naar de bovenste huidlagen.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "CER",
+          "bg": "#FAF7C9",
+          "nm": "Ceramide NP",
+          "ds": "Lipidenmolecuul dat vocht vasthoudt.",
+          "pct": "0.2%"
+        },
+        {
+          "abbr": "BET",
+          "bg": "#E3EEF5",
+          "nm": "Betaine",
+          "ds": "Zacht vochtbindend middel uit suikerbiet.",
+          "pct": "2%"
+        }
+      ],
+      "ingTitle": "De brug <em>tussen gereinigd en behandeld.</em>",
+      "howTitle": "Mist. Dep. Klaar.",
+      "howStaps": [
+        {
+          "h": "Reinig eerst",
+          "p": "Breng altijd aan op vers gereinigde huid. Toner op ongereinigde huid stapelt residuen op."
+        },
+        {
+          "h": "Mist of giet en dep",
+          "p": "Houd 20 cm van het gezicht en mist gelijkmatig, of giet een kleine hoeveelheid en druk zacht in de huid met schone handpalmen."
+        },
+        {
+          "h": "Niet wrijven, geen wattenstaafjes",
+          "p": "Wattenstaafjes absorberen product en trekken aan de huid. Handpalmen drukken het in zonder verspilling."
+        },
+        {
+          "h": "Ga direct naar serum",
+          "p": "Breng je serum aan binnen 30 seconden — getonde, vochtige huid absorbeert actieve stoffen aanzienlijk beter."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#C9D7C9,#A3BFA3)",
+      "quote": "\"Ik dacht dat toners ouderwets waren. Deze maakte alles anders beter werken.\"",
+      "benefitTitle": "Geen toner in de oude zin. <em>Een huidvoorbereidingsritueel.</em>",
+      "benefitBody": [
+        "De ouderwetse toner strippete. Deze bereidt voor — pH, hydratatie en barrière tegelijk. Het verschil zie je in hoe goed je serums worden geabsorbeerd, niet in hoe dit product alleen aanvoelt.",
+        "Één stap die de volgende drie harder laat werken."
+      ],
+      "stats": [
+        {
+          "n": "+42",
+          "suf": "%",
+          "l": "Betere serumabsorptie op voorbereide huid"
+        },
+        {
+          "n": "97",
+          "suf": "%",
+          "l": "Voelde soepeler in één week"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Alcohol, parfum, kleurstoffen"
+        }
+      ],
+      "faqTitle": "Vragen over <em>de toner.</em>",
+      "faqs": [
+        {
+          "q": "Heb ik echt een toner nodig?",
+          "a": "Niet elke huid heeft het nodig. Maar als je serums met actieve stoffen gebruikt, verbetert een pH-gebalanceerde, hydraterende toner de absorptie aanzienlijk. Zie het als de dunne laag die alles anders laat werken."
+        },
+        {
+          "q": "Kan ik een wattenpad gebruiken in plaats van handen?",
+          "a": "Dat kan. Wij geven de voorkeur aan handen — minder product verspild, minder trekken. Maar als een wattenpad je voorkeur heeft, gebruik dan een zachte, ongebleekte."
+        },
+        {
+          "q": "Is de niacinamideconcentratie veilig voor gevoelige huid?",
+          "a": "Ja. Bij 3% verheldert het en ondersteunt het de barrièrefunctie zonder het irritatierisico dat kan komen met hogere doses. Goed verdragen door de meeste gevoelige huid."
+        },
+        {
+          "q": "Werkt het als gezichtsmist overdag?",
+          "a": "Je kunt het gebruiken als een snelle opfrissing midden op de dag, maar het grootste voordeel zit in de voorbereidingsstap. Een mist overdag heeft niet hetzelfde absorptieversterkende effect."
+        }
+      ],
+      "inci": "Aqua, Rosa Damascena Flower Water, Glycerin, Niacinamide (3%), Propanediol, Sodium Hyaluronate, Ceramide NP, Betaine, Panthenol, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "96,8% natuurlijk afgeleid. 100% veganistisch. Zonder alcohol, parfum of kleurstoffen.",
+      "pairs": [
+        "cleansing-foam",
+        "vitamin-c-serum",
+        "peptide-serum",
+        "spf50-stick"
+      ]
+    },
+    "vitamin-c-serum": {
+      "name": "Vitamin C Serum",
+      "nameBreak": "Vitamin C<br>Serum.",
+      "step": "03 · Treat · AM",
+      "stepNum": 2,
+      "price": "€34",
+      "vol": "30 ml",
+      "volPrice": "€1.13/ml",
+      "tagline": "Een stabiel 12% ascorbinezuur dat verheldert zonder te branden — de ochtendglans die je opbouwt over weken, niet het soort dat je leent.",
+      "chips": [
+        "Verheldert",
+        "Egalisert teint",
+        "Alleen ochtend",
+        "Stabiel 12% VC"
+      ],
+      "color": "#FCEAD0",
+      "img": "../project/assets/products-new/vitamin-c-serum-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/vitamin-c-serum-hp.png",
+          "bg": "#FCEAD0"
+        },
+        {
+          "src": "../project/assets/products-new/vitamin-c-serum-textuur.jpg",
+          "bg": "#FEF0E0"
+        }
+      ],
+      "sku": "No. 03 · Treat · AM",
+      "size": "30 ml",
+      "quickInfo": [
+        [
+          "Alleen ochtendgebruik",
+          "Combineer met SPF 50"
+        ],
+        [
+          "Alle huidtypes",
+          "Patch-test bij gevoeligheid"
+        ]
+      ],
+      "routineActive": 2,
+      "ingredients": [
+        {
+          "abbr": "VC",
+          "bg": "#FCEAD0",
+          "nm": "Ascorbic Acid",
+          "ds": "Pure vitamine C — verheldert en stimuleert collageen.",
+          "pct": "12%"
+        },
+        {
+          "abbr": "FER",
+          "bg": "#FAF7C9",
+          "nm": "Ferulic Acid",
+          "ds": "Stabiliseert vitamine C en verdubbelt het antioxidanteffect.",
+          "pct": "0.5%"
+        },
+        {
+          "abbr": "VE",
+          "bg": "#E6EFE9",
+          "nm": "Tocopherol (Vitamin E)",
+          "ds": "Antioxidant synergie — houdt de formule stabiel.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Verheldert poriën, glad textuur, kalmeert roodheid.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E3EEF5",
+          "nm": "Sodium Hyaluronate",
+          "ds": "Hydratatie die de actieve stoffen dieper draagt.",
+          "pct": "1%"
+        }
+      ],
+      "ingTitle": "Stabiele actieve stoffen, <em>eerlijke resultaten.</em>",
+      "howTitle": "Drie druppels. <em>Elke ochtend.</em>",
+      "howStaps": [
+        {
+          "h": "Na reiniging en toner",
+          "p": "Breng aan op schone, getonde huid. Vitamine C absorbeert het best op een pH-gebalanceerde basis."
+        },
+        {
+          "h": "Verwarm drie druppels in je handpalmen",
+          "p": "Druk stevig over wangen, voorhoofd, kin en nek. Deppen — niet wrijven."
+        },
+        {
+          "h": "Wacht zestig seconden",
+          "p": "Laat het serum volledig intrekken voordat je moisturizer aanbrengt."
+        },
+        {
+          "h": "SPF is een must",
+          "p": "Vitamine C maakt de huid tijdelijk gevoeliger voor zon. Sluit je ochtendroutine altijd af met SPF 50."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#F4C9A8,#E0A870)",
+      "quote": "\"Mijn huid ziet eruit alsof ik goed slaap nu. Ik doe het niet, maar het doet het.\"",
+      "benefitTitle": "Glans die opbouwt, <em>niet leent.</em>",
+      "benefitBody": [
+        "Vitamine C verheldert door de melanineproductie te onderbreken — het effect is cumulatief. Dag één voel je het. Week vier zie je het. Maand twee houdt het stand.",
+        "De formule gebruikt een ferulazuurstabilisatiesysteem dat het ascorbinezuur actief houdt van de eerste tot de laatste druppel."
+      ],
+      "stats": [
+        {
+          "n": "+31",
+          "suf": "%",
+          "l": "Stralingstoename na 4 weken"
+        },
+        {
+          "n": "87",
+          "suf": "%",
+          "l": "Egaler huidtoon na 8 weken"
+        },
+        {
+          "n": "12",
+          "suf": "%",
+          "l": "Stabiel ascorbinezuur"
+        }
+      ],
+      "faqTitle": "Vragen over <em>Vitamine C.</em>",
+      "faqs": [
+        {
+          "q": "Kan ik het combineren met Peptide Serum?",
+          "a": "Ja — ze vullen elkaar goed aan. Gebruik Vitamine C 's ochtends en Peptide Serum 's ochtends of 's avonds. Vermijd het stapelen van beide in één stap: breng één aan, wacht, breng dan het andere aan."
+        },
+        {
+          "q": "Mijn serum is oranje geworden. Is het nog veilig?",
+          "a": "Een oranje tint betekent dat de Vitamine C oxideert. De formule is op dat punt minder effectief. Bewaar onder 20°C en uit direct licht om versheid te verlengen. De meeste flesjes gaan 3 maanden na opening mee."
+        },
+        {
+          "q": "Kan ik het gebruiken als ik rosacea of reactieve huid heb?",
+          "a": "Vitamine C bij 12% kan tinteling veroorzaken in gevoelige huid. Begin om de dag voor twee weken, dan dagelijks. Als irritatie aanhoudt, is het Peptide Serum een zachter ochtendactieve om mee te beginnen."
+        },
+        {
+          "q": "Waarom alleen 's ochtends?",
+          "a": "Vitamine C is een antioxidant — het werkt tegen de omgevingsschade van de dag. Het maakt de huid ook tijdelijk gevoeliger voor zon, dus het combineren met SPF 's ochtends is het meest logisch."
+        }
+      ],
+      "inci": "Aqua, Ascorbic Acid (12%), Glycerin, Propanediol, Niacinamide (3%), Ferulic Acid, Tocopherol, Sodium Hyaluronate, Panthenol, Xanthan Gum, Citric Acid, Sodium Benzoate, Potassium Sorbate.",
+      "inciNote": "89,3% natuurlijk afgeleid. 100% veganistisch. Zonder parfum, parabenen of sulfaten.",
+      "pairs": [
+        "hydrating-toner",
+        "peptide-serum",
+        "firming-day-cream",
+        "spf50-stick"
+      ]
+    },
+    "peptide-serum": {
+      "name": "Peptide Serum",
+      "nameBreak": "Peptide<br>Serum.",
+      "step": "03 · Treat · AM/PM",
+      "stepNum": 2,
+      "price": "€34",
+      "vol": "30 ml",
+      "volPrice": "€1.13/ml",
+      "tagline": "Een peptiderijk serum dat de huid aanzet om te verstevigen, te gladstrijken en te herstellen — werkt terwijl je je dag doorbrengt.",
+      "chips": [
+        "Verstevigt",
+        "Gladstrijkt",
+        "Ochtend/Avond",
+        "Alle huidtypes"
+      ],
+      "color": "#FCEAD0",
+      "img": "../project/assets/products-new/peptide-serum-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/peptide-serum-hp.png",
+          "bg": "#FCEAD0"
+        },
+        {
+          "src": "../project/assets/products-new/peptide-serum-textuur.jpg",
+          "bg": "#FEF0E0"
+        }
+      ],
+      "sku": "No. 03 · Treat",
+      "size": "30 ml",
+      "quickInfo": [
+        [
+          "Alle huidtypes",
+          "Geurvrij"
+        ],
+        [
+          "Ochtend & avond",
+          "Na toner, voor crème"
+        ]
+      ],
+      "routineActive": 2,
+      "ingredients": [
+        {
+          "abbr": "PEP",
+          "bg": "#FCEAD0",
+          "nm": "Hydroxyproline Peptide",
+          "ds": "Ondersteunt stevigheid en elasticiteit in de tijd.",
+          "pct": "2.5%"
+        },
+        {
+          "abbr": "AL",
+          "bg": "#E3EEF5",
+          "nm": "Aloe Juice",
+          "ds": "Kalmeert, sust en ondersteunt de barrière.",
+          "pct": "Base"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E6EFE9",
+          "nm": "Hyaluronic Acid",
+          "ds": "Houdt water vast in de bovenste huidlagen.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "GIN",
+          "bg": "#FAF7C9",
+          "nm": "Ginkgo Leaf Extract",
+          "ds": "Botanisch antioxidant — een zachte dagelijkse bescherming.",
+          "pct": "0.4%"
+        },
+        {
+          "abbr": "BB",
+          "bg": "#FCE8EB",
+          "nm": "Blueberry & Strawberry Seed Oil",
+          "ds": "Rijk aan vitamine E — verzacht de finish.",
+          "pct": "Trace"
+        }
+      ],
+      "ingTitle": "Eerlijke helpers, <em>geen helden.</em>",
+      "howTitle": "Drie langzame druppels, <em>twee keer per dag.</em>",
+      "howStaps": [
+        {
+          "h": "Reinig en toneer",
+          "p": "Begin op een schoon, licht vochtig gezicht. SESE Cleansing Foam, dan een mist Hydrating Toner."
+        },
+        {
+          "h": "Verwarm drie tot vier druppels",
+          "p": "Druk de pomp in en verwarm het serum tussen je vingertoppen. Dep — nooit wrijven — over wangen, voorhoofd, nek."
+        },
+        {
+          "h": "Laat intrekken, dan laag op laag",
+          "p": "Wacht ~60 seconden. Volg met Firming Day Cream 's ochtends, Ceramide Night Cream 's avonds."
+        },
+        {
+          "h": "Sluit af met SPF 's ochtends",
+          "p": "SPF 50 Sunscreen Stick is de onmisbare laatste stap voor de dag begint."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#F5C98A,#E0AC58)",
+      "quote": "\"Na vier weken houdt mijn huid zich anders. Minder strak. Meer van mij.\"",
+      "benefitTitle": "Tijdgegeven stevigheid, <em>ingebouwd in een dagelijks ritueel.</em>",
+      "benefitBody": [
+        "Peptiden werken niet als een glans-truc — ze werken als slaap. Je merkt de enkele dag niet. Je merkt de derde week.",
+        "Gebouwd voor een lang, zacht patroon: een dunne, snelabsorberende essence met een stabiel peptidecomplex, een rustgevende aloebasis en net genoeg hyaluronzuur om aan te voelen als een slokje water voor vermoeide huid."
+      ],
+      "stats": [
+        {
+          "n": "+23",
+          "suf": "%",
+          "l": "Stevigheidstoename na 4 weken"
+        },
+        {
+          "n": "94",
+          "suf": "%",
+          "l": "Voelde zachtere, rustiger huid in week 1"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Parfum, sulfaten, retinol-prik"
+        }
+      ],
+      "faqTitle": "Vragen over <em>dit serum.</em>",
+      "faqs": [
+        {
+          "q": "Kan ik Peptide Serum gebruiken met retinol of Vitamine C?",
+          "a": "Ja — peptiden combineren goed met beide. Wij raden aan: Vitamine C 's ochtends, Peptide Serum 's ochtends of 's avonds, en ons Retinol Alternatief op afwisselende avonden als je ook zachte vernieuwing wilt."
+        },
+        {
+          "q": "Hoe lang voor ik een verschil zie?",
+          "a": "De meeste huid voelt zachter en rustiger binnen de eerste week. Zichtbare stevigheid en een gladder oppervlak duurt 3-4 weken van consistent, tweemaal daags gebruik — peptiden bouwen, ze verrassen niet."
+        },
+        {
+          "q": "Is het veilig voor gevoelige huid?",
+          "a": "Ja. De formule is geurvrij, allergeen-labelvrij en gebruikt één goed verdragen peptide in plaats van een zwaar actievenmengsel. Doe twee avonden een patchtest aan de binnenkant van de elleboog als je huid reactief is."
+        },
+        {
+          "q": "Hoe lang gaat één flesje mee?",
+          "a": "Bij tweemaal daags gebruik gaat één flesje van 30 ml ongeveer 8 weken mee. Eenmaal daags gebruik verlengt het tot ongeveer 12 weken."
+        },
+        {
+          "q": "Waarom een glazen flesje met airless pomp?",
+          "a": "Peptiden zijn gevoelig voor lucht en licht. De airless pomp en getint glas houden de formule stabiel van de eerste dag tot de laatste druppel."
+        }
+      ],
+      "inci": "Aqua (Water), Aloe Barbadensis Leaf Juice, Glycerin, Propanediol, Sodium Hyaluronate, Hydroxyproline, Phytosteryl Oleate, Tocopherol, Vaccinium Myrtillus (Blueberry) Seed Oil, Fragaria Ananassa (Strawberry) Seed Oil, Ginkgo Biloba Leaf Extract, Sodium Phytate, Xanthan Gum, Citric Acid, Sodium Benzoate, Potassium Sorbate, Phenoxyethanol.",
+      "inciNote": "91,4% natuurlijk afgeleid. 100% veganistisch. Zonder parfum, parabenen of sulfaten.",
+      "pairs": [
+        "cleansing-foam",
+        "hydrating-toner",
+        "firming-day-cream",
+        "spf50-stick"
+      ]
+    },
+    "retinol-alt-serum": {
+      "name": "Retinol Alternative Serum",
+      "nameBreak": "Retinol Alt.<br>Serum.",
+      "step": "03 · Treat · PM",
+      "stepNum": 2,
+      "price": "€26",
+      "vol": "30 ml",
+      "volPrice": "€0.87/ml",
+      "tagline": "Het alternatief voor retinol dat zijn belofte echt nakomt — dezelfde vernieuwing, zonder irritatie of maanden aanpassing.",
+      "chips": [
+        "Vernieuwt",
+        "Gladstrijkt lijntjes",
+        "Avondgebruik",
+        "Geschikt voor gevoelige huid"
+      ],
+      "color": "#F5EAE4",
+      "img": "../project/assets/products-new/retinol-alt-serum-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/retinol-alt-serum-hp.png",
+          "bg": "#F5EAE4"
+        },
+        {
+          "src": "../project/assets/products-new/retinol-alt-serum-textuur.jpg",
+          "bg": "#EFE0D8"
+        }
+      ],
+      "sku": "No. 03 · Treat · PM",
+      "size": "30 ml",
+      "quickInfo": [
+        [
+          "Alleen avondgebruik",
+          "Geschikt voor gevoelige huid"
+        ],
+        [
+          "Na toner",
+          "Voor nachtcrème"
+        ]
+      ],
+      "routineActive": 2,
+      "ingredients": [
+        {
+          "abbr": "BAK",
+          "bg": "#FCE8EB",
+          "nm": "Bakuchiol",
+          "ds": "Plantaardig retinol-equivalent — vernieuwt zonder irritatie.",
+          "pct": "1.5%"
+        },
+        {
+          "abbr": "GLA",
+          "bg": "#FAF7C9",
+          "nm": "Gluconolactone (PHA)",
+          "ds": "Zachte resurfacing — exfolieert terwijl je slaapt.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Minimaliseert poriën, kalmeert, versterkt barrière.",
+          "pct": "5%"
+        },
+        {
+          "abbr": "SQL",
+          "bg": "#E6EFE9",
+          "nm": "Squalane",
+          "ds": "Lipidenidentieke vochtigheid — absorbeert in seconden.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "PAN",
+          "bg": "#E3EEF5",
+          "nm": "Panthenol",
+          "ds": "Sust en versterkt barrière overnight.",
+          "pct": "1%"
+        }
+      ],
+      "ingTitle": "Vernieuwing zonder <em>de reactie.</em>",
+      "howTitle": "Alleen 's avonds. <em>Één stap voor het slapengaan.</em>",
+      "howStaps": [
+        {
+          "h": "Alleen avondroutine",
+          "p": "Breng aan na reiniging en tonen. Bakuchiol kan milde fotosensitiviteit veroorzaken — alleen 's avonds."
+        },
+        {
+          "h": "Drie tot vier druppels, ingedept",
+          "p": "Verwarm tussen handpalmen, druk over het volledige gezicht, nek en decolleté. Neem de tijd."
+        },
+        {
+          "h": "Wacht, dan nachtcrème erop",
+          "p": "Laat zestig seconden het serum intrekken, breng dan Ceramide Night Cream erop aan."
+        },
+        {
+          "h": "Geen retinol nodig naast dit",
+          "p": "Bakuchiol en PHA's samen leveren al vernieuwing — het toevoegen van retinol op dezelfde avonden riskeert over-exfoliatie."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#D8A48F,#C07F6A)",
+      "quote": "\"Ik had retinol drie keer geprobeerd. Dit is de eerste die ik heb afgemaakt — en nabesteld.\"",
+      "benefitTitle": "Alle vernieuwing. <em>Geen aanpassingsfase.</em>",
+      "benefitBody": [
+        "Retinol werkt. Maar het pellen, de zuivering, de twee maanden rode huid voor verbetering — dat stopt de meeste mensen voor het voordeel arriveert.",
+        "Bakuchiol activeert hetzelfde vernieuwingspad, zonder retinol-irritatie. Je krijgt het gladstrijken, de vermindering van fijne lijntjes, de celvernieuwing — elke nacht, vanaf de eerste nacht."
+      ],
+      "stats": [
+        {
+          "n": "0.5",
+          "suf": "%",
+          "l": "Retinol-equivalente werkzaamheid van Bakuchiol"
+        },
+        {
+          "n": "96",
+          "suf": "%",
+          "l": "Geen irritatie of aanpassingsfase"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Retinoïden, parfum, etherische oliën"
+        }
+      ],
+      "faqTitle": "Questions about <em>this serum.</em>",
+      "faqs": [
+        {
+          "q": "Kan ik het gebruiken als ik zwanger ben of borstvoeding geef?",
+          "a": "Bakuchiol wordt algemeen beschouwd als het zwangerschapsveilige retinol-alternatief. We raden echter aan om je arts of verloskundige te raadplegen voordat je een nieuw actief ingrediënt in je routine opneemt tijdens de zwangerschap."
+        },
+        {
+          "q": "Kan ik het stapelen met het Peptide Serum?",
+          "a": "Ja — breng eerst Retinol Alternatief aan, wacht zestig seconden, dan Peptide Serum. Of gebruik Peptide 's ochtends en Retinol Alternatief 's avonds, wat je routine schoon houdt en je huid voor overbelasting bewaart."
+        },
+        {
+          "q": "Zal mijn huid schilferen of zuiveren?",
+          "a": "Bakuchiol veroorzaakt niet dezelfde zuivering als retinol. Sommige huid kan in de eerste week zeer milde schilfering ervaren. Zo ja, verminderen tot om de andere avond gedurende twee weken, dan dagelijks."
+        },
+        {
+          "q": "Hoe verschilt dit van retinol?",
+          "a": "Retinol is een vitamine A-derivaat dat direct omzet in retinoïnezuur in de huid. Bakuchiol is een plantaardige verbinding (uit Babchi-zaden) die vergelijkbare celvernieuwingsreceptoren activeert via een ander pad — zelfde bestemming, zachtere weg."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Bakuchiol (1.5%), Gluconolactone (3%), Niacinamide (5%), Squalane, Panthenol, Tocopherol, Sodium Hyaluronate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "93,1% natuurlijk afgeleid. 100% veganistisch. Zonder retinoïden, parfum of etherische oliën.",
+      "pairs": [
+        "cleansing-foam",
+        "hydrating-toner",
+        "ceramide-night-cream",
+        "smoothing-eye-cream"
+      ]
+    },
+    "firming-day-cream": {
+      "name": "Firming Day Cream",
+      "nameBreak": "Firming<br>Day Cream.",
+      "step": "04 · Moisturise · AM",
+      "stepNum": 3,
+      "price": "€36",
+      "vol": "50 ml",
+      "volPrice": "€0.72/ml",
+      "tagline": "Hydrateert, verstevigt en beschermt de hele dag.",
+      "chips": [
+        "Verstevigt",
+        "Lichte textuur",
+        "Alleen ochtend",
+        "Normaal tot droog"
+      ],
+      "color": "#FCE8EB",
+      "img": "../project/assets/products-new/firming-day-cream-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/firming-day-cream-hp.png",
+          "bg": "#FCE8EB"
+        },
+        {
+          "src": "../project/assets/products-new/ceramide-night-cream-textuur.jpg",
+          "bg": "#F5DEE2"
+        }
+      ],
+      "sku": "No. 04 · Moisturise · AM",
+      "size": "50 ml",
+      "quickInfo": [
+        [
+          "Normaal tot droge huid",
+          "Onder make-up of SPF"
+        ],
+        [
+          "Ochtendgebruik",
+          "Na serum, voor SPF"
+        ]
+      ],
+      "routineActive": 3,
+      "ingredients": [
+        {
+          "abbr": "PEP",
+          "bg": "#FCE8EB",
+          "nm": "Peptide Complex",
+          "ds": "Ondersteunt collageenproductie en zichtbare stevigheid.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "SHE",
+          "bg": "#FAF7C9",
+          "nm": "Shea Butter (light fraction)",
+          "ds": "Rijke vetzuren — voedt zonder zwaarheid.",
+          "pct": "4%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Verheldert, strakke poriën, verbetert textuur.",
+          "pct": "4%"
+        },
+        {
+          "abbr": "SQL",
+          "bg": "#E6EFE9",
+          "nm": "Squalane",
+          "ds": "Huid-identieke emollient — absorbeert onmiddellijk.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "VE",
+          "bg": "#E6EFE9",
+          "nm": "Tocopherol (Vitamin E)",
+          "ds": "Antioxidantbescherming voor de dag die voor je ligt.",
+          "pct": "0.5%"
+        }
+      ],
+      "ingTitle": "Licht maar <em>echt vochtinbrengend.</em>",
+      "howTitle": "Één stap tussen <em>serum en SPF.</em>",
+      "howStaps": [
+        {
+          "h": "Na je ochtendserum",
+          "p": "Breng aan nadat het serum is ingetrokken — ongeveer zestig seconden na het indeppen."
+        },
+        {
+          "h": "Erwtengrote hoeveelheid, eerst opgewarmd",
+          "p": "Neem een erwtengrote hoeveelheid en verwarm het tussen je vingertoppen voor het in de huid te drukken. Het smelt erin."
+        },
+        {
+          "h": "Gezicht, nek, decolleté",
+          "p": "Stop niet bij de kaak. Druk omhoog en naar buiten. De nek veroudert net zo snel als het gezicht."
+        },
+        {
+          "h": "Volg met SPF",
+          "p": "De dagcrème heeft geen SPF. Sluit altijd af met SESE SPF 50 Sunscreen Stick als de laatste ochtendstap."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#E9B7A8,#CC8E7A)",
+      "quote": "\"Huid voelt alsof het zichzelf anders vasthoudt. Minder moe-uitziend tegen de middag.\"",
+      "benefitTitle": "Dagvocht dat <em>niet verdwijnt voor de middag.</em>",
+      "benefitBody": [
+        "De meeste dagcrèmes liggen op de huid en verdampen. Deze gebruikt een occlusief-humectant-laagjesysteem — het trekt water naar binnen en houdt het vast.",
+        "Het peptidecomplex voegt een tweede doel toe: geleidelijke, zichtbare verstevigting over weken. Één product, twee redenen om het elke ochtend te gebruiken."
+      ],
+      "stats": [
+        {
+          "n": "8",
+          "suf": "h",
+          "l": "Aanhoudende hydratatie"
+        },
+        {
+          "n": "+19",
+          "suf": "%",
+          "l": "Stevigheid na 6 weken"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Zware siliconen, mineraalolie, parfum"
+        }
+      ],
+      "faqTitle": "Vragen over <em>de dagcrème.</em>",
+      "faqs": [
+        {
+          "q": "Kan ik het onder make-up dragen?",
+          "a": "Ja — het is ontworpen om comfortabel onder foundation en SPF te zitten zonder pilling of vettigheid. Breng aan, wacht twee minuten voor volledige absorptie, breng dan SPF erop."
+        },
+        {
+          "q": "Is het geschikt voor een gecombineerde huid?",
+          "a": "De formule is ontworpen voor normale tot droge huid. Als je een gecombineerde huid hebt, kan de textuur iets te rijk zijn op de T-zone. Probeer in dat geval een kleinere hoeveelheid of sla neus en voorhoofd over."
+        },
+        {
+          "q": "Bevat het SPF?",
+          "a": "Nee — en bewust zo. Het combineren van moisturizer en SPF in één product betekent gewoonlijk lagere werkzaamheid in beide. We raden SESE SPF 50 Sunscreen Stick aan als een speciale zonbeschermingsstap."
+        },
+        {
+          "q": "Kan ik het ook 's avonds gebruiken?",
+          "a": "Dat kan in een noodgeval, maar de Ceramide Night Cream is geformuleerd voor overnight herstel met rijkere actieve stoffen. Het gebruik van de dagcrème 's nachts is niet schadelijk — alleen niet optimaal."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Squalane, Niacinamide (4%), Hydroxyproline, Tocopherol, Glyceryl Stearate, Cetyl Alcohol, Sodium Hyaluronate, Xanthan Gum, Phenoxyethanol, Citric Acid.",
+      "inciNote": "87,6% natuurlijk afgeleid. 100% veganistisch. Zonder parfum, mineraalolie of zware siliconen.",
+      "pairs": [
+        "peptide-serum",
+        "vitamin-c-serum",
+        "spf50-stick",
+        "smoothing-eye-cream"
+      ]
+    },
+    "ceramide-night-cream": {
+      "name": "Ceramide Night Cream",
+      "nameBreak": "Ceramide<br>Night Cream.",
+      "step": "04 · Moisturise · PM",
+      "stepNum": 3,
+      "price": "€38",
+      "vol": "50 ml",
+      "volPrice": "€0.76/ml",
+      "tagline": "Terwijl je slaapt, herstellen ceramiden wat de dag heeft aangetast — een herstellende crème die haar rust verdient en de huid zachter achterlaat tegen de ochtend.",
+      "chips": [
+        "Herstelt barrière",
+        "Rijke textuur",
+        "Avondgebruik",
+        "Droog & rijper"
+      ],
+      "color": "#EFDFC2",
+      "img": "../project/assets/products-new/ceramide-night-cream-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/ceramide-night-cream-hp.png",
+          "bg": "#EFDFC2"
+        },
+        {
+          "src": "../project/assets/products-new/firming-day-cream-textuur.jpg",
+          "bg": "#F5EAD0"
+        }
+      ],
+      "sku": "No. 04 · Moisturise · PM",
+      "size": "50 ml",
+      "quickInfo": [
+        [
+          "Droge & rijpere huid",
+          "Geurvrij"
+        ],
+        [
+          "Avondgebruik",
+          "Laatste stap avondroutine"
+        ]
+      ],
+      "routineActive": 3,
+      "ingredients": [
+        {
+          "abbr": "CER",
+          "bg": "#EFDFC2",
+          "nm": "Ceramide NP",
+          "ds": "Lipidenmolecuul dat de vochtbarrière herstelt.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "SHE",
+          "bg": "#FAF7C9",
+          "nm": "Shea Butter",
+          "ds": "Diep voedend — verzacht en sust overnight.",
+          "pct": "6%"
+        },
+        {
+          "abbr": "BAK",
+          "bg": "#FCE8EB",
+          "nm": "Bakuchiol",
+          "ds": "Zachte overnight vernieuwing terwijl de huid regenereert.",
+          "pct": "0.5%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E3EEF5",
+          "nm": "Hyaluronic Acid",
+          "ds": "Diepe hydratatie tijdens de lange slaapcyclus.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "PAN",
+          "bg": "#E6EFE9",
+          "nm": "Panthenol",
+          "ds": "Sust en ondersteunt de huidintegriteit overnight.",
+          "pct": "1%"
+        }
+      ],
+      "ingTitle": "Ceramiden die herstellen. <em>Overnight.</em>",
+      "howTitle": "De laatste stap. <em>Elke avond.</em>",
+      "howStaps": [
+        {
+          "h": "Na je avondserum",
+          "p": "Breng aan als de laatste stap van je avondroutine — na reiniging, tonen en serum."
+        },
+        {
+          "h": "Een royale hoeveelheid",
+          "p": "Dit is de nacht — wees niet zuinig. Iets meer dan de dagcrème, stevig ingedrukt."
+        },
+        {
+          "h": "Nek en decolleté ook",
+          "p": "De nek verliest ceramiden en collageen net zo snel. Verleng naar de borst."
+        },
+        {
+          "h": "Ga slapen",
+          "p": "Dat is het. Het ceramidencomplex werkt het best in de warmte van de slaap, wanneer de herstelmechanismen van de huid het meest actief zijn."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#EFDFC2,#D4C09A)",
+      "quote": "\"Ik word wakker met een andere huid nu. Minder strak, meer alsof het weer van mij is.\"",
+      "benefitTitle": "Slaap is wanneer de huid <em>haar beste werk doet.</em>",
+      "benefitBody": [
+        "Ceramiden zijn de vetten die je huidcellen bij elkaar houden — ze maken ongeveer 50% uit van de huidbarrière. Leeftijd, weer en actieve stoffen putten ze langzaam uit.",
+        "Deze crème vult ze 's nachts aan, wanneer de barrière in actieve herstelmodus is. Het resultaat: minder strakheid 's ochtends, minder gevoeligheid gedurende de dag."
+      ],
+      "stats": [
+        {
+          "n": "2",
+          "suf": "w",
+          "l": "Barrière hersteld in klinische meting"
+        },
+        {
+          "n": "91",
+          "suf": "%",
+          "l": "Zachtere huid in 7 ochtenden"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Parfum, mineraalolie, parabenen"
+        }
+      ],
+      "faqTitle": "Vragen over <em>de nachtcrème.</em>",
+      "faqs": [
+        {
+          "q": "Is het geschikt voor gevoelige of eczeem-gevoelige huid?",
+          "a": "Ja. Ceramiden zijn van nature voorkomende huidlipiden — ze behoren tot de best verdragen ingrediënten in huidverzorging. De formule is geurvrij en getest op gevoeligheid. Als je huid actief is opgelaaid, doe dan eerst een patchtest."
+        },
+        {
+          "q": "Het voelt nogal rijk aan. Is dat normaal?",
+          "a": "Ja — nachtcrèmes zijn ontworpen om rijker te zijn dan dagcrèmes. Je huid is overnight in herstelmodus en kan gebruik maken van de extra voeding. Als het te zwaar aanvoelt, probeer dan een iets kleinere hoeveelheid."
+        },
+        {
+          "q": "Kan ik het gebruiken met het Retinol Alternatief Serum?",
+          "a": "Ja — en dit is eigenlijk de beoogde combinatie. Breng eerst Retinol Alternatief Serum aan, laat het zestig seconden intrekken, breng dan Ceramide Night Cream erop aan. De panthenol en ceramiden van de crème bufferen serum-gerelateerde gevoeligheid."
+        },
+        {
+          "q": "Kunnen mannen het gebruiken?",
+          "a": "Huidverzorging heeft geen geslacht. De formule werkt op elke huid die baat heeft bij barrièreherstel en hydratatie — dat zijn de meeste huidtypes boven de 30."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Ceramide NP (1%), Squalane, Panthenol, Niacinamide, Bakuchiol (0.5%), Tocopherol, Sodium Hyaluronate, Glyceryl Stearate, Cetyl Alcohol, Phenoxyethanol, Citric Acid.",
+      "inciNote": "88,4% natuurlijk afgeleid. 100% veganistisch. Zonder parfum, mineraalolie of parabenen.",
+      "pairs": [
+        "retinol-alt-serum",
+        "peptide-serum",
+        "cleansing-foam",
+        "smoothing-eye-cream"
+      ]
+    },
+    "smoothing-eye-cream": {
+      "name": "Smoothing Eye Cream",
+      "nameBreak": "Smoothing<br>Eye Cream.",
+      "step": "Targeted · Eye care",
+      "stepNum": -1,
+      "price": "€30",
+      "vol": "15 ml",
+      "volPrice": "€2.00/ml",
+      "tagline": "Het ooggebied veroudert het eerst en vergeeft niets. Deze crème zorgt voor beide.",
+      "chips": [
+        "Koelt",
+        "Verheldert",
+        "Ochtend/Avond",
+        "Delicaat ooggebied"
+      ],
+      "color": "#C9D7C9",
+      "img": "../project/assets/products-new/smoothing-eye-cream-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/smoothing-eye-cream-hp.png",
+          "bg": "#C9D7C9"
+        },
+        {
+          "src": "../project/assets/products-new/smoothing-eye-cream-textuur.jpg",
+          "bg": "#D8E4D8"
+        }
+      ],
+      "sku": "Targeted · Eye",
+      "size": "15 ml",
+      "quickInfo": [
+        [
+          "Delicaat ooggebied",
+          "Geen parfum, geen etherische oliën"
+        ],
+        [
+          "Ochtend & avond",
+          "Dep zachtjes — nooit wrijven"
+        ]
+      ],
+      "routineActive": -1,
+      "ingredients": [
+        {
+          "abbr": "CAF",
+          "bg": "#E6EFE9",
+          "nm": "Caffeine",
+          "ds": "Vermindert zichtbaar wallen en donkere kringen.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "PEP",
+          "bg": "#C9D7C9",
+          "nm": "Peptide Complex",
+          "ds": "Ondersteunt elasticiteit in de fijne orbitale huid.",
+          "pct": "1.5%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E3EEF5",
+          "nm": "Hyaluronic Acid",
+          "ds": "Vult fijne lijntjes van binnenuit op.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "CUC",
+          "bg": "#E6EFE9",
+          "nm": "Cucumber Fruit Extract",
+          "ds": "Koelt onmiddellijk en verwijdert wallen.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Verheldert oogschaduwen in de loop van de tijd.",
+          "pct": "3%"
+        }
+      ],
+      "ingTitle": "Gerichte actieve stoffen voor <em>delicate huid.</em>",
+      "howTitle": "Ringvinger. <em>Deppen, niet wrijven.</em>",
+      "howStaps": [
+        {
+          "h": "Na serum, voor moisturizer",
+          "p": "Breng aan nadat serums zijn ingetrokken maar voor dag- of nachtcrème."
+        },
+        {
+          "h": "Alleen ringvinger",
+          "p": "De ringvinger oefent de minste druk uit. Dit gebied heeft geen onderhuids vet — wrijven veroorzaakt schade over tijd."
+        },
+        {
+          "h": "Stippen en deppen langs het oogbot",
+          "p": "Breng kleine stippen aan langs het oogbot (de benige rand onder en boven het oog). Dep om te mengen — nooit naar binnen trekken."
+        },
+        {
+          "h": "Ochtend en avond",
+          "p": "De cafeïne depufft het best 's ochtends. De peptiden werken overnight. Gebruik beide momenten voor volledig voordeel."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#B3C9B3,#8CAD8C)",
+      "quote": "\"Mensen stopten met vragen of ik moe was. Dat was alles wat ik nodig had.\"",
+      "benefitTitle": "Het ooggebied is anders. <em>Het heeft anders nodig.</em>",
+      "benefitBody": [
+        "De huid rondom het oog is 40% dunner dan de rest van het gezicht. Het heeft geen talgklieren, geen onderhuids vet en is onderhevig aan duizenden micro-bewegingen per dag.",
+        "Standaard moisturizers zijn te zwaar, standaard serums kunnen prikken. Deze crème is specifiek geformuleerd voor die zone — met cafeïne om te depuffen, peptiden om te verstevigen en hyaluronzuur op het juiste moleculaire gewicht om te bereiken waar het nodig is."
+      ],
+      "stats": [
+        {
+          "n": "-34",
+          "suf": "%",
+          "l": "Vermindering van wallen in 4 weken"
+        },
+        {
+          "n": "88",
+          "suf": "%",
+          "l": "Helderdere onderoogstreek na 6 weken"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Parfum, etherische oliën, prik"
+        }
+      ],
+      "faqTitle": "Vragen over <em>de oogcrème.</em>",
+      "faqs": [
+        {
+          "q": "Kan ik het gebruiken als ik contactlenzen draag?",
+          "a": "Ja. De formule is getest door een oogarts. Breng aan langs het oogbot en laat volledig intrekken voor het inbrengen van lenzen."
+        },
+        {
+          "q": "Werkt het op overhangende of rijpe ogen?",
+          "a": "Ja — het peptidecomplex en cafeïne pakken de twee belangrijkste zorgen van rijpe ooggebieden aan: verlies van stevigheid en donkere kringen. Overhanging (neerzakking van orbitaal vetpad) is structureel en geen crème kan dit aanpakken, maar textuur en verkleuring verbeteren aanzienlijk."
+        },
+        {
+          "q": "Hoeveel heb ik nodig?",
+          "a": "Een zeer kleine hoeveelheid — ongeveer zo groot als een rijstkorrel per oog, per gebruik. De tube gaat 3-4 maanden mee bij dagelijks gebruik."
+        },
+        {
+          "q": "Kan ik het ook op mijn lippen of mondgebied gebruiken?",
+          "a": "De formule is veilig te gebruiken rondom de mond — vergelijkbare fijne lijntjes, vergelijkbare huiddikte. Het is niet specifiek geformuleerd of getest voor liphuid, maar veel klanten gebruiken het daar met goede resultaten."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Caffeine (2%), Sodium Hyaluronate, Hydroxyproline, Niacinamide (3%), Cucumis Sativus (Cucumber) Fruit Extract, Tocopherol, Panthenol, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "90,2% natuurlijk afgeleid. 100% veganistisch. Zonder parfum, parabenen of etherische oliën.",
+      "pairs": [
+        "peptide-serum",
+        "firming-day-cream",
+        "ceramide-night-cream",
+        "retinol-alt-serum"
+      ]
+    },
+    "spf50-stick": {
+      "name": "SPF 50 Sunscreen Stick",
+      "nameBreak": "SPF 50<br>Stick.",
+      "step": "05 · Protect",
+      "stepNum": 4,
+      "price": "€28",
+      "vol": "12 g",
+      "volPrice": "pocket-sized",
+      "tagline": "De stap die het vaakst wordt overgeslagen, de stap die er het meest toe doet — een minerale SPF 50 in een pocketstick voor gezichten die vergeten, dan herinneren.",
+      "chips": [
+        "SPF 50",
+        "Mineraalfilter",
+        "Geen witte waas",
+        "Eenvoudig bij te brengen"
+      ],
+      "color": "#E8D5B0",
+      "img": "../project/assets/products-new/spf50-stick-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/spf50-stick-hp.png",
+          "bg": "#E8D5B0"
+        },
+        {
+          "src": "../project/assets/products-new/spf50-stick-textuur.jpg",
+          "bg": "#F0E2C0"
+        }
+      ],
+      "sku": "No. 05 · Protect",
+      "size": "12 g",
+      "quickInfo": [
+        [
+          "Ochtend — laatste stap",
+          "Elke 2u opnieuw buiten"
+        ],
+        [
+          "UVA/UVB bescherming",
+          ""
+        ]
+      ],
+      "routineActive": 4,
+      "ingredients": [
+        {
+          "abbr": "ZnO",
+          "bg": "#E8D5B0",
+          "nm": "Zinc Oxide",
+          "ds": "Breedspectraal mineraal UV-filter — veilig en stabiel.",
+          "pct": "20%"
+        },
+        {
+          "abbr": "TiO",
+          "bg": "#FAF7C9",
+          "nm": "Titanium Dioxide",
+          "ds": "Ondersteunend UV-filter — voegt UVB-dekking toe.",
+          "pct": "5%"
+        },
+        {
+          "abbr": "SHE",
+          "bg": "#E6EFE9",
+          "nm": "Shea Butter",
+          "ds": "Soepele glide, huidverzorgende basis.",
+          "pct": "8%"
+        },
+        {
+          "abbr": "JOJ",
+          "bg": "#E3EEF5",
+          "nm": "Jojoba Seed Oil",
+          "ds": "Lichtgewicht emollient — geen residu.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "VE",
+          "bg": "#FCE8EB",
+          "nm": "Tocopherol (Vitamin E)",
+          "ds": "Antioxidantondersteuning naast UV-bescherming.",
+          "pct": "0.5%"
+        }
+      ],
+      "ingTitle": "Minerale filters. <em>Geen zorgen verder.</em>",
+      "howTitle": "Laatste stap. <em>Elke ochtend zonder uitzondering.</em>",
+      "howStaps": [
+        {
+          "h": "Laatste stap van de ochtendroutine",
+          "p": "Nadat moisturizer of dagcrème is ingetrokken. SPF bovenop alles — niet eronder."
+        },
+        {
+          "h": "Twee tot drie strepen per zone",
+          "p": "Veeg direct over voorhoofd, elke wang, neus, kin. Meng dan licht met vingertoppen."
+        },
+        {
+          "h": "Vergeet oren en nek niet",
+          "p": "UV-schade is overal cumulatief. Twee extra seconden per zijde."
+        },
+        {
+          "h": "Breng elke twee uur opnieuw aan buiten",
+          "p": "Geen SPF duurt de hele dag. Het stickformaat is ontworpen voor eenvoudige hertoepassing — stop het in je zak."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#E8D5B0,#C8A870)",
+      "quote": "\"Ik stopte met het overslaan van SPF omdat ik stopte met het haten van hoe het aanvoelde.\"",
+      "benefitTitle": "De stap die <em>al het andere beschermt dat je doet.</em>",
+      "benefitBody": [
+        "UV is verantwoordelijk voor ongeveer 80% van zichtbare huidveroudering. Elk serum, elke crème, elk ritueel dat je doet — SPF beschermt de investering.",
+        "Het stickformaat bestaat om één reden: hertoepassing is de stap die iedereen overslaat. Pak het eruit, veeg, klaar. Geen reden om je make-up te verwijderen, geen pomp om te morsen, geen excuus."
+      ],
+      "stats": [
+        {
+          "n": "50",
+          "suf": "+",
+          "l": "SPF-beoordeling, PA++++ breedspectrum"
+        },
+        {
+          "n": "94",
+          "suf": "%",
+          "l": "Geen witte waas (lichte tot middelmatige huid)"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Chemische UV-filters, parfum, oxybenzon"
+        }
+      ],
+      "faqTitle": "Vragen over <em>SPF 50 Stick.</em>",
+      "faqs": [
+        {
+          "q": "Is het rifveilig?",
+          "a": "Ja. De formule gebruikt alleen minerale UV-filters (zinkoxide en titaandioxide) — beide worden beschouwd als rifveilig. Geen oxybenzon, geen octinoxaat."
+        },
+        {
+          "q": "Laat het een witte waas achter?",
+          "a": "Minder dan de meeste minerale zonnebrandmiddelen. De zinkdeeltjesgrootte is geoptimaliseerd om de waas op lichte tot middelmatige huidtinten te minimaliseren. Diepere huidtinten kunnen een lichte helderheid opmerken — mengen met vingertoppen na toepassing helpt aanzienlijk."
+        },
+        {
+          "q": "Kan ik het opnieuw aanbrengen over make-up?",
+          "a": "Ja — dat is de voornaamste reden dat het een stick is. Veeg direct over make-up, meng dan licht met een vingertop of een kwastje. Veel gemakkelijker dan een vloeibare SPF hertoepassing."
+        },
+        {
+          "q": "Is het geschikt voor kinderen?",
+          "a": "Alleen-minerale SPF wordt over het algemeen beschouwd als veiliger voor de huid van kinderen. Deze formule is echter ontworpen en getest voor gebruik op het gezicht van volwassenen. Raadpleeg voor kinderen een kinderdermatologoog."
+        }
+      ],
+      "inci": "Zinc Oxide (20%), Titanium Dioxide (5%), Caprylic/Capric Triglyceride, Butyrospermum Parkii (Shea) Butter, Simmondsia Chinensis (Jojoba) Seed Oil, Candelilla Cera, Euphorbia Cerifera (Candelilla) Wax, Tocopherol, Mica, CI 77491, CI 77492.",
+      "inciNote": "78,4% natuurlijk afgeleid. Veganistische formule. Zonder chemische UV-filters, parfum of oxybenzon.",
+      "pairs": [
+        "firming-day-cream",
+        "vitamin-c-serum",
+        "peptide-serum",
+        "hydrating-toner"
+      ]
+    }
+  },
+  "fr": {
+    "cleansing-foam": {
+      "name": "Cleansing Foam",
+      "nameBreak": "Cleansing<br>Foam.",
+      "step": "01 · Cleanse",
+      "stepNum": 1,
+      "price": "€26",
+      "vol": "150 ml",
+      "volPrice": "€0.17/ml",
+      "tagline": "Removes the day gently, leaves the barrier intact — the kind of cleanse that feels like almost nothing happened, except everything that needed to go is gone.",
+      "chips": [
+        "Gel-to-foam",
+        "Gentle",
+        "AM / PM",
+        "All skin types"
+      ],
+      "color": "#E3EEF5",
+      "img": "../project/assets/products-new/cleansing-foam-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/cleansing-foam-hp.png",
+          "bg": "#E3EEF5"
+        },
+        {
+          "src": "../project/assets/products-new/cleansing-foam-textuur.jpg",
+          "bg": "#EDF4F8"
+        }
+      ],
+      "sku": "No. 01 · Cleanse",
+      "size": "150 ml",
+      "quickInfo": [
+        [
+          "Gentle formula",
+          "Sulfate-free"
+        ],
+        [
+          "Use AM & PM",
+          "First step, both routines"
+        ]
+      ],
+      "routineActive": 0,
+      "ingredients": [
+        {
+          "abbr": "ALO",
+          "bg": "#E6EFE9",
+          "nm": "Aloe Barbadensis Leaf Juice",
+          "ds": "Calms and soothes while cleansing.",
+          "pct": "Base"
+        },
+        {
+          "abbr": "CG",
+          "bg": "#E3EEF5",
+          "nm": "Coco-Glucoside",
+          "ds": "Gentle, plant-derived surfactant.",
+          "pct": "—"
+        },
+        {
+          "abbr": "GLA",
+          "bg": "#FAF7C9",
+          "nm": "Gluconolactone (PHA)",
+          "ds": "Softly resurfaces without irritation.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "PAN",
+          "bg": "#E6EFE9",
+          "nm": "Panthenol",
+          "ds": "Draws moisture in and supports the barrier.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "CAM",
+          "bg": "#FCE8EB",
+          "nm": "Chamomile Extract",
+          "ds": "Botanical anti-redness, visibly calms skin.",
+          "pct": "0.5%"
+        }
+      ],
+      "ingTitle": "Clean start, <em>calm finish.</em>",
+      "howTitle": "Twenty seconds. <em>Twice a day.</em>",
+      "howÉtapes": [
+        {
+          "h": "Wet your face",
+          "p": "Lukewarm water opens the pores gently. Cool water is fine for the morning rinse."
+        },
+        {
+          "h": "One to two pumps",
+          "p": "Work the gel between your palms first — it transforms into a light foam with just a little water."
+        },
+        {
+          "h": "Massage in slow circles",
+          "p": "Thirty seconds is enough. Focus on the T-zone and jaw, be gentle around eyes."
+        },
+        {
+          "h": "Rinse and pat dry",
+          "p": "Always pat — never rub. Your skin is ready for toner."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#C5DAEA,#A0C4D6)",
+      "quote": "\"I didn't expect a cleanser to make a difference. This one changed my morning.\"",
+      "benefitTitle": "The cleanest start <em>to better skin.</em>",
+      "benefitBody": [
+        "Most skin concerns start at the cleanse. Strip the barrier and the rest of your routine fights against itself. Foam gently, rinse completely, and let everything else do its job.",
+        "No sulfates, no parabens, no tight feeling after. Just clean."
+      ],
+      "stats": [
+        {
+          "n": "98",
+          "suf": "%",
+          "l": "Said skin felt calm — not stripped"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Sulfates, parabens, fragrance"
+        },
+        {
+          "n": "12",
+          "suf": "w",
+          "l": "PAO — stable after opening"
+        }
+      ],
+      "faqTitle": "Questions about <em>this cleanser.</em>",
+      "faqs": [
+        {
+          "q": "Can I use it to remove makeup?",
+          "a": "It removes light makeup effectively. For full coverage or SPF, we recommend a dedicated makeup remover or micellar water first, then follow with Cleansing Foam."
+        },
+        {
+          "q": "Is it safe for sensitive or reactive skin?",
+          "a": "Yes. The formula is fragrance-free, sulfate-free, and uses a single mild PHA rather than AHAs or BHAs. If your skin is severely reactive, patch-test for two evenings."
+        },
+        {
+          "q": "Can I use it twice a day?",
+          "a": "Yes — it's designed for both morning and evening. The Gluconolactone dose is low enough for daily double use."
+        },
+        {
+          "q": "What does \"gel-to-foam\" mean exactly?",
+          "a": "The product dispenses as a light gel and transforms into a soft foam when it meets water. No pump aerosol needed — just your hands and a little water."
+        }
+      ],
+      "inci": "Aqua, Aloe Barbadensis Leaf Juice, Glycerin, Coco-Glucoside, Gluconolactone, Panthenol, Chamomilla Recutita Flower Extract, Sodium Cocoyl Glutamate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "95.2% naturally derived. 100% vegan. No fragrance, sulfates, or parabens.",
+      "pairs": [
+        "hydrating-toner",
+        "peptide-serum",
+        "firming-day-cream",
+        "ceramide-night-cream"
+      ]
+    },
+    "hydrating-toner": {
+      "name": "Hydrating Toner",
+      "nameBreak": "Hydrating<br>Toner.",
+      "step": "02 · Tone",
+      "stepNum": 2,
+      "price": "€24",
+      "vol": "200 ml",
+      "volPrice": "€0.12/ml",
+      "tagline": "A weightless mist that resets skin's pH and opens the door for everything that follows — preps in thirty seconds, works for hours.",
+      "chips": [
+        "Weightless mist",
+        "pH-balancing",
+        "AM / PM",
+        "All skin types"
+      ],
+      "color": "#E6EFE9",
+      "img": "../project/assets/products-new/hydrating-toner-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/hydrating-toner-hp.png",
+          "bg": "#E6EFE9"
+        },
+        {
+          "src": "../project/assets/products-new/hydrating-toner-textuur.jpg",
+          "bg": "#ECF3EC"
+        }
+      ],
+      "sku": "No. 02 · Tone",
+      "size": "200 ml",
+      "quickInfo": [
+        [
+          "All skin types",
+          "Alcohol-free"
+        ],
+        [
+          "After cleansing",
+          "Before serum & cream"
+        ]
+      ],
+      "routineActive": 1,
+      "ingredients": [
+        {
+          "abbr": "RW",
+          "bg": "#FCE8EB",
+          "nm": "Rose Water",
+          "ds": "Botanical base — softly hydrating and calming.",
+          "pct": "Base"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Brightens, tightens pores, strengthens barrier.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E6EFE9",
+          "nm": "Sodium Hyaluronate",
+          "ds": "Pulls water into the upper layers of skin.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "CER",
+          "bg": "#FAF7C9",
+          "nm": "Ceramide NP",
+          "ds": "Lipid molecule that locks moisture in.",
+          "pct": "0.2%"
+        },
+        {
+          "abbr": "BET",
+          "bg": "#E3EEF5",
+          "nm": "Betaine",
+          "ds": "Gentle humectant from sugar beet.",
+          "pct": "2%"
+        }
+      ],
+      "ingTitle": "The bridge <em>between clean and treated.</em>",
+      "howTitle": "Mist. Pat. Done.",
+      "howÉtapes": [
+        {
+          "h": "Cleanse first",
+          "p": "Always apply to freshly cleansed skin. Toner on uncleansed skin just layers residue."
+        },
+        {
+          "h": "Mist or pour and pat",
+          "p": "Hold 20 cm from face and mist evenly, or pour a small amount and press gently into skin with clean palms."
+        },
+        {
+          "h": "No rubbing, no cotton pads",
+          "p": "Cotton pads absorb product and drag skin. Palms press it in without waste."
+        },
+        {
+          "h": "Move directly to serum",
+          "p": "Apply your serum within 30 seconds — toned, damp skin absorbs actives significantly better."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#C9D7C9,#A3BFA3)",
+      "quote": "\"I thought toners were old-fashioned. This one made everything else work better.\"",
+      "benefitTitle": "Not a toner in the old sense. <em>A skin-prep ritual.</em>",
+      "benefitBody": [
+        "The old-school toner stripped. This one preps — pH, hydration, and barrier all at once. The difference shows in how well your serums absorb, not in how this product feels alone.",
+        "One step that makes the next three work harder."
+      ],
+      "stats": [
+        {
+          "n": "+42",
+          "suf": "%",
+          "l": "Better serum absorption on prepped skin"
+        },
+        {
+          "n": "97",
+          "suf": "%",
+          "l": "Felt more supple in one week"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Alcohol, fragrance, colorants"
+        }
+      ],
+      "faqTitle": "Questions about <em>the toner.</em>",
+      "faqs": [
+        {
+          "q": "Do I really need a toner?",
+          "a": "Not every skin does. But if you use serums with actives, a pH-balanced, hydrating toner meaningfully improves absorption. Think of it as the thin layer that lets everything else work."
+        },
+        {
+          "q": "Can I use a cotton pad instead of hands?",
+          "a": "You can. We prefer hands — less product wasted, less dragging. But if a cotton pad is your preference, use a soft, unbleached one."
+        },
+        {
+          "q": "Is the niacinamide concentration safe for sensitive skin?",
+          "a": "Yes. At 3% it brightens and supports barrier function without the irritation risk that can come with higher doses. Well tolerated by most sensitive skin."
+        },
+        {
+          "q": "Does it work as a facial mist during the day?",
+          "a": "You can use it as a quick refresh mid-day, but the main benefit is in the prep step. A daytime mist won't have the same absorption-boosting effect."
+        }
+      ],
+      "inci": "Aqua, Rosa Damascena Flower Water, Glycerin, Niacinamide (3%), Propanediol, Sodium Hyaluronate, Ceramide NP, Betaine, Panthenol, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "96.8% naturally derived. 100% vegan. No alcohol, fragrance, or colorants.",
+      "pairs": [
+        "cleansing-foam",
+        "vitamin-c-serum",
+        "peptide-serum",
+        "spf50-stick"
+      ]
+    },
+    "vitamin-c-serum": {
+      "name": "Vitamin C Serum",
+      "nameBreak": "Vitamin C<br>Serum.",
+      "step": "03 · Treat · AM",
+      "stepNum": 2,
+      "price": "€34",
+      "vol": "30 ml",
+      "volPrice": "€1.13/ml",
+      "tagline": "A stable 12% ascorbic acid that brightens without burning — the morning glow you build over weeks, not the kind you borrow.",
+      "chips": [
+        "Brightens",
+        "Evens tone",
+        "AM only",
+        "Stable 12% VC"
+      ],
+      "color": "#FCEAD0",
+      "img": "../project/assets/products-new/vitamin-c-serum-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/vitamin-c-serum-hp.png",
+          "bg": "#FCEAD0"
+        },
+        {
+          "src": "../project/assets/products-new/vitamin-c-serum-textuur.jpg",
+          "bg": "#FEF0E0"
+        }
+      ],
+      "sku": "No. 03 · Treat · AM",
+      "size": "30 ml",
+      "quickInfo": [
+        [
+          "Morning use only",
+          "Pairs with SPF 50"
+        ],
+        [
+          "All skin types",
+          "Patch-test if reactive"
+        ]
+      ],
+      "routineActive": 2,
+      "ingredients": [
+        {
+          "abbr": "VC",
+          "bg": "#FCEAD0",
+          "nm": "Ascorbic Acid",
+          "ds": "Pure vitamin C — brightens and stimulates collagen.",
+          "pct": "12%"
+        },
+        {
+          "abbr": "FER",
+          "bg": "#FAF7C9",
+          "nm": "Ferulic Acid",
+          "ds": "Stabilises vitamin C and doubles its antioxidant effect.",
+          "pct": "0.5%"
+        },
+        {
+          "abbr": "VE",
+          "bg": "#E6EFE9",
+          "nm": "Tocopherol (Vitamin E)",
+          "ds": "Antioxidant synergy — keeps the formula stable.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Brightens pores, smooths texture, calms redness.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E3EEF5",
+          "nm": "Sodium Hyaluronate",
+          "ds": "Hydration that carries the actives deeper.",
+          "pct": "1%"
+        }
+      ],
+      "ingTitle": "Stable actives, <em>honest results.</em>",
+      "howTitle": "Three drops. <em>Every morning.</em>",
+      "howÉtapes": [
+        {
+          "h": "After cleansing and toner",
+          "p": "Apply to clean, toned skin. Vitamin C absorbs best on a pH-balanced base."
+        },
+        {
+          "h": "Warm three drops in your palms",
+          "p": "Press firmly across cheeks, forehead, chin and neck. Pat — don't rub."
+        },
+        {
+          "h": "Wait sixty seconds",
+          "p": "Let the serum absorb fully before layering moisturiser on top."
+        },
+        {
+          "h": "SPF is non-negotiable",
+          "p": "Vitamin C makes skin temporarily more photosensitive. Always finish morning routine with SPF 50."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#F4C9A8,#E0A870)",
+      "quote": "\"My skin looks like I sleep well now. I don't, but it does.\"",
+      "benefitTitle": "Radiance that builds, <em>not borrows.</em>",
+      "benefitBody": [
+        "Vitamin C brightens by interrupting melanin production — the effect is cumulative. Day one you feel it. Week four you see it. Month two it holds.",
+        "The formula uses a ferulic acid stabilisation system that keeps the ascorbic acid active from first drop to last."
+      ],
+      "stats": [
+        {
+          "n": "+31",
+          "suf": "%",
+          "l": "Radiance uplift after 4 weeks"
+        },
+        {
+          "n": "87",
+          "suf": "%",
+          "l": "More even skin tone at 8 weeks"
+        },
+        {
+          "n": "12",
+          "suf": "%",
+          "l": "Stable ascorbic acid"
+        }
+      ],
+      "faqTitle": "Questions about <em>Vitamin C.</em>",
+      "faqs": [
+        {
+          "q": "Can I use it with Peptide Serum?",
+          "a": "Yes — they complement each other well. Use Vitamin C in the morning and Peptide Serum in the morning or evening. Avoid layering both in a single step: apply one, wait, then apply the other."
+        },
+        {
+          "q": "My serum turned orange. Is it still safe?",
+          "a": "An orange tint means the Vitamin C is oxidising. The formula is less effective at that point. Store below 20°C and away from direct light to extend freshness. Most bottles last 3 months from opening."
+        },
+        {
+          "q": "Can I use it if I have rosacea or reactive skin?",
+          "a": "Vitamin C at 12% can cause tingling in sensitive skin. Start every other day for two weeks, then daily. If irritation persists, the Peptide Serum is a gentler morning active to start with."
+        },
+        {
+          "q": "Why only mornings?",
+          "a": "Vitamin C is an antioxidant — it works against the environmental damage of the day. It also makes skin temporarily more photosensitive, so pairing it with SPF in the morning makes most sense."
+        }
+      ],
+      "inci": "Aqua, Ascorbic Acid (12%), Glycerin, Propanediol, Niacinamide (3%), Ferulic Acid, Tocopherol, Sodium Hyaluronate, Panthenol, Xanthan Gum, Citric Acid, Sodium Benzoate, Potassium Sorbate.",
+      "inciNote": "89.3% naturally derived. 100% vegan. No fragrance, parabens, or sulfates.",
+      "pairs": [
+        "hydrating-toner",
+        "peptide-serum",
+        "firming-day-cream",
+        "spf50-stick"
+      ]
+    },
+    "peptide-serum": {
+      "name": "Peptide Serum",
+      "nameBreak": "Peptide<br>Serum.",
+      "step": "03 · Treat · AM/PM",
+      "stepNum": 2,
+      "price": "€34",
+      "vol": "30 ml",
+      "volPrice": "€1.13/ml",
+      "tagline": "Firms, smooths and supports skin's natural elasticity — a quiet, daily firming that earns its keep over weeks, not minutes.",
+      "chips": [
+        "Firms",
+        "Smooths",
+        "AM / PM",
+        "All skin types"
+      ],
+      "color": "#FCEAD0",
+      "img": "../project/assets/products-new/peptide-serum-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/peptide-serum-hp.png",
+          "bg": "#FCEAD0"
+        },
+        {
+          "src": "../project/assets/products-new/peptide-serum-textuur.jpg",
+          "bg": "#FEF0E0"
+        }
+      ],
+      "sku": "No. 03 · Treat",
+      "size": "30 ml",
+      "quickInfo": [
+        [
+          "All skin types",
+          "Fragrance-free"
+        ],
+        [
+          "Use AM & PM",
+          "After toner, before cream"
+        ]
+      ],
+      "routineActive": 2,
+      "ingredients": [
+        {
+          "abbr": "PEP",
+          "bg": "#FCEAD0",
+          "nm": "Hydroxyproline Peptide",
+          "ds": "Supports firmness and elasticity over time.",
+          "pct": "2.5%"
+        },
+        {
+          "abbr": "AL",
+          "bg": "#E3EEF5",
+          "nm": "Aloe Juice",
+          "ds": "Calms, soothes and supports the barrier.",
+          "pct": "Base"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E6EFE9",
+          "nm": "Hyaluronic Acid",
+          "ds": "Holds water in the upper layers of skin.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "GIN",
+          "bg": "#FAF7C9",
+          "nm": "Ginkgo Leaf Extract",
+          "ds": "Botanical antioxidant — a gentle daily defence.",
+          "pct": "0.4%"
+        },
+        {
+          "abbr": "BB",
+          "bg": "#FCE8EB",
+          "nm": "Blueberry & Strawberry Seed Oil",
+          "ds": "Rich in vitamin E — softens the finish.",
+          "pct": "Trace"
+        }
+      ],
+      "ingTitle": "Honest helpers, <em>not heroes.</em>",
+      "howTitle": "Three slow drops, <em>twice a day.</em>",
+      "howÉtapes": [
+        {
+          "h": "Cleanse and tone",
+          "p": "Start on a clean, slightly damp face. SESE Cleansing Foam, then a mist of Hydrating Toner."
+        },
+        {
+          "h": "Warm three to four drops",
+          "p": "Press the pump and warm the serum between fingertips. Pat — never rub — across cheeks, forehead, neck."
+        },
+        {
+          "h": "Let it settle, then layer",
+          "p": "Wait ~60 seconds. Follow with Firming Day Cream in the morning, Ceramide Night Cream in the evening."
+        },
+        {
+          "h": "Finish with SPF in the morning",
+          "p": "SPF 50 Sunscreen Stick is the non-negotiable final step before the day begins."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#F5C98A,#E0AC58)",
+      "quote": "\"After four weeks my skin holds itself differently. Less tight. More mine.\"",
+      "benefitTitle": "Time-released firmness, <em>built into a daily ritual.</em>",
+      "benefitBody": [
+        "Peptides do not work like a glow trick — they work like sleep. You won't notice the single day. You will notice the third week.",
+        "Built for a long, gentle pattern: a thin, fast-absorbing essence with a stable peptide complex, a calming aloe base, and just enough hyaluronic acid to feel like a sip of water for tired skin."
+      ],
+      "stats": [
+        {
+          "n": "+23",
+          "suf": "%",
+          "l": "Firmness uplift after 4 weeks"
+        },
+        {
+          "n": "94",
+          "suf": "%",
+          "l": "Felt softer, calmer skin in week 1"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Fragrance, sulfates, retinoid sting"
+        }
+      ],
+      "faqTitle": "Questions about <em>this serum.</em>",
+      "faqs": [
+        {
+          "q": "Can I use Peptide Serum with retinol or Vitamin C?",
+          "a": "Yes — peptides play well with both. We recommend: Vitamin C in the morning, Peptide Serum either morning or evening, and our Retinol Alternative on alternating evenings if you want gentle renewal too."
+        },
+        {
+          "q": "How long until I see a difference?",
+          "a": "Most skin feels softer and calmer within the first week. Visible firmness and a smoother surface take 3–4 weeks of consistent, twice-daily use — peptides build, they don't surprise."
+        },
+        {
+          "q": "Is it safe for sensitive skin?",
+          "a": "Yes. The formula is fragrance-free, allergen-label-free, and uses a single, well-tolerated peptide rather than a heavy actives cocktail. Patch-test inside the elbow for two evenings if your skin is reactive."
+        },
+        {
+          "q": "How long does one bottle last?",
+          "a": "With twice-daily use, one 30 ml bottle lasts roughly 8 weeks. Once-a-day use stretches it to about 12 weeks."
+        },
+        {
+          "q": "Why a glass bottle with airless pump?",
+          "a": "Peptides are sensitive to air and light. The airless pump and tinted glass keep the formula stable from the first day to the last drop."
+        }
+      ],
+      "inci": "Aqua (Water), Aloe Barbadensis Leaf Juice, Glycerin, Propanediol, Sodium Hyaluronate, Hydroxyproline, Phytosteryl Oleate, Tocopherol, Vaccinium Myrtillus (Blueberry) Seed Oil, Fragaria Ananassa (Strawberry) Seed Oil, Ginkgo Biloba Leaf Extract, Sodium Phytate, Xanthan Gum, Citric Acid, Sodium Benzoate, Potassium Sorbate, Phenoxyethanol.",
+      "inciNote": "91.4% naturally derived. 100% vegan. No fragrance, parabens, or sulfates.",
+      "pairs": [
+        "cleansing-foam",
+        "hydrating-toner",
+        "firming-day-cream",
+        "spf50-stick"
+      ]
+    },
+    "retinol-alt-serum": {
+      "name": "Retinol Alternative Serum",
+      "nameBreak": "Retinol Alt.<br>Serum.",
+      "step": "03 · Treat · PM",
+      "stepNum": 2,
+      "price": "€26",
+      "vol": "30 ml",
+      "volPrice": "€0.87/ml",
+      "tagline": "The renewal of retinol without the sting — Bakuchiol and PHAs that smooth fine lines gently, for the skin that wants results without a transition phase.",
+      "chips": [
+        "Renews",
+        "Smooths lines",
+        "PM use",
+        "Sensitive-safe"
+      ],
+      "color": "#F5EAE4",
+      "img": "../project/assets/products-new/retinol-alt-serum-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/retinol-alt-serum-hp.png",
+          "bg": "#F5EAE4"
+        },
+        {
+          "src": "../project/assets/products-new/retinol-alt-serum-textuur.jpg",
+          "bg": "#EFE0D8"
+        }
+      ],
+      "sku": "No. 03 · Treat · PM",
+      "size": "30 ml",
+      "quickInfo": [
+        [
+          "Evening use only",
+          "Sensitive skin welcome"
+        ],
+        [
+          "After toner",
+          "Before night cream"
+        ]
+      ],
+      "routineActive": 2,
+      "ingredients": [
+        {
+          "abbr": "BAK",
+          "bg": "#FCE8EB",
+          "nm": "Bakuchiol",
+          "ds": "Plant-based retinol equivalent — renews without irritation.",
+          "pct": "1.5%"
+        },
+        {
+          "abbr": "GLA",
+          "bg": "#FAF7C9",
+          "nm": "Gluconolactone (PHA)",
+          "ds": "Gentle resurfacing — exfoliates while you sleep.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Minimises pores, calms, strengthens barrier.",
+          "pct": "5%"
+        },
+        {
+          "abbr": "SQL",
+          "bg": "#E6EFE9",
+          "nm": "Squalane",
+          "ds": "Lipid-identical moisture — absorbs in seconds.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "PAN",
+          "bg": "#E3EEF5",
+          "nm": "Panthenol",
+          "ds": "Soothes and reinforces barrier overnight.",
+          "pct": "1%"
+        }
+      ],
+      "ingTitle": "Renewal without <em>the reaction.</em>",
+      "howTitle": "Evening only. <em>One step before bed.</em>",
+      "howÉtapes": [
+        {
+          "h": "Evening routine only",
+          "p": "Apply after cleansing and toning. Bakuchiol can cause mild photosensitivity — evenings only."
+        },
+        {
+          "h": "Three to four drops, patted in",
+          "p": "Warm between palms, press across the full face, neck, and décolleté. Don't rush."
+        },
+        {
+          "h": "Wait, then layer night cream",
+          "p": "Allow sixty seconds for the serum to absorb, then apply Ceramide Night Cream on top."
+        },
+        {
+          "h": "No retinol needed alongside this",
+          "p": "Bakuchiol and PHAs together already deliver renewal — adding prescription retinol on the same nights risks over-exfoliation."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#D8A48F,#C07F6A)",
+      "quote": "\"I'd tried retinol three times. This is the first one I've finished — and reordered.\"",
+      "benefitTitle": "All the renewal. <em>None of the adjustment phase.</em>",
+      "benefitBody": [
+        "Retinol works. But the peeling, the purging, the two months of red skin before things improve — that stops most people before the benefit arrives.",
+        "Bakuchiol activates the same renewal pathway, without the retinoid irritation. You get the smoothing, the fine-line reduction, the cellular turnover — every night, from the first night."
+      ],
+      "stats": [
+        {
+          "n": "0.5",
+          "suf": "%",
+          "l": "Retinol-equivalent efficacy from Bakuchiol"
+        },
+        {
+          "n": "96",
+          "suf": "%",
+          "l": "No irritation or adjustment phase"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Retinoids, fragrance, essential oils"
+        }
+      ],
+      "faqTitle": "Questions about <em>this serum.</em>",
+      "faqs": [
+        {
+          "q": "Can I use it if I'm pregnant or breastfeeding?",
+          "a": "Bakuchiol is widely considered the pregnancy-safe retinol alternative. However, we recommend consulting your doctor or midwife before introducing any new active to your routine during pregnancy."
+        },
+        {
+          "q": "Can I layer it with the Peptide Serum?",
+          "a": "Yes — apply Retinol Alternative first, wait sixty seconds, then Peptide Serum. Or use Peptide in the morning and Retinol Alternative in the evening, which keeps your routine clean and your skin from overloading."
+        },
+        {
+          "q": "Will my skin peel or purge?",
+          "a": "Bakuchiol doesn't cause the same purging as retinol. Some skin may experience very mild flaking in the first week. If so, reduce to every other evening for two weeks, then daily."
+        },
+        {
+          "q": "How is this different from retinol?",
+          "a": "Retinol is a vitamin A derivative that directly converts to retinoic acid in skin. Bakuchiol is a plant compound (from Babchi seeds) that triggers similar cell-renewal receptors via a different pathway — same destination, gentler road."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Bakuchiol (1.5%), Gluconolactone (3%), Niacinamide (5%), Squalane, Panthenol, Tocopherol, Sodium Hyaluronate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "93.1% naturally derived. 100% vegan. No retinoids, fragrance, or essential oils.",
+      "pairs": [
+        "cleansing-foam",
+        "hydrating-toner",
+        "ceramide-night-cream",
+        "smoothing-eye-cream"
+      ]
+    },
+    "firming-day-cream": {
+      "name": "Firming Day Cream",
+      "nameBreak": "Firming<br>Day Cream.",
+      "step": "04 · Moisturise · AM",
+      "stepNum": 3,
+      "price": "€36",
+      "vol": "50 ml",
+      "volPrice": "€0.72/ml",
+      "tagline": "Light enough to wear under makeup, firm enough to matter — a day cream that holds the work of your serum in place and keeps moisture in for eight hours.",
+      "chips": [
+        "Firms",
+        "Light texture",
+        "AM use",
+        "Normal to dry"
+      ],
+      "color": "#FCE8EB",
+      "img": "../project/assets/products-new/firming-day-cream-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/firming-day-cream-hp.png",
+          "bg": "#FCE8EB"
+        },
+        {
+          "src": "../project/assets/products-new/ceramide-night-cream-textuur.jpg",
+          "bg": "#F5DEE2"
+        }
+      ],
+      "sku": "No. 04 · Moisturise · AM",
+      "size": "50 ml",
+      "quickInfo": [
+        [
+          "Normal to dry skin",
+          "Under makeup or SPF"
+        ],
+        [
+          "Morning use",
+          "After serum, before SPF"
+        ]
+      ],
+      "routineActive": 3,
+      "ingredients": [
+        {
+          "abbr": "PEP",
+          "bg": "#FCE8EB",
+          "nm": "Peptide Complex",
+          "ds": "Supports collagen production and visible firmness.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "SHE",
+          "bg": "#FAF7C9",
+          "nm": "Shea Butter (light fraction)",
+          "ds": "Rich fatty acids — nourishes without heaviness.",
+          "pct": "4%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Brightens, tightens pores, improves texture.",
+          "pct": "4%"
+        },
+        {
+          "abbr": "SQL",
+          "bg": "#E6EFE9",
+          "nm": "Squalane",
+          "ds": "Skin-identical emollient — absorbs instantly.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "VE",
+          "bg": "#E6EFE9",
+          "nm": "Tocopherol (Vitamin E)",
+          "ds": "Antioxidant protection for the day ahead.",
+          "pct": "0.5%"
+        }
+      ],
+      "ingTitle": "Light but <em>genuinely moisturising.</em>",
+      "howTitle": "One step between <em>serum and SPF.</em>",
+      "howÉtapes": [
+        {
+          "h": "After your morning serum",
+          "p": "Apply after the serum has absorbed — about sixty seconds after patting it in."
+        },
+        {
+          "h": "Pea-size amount, warmed first",
+          "p": "Take a pea-sized amount and warm it between fingertips before pressing into skin. It melts in."
+        },
+        {
+          "h": "Face, neck, décolleté",
+          "p": "Don't stop at the jaw. Press upward and outward. The neck ages as fast as the face."
+        },
+        {
+          "h": "Follow with SPF",
+          "p": "The day cream has no SPF. Always finish with SESE SPF 50 Sunscreen Stick as the final morning step."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#E9B7A8,#CC8E7A)",
+      "quote": "\"Skin feels like it's holding itself differently. Less tired-looking by afternoon.\"",
+      "benefitTitle": "Daytime moisture that <em>doesn't disappear by noon.</em>",
+      "benefitBody": [
+        "Most day creams sit on the skin and evaporate. This one uses an occlusive-humectant layering system — it draws water in and holds it.",
+        "The peptide complex adds a second purpose: gradual, visible firming over weeks. One product, two reasons to use it every morning."
+      ],
+      "stats": [
+        {
+          "n": "8",
+          "suf": "h",
+          "l": "Sustained hydration"
+        },
+        {
+          "n": "+19",
+          "suf": "%",
+          "l": "Firmness after 6 weeks"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Heavy silicones, mineral oil, fragrance"
+        }
+      ],
+      "faqTitle": "Questions about <em>the day cream.</em>",
+      "faqs": [
+        {
+          "q": "Can I wear it under makeup?",
+          "a": "Yes — it's designed to sit comfortably under foundation and SPF without pilling or greasiness. Apply, wait two minutes for full absorption, then layer SPF on top."
+        },
+        {
+          "q": "Is it suitable for combination skin?",
+          "a": "The formula is designed for normal-to-dry skin. If you have combination skin, you may find the texture slightly rich on the T-zone. In that case, try a lighter amount or skip the nose and forehead."
+        },
+        {
+          "q": "Does it contain SPF?",
+          "a": "No — and intentionally so. Combining moisturiser and SPF in one product usually means lower efficacy in both. We recommend SESE SPF 50 Sunscreen Stick on top as a dedicated sun protection step."
+        },
+        {
+          "q": "Can I use it in the evening too?",
+          "a": "You can in a pinch, but the Ceramide Night Cream is formulated for overnight repair with richer actives. Using the day cream at night is not harmful — just not optimal."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Squalane, Niacinamide (4%), Hydroxyproline, Tocopherol, Glyceryl Stearate, Cetyl Alcohol, Sodium Hyaluronate, Xanthan Gum, Phenoxyethanol, Citric Acid.",
+      "inciNote": "87.6% naturally derived. 100% vegan. No fragrance, mineral oil, or heavy silicones.",
+      "pairs": [
+        "peptide-serum",
+        "vitamin-c-serum",
+        "spf50-stick",
+        "smoothing-eye-cream"
+      ]
+    },
+    "ceramide-night-cream": {
+      "name": "Ceramide Night Cream",
+      "nameBreak": "Ceramide<br>Night Cream.",
+      "step": "04 · Moisturise · PM",
+      "stepNum": 3,
+      "price": "€38",
+      "vol": "50 ml",
+      "volPrice": "€0.76/ml",
+      "tagline": "While you sleep, ceramides rebuild what the day took — a repair cream that earns its rest and leaves skin softer by morning.",
+      "chips": [
+        "Repairs barrier",
+        "Rich texture",
+        "PM use",
+        "Dry & mature"
+      ],
+      "color": "#EFDFC2",
+      "img": "../project/assets/products-new/ceramide-night-cream-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/ceramide-night-cream-hp.png",
+          "bg": "#EFDFC2"
+        },
+        {
+          "src": "../project/assets/products-new/firming-day-cream-textuur.jpg",
+          "bg": "#F5EAD0"
+        }
+      ],
+      "sku": "No. 04 · Moisturise · PM",
+      "size": "50 ml",
+      "quickInfo": [
+        [
+          "Dry & mature skin",
+          "Fragrance-free"
+        ],
+        [
+          "Evening use",
+          "Last step of PM routine"
+        ]
+      ],
+      "routineActive": 3,
+      "ingredients": [
+        {
+          "abbr": "CER",
+          "bg": "#EFDFC2",
+          "nm": "Ceramide NP",
+          "ds": "Lipid molecule that rebuilds the moisture barrier.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "SHE",
+          "bg": "#FAF7C9",
+          "nm": "Shea Butter",
+          "ds": "Deeply nourishing — softens and soothes overnight.",
+          "pct": "6%"
+        },
+        {
+          "abbr": "BAK",
+          "bg": "#FCE8EB",
+          "nm": "Bakuchiol",
+          "ds": "Gentle overnight renewal while skin regenerates.",
+          "pct": "0.5%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E3EEF5",
+          "nm": "Hyaluronic Acid",
+          "ds": "Deep hydration during the long sleep cycle.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "PAN",
+          "bg": "#E6EFE9",
+          "nm": "Panthenol",
+          "ds": "Soothes and supports skin integrity overnight.",
+          "pct": "1%"
+        }
+      ],
+      "ingTitle": "Ceramides that rebuild. <em>Overnight.</em>",
+      "howTitle": "The last step. <em>Every evening.</em>",
+      "howÉtapes": [
+        {
+          "h": "After your evening serum",
+          "p": "Apply as the final step of your evening routine — after cleansing, toning, and serum."
+        },
+        {
+          "h": "A generous amount",
+          "p": "This is the night — don't be conservative. A little more than the day cream, pressed in firmly."
+        },
+        {
+          "h": "Neck and décolleté too",
+          "p": "The neck loses ceramides and collagen just as fast. Extend down to the chest."
+        },
+        {
+          "h": "Go to sleep",
+          "p": "That's it. The ceramide complex works best in the warmth of sleep, when skin's repair mechanisms are most active."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#EFDFC2,#D4C09A)",
+      "quote": "\"I wake up to different skin now. Less tight, more like it belongs to me again.\"",
+      "benefitTitle": "Sleep is when skin <em>does its best work.</em>",
+      "benefitBody": [
+        "Ceramides are the fats that hold your skin cells together — they make up around 50% of the skin barrier. Age, weather, and actives slowly deplete them.",
+        "This cream replenishes them overnight, when the barrier is in active repair mode. The result: less tightness in the morning, less sensitivity through the day."
+      ],
+      "stats": [
+        {
+          "n": "2",
+          "suf": "w",
+          "l": "Barrier restored in clinical measure"
+        },
+        {
+          "n": "91",
+          "suf": "%",
+          "l": "Softer skin in 7 mornings"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Fragrance, mineral oil, parabens"
+        }
+      ],
+      "faqTitle": "Questions about <em>the night cream.</em>",
+      "faqs": [
+        {
+          "q": "Is it suitable for sensitive or eczema-prone skin?",
+          "a": "Yes. Ceramides are naturally occurring skin lipids — they're among the most well-tolerated ingredients in skincare. The formula is fragrance-free and tested for sensitivity. If your skin is actively flared, patch-test first."
+        },
+        {
+          "q": "It feels quite rich. Is that normal?",
+          "a": "Yes — night creams are designed to be richer than day creams. Your skin is in repair mode overnight and can make use of the extra nourishment. If it feels too heavy, try a slightly smaller amount."
+        },
+        {
+          "q": "Can I use it with the Retinol Alternative Serum?",
+          "a": "Yes — and this is actually the intended pairing. Apply Retinol Alternative Serum first, let it absorb for sixty seconds, then layer Ceramide Night Cream on top. The cream's panthenol and ceramides buffer any serum-related sensitivity."
+        },
+        {
+          "q": "Can men use it?",
+          "a": "Skincare has no gender. The formula works on any skin that benefits from barrier repair and hydration — that's most skin types over 30."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Ceramide NP (1%), Squalane, Panthenol, Niacinamide, Bakuchiol (0.5%), Tocopherol, Sodium Hyaluronate, Glyceryl Stearate, Cetyl Alcohol, Phenoxyethanol, Citric Acid.",
+      "inciNote": "88.4% naturally derived. 100% vegan. No fragrance, mineral oil, or parabens.",
+      "pairs": [
+        "retinol-alt-serum",
+        "peptide-serum",
+        "cleansing-foam",
+        "smoothing-eye-cream"
+      ]
+    },
+    "smoothing-eye-cream": {
+      "name": "Smoothing Eye Cream",
+      "nameBreak": "Smoothing<br>Eye Cream.",
+      "step": "Targeted · Eye care",
+      "stepNum": -1,
+      "price": "€30",
+      "vol": "15 ml",
+      "volPrice": "€2.00/ml",
+      "tagline": "The eye area tells a different story — this one softens the line, reduces the dark, and does it gently enough for the most delicate skin on your face.",
+      "chips": [
+        "Cools",
+        "Brightens",
+        "AM / PM",
+        "Gentle tap"
+      ],
+      "color": "#C9D7C9",
+      "img": "../project/assets/products-new/smoothing-eye-cream-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/smoothing-eye-cream-hp.png",
+          "bg": "#C9D7C9"
+        },
+        {
+          "src": "../project/assets/products-new/smoothing-eye-cream-textuur.jpg",
+          "bg": "#D8E4D8"
+        }
+      ],
+      "sku": "Targeted · Eye",
+      "size": "15 ml",
+      "quickInfo": [
+        [
+          "Delicate eye area",
+          "No fragrance, no essential oils"
+        ],
+        [
+          "Use AM & PM",
+          "Tap gently — never rub"
+        ]
+      ],
+      "routineActive": -1,
+      "ingredients": [
+        {
+          "abbr": "CAF",
+          "bg": "#E6EFE9",
+          "nm": "Caffeine",
+          "ds": "Reduces puffiness and dark circles visibly.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "PEP",
+          "bg": "#C9D7C9",
+          "nm": "Peptide Complex",
+          "ds": "Supports elasticity in the fine orbital skin.",
+          "pct": "1.5%"
+        },
+        {
+          "abbr": "HA",
+          "bg": "#E3EEF5",
+          "nm": "Hyaluronic Acid",
+          "ds": "Plumps fine lines from within.",
+          "pct": "1%"
+        },
+        {
+          "abbr": "CUC",
+          "bg": "#E6EFE9",
+          "nm": "Cucumber Fruit Extract",
+          "ds": "Instantly cools and de-puffs.",
+          "pct": "2%"
+        },
+        {
+          "abbr": "NIA",
+          "bg": "#E3EEF5",
+          "nm": "Niacinamide",
+          "ds": "Brightens under-eye discolouration over time.",
+          "pct": "3%"
+        }
+      ],
+      "ingTitle": "Targeted actives for <em>delicate skin.</em>",
+      "howTitle": "Ring finger. <em>Tap, don't rub.</em>",
+      "howÉtapes": [
+        {
+          "h": "After serum, before moisturiser",
+          "p": "Apply after serums have absorbed but before day or night cream."
+        },
+        {
+          "h": "Ring finger only",
+          "p": "The ring finger exerts the least pressure. This area has no subcutaneous fat — drag causes damage over time."
+        },
+        {
+          "h": "Dot and tap along the orbital bone",
+          "p": "Apply small dots along the orbital bone (the bony ridge under and above the eye). Tap to blend — never drag inward."
+        },
+        {
+          "h": "Morning and evening",
+          "p": "The caffeine de-puffs best in the morning. The peptides work overnight. Use both times for full benefit."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#B3C9B3,#8CAD8C)",
+      "quote": "\"People stopped asking if I was tired. That's all I needed.\"",
+      "benefitTitle": "The eye area is different. <em>It needs different.</em>",
+      "benefitBody": [
+        "The skin around the eye is 40% thinner than the rest of the face. It has no sebaceous glands, no subcutaneous fat, and is subject to thousands of micro-movements a day.",
+        "Standard moisturisers are too heavy, standard serums can sting. This cream is formulated specifically for that zone — with caffeine to de-puff, peptides to firm, and hyaluronic acid at the right molecular weight to reach where it's needed."
+      ],
+      "stats": [
+        {
+          "n": "-34",
+          "suf": "%",
+          "l": "Puffiness reduction in 4 weeks"
+        },
+        {
+          "n": "88",
+          "suf": "%",
+          "l": "Brighter under-eye at 6 weeks"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Fragrance, essential oils, sting"
+        }
+      ],
+      "faqTitle": "Questions about <em>the eye cream.</em>",
+      "faqs": [
+        {
+          "q": "Can I use it if I wear contact lenses?",
+          "a": "Yes. The formula is ophthalmologist-tested. Apply along the orbital bone and allow to absorb fully before inserting lenses."
+        },
+        {
+          "q": "Will it work on hooded or mature eyes?",
+          "a": "Yes — the peptide complex and caffeine address the two main concerns of mature eye areas: loss of firmness and dark circles. Hooding (orbital fat pad descent) is structural and no cream can address it, but texture and discolouration improve meaningfully."
+        },
+        {
+          "q": "How much do I need?",
+          "a": "A very small amount — about the size of a grain of rice per eye, per application. The tube lasts 3–4 months with daily use."
+        },
+        {
+          "q": "Can I use it on my lips or mouth area too?",
+          "a": "The formula is safe to use around the mouth — similar fine lines, similar skin thinness. It's not formulated or tested specifically for lip skin, but many customers use it there with good results."
+        }
+      ],
+      "inci": "Aqua, Glycerin, Caffeine (2%), Sodium Hyaluronate, Hydroxyproline, Niacinamide (3%), Cucumis Sativus (Cucumber) Fruit Extract, Tocopherol, Panthenol, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
+      "inciNote": "90.2% naturally derived. 100% vegan. No fragrance, parabens, or essential oils.",
+      "pairs": [
+        "peptide-serum",
+        "firming-day-cream",
+        "ceramide-night-cream",
+        "retinol-alt-serum"
+      ]
+    },
+    "spf50-stick": {
+      "name": "SPF 50 Sunscreen Stick",
+      "nameBreak": "SPF 50<br>Stick.",
+      "step": "05 · Protect",
+      "stepNum": 4,
+      "price": "€28",
+      "vol": "12 g",
+      "volPrice": "pocket-sized",
+      "tagline": "The step most skipped, the step that matters most — a mineral SPF 50 in a pocket stick for faces that forget, then remember.",
+      "chips": [
+        "SPF 50",
+        "Mineral filter",
+        "No white cast",
+        "Reapply-easy"
+      ],
+      "color": "#E8D5B0",
+      "img": "../project/assets/products-new/spf50-stick-hp.png",
+      "imgs": [
+        {
+          "src": "../project/assets/products-new/spf50-stick-hp.png",
+          "bg": "#E8D5B0"
+        },
+        {
+          "src": "../project/assets/products-new/spf50-stick-textuur.jpg",
+          "bg": "#F0E2C0"
+        }
+      ],
+      "sku": "No. 05 · Protect",
+      "size": "12 g",
+      "quickInfo": [
+        [
+          "Morning — final step",
+          "Reapply every 2h outdoors"
+        ],
+        [
+          "UVA/UVB protection",
+          ""
+        ]
+      ],
+      "routineActive": 4,
+      "ingredients": [
+        {
+          "abbr": "ZnO",
+          "bg": "#E8D5B0",
+          "nm": "Zinc Oxide",
+          "ds": "Broad-spectrum mineral UV filter — safe and stable.",
+          "pct": "20%"
+        },
+        {
+          "abbr": "TiO",
+          "bg": "#FAF7C9",
+          "nm": "Titanium Dioxide",
+          "ds": "Supporting UV filter — adds UVB coverage.",
+          "pct": "5%"
+        },
+        {
+          "abbr": "SHE",
+          "bg": "#E6EFE9",
+          "nm": "Shea Butter",
+          "ds": "Smooth glide, skin-conditioning base.",
+          "pct": "8%"
+        },
+        {
+          "abbr": "JOJ",
+          "bg": "#E3EEF5",
+          "nm": "Jojoba Seed Oil",
+          "ds": "Lightweight emollient — no residue.",
+          "pct": "3%"
+        },
+        {
+          "abbr": "VE",
+          "bg": "#FCE8EB",
+          "nm": "Tocopherol (Vitamin E)",
+          "ds": "Antioxidant support alongside UV defence.",
+          "pct": "0.5%"
+        }
+      ],
+      "ingTitle": "Mineral filters. <em>Nothing else to worry about.</em>",
+      "howTitle": "Last step. <em>Every single morning.</em>",
+      "howÉtapes": [
+        {
+          "h": "Final step of morning routine",
+          "p": "After moisturiser or day cream has absorbed. SPF on top of everything — not under."
+        },
+        {
+          "h": "Two to three swipes per zone",
+          "p": "Swipe directly across forehead, each cheek, nose, chin. Then blend lightly with fingertips."
+        },
+        {
+          "h": "Don't forget ears and neck",
+          "p": "UV damage is cumulative everywhere. Two extra seconds per side."
+        },
+        {
+          "h": "Reapply every two hours outdoors",
+          "p": "No SPF lasts all day. The stick format is designed for easy reapplication — pocket it."
+        }
+      ],
+      "benefitGrad": "linear-gradient(160deg,#E8D5B0,#C8A870)",
+      "quote": "\"I stopped skipping SPF because I stopped hating how it felt.\"",
+      "benefitTitle": "The step that protects <em>everything else you do.</em>",
+      "benefitBody": [
+        "UV is responsible for roughly 80% of visible skin ageing. Every serum, every cream, every ritual you do — SPF protects the investment.",
+        "The stick format exists for one reason: reapplication is the step everyone skips. Pull it out, swipe, done. No need to undo your makeup, no pump to spill, no excuse."
+      ],
+      "stats": [
+        {
+          "n": "50",
+          "suf": "+",
+          "l": "SPF rating, PA++++ broad spectrum"
+        },
+        {
+          "n": "94",
+          "suf": "%",
+          "l": "No white cast (fair to medium skin)"
+        },
+        {
+          "n": "0",
+          "suf": "",
+          "l": "Chemical UV filters, fragrance, oxybenzone"
+        }
+      ],
+      "faqTitle": "Questions about <em>SPF 50 Stick.</em>",
+      "faqs": [
+        {
+          "q": "Is it reef-safe?",
+          "a": "Yes. The formula uses only mineral UV filters (zinc oxide and titanium dioxide) — both are considered reef-safe. No oxybenzone, no octinoxate."
+        },
+        {
+          "q": "Will it leave a white cast?",
+          "a": "Less than most mineral sunscreens. The zinc particle size is optimised to minimise cast on fair to medium skin tones. Deeper skin tones may notice a slight brightness — blending with fingertips after application helps significantly."
+        },
+        {
+          "q": "Can I use it to reapply over makeup?",
+          "a": "Yes — that's the main reason it's a stick. Swipe directly over makeup, then blend lightly with a fingertip or a brush. Far easier than a liquid SPF reapplication."
+        },
+        {
+          "q": "Is it suitable for children?",
+          "a": "Mineral-only SPF is generally considered safer for children's skin. However, this formula is designed and tested for adult facial use. For children, consult a paediatric dermatologist."
+        }
+      ],
+      "inci": "Zinc Oxide (20%), Titanium Dioxide (5%), Caprylic/Capric Triglyceride, Butyrospermum Parkii (Shea) Butter, Simmondsia Chinensis (Jojoba) Seed Oil, Candelilla Cera, Euphorbia Cerifera (Candelilla) Wax, Tocopherol, Mica, CI 77491, CI 77492.",
+      "inciNote": "78.4% naturally derived. Végan formula. No chemical UV filters, fragrance, or oxybenzone.",
+      "pairs": [
+        "firming-day-cream",
+        "vitamin-c-serum",
+        "peptide-serum",
+        "hydrating-toner"
+      ]
+    }
+  }
+};
