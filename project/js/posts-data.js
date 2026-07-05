@@ -212,7 +212,7 @@ const POSTS = [
     published: true,
     category: "Skincare · Eye care",
     title: "The most forgotten step in your routine: why you also need an eye cream",
-    titleHtml: "The most forgotten step in your routine —<br/><em>why you also need an eye cream</em>",
+    titleHtml: "The most forgotten step in your routine: why you also need an eye cream",
     date: "June 29, 2026",
     readtime: "4 min read",
     excerpt: "The skin around your eyes is five times thinner than the rest of your face, has no sebaceous glands, and moves thousands of times a day. And yet this is the area most people neglect the most.",
