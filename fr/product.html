@@ -1180,7 +1180,7 @@ function bindEvents(key, p) {
       showToast('Configure Boutiqueify variant IDs to enable checkout.');
       return;
     }
-    SESECart.add(p.key, qty); showToast('Added to cart.'); btn.classList.add('added'); btn.querySelector('.right').textContent = 'Added ✓'; setTimeout(() => { btn.classList.remove('added'); btn.querySelector('.right').textContent = '→'; }, 2000);
+    SESECart.add(key, qty); showToast('Added to cart.'); btn.classList.add('added'); btn.querySelector('.right').textContent = 'Added ✓'; setTimeout(() => { btn.classList.remove('added'); btn.querySelector('.right').textContent = '→'; }, 2000);
   });
 
   // cart button in nav
