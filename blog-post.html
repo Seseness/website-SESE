@@ -674,16 +674,11 @@ function getPostId() {
   return POSTS.some(post => post.id === p) ? p : 1;
 }
 
-function getRelated(currentId, count = 3) {
-  // Only show published posts
-  const others = POSTS.filter(p => p.published && p.id !== currentId);
-  // Pick a spread of posts
-  const picks = [];
-  const step = Math.max(1, Math.floor(others.length / count));
-  for (let i = 0; i < count; i++) {
-    picks.push(others[i % others.length]);
-  }
-  return picks;
+function getRelated(currentId) {
+  // All published posts except the current one, newest first
+  return POSTS
+    .filter(p => p.published && p.id !== currentId)
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
 function renderPost(post) {
@@ -728,7 +723,7 @@ function renderPost(post) {
   document.getElementById('article-container').innerHTML = articleHtml;
 
   // Render related posts
-  const related = getRelated(post.id, 3);
+  const related = getRelated(post.id);
   const relatedHtml = `
     <div class="related-label">More from the journal</div>
     <div class="related-grid">

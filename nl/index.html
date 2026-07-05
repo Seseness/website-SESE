@@ -69,7 +69,7 @@
     .nav {
       display: grid;
       grid-template-columns: 1fr auto 1fr;
-      align-artikelen: center;
+      align-items: center;
       padding: 26px 56px;
       background: var(--bg-nav);
       border-bottom: 1px solid var(--line-soft);
@@ -94,19 +94,19 @@
     .nav-center a:hover::after,
     .nav-center a.active::after { width: 22px; }
     .nav-right {
-      display: flex; justify-content: flex-end; align-artikelen: center;
+      display: flex; justify-content: flex-end; align-items: center;
       gap: 22px;
       font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
       color: var(--ink-2);
     }
     .nav-icon {
       width: 22px; height: 22px;
-      display: inline-flex; align-artikelen: center; justify-content: center;
+      display: inline-flex; align-items: center; justify-content: center;
       cursor: pointer;
     }
     .nav-icon svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.25; }
     .cart-btn {
-      display: inline-flex; align-artikelen: center; gap: 8px;
+      display: inline-flex; align-items: center; gap: 8px;
       padding: 8px 16px;
       border: 1px solid var(--line-default) !important;
       border-radius: 999px;
@@ -120,7 +120,7 @@
 
     /* ── Buttons ── */
     .btn {
-      display: inline-flex; align-artikelen: center; gap: 12px;
+      display: inline-flex; align-items: center; gap: 12px;
       padding: 16px 28px;
       font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase;
       border-radius: 999px;
@@ -182,7 +182,7 @@
     .hero-eyebrow {
       font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
       color: var(--ink); margin-bottom: 28px;
-      display: flex; align-artikelen: center; gap: 12px; opacity: 0.75;
+      display: flex; align-items: center; gap: 12px; opacity: 0.75;
     }
     
     .hero h1 {
@@ -210,11 +210,11 @@
       border-radius: var(--r-card);
       margin: 12px 56px 0;
     }
-    .usp { display: flex; align-artikelen: center; gap: 14px; color: #2A2620; }
+    .usp { display: flex; align-items: center; gap: 14px; color: #2A2620; }
     .usp-ico {
       width: 36px; height: 36px; flex: 0 0 36px;
       border: 1px solid rgba(26,26,26,0.18); border-radius: 50%;
-      display: inline-flex; align-artikelen: center; justify-content: center;
+      display: inline-flex; align-items: center; justify-content: center;
     }
     .usp-ico svg { width: 18px; height: 18px; stroke: #2A2620; fill: none; stroke-width: 1.25; }
     .usp-title { font-size: 13px; line-height: 1.25; letter-spacing: 0.01em; }
@@ -222,8 +222,8 @@
 
     /* ── Cert scroller ── */
     .cert-scroller { margin: 80px 0 0; overflow: hidden; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); padding: 28px 0; background: var(--bg-page); }
-    .cert-track { display: flex; gap: 56px; align-artikelen: center; width: max-content; will-change: transform; }
-    .cert-badge { display: inline-flex; flex-direction: column; align-artikelen: center; gap: 8px; flex-shrink: 0; opacity: 0.65; transition: opacity 0.2s; }
+    .cert-track { display: flex; gap: 56px; align-items: center; width: max-content; will-change: transform; }
+    .cert-badge { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; flex-shrink: 0; opacity: 0.65; transition: opacity 0.2s; }
     .cert-badge:hover { opacity: 1; }
     .cert-badge svg { width: 56px; height: 56px; } .cert-badge svg[viewBox="0 0 80 96"] { width: 46px; height: 55px; } .cert-badge svg[viewBox="0 0 90 56"] { width: 80px; height: 50px; }
     .cert-badge span { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-3); text-align: center; max-width: 80px; line-height: 1.4; }
@@ -231,7 +231,7 @@
     /* ── Section header ── */
     .sec-head {
       display: grid; grid-template-columns: 1fr auto;
-      align-artikelen: end;
+      align-items: end;
       padding: 0 56px;
       margin: 112px 0 36px;
       gap: 32px;
@@ -239,7 +239,7 @@
     .eyebrow {
       font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
       color: var(--ink-3); margin-bottom: 12px;
-      display: flex; align-artikelen: center; gap: 10px;
+      display: flex; align-items: center; gap: 10px;
     }
     .sec-head h2 {
       margin: 0;
@@ -248,7 +248,7 @@
     }
     .sec-head h2 em { font-style: italic; }
     .head-aside {
-      display: flex; align-artikelen: center; gap: 22px;
+      display: flex; align-items: center; gap: 22px;
       font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
       color: var(--ink-2);
     }
@@ -257,7 +257,7 @@
     .arrows button {
       width: 42px; height: 42px; border-radius: 50%;
       border: 1px solid var(--line-default) !important;
-      display: inline-flex; align-artikelen: center; justify-content: center;
+      display: inline-flex; align-items: center; justify-content: center;
       color: var(--ink); transition: background .28s var(--ease-out), color .28s var(--ease-out);
       font-size: 18px;
     }
@@ -290,7 +290,7 @@
     .card-pic {
       position: relative;
       height: 340px;
-      display: flex; align-artikelen: center; justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       margin: 8px;
     }
     .card-pic img.product-img {
@@ -311,16 +311,16 @@
       position: absolute; top: 14px; right: 14px;
       width: 32px; height: 32px; border-radius: 50%;
       background: rgba(255,255,255,0.86);
-      display: inline-flex; align-artikelen: center; justify-content: center;
+      display: inline-flex; align-items: center; justify-content: center;
     }
     .card-heart svg { width: 14px; height: 14px; stroke: var(--ink-2); fill: none; stroke-width: 1.4; }
     .card-meta { padding: 18px 6px 0; }
     .card-name { font-size: 19px; line-height: 1.2; color: var(--ink); margin-bottom: 4px; }
     .card-tag { font-size: 12px; line-height: 1.4; color: var(--ink-3); max-width: 250px; }
-    .card-row { margin-top: 16px; display: flex; align-artikelen: center; justify-content: space-between; }
+    .card-row { margin-top: 16px; display: flex; align-items: center; justify-content: space-between; }
     .card-price { font-size: 16px; color: var(--ink); }
     .card-add {
-      display: inline-flex; align-artikelen: center; gap: 8px;
+      display: inline-flex; align-items: center; gap: 8px;
       font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
       padding: 9px 14px; border-radius: 999px;
       border: 1px solid var(--line-default) !important;
@@ -341,7 +341,7 @@
       border: 1px solid var(--line-soft);
       border-radius: var(--r-card);
       display: grid; grid-template-columns: 0.9fr 1fr;
-      gap: 80px; align-artikelen: center;
+      gap: 80px; align-items: center;
     }
     .about-visual {
       position: relative;
@@ -352,7 +352,7 @@
     }
     .about-visual .ph {
       position: absolute; inset: 0;
-      display: flex; align-artikelen: center; justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       font-family: ui-monospace, monospace;
       font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
       color: rgba(42,38,32,0.55);
@@ -376,7 +376,7 @@
       border-radius: 24px;
       padding: 80px 80px;
       display: grid; grid-template-columns: 1fr 1.05fr;
-      gap: 64px; align-artikelen: center;
+      gap: 64px; align-items: center;
       position: relative; overflow: hidden;
     }
     .forever::before {
@@ -388,7 +388,7 @@
     }
     .forever-text { position: relative; }
     .forever-badge {
-      display: inline-flex; align-artikelen: center; gap: 10px;
+      display: inline-flex; align-items: center; gap: 10px;
       padding: 8px 16px;
       background: rgba(255,255,255,0.7); backdrop-filter: blur(4px);
       border-radius: 999px;
@@ -399,25 +399,25 @@
     .forever h2 { margin: 0 0 22px; font-size: 76px; line-height: 0.98; font-weight: 300; color: #0F2A36; }
     .forever h2 em { font-style: italic; }
     .forever p { margin: 0 0 32px; font-size: 17px; line-height: 1.65; color: #1A3D4D; max-width: 460px; }
-    .forever-pricing { display: flex; align-artikelen: baseline; gap: 18px; margin-bottom: 32px; }
+    .forever-pricing { display: flex; align-items: baseline; gap: 18px; margin-bottom: 32px; }
     .forever-pricing .now { font-size: 38px; color: #0F2A36; }
     .forever-pricing .was { font-size: 17px; color: rgba(15,42,54,0.55); text-decoration: line-through; }
     .forever-pricing .save { font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #0F2A36; background: rgba(255,255,255,0.6); padding: 6px 10px; border-radius: 999px; }
     .forever-ctas { display: inline-flex; gap: 12px; }
 
-    .forever-art { position: relative; height: 460px; display: flex; align-artikelen: center; justify-content: center; }
+    .forever-art { position: relative; height: 460px; display: flex; align-items: center; justify-content: center; }
     .forever-art img { height: 100%; width: 100%; object-fit: cover; border-radius: 20px; }
     .forever-art .count-chip {
       position: absolute; top: 12px; right: 14px;
       background: #fff; padding: 10px 14px; border-radius: 999px;
       font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase;
       color: var(--ink); box-shadow: 0 8px 24px rgba(15,42,54,0.16);
-      display: inline-flex; align-artikelen: center; gap: 10px;
+      display: inline-flex; align-items: center; gap: 10px;
     }
     .forever-art .count-chip .num {
       width: 22px; height: 22px; border-radius: 50%;
       background: var(--ink); color: #fff;
-      display: inline-flex; align-artikelen: center; justify-content: center;
+      display: inline-flex; align-items: center; justify-content: center;
       font-size: 11px;
     }
 
@@ -429,7 +429,7 @@
       cursor: pointer;
       transition: transform .42s var(--ease-out), box-shadow .42s var(--ease-out);
       display: grid; grid-template-columns: 1fr 1fr;
-      gap: 20px; align-artikelen: center;
+      gap: 20px; align-items: center;
     }
     .ritual:hover { transform: translateY(-3px); box-shadow: 0 30px 50px -30px rgba(26,26,26,0.28); }
     .ritual--night { background: linear-gradient(160deg, #2C3242 0%, #1A2030 100%); color: #F1EBE0; }
@@ -441,7 +441,7 @@
     .ritual-go {
       align-self: flex-start; margin-top: 14px;
       width: 42px; height: 42px; border-radius: 50%;
-      display: inline-flex; align-artikelen: center; justify-content: center;
+      display: inline-flex; align-items: center; justify-content: center;
       font-size: 17px;
       transition: transform .32s var(--ease-out);
     }
@@ -451,9 +451,9 @@
     .ritual-bottles { position: relative; height: 220px; align-self: stretch; border-radius: 14px; overflow: hidden; }
     .ritual-bottles img { position: absolute; bottom: 0; max-height: 100%; object-fit: contain; border-radius: 14px; }
     .ritual-price { font-size: 28px; font-weight: 300; margin: 10px 0 0; letter-spacing: -0.01em; }
-    .ritual-btns { display: inline-flex; align-artikelen: center; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+    .ritual-btns { display: inline-flex; align-items: center; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
     .ritual-cart-btn {
-      display: inline-flex; align-artikelen: center; gap: 8px;
+      display: inline-flex; align-items: center; gap: 8px;
       background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.5);
       color: inherit; padding: 9px 18px; border-radius: 999px;
       font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
@@ -467,7 +467,7 @@
       background: none; border: 1px solid currentColor; color: inherit;
       opacity: 0.7; padding: 9px 18px; border-radius: 999px;
       font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;
-      font-family: var(--font-ui); text-decoration: none; display: inline-flex; align-artikelen: center;
+      font-family: var(--font-ui); text-decoration: none; display: inline-flex; align-items: center;
     }
     .ritual-inside-btn:hover { opacity: 1; }
     .ritual--night .ritual-bottles img { filter: drop-shadow(0 14px 18px rgba(0,0,0,0.4)); }
@@ -491,7 +491,7 @@
       border-radius: 24px;
       padding: 28px;
       display: grid; grid-template-columns: 1.05fr 1fr;
-      gap: 56px; align-artikelen: stretch;
+      gap: 56px; align-items: stretch;
     }
     .journal-cover {
       position: relative; border-radius: 18px; overflow: hidden; min-height: 460px;
@@ -505,14 +505,14 @@
     .journal-cover .ph {
       position: absolute; inset: 0;
       background: repeating-linear-gradient(135deg, transparent 0 18px, rgba(255,255,255,0.16) 18px 19px);
-      display: flex; align-artikelen: center; justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       font-family: ui-monospace, monospace;
       font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
       color: rgba(26,26,26,0.45);
     }
     .journal-cover .meta-top {
       position: absolute; top: 22px; left: 22px; right: 22px;
-      display: flex; justify-content: space-between; align-artikelen: center;
+      display: flex; justify-content: space-between; align-items: center;
       font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
       color: rgba(26,26,26,0.65);
     }
@@ -524,7 +524,7 @@
     .journal-body .jeb {
       font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
       color: var(--ink-3); margin-bottom: 22px;
-      display: flex; align-artikelen: center; gap: 12px;
+      display: flex; align-items: center; gap: 12px;
     }
     .journal-body h3 { margin: 0 0 22px; font-size: 38px; line-height: 1.06; font-weight: 300; color: var(--ink); }
     .journal-body h3 em { font-style: italic; }
@@ -537,14 +537,14 @@
     .journal-body .ellipsis { margin-top: 6px; font-size: 22px; letter-spacing: 0.28em; color: var(--ink-3); }
     .journal-body .more {
       margin-top: 24px;
-      display: inline-flex; align-artikelen: center; gap: 14px;
+      display: inline-flex; align-items: center; gap: 14px;
       font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase;
       color: var(--ink);
     }
     .journal-body .more .arc {
       width: 38px; height: 38px; border-radius: 50%;
       border: 1px solid var(--line-default);
-      display: inline-flex; align-artikelen: center; justify-content: center;
+      display: inline-flex; align-items: center; justify-content: center;
       font-size: 16px;
       transition: all .28s var(--ease-out);
     }
@@ -552,7 +552,7 @@
     .journal-foot {
       margin: 22px 56px 0;
       padding: 22px 28px;
-      display: flex; align-artikelen: center; justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between;
       gap: 24px;
       font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
       color: var(--ink-3);
@@ -569,7 +569,7 @@
       padding: 80px 56px 56px;
       display: grid;
       grid-template-columns: 1.2fr 1px 1fr 1px 1fr;
-      gap: 48px; align-artikelen: stretch;
+      gap: 48px; align-items: stretch;
     }
     .foot-divider { width: 1px; background: rgba(42,38,32,0.22); align-self: center; height: 60%; }
     .foot-col h5 { margin: 0 0 22px; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(42,38,32,0.6); font-weight: 300; }
@@ -582,7 +582,7 @@
     .foot-socials .circ {
       width: 38px; height: 38px; border-radius: 50%;
       border: 1px solid rgba(42,38,32,0.25);
-      display: inline-flex; align-artikelen: center; justify-content: center;
+      display: inline-flex; align-items: center; justify-content: center;
       transition: background .28s var(--ease-out);
     }
     .foot-socials .circ svg { width: 16px; height: 16px; stroke: #2A2620; fill: none; stroke-width: 1.4; }
@@ -593,7 +593,7 @@
     .foot-col li a:hover { opacity: 0.6; }
     .newsletter {
       margin-top: 6px;
-      display: flex; align-artikelen: center;
+      display: flex; align-items: center;
       border-bottom: 1px solid rgba(42,38,32,0.3);
       padding-bottom: 10px; max-width: 320px;
     }
@@ -603,19 +603,19 @@
     .foot-bot {
       border-top: 1px solid rgba(42,38,32,0.2);
       padding: 24px 56px 32px;
-      display: flex; align-artikelen: center; justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between;
       gap: 24px;
       font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
       color: rgba(42,38,32,0.7);
     }
-    .pay { display: inline-flex; align-artikelen: center; gap: 10px; }
+    .pay { display: inline-flex; align-items: center; gap: 10px; }
     .pay .chip {
       padding: 6px 10px; background: rgba(255,255,255,0.4);
       border: 1px solid rgba(42,38,32,0.18); border-radius: 6px;
       font-size: 10px; letter-spacing: 0.18em; color: #2A2620;
       font-family: var(--font-ui); font-weight: 500;
     }
-    .lang-foot { display: inline-flex; gap: 10px; align-artikelen: center; }
+    .lang-foot { display: inline-flex; gap: 10px; align-items: center; }
     .lang-foot .sep { opacity: 0.4; }
 
     /* ── Toast ── */
@@ -693,7 +693,7 @@
       .usp-text { font-size: 12px; }
 
       /* Section header */
-      .section-head { flex-direction: column; align-artikelen: flex-start; gap: 12px; padding: 0 16px; margin-bottom: 20px; }
+      .section-head { flex-direction: column; align-items: flex-start; gap: 12px; padding: 0 16px; margin-bottom: 20px; }
       .section-head h2 { font-size: 28px; }
       .view-all { align-self: flex-start; }
 
@@ -727,13 +727,13 @@
       .journal-cover { min-height: 220px; }
       .journal-body { padding: 20px 0 0; }
       .journal-body h3 { font-size: 24px; }
-      .journal-foot { margin: 12px 16px 0; flex-direction: column; align-artikelen: flex-start; gap: 10px; }
+      .journal-foot { margin: 12px 16px 0; flex-direction: column; align-items: flex-start; gap: 10px; }
 
       /* Footer */
       .foot-wrap { margin-top: 56px; }
       .foot-top { grid-template-columns: 1fr; gap: 36px; padding: 40px 20px 32px; }
       .foot-divider { display: none; }
-      .foot-bot { flex-direction: column; align-artikelen: flex-start; gap: 14px; padding: 16px 20px 24px; }
+      .foot-bot { flex-direction: column; align-items: flex-start; gap: 14px; padding: 16px 20px 24px; }
       .pay { flex-wrap: wrap; }
       .lang-foot { display: none; }
     }
@@ -752,7 +752,7 @@
       .journal-body { padding: 20px 0 0; }
       .foot-top { grid-template-columns: 1fr; }
       .foot-divider { display: none; }
-      .foot-bot { flex-direction: column; align-artikelen: flex-start; gap: 14px; }
+      .foot-bot { flex-direction: column; align-items: flex-start; gap: 14px; }
     }
 
     /* ══════════════════════════════════════════
