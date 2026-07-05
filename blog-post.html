@@ -674,8 +674,8 @@ function getPostId() {
 }
 
 function getRelated(currentId, count = 3) {
-  // Only show the 4 real published posts (id 1-4)
-  const others = POSTS.filter(p => p.id >= 1 && p.id <= 4 && p.id !== currentId);
+  // Only show published posts
+  const others = POSTS.filter(p => p.published && p.id !== currentId);
   // Pick a spread of posts
   const picks = [];
   const step = Math.max(1, Math.floor(others.length / count));
