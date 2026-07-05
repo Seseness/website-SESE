@@ -71,6 +71,7 @@
     .gallery { display:grid; grid-template-columns:96px 1fr; gap:18px; align-items:start; }
     .thumbs { display:flex; flex-direction:column; gap:12px; }
     .thumb { width:96px; height:96px; border-radius:12px; border:1px solid var(--line-soft); cursor:pointer; transition:border-color .28s var(--ease-out); display:flex; align-items:center; justify-content:center; }
+    .thumb picture { display:flex; align-items:center; justify-content:center; width:100%; height:100%; }
     .thumb img { width:70%; height:70%; object-fit:contain; border-radius:8px; display:block; }
     .thumb.active { border-color:var(--ink); }
     .thumb:hover { border-color:var(--line-strong); }
@@ -210,6 +211,7 @@
     .pcard { background:var(--bg-elev); border:1px solid var(--line-soft); border-radius:var(--radius-card); padding:14px 14px 20px; cursor:pointer; transition:transform .42s var(--ease-out),box-shadow .42s var(--ease-out); display:block; }
     .pcard:hover { transform:translateY(-3px); box-shadow:0 22px 40px -22px rgba(26,26,26,0.2); }
     .pcard .pic2 { height:240px; border-radius:20px; display:flex; align-items:center; justify-content:center; }
+    .pcard .pic2 picture { display:flex; align-items:center; justify-content:center; width:100%; height:100%; }
     .pcard .pic2 img { width:70%; height:70%; object-fit:contain; border-radius:20px; background:#fff; display:block; }
     .pcard .m { padding:16px 4px 0; }
     .pcard .nm { font-size:17px; }
