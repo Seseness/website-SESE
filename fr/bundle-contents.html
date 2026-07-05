@@ -6,6 +6,10 @@
   <title>What's Inside — SESE</title>
   <meta name="description" content="See exactly what's inside each SESE bundle — every product, what it does, and why it's there." />
   <link rel="canonical" id="canonical-link" href="https://www.sese.be/fr/bundle-contents.html" />
+  <link rel="alternate" hreflang="en" id="hreflang-en" href="https://www.sese.be/bundle-contents.html" />
+  <link rel="alternate" hreflang="nl" id="hreflang-nl" href="https://www.sese.be/nl/bundle-contents.html" />
+  <link rel="alternate" hreflang="fr" id="hreflang-fr" href="https://www.sese.be/fr/bundle-contents.html" />
+  <link rel="alternate" hreflang="x-default" id="hreflang-x-default" href="https://www.sese.be/bundle-contents.html" />
   <style>
     @font-face {
       font-family: "Todes";
@@ -497,6 +501,10 @@ const bundle = BUNDLES[bundleKey] || BUNDLES['forever-routine'];
 
 document.title = `What's Inside — ${bundle.name} — SESE`;
 document.getElementById('canonical-link').href = 'https://www.sese.be/fr/bundle-contents.html?b=' + bundleKey;
+document.getElementById('hreflang-en').href = 'https://www.sese.be/bundle-contents.html?b=' + bundleKey;
+document.getElementById('hreflang-nl').href = 'https://www.sese.be/nl/bundle-contents.html?b=' + bundleKey;
+document.getElementById('hreflang-fr').href = 'https://www.sese.be/fr/bundle-contents.html?b=' + bundleKey;
+document.getElementById('hreflang-x-default').href = 'https://www.sese.be/bundle-contents.html?b=' + bundleKey;
 document.getElementById('crumb-name').textContent = bundle.name;
 
 const rowsHtml = bundle.produits.map((key, i) => {
