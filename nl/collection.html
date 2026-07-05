@@ -884,7 +884,7 @@ function handleAdd(btn) {
     showToast('Product not available yet');
     return;
   }
-  SESEWinkelwagen.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
+  SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
 }
 
 // Attach events

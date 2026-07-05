@@ -286,10 +286,10 @@ html, body { overflow-x: hidden; max-width: 100%; }
 <script src="../project/js/sese-cart.js"></script>
 <script>
 function renderPanier() {
-  const cart = SESEPanier.get();
+  const cart = SESECart.get();
   const wrap = document.getElementById('cart-wrap');
 
-  if (!cart.articles.length) {
+  if (!cart.items.length) {
     wrap.innerHTML = `
       <div class="cart-empty" style="grid-column:1/-1">
         <h2>Votre panier est vide</h2>
@@ -299,7 +299,7 @@ function renderPanier() {
     return;
   }
 
-  const articlesHtml = cart.articles.map(article => {
+  const articlesHtml = cart.items.map(article => {
     const p = PRODUCT_CATALOGUE[article.key];
     if (!p) return '';
     return `
@@ -323,7 +323,7 @@ function renderPanier() {
       </div>`;
   }).join('');
 
-  const sub = SESEPanier.subtotal();
+  const sub = SESECart.subtotal();
   const shipping = sub >= 100 ? 'Gratuit' : '€4.95';
   const total = sub >= 100 ? sub : sub + 4.95;
 
@@ -331,7 +331,7 @@ function renderPanier() {
     <div>
       <div class="cart-header">
         <h1>Your Panier</h1>
-        <div class="count">${SESEPanier.count()} article${SESEPanier.count() !== 1 ? 's' : ''}</div>
+        <div class="count">${SESECart.count()} article${SESECart.count() !== 1 ? 's' : ''}</div>
       </div>
       <div class="cart-articles">${articlesHtml}</div>
     </div>
@@ -341,20 +341,20 @@ function renderPanier() {
       <div class="summary-row"><span>Livraison</span><span>${shipping}</span></div>
       <div class="summary-row total"><span>Total</span><span>€${total.toFixed(2)}</span></div>
       <div class="summary-note">${sub < 100 ? 'Add €'+(100-sub).toFixed(0)+' more for free shipping.' : '✓ Gratuit shipping applied.'}</div>
-      <button class="btn-checkout" onclick="window.location.href=SESEPanier.checkoutUrl()">Passer à la caisse →</button>
+      <button class="btn-checkout" onclick="window.location.href=SESECart.checkoutUrl()">Passer à la caisse →</button>
       <button class="btn-continue" onclick="window.location.href='collection.html'">Continuer les achats</button>
     </div>`;
 }
 
 function changeQty(key, delta) {
-  const cart = SESEPanier.get();
-  const article = cart.articles.find(i => i.key === key);
-  if (article) SESEPanier.update(key, article.qty + delta);
+  const cart = SESECart.get();
+  const article = cart.items.find(i => i.key === key);
+  if (article) SESECart.update(key, article.qty + delta);
   renderPanier();
 }
 
 function removeItem(key) {
-  SESEPanier.remove(key);
+  SESECart.remove(key);
   renderPanier();
 }
 

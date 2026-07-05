@@ -1297,6 +1297,7 @@ function bindEvents(key, p) {
 
   // add to cart (main) — link straight to the Shopify cart
   document.getElementById('add-cart-btn').addEventListener('click', () => {
+    const btn = document.getElementById('add-cart-btn');
     const variantId = SHOPIFY.variants[key];
     if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
       showToast('Configure Shopify variant IDs to enable checkout.');

@@ -1174,12 +1174,13 @@ function bindEvents(key, p) {
 
   // add to cart (main) — link straight to the Winkelify cart
   document.getElementById('add-cart-btn').addEventListener('click', () => {
+    const btn = document.getElementById('add-cart-btn');
     const variantId = SHOPIFY.variants[key];
     if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
       showToast('Configure Winkelify variant IDs to enable checkout.');
       return;
     }
-    SESEWinkelwagen.add(p.key, qty); showToast('Added to cart.'); btn.classList.add('added'); btn.querySelector('.right').textContent = 'Added ✓'; setTimeout(() => { btn.classList.remove('added'); btn.querySelector('.right').textContent = '→'; }, 2000);
+    SESECart.add(p.key, qty); showToast('Added to cart.'); btn.classList.add('added'); btn.querySelector('.right').textContent = 'Added ✓'; setTimeout(() => { btn.classList.remove('added'); btn.querySelector('.right').textContent = '→'; }, 2000);
   });
 
   // cart button in nav
@@ -1199,7 +1200,7 @@ function bindEvents(key, p) {
         showToast('Configure Winkelify to enable checkout.');
         return;
       }
-      SESEWinkelwagen.add(pid); showToast('Added to cart.');
+      SESECart.add(pid); showToast('Added to cart.');
     });
   });
 }

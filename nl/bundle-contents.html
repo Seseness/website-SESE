@@ -600,7 +600,8 @@ document.getElementById('bundle-add-btn').addEventListener('click', () => {
     showToast('Product not available yet');
     return;
   }
-  SESEWinkelwagen.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
+  const btn = document.getElementById('bundle-add-btn');
+  SESECart.add(bundleKey === 'forever-routine' ? 'forever-bundle' : bundleKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
 });
 </script>
 <script src="../project/js/sese-cart.js"></script>

@@ -286,10 +286,10 @@ html, body { overflow-x: hidden; max-width: 100%; }
 <script src="../project/js/sese-cart.js"></script>
 <script>
 function renderWinkelwagen() {
-  const cart = SESEWinkelwagen.get();
+  const cart = SESECart.get();
   const wrap = document.getElementById('cart-wrap');
 
-  if (!cart.artikelen.length) {
+  if (!cart.items.length) {
     wrap.innerHTML = `
       <div class="cart-empty" style="grid-column:1/-1">
         <h2>Jouw winkelwagen is leeg</h2>
@@ -299,7 +299,7 @@ function renderWinkelwagen() {
     return;
   }
 
-  const artikelenHtml = cart.artikelen.map(artikel => {
+  const artikelenHtml = cart.items.map(artikel => {
     const p = PRODUCT_CATALOGUE[artikel.key];
     if (!p) return '';
     return `
@@ -323,7 +323,7 @@ function renderWinkelwagen() {
       </div>`;
   }).join('');
 
-  const sub = SESEWinkelwagen.subtotal();
+  const sub = SESECart.subtotal();
   const shipping = sub >= 100 ? 'Gratis' : '€4.95';
   const total = sub >= 100 ? sub : sub + 4.95;
 
@@ -331,7 +331,7 @@ function renderWinkelwagen() {
     <div>
       <div class="cart-header">
         <h1>Your Winkelwagen</h1>
-        <div class="count">${SESEWinkelwagen.count()} artikel${SESEWinkelwagen.count() !== 1 ? 's' : ''}</div>
+        <div class="count">${SESECart.count()} artikel${SESECart.count() !== 1 ? 's' : ''}</div>
       </div>
       <div class="cart-artikelen">${artikelenHtml}</div>
     </div>
@@ -341,20 +341,20 @@ function renderWinkelwagen() {
       <div class="summary-row"><span>Verzending</span><span>${shipping}</span></div>
       <div class="summary-row total"><span>Totaal</span><span>€${total.toFixed(2)}</span></div>
       <div class="summary-note">${sub < 100 ? 'Add €'+(100-sub).toFixed(0)+' more for free shipping.' : '✓ Gratis shipping applied.'}</div>
-      <button class="btn-checkout" onclick="window.location.href=SESEWinkelwagen.checkoutUrl()">Naar afrekenen →</button>
+      <button class="btn-checkout" onclick="window.location.href=SESECart.checkoutUrl()">Naar afrekenen →</button>
       <button class="btn-continue" onclick="window.location.href='collection.html'">Verder winkelen</button>
     </div>`;
 }
 
 function changeQty(key, delta) {
-  const cart = SESEWinkelwagen.get();
-  const artikel = cart.artikelen.find(i => i.key === key);
-  if (artikel) SESEWinkelwagen.update(key, artikel.qty + delta);
+  const cart = SESECart.get();
+  const artikel = cart.items.find(i => i.key === key);
+  if (artikel) SESECart.update(key, artikel.qty + delta);
   renderWinkelwagen();
 }
 
 function removeItem(key) {
-  SESEWinkelwagen.remove(key);
+  SESECart.remove(key);
   renderWinkelwagen();
 }
 

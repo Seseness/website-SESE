@@ -1347,8 +1347,10 @@ document.querySelectorAll('.card-add').forEach(btn => {
 // =============================================================
 //  Add to cart — Forever Routine
 // =============================================================
-document.getElementById('bundle-btn').addEventListener('click', () => {
-  const variantId = SHOPIFY.variants['forever-bundle'];
+document.getElementById('bundle-btn').addEventListener('click', (e) => {
+  const btn = e.currentTarget;
+  const productKey = 'forever-bundle';
+  const variantId = SHOPIFY.variants[productKey];
   if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
     showToast('Configure Shopify variant IDs to enable checkout.');
     return;
@@ -1362,6 +1364,7 @@ document.getElementById('bundle-btn').addEventListener('click', () => {
 [['night-cart-btn', 'beauty-sleep-ritual'], ['full-cart-btn', 'full-ritual']].forEach(([btnId, productKey]) => {
   document.getElementById(btnId).addEventListener('click', (e) => {
     e.stopPropagation();
+    const btn = e.currentTarget;
     const variantId = SHOPIFY.variants[productKey];
     if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
       showToast('Configure Shopify variant IDs to enable checkout.');
