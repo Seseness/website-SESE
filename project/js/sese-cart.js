@@ -5,6 +5,19 @@
 const SHOPIFY_DOMAIN = 'sese-8214.myshopify.com';
 const CART_KEY = 'sese_cart_v2';
 
+// Capture ?discount=CODE from links (e.g. the welcome-email button) so it
+// carries through to checkoutUrl() later, same mechanism the popup uses.
+(function captureDiscountFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get('discount');
+  if (!code) return;
+  localStorage.setItem('sese_discount_code', code);
+  params.delete('discount');
+  const query = params.toString();
+  const cleanUrl = window.location.pathname + (query ? '?' + query : '') + window.location.hash;
+  window.history.replaceState({}, '', cleanUrl);
+})();
+
 // Product catalogue — name, price, image, background colour
 const PRODUCT_CATALOGUE = {
   'cleansing-foam':       { name: 'Foaming Cleanser',         price: 26,  img: '/project/assets/products-new/cleansing-foam-hp.png',       bg: '#E3EEF5', variant: '58352279748992' },
