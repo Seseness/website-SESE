@@ -1,11 +1,11 @@
 // Newsletter subscription via Shopify Storefront API
 // Requires a Storefront API token with unauthenticated_write_customers scope.
-// Get one in Shopify Admin → Settings → Apps → Develop apps → configure Storefront API.
+// Get one in Shopify Admin → Sales channels → Headless → storefront → Storefront API → Manage.
 
 const NEWSLETTER_CONFIG = {
   domain:         'sese-8214.myshopify.com',
   apiVersion:     '2024-01',
-  storefrontToken: 'atkn_fa814555043339be15621d2d15a834985c973bbe8df9834d57a4627b8efce254',
+  storefrontToken: '67d78b4861b9bc1f40b5a231dedfb7df',
 };
 
 async function handleNewsletterSubmit(event) {
