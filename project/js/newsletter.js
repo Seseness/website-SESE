@@ -5,7 +5,7 @@
 const NEWSLETTER_CONFIG = {
   domain:         'sese-8214.myshopify.com',
   apiVersion:     '2024-01',
-  storefrontToken: 'YOUR_STOREFRONT_ACCESS_TOKEN', // ← replace this
+  storefrontToken: 'atkn_fa814555043339be15621d2d15a834985c973bbe8df9834d57a4627b8efce254',
 };
 
 async function handleNewsletterSubmit(event) {
