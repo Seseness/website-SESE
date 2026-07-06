@@ -17,7 +17,7 @@
   const COPY = {
     en: {
       live: true,
-      title: 'Welcome to the SESE community \u{1F30A}',
+      title: 'Welcome to the SESE community',
       text: 'Sign up for our newsletter and get 10% off your first order.',
       extra: 'Honest skincare tips, first access to new products, and no spam. Promise.',
       placeholder: 'your@email.com',
@@ -27,7 +27,7 @@
     },
     nl: {
       live: false,
-      title: 'Welkom bij de SESE community \u{1F30A}',
+      title: 'Welkom bij de SESE community',
       text: 'Schrijf je in voor onze nieuwsbrief en ontvang 10% korting op je eerste bestelling.',
       extra: 'Eerlijke skincare tips, als eerste toegang tot nieuwe producten, en geen spam. Beloofd.',
       placeholder: 'jouw@email.com',
@@ -37,7 +37,7 @@
     },
     fr: {
       live: false,
-      title: 'Bienvenue dans la communauté SESE \u{1F30A}',
+      title: 'Bienvenue dans la communauté SESE',
       text: 'Inscrivez-vous à notre newsletter et bénéficiez de 10 % de réduction sur votre première commande.',
       extra: 'Des conseils skincare honnêtes, un accès prioritaire aux nouveautés, et zéro spam. Promis.',
       placeholder: 'votre@email.com',
