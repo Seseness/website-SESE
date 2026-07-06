@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Journal — SESE</title>
-  <meta name="description" content="Skincare stories and honest advice from SESE." />
+  <meta name="description" id="meta-description" content="Skincare stories and honest advice from SESE." />
   <link rel="canonical" id="canonical-link" href="https://www.sese.be/blog-post.html" />
   <link rel="alternate" hreflang="en" id="hreflang-en" href="https://www.sese.be/blog-post.html" />
   <link rel="alternate" hreflang="nl" id="hreflang-nl" href="https://www.sese.be/nl/blog-post.html" />
@@ -669,8 +669,10 @@ html, body { overflow-x: hidden; max-width: 100%; }
   </div>
 </footer>
 
-<script src="project/js/posts-data.js"></script>
-<script>
+<script type="module">
+import { POSTS as ALL_POSTS } from './project/data/posts.js';
+import { renderPostView } from './project/render/post-render.js';
+const POSTS = ALL_POSTS.en;
 // =============================================================
 //  Render logic
 // =============================================================
@@ -680,105 +682,29 @@ function getPostId() {
   return POSTS.some(post => post.id === p) ? p : 1;
 }
 
-function getRelated(currentId) {
-  // All published posts except the current one, newest first
-  return POSTS
-    .filter(p => p.published && p.id !== currentId)
-    .sort((a, b) => new Date(b.date) - new Date(a.date));
-}
-
 function renderPost(post) {
-  // Update title
-  document.title = post.title + ' — SESE';
-  document.getElementById('canonical-link').href = 'https://www.sese.be/blog-post.html?p=' + post.id;
-  // nl/fr blog post ids don't all mirror the English set 1:1 — only cross-link the confirmed-shared ones
-  if ([1,2,3,4].includes(post.id)) {
-    document.getElementById('hreflang-en').href = 'https://www.sese.be/blog-post.html?p=' + post.id;
-    document.getElementById('hreflang-nl').href = 'https://www.sese.be/nl/blog-post.html?p=' + post.id;
-    document.getElementById('hreflang-fr').href = 'https://www.sese.be/fr/blog-post.html?p=' + post.id;
-    document.getElementById('hreflang-x-default').href = 'https://www.sese.be/blog-post.html?p=' + post.id;
+  const view = renderPostView('en', post, POSTS);
+
+  document.title = view.title;
+  document.getElementById('meta-description').content = view.metaDescription;
+  document.getElementById('canonical-link').href = view.canonicalUrl;
+  const hreflangIds = ['hreflang-en', 'hreflang-nl', 'hreflang-fr', 'hreflang-x-default'];
+  if (view.hreflangLinks.length) {
+    view.hreflangLinks.forEach(({ hreflang, href }) => {
+      const el = document.getElementById('hreflang-' + hreflang);
+      if (el) el.href = href;
+    });
   } else {
-    document.getElementById('hreflang-en').remove();
-    document.getElementById('hreflang-nl').remove();
-    document.getElementById('hreflang-fr').remove();
-    document.getElementById('hreflang-x-default').remove();
+    hreflangIds.forEach(id => { const el = document.getElementById(id); if (el) el.remove(); });
   }
-  document.getElementById('breadcrumb-title').textContent = post.title;
+  document.getElementById('breadcrumb-title').textContent = view.breadcrumbTitle;
+  document.getElementById('ld-json').textContent = JSON.stringify(view.jsonLd[0]);
+  document.getElementById('ld-json-breadcrumb').textContent = JSON.stringify(view.jsonLd[1]);
 
-  const ldPostUrl = 'https://www.sese.be/blog-post.html?p=' + post.id;
-  const ldImage = 'https://www.sese.be/' + (post.image || 'project/assets/journal-cover.jpg').replace(/^\.\.\//, '');
-  document.getElementById('ld-json').textContent = JSON.stringify({
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title,
-    description: post.excerpt,
-    image: ldImage,
-    datePublished: new Date(post.date).toISOString(),
-    mainEntityOfPage: ldPostUrl,
-    author: { '@type': 'Organization', name: 'SESE' },
-    publisher: { '@type': 'Organization', name: 'SESE', logo: { '@type': 'ImageObject', url: 'https://www.sese.be/project/assets/logo-mark.png' } }
-  });
-  document.getElementById('ld-json-breadcrumb').textContent = JSON.stringify({
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.sese.be/' },
-      { '@type': 'ListItem', position: 2, name: 'Journal', item: 'https://www.sese.be/blog.html' },
-      { '@type': 'ListItem', position: 3, name: post.title, item: ldPostUrl }
-    ]
-  });
-
-  // Build article header
-  const imageHtml = post.image ? `
-    <div class="article-image">
-      <div class="img-frame" style="background-image:url('${post.image}');background-color:#EFDFC2;background-size:contain;background-repeat:no-repeat;">
-        <div class="img-placeholder" style="background:transparent"></div>
-      </div>
-    </div>
-  ` : '';
-
-  const articleHtml = `
-    <div class="article-header">
-      <div class="article-meta">
-        <span>${post.date}</span>
-        <span class="sep">·</span>
-        <span>${post.readtime}</span>
-        <span class="sep">·</span>
-        <span>By SESE</span>
-      </div>
-      <h1>${post.title}</h1>
-      <p class="article-lead">${post.excerpt}</p>
-    </div>
-    ${imageHtml}
-    <div class="article-body">
-      ${post.fullBody}
-    </div>
-    ${post.sources ? `
-    <div class="article-sources">
-      <h4>Sources &amp; further reading</h4>
-      <ol>${post.sources.map(s => `<li>${s}</li>`).join('')}</ol>
-    </div>` : ''}
-    <hr class="article-divider">
-  `;
-
-  document.getElementById('article-container').innerHTML = articleHtml;
-
-  // Render related posts
-  const related = getRelated(post.id);
-  const relatedHtml = `
-    <div class="related-label">More from the journal</div>
-    <div class="related-grid">
-      ${related.map(r => `
-        <a href="blog-post.html?p=${r.id}" class="related-card">
-          <div class="related-card-date">${r.date} · ${r.readtime}</div>
-          <h4>${r.title}</h4>
-          <span class="related-card-link">Read →</span>
-        </a>
-      `).join('')}
-    </div>
-  `;
-  document.getElementById('related-section').innerHTML = relatedHtml;
+  document.getElementById('article-container').innerHTML = view.articleHtml;
+  document.getElementById('related-section').innerHTML = view.relatedHtml;
 }
+
 
 // Init
 const articleContainer = document.getElementById('article-container');
