@@ -2,10 +2,10 @@
   "cleanUrls": false,
   "functions": {
     "api/render-product.js": {
-      "includeFiles": "{product.html,nl/product.html,fr/product.html}"
+      "includeFiles": "{product.shell.html,nl/product.shell.html,fr/product.shell.html}"
     },
     "api/render-post.js": {
-      "includeFiles": "{blog-post.html,nl/blog-post.html,fr/blog-post.html}"
+      "includeFiles": "{blog-post.shell.html,nl/blog-post.shell.html,fr/blog-post.shell.html}"
     }
   },
   "rewrites": [

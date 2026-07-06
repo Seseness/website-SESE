@@ -4,9 +4,9 @@ import { PRODUCTS } from '../project/data/products.js';
 import { renderProductView } from '../project/render/product-render.js';
 
 const SHELL_PATH = {
-  en: 'product.html',
-  nl: 'nl/product.html',
-  fr: 'fr/product.html',
+  en: 'product.shell.html',
+  nl: 'nl/product.shell.html',
+  fr: 'fr/product.shell.html',
 };
 
 function escapeAttr(s) {

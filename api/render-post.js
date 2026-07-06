@@ -4,9 +4,9 @@ import { POSTS } from '../project/data/posts.js';
 import { renderPostView } from '../project/render/post-render.js';
 
 const SHELL_PATH = {
-  en: 'blog-post.html',
-  nl: 'nl/blog-post.html',
-  fr: 'fr/blog-post.html',
+  en: 'blog-post.shell.html',
+  nl: 'nl/blog-post.shell.html',
+  fr: 'fr/blog-post.shell.html',
 };
 
 function escapeAttr(s) {
