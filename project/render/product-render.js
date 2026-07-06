@@ -520,7 +520,6 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
             <li><a href="https://website-sese-jyjphisu0-seseness.vercel.app/blog.html" target="_blank" rel="noopener">Blog</a></li>
             <li><a href="shipping.html">Shipping &amp; Delivery</a></li>
             <li><a href="returns.html">Returns &amp; Refunds</a></li>
-            <li><a href="#">Volg mijn bestelling</a></li>
           </ul>
         </div>
         <div class="foot-divider"></div>
@@ -793,7 +792,6 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
             <li><a href="https://website-sese-jyjphisu0-seseness.vercel.app/blog.html" target="_blank" rel="noopener">Blog</a></li>
             <li><a href="shipping.html">Shipping &amp; Delivery</a></li>
             <li><a href="returns.html">Returns &amp; Refunds</a></li>
-            <li><a href="#">Suivre ma commande</a></li>
           </ul>
         </div>
         <div class="foot-divider"></div>
