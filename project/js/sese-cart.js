@@ -77,7 +77,9 @@ const SESECart = {
       const p = PRODUCT_CATALOGUE[i.key];
       return p ? `${p.variant}:${i.qty}` : null;
     }).filter(Boolean).join(',');
-    return `https://${SHOPIFY_DOMAIN}/cart/${lineItems}`;
+    const discountCode = localStorage.getItem('sese_discount_code');
+    const discountParam = discountCode ? `?discount=${encodeURIComponent(discountCode)}` : '';
+    return `https://${SHOPIFY_DOMAIN}/cart/${lineItems}${discountParam}`;
   },
   updateBadge() {
     const count = SESECart.count();

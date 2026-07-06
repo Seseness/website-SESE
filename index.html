@@ -1229,7 +1229,7 @@
         </div>
         <div style="margin-top:28px">
           <h5 style="margin-bottom:10px">Newsletter</h5>
-          <form class="newsletter" onsubmit="event.preventDefault()">
+          <form class="newsletter" onsubmit="handleNewsletterSubmit(event)">
             <input type="email" placeholder="Your email" />
             <button type="submit">Subscribe →</button>
           </form>
@@ -1450,6 +1450,8 @@ document.querySelectorAll('.card').forEach(card => {
 </script>
 
 <script src="project/js/sese-cart.js"></script>
+<script src="project/js/newsletter.js"></script>
+<script src="project/js/welcome-popup.js"></script>
 
 <div class="nav-drawer" id="nav-drawer">
   <div class="nav-drawer-overlay"></div>
