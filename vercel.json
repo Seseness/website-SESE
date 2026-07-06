@@ -7,5 +7,13 @@
     "api/render-post.js": {
       "includeFiles": "{blog-post.html,nl/blog-post.html,fr/blog-post.html}"
     }
-  }
+  },
+  "rewrites": [
+    { "source": "/product.html", "destination": "/api/render-product?lang=en" },
+    { "source": "/nl/product.html", "destination": "/api/render-product?lang=nl" },
+    { "source": "/fr/product.html", "destination": "/api/render-product?lang=fr" },
+    { "source": "/blog-post.html", "destination": "/api/render-post?lang=en" },
+    { "source": "/nl/blog-post.html", "destination": "/api/render-post?lang=nl" },
+    { "source": "/fr/blog-post.html", "destination": "/api/render-post?lang=fr" }
+  ]
 }
