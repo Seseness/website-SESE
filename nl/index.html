@@ -689,7 +689,7 @@
     ══════════════════════════════════════════ */
     @media (max-width: 680px) {
       /* Nav */
-      .nav { padding: 18px 20px; grid-template-columns: 1fr auto; }
+      .nav { padding: 18px 20px; grid-template-columns: minmax(0,1fr) auto; }
       .nav-center { display: none; }
       .wordmark { font-size: 18px; letter-spacing: 0.3em; white-space: nowrap; }
       .nav-right { gap: 12px; }
@@ -761,7 +761,7 @@
        RESPONSIVE — Mid Tablet (≤ 768px)
     ══════════════════════════════════════════ */
     @media (max-width: 768px) {
-      .nav { padding: 16px 20px; grid-template-columns: 1fr auto; }
+      .nav { padding: 16px 20px; grid-template-columns: minmax(0,1fr) auto; }
       .nav-center { display: none; }
       .hero { height: 480px; }
       .hero h1 { font-size: clamp(26px, 7vw, 38px); line-height: 1.1; }
@@ -834,7 +834,7 @@ p, li { font-size: clamp(14px, 1.2vw + 4px, 18px); }
 /* Force hamburger visible on mobile */
 @media (max-width: 768px) {
   .hamburger { display: flex !important; }
-  .hamburger span { background: var(--ink, #1A1A1A) !important; height: 1.5px !important; width: 22px !important; }
+  .hamburger span { background: #1A1A1A !important; height: 2px !important; width: 22px !important; }
 }
 
 @media (max-width: 768px) {
@@ -893,7 +893,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
         <span>Winkelwagen</span>
       </button>
     
-      <button class="hamburger" id="hamburger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu"><span style="display:block;width:22px;height:2px;background-color:#1A1A1A;"></span><span style="display:block;width:22px;height:2px;background-color:#1A1A1A;"></span><span style="display:block;width:22px;height:2px;background-color:#1A1A1A;"></span></button>
     </div>
   </header>
 
