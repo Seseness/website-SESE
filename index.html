@@ -122,17 +122,30 @@
     }
     .nav-icon svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.25; }
     .cart-btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 8px 16px;
+      display: inline-flex; align-items: center; justify-content: center;
+      position: relative;
+      width: 40px; height: 40px;
+      padding: 0;
       border: 1px solid var(--line-default) !important;
-      border-radius: 999px;
+      border-radius: 50%;
       cursor: pointer;
       transition: background .28s var(--ease-out);
       color: var(--ink-2);
-      font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
     }
     .cart-btn:hover { background: rgba(26,26,26,0.04); }
-    .cart-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue); display: inline-block; }
+    .cart-icon { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.25; }
+    .cart-count {
+      position: absolute; top: -4px; right: -4px;
+      min-width: 16px; height: 16px; padding: 0 3px;
+      border-radius: 999px;
+      background: var(--blue);
+      color: #FFFCF5;
+      font-size: 10px; line-height: 16px; text-align: center;
+      font-family: var(--font-display);
+    }
+    @media (max-width: 768px) {
+      .cart-btn { width: 44px; height: 44px; }
+    }
 
     /* ── Buttons ── */
     .btn {
@@ -692,7 +705,7 @@
       .nav-center { display: none; }
       .wordmark { font-size: 18px; letter-spacing: 0.3em; white-space: nowrap; }
       .nav-right { gap: 12px; }
-      .nav-right span:not(.nav-icon):not(.cart-dot) { display: none; }
+      .nav-right span:not(.nav-icon):not(.cart-count) { display: none; }
 
       /* Hero */
       .hero { margin: 10px 16px 0; height: 520px; border-radius: 18px; }
@@ -865,9 +878,9 @@
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
       </span>
       <span><a href="nl/index.html" style="color:inherit;opacity:0.5">NL</a> · <span style="font-weight:400">EN</span> · <a href="fr/index.html" style="color:inherit;opacity:0.5">FR</a></span>
-      <button class="cart-btn" id="cart-btn">
-        <span class="cart-dot"></span>
-        <span>Cart</span>
+      <button class="cart-btn" id="cart-btn" aria-label="Cart">
+        <svg class="cart-icon" viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L4.5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+        <span class="cart-count" id="cart-count">0</span>
       </button>
       <button class="hamburger" id="hamburger-btn" aria-label="Menu">
         <svg viewBox="0 0 24 24"><line class="bar bar1" x1="3" y1="7" x2="21" y2="7"/><line class="bar bar2" x1="3" y1="12" x2="21" y2="12"/><line class="bar bar3" x1="3" y1="17" x2="21" y2="17"/></svg>
