@@ -89,7 +89,7 @@ const POSTS = [
 
 <p><em>✦ &nbsp;Apply the serum before your day cream on slightly damp skin for optimal absorption.</em></p>
 
-<h2>Step 4 - Moisturise: Anti-Age Day Cream</h2>
+<h2>Step 4 - Moisturise: Firming Day Cream</h2>
 
 <p>The Firming Day Cream cares for, hydrates and strengthens the skin barrier. It is formulated to support the skin against daily environmental exposure such as wind, stress and fine particles. The light texture absorbs quickly and is ideal as a base under makeup.</p>
 
@@ -107,7 +107,7 @@ const POSTS = [
   <li>Cleanse with the Cleansing Foam</li>
   <li>Apply the Hydrating Toner</li>
   <li>Use the Vitamin C Serum</li>
-  <li>Finish with the Anti-Age Day Cream</li>
+  <li>Finish with the Firming Day Cream</li>
   <li>Protect with the SPF50 Mineral Stick</li>
 </ol>
 
