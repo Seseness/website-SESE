@@ -293,7 +293,7 @@ function renderPanier() {
     wrap.innerHTML = `
       <div class="cart-empty" style="grid-column:1/-1">
         <h2>Votre panier est vide</h2>
-        <p>Découvrez notre gamme de soins and find what your skin needs.</p>
+        <p>Découvrez notre gamme de soins et trouvez ce dont votre peau a besoin.</p>
         <a href="collection.html" class="btn-shop">Voir tous les produits →</a>
       </div>`;
     return;
@@ -330,17 +330,17 @@ function renderPanier() {
   wrap.innerHTML = `
     <div>
       <div class="cart-header">
-        <h1>Your Panier</h1>
+        <h1>Votre Panier</h1>
         <div class="count">${SESECart.count()} article${SESECart.count() !== 1 ? 's' : ''}</div>
       </div>
       <div class="cart-articles">${articlesHtml}</div>
     </div>
     <div class="cart-summary">
-      <div class="summary-title">Order summary</div>
+      <div class="summary-title">Récapitulatif de commande</div>
       <div class="summary-row"><span>Sous-total</span><span>€${sub.toFixed(0)}</span></div>
       <div class="summary-row"><span>Livraison</span><span>${shipping}</span></div>
       <div class="summary-row total"><span>Total</span><span>€${total.toFixed(2)}</span></div>
-      <div class="summary-note">${sub < 100 ? 'Add €'+(100-sub).toFixed(0)+' more for free shipping.' : '✓ Gratuit shipping applied.'}</div>
+      <div class="summary-note">${sub < 100 ? 'Ajoutez €'+(100-sub).toFixed(0)+' pour la livraison gratuite.' : '✓ Livraison gratuite appliquée.'}</div>
       <button class="btn-checkout" onclick="window.location.href=SESECart.checkoutUrl()">Passer à la caisse →</button>
       <button class="btn-continue" onclick="window.location.href='collection.html'">Continuer les achats</button>
     </div>`;

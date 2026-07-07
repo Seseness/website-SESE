@@ -293,7 +293,7 @@ function renderWinkelwagen() {
     wrap.innerHTML = `
       <div class="cart-empty" style="grid-column:1/-1">
         <h2>Jouw winkelwagen is leeg</h2>
-        <p>Ontdek ons huidverzorgingsassortiment and find what your skin needs.</p>
+        <p>Ontdek ons huidverzorgingsassortiment en vind wat je huid nodig heeft.</p>
         <a href="collection.html" class="btn-shop">Bekijk alle producten →</a>
       </div>`;
     return;
@@ -330,17 +330,17 @@ function renderWinkelwagen() {
   wrap.innerHTML = `
     <div>
       <div class="cart-header">
-        <h1>Your Winkelwagen</h1>
+        <h1>Jouw Winkelwagen</h1>
         <div class="count">${SESECart.count()} artikel${SESECart.count() !== 1 ? 's' : ''}</div>
       </div>
       <div class="cart-artikelen">${artikelenHtml}</div>
     </div>
     <div class="cart-summary">
-      <div class="summary-title">Order summary</div>
+      <div class="summary-title">Besteloverzicht</div>
       <div class="summary-row"><span>Subtotaal</span><span>€${sub.toFixed(0)}</span></div>
       <div class="summary-row"><span>Verzending</span><span>${shipping}</span></div>
       <div class="summary-row total"><span>Totaal</span><span>€${total.toFixed(2)}</span></div>
-      <div class="summary-note">${sub < 100 ? 'Add €'+(100-sub).toFixed(0)+' more for free shipping.' : '✓ Gratis shipping applied.'}</div>
+      <div class="summary-note">${sub < 100 ? 'Nog €'+(100-sub).toFixed(0)+' nodig voor gratis verzending.' : '✓ Gratis verzending toegepast.'}</div>
       <button class="btn-checkout" onclick="window.location.href=SESECart.checkoutUrl()">Naar afrekenen →</button>
       <button class="btn-continue" onclick="window.location.href='collection.html'">Verder winkelen</button>
     </div>`;
