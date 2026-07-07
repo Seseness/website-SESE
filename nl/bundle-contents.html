@@ -451,15 +451,15 @@ html, body { overflow-x: hidden; max-width: 100%; }
 //  Product reference data (name, short description, price, image, color)
 // =============================================================
 const PRODUCTS = {
-  'cleansing-foam':       { name: 'Foaming Cleanser',       desc: 'Gentle gel-to-foam. Cleans without stripping.',           price: '€26', img: '../project/assets/products-new/cleansing-foam-hp.png',       bg: '#E3EEF5' },
-  'hydrating-toner':      { name: 'Hydrating Toner',        desc: 'Weightless mist. Preps skin to drink deeper.',            price: '€24', img: '../project/assets/products-new/hydrating-toner-hp.png',      bg: '#E6EFE9' },
-  'vitamin-c-serum':      { name: 'Vitamin C Serum',        desc: 'Brightens. Evens. Wakes the morning skin.',               price: '€34', img: '../project/assets/products-new/vitamin-c-serum-hp.png',      bg: '#FCEAD0' },
-  'peptide-serum':        { name: 'Peptide Firming Serum',  desc: 'Firms, smooths, supports skin elasticity.',               price: '€34', img: '../project/assets/products-new/peptide-serum-hp.png',        bg: '#FCEAD0' },
-  'retinol-alt-serum':    { name: 'Retinol Alt. Serum',     desc: 'Renews without irritation. Sensitive skin welcome.',      price: '€26', img: '../project/assets/products-new/retinol-alt-serum-hp.png',    bg: '#F5EAE4' },
-  'firming-day-cream':    { name: 'Firming Day Cream',      desc: 'Hydrates, firms, protects all day long.',                 price: '€36', img: '../project/assets/products-new/firming-day-cream-hp.png',    bg: '#FCE8EB' },
-  'ceramide-night-cream': { name: 'Ceramide Night Cream',   desc: 'Repairs, nourishes, restores overnight.',                 price: '€38', img: '../project/assets/products-new/ceramide-night-cream-hp.png', bg: '#EFDFC2' },
-  'smoothing-eye-cream':  { name: 'Smoothing Eye Cream',    desc: 'Reduces fatigue. Smooths fine lines.',                    price: '€30', img: '../project/assets/products-new/smoothing-eye-cream-hp.png',  bg: '#C9D7C9' },
-  'spf50-stick':          { name: 'SPF 50 Mineral Stick',   desc: 'Mineral-based defence in a pocket stick.',                price: '€28', img: '../project/assets/products-new/spf50-stick-hp.png',          bg: '#E8D5B0' },
+  'cleansing-foam':       { name: 'Foaming Cleanser',       desc: 'Zachte gel-naar-schuim. Reinigt zonder uit te drogen.',           price: '€26', img: '../project/assets/products-new/cleansing-foam-hp.png',       bg: '#E3EEF5' },
+  'hydrating-toner':      { name: 'Hydrating Toner',        desc: 'Gewichtloze mist. Bereidt de huid voor om dieper te drinken.',            price: '€24', img: '../project/assets/products-new/hydrating-toner-hp.png',      bg: '#E6EFE9' },
+  'vitamin-c-serum':      { name: 'Vitamin C Serum',        desc: 'Verheldert. Egaliseert. Wekt de huid in de ochtend.',               price: '€34', img: '../project/assets/products-new/vitamin-c-serum-hp.png',      bg: '#FCEAD0' },
+  'peptide-serum':        { name: 'Peptide Firming Serum',  desc: 'Verstevigt, verzacht, ondersteunt de elasticiteit van de huid.',               price: '€34', img: '../project/assets/products-new/peptide-serum-hp.png',        bg: '#FCEAD0' },
+  'retinol-alt-serum':    { name: 'Retinol Alt. Serum',     desc: 'Vernieuwt zonder irritatie. Ook geschikt voor de gevoelige huid.',      price: '€26', img: '../project/assets/products-new/retinol-alt-serum-hp.png',    bg: '#F5EAE4' },
+  'firming-day-cream':    { name: 'Firming Day Cream',      desc: 'Hydrateert, verstevigt en beschermt de hele dag.',                 price: '€36', img: '../project/assets/products-new/firming-day-cream-hp.png',    bg: '#FCE8EB' },
+  'ceramide-night-cream': { name: 'Ceramide Night Cream',   desc: 'Herstelt, voedt en regenereert ’s nachts.',                 price: '€38', img: '../project/assets/products-new/ceramide-night-cream-hp.png', bg: '#EFDFC2' },
+  'smoothing-eye-cream':  { name: 'Smoothing Eye Cream',    desc: 'Vermindert vermoeidheid. Verzacht fijne lijntjes.',                    price: '€30', img: '../project/assets/products-new/smoothing-eye-cream-hp.png',  bg: '#C9D7C9' },
+  'spf50-stick':          { name: 'SPF 50 Mineral Stick',   desc: 'Minerale bescherming in een handig stiftformaat.',                price: '€28', img: '../project/assets/products-new/spf50-stick-hp.png',          bg: '#E8D5B0' },
 };
 
 // =============================================================
@@ -469,8 +469,8 @@ const BUNDLES = {
   'forever-routine': {
     name: 'The Forever Routine',
     nameBreak: 'The Forever<br/><em>Routine.</em>',
-    eyebrow: 'Best value · Anti-aging · 5 steps',
-    desc: 'Five morning essentials, one timeless ritual. Everything your skin needs to start the day — cleanse, hydrate, firm and protect.',
+    eyebrow: 'Beste waarde · Anti-aging · 5 stappen',
+    desc: 'Vijf ochtendessentials, één tijdloos ritueel. Alles wat je huid nodig heeft om de dag te beginnen — reinigen, hydrateren, verstevigen en beschermen.',
     price: '€140',
     img: '../project/assets/products-new/bundle-forever.jpg',
     producten: ['cleansing-foam', 'hydrating-toner', 'peptide-serum', 'firming-day-cream', 'spf50-stick'],
@@ -478,8 +478,8 @@ const BUNDLES = {
   'beauty-sleep-ritual': {
     name: 'The Beauty Sleep Ritual',
     nameBreak: 'The Beauty Sleep<br/><em>Ritual.</em>',
-    eyebrow: 'Nachtritueel · 5 steps',
-    desc: 'Everything your skin needs to wind down — cleanse, hydrate, treat and repair while you sleep.',
+    eyebrow: 'Nachtritueel · 5 stappen',
+    desc: 'Alles wat je huid nodig heeft om tot rust te komen — reinigen, hydrateren, behandelen en herstellen tijdens je slaap.',
     price: '€135',
     img: '../project/assets/products-new/bundle-beauty-sleep.png',
     imgPosition: 'center 80%',
@@ -488,8 +488,8 @@ const BUNDLES = {
   'full-ritual': {
     name: 'The Full Ritual',
     nameBreak: 'The Full<br/><em>Ritual.</em>',
-    eyebrow: 'Complete editie · 9 steps',
-    desc: 'The entire SESE line in one box — every step for morning and night, nothing left out.',
+    eyebrow: 'Complete editie · 9 stappen',
+    desc: 'De volledige SESE-lijn in één doos — elke stap voor ochtend en avond, niets weggelaten.',
     price: '€260',
     img: '../project/assets/products-new/bundle-full-ritual.jpg',
     producten: ['cleansing-foam', 'hydrating-toner', 'vitamin-c-serum', 'peptide-serum', 'retinol-alt-serum', 'firming-day-cream', 'ceramide-night-cream', 'smoothing-eye-cream', 'spf50-stick'],
@@ -529,7 +529,7 @@ document.getElementById('root').innerHTML = `
       <p class="desc">${bundle.desc}</p>
       <div class="bundle-hero-price">
         <span class="now">${bundle.price}</span>
-        <span class="count">${bundle.producten.length} producten · one box</span>
+        <span class="count">${bundle.producten.length} producten · één doos</span>
       </div>
       <div class="bundle-hero-ctas">
         <button class="btn btn--dark" id="bundle-add-btn">In winkelwagen →</button>
@@ -541,8 +541,8 @@ document.getElementById('root').innerHTML = `
   </section>
 
   <div class="contents-head">
-    <div class="eyebrow">What's inside</div>
-    <h2>Every product, explained.</h2>
+    <div class="eyebrow">Wat zit erin</div>
+    <h2>Elk product uitgelegd.</h2>
   </div>
   <div class="contents-list">
     ${rowsHtml}
