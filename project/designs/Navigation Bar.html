@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SESE — Navigation Bar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+  /* ==========================================================
+     SESE Navigation Bar — reusable component styles
+     Drop the CSS below into your Shopify theme's stylesheet,
+     and reuse the .sese-nav-* markup in your header section.
+     ========================================================== */
+
+  :root {
+    --sese-cream: #FAF5EC;
+    --sese-ink: #2A2620;
+    --sese-line: rgba(42, 38, 32, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    background: #fff;
+    color: var(--sese-ink);
+  }
+
+  /* ---- demo page scaffolding (not part of the reusable component) ---- */
+
+  .demo-wrap { max-width: 1100px; margin: 0 auto; padding: 48px 24px 120px; }
+  .demo-heading {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #8a8478;
+    margin: 64px 0 16px;
+  }
+  .demo-heading:first-child { margin-top: 0; }
+  .demo-frame {
+    border: 1px solid #e7e1d5;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .demo-frame--mobile { max-width: 380px; }
+
+  /* ==========================================================
+     .sese-nav-desktop — horizontal desktop navigation
+     ========================================================== */
+
+  .sese-nav-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: clamp(22px, 3.6vw, 52px);
+    padding: 40px 24px;
+    background: var(--sese-cream);
+  }
+
+  .sese-nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 11px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--sese-ink);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .sese-nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--sese-ink);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+
+  .sese-nav-link:hover::after,
+  .sese-nav-link.is-active::after {
+    transform: scaleX(1);
+  }
+
+  /* ==========================================================
+     .sese-nav-mobile — expanded hamburger menu (vertical)
+     ========================================================== */
+
+  .sese-nav-mobile {
+    position: relative;
+    background: var(--sese-cream);
+    padding: 88px 36px 56px;
+    min-height: 460px;
+  }
+
+  .sese-nav-mobile-close {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .sese-nav-mobile-close svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .sese-nav-mobile-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .sese-nav-mobile-list .sese-nav-link {
+    font-size: 19px;
+    letter-spacing: 0.18em;
+    padding-bottom: 6px;
+  }
+
+  /* ==========================================================
+     .sese-nav-mobile-bar — collapsed mobile header with
+     hamburger trigger (closed state, before the menu opens)
+     ========================================================== */
+
+  .sese-nav-mobile-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: var(--sese-cream);
+    border-bottom: 1px solid var(--sese-line);
+  }
+
+  .sese-nav-mobile-bar .sese-nav-wordmark {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+  }
+
+  .sese-nav-hamburger {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .sese-nav-hamburger span {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: var(--sese-ink);
+  }
+
+  /* ---- narrow-viewport safety net for the desktop bar ---- */
+
+  @media (max-width: 900px) {
+    .sese-nav-desktop {
+      gap: clamp(14px, 2.6vw, 28px);
+      font-size: 12px;
+    }
+    .sese-nav-desktop .sese-nav-link {
+      font-size: 12px;
+      letter-spacing: 0.15em;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="demo-wrap">
+
+  <div class="demo-heading">1. Desktop — Dutch</div>
+  <div class="demo-frame">
+    <nav class="sese-nav-desktop">
+      <a class="sese-nav-link is-active" href="#">Shop</a>
+      <a class="sese-nav-link" href="#">Routines</a>
+      <a class="sese-nav-link" href="#">Reinigen &amp; Prep</a>
+      <a class="sese-nav-link" href="#">Serums</a>
+      <a class="sese-nav-link" href="#">Hydrateren</a>
+      <a class="sese-nav-link" href="#">Over ons</a>
+    </nav>
+  </div>
+
+  <div class="demo-heading">2. Desktop — French</div>
+  <div class="demo-frame">
+    <nav class="sese-nav-desktop">
+      <a class="sese-nav-link is-active" href="#">Shop</a>
+      <a class="sese-nav-link" href="#">Routines</a>
+      <a class="sese-nav-link" href="#">Nettoyage &amp; Pr&eacute;p</a>
+      <a class="sese-nav-link" href="#">S&eacute;rums</a>
+      <a class="sese-nav-link" href="#">Hydratation</a>
+      <a class="sese-nav-link" href="#">&Agrave; propos</a>
+    </nav>
+  </div>
+
+  <div class="demo-heading">3. Mobile — Dutch (closed, hamburger trigger)</div>
+  <div class="demo-frame demo-frame--mobile">
+    <div class="sese-nav-mobile-bar">
+      <span class="sese-nav-wordmark">SESE</span>
+      <button class="sese-nav-hamburger" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="demo-heading">3a. Mobile — Dutch (expanded)</div>
+  <div class="demo-frame demo-frame--mobile">
+    <div class="sese-nav-mobile">
+      <button class="sese-nav-mobile-close" aria-label="Menu sluiten">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#2A2620" stroke-width="1">
+          <line x1="4" y1="4" x2="20" y2="20"/>
+          <line x1="20" y1="4" x2="4" y2="20"/>
+        </svg>
+      </button>
+      <nav class="sese-nav-mobile-list">
+        <a class="sese-nav-link is-active" href="#">Shop</a>
+        <a class="sese-nav-link" href="#">Routines</a>
+        <a class="sese-nav-link" href="#">Reinigen</a>
+        <a class="sese-nav-link" href="#">Serums</a>
+        <a class="sese-nav-link" href="#">Hydrateren</a>
+        <a class="sese-nav-link" href="#">Over ons</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="demo-heading">4. Mobile — French (closed, hamburger trigger)</div>
+  <div class="demo-frame demo-frame--mobile">
+    <div class="sese-nav-mobile-bar">
+      <span class="sese-nav-wordmark">SESE</span>
+      <button class="sese-nav-hamburger" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="demo-heading">4a. Mobile — French (expanded)</div>
+  <div class="demo-frame demo-frame--mobile">
+    <div class="sese-nav-mobile">
+      <button class="sese-nav-mobile-close" aria-label="Fermer le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#2A2620" stroke-width="1">
+          <line x1="4" y1="4" x2="20" y2="20"/>
+          <line x1="20" y1="4" x2="4" y2="20"/>
+        </svg>
+      </button>
+      <nav class="sese-nav-mobile-list">
+        <a class="sese-nav-link is-active" href="#">Shop</a>
+        <a class="sese-nav-link" href="#">Routines</a>
+        <a class="sese-nav-link" href="#">Nettoyage</a>
+        <a class="sese-nav-link" href="#">S&eacute;rums</a>
+        <a class="sese-nav-link" href="#">Hydratation</a>
+        <a class="sese-nav-link" href="#">&Agrave; propos</a>
+      </nav>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
