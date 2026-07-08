@@ -450,7 +450,12 @@ p, li { font-size: clamp(14px, 1.2vw + 4px, 18px); }
 @media (max-width: 768px) {
   .hamburger { display: flex; }
   .nav-center { display: none !important; }
+  .wordmark { font-size: clamp(18px, 5vw, 24px) !important; letter-spacing: 0.28em !important; }
   .nav-lang-inline { display: none; }
+  .nav { grid-template-columns: 1fr auto !important; }
+  .nav-right { gap: 12px !important; }
+  .nav-right > span:not(.icon) { display: none !important; }
+  .cart-btn { padding: 8px 12px !important; font-size: 10px !important; min-height: 40px; }
 }
 
 /* Touch targets */
@@ -467,7 +472,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
 @media (max-width: 480px) {
   .page { width: 100% !important; max-width: 100% !important; }
   .nav { padding: 16px 20px !important; }
-  .wordmark { font-size: 20px !important; }
+  .wordmark { font-size: 18px !important; letter-spacing: 0.24em !important; }
 }
 
 </style>
