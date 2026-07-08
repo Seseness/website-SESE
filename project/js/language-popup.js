@@ -76,16 +76,7 @@
       background: rgba(26,26,26,0.25);
       margin: 0 auto 28px;
     }
-    #sese-lang-popup .sese-lang-title {
-      font-family: var(--font-display, "Cormorant Garamond","Times New Roman",serif);
-      font-weight: 300; font-style: italic;
-      font-size: 26px; line-height: 1.7;
-      margin-bottom: 36px;
-      color: var(--ink, #1A1A1A);
-    }
-    #sese-lang-popup .sese-lang-title span {
-      display: block;
-    }
+    #sese-lang-popup .sese-lang-title { display: none; }
     #sese-lang-popup .sese-lang-options {
       display: flex; flex-direction: column; gap: 12px;
     }
