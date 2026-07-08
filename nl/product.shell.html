@@ -262,8 +262,7 @@
       .nav-center { display:none; }
       .pdp { grid-template-columns:1fr; padding:20px 24px 0; gap:32px; }
       .gallery { grid-template-columns:1fr; }
-      .main-img { order:1; }
-      .thumbs { order:2; flex-direction:row; }
+      .thumbs { flex-direction:row; }
       .thumb { width:68px; height:68px; }
       .buy h1 { font-size:40px; }
       .routine-strip { margin:48px 24px 0; grid-template-columns:1fr; gap:24px; padding:24px; }
@@ -352,6 +351,100 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .page { width: 100% !important; max-width: 100% !important; }
   .nav { padding: 16px 20px !important; }
   .wordmark { font-size: 15px !important; letter-spacing: 0.22em !important; }
+}
+
+
+
+/* ============================================================
+   SESE PREMIUM MOBILE OPTIMIZATION
+   ============================================================ */
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden; }
+  .page { width: 100% !important; max-width: 100% !important; overflow-x: hidden; }
+
+  /* ANNOUNCE BAR */
+  .announce { font-size: 9px !important; letter-spacing: 0.16em !important; padding: 10px 16px !important; line-height: 1.5; }
+  .announce .dot { margin: 0 8px !important; }
+
+  /* FOOTER */
+  .foot-top { grid-template-columns: 1fr !important; padding: 48px 24px 40px !important; gap: 32px !important; }
+  .foot-divider { display: none !important; }
+  .foot-bot { flex-direction: column !important; gap: 16px !important; padding: 20px 24px 28px !important; align-items: flex-start !important; }
+  .pay { flex-wrap: wrap !important; gap: 8px !important; }
+  .foot-wm { font-size: 22px !important; }
+  .foot-tag { font-size: 16px !important; }
+  .newsletter { max-width: 100% !important; }
+
+  /* BUTTONS - touch friendly */
+  .btn { min-height: 48px !important; padding: 14px 24px !important; font-size: 10px !important; width: 100%; justify-content: center; }
+  .btn-add, .btn-view { min-height: 44px !important; }
+  .filter-pill { min-height: 40px !important; padding: 8px 16px !important; }
+
+
+  .pdp { padding: 0 !important; display: grid !important; grid-template-columns: 1fr !important; gap: 0 !important; }
+  .gallery { display: flex !important; flex-direction: column !important; align-items: stretch !important; gap: 0 !important; margin: 16px 16px 0 !important; }
+  .main-img { order: 1 !important; width: 100% !important; aspect-ratio: 1/1 !important; border-radius: 16px !important; }
+  .thumbs { order: 2 !important; flex-direction: row !important; gap: 8px !important; overflow-x: auto !important; padding: 12px 0 4px !important; scrollbar-width: none !important; }
+  .thumbs::-webkit-scrollbar { display: none; }
+  .thumb { width: 64px !important; height: 64px !important; flex-shrink: 0 !important; }
+  .main-img img { max-width: 82% !important; max-height: 82% !important; border-radius: 12px !important; }
+  .buy { padding: 24px 20px 0 !important; }
+  .buy h1 { font-size: clamp(24px, 6vw, 36px) !important; line-height: 1.1 !important; }
+  .buy .tagline { font-size: clamp(15px, 3.5vw, 18px) !important; line-height: 1.6 !important; }
+  .chips { gap: 8px !important; flex-wrap: wrap !important; }
+  .chip { padding: 6px 12px !important; font-size: 10px !important; }
+  .buy-row { flex-direction: column !important; gap: 10px !important; }
+  .qty { width: 100% !important; }
+  .add-cart { width: 100% !important; min-height: 52px !important; font-size: 10px !important; }
+  .ship-line { flex-direction: column !important; gap: 8px !important; font-size: 11px !important; }
+  .quick-cards { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  .routine-strip {
+    margin: 40px 16px 0 !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding: 24px 20px !important;
+  }
+  .routine-strip .steps { grid-template-columns: repeat(5, 1fr) !important; gap: 6px !important; overflow-x: auto; }
+  .routine-strip .step { padding: 10px 6px !important; font-size: 10px !important; }
+  .section-grid {
+    margin: 40px 16px 0 !important;
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    padding: 32px 20px !important;
+  }
+  /* Pairs section — compact row layout on mobile */
+  .pair-grid { display: flex !important; flex-direction: column !important; gap: 0 !important; }
+  .pcard { display: grid !important; grid-template-columns: 72px 1fr auto !important; align-items: center !important; gap: 14px !important; padding: 16px 0 !important; border-radius: 0 !important; border: none !important; border-bottom: 1px solid var(--line-soft) !important; background: none !important; }
+  .pcard:last-child { border-bottom: none !important; }
+  .pcard .pic2 { width: 72px !important; height: 72px !important; border-radius: 14px !important; flex-shrink: 0 !important; }
+  .pcard .pic2 img { width: 80% !important; height: 80% !important; }
+  .pcard .m { padding: 0 !important; }
+  .pcard .nm { font-size: 15px !important; }
+  .pcard .sb { font-size: 10px !important; margin-top: 2px !important; }
+  .pcard .pr { flex-direction: column !important; align-items: flex-end !important; gap: 6px !important; margin-top: 0 !important; }
+  .pcard .pr .price { font-size: 14px !important; }
+  .pcard .pr .add { font-size: 10px !important; padding: 6px 10px !important; white-space: nowrap !important; }
+  .benefit { margin: 40px 16px 0 !important; grid-template-columns: 1fr !important; gap: 24px !important; }
+  .benefit .visual { aspect-ratio: 4/3 !important; border-radius: 16px !important; }
+  .benefit .pull { font-size: clamp(16px, 4vw, 22px) !important; padding: 0 16px 16px !important; }
+  .benefit-stats { grid-template-columns: repeat(3, 1fr) !important; }
+  .benefit-stats .bs .n { font-size: clamp(24px, 6vw, 44px) !important; }
+  .inci, .ingredients-card, .howto, .faq-wrap { margin: 32px 16px 0 !important; }
+  .faq-wrap { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .faq-item summary { font-size: clamp(14px, 3.5vw, 18px) !important; padding: 18px 0 !important; }
+  .pair-with { margin: 40px 16px 0 !important; }
+  .pricing .now { font-size: clamp(24px, 6vw, 36px) !important; }
+  .certs { margin: 40px 16px 0 !important; grid-template-columns: repeat(3, 1fr) !important; gap: 12px !important; padding: 20px 16px !important; }
+  .cert .t { font-size: 11px !important; }
+  .cert .s { font-size: 9px !important; }
+}
+
+@media (max-width: 480px) {
+  .gallery { margin: 12px 12px 0 !important; }
+  .thumb { width: 56px !important; height: 56px !important; }
+  .pair-grid { grid-template-columns: 1fr !important; }
+  .quick-cards { grid-template-columns: 1fr !important; }
+  .certs { grid-template-columns: repeat(2, 1fr) !important; }
 }
 
 </style>
