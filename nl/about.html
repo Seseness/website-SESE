@@ -723,15 +723,16 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
 <div class="nav-drawer" id="nav-drawer">
   <div class="nav-drawer-overlay"></div>
+  <!-- The 7 links below must stay locale-relative (no "../" prefix) — this page already lives one level inside /nl/ or /fr/, so "../about.html" jumps past the locale folder to the English root, silently dropping the chosen language. This exact bug shipped once already (mobile drawer links pointed to English regardless of the language popup choice). The EN/NL/FR switcher links just below, inside .nav-drawer-lang, are different: those intentionally use "../" to cross into a sibling locale directory. Do not "fix" those to match these. -->
   <div class="nav-drawer-panel">
     <button class="nav-drawer-close" aria-label="Close">&#x00D7;</button>
-    <a href="../collection.html">Shop</a>
-    <a href="../collection.html#bundles">Routines</a>
-    <a href="../collection.html#cleanse">Reinigen &amp; Prep</a>
-    <a href="../collection.html#serums">Serums</a>
-    <a href="../collection.html#moisturize">Hydrateren</a>
-    <a href="../about.html">Over ons</a>
-    <a href="../blog.html">Blog</a>
+    <a href="collection.html">Shop</a>
+    <a href="collection.html#bundles">Routines</a>
+    <a href="collection.html#cleanse">Reinigen &amp; Prep</a>
+    <a href="collection.html#serums">Serums</a>
+    <a href="collection.html#moisturize">Hydrateren</a>
+    <a href="about.html">Over ons</a>
+    <a href="blog.html">Blog</a>
     <div class="nav-drawer-lang">
       <a href="../about.html">EN</a>
       <span style="font-weight:400">NL</span>
