@@ -574,6 +574,12 @@ if (wasSSR) {
   if(btn) btn.addEventListener('click', function(){ drawer.classList.contains('open') ? close() : open(); });
   if(overlay) overlay.addEventListener('click', close);
   if(closeBtn) closeBtn.addEventListener('click', close);
+
+  if (window.location.search) {
+    document.querySelectorAll('.nav-right a[href*="product.html"], .nav-drawer-lang a[href*="product.html"]').forEach(function(a){
+      a.setAttribute('href', a.getAttribute('href') + window.location.search);
+    });
+  }
 })();
 </script>
 <script src="../project/js/newsletter.js"></script>

@@ -517,18 +517,18 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
           <h5>Klantenservice</h5>
           <ul>
             <li><a href="faq.html">Veelgestelde vragen</a></li>
-            <li><a href="https://website-sese-jyjphisu0-seseness.vercel.app/blog.html" target="_blank" rel="noopener">Blog</a></li>
-            <li><a href="shipping.html">Shipping &amp; Delivery</a></li>
-            <li><a href="returns.html">Returns &amp; Refunds</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="shipping.html">Verzending &amp; Levering</a></li>
+            <li><a href="returns.html">Retourzendingen &amp; Terugbetalingen</a></li>
           </ul>
         </div>
         <div class="foot-divider"></div>
         <div class="foot-col">
-          <h5>Over ons &amp; Policies</h5>
+          <h5>Over ons &amp; Beleid</h5>
           <ul>
-            <li><a href="about.html">Over ons Us</a></li>
+            <li><a href="about.html">Over ons</a></li>
             <li><a href="privacy.html">Privacybeleid</a></li>
-            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="terms.html">Algemene voorwaarden</a></li>
             <li><a href="withdrawal.html">Herroepingsrecht</a></li>
             <li><a href="cookie-policy.html">Cookiebeleid</a></li>
           </ul>
@@ -789,18 +789,18 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
           <h5>Service client</h5>
           <ul>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="https://website-sese-jyjphisu0-seseness.vercel.app/blog.html" target="_blank" rel="noopener">Blog</a></li>
-            <li><a href="shipping.html">Shipping &amp; Delivery</a></li>
-            <li><a href="returns.html">Returns &amp; Refunds</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="shipping.html">Livraison &amp; Expédition</a></li>
+            <li><a href="returns.html">Retours &amp; Remboursements</a></li>
           </ul>
         </div>
         <div class="foot-divider"></div>
         <div class="foot-col">
-          <h5>À propos &amp; Policies</h5>
+          <h5>À propos &amp; Politiques</h5>
           <ul>
-            <li><a href="about.html">À propos Us</a></li>
+            <li><a href="about.html">À propos</a></li>
             <li><a href="privacy.html">Politique de confidentialité</a></li>
-            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="terms.html">Conditions générales</a></li>
             <li><a href="withdrawal.html">Droit de rétractation</a></li>
             <li><a href="cookie-policy.html">Politique de cookies</a></li>
           </ul>

@@ -563,23 +563,23 @@ html, body { overflow-x: hidden; max-width: 100%; }
       <div class="foot-col">
         <h5>Service client</h5>
         <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="https://website-sese-jyjphisu0-seseness.vercel.app/blog.html" target="_blank" rel="noopener">Blog</a></li>
-          <li><a href="#">Livraison &amp; Delivery</a></li>
-          <li><a href="#">Retours &amp; Remboursements</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="shipping.html">Livraison &amp; Expédition</a></li>
+          <li><a href="returns.html">Retours &amp; Remboursements</a></li>
         </ul>
       </div>
 
       <div class="foot-divider"></div>
 
       <div class="foot-col">
-        <h5>Beleid &amp; Info</h5>
+        <h5>À propos &amp; Politiques</h5>
         <ul>
           <li><a href="about.html">À propos</a></li>
-          <li><a href="#">Politique de confidentialité</a></li>
-          <li><a href="#">Conditions générales</a></li>
-          <li><a href="#">Droit de rétractation</a></li>
-          <li><a href="#">Politique de cookies</a></li>
+          <li><a href="privacy.html">Politique de confidentialité</a></li>
+          <li><a href="terms.html">Conditions générales</a></li>
+          <li><a href="withdrawal.html">Droit de rétractation</a></li>
+          <li><a href="cookie-policy.html">Politique de cookies</a></li>
         </ul>
       </div>
 
@@ -680,6 +680,12 @@ if (!wasSSR) {
   if(btn) btn.addEventListener('click', function(){ drawer.classList.contains('open') ? close() : open(); });
   if(overlay) overlay.addEventListener('click', close);
   if(closeBtn) closeBtn.addEventListener('click', close);
+
+  if (window.location.search) {
+    document.querySelectorAll('.nav-right a[href*="blog-post.html"], .nav-drawer-lang a[href*="blog-post.html"]').forEach(function(a){
+      a.setAttribute('href', a.getAttribute('href') + window.location.search);
+    });
+  }
 })();
 </script>
 <script src="../project/js/newsletter.js"></script>

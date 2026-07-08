@@ -500,7 +500,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
       <a href="about.html">Over ons</a>
     </nav>
     <div class="nav-right">
-      <span><a href="../blog-post.html" style="color:inherit;opacity:0.5">EN</a> · <span style="font-weight:400">NL</span> · <a style="display:none" href="../fr/blog-post.html" style="color:inherit;opacity:0.5">FR</a></span>
+      <span><a href="../blog-post.html" style="color:inherit;opacity:0.5">EN</a> · <span style="font-weight:400">NL</span> · <a href="../fr/blog-post.html" style="color:inherit;opacity:0.5">FR</a></span>
       <button class="cart-btn">
         <span class="cart-dot"></span>
         <span>Winkelwagen · 0</span>
@@ -563,23 +563,23 @@ html, body { overflow-x: hidden; max-width: 100%; }
       <div class="foot-col">
         <h5>Klantenservice</h5>
         <ul>
-          <li><a href="#">Veelgestelde vragen</a></li>
-          <li><a href="https://website-sese-jyjphisu0-seseness.vercel.app/blog.html" target="_blank" rel="noopener">Blog</a></li>
-          <li><a href="#">Verzending &amp; Delivery</a></li>
-          <li><a href="#">Retourzendingen &amp; Terugbetalingen</a></li>
+          <li><a href="faq.html">Veelgestelde vragen</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="shipping.html">Verzending &amp; Levering</a></li>
+          <li><a href="returns.html">Retourzendingen &amp; Terugbetalingen</a></li>
         </ul>
       </div>
 
       <div class="foot-divider"></div>
 
       <div class="foot-col">
-        <h5>Beleid &amp; Info</h5>
+        <h5>Over ons &amp; Beleid</h5>
         <ul>
           <li><a href="about.html">Over ons</a></li>
-          <li><a href="#">Privacybeleid</a></li>
-          <li><a href="#">Algemene voorwaarden</a></li>
-          <li><a href="#">Herroepingsrecht</a></li>
-          <li><a href="#">Cookiebeleid</a></li>
+          <li><a href="privacy.html">Privacybeleid</a></li>
+          <li><a href="terms.html">Algemene voorwaarden</a></li>
+          <li><a href="withdrawal.html">Herroepingsrecht</a></li>
+          <li><a href="cookie-policy.html">Cookiebeleid</a></li>
         </ul>
       </div>
 
@@ -665,7 +665,7 @@ if (!wasSSR) {
     <div class="nav-drawer-lang">
       <a href="../blog-post.html">EN</a>
       <span style="font-weight:400">NL</span>
-      <a style="display:none" href="../fr/blog-post.html">FR</a>
+      <a href="../fr/blog-post.html">FR</a>
     </div>
   </div>
 </div>
@@ -680,6 +680,12 @@ if (!wasSSR) {
   if(btn) btn.addEventListener('click', function(){ drawer.classList.contains('open') ? close() : open(); });
   if(overlay) overlay.addEventListener('click', close);
   if(closeBtn) closeBtn.addEventListener('click', close);
+
+  if (window.location.search) {
+    document.querySelectorAll('.nav-right a[href*="blog-post.html"], .nav-drawer-lang a[href*="blog-post.html"]').forEach(function(a){
+      a.setAttribute('href', a.getAttribute('href') + window.location.search);
+    });
+  }
 })();
 </script>
 <script src="../project/js/newsletter.js"></script>
