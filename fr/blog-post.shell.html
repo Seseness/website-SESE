@@ -483,6 +483,80 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .wordmark { font-size: 15px !important; letter-spacing: 0.22em !important; }
 }
 
+
+
+
+/* ============================================================
+   SESE PREMIUM MOBILE OPTIMIZATION
+   ============================================================ */
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden; }
+  .page { width: 100% !important; max-width: 100% !important; overflow-x: hidden; }
+
+  /* === SESE Premium Mobile Optimization === */
+  /* NAV */
+  .nav {
+    padding: 16px 20px !important;
+    grid-template-columns: 1fr auto !important;
+    position: sticky; top: 0; z-index: 100;
+    background: var(--bg-nav, #FAF5EC);
+  }
+  .nav-center { display: none !important; }
+  .wordmark { font-size: clamp(18px, 5vw, 24px) !important; letter-spacing: 0.28em !important; }
+  .nav-right { gap: 12px !important; }
+  .cart-btn { width: 44px !important; height: 44px !important; }
+
+  /* ANNOUNCE BAR */
+  .announce { font-size: 9px !important; letter-spacing: 0.16em !important; padding: 10px 16px !important; line-height: 1.5; }
+  .announce .dot { margin: 0 8px !important; }
+
+  /* FOOTER */
+  .foot-top { grid-template-columns: 1fr !important; padding: 48px 24px 40px !important; gap: 32px !important; }
+  .foot-divider { display: none !important; }
+  .foot-bot { flex-direction: column !important; gap: 16px !important; padding: 20px 24px 28px !important; align-items: flex-start !important; }
+  .pay { flex-wrap: wrap !important; gap: 8px !important; }
+  .foot-wm { font-size: 22px !important; }
+  .foot-tag { font-size: 16px !important; }
+  .newsletter { max-width: 100% !important; }
+
+  /* BUTTONS - touch friendly */
+  .btn { min-height: 48px !important; padding: 14px 24px !important; font-size: 10px !important; width: 100%; justify-content: center; }
+  .btn-add, .btn-view { min-height: 44px !important; }
+  .filter-pill { min-height: 40px !important; padding: 8px 16px !important; }
+
+
+  .breadcrumb { padding: 16px 20px !important; font-size: 10px !important; }
+  .article-header { padding: 40px 20px 32px !important; }
+  .article-header h1 { font-size: clamp(22px, 5.5vw, 40px) !important; line-height: 1.15 !important; }
+  .article-lead { font-size: clamp(15px, 3.5vw, 18px) !important; }
+  .article-image { padding: 20px 20px !important; }
+  .article-body { padding: 8px 20px 48px !important; font-size: clamp(14px, 3.5vw, 17px) !important; }
+  .article-body h2 { font-size: clamp(18px, 4.5vw, 26px) !important; }
+  .article-sources { padding: 24px 20px 0 !important; }
+  .related-section { padding: 40px 20px 60px !important; }
+  .related-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .journal-cta { padding: 48px 20px !important; }
+  .journal-cta h2 { font-size: clamp(22px, 5.5vw, 36px) !important; }
+  .journal-cta .btn { width: 100% !important; justify-content: center !important; }
+}
+
+@media (max-width: 480px) {
+
+  .nav { padding: 14px 16px !important; }
+  .wordmark { font-size: 15px !important; letter-spacing: 0.22em !important; }
+}
+
+
+/* Force hamburger visible on mobile */
+@media (max-width: 768px) {
+  .hamburger { display: flex !important; }
+  .hamburger span { background: var(--ink, #1A1A1A) !important; height: 1.5px !important; width: 22px !important; }
+}
+
+@media (max-width: 768px) {
+  .hamburger span { background: #1A1A1A !important; }
+  .hamburger { opacity: 1 !important; visibility: visible !important; }
+}
 </style>
 </head>
 <body>
