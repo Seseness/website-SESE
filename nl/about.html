@@ -454,6 +454,87 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .wordmark { font-size: 18px !important; letter-spacing: 0.24em !important; }
 }
 
+
+
+/* ============================================================
+   SESE PREMIUM MOBILE OPTIMIZATION
+   ============================================================ */
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden; }
+  .page { width: 100% !important; max-width: 100% !important; overflow-x: hidden; }
+
+  /* === SESE Premium Mobile Optimization === */
+  /* NAV */
+  .nav {
+    padding: 16px 20px !important;
+    grid-template-columns: 1fr auto !important;
+    position: sticky; top: 0; z-index: 100;
+    background: var(--bg-nav, #FAF5EC);
+  }
+  .nav-center { display: none !important; }
+  .wordmark { font-size: clamp(18px, 5vw, 24px) !important; letter-spacing: 0.28em !important; }
+  .nav-right { gap: 12px !important; }
+
+  /* ANNOUNCE BAR */
+  .announce { font-size: 9px !important; letter-spacing: 0.16em !important; padding: 10px 16px !important; line-height: 1.5; }
+  .announce .dot { margin: 0 8px !important; }
+
+  /* FOOTER */
+  .foot-top { grid-template-columns: 1fr !important; padding: 48px 24px 40px !important; gap: 32px !important; }
+  .foot-divider { display: none !important; }
+  .foot-bot { flex-direction: column !important; gap: 16px !important; padding: 20px 24px 28px !important; align-items: flex-start !important; }
+  .pay { flex-wrap: wrap !important; gap: 8px !important; }
+  .foot-wm { font-size: 22px !important; }
+  .foot-tag { font-size: 16px !important; }
+  .newsletter { max-width: 100% !important; }
+
+  /* BUTTONS - touch friendly */
+  .btn { min-height: 48px !important; padding: 14px 24px !important; font-size: 10px !important; width: 100%; justify-content: center; }
+  .btn-add, .btn-view { min-height: 44px !important; }
+  .filter-pill { min-height: 40px !important; padding: 8px 16px !important; }
+
+
+  .about-hero {
+    margin: 12px 12px 0 !important;
+    padding: 120px 24px 48px !important;
+    min-height: 380px !important;
+    border-radius: 18px !important;
+  }
+  .about-hero blockquote { font-size: clamp(20px, 5vw, 32px) !important; }
+  .about-hero blockquote::before { font-size: 64px !important; }
+  .section-divider { margin: 0 16px !important; }
+  .story-section, .products-section, .closing-section {
+    grid-template-columns: 1fr !important;
+    padding: 40px 20px !important;
+    gap: 20px !important;
+  }
+  .philosophy-section { padding: 40px 0 !important; }
+  .philosophy-inner { grid-template-columns: 1fr !important; padding: 0 20px !important; gap: 20px !important; }
+  .story-body p:first-child, .philosophy-inner p:first-child { font-size: clamp(16px, 4vw, 22px) !important; }
+  .story-body p, .philosophy-inner p, .products-section p { font-size: clamp(14px, 3.5vw, 17px) !important; }
+  .closing-section .btn { width: 100% !important; justify-content: center !important; }
+}
+
+@media (max-width: 480px) {
+
+  .nav { padding: 14px 16px !important; }
+  .wordmark { font-size: 18px !important; letter-spacing: 0.24em !important; }
+
+
+  .about-hero { margin: 8px 8px 0 !important; padding: 100px 20px 40px !important; }
+}
+
+
+/* Force hamburger visible on mobile */
+@media (max-width: 768px) {
+  .hamburger { display: flex !important; }
+  .hamburger span { background: var(--ink, #1A1A1A) !important; height: 1.5px !important; width: 22px !important; }
+}
+
+@media (max-width: 768px) {
+  .hamburger span { background: #1A1A1A !important; }
+  .hamburger { opacity: 1 !important; visibility: visible !important; }
+}
 </style>
 </head>
 <body>
