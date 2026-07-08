@@ -139,6 +139,13 @@ function getRelatedPosts(allPosts, currentId) {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
+function formatDate(dateStr) {
+  const months = ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return dateStr;
+  return d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+}
+
   // Build article header
   const imageHtml = post.image ? `
     <div class="article-image">
@@ -151,11 +158,11 @@ function getRelatedPosts(allPosts, currentId) {
   const articleHtml = `
     <div class="article-header">
       <div class="article-meta">
-        <span>${post.date}</span>
+        <span>${formatDate(post.date)}</span>
         <span class="sep">·</span>
         <span>${post.readtime}</span>
         <span class="sep">·</span>
-        <span>By SESE</span>
+        <span>Door SESE</span>
       </div>
       <h1>${post.title}</h1>
       <p class="article-lead">${post.excerpt}</p>
@@ -179,7 +186,7 @@ function getRelatedPosts(allPosts, currentId) {
     <div class="related-grid">
       ${related.map(r => `
         <a href="blog-post.html?p=${r.id}" class="related-card">
-          <div class="related-card-date">${r.date} · ${r.readtime}</div>
+          <div class="related-card-date">${formatDate(r.date)} · ${r.readtime}</div>
           <h4>${r.title}</h4>
           <span class="related-card-link">Lees →</span>
         </a>
@@ -234,6 +241,13 @@ function getRelatedPosts(allPosts, currentId) {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
+function formatDate(dateStr) {
+  const months = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return dateStr;
+  return d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+}
+
   // Build article header
   const imageHtml = post.image ? `
     <div class="article-image">
@@ -246,11 +260,11 @@ function getRelatedPosts(allPosts, currentId) {
   const articleHtml = `
     <div class="article-header">
       <div class="article-meta">
-        <span>${post.date}</span>
+        <span>${formatDate(post.date)}</span>
         <span class="sep">·</span>
         <span>${post.readtime}</span>
         <span class="sep">·</span>
-        <span>By SESE</span>
+        <span>Par SESE</span>
       </div>
       <h1>${post.title}</h1>
       <p class="article-lead">${post.excerpt}</p>
@@ -274,7 +288,7 @@ function getRelatedPosts(allPosts, currentId) {
     <div class="related-grid">
       ${related.map(r => `
         <a href="blog-post.html?p=${r.id}" class="related-card">
-          <div class="related-card-date">${r.date} · ${r.readtime}</div>
+          <div class="related-card-date">${formatDate(r.date)} · ${r.readtime}</div>
           <h4>${r.title}</h4>
           <span class="related-card-link">Lire →</span>
         </a>
