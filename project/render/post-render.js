@@ -133,11 +133,10 @@ export function renderPostView_nl(post, allPosts, lang, baseUrl = 'https://www.s
   };
   const jsonLd = [blogPostingJsonLd, breadcrumbJsonLd];
 
-function getRelatedPosts(allPosts, currentId, count = 3) {
+function getRelatedPosts(allPosts, currentId) {
   return allPosts
     .filter(p => p.published && p.id !== currentId)
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, count);
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
   // Build article header
@@ -174,7 +173,7 @@ function getRelatedPosts(allPosts, currentId, count = 3) {
   `;
 
 
-  const related = getRelatedPosts(allPosts, post.id, 3);
+  const related = getRelatedPosts(allPosts, post.id);
   const relatedHtml = `
     <div class="related-label">Meer uit de blog</div>
     <div class="related-grid">
@@ -229,11 +228,10 @@ export function renderPostView_fr(post, allPosts, lang, baseUrl = 'https://www.s
   };
   const jsonLd = [blogPostingJsonLd, breadcrumbJsonLd];
 
-function getRelatedPosts(allPosts, currentId, count = 3) {
+function getRelatedPosts(allPosts, currentId) {
   return allPosts
     .filter(p => p.published && p.id !== currentId)
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, count);
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
   // Build article header
@@ -270,7 +268,7 @@ function getRelatedPosts(allPosts, currentId, count = 3) {
   `;
 
 
-  const related = getRelatedPosts(allPosts, post.id, 3);
+  const related = getRelatedPosts(allPosts, post.id);
   const relatedHtml = `
     <div class="related-label">Plus du blog</div>
     <div class="related-grid">
