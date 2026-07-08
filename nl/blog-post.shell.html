@@ -534,9 +534,9 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
   <!-- CTA -->
   <div class="article-cta">
-    <p>Uit het dagboek</p>
-    <h3>Ready to start your<br/><em>skincare ritual?</em></h3>
-    <a href="collection.html" class="btn-cta">Discover our producten →</a>
+    <p>Uit de blog</p>
+    <h3>Klaar om te starten met je<br/><em>skincare ritueel?</em></h3>
+    <a href="collection.html" class="btn-cta">Ontdek onze producten →</a>
   </div>
 
 </div><!-- /.page -->
@@ -604,7 +604,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
         <span class="chip">Apple&nbsp;Pay</span>
       </div>
       <div class="lang-foot">
-        <span style="display:none">NL</span><span class="sep" style="display:none">·</span><span style="color:#2A2620;font-weight:400">EN</span><span class="sep" style="display:none">·</span><span style="display:none">FR</span>
+        <span style="color:#2A2620;font-weight:400">NL</span><span class="sep">·</span><a href="../blog-post.html">EN</a><span class="sep">·</span><a href="../fr/blog-post.html">FR</a>
       </div>
     </div>
   </div>
@@ -621,7 +621,7 @@ const POSTS = ALL_POSTS.nl;
 function getPostId() {
   const params = new URLSearchParams(window.location.search);
   const p = parseInt(params.get('p'), 10);
-  return (p >= 1 && p <= 10) ? p : 1;
+  return POSTS.some(post => post.id === p) ? p : 1;
 }
 
 function renderPost(post) {
@@ -694,7 +694,7 @@ if (!wasSSR) {
   if (cartBtn) cartBtn.addEventListener('click', function(){ window.location.href = 'cart.html'; });
 
   if (window.location.search) {
-    document.querySelectorAll('.nav-right a[href*="blog-post.html"], .nav-drawer-lang a[href*="blog-post.html"]').forEach(function(a){
+    document.querySelectorAll('.nav-right a[href*="blog-post.html"], .nav-drawer-lang a[href*="blog-post.html"], .lang-foot a[href*="blog-post.html"]').forEach(function(a){
       a.setAttribute('href', a.getAttribute('href') + window.location.search);
     });
   }

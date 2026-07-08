@@ -134,13 +134,10 @@ export function renderPostView_nl(post, allPosts, lang, baseUrl = 'https://www.s
   const jsonLd = [blogPostingJsonLd, breadcrumbJsonLd];
 
 function getRelatedPosts(allPosts, currentId, count = 3) {
-  const others = allPosts.filter(p => p.id >= 1 && p.id <= 4 && p.id !== currentId);
-  const picks = [];
-  const step = Math.max(1, Math.floor(others.length / count));
-  for (let i = 0; i < count; i++) {
-    picks.push(others[i % others.length]);
-  }
-  return picks;
+  return allPosts
+    .filter(p => p.published && p.id !== currentId)
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, count);
 }
 
   // Build article header
@@ -179,13 +176,13 @@ function getRelatedPosts(allPosts, currentId, count = 3) {
 
   const related = getRelatedPosts(allPosts, post.id, 3);
   const relatedHtml = `
-    <div class="related-label">Meer uit het dagboek</div>
+    <div class="related-label">Meer uit de blog</div>
     <div class="related-grid">
       ${related.map(r => `
         <a href="blog-post.html?p=${r.id}" class="related-card">
           <div class="related-card-date">${r.date} · ${r.readtime}</div>
           <h4>${r.title}</h4>
-          <span class="related-card-link">Read →</span>
+          <span class="related-card-link">Lees →</span>
         </a>
       `).join('')}
     </div>
@@ -233,13 +230,10 @@ export function renderPostView_fr(post, allPosts, lang, baseUrl = 'https://www.s
   const jsonLd = [blogPostingJsonLd, breadcrumbJsonLd];
 
 function getRelatedPosts(allPosts, currentId, count = 3) {
-  const others = allPosts.filter(p => p.id >= 1 && p.id <= 4 && p.id !== currentId);
-  const picks = [];
-  const step = Math.max(1, Math.floor(others.length / count));
-  for (let i = 0; i < count; i++) {
-    picks.push(others[i % others.length]);
-  }
-  return picks;
+  return allPosts
+    .filter(p => p.published && p.id !== currentId)
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, count);
 }
 
   // Build article header
@@ -278,13 +272,13 @@ function getRelatedPosts(allPosts, currentId, count = 3) {
 
   const related = getRelatedPosts(allPosts, post.id, 3);
   const relatedHtml = `
-    <div class="related-label">Plus du journal</div>
+    <div class="related-label">Plus du blog</div>
     <div class="related-grid">
       ${related.map(r => `
         <a href="blog-post.html?p=${r.id}" class="related-card">
           <div class="related-card-date">${r.date} · ${r.readtime}</div>
           <h4>${r.title}</h4>
-          <span class="related-card-link">Read →</span>
+          <span class="related-card-link">Lire →</span>
         </a>
       `).join('')}
     </div>
