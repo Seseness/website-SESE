@@ -26,7 +26,7 @@ export function renderPostView_en(post, allPosts, lang, baseUrl = 'https://www.s
     author: { '@type': 'Organization', name: 'SESE' },
     publisher: { '@type': 'Organization', name: 'SESE', logo: { '@type': 'ImageObject', url: baseUrl + '/project/assets/logo-mark.png' } },
   };
-  const journalLabel = "Journal";
+  const journalLabel = "Blog";
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -80,7 +80,7 @@ function getRelatedPosts(allPosts, currentId) {
 
   const related = getRelatedPosts(allPosts, post.id);
   const relatedHtml = `
-    <div class="related-label">More from the journal</div>
+    <div class="related-label">More from the blog</div>
     <div class="related-grid">
       ${related.map(r => `
         <a href="blog-post.html?p=${r.id}" class="related-card">
@@ -121,7 +121,7 @@ export function renderPostView_nl(post, allPosts, lang, baseUrl = 'https://www.s
     author: { '@type': 'Organization', name: 'SESE' },
     publisher: { '@type': 'Organization', name: 'SESE', logo: { '@type': 'ImageObject', url: baseUrl + '/project/assets/logo-mark.png' } },
   };
-  const journalLabel = "Journal";
+  const journalLabel = "Blog";
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -217,7 +217,7 @@ export function renderPostView_fr(post, allPosts, lang, baseUrl = 'https://www.s
     author: { '@type': 'Organization', name: 'SESE' },
     publisher: { '@type': 'Organization', name: 'SESE', logo: { '@type': 'ImageObject', url: baseUrl + '/project/assets/logo-mark.png' } },
   };
-  const journalLabel = "Journal";
+  const journalLabel = "Blog";
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
