@@ -63,6 +63,7 @@
 
   function showPopup() {
     if (localStorage.getItem(SHOWN_KEY)) return;
+    if (!localStorage.getItem('sese_lang_chosen')) return;
 
     const style = document.createElement('style');
     style.textContent = `
@@ -185,6 +186,8 @@
       }
     });
   }
+
+  window.showWelcomePopup = showPopup;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => setTimeout(showPopup, SHOW_DELAY_MS));
