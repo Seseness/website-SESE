@@ -79,13 +79,12 @@
     #sese-lang-popup .sese-lang-title {
       font-family: var(--font-display, "Cormorant Garamond","Times New Roman",serif);
       font-weight: 300; font-style: italic;
-      font-size: 26px; line-height: 1.25;
-      margin-bottom: 10px;
-    }
-    #sese-lang-popup .sese-lang-sub {
-      font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--ink-2, rgba(26,26,26,0.55));
+      font-size: 26px; line-height: 1.7;
       margin-bottom: 36px;
+      color: var(--ink, #1A1A1A);
+    }
+    #sese-lang-popup .sese-lang-title span {
+      display: block;
     }
     #sese-lang-popup .sese-lang-options {
       display: flex; flex-direction: column; gap: 12px;
@@ -119,8 +118,11 @@
     <div class="sese-lang-card">
       <span class="sese-lang-wordmark">S E S E</span>
       <div class="sese-lang-rule"></div>
-      <h2 class="sese-lang-title">Choose your language</h2>
-      <p class="sese-lang-sub">Kies je taal · Choisissez votre langue</p>
+      <h2 class="sese-lang-title">
+        <span>Choose your language</span>
+        <span>Kies je taal</span>
+        <span>Choisissez votre langue</span>
+      </h2>
       <div class="sese-lang-options">
         <button class="sese-lang-btn" data-lang="en">English</button>
         <button class="sese-lang-btn" data-lang="nl">Nederlands</button>
