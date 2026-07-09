@@ -546,5 +546,53 @@ const POSTS = [
 <p>And it means recognising that the ritual itself has value. Not just the outcome. The five minutes you take to care for your skin well are not just an investment in how your face looks in twenty years. They are a small act of presence in a day that asks for constant distraction. That is worth something too.</p>
 
 <p>This is what SESE was built around. And this is what we mean when we say: slow skincare for lasting results.</p>`
+  },
+  {
+    id: 12,
+    published: true,
+    category: "Skincare · Ceramides",
+    title: "While You Sleep, You Repair: What Ceramides Really Do for Your Skin Barrier",
+    titleHtml: "While You Sleep, You Repair: What Ceramides Really Do for Your Skin Barrier",
+    date: "July 6, 2026",
+    readtime: "5 min read",
+    excerpt: "Ceramides are everywhere in the skincare world, but what do they actually do? And why is your night cream the smartest time to use them? Let’s explain it without making it complicated.",
+    image: null,
+    sources: [
+      "Elias, P.M. (2008). Skin barrier function. <em>Current Allergy and Asthma Reports.</em>",
+      "Rawlings, A.V. & Matts, P.J. (2005). Stratum corneum moisturization at the molecular level. <em>Journal of Investigative Dermatology.</em>",
+      "Rogers, J. et al. (1996). Stratum corneum lipids: the effect of ageing and the seasons. <em>Archives of Dermatological Research.</em>"
+    ],
+    fullBody: `<h2>What Are Ceramides?</h2>
+
+<p>Ceramides are lipids, fats that naturally occur in the outer layer of your skin, the epidermis. Together with cholesterol and fatty acids, they form a kind of cement between your skin cells, keeping the skin barrier intact. That barrier has two crucial functions: keeping moisture in and keeping irritants out.</p>
+
+<p>You can compare the skin barrier to a brick wall: the skin cells are the bricks, and the ceramides are the mortar holding everything together. When that mortar weakens, tiny gaps appear and your skin begins to lose moisture, becomes more sensitive, and ages more quickly.</p>
+
+<h2>Why Ceramides Decline After 35</h2>
+
+<p>Your skin naturally produces ceramides, but production decreases significantly as you age. After the age of 35, ceramide levels in the skin can be 30-40% lower than they were in your twenties. The result is skin that feels drier, reacts more strongly to external factors, and develops fine lines more quickly.</p>
+
+<p>External factors accelerate this process: UV radiation, harsh cleansing products, central heating, and cold wind all damage the skin's lipid layer and further reduce ceramide levels. That is exactly why replenishing ceramides through your skincare routine is so valuable.</p>
+
+<h2>Why Nighttime Is the Ideal Moment</h2>
+
+<p>Between 11:00 p.m. and 4:00 a.m., your skin is most active in its repair processes. Blood circulation increases, cell renewal speeds up, and the skin becomes more receptive to active ingredients. This is when a rich, restorative night cream has the greatest impact.</p>
+
+<p>SESE's Ceramide Repair Night Cream is formulated specifically for this moment. The cream contains ceramides that replenish and restore the skin barrier, combined with aloe juice for hydration and jojoba oil for nourishment. The texture is richer than a day cream but absorbs well without leaving a heavy feeling.</p>
+
+<h2>Tips for Best Results</h2>
+
+<p><em>✦ Always apply your night cream as the final step of your evening routine, after your serum and eye cream.</em><br/>
+<em>✦ You only need a small amount. Warm it between your palms before applying.</em><br/>
+<em>✦ Consistency is everything. Ceramides gradually rebuild the skin barrier. Visible results usually appear after 2 to 4 weeks of regular use.</em></p>
+
+<h2>The Difference You'll See in the Morning</h2>
+
+<p>People who consistently use a quality ceramide night cream often notice a difference the very next morning: the skin feels softer, looks more even, and experiences less tightness or flaking. Over time, the skin becomes more resilient, reacts less quickly to external stressors, and stays hydrated throughout the day.</p>
+
+<p>It is not a dramatic overnight transformation. Instead, it is a solid, proven improvement that builds night after night. And that is exactly the philosophy behind SESE: no quick fixes, just a routine that truly works.</p>
+
+<style>.ceramide-cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:16px 28px;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;border-radius:999px;background:var(--ink);color:var(--bg-page);text-decoration:none;font-family:var(--font-display);font-weight:300;transition:background .28s var(--ease-out);}.ceramide-cta-btn:hover{background:#2A2A2A;}</style>
+<p style="text-align:center; margin-top:8px;"><a class="ceramide-cta-btn" href="product.html?p=ceramide-night-cream">Shop the Ceramide Night Cream →</a></p>`
   }
 ];
