@@ -8,6 +8,22 @@ const ROUTINE_STEPS = [
   { n:'05', l:'Protect' },
 ];
 
+const ROUTINE_STEPS_NL = [
+  { n:'01', l:'Reinigen' },
+  { n:'02', l:'Tonen' },
+  { n:'03', l:'Behandelen' },
+  { n:'04', l:'Hydrateren' },
+  { n:'05', l:'Beschermen' },
+];
+
+const ROUTINE_STEPS_FR = [
+  { n:'01', l:'Nettoyer' },
+  { n:'02', l:'Tonifier' },
+  { n:'03', l:'Traiter' },
+  { n:'04', l:'Hydrater' },
+  { n:'05', l:'Protéger' },
+];
+
 const TRUSTPILOT_URL = 'https://www.trustpilot.com/review/YOUR_STORE.myshopify.com';
 
 export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www.sese.be') {
@@ -342,9 +358,9 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   ).join('');
 
   // routine strip
-  const routineStaps = ROUTINE_STEPS.map((s,i) => {
+  const routineStaps = ROUTINE_STEPS_NL.map((s,i) => {
     const isActive = i === p.routineActive;
-    return `<div class="step${isActive?' active':''}"><div class="n">${s.n}${isActive?' · This':''}</div><div class="l">${s.l}</div></div>`;
+    return `<div class="step${isActive?' active':''}"><div class="n">${s.n}${isActive?' · Deze':''}</div><div class="l">${s.l}</div></div>`;
   }).join('');
 
   // ingredients
@@ -427,9 +443,9 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   <!-- Routine strip -->
   ${p.routineActive >= 0 ? `
   <section class="routine-strip">
-    <div class="heading"><div class="eb">Where it fits</div><h3>Stap <em>${ROUTINE_STEPS[p.routineActive].n} · ${ROUTINE_STEPS[p.routineActive].l}</em> in het SESE ritueel.</h3></div>
+    <div class="heading"><div class="eb">Waar dit past</div><h3>Stap <em>${ROUTINE_STEPS_NL[p.routineActive].n} · ${ROUTINE_STEPS_NL[p.routineActive].l}</em> in het SESE-ritueel.</h3></div>
     <div class="steps">${routineStaps}</div>
-    <div class="cta"><a href="bundle-contents.html?b=full-ritual">See the full ritual →</a></div>
+    <div class="cta"><a href="bundle-contents.html?b=full-ritual">Bekijk het volledige ritueel →</a></div>
   </section>` : ''}
 
   <!-- Gebruiksaanwijzing + Veelgestelde vragen -->
@@ -614,9 +630,9 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   ).join('');
 
   // routine strip
-  const routineÉtapes = ROUTINE_STEPS.map((s,i) => {
+  const routineÉtapes = ROUTINE_STEPS_FR.map((s,i) => {
     const isActive = i === p.routineActive;
-    return `<div class="step${isActive?' active':''}"><div class="n">${s.n}${isActive?' · This':''}</div><div class="l">${s.l}</div></div>`;
+    return `<div class="step${isActive?' active':''}"><div class="n">${s.n}${isActive?' · Ici':''}</div><div class="l">${s.l}</div></div>`;
   }).join('');
 
   // ingredients
@@ -699,9 +715,9 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   <!-- Routine strip -->
   ${p.routineActive >= 0 ? `
   <section class="routine-strip">
-    <div class="heading"><div class="eb">Where it fits</div><h3>Étape <em>${ROUTINE_STEPS[p.routineActive].n} · ${ROUTINE_STEPS[p.routineActive].l}</em> dans le rituel SESE.</h3></div>
+    <div class="heading"><div class="eb">Où cela s'intègre</div><h3>Étape <em>${ROUTINE_STEPS_FR[p.routineActive].n} · ${ROUTINE_STEPS_FR[p.routineActive].l}</em> dans le rituel SESE.</h3></div>
     <div class="steps">${routineÉtapes}</div>
-    <div class="cta"><a href="bundle-contents.html?b=full-ritual">See the full ritual →</a></div>
+    <div class="cta"><a href="bundle-contents.html?b=full-ritual">Voir le rituel complet →</a></div>
   </section>` : ''}
 
   <!-- Comment utiliser + FAQ -->
