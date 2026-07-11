@@ -1350,16 +1350,16 @@ export const PRODUCTS = {
     "cleansing-foam": {
       "name": "Cleansing Foam",
       "nameBreak": "Cleansing<br>Foam.",
-      "step": "01 · Cleanse",
+      "step": "01 · Reinigen",
       "stepNum": 1,
       "price": "€26",
       "vol": "150 ml",
-      "volPrice": "€0.17/ml",
-      "tagline": "Verwijdert de dag zachtjes, laat de barrière intact — het soort reiniging dat aanvoelt alsof er bijna niets is gebeurd, behalve alles wat weg moest.",
+      "volPrice": "€0,17/ml",
+      "tagline": "Verwijdert de dag zachtjes, laat de huidbarrière intact. Het soort reiniging dat aanvoelt als bijna niets, behalve dat alles wat weg moest, ook echt weg is.",
       "chips": [
-        "Gel-tot-schuim",
+        "Gel-naar-schuim",
         "Zacht",
-        "Ochtend/Avond",
+        "Ochtend / Avond",
         "Alle huidtypes"
       ],
       "color": "#E3EEF5",
@@ -2697,16 +2697,16 @@ export const PRODUCTS = {
   "cleansing-foam": {
     "name": "Cleansing Foam",
     "nameBreak": "Cleansing<br>Foam.",
-    "step": "01 · Cleanse",
+    "step": "01 · Nettoyage",
     "stepNum": 1,
     "price": "€26",
     "vol": "150 ml",
-    "volPrice": "€0.17/ml",
-    "tagline": "Élimine la journée en douceur, laisse la barrière intacte. Le genre de nettoyage qui donne l'impression que presque rien ne s'est passé, sauf que tout ce qui devait partir est parti.",
+    "volPrice": "0,17 €/ml",
+    "tagline": "Élimine la journée en douceur, préserve la barrière cutanée. Le genre de nettoyage qui semble ne presque rien faire, sauf que tout ce qui devait partir est bel et bien parti.",
     "chips": [
-      "Gel-mousse",
+      "Gel-en-mousse",
       "Doux",
-      "Matin/Soir",
+      "Matin / Soir",
       "Tous types de peau"
     ],
     "color": "#E3EEF5",
@@ -2729,7 +2729,7 @@ export const PRODUCTS = {
         "Sans sulfates"
       ],
       [
-        "Matin et soir",
+        "Matin & soir",
         "Première étape, les deux routines"
       ]
     ],
