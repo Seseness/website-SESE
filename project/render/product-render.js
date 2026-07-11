@@ -402,7 +402,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="pricing">
         <span class="now">${p.price}</span>
         <span class="vol">${p.vol} · ${p.volPrice}</span>
-        <span class="stock"><span class="d"></span>Op voorraad · Ships 1–2 days</span>
+        <span class="stock"><span class="d"></span>Op voorraad · Verzending binnen 1-2 dagen</span>
       </div>
       <div class="buy-row">
         <div class="qty">
@@ -411,14 +411,14 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
           <button id="qty-plus">+</button>
         </div>
         <button class="add-cart" id="add-cart-btn">
-          <span>In winkelwagen</span>
+          <span>Toevoegen aan winkelmandje</span>
           <span class="right"><span id="add-price">${p.price}</span><span style="font-size:13px;">→</span></span>
         </button>
       </div>
       <div class="ship-line">
         <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="9" rx="1.5"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></span>Gratis verzending vanaf €100</span>
         <span style="opacity:0.4;">·</span>
-        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>COSMOS Natuurlijk Gecertificeerd</span>
+        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>COSMOS Natural Gecertificeerd</span>
       </div>
       <div class="quick-cards">${quickHtml}</div>
     </aside>
@@ -674,7 +674,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="pricing">
         <span class="now">${p.price}</span>
         <span class="vol">${p.vol} · ${p.volPrice}</span>
-        <span class="stock"><span class="d"></span>En stock · Ships 1–2 days</span>
+        <span class="stock"><span class="d"></span>En stock · Expédié sous 1-2 jours</span>
       </div>
       <div class="buy-row">
         <div class="qty">
@@ -690,7 +690,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="ship-line">
         <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="9" rx="1.5"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></span>Livraison gratuite dès €100</span>
         <span style="opacity:0.4;">·</span>
-        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>Certifié COSMOS Naturel</span>
+        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>Certifié COSMOS Natural</span>
       </div>
       <div class="quick-cards">${quickHtml}</div>
     </aside>
