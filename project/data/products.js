@@ -1648,16 +1648,16 @@ export const PRODUCTS = {
     "vitamin-c-serum": {
       "name": "Vitamin C Serum",
       "nameBreak": "Vitamin C<br>Serum.",
-      "step": "03 · Treat · AM",
+      "step": "03 · Behandelen · Ochtend",
       "stepNum": 2,
       "price": "€34",
       "vol": "30 ml",
-      "volPrice": "€1.13/ml",
-      "tagline": "Een stabiel 12% ascorbinezuur dat verheldert zonder te branden — de ochtendglans die je opbouwt over weken, niet het soort dat je leent.",
+      "volPrice": "€1,13/ml",
+      "tagline": "Een stabiele 12% ascorbinezuur die opheldert zonder te branden. De ochtendglow die je opbouwt over weken, niet het soort dat je leent.",
       "chips": [
         "Verheldert",
-        "Egalisert teint",
-        "Alleen ochtend",
+        "Egaliseert de huid",
+        "Enkel 's morgens",
         "Stabiel 12% VC"
       ],
       "color": "#FCEAD0",
@@ -1676,12 +1676,12 @@ export const PRODUCTS = {
       "size": "30 ml",
       "quickInfo": [
         [
-          "Alleen ochtendgebruik",
-          "Combineer met SPF 50"
+          "Enkel 's morgens gebruiken",
+          "Te combineren met SPF 50"
         ],
         [
           "Alle huidtypes",
-          "Patch-test bij gevoeligheid"
+          "Patchtest bij gevoelige huid"
         ]
       ],
       "routineActive": 2,
@@ -2995,17 +2995,17 @@ export const PRODUCTS = {
   "vitamin-c-serum": {
     "name": "Vitamin C Serum",
     "nameBreak": "Vitamin C<br>Serum.",
-    "step": "03 · Treat · AM",
+    "step": "03 · Traiter · Matin",
     "stepNum": 2,
     "price": "€34",
     "vol": "30 ml",
-    "volPrice": "€1.13/ml",
-    "tagline": "Un acide ascorbique stable à 12% qui illumine sans irriter. L'éclat matinal que l'on construit au fil des semaines, pas celui qu'on emprunte.",
+    "volPrice": "1,13 €/ml",
+    "tagline": "Un acide ascorbique stable à 12% qui illumine sans irriter. L'éclat matinal que l'on construit en plusieurs semaines, pas celui qu'on emprunte.",
     "chips": [
       "Illumine",
       "Unifie le teint",
       "Matin uniquement",
-      "12% VC stable"
+      "Stable 12% VC"
     ],
     "color": "#FCEAD0",
     "img": "../project/assets/products-new/vitamin-c-serum-hp.png",
