@@ -1948,19 +1948,19 @@ export const PRODUCTS = {
       ]
     },
     "retinol-alt-serum": {
-      "name": "Retinol Alternative Serum",
+      "name": "Retinol Alternatief Serum",
       "nameBreak": "Retinol Alt.<br>Serum.",
-      "step": "03 · Treat · PM",
+      "step": "03 · Behandelen · Avond",
       "stepNum": 2,
       "price": "€26",
       "vol": "30 ml",
-      "volPrice": "€0.87/ml",
-      "tagline": "Het alternatief voor retinol dat zijn belofte echt nakomt — dezelfde vernieuwing, zonder irritatie of maanden aanpassing.",
+      "volPrice": "€0,87/ml",
+      "tagline": "De vernieuwende kracht van retinol, zonder de irritatie. Bakuchiol en PHA's strijken fijne lijntjes zachtjes glad, voor de huid die resultaat wil zonder overgangsfase.",
       "chips": [
         "Vernieuwt",
-        "Gladstrijkt lijntjes",
+        "Gladt lijntjes",
         "Avondgebruik",
-        "Geschikt voor gevoelige huid"
+        "Veilig voor gevoelige huid"
       ],
       "color": "#F5EAE4",
       "img": "../project/assets/products-new/retinol-alt-serum-hp.png",
@@ -1978,8 +1978,8 @@ export const PRODUCTS = {
       "size": "30 ml",
       "quickInfo": [
         [
-          "Alleen avondgebruik",
-          "Geschikt voor gevoelige huid"
+          "Enkel 's avonds gebruiken",
+          "Gevoelige huid welkom"
         ],
         [
           "Na toner",
@@ -3295,19 +3295,19 @@ export const PRODUCTS = {
     ]
   },
   "retinol-alt-serum": {
-    "name": "Retinol Alternative Serum",
+    "name": "Sérum Alternatif au Rétinol",
     "nameBreak": "Retinol Alt.<br>Serum.",
-    "step": "03 · Treat · PM",
+    "step": "03 · Traiter · Soir",
     "stepNum": 2,
     "price": "€26",
     "vol": "30 ml",
-    "volPrice": "€0.87/ml",
-    "tagline": "Le renouvellement du rétinol sans les picotements. Bakuchiol et PHA qui lissent les ridules en douceur, pour la peau qui veut des résultats sans phase de transition.",
+    "volPrice": "0,87 €/ml",
+    "tagline": "Le renouveau du rétinol sans les picotements. Bakuchiol et PHA qui lissent les ridules en douceur, pour une peau qui veut des résultats sans phase de transition.",
     "chips": [
       "Renouvelle",
-      "Lisse les rides",
+      "Lisse les ridules",
       "Usage du soir",
-      "Peaux sensibles"
+      "Adapté aux peaux sensibles"
     ],
     "color": "#F5EAE4",
     "img": "../project/assets/products-new/retinol-alt-serum-hp.png",
@@ -3329,8 +3329,8 @@ export const PRODUCTS = {
         "Convient aux peaux sensibles"
       ],
       [
-        "Après le tonique",
-        "Avant la crème de nuit"
+        "Après toner",
+        "Avant crème de nuit"
       ]
     ],
     "routineActive": 2,
