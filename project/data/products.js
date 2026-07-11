@@ -1797,16 +1797,16 @@ export const PRODUCTS = {
     "peptide-serum": {
       "name": "Peptide Serum",
       "nameBreak": "Peptide<br>Serum.",
-      "step": "03 · Treat · AM/PM",
+      "step": "03 · Behandelen · Ochtend/Avond",
       "stepNum": 2,
       "price": "€34",
       "vol": "30 ml",
-      "volPrice": "€1.13/ml",
-      "tagline": "Een peptiderijk serum dat de huid aanzet om te verstevigen, te gladstrijken en te herstellen — werkt terwijl je je dag doorbrengt.",
+      "volPrice": "€1,13/ml",
+      "tagline": "Verstevigt, verzacht en ondersteunt de natuurlijke elasticiteit van de huid. Een rustige, dagelijkse verstevigende zorg die zich bewijst over weken, niet minuten.",
       "chips": [
         "Verstevigt",
-        "Gladstrijkt",
-        "Ochtend/Avond",
+        "Verzacht",
+        "Ochtend / Avond",
         "Alle huidtypes"
       ],
       "color": "#FCEAD0",
@@ -1829,7 +1829,7 @@ export const PRODUCTS = {
           "Geurvrij"
         ],
         [
-          "Ochtend & avond",
+          "Gebruik 's ochtends & 's avonds",
           "Na toner, voor crème"
         ]
       ],
@@ -3144,16 +3144,16 @@ export const PRODUCTS = {
   "peptide-serum": {
     "name": "Peptide Serum",
     "nameBreak": "Peptide<br>Serum.",
-    "step": "03 · Treat · AM/PM",
+    "step": "03 · Traiter · Matin/Soir",
     "stepNum": 2,
     "price": "€34",
     "vol": "30 ml",
-    "volPrice": "€1.13/ml",
-    "tagline": "Raffermit, lisse et soutient l'élasticité naturelle de la peau. Un raffermissement quotidien discret qui porte ses fruits en semaines, pas en minutes.",
+    "volPrice": "1,13 €/ml",
+    "tagline": "Raffermit, lisse et soutient l'élasticité naturelle de la peau. Un soin raffermissant discret et quotidien qui fait ses preuves en plusieurs semaines, pas en quelques minutes.",
     "chips": [
       "Raffermit",
       "Lisse",
-      "Matin/Soir",
+      "Matin / Soir",
       "Tous types de peau"
     ],
     "color": "#FCEAD0",
@@ -3176,8 +3176,8 @@ export const PRODUCTS = {
         "Sans parfum"
       ],
       [
-        "Matin et soir",
-        "Après tonique, avant crème"
+        "Matin & soir",
+        "Après lotion, avant crème"
       ]
     ],
     "routineActive": 2,
