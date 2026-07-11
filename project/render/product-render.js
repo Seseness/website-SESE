@@ -704,7 +704,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
         </button>
       </div>
       <div class="ship-line">
-        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="9" rx="1.5"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></span>Livraison gratuite dès €100</span>
+        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="9" rx="1.5"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></span>Livraison gratuite dès 100 €</span>
         <span style="opacity:0.4;">·</span>
         <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>Certifié COSMOS Natural</span>
       </div>

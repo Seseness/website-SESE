@@ -1499,16 +1499,16 @@ export const PRODUCTS = {
     "hydrating-toner": {
       "name": "Hydrating Toner",
       "nameBreak": "Hydrating<br>Toner.",
-      "step": "02 · Tone",
+      "step": "02 · Tonen",
       "stepNum": 2,
       "price": "€24",
       "vol": "200 ml",
-      "volPrice": "€0.12/ml",
-      "tagline": "Een gewichtloze mist die de pH van de huid herstelt en de deur opent voor alles wat volgt — klaar in dertig seconden, werkt urenlang.",
+      "volPrice": "€0,12/ml",
+      "tagline": "Een gewichtloze mist die de pH van de huid herstelt en de deur opent voor alles wat volgt. Klaar in dertig seconden, werkt urenlang door.",
       "chips": [
         "Gewichtloze mist",
         "PH-balancerend",
-        "Ochtend/Avond",
+        "Ochtend / Avond",
         "Alle huidtypes"
       ],
       "color": "#E6EFE9",
@@ -2846,16 +2846,16 @@ export const PRODUCTS = {
   "hydrating-toner": {
     "name": "Hydrating Toner",
     "nameBreak": "Hydrating<br>Toner.",
-    "step": "02 · Tone",
+    "step": "02 · Tonifier",
     "stepNum": 2,
     "price": "€24",
     "vol": "200 ml",
-    "volPrice": "€0.12/ml",
-    "tagline": "Une brume légère qui rééquilibre le pH de la peau et ouvre la voie à tout ce qui suit. Prépare en trente secondes, agit pendant des heures.",
+    "volPrice": "0,12 €/ml",
+    "tagline": "Une brume légère qui rééquilibre le pH de la peau et ouvre la voie à tout ce qui suit. Prête en trente secondes, agit pendant des heures.",
     "chips": [
       "Brume légère",
       "Équilibre le pH",
-      "Matin/Soir",
+      "Matin / Soir",
       "Tous types de peau"
     ],
     "color": "#E6EFE9",
@@ -2879,7 +2879,7 @@ export const PRODUCTS = {
       ],
       [
         "Après nettoyage",
-        "Avant sérum et crème"
+        "Avant sérum & crème"
       ]
     ],
     "routineActive": 1,
