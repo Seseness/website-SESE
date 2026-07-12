@@ -2397,17 +2397,17 @@ export const PRODUCTS = {
     "smoothing-eye-cream": {
       "name": "Smoothing Eye Cream",
       "nameBreak": "Smoothing<br>Eye Cream.",
-      "step": "Targeted · Eye care",
+      "step": "Gerichte zorg · Oogverzorging",
       "stepNum": -1,
       "price": "€30",
       "vol": "15 ml",
-      "volPrice": "€2.00/ml",
-      "tagline": "Het ooggebied veroudert het eerst en vergeeft niets. Deze crème zorgt voor beide.",
+      "volPrice": "€2,00/ml",
+      "tagline": "Het ooggebied vertelt een ander verhaal. Deze crème verzacht fijne lijntjes, vermindert donkere kringen, en doet dat zacht genoeg voor de meest gevoelige huid van je gezicht.",
       "chips": [
-        "Koelt",
+        "Verkoelt",
         "Verheldert",
         "Ochtend/Avond",
-        "Delicaat ooggebied"
+        "Zacht deppen"
       ],
       "color": "#C9D7C9",
       "img": "../project/assets/products-new/smoothing-eye-cream-hp.png",
@@ -2425,12 +2425,12 @@ export const PRODUCTS = {
       "size": "15 ml",
       "quickInfo": [
         [
-          "Delicaat ooggebied",
+          "Gevoelige oogzone",
           "Geen parfum, geen etherische oliën"
         ],
         [
-          "Ochtend & avond",
-          "Dep zachtjes — nooit wrijven"
+          "Gebruik 's ochtends & 's avonds",
+          "Zachtjes deppen — nooit wrijven"
         ]
       ],
       "routineActive": -1,
@@ -3744,11 +3744,11 @@ export const PRODUCTS = {
   "smoothing-eye-cream": {
     "name": "Smoothing Eye Cream",
     "nameBreak": "Smoothing<br>Eye Cream.",
-    "step": "Targeted · Eye care",
+    "step": "Ciblé · Soin des yeux",
     "stepNum": -1,
     "price": "€30",
     "vol": "15 ml",
-    "volPrice": "€2.00/ml",
+    "volPrice": "€2,00/ml",
     "tagline": "Le contour de l'œil raconte une histoire différente. Celle-ci atténue la ligne, réduit les cernes, et le fait avec assez de douceur pour la peau la plus délicate de votre visage.",
     "chips": [
       "Rafraîchit",
