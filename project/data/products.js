@@ -2546,17 +2546,17 @@ export const PRODUCTS = {
     "spf50-stick": {
       "name": "SPF 50 Sunscreen Stick",
       "nameBreak": "SPF 50<br>Stick.",
-      "step": "05 · Protect",
+      "step": "05 · Beschermen",
       "stepNum": 4,
       "price": "€28",
       "vol": "12 g",
-      "volPrice": "pocket-sized",
-      "tagline": "De stap die het vaakst wordt overgeslagen, de stap die er het meest toe doet — een minerale SPF 50 in een pocketstick voor gezichten die vergeten, dan herinneren.",
+      "volPrice": "zakformaat",
+      "tagline": "De meest overgeslagen stap is ook de belangrijkste. Een minerale SPF 50 in pocketformaat, voor onderweg.",
       "chips": [
         "SPF 50",
-        "Mineraalfilter",
-        "Geen witte waas",
-        "Eenvoudig bij te brengen"
+        "Minerale filter",
+        "Geen witte uitslag",
+        "Makkelijk bij te werken"
       ],
       "color": "#E8D5B0",
       "img": "../project/assets/products-new/spf50-stick-hp.png",
@@ -2575,10 +2575,10 @@ export const PRODUCTS = {
       "quickInfo": [
         [
           "Ochtend — laatste stap",
-          "Elke 2u opnieuw buiten"
+          "Elke 2 uur opnieuw aanbrengen buiten"
         ],
         [
-          "UVA/UVB bescherming",
+          "UVA/UVB-bescherming",
           ""
         ]
       ],
@@ -3893,12 +3893,12 @@ export const PRODUCTS = {
   "spf50-stick": {
     "name": "SPF 50 Sunscreen Stick",
     "nameBreak": "SPF 50<br>Stick.",
-    "step": "05 · Protect",
+    "step": "05 · Protéger",
     "stepNum": 4,
     "price": "€28",
     "vol": "12 g",
-    "volPrice": "pocket-sized",
-    "tagline": "L'étape la plus souvent sautée, l'étape la plus importante. Un SPF 50 minéral en format stick de poche pour les visages qui oublient, puis se souviennent.",
+    "volPrice": "format poche",
+    "tagline": "L'étape la plus souvent négligée est aussi la plus importante. Un SPF 50 minéral au format poche, pour vos déplacements.",
     "chips": [
       "SPF 50",
       "Filtre minéral",
@@ -3921,7 +3921,7 @@ export const PRODUCTS = {
     "size": "12 g",
     "quickInfo": [
       [
-        "Matin — étape finale",
+        "Matin — dernière étape",
         "Réappliquer toutes les 2h en extérieur"
       ],
       [
