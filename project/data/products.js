@@ -2099,16 +2099,16 @@ export const PRODUCTS = {
     "firming-day-cream": {
       "name": "Firming Day Cream",
       "nameBreak": "Firming<br>Day Cream.",
-      "step": "04 · Moisturise · AM",
+      "step": "04 · Hydrateren · Ochtend",
       "stepNum": 3,
       "price": "€36",
       "vol": "50 ml",
-      "volPrice": "€0.72/ml",
-      "tagline": "Hydrateert, verstevigt en beschermt de hele dag.",
+      "volPrice": "€0,72/ml",
+      "tagline": "Licht genoeg om onder make-up te dragen, verstevigend genoeg om het verschil te maken. Een dagcrème die het werk van je serum vasthoudt en de vochtigheid acht uur lang binnenhoudt.",
       "chips": [
         "Verstevigt",
         "Lichte textuur",
-        "Alleen ochtend",
+        "Ochtendgebruik",
         "Normaal tot droog"
       ],
       "color": "#FCE8EB",
@@ -2127,7 +2127,7 @@ export const PRODUCTS = {
       "size": "50 ml",
       "quickInfo": [
         [
-          "Normaal tot droge huid",
+          "Normale tot droge huid",
           "Onder make-up of SPF"
         ],
         [
@@ -3446,16 +3446,16 @@ export const PRODUCTS = {
   "firming-day-cream": {
     "name": "Firming Day Cream",
     "nameBreak": "Firming<br>Day Cream.",
-    "step": "04 · Moisturise · AM",
+    "step": "04 · Hydrater · Matin",
     "stepNum": 3,
     "price": "€36",
     "vol": "50 ml",
-    "volPrice": "€0.72/ml",
-    "tagline": "Assez légère pour être portée sous le maquillage, assez raffermissante pour compter. Une crème de jour qui maintient le travail de votre sérum en place et retient l'hydratation pendant huit heures.",
+    "volPrice": "0,72 €/ml",
+    "tagline": "Assez légère pour être portée sous le maquillage, assez raffermissante pour faire la différence. Une crème de jour qui préserve l'action de votre sérum et retient l'hydratation pendant huit heures.",
     "chips": [
       "Raffermit",
       "Texture légère",
-      "Usage matinal",
+      "Usage du matin",
       "Peau normale à sèche"
     ],
     "color": "#FCE8EB",
@@ -3475,11 +3475,11 @@ export const PRODUCTS = {
     "quickInfo": [
       [
         "Peau normale à sèche",
-        "Sous maquillage ou SPF"
+        "Sous le maquillage ou la SPF"
       ],
       [
         "Usage matinal",
-        "Après le sérum, avant le SPF"
+        "Après sérum, avant SPF"
       ]
     ],
     "routineActive": 3,
