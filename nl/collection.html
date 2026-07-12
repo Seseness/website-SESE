@@ -787,7 +787,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
     <div class="bundle-grid">
 
       <!-- Forever Routine -->
-      <div class="bundle-card" onclick="location.href='product.html?p=forever-bundle'">
+      <div class="bundle-card">
         <div class="bundle-img" style="background-color:#DCEAF1;background-image:url('../project/assets/products-new/bundle-forever.jpg')"></div>
         <div class="bundle-meta">
           <div class="bundle-name">The Forever Routine</div>
@@ -809,7 +809,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
       </div>
 
       <!-- Beauty Sleep Ritual -->
-      <div class="bundle-card" onclick="location.href='product.html?p=beauty-sleep-ritual'">
+      <div class="bundle-card">
         <div class="bundle-img" style="background-color:#1A2030;background-image:url('../project/assets/products-new/bundle-beauty-sleep.png');background-position:center 80%"></div>
         <div class="bundle-meta">
           <div class="bundle-name">The Beauty Sleep Ritual</div>
@@ -831,7 +831,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
       </div>
 
       <!-- Full Ritual – full width -->
-      <div class="bundle-card bundle-card--wide" onclick="location.href='product.html?p=full-ritual'">
+      <div class="bundle-card bundle-card--wide">
         <div class="bundle-img" style="background-color:#EAD6B7;background-image:url('../project/assets/products-new/bundle-full-ritual.jpg')"></div>
         <div class="bundle-meta">
           <div class="bundle-name">The Full Ritual</div>
@@ -1061,6 +1061,17 @@ function applyFilterFromHash() {
 }
 window.addEventListener('hashchange', applyFilterFromHash);
 applyFilterFromHash();
+
+// Keep the language switcher on the current filter view (e.g. #bundles)
+// instead of dropping the visitor back to the default "All Products" view.
+// Deferred to DOMContentLoaded because .nav-drawer-lang is defined later in
+// the HTML, after this script tag, so it doesn't exist yet at this point.
+document.addEventListener('DOMContentLoaded', function() {
+  if (!window.location.hash) return;
+  document.querySelectorAll('.nav-right a[href$="collection.html"], .lang-foot a[href$="collection.html"], .nav-drawer-lang a[href$="collection.html"]').forEach(function(a) {
+    a.setAttribute('href', a.getAttribute('href') + window.location.hash);
+  });
+});
 </script>
 <script src="../project/js/sese-cart.js"></script>
 
