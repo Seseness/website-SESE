@@ -2248,17 +2248,17 @@ export const PRODUCTS = {
     "ceramide-night-cream": {
       "name": "Ceramide Night Cream",
       "nameBreak": "Ceramide<br>Night Cream.",
-      "step": "04 · Moisturise · PM",
+      "step": "04 · Hydrateren · Avond",
       "stepNum": 3,
       "price": "€38",
       "vol": "50 ml",
-      "volPrice": "€0.76/ml",
-      "tagline": "Terwijl je slaapt, herstellen ceramiden wat de dag heeft aangetast — een herstellende crème die haar rust verdient en de huid zachter achterlaat tegen de ochtend.",
+      "volPrice": "€0,76/ml",
+      "tagline": "Terwijl jij slaapt, herstellen ceramiden wat de dag heeft weggenomen. Een herstellende crème die haar rust verdient en de huid zachter achterlaat tegen de ochtend.",
       "chips": [
-        "Herstelt barrière",
+        "Herstelt huidbarrière",
         "Rijke textuur",
         "Avondgebruik",
-        "Droog & rijper"
+        "Droge & rijpe huid"
       ],
       "color": "#EFDFC2",
       "img": "../project/assets/products-new/ceramide-night-cream-hp.png",
@@ -2276,12 +2276,12 @@ export const PRODUCTS = {
       "size": "50 ml",
       "quickInfo": [
         [
-          "Droge & rijpere huid",
+          "Droge & rijpe huid",
           "Geurvrij"
         ],
         [
           "Avondgebruik",
-          "Laatste stap avondroutine"
+          "Laatste stap van avondroutine"
         ]
       ],
       "routineActive": 3,
@@ -3595,17 +3595,17 @@ export const PRODUCTS = {
   "ceramide-night-cream": {
     "name": "Ceramide Night Cream",
     "nameBreak": "Ceramide<br>Night Cream.",
-    "step": "04 · Moisturise · PM",
+    "step": "04 · Hydrater · Soir",
     "stepNum": 3,
     "price": "€38",
     "vol": "50 ml",
-    "volPrice": "€0.76/ml",
-    "tagline": "Pendant votre sommeil, les céramides reconstruisent ce que la journée a pris. Une crème réparatrice qui mérite son repos et laisse la peau plus douce au réveil.",
+    "volPrice": "0,76 €/ml",
+    "tagline": "Pendant que vous dormez, les céramides reconstruisent ce que la journée a pris. Une crème réparatrice qui mérite son repos et laisse la peau plus douce au réveil.",
     "chips": [
-      "Répare la barrière",
+      "Répare la barrière cutanée",
       "Texture riche",
       "Usage du soir",
-      "Peau sèche et mature"
+      "Peau sèche & mature"
     ],
     "color": "#EFDFC2",
     "img": "../project/assets/products-new/ceramide-night-cream-hp.png",
@@ -3623,7 +3623,7 @@ export const PRODUCTS = {
     "size": "50 ml",
     "quickInfo": [
       [
-        "Peau sèche et mature",
+        "Peau sèche & mature",
         "Sans parfum"
       ],
       [
