@@ -286,13 +286,14 @@
     .bundle-card:hover { transform: translateY(-4px); }
     .bundle-card:hover .bundle-img { box-shadow: 0 22px 40px -16px rgba(26,26,26,0.18); }
     .bundle-img {
-      position: relative;
-      aspect-ratio: 16 / 9;
-      border-radius: 16px;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-radius: clamp(12px, 2vw, 20px);
       overflow: hidden;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      flex-shrink: 0;
       transition: box-shadow .42s var(--ease-out);
     }
     @media (min-width: 769px) {
@@ -325,12 +326,17 @@
     .bundle-price { font-size: 20px; color: var(--ink); }
     .bundle-was { font-size: 14px; color: var(--ink-3); text-decoration: line-through; margin-left: 8px; }
     .fi-num { font-size: 10px; letter-spacing: 0.22em; color: rgba(26,26,26,0.4); min-width: 20px; font-family: var(--font-ui); }
-    .bundle-card--wide {
-      grid-column: 1 / -1;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+    @media (min-width: 769px) {
+      .bundle-card--wide {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 40px;
+        align-items: start;
+      }
+      .bundle-card--wide .bundle-img { aspect-ratio: 4/3; }
+      .bundle-card--wide .bundle-meta { padding-top: 8px; }
     }
-    .bundle-card--wide .bundle-img { aspect-ratio: auto; min-height: 340px; }
-    .bundle-card--wide .bundle-meta { padding-top: 0; }
 
     /* ── Footer ── */
     .foot-wrap { margin-top: 0; background: #FAF5EC; color: #2A2620; }
@@ -543,7 +549,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .bundle-grid { grid-template-columns: 1fr !important; padding: 0 16px !important; gap: 16px !important; }
   .bundle-card { border-radius: 16px !important; }
   .bundle-card--wide { grid-column: 1 !important; }
-  .bundle-img { aspect-ratio: 3/2 !important; }
+  .bundle-img { aspect-ratio: 3/2 !important; border-radius: 16px !important; }
   #bundle-img-beauty-sleep { background-position: center 53% !important; }
   #bundle-img-full-ritual { background-position: center 55% !important; }
   .bundle-name { font-size: clamp(18px, 4.5vw, 24px) !important; }
