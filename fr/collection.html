@@ -295,6 +295,9 @@
       background-size: cover;
       transition: box-shadow .42s var(--ease-out);
     }
+    @media (min-width: 769px) {
+      #bundle-img-beauty-sleep-fix { background-position: center 48% !important; }
+    }
     .bundle-meta { padding: 20px 4px 0; flex: 1; display: flex; flex-direction: column; }
     .bundle-name {
       font-size: 22px; line-height: 1.2; color: var(--ink);
@@ -810,7 +813,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
       <!-- Beauty Sleep Ritual -->
       <div class="bundle-card">
-        <div class="bundle-img" style="background-color:#1A2030;background-image:url('../project/assets/products-new/bundle-beauty-sleep.png');background-position:center 80%"></div>
+        <div id="bundle-img-beauty-sleep-fix" class="bundle-img" style="background-color:#1A2030;background-image:url('../project/assets/products-new/bundle-beauty-sleep.png');background-position:center 80%"></div>
         <div class="bundle-meta">
           <div class="bundle-name">The Beauty Sleep Ritual</div>
           <div class="bundle-tag">5 produits · Rituel du soir</div>
