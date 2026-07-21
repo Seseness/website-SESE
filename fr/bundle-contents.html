@@ -815,6 +815,12 @@ document.getElementById('bundle-add-btn').addEventListener('click', () => {
   if(btn) btn.addEventListener('click', function(){ drawer.classList.contains('open') ? close() : open(); });
   if(overlay) overlay.addEventListener('click', close);
   if(closeBtn) closeBtn.addEventListener('click', close);
+
+  if (window.location.search) {
+    document.querySelectorAll('.nav-right a[href*="bundle-contents.html"], .nav-drawer-lang a[href*="bundle-contents.html"], .lang-foot a[href*="bundle-contents.html"]').forEach(function(a){
+      a.setAttribute('href', a.getAttribute('href') + window.location.search);
+    });
+  }
 })();
 </script>
 <script src="../project/js/newsletter.js"></script>

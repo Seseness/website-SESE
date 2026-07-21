@@ -674,7 +674,7 @@ if (wasSSR) {
   if(closeBtn) closeBtn.addEventListener('click', close);
 
   if (window.location.search) {
-    document.querySelectorAll('.nav-right a[href*="product.html"], .nav-drawer-lang a[href*="product.html"]').forEach(function(a){
+    document.querySelectorAll('.nav-right a[href*="product.html"], .nav-drawer-lang a[href*="product.html"], .lang-foot a[href*="product.html"]').forEach(function(a){
       a.setAttribute('href', a.getAttribute('href') + window.location.search);
     });
   }
