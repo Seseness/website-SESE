@@ -958,7 +958,9 @@ const SHOPIFY = {
     'ceramide-night-cream': 'gid://shopify/ProductVariant/58270801527168',
     'smoothing-eye-cream':  'gid://shopify/ProductVariant/58245768839552',
     'spf50-stick':          'gid://shopify/ProductVariant/58270809096576',
-    'starter-bundle':       'gid://shopify/ProductVariant/REPLACE_ME',
+    'forever-bundle':       'gid://shopify/ProductVariant/58276013179264',
+    'beauty-sleep-ritual':  'gid://shopify/ProductVariant/58276035199360',
+    'full-ritual':          'gid://shopify/ProductVariant/58276049748352',
   }
 };
 
@@ -989,15 +991,15 @@ function showToast(msg) {
 function handleAdd(btn) {
   const productKey = btn.dataset.product;
   if (!isConfigured()) {
-    showToast('Boutique not configured yet — coming soon');
+    showToast('Boutique pas encore configurée — bientôt disponible');
     return;
   }
   const variantId = SHOPIFY.variants[productKey];
   if (!variantId || variantId.includes('REPLACE_ME')) {
-    showToast('Product not available yet');
+    showToast('Produit pas encore disponible');
     return;
   }
-  SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
+  SESECart.add(productKey); showToast('Ajouté au panier.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
 }
 
 // Attach events
@@ -1007,7 +1009,7 @@ document.querySelectorAll('.btn-add').forEach(btn => {
 
 document.getElementById('cart-btn').addEventListener('click', () => {
   if (!isConfigured()) {
-    showToast('Boutique not configured yet — coming soon');
+    showToast('Boutique pas encore configurée — bientôt disponible');
     return;
   }
   window.location.href = 'cart.html';
