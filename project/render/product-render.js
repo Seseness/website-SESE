@@ -380,7 +380,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
 
   // faqs
   const faqsHtml = p.faqs.map((f,i) =>
-    `<details class="faq-artikel"${i===0?' open':''}><summary>${f.q}<span class="ic">+</span></summary><div class="answer">${f.a}</div></details>`
+    `<details class="faq-item"${i===0?' open':''}><summary>${f.q}<span class="ic">+</span></summary><div class="answer">${f.a}</div></details>`
   ).join('');
 
   // pairs
@@ -652,7 +652,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
 
   // faqs
   const faqsHtml = p.faqs.map((f,i) =>
-    `<details class="faq-article"${i===0?' open':''}><summary>${f.q}<span class="ic">+</span></summary><div class="answer">${f.a}</div></details>`
+    `<details class="faq-item"${i===0?' open':''}><summary>${f.q}<span class="ic">+</span></summary><div class="answer">${f.a}</div></details>`
   ).join('');
 
   // pairs
