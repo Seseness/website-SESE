@@ -445,7 +445,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   <section class="routine-strip">
     <div class="heading"><div class="eb">Waar dit past</div><h3>Stap <em>${ROUTINE_STEPS_NL[p.routineActive].n} · ${ROUTINE_STEPS_NL[p.routineActive].l}</em> in het SESE-ritueel.</h3></div>
     <div class="steps">${routineStaps}</div>
-    <div class="cta"><a href="bundle-contents.html?b=full-ritual">Bekijk het volledige ritueel →</a></div>
+    <div class="cta"><a href="bundle-contents.html?b=full-ritual">Zie de volledige collectie →</a></div>
   </section>` : ''}
 
   <!-- Gebruiksaanwijzing + Veelgestelde vragen -->
@@ -717,7 +717,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   <section class="routine-strip">
     <div class="heading"><div class="eb">Où cela s'intègre</div><h3>Étape <em>${ROUTINE_STEPS_FR[p.routineActive].n} · ${ROUTINE_STEPS_FR[p.routineActive].l}</em> dans le rituel SESE.</h3></div>
     <div class="steps">${routineÉtapes}</div>
-    <div class="cta"><a href="bundle-contents.html?b=full-ritual">Voir le rituel complet →</a></div>
+    <div class="cta"><a href="bundle-contents.html?b=full-ritual">Voir l'édition complète →</a></div>
   </section>` : ''}
 
   <!-- Comment utiliser + FAQ -->
