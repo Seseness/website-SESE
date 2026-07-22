@@ -86,7 +86,7 @@ export const PRODUCTS = {
         },
         {
           "h": "One to two pumps",
-          "p": "Work the gel between your palms first. It transforms into a light foam with just a little water."
+          "p": "Work the foam between your palms first. Add a little water to activate a rich lather."
         },
         {
           "h": "Massage in slow circles",
@@ -1428,20 +1428,20 @@ export const PRODUCTS = {
       "howTitle": "Twintig seconden. <em>Twee keer per dag.</em>",
       "howStaps": [
         {
-          "h": "Maak het gezicht nat",
-          "p": "Lauw water opent de poriën zacht. Koud water is prima voor de ochtendspoeling."
+          "h": "Maak je gezicht nat",
+          "p": "Lauw water opent de poriën zachtjes. Koud water is prima voor de ochtendspoeling."
         },
         {
-          "h": "Één tot twee pompen",
-          "p": "Werk het gel eerst tussen je handpalmen — het verandert in een lichte mousse met slechts een beetje water."
+          "h": "Eén tot twee pompjes",
+          "p": "Wrijf de foam eerst tussen je handpalmen. Voeg een beetje water toe voor een rijk schuim."
         },
         {
-          "h": "Masseer in langzame cirkels",
-          "p": "Dertig seconden is genoeg. Focus op de T-zone en de kaak, wees zacht rondom de ogen."
+          "h": "Masseer in trage cirkels",
+          "p": "Dertig seconden is genoeg. Focus op de T-zone en kaaklijn, wees zacht rond de ogen."
         },
         {
           "h": "Spoel af en dep droog",
-          "p": "Altijd deppen — nooit wrijven. Je huid is klaar voor toner."
+          "p": "Dep altijd droog, wrijf nooit. Je huid is klaar voor de toner."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#C5DAEA,#A0C4D6)",
@@ -2776,19 +2776,19 @@ export const PRODUCTS = {
     "howÉtapes": [
       {
         "h": "Mouillez votre visage",
-        "p": "L'eau tiède ouvre les pores en douceur. L'eau fraîche convient pour le rinçage du matin."
+        "p": "L'eau tiède ouvre les pores en douceur. L'eau fraîche convient très bien le matin."
       },
       {
         "h": "Une à deux pressions",
-        "p": "Travaillez d'abord le gel entre vos paumes. Il se transforme en mousse légère avec juste un peu d'eau."
+        "p": "Répartissez la mousse entre vos paumes. Ajoutez un peu d'eau pour activer une mousse riche."
       },
       {
-        "h": "Massez en petits cercles",
-        "p": "Trente secondes suffisent. Concentrez-vous sur la zone T et la mâchoire, en douceur autour des yeux."
+        "h": "Massez en cercles lents",
+        "p": "Trente secondes suffisent. Concentrez-vous sur la zone T et la mâchoire, soyez doux autour des yeux."
       },
       {
-        "h": "Rincez et séchez en tamponnant",
-        "p": "Toujours tamponner, jamais frotter. Votre peau est prête pour le tonique."
+        "h": "Rincez et séchez en tapotant",
+        "p": "Tapotez toujours, ne frottez jamais. Votre peau est prête pour la lotion tonique."
       }
     ],
     "benefitGrad": "linear-gradient(160deg,#C5DAEA,#A0C4D6)",
@@ -2844,8 +2844,8 @@ export const PRODUCTS = {
     ]
   },
   "hydrating-toner": {
-    "name": "Hydrating Toner",
-    "nameBreak": "Hydrating<br>Toner.",
+    "name": "Lotion Tonique Hydratante",
+    "nameBreak": "Lotion Tonique<br>Hydratante.",
     "step": "02 · Tonifier",
     "stepNum": 2,
     "price": "€24",
@@ -2925,7 +2925,7 @@ export const PRODUCTS = {
     "howÉtapes": [
       {
         "h": "Nettoyez d'abord",
-        "p": "Toujours appliquer sur une peau fraîchement nettoyée. Le tonique sur une peau non nettoyée ne fait que superposer les résidus."
+        "p": "Toujours appliquer sur une peau fraîchement nettoyée. La lotion tonique sur une peau non nettoyée ne fait que superposer les résidus."
       },
       {
         "h": "Vaporisez ou versez et tamponnez",
@@ -2941,10 +2941,10 @@ export const PRODUCTS = {
       }
     ],
     "benefitGrad": "linear-gradient(160deg,#C9D7C9,#A3BFA3)",
-    "quote": "\"Je pensais que les toniques étaient démodés. Celui-ci a fait que tout le reste fonctionne mieux.\"",
-    "benefitTitle": "Pas un tonique au sens classique. <em>Un rituel de préparation.</em>",
+    "quote": "\"Je pensais que les lotions toniques étaient démodées. Celle-ci a fait que tout le reste fonctionne mieux.\"",
+    "benefitTitle": "Pas une lotion tonique au sens classique. <em>Un rituel de préparation.</em>",
     "benefitBody": [
-      "Le tonique à l'ancienne décapait. Celui-ci prépare — pH, hydratation et barrière à la fois. La différence se voit dans l'absorption de vos sérums, pas dans la sensation du produit seul.",
+      "La lotion tonique à l'ancienne décapait. Celle-ci prépare — pH, hydratation et barrière à la fois. La différence se voit dans l'absorption de vos sérums, pas dans la sensation du produit seul.",
       "Une étape qui fait travailler les trois suivantes plus efficacement."
     ],
     "stats": [
@@ -2964,11 +2964,11 @@ export const PRODUCTS = {
         "l": "Alcool, parfum, colorants"
       }
     ],
-    "faqTitle": "Questions sur <em>le tonique.</em>",
+    "faqTitle": "Questions sur <em>la lotion tonique.</em>",
     "faqs": [
       {
-        "q": "Ai-je vraiment besoin d'un tonique ?",
-        "a": "Pas toutes les peaux. Mais si vous utilisez des sérums avec des actifs, un tonique hydratant à pH équilibré améliore nettement l'absorption. Pensez-y comme la fine couche qui permet à tout le reste de fonctionner."
+        "q": "Ai-je vraiment besoin d'une lotion tonique ?",
+        "a": "Pas toutes les peaux. Mais si vous utilisez des sérums avec des actifs, une lotion tonique hydratante à pH équilibré améliore nettement l'absorption. Pensez-y comme la fine couche qui permet à tout le reste de fonctionner."
       },
       {
         "q": "Puis-je utiliser un coton à la place des mains ?",

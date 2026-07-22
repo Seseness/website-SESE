@@ -451,7 +451,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   <!-- Gebruiksaanwijzing + Veelgestelde vragen -->
   <section class="section-grid">
     <div>
-      <div class="eb">Gebruiksaanwijzing</div>
+      <div class="eb">Hoe te gebruiken</div>
       <h2>${p.howTitle}</h2>
       <div class="howto"><div class="steps2">${howHtml}</div></div>
     </div>
@@ -723,7 +723,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   <!-- Comment utiliser + FAQ -->
   <section class="section-grid">
     <div>
-      <div class="eb">Comment utiliser</div>
+      <div class="eb">Comment l'utiliser</div>
       <h2>${p.howTitle}</h2>
       <div class="howto"><div class="steps2">${howHtml}</div></div>
     </div>
