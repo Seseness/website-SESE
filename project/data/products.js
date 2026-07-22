@@ -10,7 +10,7 @@ export const PRODUCTS = {
       "volPrice": "€0.17/ml",
       "tagline": "Removes the day gently, leaves the barrier intact. The kind of cleanse that feels like almost nothing happened, except everything that needed to go is gone.",
       "chips": [
-        "Gel-to-foam",
+        "Foaming cleanser",
         "Gentle",
         "AM / PM",
         "All skin types"
@@ -134,10 +134,6 @@ export const PRODUCTS = {
         {
           "q": "Can I use it twice a day?",
           "a": "Yes. It's designed for both morning and evening. The Gluconolactone dose is low enough for daily double use."
-        },
-        {
-          "q": "What does \"gel-to-foam\" mean exactly?",
-          "a": "The product dispenses as a light gel and transforms into a soft foam when it meets water. No pump aerosol needed. Just your hands and a little water."
         }
       ],
       "inci": "Aqua, Aloe Barbadensis Leaf Juice, Glycerin, Coco-Glucoside, Gluconolactone, Panthenol, Chamomilla Recutita Flower Extract, Sodium Cocoyl Glutamate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
@@ -1357,7 +1353,7 @@ export const PRODUCTS = {
       "volPrice": "€0,17/ml",
       "tagline": "Verwijdert de dag zachtjes, laat de huidbarrière intact. Het soort reiniging dat aanvoelt als bijna niets, behalve dat alles wat weg moest, ook echt weg is.",
       "chips": [
-        "Gel-naar-schuim",
+        "Schuimreiniger",
         "Zacht",
         "Ochtend / Avond",
         "Alle huidtypes"
@@ -1472,19 +1468,15 @@ export const PRODUCTS = {
       "faqs": [
         {
           "q": "Kan ik het gebruiken om make-up te verwijderen?",
-          "a": "Het verwijdert lichte make-up effectief. Voor volledige dekking of SPF, raden we een speciale make-up remover of micellair water aan, gevolgd door Cleansing Foam."
+          "a": "Het verwijdert lichte make-up effectief. Voor volledige coverage of SPF raden we aan om eerst een specifieke make-upremover of micellair water te gebruiken, gevolgd door de Cleansing Foam."
         },
         {
-          "q": "Is het veilig voor gevoelige of reactieve huid?",
-          "a": "Ja. De formule is geurvrij, sulfaatvrij en gebruikt een enkele milde PHA in plaats van AHA's of BHA's. Als je huid ernstig reactief is, doe dan twee avonden een patchtest."
+          "q": "Is het veilig voor de gevoelige of reactieve huid?",
+          "a": "Ja. De formule is parfumvrij, sulfaatvrij, en bevat een enkel mild PHA in plaats van AHA's of BHA's. Als je huid erg reactief is, test dan eerst twee avonden op een klein huidoppervlak."
         },
         {
           "q": "Kan ik het twee keer per dag gebruiken?",
-          "a": "Ja — het is ontworpen voor zowel ochtend als avond. De gluconolactondosis is laag genoeg voor dagelijks dubbel gebruik."
-        },
-        {
-          "q": "Wat betekent \"gel-tot-schuim\" precies?",
-          "a": "Het product komt uit als een licht gel en verandert in een zachte mousse wanneer het water ontmoet. Geen pompspray nodig — gewoon je handen en een beetje water."
+          "a": "Ja. Het is ontwikkeld voor zowel ochtend- als avondgebruik. De dosis Gluconolactone is laag genoeg voor dagelijks dubbel gebruik."
         }
       ],
       "inci": "Aqua, Aloe Barbadensis Leaf Juice, Glycerin, Coco-Glucoside, Gluconolactone, Panthenol, Chamomilla Recutita Flower Extract, Sodium Cocoyl Glutamate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
@@ -2704,7 +2696,7 @@ export const PRODUCTS = {
     "volPrice": "0,17 €/ml",
     "tagline": "Élimine la journée en douceur, préserve la barrière cutanée. Le genre de nettoyage qui semble ne presque rien faire, sauf que tout ce qui devait partir est bel et bien parti.",
     "chips": [
-      "Gel-en-mousse",
+      "Mousse nettoyante",
       "Doux",
       "Matin / Soir",
       "Tous types de peau"
@@ -2818,20 +2810,16 @@ export const PRODUCTS = {
     "faqTitle": "Questions sur <em>ce nettoyant.</em>",
     "faqs": [
       {
-        "q": "Puis-je l'utiliser pour retirer mon maquillage ?",
-        "a": "Il retire efficacement le maquillage léger. Pour une couverture complète ou une protection SPF, nous recommandons un démaquillant dédié ou une eau micellaire d'abord, suivi du Nettoyant Moussant."
+        "q": "Puis-je l'utiliser pour démaquiller ?",
+        "a": "Il élimine efficacement le maquillage léger. Pour un maquillage couvrant ou une protection solaire, nous recommandons d'utiliser d'abord un démaquillant dédié ou une eau micellaire, suivi de la Cleansing Foam."
       },
       {
-        "q": "Est-il sûr pour peau sensible ou réactive ?",
-        "a": "Oui. La formule est sans parfum, sans sulfates, et utilise un seul PHA doux plutôt que des AHA ou BHA. Si votre peau est très réactive, faites un test cutané pendant deux soirs."
+        "q": "Convient-il aux peaux sensibles ou réactives ?",
+        "a": "Oui. La formule est sans parfum, sans sulfates, et contient un seul PHA doux plutôt que des AHA ou BHA. Si votre peau est très réactive, faites un test sur deux soirs."
       },
       {
         "q": "Puis-je l'utiliser deux fois par jour ?",
-        "a": "Oui. Elle est conçue pour un usage matin et soir. La dose de gluconolactone est assez faible pour un double usage quotidien."
-      },
-      {
-        "q": "Que signifie exactement « gel-mousse » ?",
-        "a": "Le produit se distribue sous forme de gel léger et se transforme en mousse douce au contact de l'eau. Pas besoin de pompe aérosol. Juste vos mains et un peu d'eau."
+        "a": "Oui. Il est conçu pour une utilisation matin et soir. La dose de gluconolactone est suffisamment faible pour un usage quotidien double."
       }
     ],
     "inci": "Aqua, Aloe Barbadensis Leaf Juice, Glycerin, Coco-Glucoside, Gluconolactone, Panthenol, Chamomilla Recutita Flower Extract, Sodium Cocoyl Glutamate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
