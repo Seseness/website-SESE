@@ -173,7 +173,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
   <section class="routine-strip">
     <div class="heading"><div class="eb">Where it fits</div><h3>Step <em>${ROUTINE_STEPS[p.routineActive].n} · ${ROUTINE_STEPS[p.routineActive].l}</em> in the SESE ritual.</h3></div>
     <div class="steps">${routineSteps}</div>
-    <div class="cta"><a href="bundle-contents.html?b=full-ritual">See the full ritual →</a></div>
+    <div class="cta"><a href="bundle-contents.html?b=full-ritual">See the complete edit →</a></div>
   </section>` : ''}
 
   <!-- How to use + FAQ -->
