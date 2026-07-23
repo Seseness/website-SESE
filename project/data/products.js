@@ -2659,20 +2659,20 @@ export const PRODUCTS = {
       "faqTitle": "Vragen over <em>SPF 50 Stick.</em>",
       "faqs": [
         {
-          "q": "Is het rifveilig?",
-          "a": "Ja. De formule gebruikt alleen minerale UV-filters (zinkoxide en titaandioxide) — beide worden beschouwd als rifveilig. Geen oxybenzon, geen octinoxaat."
+          "q": "Is het rifvriendelijk?",
+          "a": "Ja. De formule bevat uitsluitend minerale UV-filters (zinkoxide en titaandioxide). Beide worden beschouwd als rifvriendelijk. Geen oxybenzon, geen octinoxaat."
         },
         {
           "q": "Laat het een witte waas achter?",
-          "a": "Minder dan de meeste minerale zonnebrandmiddelen. De zinkdeeltjesgrootte is geoptimaliseerd om de waas op lichte tot middelmatige huidtinten te minimaliseren. Diepere huidtinten kunnen een lichte helderheid opmerken — mengen met vingertoppen na toepassing helpt aanzienlijk."
+          "a": "Minder dan de meeste minerale zonnebrandcrèmes. De grootte van de zinkdeeltjes is geoptimaliseerd om waas op een lichte tot medium huidtint te minimaliseren. Bij een diepere huidtint kan een lichte glans zichtbaar zijn; goed verdelen met de vingertoppen na het aanbrengen helpt hier aanzienlijk bij."
         },
         {
-          "q": "Kan ik het opnieuw aanbrengen over make-up?",
-          "a": "Ja — dat is de voornaamste reden dat het een stick is. Veeg direct over make-up, meng dan licht met een vingertop of een kwastje. Veel gemakkelijker dan een vloeibare SPF hertoepassing."
+          "q": "Kan ik het gebruiken om te herhalen over make-up?",
+          "a": "Ja. Dat is precies de reden waarom het een stift is. Trek rechtstreeks over je make-up, verdeel daarna licht met een vingertop of een kwast. Veel eenvoudiger dan het herhalen van een vloeibare SPF."
         },
         {
           "q": "Is het geschikt voor kinderen?",
-          "a": "Alleen-minerale SPF wordt over het algemeen beschouwd als veiliger voor de huid van kinderen. Deze formule is echter ontworpen en getest voor gebruik op het gezicht van volwassenen. Raadpleeg voor kinderen een kinderdermatologoog."
+          "a": "Zuiver minerale SPF wordt over het algemeen beschouwd als veiliger voor de huid van kinderen. Deze formule is echter ontwikkeld en getest voor gebruik op het gezicht van volwassenen. Raadpleeg voor kinderen een kinderdermatoloog."
         }
       ],
       "inci": "Zinc Oxide (20%), Titanium Dioxide (5%), Caprylic/Capric Triglyceride, Butyrospermum Parkii (Shea) Butter, Simmondsia Chinensis (Jojoba) Seed Oil, Candelilla Cera, Euphorbia Cerifera (Candelilla) Wax, Tocopherol, Mica, CI 77491, CI 77492.",
@@ -3999,23 +3999,23 @@ export const PRODUCTS = {
         "l": "Filtres UV chimiques, parfum, oxybenzone"
       }
     ],
-    "faqTitle": "Questions sur <em>le SPF 50 Sunscreen Stick.</em>",
+    "faqTitle": "Questions sur <em>SPF 50 Stick.</em>",
     "faqs": [
       {
         "q": "Est-il respectueux des récifs coralliens ?",
-        "a": "Oui. La formule utilise uniquement des filtres UV minéraux (oxyde de zinc et dioxyde de titane). Les deux sont considérés comme respectueux des récifs coralliens. Sans oxybenzone, sans octinoxate."
+        "a": "Oui. La formule utilise uniquement des filtres UV minéraux (oxyde de zinc et dioxyde de titane). Les deux sont considérés comme respectueux des récifs. Sans oxybenzone, sans octinoxate."
       },
       {
         "q": "Laisse-t-il des traces blanches ?",
-        "a": "Moins que la plupart des écrans solaires minéraux. La taille des particules de zinc est optimisée pour minimiser les traces blanches sur les peaux claires à moyennes. Les peaux plus foncées peuvent remarquer une légère luminosité ; fondre avec les doigts après application aide considérablement."
+        "a": "Moins que la plupart des crèmes solaires minérales. La taille des particules de zinc est optimisée pour minimiser les traces sur les peaux claires à moyennes. Les peaux plus foncées peuvent remarquer une légère luminosité ; bien fondre avec les doigts après application aide considérablement."
       },
       {
-        "q": "Puis-je l'utiliser pour réappliquer sur le maquillage ?",
-        "a": "Oui. C'est la raison principale du format stick. Passez-le directement sur le maquillage, puis fondez légèrement avec un doigt ou un pinceau. Bien plus facile qu'une réapplication de SPF liquide."
+        "q": "Puis-je l'utiliser pour réappliquer par-dessus le maquillage ?",
+        "a": "Oui. C'est d'ailleurs la principale raison de son format stick. Passez-le directement par-dessus le maquillage, puis fondez légèrement avec un doigt ou un pinceau. Bien plus simple qu'une réapplication de SPF liquide."
       },
       {
         "q": "Convient-il aux enfants ?",
-        "a": "Un SPF uniquement minéral est généralement considéré comme plus sûr pour la peau des enfants. Cependant, cette formule est conçue et testée pour un usage facial adulte. Pour les enfants, consultez un dermatologue pédiatrique."
+        "a": "Une SPF uniquement minérale est généralement considérée comme plus sûre pour la peau des enfants. Cette formule est toutefois conçue et testée pour une utilisation faciale chez l'adulte. Pour les enfants, consultez un dermatologue pédiatrique."
       }
     ],
     "inci": "Zinc Oxide (20%), Titanium Dioxide (5%), Caprylic/Capric Triglyceride, Butyrospermum Parkii (Shea) Butter, Simmondsia Chinensis (Jojoba) Seed Oil, Candelilla Cera, Euphorbia Cerifera (Candelilla) Wax, Tocopherol, Mica, CI 77491, CI 77492.",
