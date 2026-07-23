@@ -2613,23 +2613,23 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "Minerale filters. <em>Geen zorgen verder.</em>",
-      "howTitle": "Laatste stap. <em>Elke ochtend zonder uitzondering.</em>",
+      "howTitle": "Laatste stap. <em>Elke ochtend.</em>",
       "howStaps": [
         {
-          "h": "Laatste stap van de ochtendroutine",
-          "p": "Nadat moisturizer of dagcrème is ingetrokken. SPF bovenop alles — niet eronder."
+          "h": "Laatste stap van je ochtendroutine",
+          "p": "Nadat moisturizer of dagcrème is opgenomen. SPF bovenop alles, niet eronder."
         },
         {
           "h": "Twee tot drie strepen per zone",
-          "p": "Veeg direct over voorhoofd, elke wang, neus, kin. Meng dan licht met vingertoppen."
+          "p": "Trek rechtstreeks over voorhoofd, elke wang, neus en kin. Verdeel daarna licht met je vingertoppen."
         },
         {
-          "h": "Vergeet oren en nek niet",
-          "p": "UV-schade is overal cumulatief. Twee extra seconden per zijde."
+          "h": "Vergeet oren en hals niet",
+          "p": "UV-schade stapelt zich overal op. Twee extra seconden per kant."
         },
         {
-          "h": "Breng elke twee uur opnieuw aan buiten",
-          "p": "Geen SPF duurt de hele dag. Het stickformaat is ontworpen voor eenvoudige hertoepassing — stop het in je zak."
+          "h": "Herhaal om de twee uur bij buitengebruik",
+          "p": "Geen enkele SPF houdt de hele dag stand. Het stiftformaat is ontworpen voor eenvoudig herhalen, steek het in je zak."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#E8D5B0,#C8A870)",
@@ -3960,7 +3960,7 @@ export const PRODUCTS = {
     "howÉtapes": [
       {
         "h": "Dernière étape de la routine du matin",
-        "p": "Après absorption de la crème hydratante ou de jour. Le SPF par-dessus tout, jamais en dessous."
+        "p": "Une fois l'hydratant ou la crème de jour absorbé. La SPF au-dessus de tout, jamais en dessous."
       },
       {
         "h": "Deux à trois passages par zone",
@@ -3968,11 +3968,11 @@ export const PRODUCTS = {
       },
       {
         "h": "N'oubliez pas les oreilles et le cou",
-        "p": "Les dommages UV sont cumulatifs partout. Deux secondes de plus par côté."
+        "p": "Les dommages UV s'accumulent partout. Deux secondes de plus par côté."
       },
       {
         "h": "Réappliquez toutes les deux heures en extérieur",
-        "p": "Aucun SPF ne dure toute la journée. Le format stick est conçu pour une réapplication facile, glissez-le dans votre poche."
+        "p": "Aucune SPF ne dure toute la journée. Le format stick est conçu pour une réapplication facile, glissez-le dans votre poche."
       }
     ],
     "benefitGrad": "linear-gradient(160deg,#E8D5B0,#C8A870)",
