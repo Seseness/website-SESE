@@ -694,7 +694,7 @@ export const PRODUCTS = {
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#D8A48F,#C07F6A)",
-      "quote": "\"I'd tried retinol three times. This is the first one I've finished — and reordered.\"",
+      "quote": "\"I'd tried retinol three times. This is the first one I've finished. And reordered.\"",
       "benefitTitle": "All the renewal. <em>None of the adjustment phase.</em>",
       "benefitBody": [
         "Retinol works. But the peeling, the purging, the two months of red skin before things improve — that stops most people before the benefit arrives.",
@@ -2037,7 +2037,7 @@ export const PRODUCTS = {
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#D8A48F,#C07F6A)",
-      "quote": "\"Ik had retinol drie keer geprobeerd. Dit is de eerste die ik heb afgemaakt — en nabesteld.\"",
+      "quote": "\"Ik had retinol drie keer geprobeerd. Dit is de eerste die ik heb afgemaakt. En nabesteld.\"",
       "benefitTitle": "Alle vernieuwing. <em>Geen aanpassingsfase.</em>",
       "benefitBody": [
         "Retinol werkt. Maar het pellen, de zuivering, de twee maanden rode huid voor verbetering — dat stopt de meeste mensen voor het voordeel arriveert.",
@@ -2213,19 +2213,19 @@ export const PRODUCTS = {
       "faqs": [
         {
           "q": "Kan ik het onder make-up dragen?",
-          "a": "Ja — het is ontworpen om comfortabel onder foundation en SPF te zitten zonder pilling of vettigheid. Breng aan, wacht twee minuten voor volledige absorptie, breng dan SPF erop."
+          "a": "Ja. Het is ontworpen om comfortabel onder foundation en SPF te zitten zonder te pillen of vettig aan te voelen. Breng aan, wacht twee minuten voor volledige absorptie, en breng dan SPF aan."
         },
         {
-          "q": "Is het geschikt voor een gecombineerde huid?",
-          "a": "De formule is ontworpen voor normale tot droge huid. Als je een gecombineerde huid hebt, kan de textuur iets te rijk zijn op de T-zone. Probeer in dat geval een kleinere hoeveelheid of sla neus en voorhoofd over."
+          "q": "Is het geschikt voor de gecombineerde huid?",
+          "a": "De formule is ontwikkeld voor de normale tot droge huid. Bij een gecombineerde huid kan de textuur iets rijk aanvoelen op de T-zone. Probeer in dat geval een kleinere hoeveelheid of sla de neus en het voorhoofd over."
         },
         {
           "q": "Bevat het SPF?",
-          "a": "Nee, en bewust zo. Het combineren van moisturizer en SPF in één product betekent gewoonlijk lagere werkzaamheid in beide. We raden SESE SPF 50 Sunscreen Stick aan als een speciale zonbeschermingsstap."
+          "a": "Nee, en dat is bewust zo. Het combineren van een moisturizer en SPF in één product zorgt meestal voor een lagere effectiviteit van beide. We raden SESE SPF 50 Sunscreen Stick aan als aparte, doelgerichte zonbeschermingsstap."
         },
         {
           "q": "Kan ik het ook 's avonds gebruiken?",
-          "a": "Dat kan in een noodgeval, maar de Ceramide Night Cream is geformuleerd voor overnight herstel met rijkere actieve stoffen. De dagcrème 's avonds gebruiken is niet schadelijk, maar gewoon niet optimaal."
+          "a": "Dat kan in een noodgeval, maar Ceramide Night Cream is speciaal ontwikkeld voor herstel tijdens de nacht met rijkere actieve ingrediënten. De dagcrème 's avonds gebruiken is niet schadelijk, maar gewoon niet optimaal."
         }
       ],
       "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Squalane, Niacinamide (4%), Hydroxyproline, Tocopherol, Glyceryl Stearate, Cetyl Alcohol, Sodium Hyaluronate, Xanthan Gum, Phenoxyethanol, Citric Acid.",
@@ -3380,7 +3380,7 @@ export const PRODUCTS = {
       }
     ],
     "benefitGrad": "linear-gradient(160deg,#D8A48F,#C07F6A)",
-    "quote": "\"J'avais essayé le rétinol trois fois. C'est le premier que j'ai fini — et recommandé.\"",
+    "quote": "\"J'avais essayé le rétinol trois fois. C'est le premier que j'ai fini. Et recommandé.\"",
     "benefitTitle": "Tout le renouvellement. <em>Aucune phase d'adaptation.</em>",
     "benefitBody": [
       "Le rétinol fonctionne. Mais la desquamation, la purge, les deux mois de peau rouge avant l'amélioration — cela arrête la plupart des gens avant que le bénéfice n'arrive.",
@@ -3555,20 +3555,20 @@ export const PRODUCTS = {
     "faqTitle": "Questions sur <em>la crème de jour.</em>",
     "faqs": [
       {
-        "q": "Puis-je la porter sous le maquillage ?",
-        "a": "Oui. Elle est conçue pour se porter confortablement sous le fond de teint et le SPF sans peluchage ni effet gras. Appliquez, attendez deux minutes pour une absorption complète, puis superposez le SPF par-dessus."
+        "q": "Puis-je le porter sous mon maquillage ?",
+        "a": "Oui. Il est conçu pour se fondre agréablement sous le fond de teint et la SPF, sans pilling ni effet gras. Appliquez, patientez deux minutes pour une absorption complète, puis superposez la SPF."
       },
       {
-        "q": "Convient-elle à la peau mixte ?",
-        "a": "La formule est conçue pour peau normale à sèche. Si vous avez une peau mixte, vous pourriez trouver la texture légèrement riche sur la zone T. Dans ce cas, essayez une quantité plus légère ou évitez le nez et le front."
+        "q": "Convient-elle aux peaux mixtes ?",
+        "a": "La formule est conçue pour les peaux normales à sèches. Si vous avez une peau mixte, la texture peut sembler légèrement riche sur la zone T. Dans ce cas, essayez une quantité plus légère ou évitez le nez et le front."
       },
       {
-        "q": "Contient-elle du SPF ?",
-        "a": "Non, et c'est intentionnel. Combiner hydratant et SPF dans un seul produit signifie généralement une efficacité moindre pour les deux. Nous recommandons le SPF 50 Sunscreen Stick SESE par-dessus comme étape de protection solaire dédiée."
+        "q": "Contient-elle une protection SPF ?",
+        "a": "Non, et c'est volontaire. Combiner un hydratant et une SPF dans un seul produit réduit généralement l'efficacité des deux. Nous recommandons SESE SPF 50 Sunscreen Stick en complément, comme étape dédiée à la protection solaire."
       },
       {
         "q": "Puis-je aussi l'utiliser le soir ?",
-        "a": "Vous le pouvez en dépannage, mais la Ceramide Night Cream est formulée pour la réparation nocturne avec des actifs plus riches. Utiliser la crème de jour la nuit n'est pas nocif, juste pas optimal."
+        "a": "Vous le pouvez en cas de besoin, mais Ceramide Night Cream est formulée pour une réparation nocturne avec des actifs plus riches. Utiliser la crème de jour le soir n'est pas nocif, simplement pas optimal."
       }
     ],
     "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Squalane, Niacinamide (4%), Hydroxyproline, Tocopherol, Glyceryl Stearate, Cetyl Alcohol, Sodium Hyaluronate, Xanthan Gum, Phenoxyethanol, Citric Acid.",
