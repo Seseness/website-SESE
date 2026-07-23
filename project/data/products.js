@@ -1573,8 +1573,8 @@ export const PRODUCTS = {
           "p": "Breng altijd aan op pas gereinigde huid. Toner op ongereinigde huid stapelt gewoon residu op."
         },
         {
-          "h": "Gieten en deppen",
-          "p": "Giet een kleine hoeveelheid in schone handpalmen en druk het zachtjes in de huid."
+          "h": "Druppelen en deppen",
+          "p": "Druppel een kleine hoeveelheid in schone handpalmen en druk het zachtjes in de huid."
         },
         {
           "h": "Niet wrijven, geen wattenschijfjes",
