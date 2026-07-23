@@ -372,14 +372,14 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "Stable actives, <em>honest results.</em>",
-      "howTitle": "Three drops. <em>Every morning.</em>",
+      "howTitle": "One to two drops. <em>Every morning.</em>",
       "howSteps": [
         {
           "h": "After cleansing and toner",
           "p": "Apply to clean, toned skin. Vitamin C absorbs best on a pH-balanced base."
         },
         {
-          "h": "Warm three drops in your palms",
+          "h": "Warm one to two drops in your palms",
           "p": "Press firmly across cheeks, forehead, chin and neck. Pat. Don't rub."
         },
         {
@@ -1715,14 +1715,14 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "Stabiele actieve stoffen, <em>eerlijke resultaten.</em>",
-      "howTitle": "Drie druppels. <em>Elke ochtend.</em>",
+      "howTitle": "Eén tot twee druppels. <em>Elke ochtend.</em>",
       "howStaps": [
         {
           "h": "Na reiniging en toner",
           "p": "Breng aan op schone, getonde huid. Vitamine C absorbeert het best op een pH-gebalanceerde basis."
         },
         {
-          "h": "Verwarm drie druppels in je handpalmen",
+          "h": "Warm één tot twee druppels op in je handpalmen",
           "p": "Druk stevig over wangen, voorhoofd, kin en nek. Deppen — niet wrijven."
         },
         {
@@ -3058,15 +3058,15 @@ export const PRODUCTS = {
       }
     ],
     "ingTitle": "Actifs stables, <em>résultats honnêtes.</em>",
-    "howTitle": "Trois gouttes. <em>Chaque matin.</em>",
+    "howTitle": "Une à deux gouttes. <em>Chaque matin.</em>",
     "howÉtapes": [
       {
         "h": "Après nettoyage et lotion tonique",
         "p": "Appliquer sur une peau propre et tonifiée. La vitamine C s'absorbe mieux sur une base au pH équilibré."
       },
       {
-        "h": "Réchauffez trois gouttes dans vos paumes",
-        "p": "Press firmly across cheeks, forehead, chin and neck. Pat — don't rub."
+        "h": "Réchauffez une à deux gouttes dans vos paumes",
+        "p": "Pressez fermement sur les joues, le front, le menton et le cou. Tapotez, ne frottez pas."
       },
       {
         "h": "Attendez soixante secondes",
