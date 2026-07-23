@@ -521,7 +521,7 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "Honest helpers, <em>not heroes.</em>",
-      "howTitle": "Three slow drops, <em>twice a day.</em>",
+      "howTitle": "One to two slow drops, <em>twice a day.</em>",
       "howSteps": [
         {
           "h": "Cleanse and tone",
@@ -1864,23 +1864,23 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "Eerlijke helpers, <em>geen helden.</em>",
-      "howTitle": "Drie langzame druppels, <em>twee keer per dag.</em>",
+      "howTitle": "Eén tot twee trage druppels, <em>twee keer per dag.</em>",
       "howStaps": [
         {
-          "h": "Reinig en toneer",
-          "p": "Begin op een schoon, licht vochtig gezicht. SESE Cleansing Foam, dan Hydrating Toner, zachtjes ingedrukt in de huid."
+          "h": "Reinig en tone",
+          "p": "Start met een schoon, licht vochtig gezicht. SESE Cleansing Foam, gevolgd door Hydrating Toner aangedrukt in de huid."
         },
         {
-          "h": "Verwarm drie tot vier druppels",
-          "p": "Druk de pomp in en verwarm het serum tussen je vingertoppen. Dep — nooit wrijven — over wangen, voorhoofd, nek."
+          "h": "Warm één tot twee druppels op",
+          "p": "Druk op de pomp en warm het serum op tussen je vingertoppen. Dep, wrijf nooit, over wangen, voorhoofd en hals."
         },
         {
-          "h": "Laat intrekken, dan laag op laag",
-          "p": "Wacht ~60 seconden. Volg met Firming Day Cream 's ochtends, Ceramide Night Cream 's avonds."
+          "h": "Laat het intrekken, breng dan de volgende laag aan",
+          "p": "Wacht ongeveer 60 seconden. Volg met Firming Day Cream in de ochtend, Ceramide Night Cream in de avond."
         },
         {
-          "h": "Sluit af met SPF 's ochtends",
-          "p": "SPF 50 Sunscreen Stick is de onmisbare laatste stap voor de dag begint."
+          "h": "Sluit af met SPF in de ochtend",
+          "p": "SPF 50 Sunscreen Stick is de niet-onderhandelbare laatste stap voor je dag begint."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#F5C98A,#E0AC58)",
@@ -3207,22 +3207,22 @@ export const PRODUCTS = {
       }
     ],
     "ingTitle": "Des alliés honnêtes, <em>pas des héros.</em>",
-    "howTitle": "Trois gouttes lentement, <em>deux fois par jour.</em>",
+    "howTitle": "Une à deux gouttes lentement, <em>deux fois par jour.</em>",
     "howÉtapes": [
       {
         "h": "Nettoyez et tonifiez",
-        "p": "Commencez sur un visage propre et légèrement humide. Cleansing Foam SESE, puis Hydrating Toner, pressé délicatement dans la peau."
+        "p": "Commencez sur un visage propre et légèrement humide. SESE Cleansing Foam, puis Hydrating Toner pressé dans la peau."
       },
       {
-        "h": "Une à deux pressions",
-        "p": "Pressez la pompe et réchauffez le sérum entre vos doigts. Tamponnez, ne frottez jamais, sur les joues, le front, le cou."
+        "h": "Réchauffez une à deux gouttes",
+        "p": "Appuyez sur la pompe et réchauffez le sérum entre vos doigts. Tapotez, ne frottez jamais, sur les joues, le front et le cou."
       },
       {
         "h": "Laissez pénétrer, puis superposez",
-        "p": "Attendez environ 60 secondes. Suivez avec la Firming Day Cream le matin, la Ceramide Night Cream le soir."
+        "p": "Patientez environ 60 secondes. Poursuivez avec Firming Day Cream le matin, Ceramide Night Cream le soir."
       },
       {
-        "h": "Terminez par le SPF le matin",
+        "h": "Terminez par la SPF le matin",
         "p": "Le SPF 50 Sunscreen Stick est l'étape finale non négociable avant de commencer la journée."
       }
     ],
