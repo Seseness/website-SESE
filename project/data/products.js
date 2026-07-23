@@ -223,15 +223,15 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "The bridge <em>between clean and treated.</em>",
-      "howTitle": "Mist. Pat. Done.",
+      "howTitle": "Drop. Pat. Done.",
       "howSteps": [
         {
           "h": "Cleanse first",
           "p": "Always apply to freshly cleansed skin. Toner on uncleansed skin just layers residue."
         },
         {
-          "h": "Mist or pour and pat",
-          "p": "Hold 20 cm from face and mist evenly, or pour a small amount and press gently into skin with clean palms."
+          "h": "Pour and pat",
+          "p": "Pour a small amount into clean palms and press it gently into the skin."
         },
         {
           "h": "No rubbing, no cotton pads",
@@ -274,7 +274,7 @@ export const PRODUCTS = {
         },
         {
           "q": "Can I use a cotton pad instead of hands?",
-          "a": "You can. We prefer hands. Less product wasted, less dragging. But if a cotton pad is your preference, use a soft, unbleached one."
+          "a": "We don't recommend it. Cotton pads absorb product and drag against the skin, wasting product and reducing effectiveness. Clean palms give the best result with zero waste."
         },
         {
           "q": "Is the niacinamide concentration safe for sensitive skin?",
@@ -282,7 +282,7 @@ export const PRODUCTS = {
         },
         {
           "q": "Does it work as a facial mist during the day?",
-          "a": "You can use it as a quick refresh mid-day, but the main benefit is in the prep step. A daytime mist won't have the same absorption-boosting effect."
+          "a": "It's formulated for hand application, not misting. For a midday refresh, pour a small amount into clean palms and press it into the skin rather than spraying."
         }
       ],
       "inci": "Aqua, Rosa Damascena Flower Water, Glycerin, Niacinamide (3%), Propanediol, Sodium Hyaluronate, Ceramide NP, Betaine, Panthenol, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
@@ -525,7 +525,7 @@ export const PRODUCTS = {
       "howSteps": [
         {
           "h": "Cleanse and tone",
-          "p": "Start on a clean, slightly damp face. SESE Cleansing Foam, then a mist of Hydrating Toner."
+          "p": "Start on a clean, slightly damp face. SESE Cleansing Foam, then Hydrating Toner pressed into skin."
         },
         {
           "h": "Warm one to two drops",
@@ -1566,23 +1566,23 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "De brug <em>tussen gereinigd en behandeld.</em>",
-      "howTitle": "Mist. Dep. Klaar.",
+      "howTitle": "Druppelen. Deppen. Klaar.",
       "howStaps": [
         {
           "h": "Reinig eerst",
-          "p": "Breng altijd aan op vers gereinigde huid. Toner op ongereinigde huid stapelt residuen op."
+          "p": "Breng altijd aan op pas gereinigde huid. Toner op ongereinigde huid stapelt gewoon residu op."
         },
         {
-          "h": "Mist of giet en dep",
-          "p": "Houd 20 cm van het gezicht en mist gelijkmatig, of giet een kleine hoeveelheid en druk zacht in de huid met schone handpalmen."
+          "h": "Gieten en deppen",
+          "p": "Giet een kleine hoeveelheid in schone handpalmen en druk het zachtjes in de huid."
         },
         {
-          "h": "Niet wrijven, geen wattenstaafjes",
-          "p": "Wattenstaafjes absorberen product en trekken aan de huid. Handpalmen drukken het in zonder verspilling."
+          "h": "Niet wrijven, geen wattenschijfjes",
+          "p": "Wattenschijfjes absorberen product en trekken aan de huid. Handpalmen drukken het in zonder verspilling."
         },
         {
-          "h": "Ga direct naar serum",
-          "p": "Breng je serum aan binnen 30 seconden — getonde, vochtige huid absorbeert actieve stoffen aanzienlijk beter."
+          "h": "Ga direct verder met je serum",
+          "p": "Breng je serum aan binnen 30 seconden. Getonde, vochtige huid absorbeert actieve ingrediënten aanzienlijk beter."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#C9D7C9,#A3BFA3)",
@@ -1616,8 +1616,8 @@ export const PRODUCTS = {
           "a": "Niet elke huid heeft het nodig. Maar als je serums met actieve stoffen gebruikt, verbetert een pH-gebalanceerde, hydraterende toner de absorptie aanzienlijk. Zie het als de dunne laag die alles anders laat werken."
         },
         {
-          "q": "Kan ik een wattenpad gebruiken in plaats van handen?",
-          "a": "Dat kan. Wij geven de voorkeur aan handen — minder product verspild, minder trekken. Maar als een wattenpad je voorkeur heeft, gebruik dan een zachte, ongebleekte."
+          "q": "Kan ik een wattenschijfje gebruiken in plaats van handen?",
+          "a": "We raden het niet aan. Wattenschijfjes absorberen product en trekken aan de huid, wat product verspilt en de werking vermindert. Schone handpalmen geven het beste resultaat, zonder verspilling."
         },
         {
           "q": "Is de niacinamideconcentratie veilig voor gevoelige huid?",
@@ -1625,7 +1625,7 @@ export const PRODUCTS = {
         },
         {
           "q": "Werkt het als gezichtsmist overdag?",
-          "a": "Je kunt het gebruiken als een snelle opfrissing midden op de dag, maar het grootste voordeel zit in de voorbereidingsstap. Een mist overdag heeft niet hetzelfde absorptieversterkende effect."
+          "a": "Het is ontwikkeld om met de handen aan te brengen, niet om te sprayen. Voor een opfrisser halverwege de dag: giet een kleine hoeveelheid in schone handpalmen en druk het in de huid in plaats van te sprayen."
         }
       ],
       "inci": "Aqua, Rosa Damascena Flower Water, Glycerin, Niacinamide (3%), Propanediol, Sodium Hyaluronate, Ceramide NP, Betaine, Panthenol, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
@@ -1868,7 +1868,7 @@ export const PRODUCTS = {
       "howStaps": [
         {
           "h": "Reinig en toneer",
-          "p": "Begin op een schoon, licht vochtig gezicht. SESE Cleansing Foam, dan een mist Hydrating Toner."
+          "p": "Begin op een schoon, licht vochtig gezicht. SESE Cleansing Foam, dan Hydrating Toner, zachtjes ingedrukt in de huid."
         },
         {
           "h": "Verwarm drie tot vier druppels",
@@ -1911,7 +1911,7 @@ export const PRODUCTS = {
       "faqs": [
         {
           "q": "Kan ik Peptide Serum gebruiken met retinol of Vitamine C?",
-          "a": "Ja — peptiden combineren goed met beide. Wij raden aan: Vitamine C 's ochtends, Peptide Serum 's ochtends of 's avonds, en ons Retinol Alternatief op afwisselende avonden als je ook zachte vernieuwing wilt."
+          "a": "Ja — peptiden combineren goed met beide. Wij raden aan: Vitamine C 's ochtends, Peptide Serum 's ochtends of 's avonds, en ons Retinol Alternative op afwisselende avonden als je ook zachte vernieuwing wilt."
         },
         {
           "q": "Hoe lang voor ik een verschil zie?",
@@ -2068,7 +2068,7 @@ export const PRODUCTS = {
         },
         {
           "q": "Kan ik het stapelen met het Peptide Serum?",
-          "a": "Ja — breng eerst Retinol Alternatief aan, wacht zestig seconden, dan Peptide Serum. Of gebruik Peptide 's ochtends en Retinol Alternatief 's avonds, wat je routine schoon houdt en je huid voor overbelasting bewaart."
+          "a": "Ja — breng eerst Retinol Alternative aan, wacht zestig seconden, dan Peptide Serum. Of gebruik Peptide 's ochtends en Retinol Alternative 's avonds, wat je routine schoon houdt en je huid voor overbelasting bewaart."
         },
         {
           "q": "Zal mijn huid schilferen of zuiveren?",
@@ -2909,15 +2909,15 @@ export const PRODUCTS = {
       }
     ],
     "ingTitle": "Le pont <em>entre nettoyage et soin.</em>",
-    "howTitle": "Vaporisez. Tamponnez. Terminé.",
+    "howTitle": "Verser quelques gouttes. Tapoter. Terminé.",
     "howÉtapes": [
       {
         "h": "Nettoyez d'abord",
-        "p": "Toujours appliquer sur une peau fraîchement nettoyée. La lotion tonique sur une peau non nettoyée ne fait que superposer les résidus."
+        "p": "Appliquez toujours sur une peau fraîchement nettoyée. Une lotion tonique sur une peau non nettoyée ne fait qu'ajouter des résidus."
       },
       {
-        "h": "Vaporisez ou versez et tamponnez",
-        "p": "Tenez à 20 cm du visage et vaporisez uniformément, ou versez une petite quantité et pressez doucement sur la peau avec des paumes propres."
+        "h": "Verser et tapoter",
+        "p": "Versez une petite quantité dans des paumes propres et pressez-la délicatement dans la peau."
       },
       {
         "h": "Pas de frottement, pas de coton",
@@ -2960,7 +2960,7 @@ export const PRODUCTS = {
       },
       {
         "q": "Puis-je utiliser un coton à la place des mains ?",
-        "a": "Vous le pouvez. Nous préférons les mains. Moins de gaspillage, moins de frottement sur la peau. Mais si le coton est votre préférence, utilisez-en un doux et non blanchi."
+        "a": "Nous ne le recommandons pas. Les cotons absorbent le produit et tirent sur la peau, ce qui gaspille le produit et réduit son efficacité. Des paumes propres donnent le meilleur résultat, sans gaspillage."
       },
       {
         "q": "La concentration en niacinamide est-elle sûre pour peau sensible ?",
@@ -2968,7 +2968,7 @@ export const PRODUCTS = {
       },
       {
         "q": "Fonctionne-t-il comme brume faciale pendant la journée ?",
-        "a": "Vous pouvez l'utiliser comme rafraîchissement rapide en journée, mais le bénéfice principal se trouve dans l'étape de préparation. Une brume diurne n'aura pas le même effet stimulant sur l'absorption."
+        "a": "Il est formulé pour une application à la main, pas pour la vaporisation. Pour un rafraîchissement en journée, versez une petite quantité dans des paumes propres et pressez-la dans la peau plutôt que de vaporiser."
       }
     ],
     "inci": "Aqua, Rosa Damascena Flower Water, Glycerin, Niacinamide (3%), Propanediol, Sodium Hyaluronate, Ceramide NP, Betaine, Panthenol, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
@@ -3061,7 +3061,7 @@ export const PRODUCTS = {
     "howTitle": "Trois gouttes. <em>Chaque matin.</em>",
     "howÉtapes": [
       {
-        "h": "Après nettoyage et tonique",
+        "h": "Après nettoyage et lotion tonique",
         "p": "Appliquer sur une peau propre et tonifiée. La vitamine C s'absorbe mieux sur une base au pH équilibré."
       },
       {
@@ -3104,8 +3104,8 @@ export const PRODUCTS = {
     "faqTitle": "Questions sur <em>la vitamine C.</em>",
     "faqs": [
       {
-        "q": "Puis-je l'utiliser avec le Sérum aux Peptides ?",
-        "a": "Oui. Ils se complètent bien. Utilisez la Vitamine C le matin et le Sérum aux Peptides le matin ou le soir. Évitez de superposer les deux en une seule étape : appliquez l'un, attendez, puis appliquez l'autre."
+        "q": "Puis-je l'utiliser avec le Peptide Serum ?",
+        "a": "Oui. Ils se complètent bien. Utilisez la Vitamine C le matin et le Peptide Serum le matin ou le soir. Évitez de superposer les deux en une seule étape : appliquez l'un, attendez, puis appliquez l'autre."
       },
       {
         "q": "Mon sérum est devenu orange. Est-il encore sûr ?",
@@ -3113,7 +3113,7 @@ export const PRODUCTS = {
       },
       {
         "q": "Puis-je l'utiliser si j'ai la rosacée ou une peau réactive ?",
-        "a": "La vitamine C à 12% peut causer des picotements sur peau sensible. Commencez un jour sur deux pendant deux semaines, puis quotidiennement. Si l'irritation persiste, le Sérum aux Peptides est un actif matinal plus doux pour commencer."
+        "a": "La vitamine C à 12% peut causer des picotements sur peau sensible. Commencez un jour sur deux pendant deux semaines, puis quotidiennement. Si l'irritation persiste, le Peptide Serum est un actif matinal plus doux pour commencer."
       },
       {
         "q": "Pourquoi seulement le matin ?",
@@ -3211,7 +3211,7 @@ export const PRODUCTS = {
     "howÉtapes": [
       {
         "h": "Nettoyez et tonifiez",
-        "p": "Commencez sur un visage propre et légèrement humide. Nettoyant Moussant SESE, puis une brume de Tonique Hydratant."
+        "p": "Commencez sur un visage propre et légèrement humide. Cleansing Foam SESE, puis Hydrating Toner, pressé délicatement dans la peau."
       },
       {
         "h": "Une à deux pressions",
@@ -3219,11 +3219,11 @@ export const PRODUCTS = {
       },
       {
         "h": "Laissez pénétrer, puis superposez",
-        "p": "Attendez environ 60 secondes. Suivez avec la Crème de Jour Raffermissante le matin, la Crème de Nuit aux Céramides le soir."
+        "p": "Attendez environ 60 secondes. Suivez avec la Firming Day Cream le matin, la Ceramide Night Cream le soir."
       },
       {
         "h": "Terminez par le SPF le matin",
-        "p": "Le Stick SPF 50 est l'étape finale non négociable avant de commencer la journée."
+        "p": "Le SPF 50 Sunscreen Stick est l'étape finale non négociable avant de commencer la journée."
       }
     ],
     "benefitGrad": "linear-gradient(160deg,#F5C98A,#E0AC58)",
@@ -3253,8 +3253,8 @@ export const PRODUCTS = {
     "faqTitle": "Questions sur <em>ce sérum.</em>",
     "faqs": [
       {
-        "q": "Puis-je utiliser le Sérum aux Peptides avec du rétinol ou de la vitamine C ?",
-        "a": "Oui. Les peptides s'associent bien aux deux. Nous recommandons : Vitamine C le matin, Sérum aux Peptides le matin ou le soir, et notre Alternative au Rétinol certains soirs en alternance si vous souhaitez aussi un renouvellement doux."
+        "q": "Puis-je utiliser le Peptide Serum avec du rétinol ou de la vitamine C ?",
+        "a": "Oui. Les peptides s'associent bien aux deux. Nous recommandons : Vitamine C le matin, Peptide Serum le matin ou le soir, et notre Retinol Alternative certains soirs en alternance si vous souhaitez aussi un renouvellement doux."
       },
       {
         "q": "Combien de temps avant de voir une différence ?",
@@ -3317,7 +3317,7 @@ export const PRODUCTS = {
         "Convient aux peaux sensibles"
       ],
       [
-        "Après toner",
+        "Après lotion tonique",
         "Avant crème de nuit"
       ]
     ],
@@ -3364,7 +3364,7 @@ export const PRODUCTS = {
     "howÉtapes": [
       {
         "h": "Routine du soir uniquement",
-        "p": "Appliquer après nettoyage et tonique. Le bakuchiol peut causer une légère photosensibilité. Soirs uniquement."
+        "p": "Appliquer après nettoyage et lotion tonique. Le bakuchiol peut causer une légère photosensibilité. Soirs uniquement."
       },
       {
         "h": "Trois à quatre gouttes, tamponnées",
@@ -3372,7 +3372,7 @@ export const PRODUCTS = {
       },
       {
         "h": "Attendez, puis superposez la crème de nuit",
-        "p": "Laissez soixante secondes au sérum pour s'absorber, puis appliquez la Crème de Nuit aux Céramides par-dessus."
+        "p": "Laissez soixante secondes au sérum pour s'absorber, puis appliquez la Ceramide Night Cream par-dessus."
       },
       {
         "h": "Pas besoin de rétinol en complément",
@@ -3410,8 +3410,8 @@ export const PRODUCTS = {
         "a": "Le bakuchiol est largement considéré comme l'alternative au rétinol sûre pendant la grossesse. Cependant, nous recommandons de consulter votre médecin ou sage-femme avant d'introduire tout nouvel actif dans votre routine pendant la grossesse."
       },
       {
-        "q": "Puis-je le superposer avec le Sérum aux Peptides ?",
-        "a": "Oui. Appliquez d'abord l'Alternative au Rétinol, attendez soixante secondes, puis le Sérum aux Peptides. Ou utilisez les Peptides le matin et l'Alternative au Rétinol le soir, ce qui garde votre routine claire et évite de surcharger votre peau."
+        "q": "Puis-je le superposer avec le Peptide Serum ?",
+        "a": "Oui. Appliquez d'abord le Retinol Alternative, attendez soixante secondes, puis le Peptide Serum. Ou utilisez les Peptides le matin et le Retinol Alternative le soir, ce qui garde votre routine claire et évite de surcharger votre peau."
       },
       {
         "q": "Ma peau va-t-elle peler ou purger ?",
@@ -3525,7 +3525,7 @@ export const PRODUCTS = {
       },
       {
         "h": "Suivez avec le SPF",
-        "p": "La crème de jour ne contient pas de SPF. Terminez toujours par le Stick SPF 50 SESE comme dernière étape du matin."
+        "p": "La crème de jour ne contient pas de SPF. Terminez toujours par le SPF 50 Sunscreen Stick SESE comme dernière étape du matin."
       }
     ],
     "benefitGrad": "linear-gradient(160deg,#E9B7A8,#CC8E7A)",
@@ -3564,11 +3564,11 @@ export const PRODUCTS = {
       },
       {
         "q": "Contient-elle du SPF ?",
-        "a": "Non, et c'est intentionnel. Combiner hydratant et SPF dans un seul produit signifie généralement une efficacité moindre pour les deux. Nous recommandons le Stick SPF 50 SESE par-dessus comme étape de protection solaire dédiée."
+        "a": "Non, et c'est intentionnel. Combiner hydratant et SPF dans un seul produit signifie généralement une efficacité moindre pour les deux. Nous recommandons le SPF 50 Sunscreen Stick SESE par-dessus comme étape de protection solaire dédiée."
       },
       {
         "q": "Puis-je aussi l'utiliser le soir ?",
-        "a": "Vous le pouvez en dépannage, mais la Crème de Nuit aux Céramides est formulée pour la réparation nocturne avec des actifs plus riches. Utiliser la crème de jour la nuit n'est pas nocif, juste pas optimal."
+        "a": "Vous le pouvez en dépannage, mais la Ceramide Night Cream est formulée pour la réparation nocturne avec des actifs plus riches. Utiliser la crème de jour la nuit n'est pas nocif, juste pas optimal."
       }
     ],
     "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Squalane, Niacinamide (4%), Hydroxyproline, Tocopherol, Glyceryl Stearate, Cetyl Alcohol, Sodium Hyaluronate, Xanthan Gum, Phenoxyethanol, Citric Acid.",
@@ -3662,7 +3662,7 @@ export const PRODUCTS = {
     "howÉtapes": [
       {
         "h": "Après votre sérum du soir",
-        "p": "Appliquer comme dernière étape de votre routine du soir. Après nettoyage, tonique et sérum."
+        "p": "Appliquer comme dernière étape de votre routine du soir. Après nettoyage, lotion tonique et sérum."
       },
       {
         "h": "Une quantité généreuse",
@@ -3712,8 +3712,8 @@ export const PRODUCTS = {
         "a": "Oui. Les crèmes de nuit sont conçues pour être plus riches que les crèmes de jour. Votre peau est en mode réparation pendant la nuit et peut tirer parti de cette nutrition supplémentaire. Si elle semble trop riche, essayez une quantité légèrement plus petite."
       },
       {
-        "q": "Puis-je l'utiliser avec le Sérum Alternative au Rétinol ?",
-        "a": "Oui, et c'est en fait l'association prévue. Appliquez d'abord le Sérum Alternative au Rétinol, laissez absorber pendant soixante secondes, puis superposez la Crème de Nuit aux Céramides par-dessus. Le panthénol et les céramides de la crème atténuent toute sensibilité liée au sérum."
+        "q": "Puis-je l'utiliser avec le Retinol Alternative Serum ?",
+        "a": "Oui, et c'est en fait l'association prévue. Appliquez d'abord le Retinol Alternative Serum, laissez absorber pendant soixante secondes, puis superposez la Ceramide Night Cream par-dessus. Le panthénol et les céramides de la crème atténuent toute sensibilité liée au sérum."
       },
       {
         "q": "Les hommes peuvent-ils l'utiliser ?",
@@ -3999,7 +3999,7 @@ export const PRODUCTS = {
         "l": "Filtres UV chimiques, parfum, oxybenzone"
       }
     ],
-    "faqTitle": "Questions sur <em>le Stick SPF 50.</em>",
+    "faqTitle": "Questions sur <em>le SPF 50 Sunscreen Stick.</em>",
     "faqs": [
       {
         "q": "Est-il respectueux des récifs coralliens ?",

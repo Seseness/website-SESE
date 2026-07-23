@@ -81,7 +81,7 @@ const POSTS = [
 
 <p>A toner is the step most people skip. The Hydrating Toner rebalances the skin's pH after cleansing and prepares the skin for the following steps. Because the skin can now absorb more effectively, your serum and moisturiser work significantly better.</p>
 
-<p><em>✦ &nbsp;Apply the toner with clean hands or a cotton pad. Gently press, do not rub.</em></p>
+<p><em>✦ &nbsp;Apply the toner with clean hands. Gently press, do not rub.</em></p>
 
 <h2>Step 3 - Serum: Vitamin C Serum (daytime)</h2>
 
@@ -93,9 +93,9 @@ const POSTS = [
 
 <p>The Firming Day Cream cares for, hydrates and strengthens the skin barrier. It is formulated to support the skin against daily environmental exposure such as wind, stress and fine particles. The light texture absorbs quickly and is ideal as a base under makeup.</p>
 
-<h2>Step 5 - Protect: SPF50 Mineral Stick</h2>
+<h2>Step 5 - Protect: SPF 50 Sunscreen Stick</h2>
 
-<p>This is the step that makes the difference and that most people skip. UV radiation is responsible for up to 80 to 90% of visible skin aging. Daily SPF is therefore the most impactful anti-aging product in existence. The SESE SPF50 Mineral Stick makes this effortless: compact, no white cast, reef-friendly.</p>
+<p>This is the step that makes the difference and that most people skip. UV radiation is responsible for up to 80 to 90% of visible skin aging. Daily SPF is therefore the most impactful anti-aging product in existence. The SESE SPF 50 Sunscreen Stick makes this effortless: compact, no white cast, reef-friendly.</p>
 
 <p><em>✦ &nbsp;Apply SPF as the final step of your morning routine, after your day cream.</em><br/>
 <em>✦ &nbsp;Reapply every two hours during prolonged sun exposure.</em><br/>
@@ -108,7 +108,7 @@ const POSTS = [
   <li>Apply the Hydrating Toner</li>
   <li>Use the Vitamin C Serum</li>
   <li>Finish with the Firming Day Cream</li>
-  <li>Protect with the SPF50 Mineral Stick</li>
+  <li>Protect with the SPF 50 Sunscreen Stick</li>
 </ol>
 
 <p>Done. In less than ten minutes. Every morning.</p>`
@@ -138,13 +138,13 @@ const POSTS = [
 
 <p>UV radiation consists of two types of wavelengths, each with a different effect on the skin. UVB rays are the 'burning' rays responsible for sunburn. They play a role in skin cancer but do not penetrate glass and are stronger in summer. UVA rays are the 'aging' rays. They penetrate deeper into the skin, damage collagen and elastin, and are equally strong all year round. They also penetrate windows and clouds.</p>
 
-<p>That is why SPF is important even on cloudy days and indoors. The SPF number on a product primarily protects against UVB. For UVA protection, look for 'broad spectrum' on the packaging, which is exactly what our SPF50 Stick provides.</p>
+<p>That is why SPF is important even on cloudy days and indoors. The SPF number on a product primarily protects against UVB. For UVA protection, look for 'broad spectrum' on the packaging, which is exactly what our SPF 50 Sunscreen Stick provides.</p>
 
 <h2>Mineral vs chemical. What is the difference?</h2>
 
 <p>There are two types of sun protection: chemical filters and mineral filters. Chemical filters absorb UV radiation and convert it into heat. Mineral filters, such as zinc oxide and titanium dioxide, reflect UV radiation like a mirror. Mineral filters are gentler on the skin, less taxing on the environment and suitable for sensitive skin.</p>
 
-<p>The SESE SPF50 Mineral Stick works exclusively with mineral filters. Reef-friendly. No white cast thanks to the fine formulation. Safe for children from age 3.</p>
+<p>The SESE SPF 50 Sunscreen Stick works exclusively with mineral filters. Reef-friendly. No white cast thanks to the fine formulation. Safe for children from age 3.</p>
 
 <h2>Why a stick and not a cream?</h2>
 
@@ -578,7 +578,7 @@ const POSTS = [
 
 <p>Between 11:00 p.m. and 4:00 a.m., your skin is most active in its repair processes. Blood circulation increases, cell renewal speeds up, and the skin becomes more receptive to active ingredients. This is when a rich, restorative night cream has the greatest impact.</p>
 
-<p>SESE's Ceramide Repair Night Cream is formulated specifically for this moment. The cream contains ceramides that replenish and restore the skin barrier, combined with aloe juice for hydration and jojoba oil for nourishment. The texture is richer than a day cream but absorbs well without leaving a heavy feeling.</p>
+<p>SESE's Ceramide Night Cream is formulated specifically for this moment. The cream contains ceramides that replenish and restore the skin barrier, combined with aloe juice for hydration and jojoba oil for nourishment. The texture is richer than a day cream but absorbs well without leaving a heavy feeling.</p>
 
 <h2>Tips for Best Results</h2>
 

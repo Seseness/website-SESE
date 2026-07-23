@@ -179,7 +179,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
   <!-- How to use + FAQ -->
   <section class="section-grid">
     <div>
-      <div class="eb">How to use</div>
+      <div class="eb">HOW TO USE</div>
       <h2>${p.howTitle}</h2>
       <div class="howto"><div class="steps2">${howHtml}</div></div>
     </div>
@@ -451,7 +451,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   <!-- Gebruiksaanwijzing + Veelgestelde vragen -->
   <section class="section-grid">
     <div>
-      <div class="eb">Hoe te gebruiken</div>
+      <div class="eb">HOE TE GEBRUIKEN</div>
       <h2>${p.howTitle}</h2>
       <div class="howto"><div class="steps2">${howHtml}</div></div>
     </div>
@@ -510,7 +510,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="foot-top">
         <div class="foot-col">
           <div class="foot-wm">S E S E</div>
-          <div class="foot-tag">Unlock your skin's <em>timeless beauty.</em></div>
+          <div class="foot-tag">Onthul de <em>tijdloze schoonheid</em> van jouw huid.</div>
           <div class="foot-contact">
             <a href="mailto:info@sese.be">info@sese.be</a>
           </div>
@@ -723,7 +723,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   <!-- Comment utiliser + FAQ -->
   <section class="section-grid">
     <div>
-      <div class="eb">Comment l'utiliser</div>
+      <div class="eb">COMMENT L'UTILISER</div>
       <h2>${p.howTitle}</h2>
       <div class="howto"><div class="steps2">${howHtml}</div></div>
     </div>
@@ -782,7 +782,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="foot-top">
         <div class="foot-col">
           <div class="foot-wm">S E S E</div>
-          <div class="foot-tag">Unlock your skin's <em>timeless beauty.</em></div>
+          <div class="foot-tag">Révélez la <em>beauté intemporelle</em> de votre peau.</div>
           <div class="foot-contact">
             <a href="mailto:info@sese.be">info@sese.be</a>
           </div>
