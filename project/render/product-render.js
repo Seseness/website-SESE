@@ -226,7 +226,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
   <!-- Pairs with -->
   <section class="pair-with">
     <div class="sec-head">
-      <div><div class="eb">Make it a ritual</div><h3>Pairs <em>quietly</em> with.</h3></div>
+      <div><div class="eb">Make it a ritual</div><h3>Pairs <em>perfectly</em> with.</h3></div>
       <a href="index.html" class="all">Shop all products →</a>
     </div>
     <div class="pair-grid">${pairsHtml}</div>
@@ -464,11 +464,11 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
 
   <!-- Certs -->
   <section class="certs">
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natureel</div><div class="s">Certified</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12c2-4 5-6 7-6s5 2 7 6c-2 4-5 6-7 6s-5-2-7-6z"/><circle cx="12" cy="12" r="2"/></svg></span><div><div class="t">Veganistisch</div><div class="s">No animal derivatives</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natural</div><div class="s">Gecertificeerd</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12c2-4 5-6 7-6s5 2 7 6c-2 4-5 6-7 6s-5-2-7-6z"/><circle cx="12" cy="12" r="2"/></svg></span><div><div class="t">Veganistisch</div><div class="s">Geen dierlijke afgeleiden</div></div></div>
     <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0v3l1 2H4l1-2v-3z"/><path d="M10 19a2 2 0 004 0"/></svg></span><div><div class="t">Cruelty-free</div><div class="s">Leaping Bunny</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Gluten-free</div><div class="s">Tested formula</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Coastal botanicals</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Glutenvrij</div><div class="s">Geteste formule</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Kustbotanische ingrediënten</div></div></div>
   </section>
 
   <!-- Benefit -->
@@ -487,7 +487,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
 
   <!-- INCI -->
   <details class="inci">
-    <summary><span>Full ingredient list (INCI)</span><span style="font-size:18px;">+</span></summary>
+    <summary><span>Volledige ingrediëntenlijst (INCI)</span><span style="font-size:18px;">+</span></summary>
     <div class="body">
       <div class="eb" style="margin-bottom:12px">Key ingredients</div>
       <div class="ingredients-list" style="margin-bottom:24px;border-bottom:1px solid var(--line-soft);padding-bottom:24px">${ingsHtml}</div>
@@ -498,8 +498,8 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   <!-- Pairs with -->
   <section class="pair-with">
     <div class="sec-head">
-      <div><div class="eb">Make it a ritual</div><h3>Pairs <em>quietly</em> with.</h3></div>
-      <a href="index.html" class="all">Winkel all producten →</a>
+      <div><div class="eb">Maak er een ritueel van</div><h3>Combineert <em>perfect</em> met.</h3></div>
+      <a href="index.html" class="all">Bekijk alle producten →</a>
     </div>
     <div class="pair-grid">${pairsHtml}</div>
   </section>
@@ -736,11 +736,11 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
 
   <!-- Certs -->
   <section class="certs">
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Naturel</div><div class="s">Certified</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12c2-4 5-6 7-6s5 2 7 6c-2 4-5 6-7 6s-5-2-7-6z"/><circle cx="12" cy="12" r="2"/></svg></span><div><div class="t">Végan</div><div class="s">No animal derivatives</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0v3l1 2H4l1-2v-3z"/><path d="M10 19a2 2 0 004 0"/></svg></span><div><div class="t">Cruelty-free</div><div class="s">Leaping Bunny</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Gluten-free</div><div class="s">Tested formula</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Coastal botanicals</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natural</div><div class="s">Certifié</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12c2-4 5-6 7-6s5 2 7 6c-2 4-5 6-7 6s-5-2-7-6z"/><circle cx="12" cy="12" r="2"/></svg></span><div><div class="t">Vegan</div><div class="s">Sans dérivés animaux</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0v3l1 2H4l1-2v-3z"/><path d="M10 19a2 2 0 004 0"/></svg></span><div><div class="t">Sans cruauté</div><div class="s">Leaping Bunny</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Sans gluten</div><div class="s">Formule testée</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Ingrédients côtiers</div></div></div>
   </section>
 
   <!-- Benefit -->
@@ -759,7 +759,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
 
   <!-- INCI -->
   <details class="inci">
-    <summary><span>Full ingredient list (INCI)</span><span style="font-size:18px;">+</span></summary>
+    <summary><span>Liste complète des ingrédients (INCI)</span><span style="font-size:18px;">+</span></summary>
     <div class="body">
       <div class="eb" style="margin-bottom:12px">Key ingredients</div>
       <div class="ingredients-list" style="margin-bottom:24px;border-bottom:1px solid var(--line-soft);padding-bottom:24px">${ingsHtml}</div>
@@ -770,8 +770,8 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   <!-- Pairs with -->
   <section class="pair-with">
     <div class="sec-head">
-      <div><div class="eb">Make it a ritual</div><h3>Pairs <em>quietly</em> with.</h3></div>
-      <a href="index.html" class="all">Boutique all produits →</a>
+      <div><div class="eb">Faites-en un rituel</div><h3>S'associe <em>parfaitement</em> à.</h3></div>
+      <a href="index.html" class="all">Voir tous les produits →</a>
     </div>
     <div class="pair-grid">${pairsHtml}</div>
   </section>
