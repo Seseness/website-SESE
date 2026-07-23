@@ -59,14 +59,14 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
   };
 
   const shopLabel = "Shop";
-  const crumbsHtml = `<a href="index.html">${shopLabel}</a><span class="sep">·</span><span class="cur">${p.name}</span>`;
+  const crumbsHtml = `<a href="collection.html">${shopLabel}</a><span class="sep">·</span><span class="cur">${p.name}</span>`;
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl + prefix + '/' },
-      { '@type': 'ListItem', position: 2, name: shopLabel, item: baseUrl + prefix + '/index.html' },
+      { '@type': 'ListItem', position: 2, name: shopLabel, item: baseUrl + prefix + '/collection.html' },
       { '@type': 'ListItem', position: 3, name: p.name, item: canonicalUrl },
     ],
   };
@@ -227,7 +227,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
   <section class="pair-with">
     <div class="sec-head">
       <div><div class="eb">Make it a ritual</div><h3>Pairs <em>perfectly</em> with.</h3></div>
-      <a href="index.html" class="all">Shop all products →</a>
+      <a href="collection.html" class="all">Shop all products →</a>
     </div>
     <div class="pair-grid">${pairsHtml}</div>
   </section>
@@ -331,14 +331,14 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   };
 
   const shopLabel = "Winkel";
-  const crumbsHtml = `<a href="index.html">${shopLabel}</a><span class="sep">·</span><span class="cur">${p.name}</span>`;
+  const crumbsHtml = `<a href="collection.html">${shopLabel}</a><span class="sep">·</span><span class="cur">${p.name}</span>`;
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl + prefix + '/' },
-      { '@type': 'ListItem', position: 2, name: shopLabel, item: baseUrl + prefix + '/index.html' },
+      { '@type': 'ListItem', position: 2, name: shopLabel, item: baseUrl + prefix + '/collection.html' },
       { '@type': 'ListItem', position: 3, name: p.name, item: canonicalUrl },
     ],
   };
@@ -499,7 +499,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   <section class="pair-with">
     <div class="sec-head">
       <div><div class="eb">Maak er een ritueel van</div><h3>Combineert <em>perfect</em> met.</h3></div>
-      <a href="index.html" class="all">Bekijk alle producten →</a>
+      <a href="collection.html" class="all">Bekijk alle producten →</a>
     </div>
     <div class="pair-grid">${pairsHtml}</div>
   </section>
@@ -603,14 +603,14 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   };
 
   const shopLabel = "Boutique";
-  const crumbsHtml = `<a href="index.html">${shopLabel}</a><span class="sep">·</span><span class="cur">${p.name}</span>`;
+  const crumbsHtml = `<a href="collection.html">${shopLabel}</a><span class="sep">·</span><span class="cur">${p.name}</span>`;
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl + prefix + '/' },
-      { '@type': 'ListItem', position: 2, name: shopLabel, item: baseUrl + prefix + '/index.html' },
+      { '@type': 'ListItem', position: 2, name: shopLabel, item: baseUrl + prefix + '/collection.html' },
       { '@type': 'ListItem', position: 3, name: p.name, item: canonicalUrl },
     ],
   };
@@ -771,7 +771,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   <section class="pair-with">
     <div class="sec-head">
       <div><div class="eb">Faites-en un rituel</div><h3>S'associe <em>parfaitement</em> à.</h3></div>
-      <a href="index.html" class="all">Voir tous les produits →</a>
+      <a href="collection.html" class="all">Voir tous les produits →</a>
     </div>
     <div class="pair-grid">${pairsHtml}</div>
   </section>
