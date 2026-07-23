@@ -392,7 +392,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="m">
         <div class="nm">${pp.name}</div>
         <div class="sb">${pp.step}</div>
-        <div class="pr"><span class="price">${pp.price}</span><button class="add" data-product="${pid}">Add +</button></div>
+        <div class="pr"><span class="price">${pp.price}</span><button class="add" data-product="${pid}">Toevoegen +</button></div>
       </div>
     </a>`;
   }).join('');
@@ -664,7 +664,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="m">
         <div class="nm">${pp.name}</div>
         <div class="sb">${pp.step}</div>
-        <div class="pr"><span class="price">${pp.price}</span><button class="add" data-product="${pid}">Add +</button></div>
+        <div class="pr"><span class="price">${pp.price}</span><button class="add" data-product="${pid}">Ajouter +</button></div>
       </div>
     </a>`;
   }).join('');
