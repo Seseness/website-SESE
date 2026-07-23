@@ -2361,20 +2361,20 @@ export const PRODUCTS = {
       "faqTitle": "Vragen over <em>de nachtcrème.</em>",
       "faqs": [
         {
-          "q": "Is het geschikt voor gevoelige of eczeem-gevoelige huid?",
-          "a": "Ja. Ceramiden zijn van nature voorkomende huidlipiden — ze behoren tot de best verdragen ingrediënten in huidverzorging. De formule is geurvrij en getest op gevoeligheid. Als je huid actief is opgelaaid, doe dan eerst een patchtest."
+          "q": "Is het geschikt voor de gevoelige of eczeemgevoelige huid?",
+          "a": "Ja. Ceramiden zijn van nature aanwezige huidvetten. Ze behoren tot de best verdraagbare ingrediënten in skincare. De formule is parfumvrij en getest op gevoeligheid. Als je huid actief in een opstoot is, test dan eerst op een klein huidoppervlak."
         },
         {
-          "q": "Het voelt nogal rijk aan. Is dat normaal?",
-          "a": "Ja — nachtcrèmes zijn ontworpen om rijker te zijn dan dagcrèmes. Je huid is overnight in herstelmodus en kan gebruik maken van de extra voeding. Als het te zwaar aanvoelt, probeer dan een iets kleinere hoeveelheid."
+          "q": "Het voelt vrij rijk aan. Is dat normaal?",
+          "a": "Ja. Nachtcrèmes zijn ontworpen om rijker te zijn dan dagcrèmes. Je huid bevindt zich 's nachts in herstelmodus en kan de extra voeding goed gebruiken. Voelt het te zwaar aan, probeer dan een iets kleinere hoeveelheid."
         },
         {
-          "q": "Kan ik het gebruiken met het Retinol Alternative Serum?",
-          "a": "Ja — en dit is eigenlijk de beoogde combinatie. Breng eerst Retinol Alternative Serum aan, laat het zestig seconden intrekken, breng dan Ceramide Night Cream erop aan. De panthenol en ceramiden van de crème bufferen serum-gerelateerde gevoeligheid."
+          "q": "Kan ik het combineren met Retinol Alternative Serum?",
+          "a": "Ja, en dit is eigenlijk de bedoelde combinatie. Breng eerst Retinol Alternative Serum aan, laat dit zestig seconden intrekken, en breng dan Ceramide Night Cream aan als afwerking. De panthenol en ceramiden in de crème verzachten eventuele gevoeligheid door het serum."
         },
         {
           "q": "Kunnen mannen het gebruiken?",
-          "a": "Huidverzorging heeft geen geslacht. De formule werkt op elke huid die baat heeft bij barrièreherstel en hydratatie — dat zijn de meeste huidtypes boven de 30."
+          "a": "Skincare heeft geen geslacht. De formule werkt voor elke huid die baat heeft bij herstel van de huidbarrière en hydratatie, en dat geldt voor de meeste huidtypes boven de 30."
         }
       ],
       "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Ceramide NP (1%), Squalane, Panthenol, Niacinamide, Bakuchiol (0.5%), Tocopherol, Sodium Hyaluronate, Glyceryl Stearate, Cetyl Alcohol, Phenoxyethanol, Citric Acid.",
@@ -3704,20 +3704,20 @@ export const PRODUCTS = {
     "faqTitle": "Questions sur <em>la crème de nuit.</em>",
     "faqs": [
       {
-        "q": "Convient-elle à peau sensible ou sujette à l'eczéma ?",
-        "a": "Oui. Les céramides sont des lipides cutanés naturellement présents. Ce sont parmi les ingrédients les mieux tolérés en cosmétique. La formule est sans parfum et testée pour la sensibilité. Si votre peau est activement irritée, faites d'abord un test cutané."
+        "q": "Convient-elle aux peaux sensibles ou sujettes à l'eczéma ?",
+        "a": "Oui. Les céramides sont des lipides naturellement présents dans la peau. Ils comptent parmi les ingrédients les mieux tolérés en cosmétique. La formule est sans parfum et testée pour la sensibilité. Si votre peau est en poussée active, faites d'abord un test."
       },
       {
-        "q": "Elle semble assez riche. Est-ce normal ?",
-        "a": "Oui. Les crèmes de nuit sont conçues pour être plus riches que les crèmes de jour. Votre peau est en mode réparation pendant la nuit et peut tirer parti de cette nutrition supplémentaire. Si elle semble trop riche, essayez une quantité légèrement plus petite."
+        "q": "Elle a une texture assez riche. Est-ce normal ?",
+        "a": "Oui. Les crèmes de nuit sont conçues pour être plus riches que les crèmes de jour. Votre peau est en mode réparation pendant la nuit et peut profiter de cette nourriture supplémentaire. Si elle vous semble trop lourde, essayez une quantité légèrement plus petite."
       },
       {
         "q": "Puis-je l'utiliser avec le Retinol Alternative Serum ?",
-        "a": "Oui, et c'est en fait l'association prévue. Appliquez d'abord le Retinol Alternative Serum, laissez absorber pendant soixante secondes, puis superposez la Ceramide Night Cream par-dessus. Le panthénol et les céramides de la crème atténuent toute sensibilité liée au sérum."
+        "a": "Oui, c'est même l'association recommandée. Appliquez d'abord Retinol Alternative Serum, laissez-le pénétrer pendant soixante secondes, puis superposez Ceramide Night Cream. Le panthénol et les céramides de la crème atténuent toute sensibilité liée au sérum."
       },
       {
         "q": "Les hommes peuvent-ils l'utiliser ?",
-        "a": "Le soin de la peau n'a pas de genre. La formule fonctionne sur toute peau qui bénéficie d'une réparation de barrière et d'hydratation, soit la plupart des types de peau après 30 ans."
+        "a": "Les soins de la peau n'ont pas de genre. La formule convient à toute peau qui bénéficie d'une réparation de la barrière cutanée et d'une hydratation, ce qui concerne la plupart des types de peau après 30 ans."
       }
     ],
     "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Ceramide NP (1%), Squalane, Panthenol, Niacinamide, Bakuchiol (0.5%), Tocopherol, Sodium Hyaluronate, Glyceryl Stearate, Cetyl Alcohol, Phenoxyethanol, Citric Acid.",
