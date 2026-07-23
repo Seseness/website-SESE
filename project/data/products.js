@@ -1762,19 +1762,19 @@ export const PRODUCTS = {
       "faqs": [
         {
           "q": "Kan ik het combineren met Peptide Serum?",
-          "a": "Ja — ze vullen elkaar goed aan. Gebruik Vitamine C 's ochtends en Peptide Serum 's ochtends of 's avonds. Vermijd het stapelen van beide in één stap: breng één aan, wacht, breng dan het andere aan."
+          "a": "Ja. Ze vullen elkaar goed aan. Gebruik Vitamine C 's ochtends en Peptide Serum 's ochtends of 's avonds. Vermijd om beide na elkaar in dezelfde stap aan te brengen: breng het ene aan, wacht, en breng dan het andere aan."
         },
         {
           "q": "Mijn serum is oranje geworden. Is het nog veilig?",
-          "a": "Een oranje tint betekent dat de Vitamine C oxideert. De formule is op dat punt minder effectief. Bewaar onder 20°C en uit direct licht om versheid te verlengen. De meeste flesjes gaan 3 maanden na opening mee."
+          "a": "Een oranje tint betekent dat de vitamine C aan het oxideren is. De formule is dan minder effectief. Bewaar beneden 20°C en uit direct licht om de versheid te verlengen. De meeste flesjes blijven 3 maanden goed na opening."
         },
         {
-          "q": "Kan ik het gebruiken als ik rosacea of reactieve huid heb?",
-          "a": "Vitamine C bij 12% kan tinteling veroorzaken in gevoelige huid. Begin om de dag voor twee weken, dan dagelijks. Als irritatie aanhoudt, is het Peptide Serum een zachter ochtendactieve om mee te beginnen."
+          "q": "Kan ik het gebruiken bij rosacea of een reactieve huid?",
+          "a": "Vitamine C aan 12% kan tintelingen veroorzaken bij een gevoelige huid. Begin om de dag gedurende twee weken, en bouw dan op naar dagelijks gebruik. Als irritatie aanhoudt, is Peptide Serum een zachter actief ingrediënt om mee te starten in de ochtend."
         },
         {
-          "q": "Waarom alleen 's ochtends?",
-          "a": "Vitamine C is een antioxidant — het werkt tegen de omgevingsschade van de dag. Het maakt de huid ook tijdelijk gevoeliger voor zon, dus het combineren met SPF 's ochtends is het meest logisch."
+          "q": "Waarom enkel 's ochtends?",
+          "a": "Vitamine C is een antioxidant. Het beschermt tegen de schade die de huid overdag oploopt. Het maakt de huid ook tijdelijk gevoeliger voor licht, waardoor het combineren met SPF in de ochtend het meest logisch is."
         }
       ],
       "inci": "Aqua, Ascorbic Acid (12%), Glycerin, Propanediol, Niacinamide (3%), Ferulic Acid, Tocopherol, Sodium Hyaluronate, Panthenol, Xanthan Gum, Citric Acid, Sodium Benzoate, Potassium Sorbate.",
