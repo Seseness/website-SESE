@@ -1910,24 +1910,24 @@ export const PRODUCTS = {
       "faqTitle": "Vragen over <em>dit serum.</em>",
       "faqs": [
         {
-          "q": "Kan ik Peptide Serum gebruiken met retinol of Vitamine C?",
-          "a": "Ja — peptiden combineren goed met beide. Wij raden aan: Vitamine C 's ochtends, Peptide Serum 's ochtends of 's avonds, en ons Retinol Alternative op afwisselende avonden als je ook zachte vernieuwing wilt."
+          "q": "Kan ik Peptide Serum combineren met retinol of vitamine C?",
+          "a": "Ja. Peptiden combineren goed met beide. Wij raden aan: vitamine C 's ochtends, Peptide Serum 's ochtends of 's avonds, en onze Retinol Alternative op afwisselende avonden als je ook zachte vernieuwing wil."
         },
         {
-          "q": "Hoe lang voor ik een verschil zie?",
-          "a": "De meeste huid voelt zachter en rustiger binnen de eerste week. Zichtbare stevigheid en een gladder oppervlak duurt 3-4 weken van consistent, tweemaal daags gebruik — peptiden bouwen, ze verrassen niet."
+          "q": "Hoelang duurt het voor ik verschil zie?",
+          "a": "De meeste huid voelt zachter en rustiger aan binnen de eerste week. Zichtbare verstevigheid en een gladdere huid vragen 3-4 weken consequent, tweemaal daags gebruik. Peptiden bouwen op, ze verrassen niet."
         },
         {
-          "q": "Is het veilig voor gevoelige huid?",
-          "a": "Ja. De formule is geurvrij, allergeen-labelvrij en gebruikt één goed verdragen peptide in plaats van een zwaar actievenmengsel. Doe twee avonden een patchtest aan de binnenkant van de elleboog als je huid reactief is."
+          "q": "Is het veilig voor de gevoelige huid?",
+          "a": "Ja. De formule is parfumvrij, vrij van gelabelde allergenen, en bevat een enkel, goed verdraagbaar peptide in plaats van een zware cocktail aan actieve ingrediënten. Test twee avonden op de binnenkant van je elleboog als je huid reactief is."
         },
         {
-          "q": "Hoe lang gaat één flesje mee?",
-          "a": "Bij tweemaal daags gebruik gaat één flesje van 30 ml ongeveer 8 weken mee. Eenmaal daags gebruik verlengt het tot ongeveer 12 weken."
+          "q": "Hoelang gaat één flesje mee?",
+          "a": "Bij tweemaal daags gebruik gaat één flesje van 30 ml ongeveer 8 weken mee. Bij eenmaal daags gebruik rekt dit uit tot ongeveer 12 weken."
         },
         {
           "q": "Waarom een glazen flesje met airless pomp?",
-          "a": "Peptiden zijn gevoelig voor lucht en licht. De airless pomp en getint glas houden de formule stabiel van de eerste dag tot de laatste druppel."
+          "a": "Peptiden zijn gevoelig voor lucht en licht. De airless pomp en het getinte glas houden de formule stabiel van de eerste dag tot de laatste druppel."
         }
       ],
       "inci": "Aqua (Water), Aloe Barbadensis Leaf Juice, Glycerin, Propanediol, Sodium Hyaluronate, Hydroxyproline, Phytosteryl Oleate, Tocopherol, Vaccinium Myrtillus (Blueberry) Seed Oil, Fragaria Ananassa (Strawberry) Seed Oil, Ginkgo Biloba Leaf Extract, Sodium Phytate, Xanthan Gum, Citric Acid, Sodium Benzoate, Potassium Sorbate, Phenoxyethanol.",
@@ -3253,24 +3253,24 @@ export const PRODUCTS = {
     "faqTitle": "Questions sur <em>ce sérum.</em>",
     "faqs": [
       {
-        "q": "Puis-je utiliser le Peptide Serum avec du rétinol ou de la vitamine C ?",
-        "a": "Oui. Les peptides s'associent bien aux deux. Nous recommandons : Vitamine C le matin, Peptide Serum le matin ou le soir, et notre Retinol Alternative certains soirs en alternance si vous souhaitez aussi un renouvellement doux."
+        "q": "Puis-je utiliser Peptide Serum avec du rétinol ou de la vitamine C ?",
+        "a": "Oui. Les peptides s'associent bien aux deux. Nous recommandons : la vitamine C le matin, Peptide Serum le matin ou le soir, et notre Retinol Alternative un soir sur deux si vous souhaitez aussi un renouvellement en douceur."
       },
       {
         "q": "Combien de temps avant de voir une différence ?",
-        "a": "La plupart des peaux se sentent plus douces et apaisées dès la première semaine. La fermeté visible et une surface plus lisse prennent 3 à 4 semaines d'utilisation quotidienne et régulière. Les peptides construisent, ils ne surprennent pas."
+        "a": "La plupart des peaux se sentent plus douces et apaisées dès la première semaine. Une fermeté visible et une surface plus lisse demandent 3 à 4 semaines d'utilisation régulière, deux fois par jour. Les peptides agissent progressivement, ils ne surprennent pas."
       },
       {
-        "q": "Est-il sûr pour peau sensible ?",
-        "a": "Oui. La formule est sans parfum, sans allergène étiqueté, et utilise un seul peptide bien toléré plutôt qu'un cocktail d'actifs puissants. Testez à l'intérieur du coude pendant deux soirs si votre peau est réactive."
+        "q": "Convient-il aux peaux sensibles ?",
+        "a": "Oui. La formule est sans parfum, sans allergène étiqueté, et contient un seul peptide bien toléré plutôt qu'un cocktail d'actifs puissant. Faites un test sur l'intérieur du coude pendant deux soirs si votre peau est réactive."
       },
       {
         "q": "Combien de temps dure un flacon ?",
-        "a": "Avec une utilisation biquotidienne, un flacon de 30 ml dure environ 8 semaines. Une utilisation quotidienne unique l'étend à environ 12 semaines."
+        "a": "Avec une utilisation deux fois par jour, un flacon de 30 ml dure environ 8 semaines. Une utilisation une fois par jour l'étend à environ 12 semaines."
       },
       {
         "q": "Pourquoi un flacon en verre avec pompe airless ?",
-        "a": "Les peptides sont sensibles à l'air et à la lumière. La pompe airless et le verre teinté maintiennent la formule stable de la première à la dernière goutte."
+        "a": "Les peptides sont sensibles à l'air et à la lumière. La pompe airless et le verre teinté maintiennent la formule stable du premier jour à la dernière goutte."
       }
     ],
     "inci": "Aqua (Water), Aloe Barbadensis Leaf Juice, Glycerin, Propanediol, Sodium Hyaluronate, Hydroxyproline, Phytosteryl Oleate, Tocopherol, Vaccinium Myrtillus (Blueberry) Seed Oil, Fragaria Ananassa (Strawberry) Seed Oil, Ginkgo Biloba Leaf Extract, Sodium Phytate, Xanthan Gum, Citric Acid, Sodium Benzoate, Potassium Sorbate, Phenoxyethanol.",
