@@ -681,7 +681,7 @@ export const PRODUCTS = {
           "p": "Apply after cleansing and toning. Bakuchiol can cause mild photosensitivity. Evenings only."
         },
         {
-          "h": "Three to four drops, patted in",
+          "h": "One to two drops, patted in",
           "p": "Warm between palms, press across the full face, neck, and décolleté. Don't rush."
         },
         {
@@ -2017,23 +2017,23 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "Vernieuwing zonder <em>de reactie.</em>",
-      "howTitle": "Alleen 's avonds. <em>Één stap voor het slapengaan.</em>",
+      "howTitle": "Enkel 's avonds. <em>Eén stap voor het slapengaan.</em>",
       "howStaps": [
         {
-          "h": "Alleen avondroutine",
-          "p": "Breng aan na reiniging en tonen. Bakuchiol kan milde fotosensitiviteit veroorzaken — alleen 's avonds."
+          "h": "Enkel in de avondroutine",
+          "p": "Breng aan na het reinigen en tonen. Bakuchiol kan lichte fotosensitiviteit veroorzaken. Enkel 's avonds."
         },
         {
-          "h": "Drie tot vier druppels, ingedept",
-          "p": "Verwarm tussen handpalmen, druk over het volledige gezicht, nek en decolleté. Neem de tijd."
+          "h": "Eén tot twee druppels, aangedept",
+          "p": "Warm op tussen je handpalmen, druk aan over het volledige gezicht, de hals en het decolleté. Neem er de tijd voor."
         },
         {
-          "h": "Wacht, dan nachtcrème erop",
-          "p": "Laat zestig seconden het serum intrekken, breng dan Ceramide Night Cream erop aan."
+          "h": "Wacht, breng dan de nachtcrème aan",
+          "p": "Laat het serum zestig seconden intrekken, breng dan Ceramide Night Cream aan."
         },
         {
-          "h": "Geen retinol nodig naast dit",
-          "p": "Bakuchiol en PHA's samen leveren al vernieuwing — het toevoegen van retinol op dezelfde avonden riskeert over-exfoliatie."
+          "h": "Geen retinol nodig naast dit product",
+          "p": "Bakuchiol en PHA's samen zorgen al voor vernieuwing; het toevoegen van voorgeschreven retinol op dezelfde avonden brengt het risico op overexfoliatie met zich mee."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#D8A48F,#C07F6A)",
@@ -3360,23 +3360,23 @@ export const PRODUCTS = {
       }
     ],
     "ingTitle": "Renouvellement sans <em>la réaction.</em>",
-    "howTitle": "Le soir uniquement. <em>Une étape avant le coucher.</em>",
+    "howTitle": "Uniquement le soir. <em>Une étape avant de dormir.</em>",
     "howÉtapes": [
       {
-        "h": "Routine du soir uniquement",
-        "p": "Appliquer après nettoyage et lotion tonique. Le bakuchiol peut causer une légère photosensibilité. Soirs uniquement."
+        "h": "Uniquement dans la routine du soir",
+        "p": "Appliquez après le nettoyage et la lotion tonique. Le bakuchiol peut provoquer une légère photosensibilité. Uniquement le soir."
       },
       {
-        "h": "Trois à quatre gouttes, tamponnées",
-        "p": "Réchauffez entre les paumes, pressez sur tout le visage, le cou et le décolleté. Ne vous précipitez pas."
+        "h": "Une à deux gouttes, tapotées",
+        "p": "Réchauffez entre vos paumes, pressez sur l'ensemble du visage, du cou et du décolleté. Prenez votre temps."
       },
       {
-        "h": "Attendez, puis superposez la crème de nuit",
-        "p": "Laissez soixante secondes au sérum pour s'absorber, puis appliquez la Ceramide Night Cream par-dessus."
+        "h": "Patientez, puis appliquez la crème de nuit",
+        "p": "Laissez le sérum pénétrer pendant soixante secondes, puis appliquez Ceramide Night Cream."
       },
       {
         "h": "Pas besoin de rétinol en complément",
-        "p": "Le bakuchiol et les PHA offrent déjà le renouvellement à eux seuls — ajouter du rétinol sur ordonnance les mêmes soirs risque une sur-exfoliation."
+        "p": "Le bakuchiol et les PHA offrent déjà à eux seuls un renouvellement efficace ; ajouter du rétinol sur ordonnance les mêmes soirs risque de provoquer une sur-exfoliation."
       }
     ],
     "benefitGrad": "linear-gradient(160deg,#D8A48F,#C07F6A)",
