@@ -510,7 +510,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="foot-top">
         <div class="foot-col">
           <div class="foot-wm">S E S E</div>
-          <div class="foot-tag">Unlock your skin's <em>timeless beauty.</em></div>
+          <div class="foot-tag">Onthul de <em>tijdloze schoonheid</em> van jouw huid.</div>
           <div class="foot-contact">
             <a href="mailto:info@sese.be">info@sese.be</a>
           </div>
@@ -782,7 +782,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="foot-top">
         <div class="foot-col">
           <div class="foot-wm">S E S E</div>
-          <div class="foot-tag">Unlock your skin's <em>timeless beauty.</em></div>
+          <div class="foot-tag">Révélez la <em>beauté intemporelle</em> de votre peau.</div>
           <div class="foot-contact">
             <a href="mailto:info@sese.be">info@sese.be</a>
           </div>
