@@ -2221,11 +2221,11 @@ export const PRODUCTS = {
         },
         {
           "q": "Bevat het SPF?",
-          "a": "Nee — en bewust zo. Het combineren van moisturizer en SPF in één product betekent gewoonlijk lagere werkzaamheid in beide. We raden SESE SPF 50 Sunscreen Stick aan als een speciale zonbeschermingsstap."
+          "a": "Nee, en bewust zo. Het combineren van moisturizer en SPF in één product betekent gewoonlijk lagere werkzaamheid in beide. We raden SESE SPF 50 Sunscreen Stick aan als een speciale zonbeschermingsstap."
         },
         {
           "q": "Kan ik het ook 's avonds gebruiken?",
-          "a": "Dat kan in een noodgeval, maar de Ceramide Night Cream is geformuleerd voor overnight herstel met rijkere actieve stoffen. Het gebruik van de dagcrème 's nachts is niet schadelijk — alleen niet optimaal."
+          "a": "Dat kan in een noodgeval, maar de Ceramide Night Cream is geformuleerd voor overnight herstel met rijkere actieve stoffen. De dagcrème 's avonds gebruiken is niet schadelijk, maar gewoon niet optimaal."
         }
       ],
       "inci": "Aqua, Glycerin, Butyrospermum Parkii (Shea) Butter, Squalane, Niacinamide (4%), Hydroxyproline, Tocopherol, Glyceryl Stearate, Cetyl Alcohol, Sodium Hyaluronate, Xanthan Gum, Phenoxyethanol, Citric Acid.",
