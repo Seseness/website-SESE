@@ -2319,19 +2319,19 @@ export const PRODUCTS = {
       "howStaps": [
         {
           "h": "Na je avondserum",
-          "p": "Breng aan als de laatste stap van je avondroutine — na reiniging, tonen en serum."
+          "p": "Breng aan als laatste stap van je avondroutine. Na reinigen, tonen en serum."
         },
         {
           "h": "Een royale hoeveelheid",
-          "p": "Dit is de nacht — wees niet zuinig. Iets meer dan de dagcrème, stevig ingedrukt."
+          "p": "Dit is de avond. Hou je niet in. Iets meer dan de dagcrème, stevig ingedrukt."
         },
         {
-          "h": "Nek en decolleté ook",
-          "p": "De nek verliest ceramiden en collageen net zo snel. Verleng naar de borst."
+          "h": "Ook hals en decolleté",
+          "p": "De hals verliest ceramiden en collageen net zo snel. Breid uit tot op de borst."
         },
         {
           "h": "Ga slapen",
-          "p": "Dat is het. Het ceramidencomplex werkt het best in de warmte van de slaap, wanneer de herstelmechanismen van de huid het meest actief zijn."
+          "p": "Dat is alles. Het ceramidencomplex werkt het best in de warmte van de slaap, wanneer de herstelmechanismen van de huid het meest actief zijn."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#EFDFC2,#D4C09A)",
@@ -3662,19 +3662,19 @@ export const PRODUCTS = {
     "howÉtapes": [
       {
         "h": "Après votre sérum du soir",
-        "p": "Appliquer comme dernière étape de votre routine du soir. Après nettoyage, lotion tonique et sérum."
+        "p": "Appliquez comme dernière étape de votre routine du soir. Après le nettoyage, la lotion tonique et le sérum."
       },
       {
         "h": "Une quantité généreuse",
-        "p": "C'est la nuit. Ne soyez pas économe. Un peu plus que la crème de jour, pressée fermement."
+        "p": "C'est le soir. Ne soyez pas économe. Un peu plus que la crème de jour, pressée fermement."
       },
       {
-        "h": "Cou et décolleté aussi",
+        "h": "Le cou et le décolleté aussi",
         "p": "Le cou perd des céramides et du collagène tout aussi vite. Étendez jusqu'à la poitrine."
       },
       {
         "h": "Allez dormir",
-        "p": "C'est tout. Le complexe de céramides fonctionne mieux dans la chaleur du sommeil, quand les mécanismes de réparation de la peau sont les plus actifs."
+        "p": "C'est tout. Le complexe de céramides agit le mieux dans la chaleur du sommeil, lorsque les mécanismes de réparation de la peau sont les plus actifs."
       }
     ],
     "benefitGrad": "linear-gradient(160deg,#EFDFC2,#D4C09A)",
