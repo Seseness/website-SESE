@@ -425,8 +425,6 @@ function renderPanier() {
   }).join('');
 
   const sub = SESECart.subtotal();
-  const shipping = sub >= 100 ? 'Gratuit' : '€4.95';
-  const total = sub >= 100 ? sub : sub + 4.95;
 
   wrap.innerHTML = `
     <div>
@@ -438,10 +436,10 @@ function renderPanier() {
     </div>
     <div class="cart-summary">
       <div class="summary-title">Récapitulatif de commande</div>
-      <div class="summary-row"><span>Sous-total</span><span>€${sub.toFixed(0)}</span></div>
-      <div class="summary-row"><span>Livraison</span><span>${shipping}</span></div>
-      <div class="summary-row total"><span>Total</span><span>€${total.toFixed(2)}</span></div>
-      <div class="summary-note">${sub < 100 ? 'Ajoutez €'+(100-sub).toFixed(0)+' pour la livraison gratuite.' : '✓ Livraison gratuite appliquée.'}</div>
+      <div class="summary-row"><span>Sous-total</span><span>€${sub.toFixed(2)}</span></div>
+      <div class="summary-row"><span>Livraison</span><span style="font-size:11px;color:var(--ink-3);">Calculée à l'étape suivante</span></div>
+      <div class="summary-row total"><span>Total</span><span>€${sub.toFixed(2)}</span></div>
+      <div class="summary-note">Les frais de livraison seront calculés lors du paiement.</div>
       <button class="btn-checkout" onclick="window.location.href=SESECart.checkoutUrl()">Passer à la caisse →</button>
       <button class="btn-continue" onclick="window.location.href='collection.html'">Continuer les achats</button>
     </div>`;

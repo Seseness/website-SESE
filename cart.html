@@ -423,8 +423,6 @@ function renderCart() {
   }).join('');
 
   const sub = SESECart.subtotal();
-  const shipping = sub >= 100 ? 'Free' : '€4.95';
-  const total = sub >= 100 ? sub : sub + 4.95;
 
   wrap.innerHTML = `
     <div>
@@ -436,10 +434,10 @@ function renderCart() {
     </div>
     <div class="cart-summary">
       <div class="summary-title">Order summary</div>
-      <div class="summary-row"><span>Subtotal</span><span>€${sub.toFixed(0)}</span></div>
-      <div class="summary-row"><span>Shipping</span><span>${shipping}</span></div>
-      <div class="summary-row total"><span>Total</span><span>€${total.toFixed(2)}</span></div>
-      <div class="summary-note">${sub < 100 ? 'Add €'+(100-sub).toFixed(0)+' more for free shipping.' : '✓ Free shipping applied.'}</div>
+      <div class="summary-row"><span>Subtotal</span><span>€${sub.toFixed(2)}</span></div>
+      <div class="summary-row"><span>Shipping</span><span style="font-size:11px;color:var(--ink-3);">Calculated at next step</span></div>
+      <div class="summary-row total"><span>Total</span><span>€${sub.toFixed(2)}</span></div>
+      <div class="summary-note">Shipping costs will be calculated at checkout.</div>
       <button class="btn-checkout" onclick="window.location.href=SESECart.checkoutUrl()">Proceed to checkout →</button>
       <button class="btn-continue" onclick="window.location.href='collection.html'">Continue shopping</button>
     </div>`;

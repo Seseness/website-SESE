@@ -425,8 +425,6 @@ function renderWinkelwagen() {
   }).join('');
 
   const sub = SESECart.subtotal();
-  const shipping = sub >= 100 ? 'Gratis' : '€4.95';
-  const total = sub >= 100 ? sub : sub + 4.95;
 
   wrap.innerHTML = `
     <div>
@@ -438,10 +436,10 @@ function renderWinkelwagen() {
     </div>
     <div class="cart-summary">
       <div class="summary-title">Besteloverzicht</div>
-      <div class="summary-row"><span>Subtotaal</span><span>€${sub.toFixed(0)}</span></div>
-      <div class="summary-row"><span>Verzending</span><span>${shipping}</span></div>
-      <div class="summary-row total"><span>Totaal</span><span>€${total.toFixed(2)}</span></div>
-      <div class="summary-note">${sub < 100 ? 'Nog €'+(100-sub).toFixed(0)+' nodig voor gratis verzending.' : '✓ Gratis verzending toegepast.'}</div>
+      <div class="summary-row"><span>Subtotaal</span><span>€${sub.toFixed(2)}</span></div>
+      <div class="summary-row"><span>Verzending</span><span style="font-size:11px;color:var(--ink-3);">Berekend in de volgende stap</span></div>
+      <div class="summary-row total"><span>Totaal</span><span>€${sub.toFixed(2)}</span></div>
+      <div class="summary-note">Verzendkosten worden berekend bij het afrekenen.</div>
       <button class="btn-checkout" onclick="window.location.href=SESECart.checkoutUrl()">Naar afrekenen →</button>
       <button class="btn-continue" onclick="window.location.href='collection.html'">Verder winkelen</button>
     </div>`;
