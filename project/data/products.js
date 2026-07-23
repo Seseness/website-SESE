@@ -2464,23 +2464,23 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "Gerichte actieve stoffen voor <em>delicate huid.</em>",
-      "howTitle": "Ringvinger. <em>Deppen, niet wrijven.</em>",
+      "howTitle": "Ringvinger. <em>Tik, niet wrijven.</em>",
       "howStaps": [
         {
           "h": "Na serum, voor moisturizer",
-          "p": "Breng aan nadat serums zijn ingetrokken maar voor dag- of nachtcrème."
+          "p": "Breng aan nadat serums zijn opgenomen, maar voor de dag- of nachtcrème."
         },
         {
-          "h": "Alleen ringvinger",
-          "p": "De ringvinger oefent de minste druk uit. Dit gebied heeft geen onderhuids vet — wrijven veroorzaakt schade over tijd."
+          "h": "Enkel de ringvinger",
+          "p": "De ringvinger oefent de minste druk uit. Deze zone heeft geen onderhuids vet. Trekken veroorzaakt op termijn schade."
         },
         {
-          "h": "Stippen en deppen langs het oogbot",
-          "p": "Breng kleine stippen aan langs het oogbot (de benige rand onder en boven het oog). Dep om te mengen — nooit naar binnen trekken."
+          "h": "Dep en tik langs het oogkasbeen",
+          "p": "Breng kleine stippen aan langs het oogkasbeen (de benige rand onder en boven het oog). Tik om te verdelen. Trek nooit naar binnen."
         },
         {
           "h": "Ochtend en avond",
-          "p": "De cafeïne depufft het best 's ochtends. De peptiden werken overnight. Gebruik beide momenten voor volledig voordeel."
+          "p": "De cafeïne werkt het best ontzwellend in de ochtend. De peptiden werken tijdens de nacht. Gebruik het beide momenten voor het volledige effect."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#B3C9B3,#8CAD8C)",
@@ -2511,19 +2511,19 @@ export const PRODUCTS = {
       "faqs": [
         {
           "q": "Kan ik het gebruiken als ik contactlenzen draag?",
-          "a": "Ja. De formule is getest door een oogarts. Breng aan langs het oogbot en laat volledig intrekken voor het inbrengen van lenzen."
+          "a": "Ja. De formule is oogarts-getest. Breng aan langs het oogkasbeen en laat volledig intrekken voor je je lenzen inbrengt."
         },
         {
-          "q": "Werkt het op overhangende of rijpe ogen?",
-          "a": "Ja — het peptidecomplex en cafeïne pakken de twee belangrijkste zorgen van rijpe ooggebieden aan: verlies van stevigheid en donkere kringen. Overhanging (neerzakking van orbitaal vetpad) is structureel en geen crème kan dit aanpakken, maar textuur en verkleuring verbeteren aanzienlijk."
+          "q": "Werkt het bij hangende oogleden of een rijpere huid?",
+          "a": "Ja. Het peptidencomplex en de cafeïne pakken de twee belangrijkste aandachtspunten van de rijpere oogzone aan: verlies van stevigheid en donkere kringen. Hangende oogleden (het zakken van het orbitale vetkussen) is structureel en kan door geen enkele crème verholpen worden, maar textuur en verkleuring verbeteren wel merkbaar."
         },
         {
           "q": "Hoeveel heb ik nodig?",
-          "a": "Een zeer kleine hoeveelheid — ongeveer zo groot als een rijstkorrel per oog, per gebruik. De tube gaat 3-4 maanden mee bij dagelijks gebruik."
+          "a": "Een heel kleine hoeveelheid. Ongeveer ter grootte van een rijstkorrel per oog, per toepassing. De tube gaat 3-4 maanden mee bij dagelijks gebruik."
         },
         {
-          "q": "Kan ik het ook op mijn lippen of mondgebied gebruiken?",
-          "a": "De formule is veilig te gebruiken rondom de mond — vergelijkbare fijne lijntjes, vergelijkbare huiddikte. Het is niet specifiek geformuleerd of getest voor liphuid, maar veel klanten gebruiken het daar met goede resultaten."
+          "q": "Kan ik het ook op mijn lippen of rond mijn mond gebruiken?",
+          "a": "De formule is veilig te gebruiken rond de mond. De huid daar is even dun en vatbaar voor dezelfde fijne lijntjes, dus het werkt daar goed. Het is niet specifiek ontwikkeld of getest voor de lippen zelf, maar kan daar met de nodige voorzichtigheid worden aangebracht."
         }
       ],
       "inci": "Aqua, Glycerin, Caffeine (2%), Sodium Hyaluronate, Hydroxyproline, Niacinamide (3%), Cucumis Sativus (Cucumber) Fruit Extract, Tocopherol, Panthenol, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
@@ -3811,19 +3811,19 @@ export const PRODUCTS = {
     "howÉtapes": [
       {
         "h": "Après le sérum, avant la crème hydratante",
-        "p": "Appliquer après absorption des sérums mais avant la crème de jour ou de nuit."
+        "p": "Appliquez une fois les sérums absorbés, mais avant la crème de jour ou de nuit."
       },
       {
-        "h": "Annulaire uniquement",
-        "p": "L'annulaire exerce le moins de pression. Cette zone n'a pas de graisse sous-cutanée. Tirer sur la peau cause des dommages avec le temps."
+        "h": "Uniquement l'annulaire",
+        "p": "L'annulaire exerce le moins de pression. Cette zone n'a pas de graisse sous-cutanée. Le frottement cause des dommages avec le temps."
       },
       {
-        "h": "Tapotez le long de l'os orbital",
-        "p": "Appliquez de petits points le long de l'os orbital (le rebord osseux sous et au-dessus de l'œil). Tapotez pour fondre. Ne tirez jamais vers l'intérieur."
+        "h": "Déposez et tapotez le long de l'orbite",
+        "p": "Déposez de petits points le long de l'orbite (le rebord osseux sous et au-dessus de l'œil). Tapotez pour faire pénétrer. Ne tirez jamais vers l'intérieur."
       },
       {
         "h": "Matin et soir",
-        "p": "La caféine réduit les poches au mieux le matin. Les peptides agissent pendant la nuit. Utilisez les deux moments pour un bénéfice complet."
+        "p": "La caféine décongestionne mieux le matin. Les peptides agissent pendant la nuit. Utilisez-le aux deux moments pour un bénéfice complet."
       }
     ],
     "benefitGrad": "linear-gradient(160deg,#B3C9B3,#8CAD8C)",
@@ -3854,19 +3854,19 @@ export const PRODUCTS = {
     "faqs": [
       {
         "q": "Puis-je l'utiliser si je porte des lentilles de contact ?",
-        "a": "Oui. La formule est testée par des ophtalmologues. Appliquez le long de l'os orbital et laissez absorber complètement avant d'insérer les lentilles."
+        "a": "Oui. La formule est testée par des ophtalmologistes. Appliquez le long de l'orbite et laissez bien absorber avant de mettre vos lentilles."
       },
       {
-        "q": "Fonctionnera-t-elle sur des yeux tombants ou matures ?",
-        "a": "Oui. Le complexe peptidique et la caféine répondent aux deux préoccupations principales des contours des yeux matures : la perte de fermeté et les cernes. Les poches (affaissement de la poche graisseuse orbitale) sont structurelles et aucune crème ne peut y remédier, mais la texture et les décolorations s'améliorent nettement."
+        "q": "Fonctionne-t-elle sur les paupières tombantes ou les yeux matures ?",
+        "a": "Oui. Le complexe de peptides et la caféine ciblent les deux principales préoccupations du contour des yeux mature : la perte de fermeté et les cernes. Les paupières tombantes (l'affaissement du coussinet adipeux orbital) sont d'origine structurelle et aucune crème ne peut y remédier, mais la texture et les décolorations s'améliorent nettement."
       },
       {
         "q": "De quelle quantité ai-je besoin ?",
-        "a": "Une très petite quantité. Environ la taille d'un grain de riz par œil, par application. Le tube dure 3 à 4 mois avec un usage quotidien."
+        "a": "Une toute petite quantité. Environ la taille d'un grain de riz par œil, par application. Le tube dure 3 à 4 mois avec une utilisation quotidienne."
       },
       {
-        "q": "Puis-je l'utiliser sur mes lèvres ou la zone de la bouche aussi ?",
-        "a": "La formule est sûre à utiliser autour de la bouche. La peau y est tout aussi fine et sujette aux mêmes ridules, elle fonctionne donc bien dans cette zone. Elle n'a pas été spécifiquement formulée ou testée pour les lèvres elles-mêmes, mais peut y être appliquée avec précaution."
+        "q": "Puis-je aussi l'utiliser sur mes lèvres ou autour de la bouche ?",
+        "a": "La formule peut être utilisée sans risque autour de la bouche. La peau y est tout aussi fine et sujette aux mêmes ridules, elle convient donc bien à cette zone. Elle n'a pas été spécifiquement formulée ou testée pour les lèvres elles-mêmes, mais peut y être appliquée avec précaution."
       }
     ],
     "inci": "Aqua, Glycerin, Caffeine (2%), Sodium Hyaluronate, Hydroxyproline, Niacinamide (3%), Cucumis Sativus (Cucumber) Fruit Extract, Tocopherol, Panthenol, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
