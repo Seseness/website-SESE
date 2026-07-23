@@ -20,11 +20,11 @@ const CART_KEY = 'sese_cart_v2';
 
 // Product catalogue — name, price, image, background colour
 const PRODUCT_CATALOGUE = {
-  'cleansing-foam':       { name: 'Foaming Cleanser',         price: 26,  img: '/project/assets/products-new/cleansing-foam-hp.png',       bg: '#E3EEF5', variant: '58352279748992' },
+  'cleansing-foam':       { name: 'Cleansing Foam',         price: 26,  img: '/project/assets/products-new/cleansing-foam-hp.png',       bg: '#E3EEF5', variant: '58352279748992' },
   'hydrating-toner':      { name: 'Hydrating Toner',          price: 24,  img: '/project/assets/products-new/hydrating-toner-hp.png',      bg: '#E6EFE9', variant: '58352287154560' },
   'vitamin-c-serum':      { name: 'Vitamin C Serum',          price: 34,  img: '/project/assets/products-new/vitamin-c-serum-hp.png',      bg: '#FCEAD0', variant: '58352288891264' },
-  'peptide-serum':        { name: 'Peptide Firming Serum',    price: 34,  img: '/project/assets/products-new/peptide-serum-hp.png',        bg: '#FCEAD0', variant: '58352290038144' },
-  'retinol-alt-serum':    { name: 'Retinol Alt. Serum',       price: 26,  img: '/project/assets/products-new/retinol-alt-serum-hp.png',    bg: '#F5EAE4', variant: '58352292692352' },
+  'peptide-serum':        { name: 'Peptide Serum',    price: 34,  img: '/project/assets/products-new/peptide-serum-hp.png',        bg: '#FCEAD0', variant: '58352290038144' },
+  'retinol-alt-serum':    { name: 'Retinol Alternative Serum',       price: 26,  img: '/project/assets/products-new/retinol-alt-serum-hp.png',    bg: '#F5EAE4', variant: '58352292692352' },
   'firming-day-cream':    { name: 'Firming Day Cream',        price: 36,  img: '/project/assets/products-new/firming-day-cream-hp.png',    bg: '#FCE8EB', variant: '58352294691200' },
   'ceramide-night-cream': { name: 'Ceramide Night Cream',     price: 38,  img: '/project/assets/products-new/ceramide-night-cream-hp.png', bg: '#EFDFC2', variant: '58352298262912' },
   'smoothing-eye-cream':  { name: 'Smoothing Eye Cream',      price: 30,  img: '/project/assets/products-new/smoothing-eye-cream-hp.png',  bg: '#C9D7C9', variant: '58352300097920' },
