@@ -2063,20 +2063,20 @@ export const PRODUCTS = {
       "faqTitle": "Vragen over <em>dit serum.</em>",
       "faqs": [
         {
-          "q": "Kan ik het gebruiken als ik zwanger ben of borstvoeding geef?",
-          "a": "Bakuchiol wordt algemeen beschouwd als het zwangerschapsveilige retinol-alternatief. We raden echter aan om je arts of verloskundige te raadplegen voordat je een nieuw actief ingrediënt in je routine opneemt tijdens de zwangerschap."
+          "q": "Kan ik het gebruiken tijdens zwangerschap of borstvoeding?",
+          "a": "Bakuchiol wordt algemeen beschouwd als het zwangerschapsveilige alternatief voor retinol. We raden echter aan om je arts of vroedvrouw te raadplegen voor je een nieuw actief ingrediënt aan je routine toevoegt tijdens de zwangerschap."
         },
         {
-          "q": "Kan ik het stapelen met het Peptide Serum?",
-          "a": "Ja — breng eerst Retinol Alternative aan, wacht zestig seconden, dan Peptide Serum. Of gebruik Peptide 's ochtends en Retinol Alternative 's avonds, wat je routine schoon houdt en je huid voor overbelasting bewaart."
+          "q": "Kan ik het combineren met de Peptide Serum?",
+          "a": "Ja. Breng eerst Retinol Alternative aan, wacht zestig seconden, en dan Peptide Serum. Of gebruik Peptide 's ochtends en Retinol Alternative 's avonds, zo blijft je routine overzichtelijk en wordt je huid niet overbelast."
         },
         {
-          "q": "Zal mijn huid schilferen of zuiveren?",
-          "a": "Bakuchiol veroorzaakt niet dezelfde zuivering als retinol. Sommige huid kan in de eerste week zeer milde schilfering ervaren. Zo ja, verminderen tot om de andere avond gedurende twee weken, dan dagelijks."
+          "q": "Gaat mijn huid vervellen of purgen?",
+          "a": "Bakuchiol veroorzaakt niet dezelfde purging als retinol. Sommige huid kan lichte schilfering ervaren in de eerste week. Verminder in dat geval naar om de avond gedurende twee weken, en bouw dan op naar dagelijks gebruik."
         },
         {
           "q": "Hoe verschilt dit van retinol?",
-          "a": "Retinol is een vitamine A-derivaat dat direct omzet in retinoïnezuur in de huid. Bakuchiol is een plantaardige verbinding (uit Babchi-zaden) die vergelijkbare celvernieuwingsreceptoren activeert via een ander pad — zelfde bestemming, zachtere weg."
+          "a": "Retinol is een vitamine A-derivaat dat rechtstreeks omgezet wordt in retinoïnezuur in de huid. Bakuchiol is een plantaardige stof (afkomstig van Babchi-zaden) die vergelijkbare celvernieuwingsreceptoren activeert via een andere weg. Zelfde bestemming, zachtere weg."
         }
       ],
       "inci": "Aqua, Glycerin, Bakuchiol (1.5%), Gluconolactone (3%), Niacinamide (5%), Squalane, Panthenol, Tocopherol, Sodium Hyaluronate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
@@ -3406,20 +3406,20 @@ export const PRODUCTS = {
     "faqTitle": "Questions sur <em>ce sérum.</em>",
     "faqs": [
       {
-        "q": "Puis-je l'utiliser si je suis enceinte ou j'allaite ?",
-        "a": "Le bakuchiol est largement considéré comme l'alternative au rétinol sûre pendant la grossesse. Cependant, nous recommandons de consulter votre médecin ou sage-femme avant d'introduire tout nouvel actif dans votre routine pendant la grossesse."
+        "q": "Puis-je l'utiliser pendant la grossesse ou l'allaitement ?",
+        "a": "Le bakuchiol est largement considéré comme l'alternative au rétinol compatible avec la grossesse. Nous recommandons toutefois de consulter votre médecin ou votre sage-femme avant d'introduire un nouvel actif dans votre routine pendant la grossesse."
       },
       {
         "q": "Puis-je le superposer avec le Peptide Serum ?",
-        "a": "Oui. Appliquez d'abord le Retinol Alternative, attendez soixante secondes, puis le Peptide Serum. Ou utilisez les Peptides le matin et le Retinol Alternative le soir, ce qui garde votre routine claire et évite de surcharger votre peau."
+        "a": "Oui. Appliquez d'abord Retinol Alternative, patientez soixante secondes, puis Peptide Serum. Ou utilisez Peptide le matin et Retinol Alternative le soir, ce qui garde votre routine simple et évite de surcharger votre peau."
       },
       {
-        "q": "Ma peau va-t-elle peler ou purger ?",
-        "a": "Le bakuchiol ne provoque pas la même purge que le rétinol. Certaines peaux peuvent présenter une très légère desquamation la première semaine. Si c'est le cas, réduisez à un soir sur deux pendant deux semaines, puis quotidiennement."
+        "q": "Ma peau va-t-elle peler ou faire une purge ?",
+        "a": "Le bakuchiol ne provoque pas la même purge que le rétinol. Certaines peaux peuvent connaître une très légère desquamation la première semaine. Le cas échéant, réduisez à un soir sur deux pendant deux semaines, puis passez à un usage quotidien."
       },
       {
         "q": "En quoi est-ce différent du rétinol ?",
-        "a": "Le rétinol est un dérivé de la vitamine A qui se convertit directement en acide rétinoïque dans la peau. Le bakuchiol est un composé végétal (issu des graines de Babchi) qui active des récepteurs de renouvellement cellulaire similaires par une voie différente. Même destination, chemin plus doux."
+        "a": "Le rétinol est un dérivé de vitamine A qui se convertit directement en acide rétinoïque dans la peau. Le bakuchiol est un composé végétal (issu des graines de Babchi) qui active des récepteurs de renouvellement cellulaire similaires par une voie différente. Même destination, chemin plus doux."
       }
     ],
     "inci": "Aqua, Glycerin, Bakuchiol (1.5%), Gluconolactone (3%), Niacinamide (5%), Squalane, Panthenol, Tocopherol, Sodium Hyaluronate, Xanthan Gum, Sodium Benzoate, Potassium Sorbate, Citric Acid.",
