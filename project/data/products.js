@@ -1940,7 +1940,7 @@ export const PRODUCTS = {
       ]
     },
     "retinol-alt-serum": {
-      "name": "Retinol Alternatief Serum",
+      "name": "Retinol Alternative Serum",
       "nameBreak": "Retinol Alt.<br>Serum.",
       "step": "03 · Behandelen · Avond",
       "stepNum": 2,
@@ -2369,8 +2369,8 @@ export const PRODUCTS = {
           "a": "Ja — nachtcrèmes zijn ontworpen om rijker te zijn dan dagcrèmes. Je huid is overnight in herstelmodus en kan gebruik maken van de extra voeding. Als het te zwaar aanvoelt, probeer dan een iets kleinere hoeveelheid."
         },
         {
-          "q": "Kan ik het gebruiken met het Retinol Alternatief Serum?",
-          "a": "Ja — en dit is eigenlijk de beoogde combinatie. Breng eerst Retinol Alternatief Serum aan, laat het zestig seconden intrekken, breng dan Ceramide Night Cream erop aan. De panthenol en ceramiden van de crème bufferen serum-gerelateerde gevoeligheid."
+          "q": "Kan ik het gebruiken met het Retinol Alternative Serum?",
+          "a": "Ja — en dit is eigenlijk de beoogde combinatie. Breng eerst Retinol Alternative Serum aan, laat het zestig seconden intrekken, breng dan Ceramide Night Cream erop aan. De panthenol en ceramiden van de crème bufferen serum-gerelateerde gevoeligheid."
         },
         {
           "q": "Kunnen mannen het gebruiken?",
@@ -2832,8 +2832,8 @@ export const PRODUCTS = {
     ]
   },
   "hydrating-toner": {
-    "name": "Lotion Tonique Hydratante",
-    "nameBreak": "Lotion Tonique<br>Hydratante.",
+    "name": "Hydrating Toner",
+    "nameBreak": "Hydrating<br>Toner.",
     "step": "02 · Tonifier",
     "stepNum": 2,
     "price": "€24",
@@ -3283,7 +3283,7 @@ export const PRODUCTS = {
     ]
   },
   "retinol-alt-serum": {
-    "name": "Sérum Alternatif au Rétinol",
+    "name": "Retinol Alternative Serum",
     "nameBreak": "Retinol Alt.<br>Serum.",
     "step": "03 · Traiter · Soir",
     "stepNum": 2,
