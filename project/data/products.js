@@ -2170,19 +2170,19 @@ export const PRODUCTS = {
       "howStaps": [
         {
           "h": "Na je ochtendserum",
-          "p": "Breng aan nadat het serum is ingetrokken — ongeveer zestig seconden na het indeppen."
+          "p": "Breng aan nadat het serum is opgenomen, ongeveer zestig seconden na het aandeppen."
         },
         {
-          "h": "Erwtengrote hoeveelheid, eerst opgewarmd",
-          "p": "Neem een erwtengrote hoeveelheid en verwarm het tussen je vingertoppen voor het in de huid te drukken. Het smelt erin."
+          "h": "Een hoeveelheid ter grootte van een erwt, eerst opgewarmd",
+          "p": "Neem een hoeveelheid ter grootte van een erwt en warm het op tussen je vingertoppen voor je het in de huid drukt. Het smelt weg."
         },
         {
-          "h": "Gezicht, nek, decolleté",
-          "p": "Stop niet bij de kaak. Druk omhoog en naar buiten. De nek veroudert net zo snel als het gezicht."
+          "h": "Gezicht, hals, decolleté",
+          "p": "Stop niet bij je kaaklijn. Druk omhoog en naar buiten. De hals veroudert even snel als het gezicht."
         },
         {
           "h": "Volg met SPF",
-          "p": "De dagcrème heeft geen SPF. Sluit altijd af met SESE SPF 50 Sunscreen Stick als de laatste ochtendstap."
+          "p": "De dagcrème bevat geen SPF. Sluit je ochtendroutine altijd af met SESE SPF 50 Sunscreen Stick als laatste stap."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#E9B7A8,#CC8E7A)",
@@ -3509,23 +3509,23 @@ export const PRODUCTS = {
       }
     ],
     "ingTitle": "Légère mais <em>véritablement hydratante.</em>",
-    "howTitle": "Une étape entre <em>le sérum et le SPF.</em>",
+    "howTitle": "Une étape entre <em>le sérum et la SPF.</em>",
     "howÉtapes": [
       {
         "h": "Après votre sérum du matin",
-        "p": "Appliquer après absorption du sérum, environ soixante secondes après l'avoir tamponné."
+        "p": "Appliquez une fois que le sérum a été absorbé, environ soixante secondes après l'avoir tapoté."
       },
       {
-        "h": "Quantité de la taille d'un pois, réchauffée d'abord",
-        "p": "Prenez une quantité de la taille d'un pois et réchauffez-la entre les doigts avant de la presser sur la peau. Elle pénètre instantanément."
+        "h": "Une noisette, réchauffée au préalable",
+        "p": "Prenez une noisette de produit et réchauffez-la entre vos doigts avant de la presser dans la peau. Elle fond instantanément."
       },
       {
         "h": "Visage, cou, décolleté",
         "p": "Ne vous arrêtez pas à la mâchoire. Pressez vers le haut et vers l'extérieur. Le cou vieillit aussi vite que le visage."
       },
       {
-        "h": "Suivez avec le SPF",
-        "p": "La crème de jour ne contient pas de SPF. Terminez toujours par le SPF 50 Sunscreen Stick SESE comme dernière étape du matin."
+        "h": "Terminez par la SPF",
+        "p": "La crème de jour ne contient pas de SPF. Terminez toujours par SESE SPF 50 Sunscreen Stick comme dernière étape du matin."
       }
     ],
     "benefitGrad": "linear-gradient(160deg,#E9B7A8,#CC8E7A)",
