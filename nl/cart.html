@@ -535,9 +535,12 @@ function proceedToCheckout() {
     discountCode = localStorage.getItem('sese_discount_code');
     if (discountCode) localStorage.removeItem('sese_discount_code');
   }
-  const discountParam = discountCode ? `?discount=${encodeURIComponent(discountCode)}` : '';
   localStorage.removeItem('sese_bundle_cart');
-  window.location.href = `https://checkout.sese.be/cart/${lineItems}${discountParam}`;
+  if (discountCode) {
+    window.location.href = `https://checkout.sese.be/discount/${encodeURIComponent(discountCode)}?redirect=/cart/${lineItems}`;
+  } else {
+    window.location.href = `https://checkout.sese.be/cart/${lineItems}`;
+  }
 }
 
 function changeBundleQty(bundleKey, delta) {
