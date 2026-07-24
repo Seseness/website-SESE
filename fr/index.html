@@ -1438,20 +1438,28 @@ document.querySelectorAll('.card-add').forEach(btn => {
 // =============================================================
 //  Ajouter au panier — Forever Routine
 // =============================================================
+function addBundleToCart(bundleKey, btn) {
+  localStorage.setItem('sese_bundle_pending', bundleKey);
+  document.querySelectorAll('.cart-count, #cart-count').forEach(el => el.textContent = '1');
+  showToast('Ajouté au panier.');
+  btn.classList.add('added');
+  setTimeout(() => btn.classList.remove('added'), 2000);
+}
+
 document.getElementById('bundle-btn').addEventListener('click', (e) => {
   e.stopPropagation();
-  window.location.href = '../cart.html?bundle=forever-bundle';
+  addBundleToCart('forever-bundle', e.currentTarget);
 });
 
 // =============================================================
 //  Ritual bundle buttons
 // =============================================================
-[['night-cart-btn', '../cart.html?bundle=beauty-sleep-ritual'],
- ['full-cart-btn',  '../cart.html?bundle=full-ritual']
-].forEach(([btnId, url]) => {
+[['night-cart-btn', 'beauty-sleep-ritual'],
+ ['full-cart-btn',  'full-ritual']
+].forEach(([btnId, bundleKey]) => {
   document.getElementById(btnId).addEventListener('click', (e) => {
     e.stopPropagation();
-    window.location.href = url;
+    addBundleToCart(bundleKey, e.currentTarget);
   });
 });
 

@@ -1403,19 +1403,27 @@ document.querySelectorAll('.card-add').forEach(btn => {
 });
 
 // =============================================================
-//  Bundle buttons — redirect to Bundler landing pages
+//  Bundle buttons — store in localStorage, show toast
 // =============================================================
+function addBundleToCart(bundleKey, btn) {
+  localStorage.setItem('sese_bundle_pending', bundleKey);
+  document.querySelectorAll('.cart-count, #cart-count').forEach(el => el.textContent = '1');
+  showToast('Added to cart.');
+  btn.classList.add('added');
+  setTimeout(() => btn.classList.remove('added'), 2000);
+}
+
 document.getElementById('bundle-btn').addEventListener('click', (e) => {
   e.stopPropagation();
-  window.location.href = 'cart.html?bundle=forever-bundle';
+  addBundleToCart('forever-bundle', e.currentTarget);
 });
 
-[['night-cart-btn', 'cart.html?bundle=beauty-sleep-ritual'],
- ['full-cart-btn',  'cart.html?bundle=full-ritual']
-].forEach(([btnId, url]) => {
+[['night-cart-btn', 'beauty-sleep-ritual'],
+ ['full-cart-btn',  'full-ritual']
+].forEach(([btnId, bundleKey]) => {
   document.getElementById(btnId).addEventListener('click', (e) => {
     e.stopPropagation();
-    window.location.href = url;
+    addBundleToCart(bundleKey, e.currentTarget);
   });
 });
 

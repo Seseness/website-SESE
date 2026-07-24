@@ -771,14 +771,13 @@ document.getElementById('cart-btn').addEventListener('click', () => {
   window.location.href = 'cart.html';
 });
 
-document.getElementById('bundle-add-btn').addEventListener('click', () => {
-  const BUNDLE_URLS = {
-    'forever-routine':     '../cart.html?bundle=forever-bundle',
-    'beauty-sleep-ritual': '../cart.html?bundle=beauty-sleep-ritual',
-    'full-ritual':         '../cart.html?bundle=full-ritual',
-  };
-  const url = BUNDLE_URLS[bundleKey] || BUNDLE_URLS['forever-routine'];
-  window.location.href = url;
+document.getElementById('bundle-add-btn').addEventListener('click', (e) => {
+  const key = bundleKey === 'forever-routine' ? 'forever-bundle' : bundleKey;
+  localStorage.setItem('sese_bundle_pending', key);
+  document.querySelectorAll('.cart-count, #cart-count').forEach(el => el.textContent = '1');
+  showToast('Ajouté au panier.');
+  e.currentTarget.classList.add('added');
+  setTimeout(() => e.currentTarget.classList.remove('added'), 2000);
 });
 </script>
 <script src="../project/js/sese-cart.js"></script>

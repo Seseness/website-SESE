@@ -440,8 +440,12 @@ function renderBundleCart(bundleKey) {
 }
 
 function renderCart() {
-  const bundleKey = new URLSearchParams(window.location.search).get('bundle');
-  if (bundleKey && BUNDLE_CART_DATA[bundleKey]) { renderBundleCart(bundleKey); return; }
+  const bundleKey = new URLSearchParams(window.location.search).get('bundle')
+                 || localStorage.getItem('sese_bundle_pending');
+  if (bundleKey && BUNDLE_CART_DATA[bundleKey]) {
+    localStorage.removeItem('sese_bundle_pending');
+    renderBundleCart(bundleKey); return;
+  }
   const cart = SESECart.get();
   const wrap = document.getElementById('cart-wrap');
 

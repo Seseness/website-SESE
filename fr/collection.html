@@ -990,16 +990,14 @@ function showToast(msg) {
   toastTimer = setTimeout(() => t.classList.remove('show'), 3000);
 }
 
-const BUNDLE_URLS = {
-  'forever-bundle':      '../cart.html?bundle=forever-bundle',
-  'beauty-sleep-ritual': '../cart.html?bundle=beauty-sleep-ritual',
-  'full-ritual':         '../cart.html?bundle=full-ritual',
-};
+const BUNDLE_KEYS = new Set(['forever-bundle', 'beauty-sleep-ritual', 'full-ritual']);
 
 function handleAdd(btn) {
   const productKey = btn.dataset.product;
-  if (BUNDLE_URLS[productKey]) {
-    window.location.href = BUNDLE_URLS[productKey];
+  if (BUNDLE_KEYS.has(productKey)) {
+    localStorage.setItem('sese_bundle_pending', productKey);
+    document.querySelectorAll('.cart-count, #cart-count').forEach(el => el.textContent = '1');
+    showToast('Ajouté au panier.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
     return;
   }
   if (!isConfigured()) {
