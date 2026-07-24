@@ -484,18 +484,9 @@ function renderCart() {
   const productSub = SESECart.subtotal();
   const grandTotal = bundleSub + productSub;
 
-  const bundleCheckoutButtons = bundles.map(entry => {
-    const b = BUNDLE_CART_DATA[entry.key];
-    if (!b) return '';
-    return `<button class="btn-checkout" onclick="checkoutBundle('${entry.key}')">Checkout: ${b.name} →</button>`;
-  }).join('');
-
-  const productCheckoutButton = cart.items.length
-    ? `<button class="btn-checkout" style="margin-top:8px" onclick="window.location.href=SESECart.checkoutUrl()">Checkout: Products →</button>`
-    : '';
-
-  const checkoutNote = (bundles.length > 0 && cart.items.length > 0)
-    ? `<div class="summary-note" style="margin-bottom:8px">Routines and products checkout separately.</div>`
+  const multipleCheckouts = bundles.length > 1 || (bundles.length > 0 && cart.items.length > 0);
+  const checkoutNote = multipleCheckouts
+    ? `<div class="summary-note">Your order contains multiple checkouts. Each routine and your products will be checked out separately.</div>`
     : `<div class="summary-note">Shipping costs will be calculated at checkout.</div>`;
 
   wrap.innerHTML = `
@@ -512,10 +503,18 @@ function renderCart() {
       <div class="summary-row"><span>Shipping</span><span style="font-size:11px;color:var(--ink-3);">Calculated at next step</span></div>
       <div class="summary-row total"><span>Total</span><span>€${grandTotal.toFixed(2)}</span></div>
       ${checkoutNote}
-      ${bundleCheckoutButtons}
-      ${productCheckoutButton}
+      <button class="btn-checkout" onclick="proceedToCheckout()">Proceed to checkout →</button>
       <button class="btn-continue" onclick="window.location.href='collection.html'">Continue shopping</button>
     </div>`;
+}
+
+function proceedToCheckout() {
+  const bundles = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]');
+  if (bundles.length > 0) {
+    checkoutBundle(bundles[0].key);
+  } else {
+    window.location.href = SESECart.checkoutUrl();
+  }
 }
 
 function changeBundleQty(bundleKey, delta) {

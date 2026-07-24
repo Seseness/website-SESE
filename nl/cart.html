@@ -486,18 +486,9 @@ function renderWinkelwagen() {
   const productSub = SESECart.subtotal();
   const grandTotal = bundleSub + productSub;
 
-  const bundleCheckoutButtons = bundles.map(entry => {
-    const b = BUNDLE_CART_DATA[entry.key];
-    if (!b) return '';
-    return `<button class="btn-checkout" onclick="checkoutBundle('${entry.key}')">Afrekenen: ${b.name} →</button>`;
-  }).join('');
-
-  const productCheckoutButton = cart.items.length
-    ? `<button class="btn-checkout" style="margin-top:8px" onclick="window.location.href=SESECart.checkoutUrl()">Afrekenen: Producten →</button>`
-    : '';
-
-  const checkoutNote = (bundles.length > 0 && cart.items.length > 0)
-    ? `<div class="summary-note" style="margin-bottom:8px">Routines en producten worden apart afgerekend.</div>`
+  const multipleCheckouts = bundles.length > 1 || (bundles.length > 0 && cart.items.length > 0);
+  const checkoutNote = multipleCheckouts
+    ? `<div class="summary-note">Je bestelling bevat meerdere afrekenrondes. Elke routine en je producten worden apart afgerekend.</div>`
     : `<div class="summary-note">Verzendkosten worden berekend bij het afrekenen.</div>`;
 
   wrap.innerHTML = `
@@ -514,10 +505,18 @@ function renderWinkelwagen() {
       <div class="summary-row"><span>Verzending</span><span style="font-size:11px;color:var(--ink-3);">Berekend in de volgende stap</span></div>
       <div class="summary-row total"><span>Totaal</span><span>€${grandTotal.toFixed(2)}</span></div>
       ${checkoutNote}
-      ${bundleCheckoutButtons}
-      ${productCheckoutButton}
+      <button class="btn-checkout" onclick="proceedToCheckout()">Afrekenen →</button>
       <button class="btn-continue" onclick="window.location.href='collection.html'">Verder winkelen</button>
     </div>`;
+}
+
+function proceedToCheckout() {
+  const bundles = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]');
+  if (bundles.length > 0) {
+    checkoutBundle(bundles[0].key);
+  } else {
+    window.location.href = SESECart.checkoutUrl();
+  }
 }
 
 function changeBundleQty(bundleKey, delta) {

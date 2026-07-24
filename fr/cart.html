@@ -486,18 +486,9 @@ function renderPanier() {
   const productSub = SESECart.subtotal();
   const grandTotal = bundleSub + productSub;
 
-  const bundleCheckoutButtons = bundles.map(entry => {
-    const b = BUNDLE_CART_DATA[entry.key];
-    if (!b) return '';
-    return `<button class="btn-checkout" onclick="checkoutBundle('${entry.key}')">Commander : ${b.name} →</button>`;
-  }).join('');
-
-  const productCheckoutButton = cart.items.length
-    ? `<button class="btn-checkout" style="margin-top:8px" onclick="window.location.href=SESECart.checkoutUrl()">Commander : Produits →</button>`
-    : '';
-
-  const checkoutNote = (bundles.length > 0 && cart.items.length > 0)
-    ? `<div class="summary-note" style="margin-bottom:8px">Les routines et produits sont commandés séparément.</div>`
+  const multipleCheckouts = bundles.length > 1 || (bundles.length > 0 && cart.items.length > 0);
+  const checkoutNote = multipleCheckouts
+    ? `<div class="summary-note">Votre commande nécessite plusieurs paiements. Chaque routine et vos produits seront payés séparément.</div>`
     : `<div class="summary-note">Les frais de livraison seront calculés lors du paiement.</div>`;
 
   wrap.innerHTML = `
@@ -514,10 +505,18 @@ function renderPanier() {
       <div class="summary-row"><span>Livraison</span><span style="font-size:11px;color:var(--ink-3);">Calculée à l'étape suivante</span></div>
       <div class="summary-row total"><span>Total</span><span>€${grandTotal.toFixed(2)}</span></div>
       ${checkoutNote}
-      ${bundleCheckoutButtons}
-      ${productCheckoutButton}
+      <button class="btn-checkout" onclick="proceedToCheckout()">Passer la commande →</button>
       <button class="btn-continue" onclick="window.location.href='collection.html'">Continuer les achats</button>
     </div>`;
+}
+
+function proceedToCheckout() {
+  const bundles = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]');
+  if (bundles.length > 0) {
+    checkoutBundle(bundles[0].key);
+  } else {
+    window.location.href = SESECart.checkoutUrl();
+  }
 }
 
 function changeBundleQty(bundleKey, delta) {
