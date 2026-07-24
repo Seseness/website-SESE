@@ -392,17 +392,20 @@ const BUNDLE_CART_DATA = {
   'beauty-sleep-ritual': {
     name: 'The Beauty Sleep Ritual', price: 135,
     img: '../project/assets/products-new/bundle-beauty-sleep.png', bg: '#1A2030',
-    checkoutUrl: 'https://checkout.sese.be/a/bundles/checkout/the-beauty-sleep-routine-i7gb'
+    discountCode: 'BEAUTY-SLEEP-RITUAL',
+    variantIds: ['58352298262912','58352300097920','58352279748992','58352287154560','58352292692352']
   },
   'forever-bundle': {
     name: 'The Forever Routine', price: 140,
     img: '../project/assets/products-new/bundle-forever.jpg', bg: '#DCEAF1',
-    checkoutUrl: 'https://checkout.sese.be/a/bundles/checkout/the-forever-routine-i7gc'
+    discountCode: 'FOREVER-ROUTINE',
+    variantIds: ['58352279748992','58352294691200','58352287154560','58352290038144','58352302162304']
   },
   'full-ritual': {
     name: 'The Full Ritual', price: 260,
     img: '../project/assets/products-new/bundle-full-ritual.jpg', bg: '#EAD6B7',
-    checkoutUrl: 'https://checkout.sese.be/a/bundles/checkout/the-full-routine-i7g9'
+    discountCode: 'FULL-RITUAL',
+    variantIds: ['58352298262912','58352300097920','58352279748992','58352294691200','58352287154560','58352290038144','58352292692352','58352302162304','58352288891264']
   }
 };
 
@@ -512,11 +515,29 @@ function renderWinkelwagen() {
 
 function proceedToCheckout() {
   const bundles = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]');
-  if (bundles.length > 0) {
-    checkoutBundle(bundles[0].key);
-  } else {
-    window.location.href = SESECart.checkoutUrl();
+  const cart = SESECart.get();
+  const variantMap = {};
+  bundles.forEach(entry => {
+    const b = BUNDLE_CART_DATA[entry.key];
+    if (!b) return;
+    b.variantIds.forEach(vid => {
+      variantMap[vid] = (variantMap[vid] || 0) + entry.qty;
+    });
+  });
+  cart.items.forEach(item => {
+    const p = PRODUCT_CATALOGUE[item.key];
+    if (p && p.variant) variantMap[p.variant] = (variantMap[p.variant] || 0) + item.qty;
+  });
+  if (!Object.keys(variantMap).length) return;
+  const lineItems = Object.entries(variantMap).map(([vid, qty]) => `${vid}:${qty}`).join(',');
+  let discountCode = bundles.length > 0 ? BUNDLE_CART_DATA[bundles[0].key]?.discountCode : null;
+  if (!discountCode) {
+    discountCode = localStorage.getItem('sese_discount_code');
+    if (discountCode) localStorage.removeItem('sese_discount_code');
   }
+  const discountParam = discountCode ? `?discount=${encodeURIComponent(discountCode)}` : '';
+  localStorage.removeItem('sese_bundle_cart');
+  window.location.href = `https://sese-8214.myshopify.com/cart/${lineItems}${discountParam}`;
 }
 
 function changeBundleQty(bundleKey, delta) {
