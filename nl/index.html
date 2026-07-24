@@ -1438,14 +1438,14 @@ document.querySelectorAll('.card-add').forEach(btn => {
 // =============================================================
 document.getElementById('bundle-btn').addEventListener('click', (e) => {
   e.stopPropagation();
-  window.location.href = 'https://checkout.sese.be/a/bundles/the-forever-routine-i7gc';
+  window.location.href = 'https://checkout.sese.be/a/bundles/checkout/the-forever-routine-i7gc';
 });
 
 // =============================================================
 //  Ritual bundle buttons
 // =============================================================
-[['night-cart-btn', 'https://checkout.sese.be/a/bundles/the-beauty-sleep-routine-i7gb'],
- ['full-cart-btn',  'https://checkout.sese.be/a/bundles/the-full-routine-i7g9']
+[['night-cart-btn', 'https://checkout.sese.be/a/bundles/checkout/the-beauty-sleep-routine-i7gb'],
+ ['full-cart-btn',  'https://checkout.sese.be/a/bundles/checkout/the-full-routine-i7g9']
 ].forEach(([btnId, url]) => {
   document.getElementById(btnId).addEventListener('click', (e) => {
     e.stopPropagation();
