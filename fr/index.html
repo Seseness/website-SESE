@@ -1437,29 +1437,19 @@ document.querySelectorAll('.card-add').forEach(btn => {
 //  Ajouter au panier — Forever Routine
 // =============================================================
 document.getElementById('bundle-btn').addEventListener('click', (e) => {
-  const btn = e.currentTarget;
-  const productKey = 'forever-bundle';
-  const variantId = SHOPIFY.variants[productKey];
-  if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
-    showToast('Configure Boutiqueify variant IDs to enable checkout.');
-    return;
-  }
-  SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
+  e.stopPropagation();
+  window.location.href = 'https://checkout.sese.be/a/bundles/the-forever-routine-i7gc';
 });
 
 // =============================================================
 //  Ritual bundle buttons
 // =============================================================
-[['night-cart-btn', 'beauty-sleep-ritual'], ['full-cart-btn', 'full-ritual']].forEach(([btnId, productKey]) => {
+[['night-cart-btn', 'https://checkout.sese.be/a/bundles/the-beauty-sleep-routine-i7gb'],
+ ['full-cart-btn',  'https://checkout.sese.be/a/bundles/the-full-routine-i7g9']
+].forEach(([btnId, url]) => {
   document.getElementById(btnId).addEventListener('click', (e) => {
     e.stopPropagation();
-    const btn = e.currentTarget;
-    const variantId = SHOPIFY.variants[productKey];
-    if (!isConfigured() || !variantId || variantId.includes('REPLACE_ME')) {
-      showToast('Configure Boutiqueify variant IDs to enable checkout.');
-      return;
-    }
-    SESECart.add(productKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
+    window.location.href = url;
   });
 });
 

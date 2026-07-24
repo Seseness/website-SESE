@@ -988,8 +988,18 @@ function showToast(msg) {
   toastTimer = setTimeout(() => t.classList.remove('show'), 3000);
 }
 
+const BUNDLE_URLS = {
+  'forever-bundle':      'https://checkout.sese.be/a/bundles/the-forever-routine-i7gc',
+  'beauty-sleep-ritual': 'https://checkout.sese.be/a/bundles/the-beauty-sleep-routine-i7gb',
+  'full-ritual':         'https://checkout.sese.be/a/bundles/the-full-routine-i7g9',
+};
+
 function handleAdd(btn) {
   const productKey = btn.dataset.product;
+  if (BUNDLE_URLS[productKey]) {
+    window.location.href = BUNDLE_URLS[productKey];
+    return;
+  }
   if (!isConfigured()) {
     showToast('Winkel nog niet geconfigureerd — binnenkort beschikbaar');
     return;

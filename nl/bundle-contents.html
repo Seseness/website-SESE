@@ -770,17 +770,13 @@ document.getElementById('cart-btn').addEventListener('click', () => {
 });
 
 document.getElementById('bundle-add-btn').addEventListener('click', () => {
-  if (!isConfigured()) {
-    showToast('Configure Winkelify variant IDs to enable checkout.');
-    return;
-  }
-  const variantId = SHOPIFY.variants[bundleKey];
-  if (!variantId || variantId.includes('REPLACE_ME')) {
-    showToast('Product not available yet');
-    return;
-  }
-  const btn = document.getElementById('bundle-add-btn');
-  SESECart.add(bundleKey === 'forever-routine' ? 'forever-bundle' : bundleKey); showToast('Added to cart.'); btn.classList.add('added'); setTimeout(() => btn.classList.remove('added'), 2000);
+  const BUNDLE_URLS = {
+    'forever-routine':     'https://checkout.sese.be/a/bundles/the-forever-routine-i7gc',
+    'beauty-sleep-ritual': 'https://checkout.sese.be/a/bundles/the-beauty-sleep-routine-i7gb',
+    'full-ritual':         'https://checkout.sese.be/a/bundles/the-full-routine-i7g9',
+  };
+  const url = BUNDLE_URLS[bundleKey] || BUNDLE_URLS['forever-routine'];
+  window.location.href = url;
 });
 </script>
 <script src="../project/js/sese-cart.js"></script>
