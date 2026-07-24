@@ -91,6 +91,7 @@ const SESECart = {
       return p ? `${p.variant}:${i.qty}` : null;
     }).filter(Boolean).join(',');
     const discountCode = localStorage.getItem('sese_discount_code');
+    if (discountCode) localStorage.removeItem('sese_discount_code');
     const discountParam = discountCode ? `?discount=${encodeURIComponent(discountCode)}` : '';
     return `https://${SHOPIFY_DOMAIN}/cart/${lineItems}${discountParam}`;
   },
