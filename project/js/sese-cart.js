@@ -96,7 +96,8 @@ const SESECart = {
     return `https://${SHOPIFY_DOMAIN}/cart/${lineItems}${discountParam}`;
   },
   updateBadge() {
-    const count = SESECart.count();
+    const bundleQty = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]').reduce((s, b) => s + b.qty, 0);
+    const count = SESECart.count() + bundleQty;
     document.querySelectorAll('.cart-count, #cart-count').forEach(el => {
       el.textContent = count > 0 ? count : '0';
     });

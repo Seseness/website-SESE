@@ -1439,8 +1439,12 @@ document.querySelectorAll('.card-add').forEach(btn => {
 //  In winkelwagen — Forever Routine
 // =============================================================
 function addBundleToCart(bundleKey, btn) {
-  localStorage.setItem('sese_bundle_pending', bundleKey);
-  document.querySelectorAll('.cart-count, #cart-count').forEach(el => el.textContent = '1');
+  const __bundles = JSON.parse(localStorage.getItem("sese_bundle_cart") || "[]");
+  const __existing = __bundles.find(b => b.key === bundleKey);
+  if (__existing) { __existing.qty += 1; } else { __bundles.push({key: bundleKey, qty: 1}); }
+  localStorage.setItem("sese_bundle_cart", JSON.stringify(__bundles));
+  const __total = (SESECart ? SESECart.count() : 0) + __bundles.reduce((s,b)=>s+b.qty,0);
+  document.querySelectorAll('.cart-count, #cart-count').forEach(el => el.textContent = __total);
   showToast('Toegevoegd aan winkelmandje.');
   btn.classList.add('added');
   setTimeout(() => btn.classList.remove('added'), 2000);

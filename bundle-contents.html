@@ -773,8 +773,12 @@ document.getElementById('cart-btn').addEventListener('click', () => {
 
 document.getElementById('bundle-add-btn').addEventListener('click', (e) => {
   const key = bundleKey === 'forever-routine' ? 'forever-bundle' : bundleKey;
-  localStorage.setItem('sese_bundle_pending', key);
-  document.querySelectorAll('.cart-count, #cart-count').forEach(el => el.textContent = '1');
+  const __bundles = JSON.parse(localStorage.getItem("sese_bundle_cart") || "[]");
+  const __existing = __bundles.find(b => b.key === key);
+  if (__existing) { __existing.qty += 1; } else { __bundles.push({key: key, qty: 1}); }
+  localStorage.setItem("sese_bundle_cart", JSON.stringify(__bundles));
+  const __total = (SESECart ? SESECart.count() : 0) + __bundles.reduce((s,b)=>s+b.qty,0);
+  document.querySelectorAll('.cart-count, #cart-count').forEach(el => el.textContent = __total);
   showToast('Added to cart.');
   e.currentTarget.classList.add('added');
   setTimeout(() => e.currentTarget.classList.remove('added'), 2000);

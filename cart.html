@@ -404,52 +404,21 @@ const BUNDLE_CART_DATA = {
   }
 };
 
-function renderBundleCart(bundleKey) {
-  const b = BUNDLE_CART_DATA[bundleKey];
-  const wrap = document.getElementById('cart-wrap');
-  wrap.innerHTML = `
-    <div>
-      <div class="cart-header">
-        <h1>Your Cart</h1>
-        <div class="count">1 item</div>
-      </div>
-      <div class="cart-items">
-        <div class="cart-item">
-          <div class="item-img item-img--bundle" style="background-color:${b.bg}">
-            <picture><img src="${b.img}" alt="${b.name}" loading="lazy" /></picture>
-          </div>
-          <div class="item-info">
-            <div class="item-name">${b.name}</div>
-            <div class="item-price">Bundle · €${b.price}</div>
-          </div>
-          <div class="item-controls">
-            <div class="item-line-price">€${b.price}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cart-summary">
-      <div class="summary-title">Order summary</div>
-      <div class="summary-row"><span>Subtotal</span><span>€${b.price}.00</span></div>
-      <div class="summary-row"><span>Shipping</span><span style="font-size:11px;color:var(--ink-3);">Calculated at next step</span></div>
-      <div class="summary-row total"><span>Total</span><span>€${b.price}.00</span></div>
-      <div class="summary-note">Shipping costs will be calculated at checkout.</div>
-      <button class="btn-checkout" onclick="window.location.href='${b.checkoutUrl}'">Proceed to checkout →</button>
-      <button class="btn-continue" onclick="window.location.href='collection.html'">Continue shopping</button>
-    </div>`;
+function removeBundleFromCart(bundleKey) {
+  const __bundles = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]').filter(b => b.key !== bundleKey);
+  localStorage.setItem('sese_bundle_cart', JSON.stringify(__bundles));
+  renderCart();
 }
 
 function renderCart() {
-  const bundleKey = new URLSearchParams(window.location.search).get('bundle')
-                 || localStorage.getItem('sese_bundle_pending');
-  if (bundleKey && BUNDLE_CART_DATA[bundleKey]) {
-    localStorage.removeItem('sese_bundle_pending');
-    renderBundleCart(bundleKey); return;
-  }
+  const bundles = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]');
   const cart = SESECart.get();
   const wrap = document.getElementById('cart-wrap');
 
-  if (!cart.items.length) {
+  const totalBundleQty = bundles.reduce((s, b) => s + b.qty, 0);
+  const totalItems = SESECart.count() + totalBundleQty;
+
+  if (!totalItems) {
     wrap.innerHTML = `
       <div class="cart-empty" style="grid-column:1/-1">
         <h2>Your cart is empty</h2>
@@ -459,12 +428,37 @@ function renderCart() {
     return;
   }
 
-  const itemsHtml = cart.items.map(item => {
+  const bundleItemsHtml = bundles.map(entry => {
+    const b = BUNDLE_CART_DATA[entry.key];
+    if (!b) return '';
+    const linePrice = b.price * entry.qty;
+    return `
+      <div class="cart-item" data-key="${entry.key}">
+        <div class="item-img item-img--bundle" style="background-color:${b.bg}">
+          <picture><img src="${b.img}" alt="${b.name}" loading="lazy" /></picture>
+        </div>
+        <div class="item-info">
+          <div class="item-name">${b.name}</div>
+          <div class="item-price">Bundle · €${b.price}</div>
+        </div>
+        <div class="item-controls">
+          <div class="item-line-price">€${linePrice}</div>
+          <div class="qty-row">
+            <button class="qty-btn" onclick="changeBundleQty('${entry.key}', -1)">−</button>
+            <span class="qty-val">${entry.qty}</span>
+            <button class="qty-btn" onclick="changeBundleQty('${entry.key}', 1)">+</button>
+          </div>
+          <button class="remove-btn" onclick="removeBundleFromCart('${entry.key}')">Remove</button>
+        </div>
+      </div>`;
+  }).join('');
+
+  const productItemsHtml = cart.items.map(item => {
     const p = PRODUCT_CATALOGUE[item.key];
     if (!p) return '';
     return `
       <div class="cart-item" data-key="${item.key}">
-        <div class="item-img${['forever-bundle','beauty-sleep-ritual','full-ritual'].includes(item.key) ? ' item-img--bundle' : ''}" style="background-color:${p.bg}">
+        <div class="item-img" style="background-color:${p.bg}">
           <picture><source srcset="${p.img.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${p.img}" alt="${p.name}" loading="lazy" /></picture>
         </div>
         <div class="item-info">
@@ -483,25 +477,67 @@ function renderCart() {
       </div>`;
   }).join('');
 
-  const sub = SESECart.subtotal();
+  const bundleSub = bundles.reduce((s, entry) => {
+    const b = BUNDLE_CART_DATA[entry.key];
+    return s + (b ? b.price * entry.qty : 0);
+  }, 0);
+  const productSub = SESECart.subtotal();
+  const grandTotal = bundleSub + productSub;
+
+  const bundleCheckoutButtons = bundles.map(entry => {
+    const b = BUNDLE_CART_DATA[entry.key];
+    if (!b) return '';
+    return `<button class="btn-checkout" onclick="checkoutBundle('${entry.key}')">Checkout: ${b.name} →</button>`;
+  }).join('');
+
+  const productCheckoutButton = cart.items.length
+    ? `<button class="btn-checkout" style="margin-top:8px" onclick="window.location.href=SESECart.checkoutUrl()">Checkout: Products →</button>`
+    : '';
+
+  const checkoutNote = (bundles.length > 0 && cart.items.length > 0)
+    ? `<div class="summary-note" style="margin-bottom:8px">Routines and products checkout separately.</div>`
+    : `<div class="summary-note">Shipping costs will be calculated at checkout.</div>`;
 
   wrap.innerHTML = `
     <div>
       <div class="cart-header">
         <h1>Your Cart</h1>
-        <div class="count">${SESECart.count()} item${SESECart.count() !== 1 ? 's' : ''}</div>
+        <div class="count">${totalItems} item${totalItems !== 1 ? 's' : ''}</div>
       </div>
-      <div class="cart-items">${itemsHtml}</div>
+      <div class="cart-items">${bundleItemsHtml}${productItemsHtml}</div>
     </div>
     <div class="cart-summary">
       <div class="summary-title">Order summary</div>
-      <div class="summary-row"><span>Subtotal</span><span>€${sub.toFixed(2)}</span></div>
+      <div class="summary-row"><span>Subtotal</span><span>€${grandTotal.toFixed(2)}</span></div>
       <div class="summary-row"><span>Shipping</span><span style="font-size:11px;color:var(--ink-3);">Calculated at next step</span></div>
-      <div class="summary-row total"><span>Total</span><span>€${sub.toFixed(2)}</span></div>
-      <div class="summary-note">Shipping costs will be calculated at checkout.</div>
-      <button class="btn-checkout" onclick="window.location.href=SESECart.checkoutUrl()">Proceed to checkout →</button>
+      <div class="summary-row total"><span>Total</span><span>€${grandTotal.toFixed(2)}</span></div>
+      ${checkoutNote}
+      ${bundleCheckoutButtons}
+      ${productCheckoutButton}
       <button class="btn-continue" onclick="window.location.href='collection.html'">Continue shopping</button>
     </div>`;
+}
+
+function changeBundleQty(bundleKey, delta) {
+  const __bundles = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]');
+  const entry = __bundles.find(b => b.key === bundleKey);
+  if (entry) {
+    entry.qty += delta;
+    if (entry.qty <= 0) {
+      const filtered = __bundles.filter(b => b.key !== bundleKey);
+      localStorage.setItem('sese_bundle_cart', JSON.stringify(filtered));
+    } else {
+      localStorage.setItem('sese_bundle_cart', JSON.stringify(__bundles));
+    }
+  }
+  renderCart();
+}
+
+function checkoutBundle(bundleKey) {
+  const b = BUNDLE_CART_DATA[bundleKey];
+  if (!b) return;
+  removeBundleFromCart(bundleKey);
+  window.location.href = b.checkoutUrl;
 }
 
 function changeQty(key, delta) {

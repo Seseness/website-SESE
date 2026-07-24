@@ -406,52 +406,21 @@ const BUNDLE_CART_DATA = {
   }
 };
 
-function renderBundleCart(bundleKey) {
-  const b = BUNDLE_CART_DATA[bundleKey];
-  const wrap = document.getElementById('cart-wrap');
-  wrap.innerHTML = `
-    <div>
-      <div class="cart-header">
-        <h1>Votre panier</h1>
-        <div class="count">1 article</div>
-      </div>
-      <div class="cart-items">
-        <div class="cart-item">
-          <div class="item-img item-img--bundle" style="background-color:${b.bg}">
-            <picture><img src="${b.img}" alt="${b.name}" loading="lazy" /></picture>
-          </div>
-          <div class="item-info">
-            <div class="item-name">${b.name}</div>
-            <div class="item-price">Bundle · €${b.price}</div>
-          </div>
-          <div class="item-controls">
-            <div class="item-line-price">€${b.price}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cart-summary">
-      <div class="summary-title">Récapitulatif</div>
-      <div class="summary-row"><span>Sous-total</span><span>€${b.price}.00</span></div>
-      <div class="summary-row"><span>Livraison</span><span style="font-size:11px;color:var(--ink-3);">Calculée à l'étape suivante</span></div>
-      <div class="summary-row total"><span>Total</span><span>€${b.price}.00</span></div>
-      <div class="summary-note">Les frais de livraison seront calculés lors du paiement.</div>
-      <button class="btn-checkout" onclick="window.location.href='${b.checkoutUrl}'">Passer la commande →</button>
-      <button class="btn-continue" onclick="window.location.href='collection.html'">Continuer mes achats</button>
-    </div>`;
+function removeBundleFromCart(bundleKey) {
+  const __bundles = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]').filter(b => b.key !== bundleKey);
+  localStorage.setItem('sese_bundle_cart', JSON.stringify(__bundles));
+  renderPanier();
 }
 
 function renderPanier() {
-  const bundleKey = new URLSearchParams(window.location.search).get('bundle')
-                 || localStorage.getItem('sese_bundle_pending');
-  if (bundleKey && BUNDLE_CART_DATA[bundleKey]) {
-    localStorage.removeItem('sese_bundle_pending');
-    renderBundleCart(bundleKey); return;
-  }
+  const bundles = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]');
   const cart = SESECart.get();
   const wrap = document.getElementById('cart-wrap');
 
-  if (!cart.items.length) {
+  const totalBundleQty = bundles.reduce((s, b) => s + b.qty, 0);
+  const totalItems = SESECart.count() + totalBundleQty;
+
+  if (!totalItems) {
     wrap.innerHTML = `
       <div class="cart-empty" style="grid-column:1/-1">
         <h2>Votre panier est vide</h2>
@@ -461,12 +430,37 @@ function renderPanier() {
     return;
   }
 
+  const bundleItemsHtml = bundles.map(entry => {
+    const b = BUNDLE_CART_DATA[entry.key];
+    if (!b) return '';
+    const linePrice = b.price * entry.qty;
+    return `
+      <div class="cart-item" data-key="${entry.key}">
+        <div class="item-img item-img--bundle" style="background-color:${b.bg}">
+          <picture><img src="${b.img}" alt="${b.name}" loading="lazy" /></picture>
+        </div>
+        <div class="item-info">
+          <div class="item-name">${b.name}</div>
+          <div class="item-price">Bundle · €${b.price}</div>
+        </div>
+        <div class="item-controls">
+          <div class="item-line-price">€${linePrice}</div>
+          <div class="qty-row">
+            <button class="qty-btn" onclick="changeBundleQty('${entry.key}', -1)">−</button>
+            <span class="qty-val">${entry.qty}</span>
+            <button class="qty-btn" onclick="changeBundleQty('${entry.key}', 1)">+</button>
+          </div>
+          <button class="remove-btn" onclick="removeBundleFromCart('${entry.key}')">Supprimer</button>
+        </div>
+      </div>`;
+  }).join('');
+
   const articlesHtml = cart.items.map(article => {
     const p = PRODUCT_CATALOGUE[article.key];
     if (!p) return '';
     return `
       <div class="cart-article" data-key="${article.key}">
-        <div class="article-img${['forever-bundle','beauty-sleep-ritual','full-ritual'].includes(article.key) ? ' article-img--bundle' : ''}" style="background-color:${p.bg}">
+        <div class="article-img" style="background-color:${p.bg}">
           <picture><source srcset="${p.img.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${p.img}" alt="${p.name}" loading="lazy" /></picture>
         </div>
         <div class="article-info">
@@ -485,25 +479,66 @@ function renderPanier() {
       </div>`;
   }).join('');
 
-  const sub = SESECart.subtotal();
+  const bundleSub = bundles.reduce((s, entry) => {
+    const b = BUNDLE_CART_DATA[entry.key];
+    return s + (b ? b.price * entry.qty : 0);
+  }, 0);
+  const productSub = SESECart.subtotal();
+  const grandTotal = bundleSub + productSub;
+
+  const bundleCheckoutButtons = bundles.map(entry => {
+    const b = BUNDLE_CART_DATA[entry.key];
+    if (!b) return '';
+    return `<button class="btn-checkout" onclick="checkoutBundle('${entry.key}')">Commander : ${b.name} →</button>`;
+  }).join('');
+
+  const productCheckoutButton = cart.items.length
+    ? `<button class="btn-checkout" style="margin-top:8px" onclick="window.location.href=SESECart.checkoutUrl()">Commander : Produits →</button>`
+    : '';
+
+  const checkoutNote = (bundles.length > 0 && cart.items.length > 0)
+    ? `<div class="summary-note" style="margin-bottom:8px">Les routines et produits sont commandés séparément.</div>`
+    : `<div class="summary-note">Les frais de livraison seront calculés lors du paiement.</div>`;
 
   wrap.innerHTML = `
     <div>
       <div class="cart-header">
         <h1>Votre Panier</h1>
-        <div class="count">${SESECart.count()} article${SESECart.count() !== 1 ? 's' : ''}</div>
+        <div class="count">${totalItems} article${totalItems !== 1 ? 's' : ''}</div>
       </div>
-      <div class="cart-articles">${articlesHtml}</div>
+      <div class="cart-articles">${bundleItemsHtml}${articlesHtml}</div>
     </div>
     <div class="cart-summary">
       <div class="summary-title">Récapitulatif de commande</div>
-      <div class="summary-row"><span>Sous-total</span><span>€${sub.toFixed(2)}</span></div>
+      <div class="summary-row"><span>Sous-total</span><span>€${grandTotal.toFixed(2)}</span></div>
       <div class="summary-row"><span>Livraison</span><span style="font-size:11px;color:var(--ink-3);">Calculée à l'étape suivante</span></div>
-      <div class="summary-row total"><span>Total</span><span>€${sub.toFixed(2)}</span></div>
-      <div class="summary-note">Les frais de livraison seront calculés lors du paiement.</div>
-      <button class="btn-checkout" onclick="window.location.href=SESECart.checkoutUrl()">Passer à la caisse →</button>
+      <div class="summary-row total"><span>Total</span><span>€${grandTotal.toFixed(2)}</span></div>
+      ${checkoutNote}
+      ${bundleCheckoutButtons}
+      ${productCheckoutButton}
       <button class="btn-continue" onclick="window.location.href='collection.html'">Continuer les achats</button>
     </div>`;
+}
+
+function changeBundleQty(bundleKey, delta) {
+  const __bundles = JSON.parse(localStorage.getItem('sese_bundle_cart') || '[]');
+  const entry = __bundles.find(b => b.key === bundleKey);
+  if (entry) {
+    entry.qty += delta;
+    if (entry.qty <= 0) {
+      localStorage.setItem('sese_bundle_cart', JSON.stringify(__bundles.filter(b => b.key !== bundleKey)));
+    } else {
+      localStorage.setItem('sese_bundle_cart', JSON.stringify(__bundles));
+    }
+  }
+  renderPanier();
+}
+
+function checkoutBundle(bundleKey) {
+  const b = BUNDLE_CART_DATA[bundleKey];
+  if (!b) return;
+  removeBundleFromCart(bundleKey);
+  window.location.href = b.checkoutUrl;
 }
 
 function changeQty(key, delta) {
