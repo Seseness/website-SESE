@@ -288,7 +288,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
           <span class="chip">Apple&nbsp;Pay</span>
         </div>
         <div class="lang-foot">
-          <span style="display:none">NL</span><span class="sep" style="display:none">·</span><span style="color:#2A2620;font-weight:400">EN</span><span class="sep" style="display:none">·</span><span style="display:none">FR</span>
+          <a href="nl/product.html" style="color:#2A2620;opacity:0.5">NL</a><span class="sep">·</span><span style="color:#2A2620;font-weight:400">EN</span><span class="sep">·</span><a href="fr/product.html" style="color:#2A2620;opacity:0.5">FR</a>
         </div>
       </div>
     </div>
@@ -560,7 +560,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
           <span class="chip">Apple&nbsp;Pay</span>
         </div>
         <div class="lang-foot">
-          <span style="display:none">NL</span><span class="sep" style="display:none">·</span><a href="../product.html" style="color:#2A2620;opacity:0.5">EN</a><span class="sep">·</span><a style="display:none" href="../fr/product.html" style="color:#2A2620;opacity:0.5">FR</a>
+          <span style="color:#2A2620;font-weight:400">NL</span><span class="sep">·</span><a href="../product.html" style="color:#2A2620;opacity:0.5">EN</a><span class="sep">·</span><a href="../fr/product.html" style="color:#2A2620;opacity:0.5">FR</a>
         </div>
       </div>
     </div>
@@ -832,7 +832,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
           <span class="chip">Apple&nbsp;Pay</span>
         </div>
         <div class="lang-foot">
-          <a href="../nl/product.html" style="color:#2A2620;opacity:0.5">NL</a><span class="sep">·</span><a href="../product.html" style="color:#2A2620;opacity:0.5">EN</a><span class="sep" style="display:none">·</span><span style="display:none">FR</span>
+          <a href="../nl/product.html" style="color:#2A2620;opacity:0.5">NL</a><span class="sep">·</span><a href="../product.html" style="color:#2A2620;opacity:0.5">EN</a><span class="sep">·</span><span style="color:#2A2620;font-weight:400">FR</span>
         </div>
       </div>
     </div>

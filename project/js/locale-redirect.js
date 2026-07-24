@@ -1,31 +1,20 @@
 // =============================================================
-//  SESE Locale Redirect — runs on every page, before paint.
-//  If the visitor has already chosen a language (via the
-//  language-popup on the homepage), and the current page is in
-//  a different language, redirect to the SAME page/path in the
-//  chosen language instead of leaving them on the wrong one.
-// =============================================================
-
-(() => {
-  const stored = localStorage.getItem('sese_lang_chosen');
-  if (!stored) return; // no preference yet — let the homepage popup handle first-time visitors
-
-  const path = window.location.pathname;
-  const current = path.startsWith('/nl/') ? 'nl' : path.startsWith('/fr/') ? 'fr' : 'en';
-  if (current === stored) return; // already on the right locale
-
-  const rest = (current === 'nl' || current === 'fr') ? path.slice(3) : path;
-  const target = (stored === 'en' ? '' : '/' + stored) + rest + window.location.search + window.location.hash;
-
-  window.location.replace(target);
-})();
-
-// =============================================================
-//  Keep the stored preference in sync with manual switches.
-//  The EN/NL/FR links in the header, footer, and mobile drawer
-//  language switcher don't go through the popup, so without this
-//  a manual switch would get silently overridden by the redirect
-//  above on the very next page load.
+//  SESE Locale Preference Sync — runs on every page.
+//  This file intentionally does NOT redirect the visitor. Every
+//  link on the site already points to the correct language for
+//  its own href — a past version of this file force-redirected
+//  based on a stored "last chosen language" whenever it didn't
+//  match the current URL, which silently bounced visitors to the
+//  wrong language after they clicked a perfectly correct footer
+//  link (the stored value only had to be stale, e.g. from an
+//  earlier accidental tap on the small EN/NL/FR switcher). Do not
+//  reintroduce a redirect here without solving that staleness
+//  problem first.
+//
+//  It only keeps `sese_lang_chosen` in sync with manual language
+//  switches, so the homepage language popup and the welcome
+//  popup (which both gate on this key) behave correctly for
+//  returning visitors.
 // =============================================================
 
 document.addEventListener('click', (e) => {
