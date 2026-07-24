@@ -771,9 +771,9 @@ document.getElementById('cart-btn').addEventListener('click', () => {
 
 document.getElementById('bundle-add-btn').addEventListener('click', () => {
   const BUNDLE_URLS = {
-    'forever-routine':     'https://checkout.sese.be/a/bundles/checkout/the-forever-routine-i7gc',
-    'beauty-sleep-ritual': 'https://checkout.sese.be/a/bundles/checkout/the-beauty-sleep-routine-i7gb',
-    'full-ritual':         'https://checkout.sese.be/a/bundles/checkout/the-full-routine-i7g9',
+    'forever-routine':     'cart.html?bundle=forever-bundle',
+    'beauty-sleep-ritual': 'cart.html?bundle=beauty-sleep-ritual',
+    'full-ritual':         'cart.html?bundle=full-ritual',
   };
   const url = BUNDLE_URLS[bundleKey] || BUNDLE_URLS['forever-routine'];
   window.location.href = url;

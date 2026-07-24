@@ -1405,11 +1405,11 @@ document.querySelectorAll('.card-add').forEach(btn => {
 // =============================================================
 document.getElementById('bundle-btn').addEventListener('click', (e) => {
   e.stopPropagation();
-  window.location.href = 'https://checkout.sese.be/a/bundles/checkout/the-forever-routine-i7gc';
+  window.location.href = 'cart.html?bundle=forever-bundle';
 });
 
-[['night-cart-btn', 'https://checkout.sese.be/a/bundles/checkout/the-beauty-sleep-routine-i7gb'],
- ['full-cart-btn',  'https://checkout.sese.be/a/bundles/checkout/the-full-routine-i7g9']
+[['night-cart-btn', 'cart.html?bundle=beauty-sleep-ritual'],
+ ['full-cart-btn',  'cart.html?bundle=full-ritual']
 ].forEach(([btnId, url]) => {
   document.getElementById(btnId).addEventListener('click', (e) => {
     e.stopPropagation();

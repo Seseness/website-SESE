@@ -384,7 +384,62 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
 <script src="project/js/sese-cart.js"></script>
 <script>
+const BUNDLE_CART_DATA = {
+  'beauty-sleep-ritual': {
+    name: 'The Beauty Sleep Ritual', price: 135,
+    img: 'project/assets/products-new/bundle-beauty-sleep.png', bg: '#1A2030',
+    checkoutUrl: 'https://checkout.sese.be/a/bundles/checkout/the-beauty-sleep-routine-i7gb'
+  },
+  'forever-bundle': {
+    name: 'The Forever Routine', price: 140,
+    img: 'project/assets/products-new/bundle-forever.jpg', bg: '#DCEAF1',
+    checkoutUrl: 'https://checkout.sese.be/a/bundles/checkout/the-forever-routine-i7gc'
+  },
+  'full-ritual': {
+    name: 'The Full Ritual', price: 260,
+    img: 'project/assets/products-new/bundle-full-ritual.jpg', bg: '#EAD6B7',
+    checkoutUrl: 'https://checkout.sese.be/a/bundles/checkout/the-full-routine-i7g9'
+  }
+};
+
+function renderBundleCart(bundleKey) {
+  const b = BUNDLE_CART_DATA[bundleKey];
+  const wrap = document.getElementById('cart-wrap');
+  wrap.innerHTML = `
+    <div>
+      <div class="cart-header">
+        <h1>Your Cart</h1>
+        <div class="count">1 item</div>
+      </div>
+      <div class="cart-items">
+        <div class="cart-item">
+          <div class="item-img item-img--bundle" style="background-color:${b.bg}">
+            <picture><img src="${b.img}" alt="${b.name}" loading="lazy" /></picture>
+          </div>
+          <div class="item-info">
+            <div class="item-name">${b.name}</div>
+            <div class="item-price">Bundle · €${b.price}</div>
+          </div>
+          <div class="item-controls">
+            <div class="item-line-price">€${b.price}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-summary">
+      <div class="summary-title">Order summary</div>
+      <div class="summary-row"><span>Subtotal</span><span>€${b.price}.00</span></div>
+      <div class="summary-row"><span>Shipping</span><span style="font-size:11px;color:var(--ink-3);">Calculated at next step</span></div>
+      <div class="summary-row total"><span>Total</span><span>€${b.price}.00</span></div>
+      <div class="summary-note">Shipping costs will be calculated at checkout.</div>
+      <button class="btn-checkout" onclick="window.location.href='${b.checkoutUrl}'">Proceed to checkout →</button>
+      <button class="btn-continue" onclick="window.location.href='collection.html'">Continue shopping</button>
+    </div>`;
+}
+
 function renderCart() {
+  const bundleKey = new URLSearchParams(window.location.search).get('bundle');
+  if (bundleKey && BUNDLE_CART_DATA[bundleKey]) { renderBundleCart(bundleKey); return; }
   const cart = SESECart.get();
   const wrap = document.getElementById('cart-wrap');
 
