@@ -537,7 +537,7 @@ function proceedToCheckout() {
   }
   const discountParam = discountCode ? `?discount=${encodeURIComponent(discountCode)}` : '';
   localStorage.removeItem('sese_bundle_cart');
-  window.location.href = `https://sese-8214.myshopify.com/cart/${lineItems}${discountParam}`;
+  window.location.href = `https://checkout.sese.be/cart/${lineItems}${discountParam}`;
 }
 
 function changeBundleQty(bundleKey, delta) {
