@@ -64,6 +64,7 @@
   function showPopup() {
     if (localStorage.getItem(SHOWN_KEY)) return;
     if (!localStorage.getItem('sese_lang_chosen')) return;
+    if (!localStorage.getItem('sese_cookie_consent')) return;
 
     const style = document.createElement('style');
     style.textContent = `
@@ -189,9 +190,31 @@
 
   window.showWelcomePopup = showPopup;
 
+  function isReadyForWelcome() {
+    return !!localStorage.getItem('sese_lang_chosen') && !!localStorage.getItem('sese_cookie_consent');
+  }
+
+  function waitThenShow() {
+    if (localStorage.getItem(SHOWN_KEY)) return;
+    if (isReadyForWelcome()) {
+      setTimeout(showPopup, SHOW_DELAY_MS);
+      return;
+    }
+    // Language and/or cookie consent haven't been resolved yet — wait
+    // for both so the newsletter popup never jumps ahead of them.
+    function onProgress() {
+      if (!isReadyForWelcome()) return;
+      window.removeEventListener('sese:lang-resolved', onProgress);
+      window.removeEventListener('sese:consent-updated', onProgress);
+      setTimeout(showPopup, SHOW_DELAY_MS);
+    }
+    window.addEventListener('sese:lang-resolved', onProgress);
+    window.addEventListener('sese:consent-updated', onProgress);
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => setTimeout(showPopup, SHOW_DELAY_MS));
+    document.addEventListener('DOMContentLoaded', waitThenShow);
   } else {
-    setTimeout(showPopup, SHOW_DELAY_MS);
+    waitThenShow();
   }
 })();

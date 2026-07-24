@@ -340,7 +340,17 @@
   };
 
   function init() {
-    if (!getConsent()) show();
+    if (getConsent()) return;
+    if (localStorage.getItem('sese_lang_chosen')) {
+      show();
+    } else {
+      // Homepage language popup hasn't been answered yet — wait for it
+      // so the cookie banner never appears before the language choice.
+      window.addEventListener('sese:lang-resolved', function onLangResolved() {
+        window.removeEventListener('sese:lang-resolved', onLangResolved);
+        if (!getConsent()) show();
+      });
+    }
   }
 
   if (document.readyState === 'loading') {

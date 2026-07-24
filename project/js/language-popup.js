@@ -9,32 +9,26 @@
 
   const path = window.location.pathname;
 
-  const langs = [
-    { code: 'en', label: 'English',    path: '/' },
-    { code: 'nl', label: 'Nederlands', path: '/nl/' },
-    { code: 'fr', label: 'Français',   path: '/fr/' },
-  ];
-
   function pick(code) {
     localStorage.setItem(LANG_KEY, code);
+    window.dispatchEvent(new CustomEvent('sese:lang-resolved', { detail: code }));
     const el = document.getElementById('sese-lang-popup');
     if (el) {
       el.style.opacity = '0';
       setTimeout(() => el.remove(), 300);
     }
-    const target = langs.find(l => l.code === code).path;
     const alreadyHere =
       (code === 'en' && !path.startsWith('/nl/') && !path.startsWith('/fr/')) ||
       (code === 'nl' && path.startsWith('/nl/')) ||
       (code === 'fr' && path.startsWith('/fr/'));
     if (!alreadyHere) {
+      // Swap locale while keeping the visitor on the same page/path.
+      const rest = (path.startsWith('/nl/') || path.startsWith('/fr/')) ? path.slice(3) : path;
+      const target = (code === 'en' ? '' : '/' + code) + rest + window.location.search + window.location.hash;
       window.location.href = target;
-    } else {
-      // Same page — trigger welcome popup after language card fades out
-      setTimeout(() => {
-        if (typeof showWelcomePopup === 'function') showWelcomePopup();
-      }, 600);
     }
+    // Same page: cookie-consent.js and welcome-popup.js pick up the
+    // sese:lang-resolved event above and take it from here.
   }
 
   const style = document.createElement('style');
