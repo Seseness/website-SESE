@@ -275,6 +275,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
             <li><a href="terms.html">Terms &amp; Conditions</a></li>
             <li><a href="withdrawal.html">Right of Withdrawal</a></li>
             <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="#" onclick="event.preventDefault(); window.seseOpenCookieSettings && window.seseOpenCookieSettings();">Cookie Settings</a></li>
           </ul>
         </div>
       </div>
@@ -547,6 +548,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
             <li><a href="terms.html">Algemene voorwaarden</a></li>
             <li><a href="withdrawal.html">Herroepingsrecht</a></li>
             <li><a href="cookie-policy.html">Cookiebeleid</a></li>
+            <li><a href="#" onclick="event.preventDefault(); window.seseOpenCookieSettings && window.seseOpenCookieSettings();">Cookievoorkeuren</a></li>
           </ul>
         </div>
       </div>
@@ -819,6 +821,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
             <li><a href="terms.html">Conditions générales</a></li>
             <li><a href="withdrawal.html">Droit de rétractation</a></li>
             <li><a href="cookie-policy.html">Politique de cookies</a></li>
+            <li><a href="#" onclick="event.preventDefault(); window.seseOpenCookieSettings && window.seseOpenCookieSettings();">Préférences de Cookies</a></li>
           </ul>
         </div>
       </div>
