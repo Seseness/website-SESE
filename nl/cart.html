@@ -530,17 +530,8 @@ function proceedToCheckout() {
   });
   if (!Object.keys(variantMap).length) return;
   const lineItems = Object.entries(variantMap).map(([vid, qty]) => `${vid}:${qty}`).join(',');
-  let discountCode = bundles.length > 0 ? BUNDLE_CART_DATA[bundles[0].key]?.discountCode : null;
-  if (!discountCode) {
-    discountCode = localStorage.getItem('sese_discount_code');
-    if (discountCode) localStorage.removeItem('sese_discount_code');
-  }
   localStorage.removeItem('sese_bundle_cart');
-  if (discountCode) {
-    window.location.href = `https://sese-8214.myshopify.com/cart/${lineItems}?discount=${encodeURIComponent(discountCode)}`;
-  } else {
-    window.location.href = `https://checkout.sese.be/cart/${lineItems}`;
-  }
+  window.location.href = `https://checkout.sese.be/cart/${lineItems}`;
 }
 
 function changeBundleQty(bundleKey, delta) {
