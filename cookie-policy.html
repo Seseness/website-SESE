@@ -105,6 +105,12 @@
     .badge-optional { background: rgba(26,26,26,0.06); color: var(--ink-3); }
     .cookie-desc { font-size: 14px; line-height: 1.7; color: var(--ink-2); }
 
+    .data-table { width: 100%; border-collapse: collapse; margin: 8px 0 32px; }
+    .data-table th { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink-3); font-weight: 300; padding: 12px 20px 12px 0; border-bottom: 1px solid var(--line-default); text-align: left; }
+    .data-table td { font-size: 16px; color: var(--ink-2); padding: 16px 20px 16px 0; border-bottom: 1px solid var(--line-soft); line-height: 1.5; }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table td:first-child { color: var(--ink); }
+
     .contact-box { background: #F5F9FB; border: 1px solid rgba(58,125,148,0.18); border-radius: 12px; padding: 28px 32px; margin-top: 48px; }
     .contact-box .label { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
     .contact-box p { font-size: 16px; line-height: 1.7; color: var(--ink-2); margin: 0 0 10px; }
@@ -383,6 +389,35 @@ html, body { overflow-x: hidden; max-width: 100%; }
           <div class="cookie-desc">Marketing cookies track your browsing activity to display relevant advertisements and measure campaign effectiveness. These are only placed with your explicit consent. You can opt out at any time through the cookie consent banner or your browser settings.</div>
         </div>
       </div>
+
+      <p style="margin-top:28px;">The table below lists the specific cookies and local storage items currently used on sese.be, as verified in production. Cookie names and providers are technical identifiers and are not translated.</p>
+
+      <div class="cookie-name" style="margin:24px 0 8px;">Strictly Necessary</div>
+      <table class="data-table">
+        <thead><tr><th>Cookie name</th><th>Provider</th><th>Purpose</th><th>Duration</th></tr></thead>
+        <tbody>
+          <tr><td>sese_lang_chosen</td><td>SESE</td><td>Remembers your selected site language (NL, EN, or FR)</td><td>Persistent, until you clear your browser data</td></tr>
+          <tr><td>sese_cart_v2</td><td>SESE</td><td>Remembers the contents of your shopping cart</td><td>Persistent, until you clear your browser data or complete checkout</td></tr>
+          <tr><td>sese_cookie_consent</td><td>SESE</td><td>Stores your cookie preference choices so the banner does not reappear</td><td>Persistent, until you change your preferences</td></tr>
+        </tbody>
+      </table>
+
+      <div class="cookie-name" style="margin:24px 0 8px;">Functional</div>
+      <table class="data-table">
+        <thead><tr><th>Cookie name</th><th>Provider</th><th>Purpose</th><th>Duration</th></tr></thead>
+        <tbody>
+          <tr><td>sese_welcome_popup_v1</td><td>SESE</td><td>Remembers that you have already seen the newsletter signup offer</td><td>Persistent, until you clear your browser data</td></tr>
+          <tr><td>sese_discount_code</td><td>SESE</td><td>Stores a discount code you have unlocked so it can be applied at checkout</td><td>Persistent, until you clear your browser data or use the code</td></tr>
+        </tbody>
+      </table>
+
+      <div class="cookie-name" style="margin:24px 0 8px;">Analytical</div>
+      <p>sese.be does not currently use Google Analytics or any other analytics tool. No analytical cookies are placed. This table will be updated before any such tool is enabled.</p>
+
+      <div class="cookie-name" style="margin:24px 0 8px;">Marketing</div>
+      <p>sese.be does not currently use any marketing or advertising cookies. No marketing cookies are placed. This table will be updated before any such tool is enabled.</p>
+
+      <p style="margin-top:24px; font-size:14px; color:var(--ink-3);">Note: the items above are implemented as local storage in your browser rather than traditional HTTP cookies, and are treated the same way for consent purposes. When you proceed to checkout, you are securely redirected to our e-commerce partner Shopify's own checkout domain, where Shopify sets its own necessary cookies to process your order. These are set on Shopify's domain, not on sese.be. See shopify.com/legal/cookies for details.</p>
     </div>
 
     <div class="policy-section">

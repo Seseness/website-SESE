@@ -105,6 +105,12 @@
     .badge-optional { background: rgba(26,26,26,0.06); color: var(--ink-3); }
     .cookie-desc { font-size: 14px; line-height: 1.7; color: var(--ink-2); }
 
+    .data-table { width: 100%; border-collapse: collapse; margin: 8px 0 32px; }
+    .data-table th { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink-3); font-weight: 300; padding: 12px 20px 12px 0; border-bottom: 1px solid var(--line-default); text-align: left; }
+    .data-table td { font-size: 16px; color: var(--ink-2); padding: 16px 20px 16px 0; border-bottom: 1px solid var(--line-soft); line-height: 1.5; }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table td:first-child { color: var(--ink); }
+
     .contact-box { background: #F5F9FB; border: 1px solid rgba(58,125,148,0.18); border-radius: 12px; padding: 28px 32px; margin-top: 48px; }
     .contact-box .label { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
     .contact-box p { font-size: 16px; line-height: 1.7; color: var(--ink-2); margin: 0 0 10px; }
@@ -385,6 +391,35 @@ html, body { overflow-x: hidden; max-width: 100%; }
           <div class="cookie-desc">Les cookies marketing suivent votre activité de navigation pour afficher des publicités pertinentes et mesurer l'efficacité des campagnes. Ils ne sont déposés qu'avec votre consentement explicite. Vous pouvez vous désinscrire à tout moment via la bannière de consentement aux cookies ou les paramètres de votre navigateur.</div>
         </div>
       </div>
+
+      <p style="margin-top:28px;">Le tableau ci-dessous répertorie les cookies et éléments de stockage local spécifiques actuellement utilisés sur sese.be, tels que vérifiés en production. Les noms de cookies et les fournisseurs sont des identifiants techniques et ne sont pas traduits.</p>
+
+      <div class="cookie-name" style="margin:24px 0 8px;">Strictement Nécessaires</div>
+      <table class="data-table">
+        <thead><tr><th>Nom du cookie</th><th>Fournisseur</th><th>Objectif</th><th>Durée</th></tr></thead>
+        <tbody>
+          <tr><td>sese_lang_chosen</td><td>SESE</td><td>Mémorise la langue du site que vous avez choisie (NL, EN ou FR)</td><td>Permanent, jusqu'à ce que vous effaciez les données de votre navigateur</td></tr>
+          <tr><td>sese_cart_v2</td><td>SESE</td><td>Mémorise le contenu de votre panier</td><td>Permanent, jusqu'à ce que vous effaciez les données de votre navigateur ou finalisiez votre commande</td></tr>
+          <tr><td>sese_cookie_consent</td><td>SESE</td><td>Enregistre vos préférences en matière de cookies afin que la bannière ne réapparaisse pas</td><td>Permanent, jusqu'à ce que vous modifiiez vos préférences</td></tr>
+        </tbody>
+      </table>
+
+      <div class="cookie-name" style="margin:24px 0 8px;">Fonctionnels</div>
+      <table class="data-table">
+        <thead><tr><th>Nom du cookie</th><th>Fournisseur</th><th>Objectif</th><th>Durée</th></tr></thead>
+        <tbody>
+          <tr><td>sese_welcome_popup_v1</td><td>SESE</td><td>Mémorise que vous avez déjà vu l'offre d'inscription à la newsletter</td><td>Permanent, jusqu'à ce que vous effaciez les données de votre navigateur</td></tr>
+          <tr><td>sese_discount_code</td><td>SESE</td><td>Enregistre un code de réduction que vous avez débloqué afin qu'il puisse être appliqué lors du paiement</td><td>Permanent, jusqu'à ce que vous effaciez les données de votre navigateur ou utilisiez le code</td></tr>
+        </tbody>
+      </table>
+
+      <div class="cookie-name" style="margin:24px 0 8px;">Analytiques</div>
+      <p>sese.be n'utilise actuellement pas Google Analytics ni aucun autre outil d'analyse. Aucun cookie analytique n'est déposé. Ce tableau sera mis à jour avant l'activation d'un tel outil.</p>
+
+      <div class="cookie-name" style="margin:24px 0 8px;">Marketing</div>
+      <p>sese.be n'utilise actuellement aucun cookie marketing ou publicitaire. Aucun cookie marketing n'est déposé. Ce tableau sera mis à jour avant l'activation d'un tel outil.</p>
+
+      <p style="margin-top:24px; font-size:14px; color:var(--ink-3);">Remarque : les éléments ci-dessus sont techniquement des éléments de stockage local dans votre navigateur plutôt que des cookies HTTP traditionnels, mais ils sont traités de la même manière à des fins de consentement. Lorsque vous procédez au paiement, vous êtes redirigé de manière sécurisée vers le domaine de paiement propre à notre partenaire e-commerce Shopify, où Shopify place ses propres cookies nécessaires pour traiter votre commande. Ceux-ci sont déposés sur le domaine de Shopify, et non sur sese.be. Voir shopify.com/legal/cookies pour plus d'informations.</p>
     </div>
 
     <div class="policy-section">
