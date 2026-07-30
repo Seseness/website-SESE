@@ -92,7 +92,7 @@ function getRelatedPosts(allPosts, currentId) {
     </div>
   `;
 
-  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml, relatedHtml };
+  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml, relatedHtml, ogImage: ldImage };
 }
 
 export function renderPostView_nl(post, allPosts, lang, baseUrl = 'https://www.sese.be') {
@@ -194,7 +194,7 @@ function formatDate(dateStr) {
     </div>
   `;
 
-  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml, relatedHtml };
+  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml, relatedHtml, ogImage: ldImage };
 }
 
 export function renderPostView_fr(post, allPosts, lang, baseUrl = 'https://www.sese.be') {
@@ -296,7 +296,7 @@ function formatDate(dateStr) {
     </div>
   `;
 
-  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml, relatedHtml };
+  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml, relatedHtml, ogImage: ldImage };
 }
 
 export function renderPostView(lang, post, allPosts, baseUrl) {

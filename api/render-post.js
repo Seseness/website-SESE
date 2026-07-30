@@ -34,6 +34,14 @@ function splice(shell, view) {
     `<link rel="canonical" id="canonical-link" href="${escapeAttr(view.canonicalUrl)}" />`
   );
 
+  html = html.replace(/<meta property="og:title" id="og-title" content="[^"]*" \/>/, `<meta property="og:title" id="og-title" content="${escapeAttr(view.title)}" />`);
+  html = html.replace(/<meta property="og:description" id="og-description" content="[^"]*" \/>/, `<meta property="og:description" id="og-description" content="${escapeAttr(view.metaDescription)}" />`);
+  html = html.replace(/<meta property="og:url" id="og-url" content="[^"]*" \/>/, `<meta property="og:url" id="og-url" content="${escapeAttr(view.canonicalUrl)}" />`);
+  html = html.replace(/<meta property="og:image" id="og-image" content="[^"]*" \/>/, `<meta property="og:image" id="og-image" content="${escapeAttr(view.ogImage)}" />`);
+  html = html.replace(/<meta name="twitter:title" id="twitter-title" content="[^"]*" \/>/, `<meta name="twitter:title" id="twitter-title" content="${escapeAttr(view.title)}" />`);
+  html = html.replace(/<meta name="twitter:description" id="twitter-description" content="[^"]*" \/>/, `<meta name="twitter:description" id="twitter-description" content="${escapeAttr(view.metaDescription)}" />`);
+  html = html.replace(/<meta name="twitter:image" id="twitter-image" content="[^"]*" \/>/, `<meta name="twitter:image" id="twitter-image" content="${escapeAttr(view.ogImage)}" />`);
+
   if (view.hreflangLinks.length) {
     for (const { hreflang, href } of view.hreflangLinks) {
       const re = new RegExp(`<link rel="alternate" hreflang="${hreflang}" id="hreflang-${hreflang}" href="[^"]*" />`);

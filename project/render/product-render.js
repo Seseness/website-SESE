@@ -296,7 +296,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
   </footer>
   `;
 
-  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, crumbsHtml, bodyHtml };
+  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, crumbsHtml, bodyHtml, ogImage: ldImage };
 }
 
 export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www.sese.be') {
@@ -569,7 +569,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   </footer>
   `;
 
-  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, crumbsHtml, bodyHtml };
+  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, crumbsHtml, bodyHtml, ogImage: ldImage };
 }
 
 export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www.sese.be') {
@@ -842,7 +842,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   </footer>
   `;
 
-  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, crumbsHtml, bodyHtml };
+  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, crumbsHtml, bodyHtml, ogImage: ldImage };
 }
 
 export function renderProductView(lang, PRODUCTS, key, baseUrl) {
