@@ -858,6 +858,32 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sese.be/blog-post.html?p=12" />
   </url>
 
+  <!-- Blog post 13 -->
+  <url>
+    <loc>https://www.sese.be/blog-post.html?p=13</loc>
+    <lastmod>2026-07-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sese.be/blog-post.html?p=13" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.sese.be/nl/blog-post.html?p=13" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sese.be/fr/blog-post.html?p=13" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sese.be/blog-post.html?p=13" />
+  </url>
+  <url>
+    <loc>https://www.sese.be/nl/blog-post.html?p=13</loc>
+    <lastmod>2026-07-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sese.be/blog-post.html?p=13" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.sese.be/nl/blog-post.html?p=13" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sese.be/fr/blog-post.html?p=13" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sese.be/blog-post.html?p=13" />
+  </url>
+  <url>
+    <loc>https://www.sese.be/fr/blog-post.html?p=13</loc>
+    <lastmod>2026-07-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sese.be/blog-post.html?p=13" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.sese.be/nl/blog-post.html?p=13" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sese.be/fr/blog-post.html?p=13" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sese.be/blog-post.html?p=13" />
+  </url>
+
   <!-- Blog post 99 -->
   <url>
     <loc>https://www.sese.be/blog-post.html?p=99</loc>
