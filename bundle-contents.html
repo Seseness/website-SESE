@@ -527,9 +527,8 @@ html, body { overflow-x: hidden; max-width: 100%; }
 .routine-head { max-width: 640px; margin: 0 auto 48px; text-align: center; }
 .routine-head .eyebrow {
   font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--r-ink3);
-  margin-bottom: 16px; display: flex; align-items: center; justify-content: center; gap: 12px;
+  margin-bottom: 16px; text-align: center;
 }
-.routine-head .eyebrow::before, .routine-head .eyebrow::after { content: ""; width: 28px; height: 1px; background: var(--r-line); }
 .routine-head h2 { font-weight: 300; font-size: 34px; line-height: 1.15; margin: 0 0 14px; color: var(--r-ink); }
 .routine-head h2 em { font-style: italic; }
 .routine-head p { font-size: 15px; line-height: 1.6; color: var(--r-ink2); margin: 0; }
@@ -543,14 +542,12 @@ html, body { overflow-x: hidden; max-width: 100%; }
 .seqA-track {
   display: flex; gap: 0; overflow-x: auto; padding: 8px 4px 28px;
   scroll-snap-type: x proximity;
+  width: fit-content; max-width: 100%; margin: 0 auto;
 }
 .seqA-track::-webkit-scrollbar { height: 5px; }
 .seqA-track::-webkit-scrollbar-thumb { background: var(--r-line); border-radius: 4px; }
 .seqA-item { flex: 0 0 208px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 18px; position: relative; }
 .seqA-node-row { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 22px; }
-.seqA-line { position: absolute; top: 50%; left: -50%; width: 100%; height: 1px; background: var(--r-line); z-index: 0; }
-.seqA-item:first-child .seqA-line { left: 50%; width: 50%; }
-.seqA-item:last-child .seqA-line-end { position: absolute; top: 50%; right: -50%; width: 50%; height: 1px; background: var(--r-line); }
 .seqA-node {
   position: relative; z-index: 1; width: 64px; height: 64px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -560,7 +557,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
 .routine-section[data-theme="navy"] .seqA-node { background: #F5F0E4; }
 .routine-section[data-theme="sand"] .seqA-node { background: #241D12; }
 .seqA-node img { width: 40px; height: 40px; object-fit: contain; border-radius: 50%; background: #fff; }
-.seqA-item.is-targeted .seqA-node { width: 52px; height: 52px; outline: 1px dashed var(--r-accent); outline-offset: 5px; }
+.seqA-item.is-targeted .seqA-node { width: 52px; height: 52px; outline: 1px solid var(--r-accent); outline-offset: 5px; }
 .seqA-num-chip {
   position: absolute; bottom: -6px; right: -2px; z-index: 2;
   width: 22px; height: 22px; border-radius: 50%; background: var(--r-accent); color: #fff;
@@ -577,13 +574,10 @@ html, body { overflow-x: hidden; max-width: 100%; }
 @media (max-width: 768px) {
   .routine-section { padding: 44px 24px 52px; }
   .routine-head h2 { font-size: 26px; }
-  .seqA-track { flex-direction: column; overflow-x: visible; padding: 4px 0 4px 30px; gap: 0; }
+  .seqA-track { flex-direction: column; overflow-x: visible; padding: 4px 0 4px 30px; gap: 0; width: 100%; max-width: 100%; margin: 0; }
   .seqA-item { flex-basis: auto; flex-direction: row; text-align: left; align-items: flex-start; padding: 0 0 30px; }
   .seqA-item:last-child { padding-bottom: 4px; }
   .seqA-node-row { flex-direction: column; width: auto; margin: 0 20px 0 0; }
-  .seqA-line { left: 50%; top: -100%; width: 1px; height: 100%; }
-  .seqA-item:first-child .seqA-line { display: none; }
-  .seqA-item:last-child .seqA-line-end { display: none; }
   .seqA-node { width: 52px; height: 52px; }
   .seqA-node img { width: 32px; height: 32px; }
   .seqA-badge { justify-content: flex-start; }
@@ -739,8 +733,8 @@ const BUNDLES = {
     sectionSub: 'Every product in The Forever Routine, in the order your skin actually meets it.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Cleanse', instr: 'Massage into a lather for 30 seconds, then rinse and pat dry.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in — no cotton pads. Move to serum within 30 seconds.' },
-      { key: 'peptide-serum', num: '03', qualifier: 'Treat · AM', instr: 'Warm 1–2 drops, pat across face and neck. Let it settle before the next step.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in, skipping cotton pads. Move to serum within 30 seconds.' },
+      { key: 'peptide-serum', num: '03', qualifier: 'Treat · AM', instr: 'Warm one to two drops, pat across face and neck. Let it settle before the next step.' },
       { key: 'firming-day-cream', num: '04', qualifier: 'Moisturise', instr: 'Warm a pea-size amount, press into face, neck and décolleté.' },
       { key: 'spf50-stick', num: '05', qualifier: 'Protect', instr: 'Swipe across forehead, cheeks, nose and chin. Reapply every 2 hours outdoors.' },
     ],
@@ -761,10 +755,10 @@ const BUNDLES = {
     sectionSub: 'Every product in The Beauty Sleep Ritual, in the order your skin actually meets it.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Cleanse', instr: 'Massage into a lather for 30 seconds, then rinse and pat dry.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in — no cotton pads. Move to serum within 30 seconds.' },
-      { key: 'retinol-alt-serum', num: '03', qualifier: 'Treat · PM', instr: 'Evening only — warm 1–2 drops, pat in, then layer night cream.' },
-      { key: 'smoothing-eye-cream', num: '04', qualifier: 'Targeted · Eye care', instr: 'Ring finger only — dot along the orbital bone and tap to blend.', targeted: true },
-      { key: 'ceramide-night-cream', num: '05', qualifier: 'Moisturise', instr: 'Apply generously as your last step — face, neck and décolleté — then sleep.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in, skipping cotton pads. Move to serum within 30 seconds.' },
+      { key: 'retinol-alt-serum', num: '03', qualifier: 'Treat · PM', instr: 'Evening only. Warm one to two drops, pat in, then layer night cream.' },
+      { key: 'smoothing-eye-cream', num: '04', qualifier: 'Targeted · Eye care', instr: 'Ring finger only. Dot along the orbital bone and tap to blend.', targeted: true },
+      { key: 'ceramide-night-cream', num: '05', qualifier: 'Moisturise', instr: 'Apply generously as your last step, covering face, neck and décolleté, then sleep.' },
     ],
   },
   'full-ritual': {
@@ -782,11 +776,11 @@ const BUNDLES = {
     sectionSub: 'Every product in The Full Ritual, in the order your skin actually meets it across the day.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Cleanse', instr: 'Massage into a lather for 30 seconds, then rinse and pat dry.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in — no cotton pads. Move to serum within 30 seconds.' },
-      { key: 'vitamin-c-serum', num: '03', qualifier: 'Treat · AM', instr: 'Warm 1–2 drops, press in, wait 60 seconds. Always follow with SPF.' },
-      { key: 'peptide-serum', num: '04', qualifier: 'Treat · AM/PM', instr: 'Warm 1–2 drops, pat across face and neck. Layer with day cream AM, night cream PM.' },
-      { key: 'retinol-alt-serum', num: '05', qualifier: 'Treat · PM', instr: 'Evening only — warm 1–2 drops, pat in, then layer night cream.' },
-      { key: 'smoothing-eye-cream', num: '06', qualifier: 'Targeted · Eye care', instr: 'Ring finger only — dot along the orbital bone and tap to blend.', targeted: true },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in, skipping cotton pads. Move to serum within 30 seconds.' },
+      { key: 'vitamin-c-serum', num: '03', qualifier: 'Treat · AM', instr: 'Warm one to two drops, press in, wait 60 seconds. Always follow with SPF.' },
+      { key: 'peptide-serum', num: '04', qualifier: 'Treat · AM/PM', instr: 'Warm one to two drops, pat across face and neck. Layer with day cream AM, night cream PM.' },
+      { key: 'retinol-alt-serum', num: '05', qualifier: 'Treat · PM', instr: 'Evening only. Warm one to two drops, pat in, then layer night cream.' },
+      { key: 'smoothing-eye-cream', num: '06', qualifier: 'Targeted · Eye care', instr: 'Ring finger only. Dot along the orbital bone and tap to blend.', targeted: true },
       { key: 'firming-day-cream', num: '07', qualifier: 'Moisturise · AM', instr: 'Warm a pea-size amount, press into face, neck and décolleté.' },
       { key: 'ceramide-night-cream', num: '08', qualifier: 'Moisturise · PM', instr: 'Apply generously as your last step, then sleep.' },
       { key: 'spf50-stick', num: '09', qualifier: 'Protect', instr: 'Swipe across forehead, cheeks, nose and chin. Reapply every 2 hours outdoors.' },
@@ -824,12 +818,10 @@ const routineStepsHtml = (bundle.routineSteps || []).map(step => {
   return `
     <div class="seqA-item${step.targeted ? ' is-targeted' : ''}">
       <div class="seqA-node-row">
-        <div class="seqA-line"></div>
         <div class="seqA-node">
           <picture><source srcset="${p.img.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${p.img}" alt="${p.name}" loading="lazy" /></picture>
           <div class="seqA-num-chip">${step.num}</div>
         </div>
-        <div class="seqA-line-end"></div>
       </div>
       <div class="seqA-name-wrap">
         <div class="step-badge seqA-badge">${step.qualifier}</div>

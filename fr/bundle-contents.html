@@ -529,9 +529,8 @@ html, body { overflow-x: hidden; max-width: 100%; }
 .routine-head { max-width: 640px; margin: 0 auto 48px; text-align: center; }
 .routine-head .eyebrow {
   font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--r-ink3);
-  margin-bottom: 16px; display: flex; align-items: center; justify-content: center; gap: 12px;
+  margin-bottom: 16px; text-align: center;
 }
-.routine-head .eyebrow::before, .routine-head .eyebrow::after { content: ""; width: 28px; height: 1px; background: var(--r-line); }
 .routine-head h2 { font-weight: 300; font-size: 34px; line-height: 1.15; margin: 0 0 14px; color: var(--r-ink); }
 .routine-head h2 em { font-style: italic; }
 .routine-head p { font-size: 15px; line-height: 1.6; color: var(--r-ink2); margin: 0; }
@@ -545,14 +544,12 @@ html, body { overflow-x: hidden; max-width: 100%; }
 .seqA-track {
   display: flex; gap: 0; overflow-x: auto; padding: 8px 4px 28px;
   scroll-snap-type: x proximity;
+  width: fit-content; max-width: 100%; margin: 0 auto;
 }
 .seqA-track::-webkit-scrollbar { height: 5px; }
 .seqA-track::-webkit-scrollbar-thumb { background: var(--r-line); border-radius: 4px; }
 .seqA-item { flex: 0 0 208px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 18px; position: relative; }
 .seqA-node-row { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 22px; }
-.seqA-line { position: absolute; top: 50%; left: -50%; width: 100%; height: 1px; background: var(--r-line); z-index: 0; }
-.seqA-item:first-child .seqA-line { left: 50%; width: 50%; }
-.seqA-item:last-child .seqA-line-end { position: absolute; top: 50%; right: -50%; width: 50%; height: 1px; background: var(--r-line); }
 .seqA-node {
   position: relative; z-index: 1; width: 64px; height: 64px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -562,7 +559,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
 .routine-section[data-theme="navy"] .seqA-node { background: #F5F0E4; }
 .routine-section[data-theme="sand"] .seqA-node { background: #241D12; }
 .seqA-node img { width: 40px; height: 40px; object-fit: contain; border-radius: 50%; background: #fff; }
-.seqA-item.is-targeted .seqA-node { width: 52px; height: 52px; outline: 1px dashed var(--r-accent); outline-offset: 5px; }
+.seqA-item.is-targeted .seqA-node { width: 52px; height: 52px; outline: 1px solid var(--r-accent); outline-offset: 5px; }
 .seqA-num-chip {
   position: absolute; bottom: -6px; right: -2px; z-index: 2;
   width: 22px; height: 22px; border-radius: 50%; background: var(--r-accent); color: #fff;
@@ -579,13 +576,10 @@ html, body { overflow-x: hidden; max-width: 100%; }
 @media (max-width: 768px) {
   .routine-section { padding: 44px 24px 52px; }
   .routine-head h2 { font-size: 26px; }
-  .seqA-track { flex-direction: column; overflow-x: visible; padding: 4px 0 4px 30px; gap: 0; }
+  .seqA-track { flex-direction: column; overflow-x: visible; padding: 4px 0 4px 30px; gap: 0; width: 100%; max-width: 100%; margin: 0; }
   .seqA-item { flex-basis: auto; flex-direction: row; text-align: left; align-items: flex-start; padding: 0 0 30px; }
   .seqA-item:last-child { padding-bottom: 4px; }
   .seqA-node-row { flex-direction: column; width: auto; margin: 0 20px 0 0; }
-  .seqA-line { left: 50%; top: -100%; width: 1px; height: 100%; }
-  .seqA-item:first-child .seqA-line { display: none; }
-  .seqA-item:last-child .seqA-line-end { display: none; }
   .seqA-node { width: 52px; height: 52px; }
   .seqA-node img { width: 32px; height: 32px; }
   .seqA-badge { justify-content: flex-start; }
@@ -741,7 +735,7 @@ const BUNDLES = {
     sectionSub: 'Chaque produit de The Forever Routine, dans l\'ordre où votre peau le rencontre réellement.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Nettoyage', instr: 'Massez en mousse pendant 30 secondes, rincez et séchez en tapotant.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes et pressez — pas de coton. Passez au sérum dans les 30 secondes.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes et pressez, sans coton. Passez au sérum dans les 30 secondes.' },
       { key: 'peptide-serum', num: '03', qualifier: 'Traiter · Matin', instr: 'Réchauffez 1 à 2 gouttes, tapotez sur le visage et le cou. Laissez pénétrer avant l\'étape suivante.' },
       { key: 'firming-day-cream', num: '04', qualifier: 'Hydrater', instr: 'Réchauffez une noisette de produit, pressez sur le visage, le cou et le décolleté.' },
       { key: 'spf50-stick', num: '05', qualifier: 'Protéger', instr: 'Passez sur le front, les joues, le nez et le menton. Réappliquez toutes les 2 heures en extérieur.' },
@@ -762,10 +756,10 @@ const BUNDLES = {
     sectionSub: 'Chaque produit de The Beauty Sleep Ritual, dans l\'ordre où votre peau le rencontre réellement.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Nettoyage', instr: 'Massez en mousse pendant 30 secondes, rincez et séchez en tapotant.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes et pressez — pas de coton. Passez au sérum dans les 30 secondes.' },
-      { key: 'retinol-alt-serum', num: '03', qualifier: 'Traiter · Soir', instr: 'Uniquement le soir — réchauffez 1 à 2 gouttes, tapotez, puis appliquez la crème de nuit.' },
-      { key: 'smoothing-eye-cream', num: '04', qualifier: 'Ciblé · Soin des yeux', instr: 'Uniquement l\'annulaire — déposez le long de l\'orbite et tapotez pour faire pénétrer.', targeted: true },
-      { key: 'ceramide-night-cream', num: '05', qualifier: 'Hydrater', instr: 'Appliquez généreusement en dernière étape — visage, cou et décolleté — puis dormez.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes et pressez, sans coton. Passez au sérum dans les 30 secondes.' },
+      { key: 'retinol-alt-serum', num: '03', qualifier: 'Traiter · Soir', instr: 'Uniquement le soir. Réchauffez 1 à 2 gouttes, tapotez, puis appliquez la crème de nuit.' },
+      { key: 'smoothing-eye-cream', num: '04', qualifier: 'Ciblé · Soin des yeux', instr: 'Uniquement l\'annulaire. Déposez le long de l\'orbite et tapotez pour faire pénétrer.', targeted: true },
+      { key: 'ceramide-night-cream', num: '05', qualifier: 'Hydrater', instr: 'Appliquez généreusement en dernière étape, visage, cou et décolleté, puis dormez.' },
     ],
   },
   'full-ritual': {
@@ -782,11 +776,11 @@ const BUNDLES = {
     sectionSub: 'Chaque produit de The Full Ritual, dans l\'ordre où votre peau le rencontre réellement au fil de la journée.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Nettoyage', instr: 'Massez en mousse pendant 30 secondes, rincez et séchez en tapotant.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes et pressez — pas de coton. Passez au sérum dans les 30 secondes.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes et pressez, sans coton. Passez au sérum dans les 30 secondes.' },
       { key: 'vitamin-c-serum', num: '03', qualifier: 'Traiter · Matin', instr: 'Réchauffez 1 à 2 gouttes, pressez, patientez 60 secondes. Terminez toujours par une SPF.' },
       { key: 'peptide-serum', num: '04', qualifier: 'Traiter · Matin/Soir', instr: 'Réchauffez 1 à 2 gouttes, tapotez sur le visage et le cou. Poursuivez avec la crème de jour le matin, la crème de nuit le soir.' },
-      { key: 'retinol-alt-serum', num: '05', qualifier: 'Traiter · Soir', instr: 'Uniquement le soir — réchauffez 1 à 2 gouttes, tapotez, puis appliquez la crème de nuit.' },
-      { key: 'smoothing-eye-cream', num: '06', qualifier: 'Ciblé · Soin des yeux', instr: 'Uniquement l\'annulaire — déposez le long de l\'orbite et tapotez pour faire pénétrer.', targeted: true },
+      { key: 'retinol-alt-serum', num: '05', qualifier: 'Traiter · Soir', instr: 'Uniquement le soir. Réchauffez 1 à 2 gouttes, tapotez, puis appliquez la crème de nuit.' },
+      { key: 'smoothing-eye-cream', num: '06', qualifier: 'Ciblé · Soin des yeux', instr: 'Uniquement l\'annulaire. Déposez le long de l\'orbite et tapotez pour faire pénétrer.', targeted: true },
       { key: 'firming-day-cream', num: '07', qualifier: 'Hydrater · Matin', instr: 'Réchauffez une noisette de produit, pressez sur le visage, le cou et le décolleté.' },
       { key: 'ceramide-night-cream', num: '08', qualifier: 'Hydrater · Soir', instr: 'Appliquez généreusement en dernière étape, puis dormez.' },
       { key: 'spf50-stick', num: '09', qualifier: 'Protéger', instr: 'Passez sur le front, les joues, le nez et le menton. Réappliquez toutes les 2 heures en extérieur.' },
@@ -824,12 +818,10 @@ const routineStepsHtml = (bundle.routineSteps || []).map(step => {
   return `
     <div class="seqA-item${step.targeted ? ' is-targeted' : ''}">
       <div class="seqA-node-row">
-        <div class="seqA-line"></div>
         <div class="seqA-node">
           <picture><source srcset="${p.img.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${p.img}" alt="${p.name}" loading="lazy" /></picture>
           <div class="seqA-num-chip">${step.num}</div>
         </div>
-        <div class="seqA-line-end"></div>
       </div>
       <div class="seqA-name-wrap">
         <div class="step-badge seqA-badge">${step.qualifier}</div>
