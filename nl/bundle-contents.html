@@ -515,6 +515,82 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .hamburger span { background: #1A1A1A !important; }
   .hamburger { opacity: 1 !important; visibility: visible !important; }
 }
+
+/* ── Routine section ("How the ritual works") ── */
+.routine-section { position: relative; padding: 64px 56px 80px; overflow: hidden; }
+.routine-section[data-theme="amber"] { background: var(--warm-white); color: var(--ink); }
+.routine-section[data-theme="navy"]  { background: linear-gradient(175deg,#262C3D 0%,#171C29 100%); color: #F1EBE0; }
+.routine-section[data-theme="sand"]  { background: linear-gradient(175deg,#EFDFC0 0%,#DDC298 100%); color: #241D12; }
+
+.routine-section .r-ink { --r-ink: #1A1A1A; --r-ink2: #57554A; --r-ink3: #8A8778; --r-line: rgba(26,26,26,0.14); --r-accent: #A8762F; }
+.routine-section[data-theme="navy"] .r-ink { --r-ink: #F5F0E4; --r-ink2: #C9C4B4; --r-ink3: #9B96A8; --r-line: rgba(245,240,228,0.16); --r-accent: #D8A9A0; }
+.routine-section[data-theme="sand"] .r-ink { --r-ink: #241D12; --r-ink2: #55482F; --r-ink3: #7D6E4B; --r-line: rgba(36,29,18,0.16); --r-accent: #8B5A2B; }
+
+.routine-head { max-width: 640px; margin: 0 auto 48px; text-align: center; }
+.routine-head .eyebrow {
+  font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--r-ink3);
+  margin-bottom: 16px; display: flex; align-items: center; justify-content: center; gap: 12px;
+}
+.routine-head .eyebrow::before, .routine-head .eyebrow::after { content: ""; width: 28px; height: 1px; background: var(--r-line); }
+.routine-head h2 { font-weight: 300; font-size: 34px; line-height: 1.15; margin: 0 0 14px; color: var(--r-ink); }
+.routine-head h2 em { font-style: italic; }
+.routine-head p { font-size: 15px; line-height: 1.6; color: var(--r-ink2); margin: 0; }
+
+.step-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--r-ink3);
+  font-family: var(--font-ui);
+}
+
+.seqA-track {
+  display: flex; gap: 0; overflow-x: auto; padding: 8px 4px 28px;
+  scroll-snap-type: x proximity;
+}
+.seqA-track::-webkit-scrollbar { height: 5px; }
+.seqA-track::-webkit-scrollbar-thumb { background: var(--r-line); border-radius: 4px; }
+.seqA-item { flex: 0 0 208px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 18px; position: relative; }
+.seqA-node-row { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 22px; }
+.seqA-line { position: absolute; top: 50%; left: -50%; width: 100%; height: 1px; background: var(--r-line); z-index: 0; }
+.seqA-item:first-child .seqA-line { left: 50%; width: 50%; }
+.seqA-item:last-child .seqA-line-end { position: absolute; top: 50%; right: -50%; width: 50%; height: 1px; background: var(--r-line); }
+.seqA-node {
+  position: relative; z-index: 1; width: 64px; height: 64px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.35); flex-shrink: 0;
+}
+.routine-section[data-theme="amber"] .seqA-node { background: var(--ink); }
+.routine-section[data-theme="navy"] .seqA-node { background: #F5F0E4; }
+.routine-section[data-theme="sand"] .seqA-node { background: #241D12; }
+.seqA-node img { width: 40px; height: 40px; object-fit: contain; border-radius: 50%; background: #fff; }
+.seqA-item.is-targeted .seqA-node { width: 52px; height: 52px; outline: 1px dashed var(--r-accent); outline-offset: 5px; }
+.seqA-num-chip {
+  position: absolute; bottom: -6px; right: -2px; z-index: 2;
+  width: 22px; height: 22px; border-radius: 50%; background: var(--r-accent); color: #fff;
+  font-family: var(--font-ui); font-size: 10px; font-weight: 500;
+  display: flex; align-items: center; justify-content: center; border: 2px solid #fff;
+}
+.routine-section[data-theme="amber"] .seqA-num-chip { border-color: var(--warm-white); }
+.routine-section[data-theme="navy"] .seqA-num-chip { border-color: #1D2230; }
+.routine-section[data-theme="sand"] .seqA-num-chip { border-color: #E7D3AC; }
+.seqA-badge { margin-bottom: 8px; justify-content: center; }
+.seqA-name { font-size: 17px; font-weight: 300; margin: 0 0 8px; color: var(--r-ink); }
+.seqA-instr { font-size: 13px; line-height: 1.55; color: var(--r-ink2); margin: 0; }
+
+@media (max-width: 768px) {
+  .routine-section { padding: 44px 24px 52px; }
+  .routine-head h2 { font-size: 26px; }
+  .seqA-track { flex-direction: column; overflow-x: visible; padding: 4px 0 4px 30px; gap: 0; }
+  .seqA-item { flex-basis: auto; flex-direction: row; text-align: left; align-items: flex-start; padding: 0 0 30px; }
+  .seqA-item:last-child { padding-bottom: 4px; }
+  .seqA-node-row { flex-direction: column; width: auto; margin: 0 20px 0 0; }
+  .seqA-line { left: 50%; top: -100%; width: 1px; height: 100%; }
+  .seqA-item:first-child .seqA-line { display: none; }
+  .seqA-item:last-child .seqA-line-end { display: none; }
+  .seqA-node { width: 52px; height: 52px; }
+  .seqA-node img { width: 32px; height: 32px; }
+  .seqA-badge { justify-content: flex-start; }
+  .seqA-instr { max-width: 260px; }
+}
 </style>
 </head>
 <body>
@@ -659,6 +735,17 @@ const BUNDLES = {
     price: '€140',
     img: '../project/assets/products-new/bundle-forever.jpg',
     producten: ['cleansing-foam', 'hydrating-toner', 'peptide-serum', 'firming-day-cream', 'spf50-stick'],
+    theme: 'amber',
+    sectionEyebrow: 'Hoe het ritueel werkt',
+    sectionTitle: 'Eén ochtend, <em>vijf stappen.</em>',
+    sectionSub: 'Elk product in The Forever Routine, in de volgorde waarin je huid het daadwerkelijk tegenkomt.',
+    routineSteps: [
+      { key: 'cleansing-foam', num: '01', qualifier: 'Reinigen', instr: 'Masseer 30 seconden in een schuimende laag, spoel af en dep droog.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonen', instr: 'Druppel in je handpalmen en druk in — geen wattenschijfjes. Ga binnen 30 seconden verder met je serum.' },
+      { key: 'peptide-serum', num: '03', qualifier: 'Behandelen · Ochtend', instr: 'Warm 1–2 druppels op, dep uit over gezicht en hals. Laat intrekken voor de volgende stap.' },
+      { key: 'firming-day-cream', num: '04', qualifier: 'Hydrateren', instr: 'Warm een hoeveelheid ter grootte van een erwt op, druk in over gezicht, hals en decolleté.' },
+      { key: 'spf50-stick', num: '05', qualifier: 'Beschermen', instr: 'Trek over voorhoofd, wangen, neus en kin. Herhaal om de 2 uur bij buitengebruik.' },
+    ],
   },
   'beauty-sleep-ritual': {
     name: 'The Beauty Sleep Ritual',
@@ -669,6 +756,17 @@ const BUNDLES = {
     img: '../project/assets/products-new/bundle-beauty-sleep.png',
     imgPosition: 'center 80%',
     producten: ['cleansing-foam', 'hydrating-toner', 'smoothing-eye-cream', 'retinol-alt-serum', 'ceramide-night-cream'],
+    theme: 'navy',
+    sectionEyebrow: 'Hoe het ritueel werkt',
+    sectionTitle: 'Eén avond, <em>vijf stappen.</em>',
+    sectionSub: 'Elk product in The Beauty Sleep Ritual, in de volgorde waarin je huid het daadwerkelijk tegenkomt.',
+    routineSteps: [
+      { key: 'cleansing-foam', num: '01', qualifier: 'Reinigen', instr: 'Masseer 30 seconden in een schuimende laag, spoel af en dep droog.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonen', instr: 'Druppel in je handpalmen en druk in — geen wattenschijfjes. Ga binnen 30 seconden verder met je serum.' },
+      { key: 'retinol-alt-serum', num: '03', qualifier: 'Behandelen · Avond', instr: 'Enkel \'s avonds — warm 1–2 druppels op, dep in, breng dan de nachtcrème aan.' },
+      { key: 'smoothing-eye-cream', num: '04', qualifier: 'Gerichte zorg · Oogverzorging', instr: 'Enkel de ringvinger — dep langs het oogkasbeen en tik om te verdelen.', targeted: true },
+      { key: 'ceramide-night-cream', num: '05', qualifier: 'Hydrateren', instr: 'Breng royaal aan als laatste stap — gezicht, hals en decolleté — en ga slapen.' },
+    ],
   },
   'full-ritual': {
     name: 'The Full Ritual',
@@ -678,6 +776,21 @@ const BUNDLES = {
     price: '€260',
     img: '../project/assets/products-new/bundle-full-ritual.jpg',
     producten: ['cleansing-foam', 'hydrating-toner', 'vitamin-c-serum', 'peptide-serum', 'retinol-alt-serum', 'firming-day-cream', 'ceramide-night-cream', 'smoothing-eye-cream', 'spf50-stick'],
+    theme: 'sand',
+    sectionEyebrow: 'Hoe het ritueel werkt',
+    sectionTitle: 'Eén box, <em>ochtend en avond.</em>',
+    sectionSub: 'Elk product in The Full Ritual, in de volgorde waarin je huid het gedurende de dag daadwerkelijk tegenkomt.',
+    routineSteps: [
+      { key: 'cleansing-foam', num: '01', qualifier: 'Reinigen', instr: 'Masseer 30 seconden in een schuimende laag, spoel af en dep droog.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonen', instr: 'Druppel in je handpalmen en druk in — geen wattenschijfjes. Ga binnen 30 seconden verder met je serum.' },
+      { key: 'vitamin-c-serum', num: '03', qualifier: 'Behandelen · Ochtend', instr: 'Warm 1–2 druppels op, druk in, wacht 60 seconden. Sluit altijd af met SPF.' },
+      { key: 'peptide-serum', num: '04', qualifier: 'Behandelen · Ochtend/Avond', instr: 'Warm 1–2 druppels op, dep uit over gezicht en hals. Volg met dagcrème \'s ochtends, nachtcrème \'s avonds.' },
+      { key: 'retinol-alt-serum', num: '05', qualifier: 'Behandelen · Avond', instr: 'Enkel \'s avonds — warm 1–2 druppels op, dep in, breng dan de nachtcrème aan.' },
+      { key: 'smoothing-eye-cream', num: '06', qualifier: 'Gerichte zorg · Oogverzorging', instr: 'Enkel de ringvinger — dep langs het oogkasbeen en tik om te verdelen.', targeted: true },
+      { key: 'firming-day-cream', num: '07', qualifier: 'Hydrateren · Ochtend', instr: 'Warm een hoeveelheid ter grootte van een erwt op, druk in over gezicht, hals en decolleté.' },
+      { key: 'ceramide-night-cream', num: '08', qualifier: 'Hydrateren · Avond', instr: 'Breng royaal aan als laatste stap, en ga slapen.' },
+      { key: 'spf50-stick', num: '09', qualifier: 'Beschermen', instr: 'Trek over voorhoofd, wangen, neus en kin. Herhaal om de 2 uur bij buitengebruik.' },
+    ],
   },
 };
 
@@ -706,6 +819,41 @@ const rowsHtml = bundle.producten.map((key, i) => {
     </div>`;
 }).join('');
 
+const routineStepsHtml = (bundle.routineSteps || []).map(step => {
+  const p = PRODUCTS[step.key];
+  return `
+    <div class="seqA-item${step.targeted ? ' is-targeted' : ''}">
+      <div class="seqA-node-row">
+        <div class="seqA-line"></div>
+        <div class="seqA-node">
+          <picture><source srcset="${p.img.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${p.img}" alt="${p.name}" loading="lazy" /></picture>
+          <div class="seqA-num-chip">${step.num}</div>
+        </div>
+        <div class="seqA-line-end"></div>
+      </div>
+      <div class="seqA-name-wrap">
+        <div class="step-badge seqA-badge">${step.qualifier}</div>
+        <p class="seqA-name">${p.name}</p>
+        <p class="seqA-instr">${step.instr}</p>
+      </div>
+    </div>`;
+}).join('');
+
+const routineSectionHtml = bundle.routineSteps ? `
+  <section class="routine-section" data-theme="${bundle.theme}">
+    <div class="r-ink">
+      <div class="routine-head">
+        <div class="eyebrow">${bundle.sectionEyebrow}</div>
+        <h2>${bundle.sectionTitle}</h2>
+        <p>${bundle.sectionSub}</p>
+      </div>
+      <div class="seqA-track">
+        ${routineStepsHtml}
+      </div>
+    </div>
+  </section>
+` : '';
+
 document.getElementById('root').innerHTML = `
   <section class="bundle-hero">
     <div class="bundle-hero-text">
@@ -732,6 +880,8 @@ document.getElementById('root').innerHTML = `
   <div class="contents-list">
     ${rowsHtml}
   </div>
+
+  ${routineSectionHtml}
 `;
 
 // =============================================================
