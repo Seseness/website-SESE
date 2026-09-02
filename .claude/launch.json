@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "SESE",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "-l", "4500", "."],
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4500"],
       "port": 4500
     }
   ]
