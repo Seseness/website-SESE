@@ -518,11 +518,11 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
 /* ── Routine section ("How the ritual works") ── */
 .routine-section { position: relative; padding: 64px 56px 80px; overflow: hidden; }
-.routine-section[data-theme="amber"] { background: var(--warm-white); color: var(--ink); }
+.routine-section[data-theme="sky"] { background: linear-gradient(175deg,#DCEAF1 0%,#B7D2DE 100%); color: #0F2A36; }
 .routine-section[data-theme="navy"]  { background: linear-gradient(175deg,#262C3D 0%,#171C29 100%); color: #F1EBE0; }
 .routine-section[data-theme="sand"]  { background: linear-gradient(175deg,#EFDFC0 0%,#DDC298 100%); color: #241D12; }
 
-.routine-section .r-ink { --r-ink: #1A1A1A; --r-ink2: #57554A; --r-ink3: #8A8778; --r-line: rgba(26,26,26,0.14); --r-accent: #A8762F; }
+.routine-section .r-ink { --r-ink: #0F2A36; --r-ink2: #1A3D4D; --r-ink3: #4A6B78; --r-line: rgba(15,42,54,0.16); --r-accent: #1A3D4D; }
 .routine-section[data-theme="navy"] .r-ink { --r-ink: #F5F0E4; --r-ink2: #C9C4B4; --r-ink3: #9B96A8; --r-line: rgba(245,240,228,0.16); --r-accent: #D8A9A0; }
 .routine-section[data-theme="sand"] .r-ink { --r-ink: #241D12; --r-ink2: #55482F; --r-ink3: #7D6E4B; --r-line: rgba(36,29,18,0.16); --r-accent: #8B5A2B; }
 
@@ -555,7 +555,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 8px 20px -8px rgba(0,0,0,0.35); flex-shrink: 0;
 }
-.routine-section[data-theme="amber"] .seqA-node { background: var(--ink); }
+.routine-section[data-theme="sky"] .seqA-node { background: #0F2A36; }
 .routine-section[data-theme="navy"] .seqA-node { background: #F5F0E4; }
 .routine-section[data-theme="sand"] .seqA-node { background: #241D12; }
 .seqA-node img { width: 40px; height: 40px; object-fit: contain; border-radius: 50%; background: #fff; }
@@ -566,7 +566,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
   font-family: var(--font-ui); font-size: 10px; font-weight: 500;
   display: flex; align-items: center; justify-content: center; border: 2px solid #fff;
 }
-.routine-section[data-theme="amber"] .seqA-num-chip { border-color: var(--warm-white); }
+.routine-section[data-theme="sky"] .seqA-num-chip { border-color: #CFE3EC; }
 .routine-section[data-theme="navy"] .seqA-num-chip { border-color: #1D2230; }
 .routine-section[data-theme="sand"] .seqA-num-chip { border-color: #E7D3AC; }
 .seqA-badge { margin-bottom: 8px; justify-content: center; }
@@ -729,7 +729,7 @@ const BUNDLES = {
     price: '€140',
     img: '../project/assets/products-new/bundle-forever.jpg',
     producten: ['cleansing-foam', 'hydrating-toner', 'peptide-serum', 'firming-day-cream', 'spf50-stick'],
-    theme: 'amber',
+    theme: 'sky',
     sectionEyebrow: 'Hoe het ritueel werkt',
     sectionTitle: 'Eén ochtend, <em>vijf stappen.</em>',
     sectionSub: 'Elk product in The Forever Routine, in de volgorde waarin je huid het daadwerkelijk tegenkomt.',
