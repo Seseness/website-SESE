@@ -73,17 +73,17 @@
     .cart-header .count { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-3); }
 
     /* Item rows */
-    .cart-artikelen { border-top: 1px solid var(--line-soft); }
-    .cart-artikel { display: grid; grid-template-columns: 100px 1fr auto; gap: 24px; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--line-soft); }
-    .artikel-img { width: 100px; height: 100px; border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .artikel-img picture { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
-    .artikel-img img { width: 82%; height: 82%; object-fit: contain; border-radius: 10px; background: #fff; display: block; }
-    .artikel-img--bundle img { width: 100%; height: 100%; object-fit: cover; object-position: center; background: none; }
-    .artikel-info { display: flex; flex-direction: column; gap: 4px; }
-    .artikel-name { font-size: 18px; color: var(--ink); }
-    .artikel-price { font-size: 14px; color: var(--ink-3); letter-spacing: 0.04em; }
-    .artikel-controls { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
-    .artikel-line-price { font-size: 18px; color: var(--ink); }
+    .cart-items { border-top: 1px solid var(--line-soft); }
+    .cart-item { display: grid; grid-template-columns: 100px 1fr auto; gap: 24px; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--line-soft); }
+    .item-img { width: 100px; height: 100px; border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .item-img picture { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+    .item-img img { width: 82%; height: 82%; object-fit: contain; border-radius: 10px; background: #fff; display: block; }
+    .item-img--bundle img { width: 100%; height: 100%; object-fit: cover; object-position: center; background: none; }
+    .item-info { display: flex; flex-direction: column; gap: 4px; }
+    .item-name { font-size: 18px; color: var(--ink); }
+    .item-price { font-size: 14px; color: var(--ink-3); letter-spacing: 0.04em; }
+    .item-controls { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+    .item-line-price { font-size: 18px; color: var(--ink); }
     .qty-row { display: inline-flex; align-items: center; gap: 0; border: 1px solid var(--line-default); border-radius: 999px; overflow: hidden; }
     .qty-btn { width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; color: var(--ink-2); transition: background .2s; cursor: pointer; background: none; border: none; }
     .qty-btn:hover { background: rgba(26,26,26,0.06); }
@@ -149,7 +149,7 @@
     }
   
     @media (max-width: 480px) {
-      .cart-artikel { grid-template-columns: 72px 1fr auto; gap: 12px; }
+      .cart-item { grid-template-columns: 72px 1fr auto; gap: 12px; }
       .cart-summary { padding: 24px 20px; }
       .cart-wrap h1 { font-size: 36px; }
       .cart-wrap { padding: 32px 20px 60px; }
@@ -157,7 +157,7 @@
 
     @media (max-width: 375px) {
       .cart-wrap h1 { font-size: 28px; }
-      .cart-artikel { grid-template-columns: 60px 1fr auto; gap: 10px; }
+      .cart-item { grid-template-columns: 60px 1fr auto; gap: 10px; }
     }
 
 /* Fluid typography */
@@ -254,9 +254,9 @@ html, body { overflow-x: hidden; max-width: 100%; }
     gap: 32px !important;
   }
   .cart-header h1 { font-size: clamp(28px, 7vw, 44px) !important; }
-  .cart-artikel { grid-template-columns: 80px 1fr !important; gap: 16px !important; }
-  .artikel-controls { grid-column: 1/-1 !important; flex-direction: row !important; justify-content: space-between !important; align-items: center !important; }
-  .artikel-line-price { font-size: 16px !important; }
+  .cart-item { grid-template-columns: 80px 1fr !important; gap: 16px !important; }
+  .item-controls { grid-column: 1/-1 !important; flex-direction: row !important; justify-content: space-between !important; align-items: center !important; }
+  .item-line-price { font-size: 16px !important; }
   .cart-summary { position: static !important; padding: 24px 20px !important; border-radius: 16px !important; }
   .btn-checkout, .btn-continue { min-height: 52px !important; font-size: 10px !important; }
 }
@@ -268,7 +268,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
 
   .cart-wrap { padding: 24px 16px 48px !important; }
-  .artikel-img { width: 72px !important; height: 72px !important; }
+  .item-img { width: 72px !important; height: 72px !important; }
 }
 
 
@@ -459,26 +459,26 @@ function renderWinkelwagen() {
       </div>`;
   }).join('');
 
-  const artikelenHtml = cart.items.map(artikel => {
-    const p = PRODUCT_CATALOGUE[artikel.key];
+  const productItemsHtml = cart.items.map(item => {
+    const p = PRODUCT_CATALOGUE[item.key];
     if (!p) return '';
     return `
-      <div class="cart-artikel" data-key="${artikel.key}">
-        <div class="artikel-img" style="background-color:${p.bg}">
+      <div class="cart-item" data-key="${item.key}">
+        <div class="item-img" style="background-color:${p.bg}">
           <picture><source srcset="${p.img.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${p.img}" alt="${p.name}" loading="lazy" /></picture>
         </div>
-        <div class="artikel-info">
-          <div class="artikel-name">${p.name}</div>
-          <div class="artikel-price">€${p.price}</div>
+        <div class="item-info">
+          <div class="item-name">${p.name}</div>
+          <div class="item-price">€${p.price}</div>
         </div>
-        <div class="artikel-controls">
-          <div class="artikel-line-price">€${(p.price * artikel.qty).toFixed(0)}</div>
+        <div class="item-controls">
+          <div class="item-line-price">€${(p.price * item.qty).toFixed(0)}</div>
           <div class="qty-row">
-            <button class="qty-btn" onclick="changeQty('${artikel.key}', -1)">−</button>
-            <span class="qty-val">${artikel.qty}</span>
-            <button class="qty-btn" onclick="changeQty('${artikel.key}', 1)">+</button>
+            <button class="qty-btn" onclick="changeQty('${item.key}', -1)">−</button>
+            <span class="qty-val">${item.qty}</span>
+            <button class="qty-btn" onclick="changeQty('${item.key}', 1)">+</button>
           </div>
-          <button class="remove-btn" onclick="removeItem('${artikel.key}')">Verwijderen</button>
+          <button class="remove-btn" onclick="removeItem('${item.key}')">Verwijderen</button>
         </div>
       </div>`;
   }).join('');
@@ -501,7 +501,7 @@ function renderWinkelwagen() {
         <h1>Jouw Winkelwagen</h1>
         <div class="count">${totalItems} artikel${totalItems !== 1 ? 'en' : ''}</div>
       </div>
-      <div class="cart-artikelen">${bundleItemsHtml}${artikelenHtml}</div>
+      <div class="cart-items">${bundleItemsHtml}${productItemsHtml}</div>
     </div>
     <div class="cart-summary">
       <div class="summary-title">Besteloverzicht</div>
@@ -558,8 +558,8 @@ function checkoutBundle(bundleKey) {
 
 function changeQty(key, delta) {
   const cart = SESECart.get();
-  const artikel = cart.items.find(i => i.key === key);
-  if (artikel) SESECart.update(key, artikel.qty + delta);
+  const item = cart.items.find(i => i.key === key);
+  if (item) SESECart.update(key, item.qty + delta);
   renderWinkelwagen();
 }
 
