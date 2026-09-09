@@ -522,7 +522,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
 .routine-section .r-ink { --r-ink: #0F2A36; --r-ink2: #1A3D4D; --r-ink3: #4A6B78; --r-line: rgba(15,42,54,0.16); --r-accent: #1A3D4D; }
 .routine-section[data-theme="navy"] .r-ink { --r-ink: #F5F0E4; --r-ink2: #C9C4B4; --r-ink3: #9B96A8; --r-line: rgba(245,240,228,0.16); --r-accent: #D8A9A0; }
-.routine-section[data-theme="sand"] .r-ink { --r-ink: #241D12; --r-ink2: #55482F; --r-ink3: #7D6E4B; --r-line: rgba(36,29,18,0.16); --r-accent: #8B5A2B; }
+.routine-section[data-theme="sand"] .r-ink { --r-ink: #241D12; --r-ink2: #55482F; --r-ink3: #7D6E4B; --r-line: rgba(36,29,18,0.16); --r-accent: #8B5A2B; --r-accent-2: #4A5A6B; }
 
 .routine-head { max-width: 640px; margin: 0 auto 48px; text-align: center; }
 .routine-head .eyebrow {
@@ -582,6 +582,23 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .seqA-node img { width: 32px; height: 32px; }
   .seqA-badge { justify-content: flex-start; }
   .seqA-instr { max-width: 260px; }
+}
+
+/* ── Morning/Evening split (The Full Ritual only) ── */
+.daypart-head { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 32px; }
+.daypart-head svg { width: 17px; height: 17px; flex-shrink: 0; }
+.daypart-head .label { font-family: var(--font-ui); font-size: 12px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--r-ink); }
+.daypart-head .count { font-family: var(--font-ui); font-size: 11.5px; color: var(--r-ink3); }
+.daypart-head .count::before { content: "\00B7"; margin-right: 10px; opacity: 0.6; }
+.daypart-rule { width: 100%; max-width: 560px; height: 1px; background: var(--r-line); margin: 8px auto 56px; }
+.daypart.evening .seqA-num-chip { background: var(--r-accent-2, var(--r-accent)); }
+.dual-tag { display: inline-flex; align-items: center; gap: 5px; margin-top: 9px; font-family: var(--font-ui); font-size: 9.5px; font-weight: 500; letter-spacing: 0.04em; color: var(--r-accent-2, var(--r-accent)); }
+.daypart.evening .dual-tag { color: var(--r-accent); }
+.dual-tag svg { width: 10px; height: 10px; }
+
+@media (max-width: 768px) {
+  .daypart-head { justify-content: flex-start; padding-left: 2px; }
+  .daypart-rule { max-width: none; margin: 8px 0 44px; }
 }
 </style>
 </head>
@@ -774,16 +791,32 @@ const BUNDLES = {
     sectionEyebrow: 'How the ritual works',
     sectionTitle: 'One box, <em>morning and night.</em>',
     sectionSub: 'Every product in The Full Ritual, step by step.',
-    routineSteps: [
-      { key: 'cleansing-foam', num: '01', qualifier: 'Cleanse', instr: 'Massage into a lather for 30 seconds, then rinse and pat dry.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in, skipping cotton pads. Move to serum within 30 seconds.' },
-      { key: 'vitamin-c-serum', num: '03', qualifier: 'Treat · AM', instr: 'Warm one to two drops, press in, wait 60 seconds. Always follow with SPF.' },
-      { key: 'peptide-serum', num: '04', qualifier: 'Treat · AM/PM', instr: 'Warm one to two drops, pat across face and neck. Layer with day cream AM, night cream PM.' },
-      { key: 'retinol-alt-serum', num: '05', qualifier: 'Treat · PM', instr: 'Evening only. Warm one to two drops, pat in, then continue with your next step.' },
-      { key: 'smoothing-eye-cream', num: '06', qualifier: 'Targeted · Eye care', instr: 'Ring finger only. Dot along the orbital bone and tap to blend.', targeted: true },
-      { key: 'firming-day-cream', num: '07', qualifier: 'Moisturise · AM', instr: 'Warm a pea-size amount, press into face, neck and décolleté.' },
-      { key: 'ceramide-night-cream', num: '08', qualifier: 'Moisturise · PM', instr: 'Apply generously as your last step, then sleep.' },
-      { key: 'spf50-stick', num: '09', qualifier: 'Protect', instr: 'Swipe across forehead, cheeks, nose and chin. Reapply every 2 hours outdoors.' },
+    routineDayparts: [
+      {
+        label: 'Morning',
+        icon: 'sun',
+        steps: [
+          { key: 'cleansing-foam', num: '01', qualifier: 'Cleanse', instr: 'Massage into a lather for 30 seconds, then rinse and pat dry.' },
+          { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in, skipping cotton pads. Move to serum within 30 seconds.' },
+          { key: 'vitamin-c-serum', num: '03', qualifier: 'Treat', instr: 'Warm one to two drops, press in, wait 60 seconds. Always follow with SPF.' },
+          { key: 'peptide-serum', num: '04', qualifier: 'Treat', instr: 'Warm one to two drops, pat across face and neck. Layer with day cream.', dual: 'evening' },
+          { key: 'smoothing-eye-cream', num: '05', qualifier: 'Eye care', instr: 'Ring finger only. Dot along the orbital bone and tap to blend.', dual: 'evening' },
+          { key: 'firming-day-cream', num: '06', qualifier: 'Moisturise', instr: 'Warm a pea-size amount, press into face, neck and décolleté.' },
+          { key: 'spf50-stick', num: '07', qualifier: 'Protect', instr: 'Swipe across forehead, cheeks, nose and chin. Reapply every 2 hours outdoors.' },
+        ],
+      },
+      {
+        label: 'Evening',
+        icon: 'moon',
+        steps: [
+          { key: 'cleansing-foam', num: '01', qualifier: 'Cleanse', instr: 'Massage into a lather for 30 seconds, then rinse and pat dry.' },
+          { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in, skipping cotton pads. Move to serum within 30 seconds.' },
+          { key: 'peptide-serum', num: '03', qualifier: 'Treat', instr: 'Warm one to two drops, pat across face and neck. Layer with night cream.', dual: 'morning' },
+          { key: 'retinol-alt-serum', num: '04', qualifier: 'Treat', instr: 'Evening only. Warm one to two drops, pat in, then continue with your next step.' },
+          { key: 'smoothing-eye-cream', num: '05', qualifier: 'Eye care', instr: 'Ring finger only. Dot along the orbital bone and tap to blend.', dual: 'morning' },
+          { key: 'ceramide-night-cream', num: '06', qualifier: 'Moisturise', instr: 'Apply generously as your last step, then sleep.' },
+        ],
+      },
     ],
   },
 };
@@ -813,8 +846,13 @@ const rowsHtml = bundle.products.map((key, i) => {
     </div>`;
 }).join('');
 
-const routineStepsHtml = (bundle.routineSteps || []).map(step => {
+const SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="4.5"/><path stroke-linecap="round" d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>';
+const MOON_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>';
+const LOOP_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 2l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 22l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3"/></svg>';
+
+function stepCardHtml(step) {
   const p = PRODUCTS[step.key];
+  const dualNote = step.dual ? `<div class="dual-tag">${LOOP_ICON}Also used ${step.dual}</div>` : '';
   return `
     <div class="seqA-item${step.targeted ? ' is-targeted' : ''}">
       <div class="seqA-node-row">
@@ -827,11 +865,25 @@ const routineStepsHtml = (bundle.routineSteps || []).map(step => {
         <div class="step-badge seqA-badge">${step.qualifier}</div>
         <p class="seqA-name">${p.name}</p>
         <p class="seqA-instr">${step.instr}</p>
+        ${dualNote}
       </div>
     </div>`;
-}).join('');
+}
 
-const routineSectionHtml = bundle.routineSteps ? `
+let routineBodyHtml = '';
+if (bundle.routineDayparts) {
+  routineBodyHtml = bundle.routineDayparts.map((part, i) => `
+    ${i > 0 ? '<div class="daypart-rule"></div>' : ''}
+    <div class="daypart ${part.label.toLowerCase()}">
+      <div class="daypart-head">${part.icon === 'sun' ? SUN_ICON : MOON_ICON}<span class="label">${part.label}</span><span class="count">${part.steps.length} steps</span></div>
+      <div class="seqA-track">${part.steps.map(stepCardHtml).join('')}</div>
+    </div>
+  `).join('');
+} else if (bundle.routineSteps) {
+  routineBodyHtml = `<div class="seqA-track">${bundle.routineSteps.map(stepCardHtml).join('')}</div>`;
+}
+
+const routineSectionHtml = (bundle.routineDayparts || bundle.routineSteps) ? `
   <section class="routine-section" data-theme="${bundle.theme}">
     <div class="r-ink">
       <div class="routine-head">
@@ -839,9 +891,7 @@ const routineSectionHtml = bundle.routineSteps ? `
         <h2>${bundle.sectionTitle}</h2>
         <p>${bundle.sectionSub}</p>
       </div>
-      <div class="seqA-track">
-        ${routineStepsHtml}
-      </div>
+      ${routineBodyHtml}
     </div>
   </section>
 ` : '';
