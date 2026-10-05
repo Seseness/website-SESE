@@ -280,6 +280,9 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .hamburger span { background: #1A1A1A !important; }
   .hamburger { opacity: 1 !important; visibility: visible !important; }
 }
+
+  /* Mobile: bundle thumbnails in 3:2 so every product in the routine is visible */
+  @media (max-width:768px){.cart-item:has(.item-img--bundle){grid-template-columns:96px 1fr auto!important}.item-img--bundle{width:96px!important;height:64px!important}.item-img--bundle img{object-fit:cover!important}}
 </style>
 </head>
 <body>
