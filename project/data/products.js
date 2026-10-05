@@ -27,7 +27,7 @@ export const PRODUCTS = {
           "bg": "#EDF4F8"
         },
         {
-          "src": "project/assets/products-new/cleansing-foam-sfeer-1.jpg",
+          "src": "project/assets/products-new/cleansing-foam-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -177,12 +177,12 @@ export const PRODUCTS = {
           "bg": "#ECF3EC"
         },
         {
-          "src": "project/assets/products-new/hydrating-toner-sfeer-1.jpg",
+          "src": "project/assets/products-new/hydrating-toner-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "project/assets/products-new/hydrating-toner-sfeer-2.jpg",
+          "src": "project/assets/products-new/hydrating-toner-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -336,12 +336,12 @@ export const PRODUCTS = {
           "bg": "#FEF0E0"
         },
         {
-          "src": "project/assets/products-new/vitamin-c-serum-sfeer-1.jpg",
+          "src": "project/assets/products-new/vitamin-c-serum-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "project/assets/products-new/vitamin-c-serum-sfeer-2.jpg",
+          "src": "project/assets/products-new/vitamin-c-serum-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -495,12 +495,12 @@ export const PRODUCTS = {
           "bg": "#FEF0E0"
         },
         {
-          "src": "project/assets/products-new/peptide-serum-sfeer-1.jpg",
+          "src": "project/assets/products-new/peptide-serum-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "project/assets/products-new/peptide-serum-sfeer-2.jpg",
+          "src": "project/assets/products-new/peptide-serum-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -658,12 +658,12 @@ export const PRODUCTS = {
           "bg": "#EFE0D8"
         },
         {
-          "src": "project/assets/products-new/retinol-alt-serum-sfeer-1.jpg",
+          "src": "project/assets/products-new/retinol-alt-serum-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "project/assets/products-new/retinol-alt-serum-sfeer-2.jpg",
+          "src": "project/assets/products-new/retinol-alt-serum-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -817,12 +817,12 @@ export const PRODUCTS = {
           "bg": "#F5DEE2"
         },
         {
-          "src": "project/assets/products-new/firming-day-cream-sfeer-1.jpg",
+          "src": "project/assets/products-new/firming-day-cream-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "project/assets/products-new/firming-day-cream-sfeer-2.jpg",
+          "src": "project/assets/products-new/firming-day-cream-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -976,12 +976,12 @@ export const PRODUCTS = {
           "bg": "#F5EAD0"
         },
         {
-          "src": "project/assets/products-new/ceramide-night-cream-sfeer-1.jpg",
+          "src": "project/assets/products-new/ceramide-night-cream-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "project/assets/products-new/ceramide-night-cream-sfeer-2.jpg",
+          "src": "project/assets/products-new/ceramide-night-cream-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -1135,12 +1135,12 @@ export const PRODUCTS = {
           "bg": "#D8E4D8"
         },
         {
-          "src": "project/assets/products-new/smoothing-eye-cream-sfeer-1.jpg",
+          "src": "project/assets/products-new/smoothing-eye-cream-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "project/assets/products-new/smoothing-eye-cream-sfeer-2.jpg",
+          "src": "project/assets/products-new/smoothing-eye-cream-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -1294,12 +1294,12 @@ export const PRODUCTS = {
           "bg": "#F0E2C0"
         },
         {
-          "src": "project/assets/products-new/spf50-stick-sfeer-1.jpg",
+          "src": "project/assets/products-new/spf50-stick-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "project/assets/products-new/spf50-stick-sfeer-2.jpg",
+          "src": "project/assets/products-new/spf50-stick-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -1455,7 +1455,7 @@ export const PRODUCTS = {
           "bg": "#EDF4F8"
         },
         {
-          "src": "../project/assets/products-new/cleansing-foam-sfeer-1.jpg",
+          "src": "../project/assets/products-new/cleansing-foam-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -1605,12 +1605,12 @@ export const PRODUCTS = {
           "bg": "#ECF3EC"
         },
         {
-          "src": "../project/assets/products-new/hydrating-toner-sfeer-1.jpg",
+          "src": "../project/assets/products-new/hydrating-toner-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/hydrating-toner-sfeer-2.jpg",
+          "src": "../project/assets/products-new/hydrating-toner-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -1764,12 +1764,12 @@ export const PRODUCTS = {
           "bg": "#FEF0E0"
         },
         {
-          "src": "../project/assets/products-new/vitamin-c-serum-sfeer-1.jpg",
+          "src": "../project/assets/products-new/vitamin-c-serum-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/vitamin-c-serum-sfeer-2.jpg",
+          "src": "../project/assets/products-new/vitamin-c-serum-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -1923,12 +1923,12 @@ export const PRODUCTS = {
           "bg": "#FEF0E0"
         },
         {
-          "src": "../project/assets/products-new/peptide-serum-sfeer-1.jpg",
+          "src": "../project/assets/products-new/peptide-serum-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/peptide-serum-sfeer-2.jpg",
+          "src": "../project/assets/products-new/peptide-serum-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -2086,12 +2086,12 @@ export const PRODUCTS = {
           "bg": "#EFE0D8"
         },
         {
-          "src": "../project/assets/products-new/retinol-alt-serum-sfeer-1.jpg",
+          "src": "../project/assets/products-new/retinol-alt-serum-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/retinol-alt-serum-sfeer-2.jpg",
+          "src": "../project/assets/products-new/retinol-alt-serum-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -2245,12 +2245,12 @@ export const PRODUCTS = {
           "bg": "#F5DEE2"
         },
         {
-          "src": "../project/assets/products-new/firming-day-cream-sfeer-1.jpg",
+          "src": "../project/assets/products-new/firming-day-cream-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/firming-day-cream-sfeer-2.jpg",
+          "src": "../project/assets/products-new/firming-day-cream-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -2404,12 +2404,12 @@ export const PRODUCTS = {
           "bg": "#F5EAD0"
         },
         {
-          "src": "../project/assets/products-new/ceramide-night-cream-sfeer-1.jpg",
+          "src": "../project/assets/products-new/ceramide-night-cream-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/ceramide-night-cream-sfeer-2.jpg",
+          "src": "../project/assets/products-new/ceramide-night-cream-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -2563,12 +2563,12 @@ export const PRODUCTS = {
           "bg": "#D8E4D8"
         },
         {
-          "src": "../project/assets/products-new/smoothing-eye-cream-sfeer-1.jpg",
+          "src": "../project/assets/products-new/smoothing-eye-cream-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/smoothing-eye-cream-sfeer-2.jpg",
+          "src": "../project/assets/products-new/smoothing-eye-cream-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -2722,12 +2722,12 @@ export const PRODUCTS = {
           "bg": "#F0E2C0"
         },
         {
-          "src": "../project/assets/products-new/spf50-stick-sfeer-1.jpg",
+          "src": "../project/assets/products-new/spf50-stick-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/spf50-stick-sfeer-2.jpg",
+          "src": "../project/assets/products-new/spf50-stick-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -2883,7 +2883,7 @@ export const PRODUCTS = {
         "bg": "#EDF4F8"
       },
       {
-        "src": "../project/assets/products-new/cleansing-foam-sfeer-1.jpg",
+        "src": "../project/assets/products-new/cleansing-foam-sfeer-1-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
@@ -3033,12 +3033,12 @@ export const PRODUCTS = {
         "bg": "#ECF3EC"
       },
       {
-        "src": "../project/assets/products-new/hydrating-toner-sfeer-1.jpg",
+        "src": "../project/assets/products-new/hydrating-toner-sfeer-1-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/hydrating-toner-sfeer-2.jpg",
+        "src": "../project/assets/products-new/hydrating-toner-sfeer-2-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
@@ -3192,12 +3192,12 @@ export const PRODUCTS = {
         "bg": "#FEF0E0"
       },
       {
-        "src": "../project/assets/products-new/vitamin-c-serum-sfeer-1.jpg",
+        "src": "../project/assets/products-new/vitamin-c-serum-sfeer-1-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/vitamin-c-serum-sfeer-2.jpg",
+        "src": "../project/assets/products-new/vitamin-c-serum-sfeer-2-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
@@ -3351,12 +3351,12 @@ export const PRODUCTS = {
         "bg": "#FEF0E0"
       },
       {
-        "src": "../project/assets/products-new/peptide-serum-sfeer-1.jpg",
+        "src": "../project/assets/products-new/peptide-serum-sfeer-1-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/peptide-serum-sfeer-2.jpg",
+        "src": "../project/assets/products-new/peptide-serum-sfeer-2-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
@@ -3514,12 +3514,12 @@ export const PRODUCTS = {
         "bg": "#EFE0D8"
       },
       {
-        "src": "../project/assets/products-new/retinol-alt-serum-sfeer-1.jpg",
+        "src": "../project/assets/products-new/retinol-alt-serum-sfeer-1-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/retinol-alt-serum-sfeer-2.jpg",
+        "src": "../project/assets/products-new/retinol-alt-serum-sfeer-2-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
@@ -3673,12 +3673,12 @@ export const PRODUCTS = {
         "bg": "#F5DEE2"
       },
       {
-        "src": "../project/assets/products-new/firming-day-cream-sfeer-1.jpg",
+        "src": "../project/assets/products-new/firming-day-cream-sfeer-1-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/firming-day-cream-sfeer-2.jpg",
+        "src": "../project/assets/products-new/firming-day-cream-sfeer-2-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
@@ -3832,12 +3832,12 @@ export const PRODUCTS = {
         "bg": "#F5EAD0"
       },
       {
-        "src": "../project/assets/products-new/ceramide-night-cream-sfeer-1.jpg",
+        "src": "../project/assets/products-new/ceramide-night-cream-sfeer-1-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/ceramide-night-cream-sfeer-2.jpg",
+        "src": "../project/assets/products-new/ceramide-night-cream-sfeer-2-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
@@ -3991,12 +3991,12 @@ export const PRODUCTS = {
         "bg": "#D8E4D8"
       },
       {
-        "src": "../project/assets/products-new/smoothing-eye-cream-sfeer-1.jpg",
+        "src": "../project/assets/products-new/smoothing-eye-cream-sfeer-1-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/smoothing-eye-cream-sfeer-2.jpg",
+        "src": "../project/assets/products-new/smoothing-eye-cream-sfeer-2-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
@@ -4150,12 +4150,12 @@ export const PRODUCTS = {
         "bg": "#F0E2C0"
       },
       {
-        "src": "../project/assets/products-new/spf50-stick-sfeer-1.jpg",
+        "src": "../project/assets/products-new/spf50-stick-sfeer-1-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/spf50-stick-sfeer-2.jpg",
+        "src": "../project/assets/products-new/spf50-stick-sfeer-2-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
