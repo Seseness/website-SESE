@@ -934,6 +934,25 @@ html, body { overflow-x: hidden; max-width: 100%; }
   }
   @media (max-width:370px){.forever-ctas .btn{padding:8px 9px!important;letter-spacing:.04em!important}.forever-pricing .now{font-size:20px!important}}
   
+
+  /* Mobile: ritual cards stacked like Forever (text, price+buttons row, full centred photo) */
+  @media (max-width:768px){
+   .ritual{display:flex!important;flex-direction:column;align-items:stretch;gap:18px;min-height:0!important;padding:24px 22px!important}
+   .ritual-head{display:flex!important;flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:10px;row-gap:10px;align-self:stretch}
+   .ritual-label,.ritual h3{flex:0 0 100%}
+   .ritual h3{font-size:32px}
+   .ritual--full h3 br{display:none}
+   .ritual--full h3 em::before{content:' '}
+   .ritual--full h3 .ritual-full-word{font-style:italic}
+   .ritual-price{margin:0!important;font-size:22px!important;line-height:1}
+   .ritual-btns{display:flex!important;flex-direction:row!important;align-items:center!important;margin:0 0 0 auto!important;flex-wrap:nowrap!important;gap:6px!important;width:auto!important}
+   .ritual-btns>*{width:auto!important;height:40px!important;min-height:40px!important;box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center;line-height:1!important;margin:0!important}
+   .ritual-btns>*{padding:9px 11px!important;font-size:10px!important;letter-spacing:.08em!important;white-space:nowrap}
+   .ritual-bottles{height:auto!important;aspect-ratio:3/2;width:100%;align-self:stretch}
+   .ritual-bottles img{position:static!important;max-height:none!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+  }
+  @media (max-width:370px){.ritual-btns>*{padding:8px 9px!important;letter-spacing:.04em!important}.ritual-price{font-size:20px!important}}
+  
 </style>
 </head>
 <body>
@@ -1051,7 +1070,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
       </div>
       <div class="ritual-bottles">
         <a href="bundle-contents.html?b=beauty-sleep-ritual" onclick="event.stopPropagation()" style="display:block;width:100%;height:100%;">
-          <picture><source srcset="../project/assets/products-new/bundle-beauty-sleep-mallorca.webp" type="image/webp"><img src="../project/assets/products-new/bundle-beauty-sleep-mallorca.jpg" alt="The Beauty Sleep Ritual" style="width:100%;height:100%;object-fit:cover;object-position:center 60%;"  loading="lazy" /></picture>
+          <picture><source media="(max-width: 768px)" srcset="../project/assets/products-new/bundle-beauty-sleep-mallorca-centered.webp" type="image/webp"><source media="(max-width: 768px)" srcset="../project/assets/products-new/bundle-beauty-sleep-mallorca-centered.jpg" type="image/jpeg"><source srcset="../project/assets/products-new/bundle-beauty-sleep-mallorca.webp" type="image/webp"><img src="../project/assets/products-new/bundle-beauty-sleep-mallorca.jpg" alt="The Beauty Sleep Ritual" style="width:100%;height:100%;object-fit:cover;object-position:center 60%;"  loading="lazy" /></picture>
         </a>
       </div>
     </div>
@@ -1059,7 +1078,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
     <div class="ritual ritual--full" data-product="full-ritual">
       <div class="ritual-head">
         <span class="ritual-label">Volledige collectie</span>
-        <h3>The Full<br/><em>Ritual.</em></h3>
+        <h3>The <span class="ritual-full-word">Full</span><br/><em>Ritual.</em></h3>
         <p class="ritual-price">€260</p>
         <div class="ritual-btns">
           <a class="ritual-inside-btn" href="bundle-contents.html?b=full-ritual" onclick="event.stopPropagation()">Wat zit erin?</a>
@@ -1070,7 +1089,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
       </div>
       <div class="ritual-bottles">
         <a href="bundle-contents.html?b=full-ritual" onclick="event.stopPropagation()" style="display:block;width:100%;height:100%;">
-          <picture><source media="(min-width: 1025px)" srcset="../project/assets/products-new/bundle-full-ritual-mallorca-centered.webp" type="image/webp"><source media="(min-width: 1025px)" srcset="../project/assets/products-new/bundle-full-ritual-mallorca-centered.jpg" type="image/jpeg"><source srcset="../project/assets/products-new/bundle-full-ritual-mallorca.webp" type="image/webp"><img src="../project/assets/products-new/bundle-full-ritual-mallorca.jpg" alt="The Full Ritual" style="width:100%;height:100%;object-fit:cover;object-position:center;"  loading="lazy" /></picture>
+          <picture><source media="(max-width: 768px)" srcset="../project/assets/products-new/bundle-full-ritual-mallorca-centered.webp" type="image/webp"><source media="(max-width: 768px)" srcset="../project/assets/products-new/bundle-full-ritual-mallorca-centered.jpg" type="image/jpeg"><source media="(min-width: 1025px)" srcset="../project/assets/products-new/bundle-full-ritual-mallorca-centered.webp" type="image/webp"><source media="(min-width: 1025px)" srcset="../project/assets/products-new/bundle-full-ritual-mallorca-centered.jpg" type="image/jpeg"><source srcset="../project/assets/products-new/bundle-full-ritual-mallorca.webp" type="image/webp"><img src="../project/assets/products-new/bundle-full-ritual-mallorca.jpg" alt="The Full Ritual" style="width:100%;height:100%;object-fit:cover;object-position:center;"  loading="lazy" /></picture>
         </a>
       </div>
     </div>
