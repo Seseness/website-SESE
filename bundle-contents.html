@@ -600,6 +600,12 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .daypart-head { justify-content: flex-start; padding-left: 2px; }
   .daypart-rule { max-width: none; margin: 8px 0 44px; }
 }
+
+  /* Desktop: Forever Routine photo matches the homepage frame (658 x 439, 3:2) */
+  @media (min-width: 1025px) {
+    .bundle-hero[data-bundle="forever-routine"] { grid-template-columns: 1fr 658px; }
+    .bundle-hero[data-bundle="forever-routine"] .bundle-hero-img { aspect-ratio: 3 / 2; width: 658px; }
+  }
 </style>
 </head>
 <body>
@@ -897,7 +903,7 @@ const routineSectionHtml = (bundle.routineDayparts || bundle.routineSteps) ? `
 ` : '';
 
 document.getElementById('root').innerHTML = `
-  <section class="bundle-hero">
+  <section class="bundle-hero" data-bundle="${bundleKey}">
     <div class="bundle-hero-text">
       <div class="eyebrow">${bundle.eyebrow}</div>
       <h1>${bundle.nameBreak}</h1>
