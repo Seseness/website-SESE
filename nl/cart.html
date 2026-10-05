@@ -401,7 +401,7 @@ const BUNDLE_CART_DATA = {
   },
   'forever-bundle': {
     name: 'The Forever Routine', price: 140,
-    img: '../project/assets/products-new/bundle-forever-mallorca.jpg', bg: '#DCEAF1',
+    img: '../project/assets/products-new/bundle-forever-mallorca.jpg', imgMobile: '../project/assets/products-new/bundle-forever-mallorca-centered.jpg', bg: '#DCEAF1',
     discountCode: 'FOREVER-ROUTINE',
     variantIds: ['58352279748992','58352294691200','58352287154560','58352290038144','58352302162304']
   },
@@ -444,7 +444,7 @@ function renderWinkelwagen() {
     return `
       <div class="cart-item" data-key="${entry.key}">
         <div class="item-img item-img--bundle" style="background-color:${b.bg}">
-          <picture><img src="${b.img}" alt="${b.name}" loading="lazy" /></picture>
+          <picture>${b.imgMobile ? `<source media="(max-width: 768px)" srcset="${b.imgMobile}">` : ''}<img src="${b.img}" alt="${b.name}" loading="lazy" /></picture>
         </div>
         <div class="item-info">
           <div class="item-name">${b.name}</div>
