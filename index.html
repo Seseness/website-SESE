@@ -887,6 +887,20 @@
   @media (max-width: 380px) {
     .hero h1, .hero .subtitle { transform: translateY(14px); }
   }
+
+  /* Mobile: Forever price and buttons on one row, vertically centred */
+  @media (max-width:768px){
+   .forever-text{display:flex!important;flex-wrap:wrap;align-items:center;column-gap:10px;row-gap:12px}
+   .forever-badge,.forever-text h2,.forever-text>p{flex:0 0 100%}
+   .forever-badge{flex:0 1 auto;max-width:100%}
+   .forever-pricing{display:flex!important;align-items:center;margin:0!important;grid-column:auto}
+   .forever-pricing .now{line-height:1}
+   .forever-ctas{display:flex!important;flex-wrap:nowrap;margin-left:auto;gap:6px;justify-self:auto;grid-column:auto}
+   .forever-ctas .btn{padding:9px 11px!important;font-size:10px!important;letter-spacing:.08em!important;white-space:nowrap}
+   .forever-pricing .now{font-size:22px!important}
+  }
+  @media (max-width:370px){.forever-ctas .btn{padding:8px 9px!important;letter-spacing:.04em!important}.forever-pricing .now{font-size:20px!important}}
+  
 </style>
 </head>
 <body>
@@ -984,7 +998,7 @@
     </div>
     <div class="forever-art">
       <a href="bundle-contents.html?b=forever-routine" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;">
-        <picture><source media="(min-width: 1025px)" srcset="project/assets/products-new/bundle-forever-mallorca-centered.webp" type="image/webp"><source media="(min-width: 1025px)" srcset="project/assets/products-new/bundle-forever-mallorca-centered.jpg" type="image/jpeg"><source srcset="project/assets/products-new/bundle-forever-mallorca.webp" type="image/webp"><img src="project/assets/products-new/bundle-forever-mallorca.jpg" alt="The Forever Routine"  loading="lazy" /></picture>
+        <picture><source media="(min-width: 1025px)" srcset="project/assets/products-new/bundle-forever-mallorca-centered.webp" type="image/webp"><source media="(min-width: 1025px)" srcset="project/assets/products-new/bundle-forever-mallorca-centered.jpg" type="image/jpeg"><source srcset="project/assets/products-new/bundle-forever-mallorca-centered.webp" type="image/webp"><img src="project/assets/products-new/bundle-forever-mallorca-centered.jpg" alt="The Forever Routine"  loading="lazy" /></picture>
       </a>
     </div>
   </section>
