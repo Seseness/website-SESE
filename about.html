@@ -563,6 +563,11 @@ html, body { overflow-x: hidden; max-width: 100%; }
     .about-hero blockquote { padding-left: .7em; }
     .about-hero blockquote::before { left: -.05em; }
   }
+
+  /* Desktop: same About hero height and text position in EN/NL/FR */
+  @media (min-width: 1025px) {
+    .about-hero { box-sizing: border-box; height: 627px; min-height: 627px; justify-content: flex-start; padding-top: 307px; padding-bottom: 0; }
+  }
 </style>
 </head>
 <body>
