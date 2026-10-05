@@ -910,6 +910,11 @@ html, body { overflow-x: hidden; max-width: 100%; }
     .forever-art img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; }
     .forever { padding-top: 48px; padding-bottom: 48px; }
   }
+
+  /* Mobile: longer NL/FR title starts in the water, eyebrow stays in the sky */
+  @media (max-width: 680px) {
+    .hero h1, .hero .subtitle { transform: translateY(22px); }
+  }
 </style>
 </head>
 <body>
