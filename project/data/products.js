@@ -817,12 +817,12 @@ export const PRODUCTS = {
           "bg": "#F5DEE2"
         },
         {
-          "src": "project/assets/products-new/ceramide-night-cream-sfeer-1.jpg",
+          "src": "project/assets/products-new/firming-day-cream-sfeer-1.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "project/assets/products-new/ceramide-night-cream-sfeer-2.jpg",
+          "src": "project/assets/products-new/firming-day-cream-sfeer-2.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -976,12 +976,12 @@ export const PRODUCTS = {
           "bg": "#F5EAD0"
         },
         {
-          "src": "project/assets/products-new/firming-day-cream-sfeer-1.jpg",
+          "src": "project/assets/products-new/ceramide-night-cream-sfeer-1.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "project/assets/products-new/firming-day-cream-sfeer-2.jpg",
+          "src": "project/assets/products-new/ceramide-night-cream-sfeer-2.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -2245,12 +2245,12 @@ export const PRODUCTS = {
           "bg": "#F5DEE2"
         },
         {
-          "src": "../project/assets/products-new/ceramide-night-cream-sfeer-1.jpg",
+          "src": "../project/assets/products-new/firming-day-cream-sfeer-1.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/ceramide-night-cream-sfeer-2.jpg",
+          "src": "../project/assets/products-new/firming-day-cream-sfeer-2.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -2404,12 +2404,12 @@ export const PRODUCTS = {
           "bg": "#F5EAD0"
         },
         {
-          "src": "../project/assets/products-new/firming-day-cream-sfeer-1.jpg",
+          "src": "../project/assets/products-new/ceramide-night-cream-sfeer-1.jpg",
           "bg": "#EFE7DB",
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/firming-day-cream-sfeer-2.jpg",
+          "src": "../project/assets/products-new/ceramide-night-cream-sfeer-2.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -3673,12 +3673,12 @@ export const PRODUCTS = {
         "bg": "#F5DEE2"
       },
       {
-        "src": "../project/assets/products-new/ceramide-night-cream-sfeer-1.jpg",
+        "src": "../project/assets/products-new/firming-day-cream-sfeer-1.jpg",
         "bg": "#EFE7DB",
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/ceramide-night-cream-sfeer-2.jpg",
+        "src": "../project/assets/products-new/firming-day-cream-sfeer-2.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
@@ -3832,12 +3832,12 @@ export const PRODUCTS = {
         "bg": "#F5EAD0"
       },
       {
-        "src": "../project/assets/products-new/firming-day-cream-sfeer-1.jpg",
+        "src": "../project/assets/products-new/ceramide-night-cream-sfeer-1.jpg",
         "bg": "#EFE7DB",
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/firming-day-cream-sfeer-2.jpg",
+        "src": "../project/assets/products-new/ceramide-night-cream-sfeer-2.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
