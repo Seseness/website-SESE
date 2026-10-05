@@ -878,6 +878,15 @@
     .forever-art img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; }
     .forever { padding-top: 48px; padding-bottom: 48px; }
   }
+
+  /* Mobile: hero eyebrow on one line, slightly smaller */
+  @media (max-width: 680px) {
+    .hero-eyebrow { font-size: clamp(7px, 2.4vw, 10px) !important; letter-spacing: .2em !important; white-space: nowrap; }
+  }
+  /* Small phones (EN): title starts below the horizon, like NL/FR */
+  @media (max-width: 380px) {
+    .hero h1, .hero .subtitle { transform: translateY(14px); }
+  }
 </style>
 </head>
 <body>

@@ -915,6 +915,11 @@ html, body { overflow-x: hidden; max-width: 100%; }
   @media (max-width: 680px) {
     .hero h1, .hero .subtitle { transform: translateY(22px); }
   }
+
+  /* Mobile: hero eyebrow on one line, slightly smaller */
+  @media (max-width: 680px) {
+    .hero-eyebrow { font-size: clamp(7px, 2.4vw, 10px) !important; letter-spacing: .2em !important; white-space: nowrap; }
+  }
 </style>
 </head>
 <body>
