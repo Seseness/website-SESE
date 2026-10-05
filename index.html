@@ -930,6 +930,9 @@
    .journal-cover .meta-top>span:not(.pill){background:rgba(255,255,255,0.7);padding:6px 12px;border-radius:999px;color:rgba(26,26,26,0.75)}
   }
   
+
+  /* Mobile: second sentence of the hero subtitle on its own line */
+  @media (max-width: 768px) { .hero .subtitle .subtitle-2 { display: block; } }
 </style>
 </head>
 <body>
@@ -980,7 +983,7 @@
     <div class="content">
       <div class="hero-eyebrow">Anti-aging skincare · Beach &amp; botanical</div>
       <h1>Unlock your skin's<br/><em>timeless beauty.</em></h1>
-      <p class="subtitle">One step won't do it. A consistent routine will.</p>
+      <p class="subtitle">One step won't do it. <span class="subtitle-2">A consistent routine will.</span></p>
     </div>
     <div class="hero-discover">
       <button class="btn btn--blue-outline" onclick="document.getElementById('forever-bundle').scrollIntoView({behavior:'smooth'})">

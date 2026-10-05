@@ -963,6 +963,9 @@ html, body { overflow-x: hidden; max-width: 100%; }
    .journal-cover .meta-top>span:not(.pill){background:rgba(255,255,255,0.7);padding:6px 12px;border-radius:999px;color:rgba(26,26,26,0.75)}
   }
   
+
+  /* Mobile: second sentence of the hero subtitle on its own line */
+  @media (max-width: 768px) { .hero .subtitle .subtitle-2 { display: block; } }
 </style>
 </head>
 <body>
@@ -1012,7 +1015,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
     <div class="content">
       <div class="hero-eyebrow">Anti-aging skincare · Beach &amp; botanical</div>
       <h1>Révélez la beauté<br/><em>intemporelle de votre peau.</em></h1>
-      <p class="subtitle">Une étape ne suffit pas. Une routine régulière, si.</p>
+      <p class="subtitle">Une étape ne suffit pas. <span class="subtitle-2">Une routine régulière, si.</span></p>
     </div>
     <div class="hero-discover">
       <button class="btn btn--blue-outline" onclick="document.getElementById('forever-bundle').scrollIntoView({behavior:'smooth'})">
