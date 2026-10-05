@@ -16,11 +16,11 @@
   <meta property="og:title" id="og-title" content="SESE — Product" />
   <meta property="og:description" id="og-description" content="" />
   <meta property="og:url" id="og-url" content="https://www.sese.be/nl/product.html" />
-  <meta property="og:image" id="og-image" content="https://www.sese.be/project/assets/hero-photo.jpg" />
+  <meta property="og:image" id="og-image" content="https://www.sese.be/project/assets/hero-mallorca.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" id="twitter-title" content="SESE — Product" />
   <meta name="twitter:description" id="twitter-description" content="" />
-  <meta name="twitter:image" id="twitter-image" content="https://www.sese.be/project/assets/hero-photo.jpg" />
+  <meta name="twitter:image" id="twitter-image" content="https://www.sese.be/project/assets/hero-mallorca.jpg" />
   <link rel="alternate" hreflang="en" id="hreflang-en" href="https://www.sese.be/product.html" />
   <link rel="alternate" hreflang="nl" id="hreflang-nl" href="https://www.sese.be/nl/product.html" />
   <link rel="alternate" hreflang="fr" id="hreflang-fr" href="https://www.sese.be/fr/product.html" />
@@ -464,6 +464,13 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .certs { grid-template-columns: repeat(2, 1fr) !important; }
 }
 
+
+  /* Mallorca mood photos: fill the frame instead of floating on a colour card */
+  .main-img.is-photo { overflow:hidden; }
+  .main-img.is-photo picture { position:absolute; inset:0; }
+  .main-img.is-photo img { width:100% !important; height:100% !important; max-width:100% !important; max-height:100% !important; object-fit:cover !important; border-radius:0 !important; }
+  .thumb.thumb--photo { overflow:hidden; }
+  .thumb.thumb--photo img { width:100% !important; height:100% !important; object-fit:cover !important; border-radius:0 !important; }
 </style>
 </head>
 <body>
@@ -602,6 +609,7 @@ function bindEvents(key, p) {
         const source = mainImg.closest('picture').querySelector('source');
         if (source) source.srcset = src.replace(/\.(png|jpg)$/, '.webp');
         document.getElementById('main-img-wrap').style.backgroundColor = bg;
+        document.getElementById('main-img-wrap').classList.toggle('is-photo', t.dataset.photo === '1');
       }
     });
   });

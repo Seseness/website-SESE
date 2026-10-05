@@ -29,9 +29,9 @@ const PRODUCT_CATALOGUE = {
   'ceramide-night-cream': { name: 'Ceramide Night Cream',     price: 38,  img: '/project/assets/products-new/ceramide-night-cream-hp.png', bg: '#EFDFC2', variant: '58352298262912' },
   'smoothing-eye-cream':  { name: 'Smoothing Eye Cream',      price: 30,  img: '/project/assets/products-new/smoothing-eye-cream-hp.png',  bg: '#C9D7C9', variant: '58352300097920' },
   'spf50-stick':          { name: 'SPF 50 Sunscreen Stick',   price: 28,  img: '/project/assets/products-new/spf50-stick-hp.png',          bg: '#E8D5B0', variant: '58352302162304' },
-  'forever-bundle':       { name: 'The Forever Routine',      price: 140, img: '/project/assets/products-new/bundle-forever.jpg',          bg: '#DCEAF1', variant: '58276013179264' },
-  'beauty-sleep-ritual':  { name: 'The Beauty Sleep Ritual',  price: 135, img: '/project/assets/products-new/bundle-beauty-sleep.png',     bg: '#1A2030', variant: '58276035199360' },
-  'full-ritual':          { name: 'The Full Ritual',          price: 260, img: '/project/assets/products-new/bundle-full-ritual.jpg',      bg: '#EAD6B7', variant: '58276049748352' },
+  'forever-bundle':       { name: 'The Forever Routine',      price: 140, img: '/project/assets/products-new/bundle-forever-mallorca.jpg',          bg: '#DCEAF1', variant: '58276013179264' },
+  'beauty-sleep-ritual':  { name: 'The Beauty Sleep Ritual',  price: 135, img: '/project/assets/products-new/bundle-beauty-sleep-mallorca.jpg',     bg: '#1A2030', variant: '58276035199360' },
+  'full-ritual':          { name: 'The Full Ritual',          price: 260, img: '/project/assets/products-new/bundle-full-ritual-mallorca.jpg',      bg: '#EAD6B7', variant: '58276049748352' },
 };
 
 // =============================================================

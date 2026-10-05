@@ -14,7 +14,7 @@ export function renderPostView_en(post, allPosts, lang, baseUrl = 'https://www.s
 
   const breadcrumbTitle = post.title;
   const ldPostUrl = canonicalUrl;
-  const ldImage = baseUrl + '/' + (post.image || 'project/assets/journal-cover.jpg').replace(/^\.\.\//, '');
+  const ldImage = baseUrl + '/' + (post.image || 'project/assets/journal-cover-mallorca.jpg').replace(/^\.\.\//, '');
   const blogPostingJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -109,7 +109,7 @@ export function renderPostView_nl(post, allPosts, lang, baseUrl = 'https://www.s
 
   const breadcrumbTitle = post.title;
   const ldPostUrl = canonicalUrl;
-  const ldImage = baseUrl + '/' + (post.image || 'project/assets/journal-cover.jpg').replace(/^\.\.\//, '');
+  const ldImage = baseUrl + '/' + (post.image || 'project/assets/journal-cover-mallorca.jpg').replace(/^\.\.\//, '');
   const blogPostingJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -211,7 +211,7 @@ export function renderPostView_fr(post, allPosts, lang, baseUrl = 'https://www.s
 
   const breadcrumbTitle = post.title;
   const ldPostUrl = canonicalUrl;
-  const ldImage = baseUrl + '/' + (post.image || 'project/assets/journal-cover.jpg').replace(/^\.\.\//, '');
+  const ldImage = baseUrl + '/' + (post.image || 'project/assets/journal-cover-mallorca.jpg').replace(/^\.\.\//, '');
   const blogPostingJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',

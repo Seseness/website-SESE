@@ -74,7 +74,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
 
   // thumbs html
   const thumbsHtml = p.imgs.map((im, i) =>
-    `<div class="thumb${i===0?' active':''}" data-src="${im.src}" data-bg="${im.bg}" style="background-color:${im.bg}"><picture><source srcset="${im.src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${im.src}" alt="" loading="lazy" /></picture></div>`
+    `<div class="thumb${i===0?' active':''}${im.photo?' thumb--photo':''}" data-src="${im.src}" data-bg="${im.bg}" data-photo="${im.photo?'1':''}" style="background-color:${im.bg}"><picture><source srcset="${im.src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${im.src}" alt="" loading="lazy" /></picture></div>`
   ).join('') + (p.imgs.length < 4 ? `<div class="thumb" style="background-color:${p.color};opacity:0.4;"></div>`.repeat(4-p.imgs.length) : '');
 
   // chips html
@@ -130,7 +130,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
   <section class="pdp">
     <div class="gallery">
       <div class="thumbs" id="thumbs">${thumbsHtml}</div>
-      <div class="main-img" id="main-img-wrap" style="background-color:${p.imgs[0].bg}">
+      <div class="main-img${p.imgs[0].photo?' is-photo':''}" id="main-img-wrap" style="background-color:${p.imgs[0].bg}">
         <div class="corner-r"><div>${p.size}</div></div>
         <picture><source srcset="${p.imgs[0].src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img id="main-img" src="${p.imgs[0].src}" alt="SESE ${p.name}" /></picture>
         <button class="zoom-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></button>
@@ -347,7 +347,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
 
   // thumbs html
   const thumbsHtml = p.imgs.map((im, i) =>
-    `<div class="thumb${i===0?' active':''}" data-src="${im.src}" data-bg="${im.bg}" style="background-color:${im.bg}"><picture><source srcset="${im.src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${im.src}" alt="" loading="lazy" /></picture></div>`
+    `<div class="thumb${i===0?' active':''}${im.photo?' thumb--photo':''}" data-src="${im.src}" data-bg="${im.bg}" data-photo="${im.photo?'1':''}" style="background-color:${im.bg}"><picture><source srcset="${im.src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${im.src}" alt="" loading="lazy" /></picture></div>`
   ).join('') + (p.imgs.length < 4 ? `<div class="thumb" style="background-color:${p.color};opacity:0.4;"></div>`.repeat(4-p.imgs.length) : '');
 
   // chips html
@@ -403,7 +403,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   <section class="pdp">
     <div class="gallery">
       <div class="thumbs" id="thumbs">${thumbsHtml}</div>
-      <div class="main-img" id="main-img-wrap" style="background-color:${p.imgs[0].bg}">
+      <div class="main-img${p.imgs[0].photo?' is-photo':''}" id="main-img-wrap" style="background-color:${p.imgs[0].bg}">
         <div class="corner-r"><div>${p.size}</div></div>
         <picture><source srcset="${p.imgs[0].src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img id="main-img" src="${p.imgs[0].src}" alt="SESE ${p.name}" /></picture>
         <button class="zoom-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></button>
@@ -620,7 +620,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
 
   // thumbs html
   const thumbsHtml = p.imgs.map((im, i) =>
-    `<div class="thumb${i===0?' active':''}" data-src="${im.src}" data-bg="${im.bg}" style="background-color:${im.bg}"><picture><source srcset="${im.src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${im.src}" alt="" loading="lazy" /></picture></div>`
+    `<div class="thumb${i===0?' active':''}${im.photo?' thumb--photo':''}" data-src="${im.src}" data-bg="${im.bg}" data-photo="${im.photo?'1':''}" style="background-color:${im.bg}"><picture><source srcset="${im.src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img src="${im.src}" alt="" loading="lazy" /></picture></div>`
   ).join('') + (p.imgs.length < 4 ? `<div class="thumb" style="background-color:${p.color};opacity:0.4;"></div>`.repeat(4-p.imgs.length) : '');
 
   // chips html
@@ -676,7 +676,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   <section class="pdp">
     <div class="gallery">
       <div class="thumbs" id="thumbs">${thumbsHtml}</div>
-      <div class="main-img" id="main-img-wrap" style="background-color:${p.imgs[0].bg}">
+      <div class="main-img${p.imgs[0].photo?' is-photo':''}" id="main-img-wrap" style="background-color:${p.imgs[0].bg}">
         <div class="corner-r"><div>${p.size}</div></div>
         <picture><source srcset="${p.imgs[0].src.replace(/\.(png|jpg)$/,'.webp')}" type="image/webp"><img id="main-img" src="${p.imgs[0].src}" alt="SESE ${p.name}" /></picture>
         <button class="zoom-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></button>
