@@ -1299,7 +1299,7 @@ export const PRODUCTS = {
           "photo": true
         },
         {
-          "src": "project/assets/products-new/spf50-stick-sfeer-2-sq.jpg",
+          "src": "project/assets/products-new/spf50-stick-sfeer-2.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -2727,7 +2727,7 @@ export const PRODUCTS = {
           "photo": true
         },
         {
-          "src": "../project/assets/products-new/spf50-stick-sfeer-2-sq.jpg",
+          "src": "../project/assets/products-new/spf50-stick-sfeer-2.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -4155,7 +4155,7 @@ export const PRODUCTS = {
         "photo": true
       },
       {
-        "src": "../project/assets/products-new/spf50-stick-sfeer-2-sq.jpg",
+        "src": "../project/assets/products-new/spf50-stick-sfeer-2.jpg",
         "bg": "#EFE7DB",
         "photo": true
       }
