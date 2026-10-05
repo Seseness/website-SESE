@@ -869,6 +869,14 @@
   .nav-center { display: none !important; }
   .nav-lang-inline { display: none; }
 }
+
+  /* Desktop: larger Forever Routine photo (frame keeps 3:2) */
+  @media (min-width: 1025px) {
+    .forever { grid-template-columns: 1fr 1.45fr; gap: 56px; }
+    .forever-art { height: auto; }
+    .forever-art picture { display: block; width: 100%; }
+    .forever-art img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; }
+  }
 </style>
 </head>
 <body>
