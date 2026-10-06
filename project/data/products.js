@@ -2395,7 +2395,7 @@ export const PRODUCTS = {
       "price": "€38",
       "vol": "50 ml",
       "volPrice": "€0,76/ml",
-      "tagline": "Terwijl jij slaapt, herstellen ceramiden wat de dag heeft weggenomen. Een herstellende crème die haar rust verdient en de huid zachter achterlaat tegen de ochtend.",
+      "tagline": "Terwijl je slaapt, herstellen ceramiden wat de dag heeft weggenomen. Een herstellende crème die haar rust verdient en de huid zachter achterlaat tegen de ochtend.",
       "chips": [
         "Herstelt huidbarrière",
         "Rijke textuur",
