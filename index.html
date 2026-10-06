@@ -936,6 +936,13 @@
 
   /* Mobile: Forever photo box hugs the photo (less blue below) */
   @media (max-width: 768px) { .forever-art { height: auto !important; } .forever-art picture { display: block; width: 100%; } .forever-art img { display: block; width: 100%; height: auto; } }
+
+  /* Mobile: "All articles" link on one line below the blog heading */
+  @media (max-width: 768px) {
+    .blog-head { grid-template-columns: 1fr !important; align-items: start !important; gap: 14px !important; }
+    .blog-head h2 br { display: none; }
+    .blog-head .head-aside a { white-space: nowrap; }
+  }
 </style>
 </head>
 <body>
