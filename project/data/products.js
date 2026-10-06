@@ -30,6 +30,11 @@ export const PRODUCTS = {
           "src": "project/assets/products-new/cleansing-foam-sfeer-1-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
+        },
+        {
+          "src": "project/assets/products-new/cleansing-foam-sfeer-2-sq.jpg",
+          "bg": "#EFE7DB",
+          "photo": true
         }
       ],
       "sku": "No. 01 · Cleanse",
@@ -1456,6 +1461,11 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/cleansing-foam-sfeer-1-sq.jpg",
+          "bg": "#EFE7DB",
+          "photo": true
+        },
+        {
+          "src": "../project/assets/products-new/cleansing-foam-sfeer-2-sq.jpg",
           "bg": "#EFE7DB",
           "photo": true
         }
@@ -2886,7 +2896,12 @@ export const PRODUCTS = {
         "src": "../project/assets/products-new/cleansing-foam-sfeer-1-sq.jpg",
         "bg": "#EFE7DB",
         "photo": true
-      }
+      },
+        {
+          "src": "../project/assets/products-new/cleansing-foam-sfeer-2-sq.jpg",
+          "bg": "#EFE7DB",
+          "photo": true
+        }
     ],
     "sku": "No. 01 · Cleanse",
     "size": "150 ml",
