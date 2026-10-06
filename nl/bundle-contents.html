@@ -6,7 +6,7 @@
   <script src="../project/js/cookie-consent.js" defer></script>
   <script src="../project/js/sticky-header.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>What's Inside — SESE</title>
+  <title>What's Inside - SESE</title>
   <meta name="description" content="Ontdek wat er in elke SESE-bundel zit: elk product, wat het doet en waarom het erin zit." />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
@@ -797,7 +797,7 @@ const BUNDLES = {
 const bundleKey = new URLSearchParams(window.location.search).get('b') || 'forever-routine';
 const bundle = BUNDLES[bundleKey] || BUNDLES['forever-routine'];
 
-document.title = `What's Inside — ${bundle.name} — SESE`;
+document.title = `Wat zit erin - ${bundle.name} - SESE`;
 document.getElementById('canonical-link').href = 'https://www.sese.be/nl/bundle-contents.html?b=' + bundleKey;
 document.getElementById('hreflang-en').href = 'https://www.sese.be/bundle-contents.html?b=' + bundleKey;
 document.getElementById('hreflang-nl').href = 'https://www.sese.be/nl/bundle-contents.html?b=' + bundleKey;

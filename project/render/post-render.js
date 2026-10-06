@@ -2,7 +2,7 @@
 
 export function renderPostView_en(post, allPosts, lang, baseUrl = 'https://www.sese.be') {
   const prefix = lang === 'en' ? '' : '/' + lang;
-  const title = post.title + ' — SESE';
+  const title = post.title + ' - SESE';
   const metaDescription = post.excerpt;
   const canonicalUrl = baseUrl + prefix + '/blog-post.html?p=' + post.id;
   const hreflangLinks = [1,2,3,4].includes(post.id) ? [
@@ -97,7 +97,7 @@ function getRelatedPosts(allPosts, currentId) {
 
 export function renderPostView_nl(post, allPosts, lang, baseUrl = 'https://www.sese.be') {
   const prefix = lang === 'en' ? '' : '/' + lang;
-  const title = post.title + ' — SESE';
+  const title = post.title + ' - SESE';
   const metaDescription = post.excerpt;
   const canonicalUrl = baseUrl + prefix + '/blog-post.html?p=' + post.id;
   const hreflangLinks = [1,2,3,4].includes(post.id) ? [
@@ -199,7 +199,7 @@ function formatDate(dateStr) {
 
 export function renderPostView_fr(post, allPosts, lang, baseUrl = 'https://www.sese.be') {
   const prefix = lang === 'en' ? '' : '/' + lang;
-  const title = post.title + ' — SESE';
+  const title = post.title + ' - SESE';
   const metaDescription = post.excerpt;
   const canonicalUrl = baseUrl + prefix + '/blog-post.html?p=' + post.id;
   const hreflangLinks = [1,2,3,4].includes(post.id) ? [
