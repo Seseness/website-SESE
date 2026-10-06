@@ -1054,7 +1054,7 @@ export const PRODUCTS = {
         },
         {
           "h": "Neck and décolleté too",
-          "p": "The neck loses ceramides and collagen just as fast. Extend down to the chest."
+          "p": "The skin on your neck loses ceramides and collagen too. Extend down to the chest."
         },
         {
           "h": "Go to sleep",
@@ -2487,7 +2487,7 @@ export const PRODUCTS = {
         },
         {
           "h": "Ook hals en decolleté",
-          "p": "De hals verliest ceramiden en collageen net zo snel. Breid uit tot op de borst."
+          "p": "Ook de huid van je hals verliest ceramiden en collageen. Breng de crème aan tot op je borst."
         },
         {
           "h": "Ga slapen",
@@ -3920,7 +3920,7 @@ export const PRODUCTS = {
       },
       {
         "h": "Le cou et le décolleté aussi",
-        "p": "Le cou perd des céramides et du collagène tout aussi vite. Étendez jusqu'à la poitrine."
+        "p": "La peau du cou perd aussi des céramides et du collagène. Prolongez l'application jusqu'au décolleté."
       },
       {
         "h": "Allez dormir",
