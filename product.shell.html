@@ -497,8 +497,8 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .thumb.thumb--photo { overflow:hidden; }
   .thumb.thumb--photo img { width:100% !important; height:100% !important; object-fit:cover !important; border-radius:0 !important; }
 
-  /* Night cream photo 2: align right edge like on mobile (two fingers of the right hand visible) */
-  .main-img.is-photo img[src*="ceramide-night-cream-sfeer-2"] { object-position: 100% 50% !important; }
+  /* Desktop only: night cream photo 2 aligned right like on mobile (two fingers of the right hand visible) */
+  @media (min-width: 1025px) { .main-img.is-photo img[src*="ceramide-night-cream-sfeer-2"] { object-position: 100% 50% !important; } }
 </style>
 </head>
 <body>
