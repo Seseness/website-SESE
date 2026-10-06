@@ -2809,7 +2809,7 @@ export const PRODUCTS = {
         },
         {
           "h": "Herhaal om de twee uur bij buitengebruik",
-          "p": "Geen enkele SPF houdt de hele dag stand. Het stiftformaat is ontworpen voor eenvoudig herhalen, steek het in je zak."
+          "p": "Geen enkele SPF houdt de hele dag stand. Het stickformaat is ontworpen voor eenvoudig herhalen, steek het in je zak."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#E8D5B0,#C8A870)",
@@ -2848,7 +2848,7 @@ export const PRODUCTS = {
         },
         {
           "q": "Kan ik het gebruiken om te herhalen over make-up?",
-          "a": "Ja. Dat is precies de reden waarom het een stift is. Trek rechtstreeks over je make-up, verdeel daarna licht met een vingertop of een kwast. Veel eenvoudiger dan het herhalen van een vloeibare SPF."
+          "a": "Ja. Dat is precies de reden waarom het een stick is. Trek rechtstreeks over je make-up, verdeel daarna licht met een vingertop of een kwast. Veel eenvoudiger dan het herhalen van een vloeibare SPF."
         },
         {
           "q": "Is het geschikt voor kinderen?",
