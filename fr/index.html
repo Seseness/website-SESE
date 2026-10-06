@@ -966,6 +966,9 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
   /* Mobile: second sentence of the hero subtitle on its own line */
   @media (max-width: 768px) { .hero .subtitle .subtitle-2 { display: block; } }
+
+  /* Mobile: last words of the hero title on their own line, clear of the swimmer */
+  @media (max-width: 768px) { .hero h1 .h1-tail { display: block; } }
 </style>
 </head>
 <body>
@@ -1014,7 +1017,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
     </div>
     <div class="content">
       <div class="hero-eyebrow">Anti-aging skincare · Beach &amp; botanical</div>
-      <h1>Révélez la beauté<br/><em>intemporelle de votre peau.</em></h1>
+      <h1>Révélez la beauté<br/><em>intemporelle de <span class="h1-tail">votre peau.</span></em></h1>
       <p class="subtitle">Une étape ne suffit pas. <span class="subtitle-2">Une routine régulière, si.</span></p>
     </div>
     <div class="hero-discover">
