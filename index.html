@@ -216,11 +216,12 @@
     .hero .content {
       position: relative; z-index: 2;
       height: 100%;
-      padding: 30px 72px 60px; /* desktop: text sits on the sand, bottom right */
+      padding: 30px 56px 60px 48px; /* desktop: text sits on the sand, bottom right */
       display: flex; flex-direction: column; justify-content: flex-end;
-      max-width: 630px; margin-left: auto; box-sizing: border-box;
+      max-width: 676px; margin-left: auto; box-sizing: border-box;
     }
-    .hero-ctas { margin-top: 32px; }
+    .hero-ctas { margin-top: 32px; flex-wrap: wrap; }
+    .hero-ctas .btn { white-space: nowrap; }
     .hero-ctas .hero-shop-top, .hero-ctas .hero-discover { position: static; }
     .hero-eyebrow {
       font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
