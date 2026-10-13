@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SESE - Natural Anti-Aging Skincare | Belgium</title>
   <meta name="description" content="Beach &amp; botanical anti-aging skincare. Five steps. One timeless ritual." />
-  <link rel="preload" as="image" href="project/assets/hero-golven.webp" type="image/webp" />
+  <link rel="preload" as="image" href="project/assets/hero-mallorca.webp" type="image/webp" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -203,29 +203,25 @@
     }
     .hero .photo-bg {
       position: absolute; inset: 0;
-      background-image: url('project/assets/hero-golven.webp');
-      background-image: image-set(url('project/assets/hero-golven.webp') type('image/webp'), url('project/assets/hero-golven.jpg') type('image/jpeg'));
+      background-image: url('project/assets/hero-mallorca.webp');
+      background-image: image-set(url('project/assets/hero-mallorca.webp') type('image/webp'), url('project/assets/hero-mallorca.jpg') type('image/jpeg'));
       background-size: cover;
-      background-position: center;
+      background-position: center top;
     }
     .hero .overlay {
       position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(250,245,236,0.20) 0%, rgba(250,245,236,0.50) 100%);
+      background: radial-gradient(ellipse 62% 78% at 84% 84%, rgba(250,245,236,0.62) 0%, rgba(250,245,236,0.35) 45%, rgba(250,245,236,0) 75%);
       pointer-events: none;
     }
     .hero .content {
       position: relative; z-index: 2;
       height: 100%;
-      padding: 30px 80px 470px; /* desktop: whole hero text sits in the sky, above the waves */
+      padding: 30px 72px 60px; /* desktop: text sits on the sand, bottom right */
       display: flex; flex-direction: column; justify-content: flex-end;
-      max-width: 880px;
+      max-width: 630px; margin-left: auto; box-sizing: border-box;
     }
-    .hero-shop-top {
-      position: absolute;
-      bottom: 80px;
-      right: 40px;
-      z-index: 2;
-    }
+    .hero-ctas { margin-top: 32px; }
+    .hero-ctas .hero-shop-top, .hero-ctas .hero-discover { position: static; }
     .hero-eyebrow {
       font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
       color: var(--ink); margin-bottom: 28px;
@@ -239,14 +235,9 @@
     }
     .hero h1 em { font-style: italic; letter-spacing: 0; }
     .hero .subtitle { margin: 28px 0 0; font-style: italic; font-size: 22px; line-height: 1.4; color: var(--ink); opacity: 0.85; }
+    .hero .subtitle .subtitle-2 { display: block; }
     .hero .lede { margin: 22px 0 40px; font-size: 17px; line-height: 1.6; color: var(--ink); max-width: 520px; opacity: 0.78; }
     .hero-ctas { display: inline-flex; gap: 14px; }
-    .hero-discover {
-      position: absolute;
-      top: 80px;
-      right: 40px;
-      z-index: 2;
-    }
 
     /* ── USPs ── */
     .usps {
@@ -685,7 +676,7 @@
       .page { width: 100%; }
 
       .hero { margin: 12px 24px 0; height: 560px; }
-      .hero .content { padding: 56px 48px 200px; }
+      .hero .content { padding: 56px 48px 48px; max-width: 560px; }
       .hero h1 { font-size: 44px; }
       .hero-shop-top { left: 48px; top: 56px; }
       .hero-discover { right: 24px; bottom: 56px; }
@@ -726,6 +717,8 @@
       /* Hero */
       .hero { margin: 10px 16px 0; height: 520px; border-radius: 18px; }
       .hero .content { padding: 28px 24px 60px; max-width: 100%; justify-content: flex-end; }
+      .hero .photo-bg { background-position: 100% top; }
+      .hero .overlay { background: linear-gradient(180deg, rgba(250,245,236,0) 30%, rgba(250,245,236,0.55) 62%, rgba(250,245,236,0.8) 100%); }
       .hero h1 { font-size: clamp(24px, 6.5vw, 34px); line-height: 1.1; }
       .hero .subtitle { font-size: 16px; margin-top: 14px; }
       .hero .lede { font-size: 14px; margin: 12px 0 20px; }
@@ -808,7 +801,7 @@
       .nav { padding: 16px 20px; grid-template-columns: 1fr auto; }
       .nav-center { display: none; }
       .hero { height: 480px; }
-      .hero .photo-bg { background-position: 2% center; }
+      .hero .photo-bg { background-position: 100% top; }
       .hero h1 { font-size: clamp(24px, 6.5vw, 34px); line-height: 1.1; }
       .usps { grid-template-columns: repeat(2, 1fr); }
       .forever { grid-template-columns: 1fr; }
@@ -824,7 +817,7 @@
     ══════════════════════════════════════════ */
     @media (max-width: 480px) {
       .hero { height: 380px; }
-      .hero .content { padding: 48px 24px 105px; }
+      .hero .content { padding: 48px 24px 32px; }
       .hero h1 { font-size: clamp(24px, 6.5vw, 34px); line-height: 1.1; }
       .usps { grid-template-columns: 1fr; }
       .carousel-track { grid-template-columns: repeat(9, 220px); }
@@ -987,18 +980,20 @@
   <section class="hero">
     <div class="photo-bg"></div>
     <div class="overlay"></div>
-    <div class="hero-shop-top">
-      <a class="btn btn--primary" href="collection.html">Shop Now <span class="arrow">→</span></a>
-    </div>
     <div class="content">
       <div class="hero-eyebrow">Anti-aging skincare · Beach &amp; botanical</div>
       <h1>Unlock your skin's<br/><em>timeless beauty.</em></h1>
       <p class="subtitle">One step won't do it. <span class="subtitle-2">A consistent routine will.</span></p>
-    </div>
-    <div class="hero-discover">
-      <button class="btn btn--blue-outline" onclick="document.getElementById('forever-bundle').scrollIntoView({behavior:'smooth'})">
-        Discover your routine
-      </button>
+      <div class="hero-ctas">
+        <div class="hero-shop-top">
+          <a class="btn btn--primary" href="collection.html">Shop Now <span class="arrow">→</span></a>
+        </div>
+        <div class="hero-discover">
+          <button class="btn btn--blue-outline" onclick="document.getElementById('forever-bundle').scrollIntoView({behavior:'smooth'})">
+            Discover your routine
+          </button>
+        </div>
+      </div>
     </div>
   </section>
 
