@@ -533,9 +533,16 @@ function proceedToCheckout() {
   if (!Object.keys(variantMap).length) return;
   const lineItems = Object.entries(variantMap).map(([vid, qty]) => `${vid}:${qty}`).join(',');
   localStorage.removeItem('sese_bundle_cart');
+  // Bundle price = bundle discount code (only sent when a full bundle is checked out),
+  // plus the newsletter/flyer code if the visitor has one saved.
+  const codes = [];
+  bundles.forEach(entry => {
+    const b = BUNDLE_CART_DATA[entry.key];
+    if (b && b.discountCode && !codes.includes(b.discountCode)) codes.push(b.discountCode);
+  });
   const discountCode = localStorage.getItem('sese_discount_code');
-  if (discountCode) localStorage.removeItem('sese_discount_code');
-  const discountParam = discountCode ? `?discount=${encodeURIComponent(discountCode)}` : '';
+  if (discountCode) { localStorage.removeItem('sese_discount_code'); if (!codes.includes(discountCode)) codes.push(discountCode); }
+  const discountParam = codes.length ? `?discount=${codes.map(encodeURIComponent).join(',')}` : '';
   window.location.href = `https://checkout.sese.be/cart/${lineItems}${discountParam}`;
 }
 
