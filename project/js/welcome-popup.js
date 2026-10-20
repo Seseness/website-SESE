@@ -8,7 +8,7 @@
 (() => {
   const SHOWN_KEY    = 'sese_welcome_popup_v1';
   const DISCOUNT_KEY = 'sese_discount_code';
-  const DISCOUNT_CODE = 'WELCOME10';
+  const DISCOUNT_CODE = 'SESE2026';
   const SHOW_DELAY_MS = 2500;
 
   const path   = window.location.pathname;
