@@ -983,7 +983,86 @@ html, body { overflow-x: hidden; max-width: 100%; }
     .blog-head .head-aside a { white-space: nowrap; }
   }
 </style>
-</head>
+<style>
+.hb *{box-sizing:border-box}.hb a{color:inherit;text-decoration:none}
+.hb{--b:#3A7D94;--bd:#2A5C70;--i:#1A1A1A;--i2:#4A4A47;--i3:#7A7770;--s:#FAF5EC;--l:rgba(26,26,26,.1);--D:var(--font-display);--U:var(--font-ui)}
+.hb .eb{font-family:var(--U);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--i3)}
+.hb .pill{display:inline-block;border:0;cursor:pointer;border-radius:999px;padding:15px 26px;font-family:var(--U);font-size:10px;letter-spacing:.24em;text-transform:uppercase;text-align:center}
+.hb-tk{background:var(--bd);color:#fff;overflow:hidden;white-space:nowrap;padding:20px 0;margin-top:14px}
+.hb-tk .tr{display:inline-flex;animation:hb-mq 55s linear infinite}
+.hb-tk span{font-family:var(--D);font-size:22px;padding:0 26px}.hb-tk span:after{content:"✦";font-size:11px;padding-left:52px;opacity:.6;vertical-align:middle}
+@keyframes hb-mq{to{transform:translateX(-50%)}}
+.hb-hd{text-align:center;padding:110px 24px 50px}.hb-hd h2{font-family:var(--D);font-weight:300;font-size:56px;margin:16px 0 14px;line-height:1.05}.hb-hd h2 em{color:var(--bd)}
+.hb-hd p{font-family:var(--U);font-size:14.5px;color:var(--i2);margin:0}
+.hb-pick{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:0 40px}
+.hb-c{border-radius:18px;padding:18px 18px 30px;display:flex;flex-direction:column;position:relative}
+.hb-c.sky{background:#DCEAF0}.hb-c.nv{background:#1F2A3C;color:#F4EFE6}.hb-c.sd{background:#EBDCC0}
+.hb-c .ph{aspect-ratio:1/1;border-radius:999px 999px 12px 12px;overflow:hidden}.hb-c .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.hb-c .bd{position:absolute;top:30px;right:30px;background:#fff;color:var(--bd);border-radius:999px;padding:9px 14px;font-family:var(--U);font-size:9.5px;letter-spacing:.22em;text-transform:uppercase}
+.hb-c .in{padding:28px 14px 0;display:flex;flex-direction:column;flex:1}
+.hb-c .eb{color:inherit;opacity:.65}
+.hb-c h3{font-family:var(--D);font-weight:300;font-size:40px;line-height:1.04;margin:12px 0 18px}
+.hb-c ul{list-style:none;margin:0 0 26px;padding:0;font-family:var(--U);font-size:13px;line-height:1.5}
+.hb-c li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
+.hb-c li i{font-style:normal;opacity:.6;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.hb-c .ft{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.hb-c .pr{font-family:var(--D);font-size:36px}
+.hb-c .pill.a{background:var(--i);color:#fff}.hb-c.nv .pill.a{background:#F4EFE6;color:var(--i)}
+.hb-c .more{display:block;margin-top:14px;font-family:var(--U);font-size:10px;letter-spacing:.24em;text-transform:uppercase;opacity:.7;text-decoration:underline;text-underline-offset:4px}
+.hb-day{background:var(--s);margin-top:120px;padding:100px 56px 110px}
+.hb-dh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;margin-bottom:60px}
+.hb-dh h2{font-family:var(--D);font-weight:300;font-size:50px;margin:14px 0 0;line-height:1.05}.hb-dh h2 em{color:var(--bd)}
+.hb-tg{display:inline-flex;background:#fff;border-radius:999px;padding:5px;border:1px solid var(--l)}
+.hb-tg button{border:0;background:none;border-radius:999px;padding:13px 26px;font-family:var(--U);font-size:10px;letter-spacing:.24em;text-transform:uppercase;cursor:pointer;color:var(--i2)}
+.hb-tg button.on{background:var(--i);color:#fff}
+.hb-st{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;position:relative}
+.hb-st:before{content:"";position:absolute;top:90px;left:10%;right:10%;border-top:1px dashed rgba(42,92,112,.45)}
+.hb-s{text-align:center;position:relative}
+.hb-s .ci{width:180px;height:180px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;overflow:hidden;border:6px solid var(--s)}
+.hb-s .ci img{height:100%;width:100%;object-fit:contain;mix-blend-mode:multiply;transform:scale(1.22)}
+.hb-s .n{font-family:var(--U);font-size:10px;letter-spacing:.28em;color:var(--bd);text-transform:uppercase}
+.hb-s h4{font-family:var(--D);font-weight:300;font-size:22px;margin:8px 0 8px}
+.hb-s p{font-family:var(--U);font-size:12.5px;line-height:1.55;color:var(--i2);margin:0 auto;max-width:200px}
+.hb-set{display:none}.hb-set.on{display:grid}
+.hb-fd{position:relative;height:680px;color:#fff;display:flex;align-items:center;overflow:hidden}
+.hb-fd img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 78%}
+.hb-fd:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,22,30,.78) 0%,rgba(14,22,30,.45) 45%,rgba(14,22,30,0) 75%)}
+.hb-fd .tx{position:relative;z-index:1;padding:0 90px;max-width:720px}
+.hb-fd .eb{color:rgba(255,255,255,.75)}
+.hb-fd h3{font-family:var(--D);font-weight:300;font-size:54px;line-height:1.06;margin:18px 0 24px}
+.hb-fd p{font-family:var(--U);font-size:15px;line-height:1.7;opacity:.9;margin:0 0 26px;max-width:500px}
+.hb-fd .pill{background:#fff;color:var(--i)}
+.hb-gh{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;padding:110px 56px 34px}
+.hb-gh h2{font-family:var(--D);font-weight:300;font-size:46px;margin:0}.hb-gh h2 em{color:var(--bd)}
+.hb .lk{font-family:var(--U);font-size:10px;letter-spacing:.26em;text-transform:uppercase;border-bottom:1px solid var(--i);padding-bottom:4px}
+.hb-gr{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;padding:0 56px}
+.hb-p{overflow:hidden;border-radius:14px;padding:20px 18px 18px;display:flex;flex-direction:column;min-height:380px;transition:transform .3s}
+.hb-p:hover{transform:translateY(-4px)}
+.hb-p .im img{pointer-events:none}.hb-p .im{flex:1;display:grid;place-items:center;min-height:200px}.hb-p .im img{height:230px;width:100%;object-fit:contain;mix-blend-mode:multiply;transform:scale(1.45)}
+.hb-p h4{font-family:var(--D);font-weight:300;font-size:21px;margin:12px 0 10px;line-height:1.15}
+.hb-p .rw{display:flex;justify-content:space-between;align-items:center;font-family:var(--U);font-size:13px}
+.hb-p .add{font-size:10px;letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--i);border-radius:999px;padding:9px 14px}
+.hb-p.cta{background:var(--bd);color:#fff;justify-content:space-between}.hb-p.cta h4{font-size:34px}.hb-p.cta .add{border-color:#fff}
+.hb-bl{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:0 56px 120px}
+.hb-b .ph{aspect-ratio:4/5;border-radius:999px 999px 12px 12px;overflow:hidden}.hb-b .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s}.hb-b:hover img{transform:scale(1.04)}
+.hb-b .eb{display:block;margin:20px 0 10px;color:var(--bd)}
+.hb-b h4{font-family:var(--D);font-weight:300;font-size:26px;line-height:1.15;margin:0 0 8px}
+.hb-b .d{font-family:var(--U);font-size:12px;color:var(--i3)}
+@media(max-width:1024px){
+ .hb-tk span{font-size:18px}
+ .hb-hd{padding:70px 22px 32px}.hb-hd h2{font-size:38px}
+ .hb-pick{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 22px 6px;gap:12px;scrollbar-width:none}
+ .hb-c{flex:0 0 84%;scroll-snap-align:center}.hb-c h3{font-size:34px}
+ .hb-day{margin-top:70px;padding:64px 22px 70px}.hb-dh{margin-bottom:34px}.hb-dh h2{font-size:36px}
+ .hb-st{grid-template-columns:1fr;gap:0}.hb-st:before{top:40px;bottom:40px;left:44px;right:auto;border-top:0;border-left:1px dashed rgba(42,92,112,.45)}
+ .hb-s{display:grid;grid-template-columns:88px 1fr;gap:16px;text-align:left;align-items:center;padding:10px 0}
+ .hb-s .ci{width:88px;height:88px;margin:0;border-width:4px}.hb-s p{margin:0;max-width:none}.hb-s h4{font-size:20px;margin:4px 0}
+ .hb-fd{height:auto;min-height:620px;align-items:flex-end}.hb-fd:after{background:linear-gradient(180deg,rgba(14,22,30,0) 25%,rgba(14,22,30,.85) 80%)}.hb-fd .tx{padding:0 22px 44px}.hb-fd h3{font-size:34px}
+ .hb-gh{padding:70px 22px 24px}.hb-gh h2{font-size:32px}
+ .hb-gr{grid-template-columns:1fr 1fr;padding:0 16px;gap:10px}.hb-p{min-height:290px;padding:14px 12px}.hb-p .im{min-height:150px}.hb-p .im img{height:150px}.hb-p h4{font-size:17px}.hb-p .add{padding:7px 10px;font-size:9px}.hb-p.cta h4{font-size:26px}
+ .hb-bl{display:flex;overflow-x:auto;padding:0 22px 80px;gap:16px;scrollbar-width:none}.hb-b{flex:0 0 72%}
+}
+</style></head>
 <body>
 
 <div class="page">
@@ -1042,314 +1121,20 @@ html, body { overflow-x: hidden; max-width: 100%; }
     </div>
   </section>
 
-  <!-- USPs -->
-  <section class="usps">
-    <div class="usp">
-      <span class="usp-ico"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>
-      <div><div class="usp-title">COSMOS Natural</div><div class="usp-sub">Gecertificeerde formules</div></div>
-    </div>
-    <div class="usp">
-      <span class="usp-ico"><svg viewBox="0 0 24 24"><path d="M12 4c2 2 3 4 3 6a3 3 0 11-6 0c0-2 1-4 3-6z"/><path d="M9 14h6M8 17h8M10 20h4"/></svg></span>
-      <div><div class="usp-title">Veganistisch &amp; cruelty-free</div><div class="usp-sub">Elke formule, elke batch</div></div>
-    </div>
-    <div class="usp">
-      <span class="usp-ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="9" rx="1.5"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></span>
-      <div><div class="usp-title">Gratis verzending vanaf €100</div><div class="usp-sub">Verzonden vanuit Europa</div></div>
-    </div>
-    <div class="usp">
-      <span class="usp-ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 6.8H21l-5.6 4 2.2 6.7L12 16.6 6.4 20.5 8.6 13.8 3 9.8h6.8z"/></svg></span>
-      <div><div class="usp-title">Gemaakt in Europa</div><div class="usp-sub">ISO 22716-gecertificeerde productie</div></div>
-    </div>
-  </section>
-
-  <!-- The Forever Routine -->
-  <section class="forever" id="forever-bundle">
-    <div class="forever-text">
-      <span class="forever-badge">Meest gekozen · Anti-aging · 5 stappen</span>
-      <h2>The Forever<br/><em>Routine.</em></h2>
-      <p>Vijf essentiële producten voor je ochtendroutine, één tijdloos ritueel. Alles wat je huid nodig heeft om de dag te starten.<br/>Reinigen, hydrateren, verstevigen en beschermen.</p>
-      <div class="forever-pricing">
-        <span class="now">€140</span>
-      </div>
-      <div class="forever-ctas">
-        <a class="btn btn--outline-dark" href="bundle-contents.html?b=forever-routine">Wat zit erin?</a>
-        <button class="btn btn--white" data-product="forever-bundle" id="bundle-btn">
-          Toevoegen →
-        </button>
-      </div>
-    </div>
-    <div class="forever-art">
-      <a href="bundle-contents.html?b=forever-routine" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;">
-        <picture><source media="(min-width: 1025px)" srcset="../project/assets/products-new/bundle-forever-mallorca-centered.webp" type="image/webp"><source media="(min-width: 1025px)" srcset="../project/assets/products-new/bundle-forever-mallorca-centered.jpg" type="image/jpeg"><source srcset="../project/assets/products-new/bundle-forever-mallorca-centered.webp" type="image/webp"><img src="../project/assets/products-new/bundle-forever-mallorca-centered.jpg" alt="The Forever Routine: vijf SESE-producten op het strand"  loading="lazy" /></picture>
-      </a>
-    </div>
-  </section>
-
-  <!-- Ritual bundles -->
-  <section class="rituals">
-    <div class="ritual ritual--night" data-product="beauty-sleep-ritual">
-      <div class="ritual-head">
-        <span class="ritual-label">Avondritueel</span>
-        <h3>The Beauty<br/><em>Sleep Ritual.</em></h3>
-        <p class="ritual-price">€135</p>
-        <div class="ritual-btns">
-          <a class="ritual-inside-btn" href="bundle-contents.html?b=beauty-sleep-ritual" onclick="event.stopPropagation()">Wat zit erin?</a>
-          <button class="ritual-cart-btn" id="night-cart-btn" onclick="event.stopPropagation()">Toevoegen →</button>
-        </div>
-        <div class="ritual-inside-wrap" style="display:none">
-        </div>
-      </div>
-      <div class="ritual-bottles">
-        <a href="bundle-contents.html?b=beauty-sleep-ritual" onclick="event.stopPropagation()" style="display:block;width:100%;height:100%;">
-          <picture><source media="(max-width: 768px)" srcset="../project/assets/products-new/bundle-beauty-sleep-mallorca-centered.webp" type="image/webp"><source media="(max-width: 768px)" srcset="../project/assets/products-new/bundle-beauty-sleep-mallorca-centered.jpg" type="image/jpeg"><source srcset="../project/assets/products-new/bundle-beauty-sleep-mallorca.webp" type="image/webp"><img src="../project/assets/products-new/bundle-beauty-sleep-mallorca.jpg" alt="The Beauty Sleep Ritual: vijf SESE-producten bij zonsondergang" style="width:100%;height:100%;object-fit:cover;object-position:center 60%;"  loading="lazy" /></picture>
-        </a>
-      </div>
-    </div>
-
-    <div class="ritual ritual--full" data-product="full-ritual">
-      <div class="ritual-head">
-        <span class="ritual-label">Het complete ritueel</span>
-        <h3>The <span class="ritual-full-word">Full</span><br/><em>Ritual.</em></h3>
-        <p class="ritual-price">€260</p>
-        <div class="ritual-btns">
-          <a class="ritual-inside-btn" href="bundle-contents.html?b=full-ritual" onclick="event.stopPropagation()">Wat zit erin?</a>
-          <button class="ritual-cart-btn" id="full-cart-btn" onclick="event.stopPropagation()">Toevoegen →</button>
-        </div>
-        <div class="ritual-inside-wrap" style="display:none">
-        </div>
-      </div>
-      <div class="ritual-bottles">
-        <a href="bundle-contents.html?b=full-ritual" onclick="event.stopPropagation()" style="display:block;width:100%;height:100%;">
-          <picture><source media="(max-width: 768px)" srcset="../project/assets/products-new/bundle-full-ritual-mallorca-centered.webp" type="image/webp"><source media="(max-width: 768px)" srcset="../project/assets/products-new/bundle-full-ritual-mallorca-centered.jpg" type="image/jpeg"><source media="(min-width: 1025px)" srcset="../project/assets/products-new/bundle-full-ritual-mallorca-centered.webp" type="image/webp"><source media="(min-width: 1025px)" srcset="../project/assets/products-new/bundle-full-ritual-mallorca-centered.jpg" type="image/jpeg"><source srcset="../project/assets/products-new/bundle-full-ritual-mallorca.webp" type="image/webp"><img src="../project/assets/products-new/bundle-full-ritual-mallorca.jpg" alt="The Full Ritual: alle negen SESE-producten op het strand" style="width:100%;height:100%;object-fit:cover;object-position:center;"  loading="lazy" /></picture>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certification scroller -->
-  <div class="cert-scroller">
-    <div class="cert-track">
-      <!-- Set 1 -->
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><path d="M22 24h20M22 32h14M22 40h18" stroke-linecap="round"/><rect x="26" y="19" width="12" height="18" rx="3"/></svg><span>Parabeenvrij</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><path d="M22 42 C22 28 32 20 44 20 C44 32 36 42 22 42z"/><path d="M22 42 L36 28"/></svg><span>Veganistisch</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><circle cx="24" cy="28" r="5"/><circle cx="36" cy="26" r="5"/><circle cx="32" cy="38" r="5"/></svg><span>Sulfaatvrij</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><path d="M32 46 V20"/><path d="M32 26 q-6 -2 -7 -7 q6 1 7 7z M32 26 q6 -2 7 -7 q-6 1 -7 7z M32 34 q-6 -2 -7 -7 q6 1 7 7z M32 34 q6 -2 7 -7 q-6 1 -7 7z"/><path d="M18 46 L46 18"/></svg><span>Glutenvrij</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><path d="M32 22 C28 18 20 20 20 28 C20 38 32 44 32 44 C32 44 44 38 44 28 C44 20 36 18 32 22z"/></svg><span>Dierproefvrij</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><text x="32" y="31" font-size="9" text-anchor="middle" fill="#6B7280" stroke="none" font-family="sans-serif" letter-spacing="1">ISO</text><text x="32" y="42" font-size="8" text-anchor="middle" fill="#6B7280" stroke="none" font-family="sans-serif" letter-spacing="0.5">22716</text></svg><span>ISO 22716<br/>GMP-productie</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><circle cx="46.0" cy="32.0" r="1.6"/><circle cx="44.1" cy="39.0" r="1.6"/><circle cx="39.0" cy="44.1" r="1.6"/><circle cx="32.0" cy="46.0" r="1.6"/><circle cx="25.0" cy="44.1" r="1.6"/><circle cx="19.9" cy="39.0" r="1.6"/><circle cx="18.0" cy="32.0" r="1.6"/><circle cx="19.9" cy="25.0" r="1.6"/><circle cx="25.0" cy="19.9" r="1.6"/><circle cx="32.0" cy="18.0" r="1.6"/><circle cx="39.0" cy="19.9" r="1.6"/><circle cx="44.1" cy="25.0" r="1.6"/></svg><span>Gemaakt<br/>in de EU</span></div>
-      <!-- Set 2 (duplicate for seamless loop) -->
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><path d="M22 24h20M22 32h14M22 40h18" stroke-linecap="round"/><rect x="26" y="19" width="12" height="18" rx="3"/></svg><span>Parabeenvrij</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><path d="M22 42 C22 28 32 20 44 20 C44 32 36 42 22 42z"/><path d="M22 42 L36 28"/></svg><span>Veganistisch</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><circle cx="24" cy="28" r="5"/><circle cx="36" cy="26" r="5"/><circle cx="32" cy="38" r="5"/></svg><span>Sulfaatvrij</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><path d="M32 46 V20"/><path d="M32 26 q-6 -2 -7 -7 q6 1 7 7z M32 26 q6 -2 7 -7 q-6 1 -7 7z M32 34 q-6 -2 -7 -7 q6 1 7 7z M32 34 q6 -2 7 -7 q-6 1 -7 7z"/><path d="M18 46 L46 18"/></svg><span>Glutenvrij</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><path d="M32 22 C28 18 20 20 20 28 C20 38 32 44 32 44 C32 44 44 38 44 28 C44 20 36 18 32 22z"/></svg><span>Dierproefvrij</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><text x="32" y="31" font-size="9" text-anchor="middle" fill="#6B7280" stroke="none" font-family="sans-serif" letter-spacing="1">ISO</text><text x="32" y="42" font-size="8" text-anchor="middle" fill="#6B7280" stroke="none" font-family="sans-serif" letter-spacing="0.5">22716</text></svg><span>ISO 22716<br/>GMP-productie</span></div>
-      <div class="cert-badge"><svg viewBox="0 0 64 64" fill="none" stroke="#6B7280" stroke-width="1.2"><circle cx="32" cy="32" r="29"/><circle cx="46.0" cy="32.0" r="1.6"/><circle cx="44.1" cy="39.0" r="1.6"/><circle cx="39.0" cy="44.1" r="1.6"/><circle cx="32.0" cy="46.0" r="1.6"/><circle cx="25.0" cy="44.1" r="1.6"/><circle cx="19.9" cy="39.0" r="1.6"/><circle cx="18.0" cy="32.0" r="1.6"/><circle cx="19.9" cy="25.0" r="1.6"/><circle cx="25.0" cy="19.9" r="1.6"/><circle cx="32.0" cy="18.0" r="1.6"/><circle cx="39.0" cy="19.9" r="1.6"/><circle cx="44.1" cy="25.0" r="1.6"/></svg><span>Gemaakt<br/>in de EU</span></div>
-    </div>
-  </div>
-
-  <!-- Over ons -->
-  <section class="about">
-    <div class="about-visual">
-      <picture><source srcset="../project/assets/founder-portrait.webp" type="image/webp"><img src="../project/assets/founder-portrait.jpg" alt="Séphora Mfulu, oprichter van SESE" style="width:100%;height:100%;object-fit:cover;object-position:center;border-radius:var(--r-soft);display:block;"  loading="lazy" /></picture>
-      <span class="caption">Séphora Mfulu · Founder</span>
-    </div>
-    <div class="about-body">
-      <div class="eyebrow">Ons verhaal</div>
-      <h3>Schoonheid is niet iets dat je aanbrengt.<br/><em>Het is iets dat je leeft.</em></h3>
-      <p>Ik weet hoe het voelt om te zoeken, echt te zoeken naar iets dat eindelijk werkt. Jarenlang was mijn eigen huid mijn grootste frustratie. Ik probeerde alles, vertrouwde te veel merken, en voelde me verloren in een industrie die alles ingewikkelder leek te maken dan nodig was.</p>
-      <p>SESE is ontstaan uit die zoektocht. Uit de overtuiging dat jouw huid eerlijke verzorging verdient. Geen snelle oplossingen of loze beloftes. En dat ware schoonheid geen vervaldatum kent.</p>
-      <p>Op elke leeftijd verdien je het om je goed in je vel te voelen. Stralend, verzorgd en volledig op je gemak in je eigen huid.</p>
-      <p class="sig">Séphora, oprichter van SESE</p>
-      <div class="links">
-        <a class="btn btn--dark" href="about.html">Lees ons volledige verhaal <span class="arrow">→</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Product carousel -->
-  <div class="sec-head" id="essentials">
-    <div>
-      <div class="eyebrow">Ontdek jouw essentials</div>
-    </div>
-    <div class="head-aside">
-      <a href="collection.html">Bekijk alles</a>
-      <div class="arrows">
-        <button id="prev" aria-label="Previous">‹</button>
-        <button id="next" aria-label="Next">›</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="carousel">
-    <div class="carousel-track" id="track">
-
-      <div class="card" data-product="cleansing-foam">
-        <div class="card-pic"><picture><source srcset="../project/assets/products-new/cleansing-foam-hp.webp" type="image/webp"><img class="product-img" src="../project/assets/products-new/cleansing-foam-hp.png" alt="SESE Cleansing Foam"  loading="lazy" /></picture>
-          <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
-        </div>
-        <div class="card-meta">
-          <div class="card-name">Cleansing Foam</div>
-          <div class="card-tag">Zachte schuimreiniger. Reinigt zonder uit te drogen.</div>
-          <div class="card-row">
-            <span class="card-price">€26</span>
-            <button class="card-add" data-product="cleansing-foam">Toevoegen <span>+</span></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-product="hydrating-toner">
-        <div class="card-pic"><picture><source srcset="../project/assets/products-new/hydrating-toner-hp.webp" type="image/webp"><img class="product-img" src="../project/assets/products-new/hydrating-toner-hp.png" alt="SESE Hydrating Toner"  loading="lazy" /></picture>
-          <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
-        </div>
-        <div class="card-meta">
-          <div class="card-name">Hydrating Toner</div>
-          <div class="card-tag">Hydraterende toner. Bereidt de huid voor op wat volgt.</div>
-          <div class="card-row">
-            <span class="card-price">€24</span>
-            <button class="card-add" data-product="hydrating-toner">Toevoegen <span>+</span></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-product="vitamin-c-serum">
-        <div class="card-pic"><picture><source srcset="../project/assets/products-new/vitamin-c-serum-hp.webp" type="image/webp"><img class="product-img" src="../project/assets/products-new/vitamin-c-serum-hp.png" alt="SESE Vitamin C Serum"  loading="lazy" /></picture>
-          <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
-        </div>
-        <div class="card-meta">
-          <div class="card-name">Vitamin C Serum</div>
-          <div class="card-tag">Verheldert. Egaliseert. Geeft de huid een frisse ochtendboost.</div>
-          <div class="card-row">
-            <span class="card-price">€34</span>
-            <button class="card-add" data-product="vitamin-c-serum">Toevoegen <span>+</span></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-product="peptide-serum">
-        <div class="card-pic"><picture><source srcset="../project/assets/products-new/peptide-serum-hp.webp" type="image/webp"><img class="product-img" src="../project/assets/products-new/peptide-serum-hp.png" alt="SESE Peptide Serum"  loading="lazy" /></picture>
-          <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
-        </div>
-        <div class="card-meta">
-          <div class="card-name">Peptide Serum</div>
-          <div class="card-tag">Verstevigt, verzacht, ondersteunt de elasticiteit van de huid.</div>
-          <div class="card-row">
-            <span class="card-price">€34</span>
-            <button class="card-add" data-product="peptide-serum">Toevoegen <span>+</span></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-product="retinol-alt-serum">
-        <div class="card-pic"><picture><source srcset="../project/assets/products-new/retinol-alt-serum-hp.webp" type="image/webp"><img class="product-img" src="../project/assets/products-new/retinol-alt-serum-hp.png" alt="SESE Retinol Alternative Serum"  loading="lazy" /></picture>
-          <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
-        </div>
-        <div class="card-meta">
-          <div class="card-name">Retinol Alternative Serum</div>
-          <div class="card-tag">Vernieuwt zonder irritatie. Ook geschikt voor de gevoelige huid.</div>
-          <div class="card-row">
-            <span class="card-price">€26</span>
-            <button class="card-add" data-product="retinol-alt-serum">Toevoegen <span>+</span></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-product="firming-day-cream">
-        <div class="card-pic"><picture><source srcset="../project/assets/products-new/firming-day-cream-hp.webp" type="image/webp"><img class="product-img" src="../project/assets/products-new/firming-day-cream-hp.png" alt="SESE Firming Day Cream"  loading="lazy" /></picture>
-          <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
-        </div>
-        <div class="card-meta">
-          <div class="card-name">Firming Day Cream</div>
-          <div class="card-tag">Hydrateert, verstevigt, beschermt de hele dag.</div>
-          <div class="card-row">
-            <span class="card-price">€36</span>
-            <button class="card-add" data-product="firming-day-cream">Toevoegen <span>+</span></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-product="ceramide-night-cream">
-        <div class="card-pic"><picture><source srcset="../project/assets/products-new/ceramide-night-cream-hp.webp" type="image/webp"><img class="product-img" src="../project/assets/products-new/ceramide-night-cream-hp.png" alt="SESE Ceramide Night Cream"  loading="lazy" /></picture>
-          <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
-        </div>
-        <div class="card-meta">
-          <div class="card-name">Ceramide Night Cream</div>
-          <div class="card-tag">Herstelt, voedt, brengt de huid tot rust tijdens de nacht.</div>
-          <div class="card-row">
-            <span class="card-price">€38</span>
-            <button class="card-add" data-product="ceramide-night-cream">Toevoegen <span>+</span></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-product="smoothing-eye-cream">
-        <div class="card-pic"><picture><source srcset="../project/assets/products-new/smoothing-eye-cream-hp.webp" type="image/webp"><img class="product-img" src="../project/assets/products-new/smoothing-eye-cream-hp.png" alt="SESE Smoothing Eye Cream"  loading="lazy" /></picture>
-          <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
-        </div>
-        <div class="card-meta">
-          <div class="card-name">Smoothing Eye Cream</div>
-          <div class="card-tag">Vermindert tekenen van vermoeidheid. Vervaagt fijne lijntjes.</div>
-          <div class="card-row">
-            <span class="card-price">€30</span>
-            <button class="card-add" data-product="smoothing-eye-cream">Toevoegen <span>+</span></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-product="spf50-stick">
-        <div class="card-pic"><picture><source srcset="../project/assets/products-new/spf50-stick-hp.webp" type="image/webp"><img class="product-img" src="../project/assets/products-new/spf50-stick-hp.png" alt="SESE SPF 50 Sunscreen Stick"  loading="lazy" /></picture>
-          <span class="card-heart"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
-        </div>
-        <div class="card-meta">
-          <div class="card-name">SPF 50 Sunscreen Stick</div>
-          <div class="card-tag">Minerale bescherming in een handig stickformaat.</div>
-          <div class="card-row">
-            <span class="card-price">€28</span>
-            <button class="card-add" data-product="spf50-stick">Toevoegen <span>+</span></button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Journal -->
-  <div class="sec-head blog-head">
-    <div>
-      <div class="eyebrow">Uit de blog</div>
-      <h2>Het nieuwste <em>artikel.</em></h2>
-    </div>
-    <div class="head-aside">
-      <a href="blog.html">Alle artikelen →</a>
-    </div>
-  </div>
-
-  <a class="journal" href="blog-post.html?p=10">
-    <div class="journal-cover">
-      <picture><source srcset="../project/assets/journal-cover-mallorca.webp" type="image/webp"><img class="cover-img" src="../project/assets/journal-cover-mallorca.jpg" alt="Handen houden drie SESE-serums vast aan zee"  loading="lazy" /></picture>
-      <div class="meta-top">
-        <span class="pill">Meest recent</span>
-        <span>19 oktober 2026 · 4 min leestijd</span>
-      </div>
-    </div>
-    <div class="journal-body">
-      <div class="jeb">Over SESE · Slow skincare</div>
-      <h3>Slow skincare: waarom een rustige, consequente routine werkt</h3>
-      <div class="excerpt">
-        <p>Geen routines van tien stappen, geen jacht op het nieuwste ingrediënt. Waarom SESE gelooft in slow skincare: een paar goede stappen, elke dag.</p>
-      </div>
-
-      <span class="more">Verder lezen op de blog <span class="arc">→</span></span>
-    </div>
-  </a>
-
-  <div class="journal-foot">
-    <span>Ook recent op de blog</span>
-    <span><a href="blog-post.html?p=8">Wat je huid doet terwijl je slaapt →</a></span>
-    <span><a href="blog-post.html?p=7">Wat COSMOS Natural betekent →</a></span>
-    <span><a href="blog.html">Bezoek de blog →</a></span>
-  </div>
-
+<div class="hb">
+<div class="hb-tk"><div class="tr"><span>De meeste formules COSMOS Natural</span><span>Veganistisch</span><span>Dierproefvrij</span><span>Parabeenvrij</span><span>Sulfaatvrij</span><span>ISO 22716-productie</span><span>Gemaakt in Europa</span><span>Gratis verzending vanaf €100</span><span>De meeste formules COSMOS Natural</span><span>Veganistisch</span><span>Dierproefvrij</span><span>Parabeenvrij</span><span>Sulfaatvrij</span><span>ISO 22716-productie</span><span>Gemaakt in Europa</span><span>Gratis verzending vanaf €100</span></div></div>
+<div class="hb-hd" id="forever-bundle"><span class="eb">De rituelen</span><h2>Welk ritueel <em>past bij jou?</em></h2><p>Drie routines, samengesteld uit dezelfde negen producten.</p></div>
+<div class="hb-pick"><div class="hb-c sky"><span class="bd">Meest gekozen</span><div class="ph"><img src="../project/assets/products-new/bundle-forever-mallorca-centered.webp" style="object-position:center" alt=""></div><div class="in"><span class="eb">Ochtend · 5 stappen</span><h3>The Forever <em>Routine.</em></h3><ul><li>Cleansing Foam<i>Reinigen</i></li><li>Hydrating Toner<i>Tonen</i></li><li>Peptide Serum<i>Behandelen</i></li><li>Firming Day Cream<i>Hydrateren</i></li><li>SPF 50 Sunscreen Stick<i>Beschermen</i></li></ul><div class="ft"><span class="pr">€140</span><button class="pill a" id="bundle-btn">Toevoegen →</button></div><a class="more" href="bundle-contents.html?b=forever-routine">Wat zit erin?</a></div></div><div class="hb-c nv"><div class="ph"><img src="../project/assets/products-new/bundle-beauty-sleep-mallorca-centered.webp" style="object-position:center 70%" alt=""></div><div class="in"><span class="eb">Avond · 5 stappen</span><h3>The Beauty Sleep <em>Ritual.</em></h3><ul><li>Cleansing Foam<i>Reinigen</i></li><li>Hydrating Toner<i>Tonen</i></li><li>Retinol Alternative Serum<i>Behandelen</i></li><li>Smoothing Eye Cream<i>Oogverzorging</i></li><li>Ceramide Night Cream<i>Herstellen</i></li></ul><div class="ft"><span class="pr">€135</span><button class="pill a" id="night-cart-btn">Toevoegen →</button></div><a class="more" href="bundle-contents.html?b=beauty-sleep-ritual">Wat zit erin?</a></div></div><div class="hb-c sd"><div class="ph"><img src="../project/assets/products-new/bundle-full-ritual-mallorca-centered.webp" alt=""></div><div class="in"><span class="eb">Ochtend &amp; avond · 9 producten</span><h3>The Full <em>Ritual.</em></h3><ul><li>Cleansing Foam<i>Ochtend & avond</i></li><li>Hydrating Toner<i>Ochtend & avond</i></li><li>Vitamin C Serum<i>Ochtend</i></li><li>Peptide Serum<i>Ochtend & avond</i></li><li>+ Retinol Alternative, Day, Night, Eye, SPF 50<i></i></li></ul><div class="ft"><span class="pr">€260</span><button class="pill a" id="full-cart-btn">Toevoegen →</button></div><a class="more" href="bundle-contents.html?b=full-ritual">Wat zit erin?</a></div></div></div>
+<section class="hb-day"><div class="hb-dh"><div><span class="eb">Zo gebruik je het</span><h2 id="hb-t">Jouw ochtend, <em>in vijf stappen.</em></h2></div>
+<div class="hb-tg"><button class="on" data-k="am">Ochtend</button><button data-k="pm">Avond</button></div></div>
+<div class="hb-st hb-set on" data-set="am"><div class="hb-s"><div class="ci" style="background:#E3EEF5"><img src="../project/assets/products-new/cleansing-foam-hp.webp" alt=""></div><div><span class="n">Stap 01 · Reinigen</span><h4>Cleansing Foam</h4><p>30 seconden masseren, afspoelen, droogdeppen.</p></div></div><div class="hb-s"><div class="ci" style="background:#E6EFE9"><img src="../project/assets/products-new/hydrating-toner-hp.webp" alt=""></div><div><span class="n">Stap 02 · Tonen</span><h4>Hydrating Toner</h4><p>In de handpalmen of op een wattenschijfje, indrukken.</p></div></div><div class="hb-s"><div class="ci" style="background:#F6E3CF"><img src="../project/assets/products-new/peptide-serum-hp.webp" alt=""></div><div><span class="n">Stap 03 · Behandelen</span><h4>Peptide Serum</h4><p>Eén tot twee druppels over gezicht en hals.</p></div></div><div class="hb-s"><div class="ci" style="background:#FCE8EB"><img src="../project/assets/products-new/firming-day-cream-hp.webp" alt=""></div><div><span class="n">Stap 04 · Hydrateren</span><h4>Firming Day Cream</h4><p>Een erwtje, over gezicht, hals en decolleté.</p></div></div><div class="hb-s"><div class="ci" style="background:#EEDFC2"><img src="../project/assets/products-new/spf50-stick-hp.webp" alt=""></div><div><span class="n">Stap 05 · Beschermen</span><h4>SPF 50 Sunscreen Stick</h4><p>Over voorhoofd, wangen, neus en kin.</p></div></div></div><div class="hb-st hb-set" data-set="pm"><div class="hb-s"><div class="ci" style="background:#E3EEF5"><img src="../project/assets/products-new/cleansing-foam-hp.webp" alt=""></div><div><span class="n">Stap 01 · Reinigen</span><h4>Cleansing Foam</h4><p>30 seconden masseren, afspoelen, droogdeppen.</p></div></div><div class="hb-s"><div class="ci" style="background:#E6EFE9"><img src="../project/assets/products-new/hydrating-toner-hp.webp" alt=""></div><div><span class="n">Stap 02 · Tonen</span><h4>Hydrating Toner</h4><p>In de handpalmen of op een wattenschijfje, indrukken.</p></div></div><div class="hb-s"><div class="ci" style="background:#F5EAE4"><img src="../project/assets/products-new/retinol-alt-serum-hp.webp" alt=""></div><div><span class="n">Stap 03 · Behandelen</span><h4>Retinol Alternative Serum</h4><p>Enkele druppels opwarmen en indeppen.</p></div></div><div class="hb-s"><div class="ci" style="background:#DCE5DC"><img src="../project/assets/products-new/smoothing-eye-cream-hp.webp" alt=""></div><div><span class="n">Stap 04 · Oogverzorging</span><h4>Smoothing Eye Cream</h4><p>Met de ringvinger langs het oogkasbeen tikken.</p></div></div><div class="hb-s"><div class="ci" style="background:#EFDFC2"><img src="../project/assets/products-new/ceramide-night-cream-hp.webp" alt=""></div><div><span class="n">Stap 05 · Herstellen</span><h4>Ceramide Night Cream</h4><p>Royaal als laatste stap, en slapen.</p></div></div></div></section>
+<section class="hb-fd"><img src="../project/assets/founder-portrait.webp" alt="Séphora Mfulu, oprichter van SESE" loading="lazy"><div class="tx"><span class="eb">Ons verhaal</span><h3>Schoonheid is niet iets dat je aanbrengt. <em>Het is iets dat je leeft.</em></h3><p>Jarenlang was mijn eigen huid mijn grootste frustratie. SESE is ontstaan uit die zoektocht: eerlijke verzorging, zonder snelle oplossingen of loze beloftes.</p><a class="pill" href="about.html">Lees het verhaal van Séphora →</a></div></section>
+<div class="hb-gh"><h2>De volledige <em>lijn.</em></h2><a class="lk" href="collection.html">Bekijk alles</a></div>
+<div class="hb-gr"><div class="hb-p" data-product="cleansing-foam" style="background:#E3EEF5;cursor:pointer"><div class="im"><img src="../project/assets/products-new/cleansing-foam-hp.webp" alt="SESE Cleansing Foam" loading="lazy"></div><h4>Cleansing Foam</h4><div class="rw"><span>€26</span><button class="add card-add" data-product="cleansing-foam" style="background:none;cursor:pointer;color:inherit">+ Toevoegen</button></div></div><div class="hb-p" data-product="hydrating-toner" style="background:#E6EFE9;cursor:pointer"><div class="im"><img src="../project/assets/products-new/hydrating-toner-hp.webp" alt="SESE Hydrating Toner" loading="lazy"></div><h4>Hydrating Toner</h4><div class="rw"><span>€24</span><button class="add card-add" data-product="hydrating-toner" style="background:none;cursor:pointer;color:inherit">+ Toevoegen</button></div></div><div class="hb-p" data-product="vitamin-c-serum" style="background:#FCEAD0;cursor:pointer"><div class="im"><img src="../project/assets/products-new/vitamin-c-serum-hp.webp" alt="SESE Vitamin C Serum" loading="lazy"></div><h4>Vitamin C Serum</h4><div class="rw"><span>€34</span><button class="add card-add" data-product="vitamin-c-serum" style="background:none;cursor:pointer;color:inherit">+ Toevoegen</button></div></div><div class="hb-p" data-product="peptide-serum" style="background:#F6E3CF;cursor:pointer"><div class="im"><img src="../project/assets/products-new/peptide-serum-hp.webp" alt="SESE Peptide Serum" loading="lazy"></div><h4>Peptide Serum</h4><div class="rw"><span>€34</span><button class="add card-add" data-product="peptide-serum" style="background:none;cursor:pointer;color:inherit">+ Toevoegen</button></div></div><div class="hb-p" data-product="retinol-alt-serum" style="background:#F5EAE4;cursor:pointer"><div class="im"><img src="../project/assets/products-new/retinol-alt-serum-hp.webp" alt="SESE Retinol Alternative Serum" loading="lazy"></div><h4>Retinol Alternative Serum</h4><div class="rw"><span>€26</span><button class="add card-add" data-product="retinol-alt-serum" style="background:none;cursor:pointer;color:inherit">+ Toevoegen</button></div></div><div class="hb-p" data-product="firming-day-cream" style="background:#FCE8EB;cursor:pointer"><div class="im"><img src="../project/assets/products-new/firming-day-cream-hp.webp" alt="SESE Firming Day Cream" loading="lazy"></div><h4>Firming Day Cream</h4><div class="rw"><span>€36</span><button class="add card-add" data-product="firming-day-cream" style="background:none;cursor:pointer;color:inherit">+ Toevoegen</button></div></div><div class="hb-p" data-product="ceramide-night-cream" style="background:#EFDFC2;cursor:pointer"><div class="im"><img src="../project/assets/products-new/ceramide-night-cream-hp.webp" alt="SESE Ceramide Night Cream" loading="lazy"></div><h4>Ceramide Night Cream</h4><div class="rw"><span>€38</span><button class="add card-add" data-product="ceramide-night-cream" style="background:none;cursor:pointer;color:inherit">+ Toevoegen</button></div></div><div class="hb-p" data-product="smoothing-eye-cream" style="background:#DCE5DC;cursor:pointer"><div class="im"><img src="../project/assets/products-new/smoothing-eye-cream-hp.webp" alt="SESE Smoothing Eye Cream" loading="lazy"></div><h4>Smoothing Eye Cream</h4><div class="rw"><span>€30</span><button class="add card-add" data-product="smoothing-eye-cream" style="background:none;cursor:pointer;color:inherit">+ Toevoegen</button></div></div><div class="hb-p" data-product="spf50-stick" style="background:#EEDFC2;cursor:pointer"><div class="im"><img src="../project/assets/products-new/spf50-stick-hp.webp" alt="SESE SPF 50 Sunscreen Stick" loading="lazy"></div><h4>SPF 50 Sunscreen Stick</h4><div class="rw"><span>€28</span><button class="add card-add" data-product="spf50-stick" style="background:none;cursor:pointer;color:inherit">+ Toevoegen</button></div></div><a class="hb-p cta" href="collection.html"><span class="eb" style="color:rgba(255,255,255,.7)">9 producten</span><h4>Bekijk de volledige <em>collectie.</em></h4><div class="rw"><span></span><span class="add">Shop →</span></div></a></div>
+<div class="hb-gh"><h2>Uit het <em>journal.</em></h2><a class="lk" href="blog.html">Alle verhalen</a></div>
+<div class="hb-bl"><a class="hb-b" href="blog-post.html?p=10"><div class="ph"><img src="../project/assets/hero-strand.jpg" alt=""></div><span class="eb">Over SESE</span><h4>Slow skincare: waarom een rustige, consequente routine werkt</h4><span class="d">19 oktober 2026 · 4 min leestijd</span></a><a class="hb-b" href="blog-post.html?p=8"><div class="ph"><img src="../project/assets/products-new/ceramide-night-cream-sfeer-1.jpg" alt=""></div><span class="eb">Huidverzorging</span><h4>Wat je huid doet terwijl je slaapt (en hoe je haar daarbij helpt)</h4><span class="d">5 oktober 2026 · 5 min leestijd</span></a><a class="hb-b" href="blog-post.html?p=7"><div class="ph"><img src="../project/assets/products-new/hydrating-toner-sfeer-1.jpg" alt=""></div><span class="eb">Over SESE</span><h4>Wat COSMOS Natural betekent, en waarom het belangrijk is voor je huid</h4><span class="d">21 september 2026 · 6 min leestijd</span></a></div>
+</div>
+<script>document.querySelectorAll('.hb-p[data-product]').forEach(c=>c.addEventListener('click',e=>{if(e.target.closest('.card-add'))return;location.href='product.html?p='+c.dataset.product}));document.querySelectorAll('.hb-tg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.hb-tg button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.hb-set').forEach(s=>s.classList.toggle('on',s.dataset.set===b.dataset.k));document.getElementById('hb-t').innerHTML=b.dataset.k==='am'?'Jouw ochtend, <em>in vijf stappen.</em>':'Jouw avond, <em>in vijf stappen.</em>'})</script>
 </div><!-- /.page -->
 
 <!-- Footer (outside .page to allow full-width bg) -->
@@ -1583,6 +1368,7 @@ document.getElementById('cart-btn').addEventListener('click', () => {
 // =============================================================
 (function () {
   const track = document.getElementById('track');
+  if (!track) return;
   const STEP  = 332;
   document.getElementById('prev').addEventListener('click', () =>
     track.scrollBy({ left: -STEP, behavior: 'smooth' }));
