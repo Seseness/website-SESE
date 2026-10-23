@@ -24,7 +24,8 @@ export const PRODUCTS = {
         },
         {
           "src": "project/assets/products-new/cleansing-foam-textuur.jpg",
-          "bg": "#EDF4F8"
+          "bg": "#EDF4F8",
+          "photo": true
         },
         {
           "src": "project/assets/products-new/cleansing-foam-sfeer-1-sq.jpg",
@@ -184,7 +185,8 @@ export const PRODUCTS = {
         },
         {
           "src": "project/assets/products-new/hydrating-toner-textuur.jpg",
-          "bg": "#ECF3EC"
+          "bg": "#ECF3EC",
+          "photo": true
         },
         {
           "src": "project/assets/products-new/hydrating-toner-sfeer-1-sq.jpg",
@@ -344,7 +346,8 @@ export const PRODUCTS = {
         },
         {
           "src": "project/assets/products-new/vitamin-c-serum-textuur.jpg",
-          "bg": "#FEF0E0"
+          "bg": "#FEF0E0",
+          "photo": true
         },
         {
           "src": "project/assets/products-new/vitamin-c-serum-sfeer-1-sq.jpg",
@@ -504,7 +507,8 @@ export const PRODUCTS = {
         },
         {
           "src": "project/assets/products-new/peptide-serum-textuur.jpg",
-          "bg": "#FEF0E0"
+          "bg": "#FEF0E0",
+          "photo": true
         },
         {
           "src": "project/assets/products-new/peptide-serum-sfeer-1-sq.jpg",
@@ -664,7 +668,8 @@ export const PRODUCTS = {
         },
         {
           "src": "project/assets/products-new/retinol-alt-serum-textuur.jpg",
-          "bg": "#EFE0D8"
+          "bg": "#EFE0D8",
+          "photo": true
         },
         {
           "src": "project/assets/products-new/retinol-alt-serum-sfeer-1-sq.jpg",
@@ -824,7 +829,8 @@ export const PRODUCTS = {
         },
         {
           "src": "project/assets/products-new/ceramide-night-cream-textuur.jpg",
-          "bg": "#F5DEE2"
+          "bg": "#F5DEE2",
+          "photo": true
         },
         {
           "src": "project/assets/products-new/firming-day-cream-sfeer-1-sq.jpg",
@@ -984,7 +990,8 @@ export const PRODUCTS = {
         },
         {
           "src": "project/assets/products-new/firming-day-cream-textuur.jpg",
-          "bg": "#F5EAD0"
+          "bg": "#F5EAD0",
+          "photo": true
         },
         {
           "src": "project/assets/products-new/ceramide-night-cream-sfeer-1-sq.jpg",
@@ -1144,7 +1151,8 @@ export const PRODUCTS = {
         },
         {
           "src": "project/assets/products-new/smoothing-eye-cream-textuur.jpg",
-          "bg": "#D8E4D8"
+          "bg": "#D8E4D8",
+          "photo": true
         },
         {
           "src": "project/assets/products-new/smoothing-eye-cream-sfeer-1-sq.jpg",
@@ -1304,7 +1312,8 @@ export const PRODUCTS = {
         },
         {
           "src": "project/assets/products-new/spf50-stick-textuur.jpg",
-          "bg": "#F0E2C0"
+          "bg": "#F0E2C0",
+          "photo": true
         },
         {
           "src": "project/assets/products-new/spf50-stick-sfeer-1-sq.jpg",
@@ -1466,7 +1475,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/cleansing-foam-textuur.jpg",
-          "bg": "#EDF4F8"
+          "bg": "#EDF4F8",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/cleansing-foam-sfeer-1-sq.jpg",
@@ -1626,7 +1636,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/hydrating-toner-textuur.jpg",
-          "bg": "#ECF3EC"
+          "bg": "#ECF3EC",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/hydrating-toner-sfeer-1-sq.jpg",
@@ -1786,7 +1797,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/vitamin-c-serum-textuur.jpg",
-          "bg": "#FEF0E0"
+          "bg": "#FEF0E0",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/vitamin-c-serum-sfeer-1-sq.jpg",
@@ -1946,7 +1958,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/peptide-serum-textuur.jpg",
-          "bg": "#FEF0E0"
+          "bg": "#FEF0E0",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/peptide-serum-sfeer-1-sq.jpg",
@@ -2106,7 +2119,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/retinol-alt-serum-textuur.jpg",
-          "bg": "#EFE0D8"
+          "bg": "#EFE0D8",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/retinol-alt-serum-sfeer-1-sq.jpg",
@@ -2266,7 +2280,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/ceramide-night-cream-textuur.jpg",
-          "bg": "#F5DEE2"
+          "bg": "#F5DEE2",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/firming-day-cream-sfeer-1-sq.jpg",
@@ -2426,7 +2441,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/firming-day-cream-textuur.jpg",
-          "bg": "#F5EAD0"
+          "bg": "#F5EAD0",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/ceramide-night-cream-sfeer-1-sq.jpg",
@@ -2586,7 +2602,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/smoothing-eye-cream-textuur.jpg",
-          "bg": "#D8E4D8"
+          "bg": "#D8E4D8",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/smoothing-eye-cream-sfeer-1-sq.jpg",
@@ -2746,7 +2763,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/spf50-stick-textuur.jpg",
-          "bg": "#F0E2C0"
+          "bg": "#F0E2C0",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/spf50-stick-sfeer-1-sq.jpg",
@@ -2908,7 +2926,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/cleansing-foam-textuur.jpg",
-          "bg": "#EDF4F8"
+          "bg": "#EDF4F8",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/cleansing-foam-sfeer-1-sq.jpg",
@@ -3068,7 +3087,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/hydrating-toner-textuur.jpg",
-          "bg": "#ECF3EC"
+          "bg": "#ECF3EC",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/hydrating-toner-sfeer-1-sq.jpg",
@@ -3228,7 +3248,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/vitamin-c-serum-textuur.jpg",
-          "bg": "#FEF0E0"
+          "bg": "#FEF0E0",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/vitamin-c-serum-sfeer-1-sq.jpg",
@@ -3388,7 +3409,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/peptide-serum-textuur.jpg",
-          "bg": "#FEF0E0"
+          "bg": "#FEF0E0",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/peptide-serum-sfeer-1-sq.jpg",
@@ -3548,7 +3570,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/retinol-alt-serum-textuur.jpg",
-          "bg": "#EFE0D8"
+          "bg": "#EFE0D8",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/retinol-alt-serum-sfeer-1-sq.jpg",
@@ -3708,7 +3731,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/ceramide-night-cream-textuur.jpg",
-          "bg": "#F5DEE2"
+          "bg": "#F5DEE2",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/firming-day-cream-sfeer-1-sq.jpg",
@@ -3868,7 +3892,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/firming-day-cream-textuur.jpg",
-          "bg": "#F5EAD0"
+          "bg": "#F5EAD0",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/ceramide-night-cream-sfeer-1-sq.jpg",
@@ -4028,7 +4053,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/smoothing-eye-cream-textuur.jpg",
-          "bg": "#D8E4D8"
+          "bg": "#D8E4D8",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/smoothing-eye-cream-sfeer-1-sq.jpg",
@@ -4188,7 +4214,8 @@ export const PRODUCTS = {
         },
         {
           "src": "../project/assets/products-new/spf50-stick-textuur.jpg",
-          "bg": "#F0E2C0"
+          "bg": "#F0E2C0",
+          "photo": true
         },
         {
           "src": "../project/assets/products-new/spf50-stick-sfeer-1-sq.jpg",
