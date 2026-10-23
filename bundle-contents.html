@@ -728,7 +728,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
 // =============================================================
 const PRODUCTS = {
   'cleansing-foam':       { name: 'Cleansing Foam',       desc: 'Gentle foaming cleanser. Cleans without stripping.',           price: '€26', img: 'project/assets/products-new/cleansing-foam-hp.png',       bg: '#E3EEF5' },
-  'hydrating-toner':      { name: 'Hydrating Toner',        desc: 'Weightless facial mist. Preps skin for what follows.',            price: '€24', img: 'project/assets/products-new/hydrating-toner-hp.png',      bg: '#E6EFE9' },
+  'hydrating-toner':      { name: 'Hydrating Toner',        desc: 'Hydrating toner. Preps skin for what follows.',            price: '€24', img: 'project/assets/products-new/hydrating-toner-hp.png',      bg: '#E6EFE9' },
   'vitamin-c-serum':      { name: 'Vitamin C Serum',        desc: 'Brightens. Evens. Awakens your morning glow.',               price: '€34', img: 'project/assets/products-new/vitamin-c-serum-hp.png',      bg: '#FCEAD0' },
   'peptide-serum':        { name: 'Peptide Serum',  desc: 'Firms, smooths, supports skin elasticity.',               price: '€34', img: 'project/assets/products-new/peptide-serum-hp.png',        bg: '#FCEAD0' },
   'retinol-alt-serum':    { name: 'Retinol Alternative Serum',     desc: 'Renews without irritation. Sensitive skin welcome.',      price: '€26', img: 'project/assets/products-new/retinol-alt-serum-hp.png',    bg: '#F5EAE4' },
@@ -756,7 +756,7 @@ const BUNDLES = {
     sectionSub: 'Every product in The Forever Routine, step by step.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Cleanse', instr: 'Massage into a lather for 30 seconds, then rinse and pat dry.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in, skipping cotton pads. Move to serum within 30 seconds.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into your palms or onto a cotton pad and press in. Do not rinse.' },
       { key: 'peptide-serum', num: '03', qualifier: 'Treat · AM', instr: 'Warm one to two drops, pat across face and neck. Let it settle before the next step.' },
       { key: 'firming-day-cream', num: '04', qualifier: 'Moisturise', instr: 'Warm a pea-size amount, press into face, neck and décolleté.' },
       { key: 'spf50-stick', num: '05', qualifier: 'Protect', instr: 'Swipe across forehead, cheeks, nose and chin. Reapply every 2 hours outdoors.' },
@@ -778,8 +778,8 @@ const BUNDLES = {
     sectionSub: 'Every product in The Beauty Sleep Ritual, step by step.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Cleanse', instr: 'Massage into a lather for 30 seconds, then rinse and pat dry.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in, skipping cotton pads. Move to serum within 30 seconds.' },
-      { key: 'retinol-alt-serum', num: '03', qualifier: 'Treat · PM', instr: 'Evening only. Warm one to two drops, pat in, then continue with your next step.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into your palms or onto a cotton pad and press in. Do not rinse.' },
+      { key: 'retinol-alt-serum', num: '03', qualifier: 'Treat · PM', instr: 'Warm a few drops, pat in, then continue with your next step.' },
       { key: 'smoothing-eye-cream', num: '04', qualifier: 'Eye care', instr: 'Ring finger only. Dot along the orbital bone and tap to blend.' },
       { key: 'ceramide-night-cream', num: '05', qualifier: 'Moisturise', instr: 'Apply generously as your last step, covering face, neck and décolleté, then sleep.' },
     ],
@@ -803,7 +803,7 @@ const BUNDLES = {
         icon: 'sun',
         steps: [
           { key: 'cleansing-foam', num: '01', qualifier: 'Cleanse', instr: 'Massage into a lather for 30 seconds, then rinse and pat dry.' },
-          { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in, skipping cotton pads. Move to serum within 30 seconds.' },
+          { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into your palms or onto a cotton pad and press in. Do not rinse.' },
           { key: 'vitamin-c-serum', num: '03', qualifier: 'Treat', instr: 'Warm one to two drops, press in, wait 60 seconds. Always follow with SPF as the last step of your morning routine.' },
           { key: 'peptide-serum', num: '04', qualifier: 'Treat', instr: 'Warm one to two drops, pat across face and neck. Layer with day cream.', dual: 'evening' },
           { key: 'smoothing-eye-cream', num: '05', qualifier: 'Eye care', instr: 'Ring finger only. Dot along the orbital bone and tap to blend.', dual: 'evening' },
@@ -816,9 +816,9 @@ const BUNDLES = {
         icon: 'moon',
         steps: [
           { key: 'cleansing-foam', num: '01', qualifier: 'Cleanse', instr: 'Massage into a lather for 30 seconds, then rinse and pat dry.' },
-          { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into palms and press in, skipping cotton pads. Move to serum within 30 seconds.' },
+          { key: 'hydrating-toner', num: '02', qualifier: 'Tone', instr: 'Pour into your palms or onto a cotton pad and press in. Do not rinse.' },
           { key: 'peptide-serum', num: '03', qualifier: 'Treat', instr: 'Warm one to two drops, pat across face and neck. Layer with night cream.', dual: 'morning' },
-          { key: 'retinol-alt-serum', num: '04', qualifier: 'Treat', instr: 'Evening only. Warm one to two drops, pat in, then continue with your next step.' },
+          { key: 'retinol-alt-serum', num: '04', qualifier: 'Treat', instr: 'Warm a few drops, pat in, then continue with your next step.' },
           { key: 'smoothing-eye-cream', num: '05', qualifier: 'Eye care', instr: 'Ring finger only. Dot along the orbital bone and tap to blend.', dual: 'morning' },
           { key: 'ceramide-night-cream', num: '06', qualifier: 'Moisturise', instr: 'Apply generously as your last step, then sleep.' },
         ],

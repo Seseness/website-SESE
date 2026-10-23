@@ -38,7 +38,7 @@ const POSTS = [
 
 <p>At SESE, we do not believe in miracle products or spectacular promises. We believe in consistency. In a routine you can maintain every day. In ingredients that do their work without overwhelming your skin.</p>
 
-<p>That is why we deliberately choose products that are COSMOS Natural certified. Produced according to strict European standards for natural and organic cosmetics. Vegan, cruelty-free and without unnecessary additives.</p>
+<p>That is why most of our products are COSMOS Natural certified. Produced according to strict European standards for natural and organic cosmetics. Vegan, cruelty-free and without unnecessary additives.</p>
 
 <p>Our selection is small and intentional. Nine products. No more, no less. Because we believe a good routine should be simple. That simplicity is the best foundation for long-term results.</p>
 
@@ -73,13 +73,13 @@ const POSTS = [
 
 <h2>Step 1 - Cleanse: Cleansing Foam</h2>
 
-<p>Every routine begins with a clean slate. The Cleansing Foam removes dirt, excess sebum and residues from the day without damaging the skin barrier or drying out the skin. The mousse texture is gentle and effective, suitable for normal to dry skin.</p>
+<p>Every routine begins with a clean slate. The Cleansing Foam removes dirt, excess sebum and residues from the day without damaging the skin barrier or drying out the skin. The mousse texture is gentle and effective, suitable for all skin types.</p>
 
 <p><em>✦ &nbsp;Use lukewarm water. Water that is too hot dries the skin and disrupts the barrier.</em></p>
 
 <h2>Step 2 - Tone: Hydrating Toner</h2>
 
-<p>A toner is the step most people skip. The Hydrating Toner rebalances the skin's pH after cleansing and prepares the skin for the following steps. Because the skin can now absorb more effectively, your serum and moisturiser work significantly better.</p>
+<p>A toner is the step most people skip. The Hydrating Toner rebalances the skin after cleansing and prepares the skin for the following steps. Because the skin can now absorb more effectively, your serum and moisturiser work significantly better.</p>
 
 <p><em>✦ &nbsp;Apply the toner with clean hands. Gently press, do not rub.</em></p>
 
@@ -138,7 +138,7 @@ const POSTS = [
 
 <p>UV radiation consists of two types of wavelengths, each with a different effect on the skin. UVB rays are the 'burning' rays responsible for sunburn. They play a role in skin cancer but do not penetrate glass and are stronger in summer. UVA rays are the 'aging' rays. They penetrate deeper into the skin, damage collagen and elastin, and are equally strong all year round. They also penetrate windows and clouds.</p>
 
-<p>That is why SPF is important even on cloudy days and indoors. The SPF number on a product primarily protects against UVB. For UVA protection, look for 'broad spectrum' on the packaging, which is exactly what our SPF 50 Sunscreen Stick provides.</p>
+<p>That is why SPF is important even on cloudy days and indoors. The SPF number on a product primarily protects against UVB. For UVA protection, look for 'broad spectrum' on the packaging, Zinc oxide, the main filter in our SPF 50 Sunscreen Stick, protects against both UVA and UVB.</p>
 
 <h2>Mineral vs chemical. What is the difference?</h2>
 
@@ -203,7 +203,7 @@ const POSTS = [
 
 <h2>Still not sure which serum you need?</h2>
 
-<p>Start with the Peptide Serum. It is the most accessible serum in our collection, suitable for all skin types and without risk of irritation. You can always complement it later with the Vitamin C Serum in the morning, or the Retinol Alternative in the evening.</p>
+<p>Start with the Peptide Serum. It is the most accessible serum in our collection, gentle and suitable for normal to dry skin. You can always complement it later with the Vitamin C Serum in the morning, or the Retinol Alternative in the evening.</p>
 
 <p>Our Forever Routine includes the Peptide Serum as the default choice, for exactly that reason.</p>`
   },
@@ -570,7 +570,7 @@ const POSTS = [
 
 <h2>Why Ceramides Decline After 35</h2>
 
-<p>Your skin naturally produces ceramides, but production decreases significantly as you age. After the age of 35, ceramide levels in the skin can be 30-40% lower than they were in your twenties. The result is skin that feels drier, reacts more strongly to external factors, and develops fine lines more quickly.</p>
+<p>Your skin naturally produces ceramides, but production decreases significantly as you age. After the age of 35, ceramide levels in the skin are noticeably lower than they were in your twenties. The result is skin that feels drier, reacts more strongly to external factors, and develops fine lines more quickly.</p>
 
 <p>External factors accelerate this process: UV radiation, harsh cleansing products, central heating, and cold wind all damage the skin's lipid layer and further reduce ceramide levels. That is exactly why replenishing ceramides through your skincare routine is so valuable.</p>
 
@@ -590,7 +590,7 @@ const POSTS = [
 
 <p>People who consistently use a quality ceramide night cream often notice a difference the very next morning: the skin feels softer, looks more even, and experiences less tightness or flaking. Over time, the skin becomes more resilient, reacts less quickly to external stressors, and stays hydrated throughout the day.</p>
 
-<p>It is not a dramatic overnight transformation. Instead, it is a solid, proven improvement that builds night after night. And that is exactly the philosophy behind SESE: no quick fixes, just a routine that truly works.</p>
+<p>It is not a dramatic overnight transformation. Instead, it is a steady improvement that builds night after night. And that is exactly the philosophy behind SESE: no quick fixes, just a routine that truly works.</p>
 
 <style>.ceramide-cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:16px 28px;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;border-radius:999px;background:var(--ink);color:var(--bg-page);text-decoration:none;font-family:var(--font-display);font-weight:300;transition:background .28s var(--ease-out);}.ceramide-cta-btn:hover{background:#2A2A2A;}</style>
 <p style="text-align:center; margin-top:8px;"><a class="ceramide-cta-btn" href="product.html?p=ceramide-night-cream">Shop the Ceramide Night Cream →</a></p>`

@@ -713,7 +713,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
 // =============================================================
 const PRODUCTS = {
   'cleansing-foam':       { name: 'Cleansing Foam',       desc: 'Zachte schuimreiniger. Reinigt zonder uit te drogen.',           price: '€26', img: '../project/assets/products-new/cleansing-foam-hp.png',       bg: '#E3EEF5' },
-  'hydrating-toner':      { name: 'Hydrating Toner',        desc: 'Lichte gezichtsmist. Bereidt de huid voor op wat volgt.',            price: '€24', img: '../project/assets/products-new/hydrating-toner-hp.png',      bg: '#E6EFE9' },
+  'hydrating-toner':      { name: 'Hydrating Toner',        desc: 'Hydraterende toner. Bereidt de huid voor op wat volgt.',            price: '€24', img: '../project/assets/products-new/hydrating-toner-hp.png',      bg: '#E6EFE9' },
   'vitamin-c-serum':      { name: 'Vitamin C Serum',        desc: 'Verheldert. Egaliseert. Geeft de huid een frisse ochtendboost.',               price: '€34', img: '../project/assets/products-new/vitamin-c-serum-hp.png',      bg: '#FCEAD0' },
   'peptide-serum':        { name: 'Peptide Serum',  desc: 'Verstevigt, verzacht, ondersteunt de elasticiteit van de huid.',               price: '€34', img: '../project/assets/products-new/peptide-serum-hp.png',        bg: '#FCEAD0' },
   'retinol-alt-serum':    { name: 'Retinol Alternative Serum',     desc: 'Vernieuwt zonder irritatie. Ook geschikt voor de gevoelige huid.',      price: '€26', img: '../project/assets/products-new/retinol-alt-serum-hp.png',    bg: '#F5EAE4' },
@@ -741,7 +741,7 @@ const BUNDLES = {
     sectionSub: 'Elk product uit The Forever Routine, stap voor stap.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Reinigen', instr: 'Masseer 30 seconden in een schuimende laag, spoel af en dep droog.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tonen', instr: 'Druppel in je handpalmen en druk in, zonder wattenschijfjes. Ga binnen 30 seconden verder met je serum.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonen', instr: 'Giet in je handpalmen of op een wattenschijfje en druk in. Niet afspoelen.' },
       { key: 'peptide-serum', num: '03', qualifier: 'Behandelen · Ochtend', instr: 'Warm één tot twee druppels op, dep uit over gezicht en hals. Laat intrekken voor de volgende stap.' },
       { key: 'firming-day-cream', num: '04', qualifier: 'Hydrateren', instr: 'Warm een hoeveelheid ter grootte van een erwt op, druk in over gezicht, hals en decolleté.' },
       { key: 'spf50-stick', num: '05', qualifier: 'Beschermen', instr: 'Trek over voorhoofd, wangen, neus en kin. Herhaal om de 2 uur bij buitengebruik.' },
@@ -762,8 +762,8 @@ const BUNDLES = {
     sectionSub: 'Elk product uit The Beauty Sleep Ritual, stap voor stap.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Reinigen', instr: 'Masseer 30 seconden in een schuimende laag, spoel af en dep droog.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tonen', instr: 'Druppel in je handpalmen en druk in, zonder wattenschijfjes. Ga binnen 30 seconden verder met je serum.' },
-      { key: 'retinol-alt-serum', num: '03', qualifier: 'Behandelen · Avond', instr: 'Enkel \'s avonds. Warm één tot twee druppels op, dep in, en ga verder met je volgende stap.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonen', instr: 'Giet in je handpalmen of op een wattenschijfje en druk in. Niet afspoelen.' },
+      { key: 'retinol-alt-serum', num: '03', qualifier: 'Behandelen · Avond', instr: 'Warm enkele druppels op, dep in, en ga verder met je volgende stap.' },
       { key: 'smoothing-eye-cream', num: '04', qualifier: 'Oogverzorging', instr: 'Enkel de ringvinger. Dep langs het oogkasbeen en tik om te verdelen.' },
       { key: 'ceramide-night-cream', num: '05', qualifier: 'Hydrateren', instr: 'Breng royaal aan als laatste stap, gezicht, hals en decolleté, en ga slapen.' },
     ],
@@ -782,10 +782,10 @@ const BUNDLES = {
     sectionSub: 'Elk product uit The Full Ritual, stap voor stap.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Reinigen', instr: 'Masseer 30 seconden in een schuimende laag, spoel af en dep droog.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tonen', instr: 'Druppel in je handpalmen en druk in, zonder wattenschijfjes. Ga binnen 30 seconden verder met je serum.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonen', instr: 'Giet in je handpalmen of op een wattenschijfje en druk in. Niet afspoelen.' },
       { key: 'vitamin-c-serum', num: '03', qualifier: 'Behandelen · Ochtend', instr: 'Warm één tot twee druppels op, druk in, wacht 60 seconden. Sluit je ochtendroutine altijd af met SPF.' },
       { key: 'peptide-serum', num: '04', qualifier: 'Behandelen · Ochtend/Avond', instr: 'Warm één tot twee druppels op, dep uit over gezicht en hals. Volg met dagcrème \'s ochtends, nachtcrème \'s avonds.' },
-      { key: 'retinol-alt-serum', num: '05', qualifier: 'Behandelen · Avond', instr: 'Enkel \'s avonds. Warm één tot twee druppels op, dep in, en ga verder met je volgende stap.' },
+      { key: 'retinol-alt-serum', num: '05', qualifier: 'Behandelen · Avond', instr: 'Warm enkele druppels op, dep in, en ga verder met je volgende stap.' },
       { key: 'smoothing-eye-cream', num: '06', qualifier: 'Gerichte zorg · Oogverzorging', instr: 'Enkel de ringvinger. Dep langs het oogkasbeen en tik om te verdelen.', targeted: true },
       { key: 'firming-day-cream', num: '07', qualifier: 'Hydrateren · Ochtend', instr: 'Warm een hoeveelheid ter grootte van een erwt op, druk in over gezicht, hals en decolleté.' },
       { key: 'ceramide-night-cream', num: '08', qualifier: 'Hydrateren · Avond', instr: 'Breng royaal aan als laatste stap, en ga slapen.' },

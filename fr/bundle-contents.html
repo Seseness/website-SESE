@@ -713,7 +713,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
 // =============================================================
 const PRODUCTS = {
   'cleansing-foam':       { name: 'Cleansing Foam',       desc: 'Mousse nettoyante douce. Nettoie sans dessécher.',           price: '€26', img: '../project/assets/products-new/cleansing-foam-hp.png',       bg: '#E3EEF5' },
-  'hydrating-toner':      { name: 'Hydrating Toner', desc: 'Brume légère pour le visage. Prépare la peau aux soins suivants.',            price: '€24', img: '../project/assets/products-new/hydrating-toner-hp.png',      bg: '#E6EFE9' },
+  'hydrating-toner':      { name: 'Hydrating Toner', desc: 'Lotion hydratante. Prépare la peau aux soins suivants.',            price: '€24', img: '../project/assets/products-new/hydrating-toner-hp.png',      bg: '#E6EFE9' },
   'vitamin-c-serum':      { name: 'Vitamin C Serum',        desc: 'Illumine. Unifie le teint. Donne un coup d\'éclat au réveil.',               price: '€34', img: '../project/assets/products-new/vitamin-c-serum-hp.png',      bg: '#FCEAD0' },
   'peptide-serum':        { name: 'Peptide Serum',  desc: 'Raffermit, lisse, soutient l\'élasticité de la peau.',               price: '€34', img: '../project/assets/products-new/peptide-serum-hp.png',        bg: '#FCEAD0' },
   'retinol-alt-serum':    { name: 'Retinol Alternative Serum',     desc: 'Renouvelle sans irriter. Convient aussi aux peaux sensibles.',      price: '€26', img: '../project/assets/products-new/retinol-alt-serum-hp.png',    bg: '#F5EAE4' },
@@ -741,7 +741,7 @@ const BUNDLES = {
     sectionSub: 'Chaque produit de The Forever Routine, étape par étape.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Nettoyage', instr: 'Massez en mousse pendant 30 secondes, rincez et séchez en tapotant.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes et pressez, sans coton. Passez au sérum dans les 30 secondes.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes ou sur un coton et pressez. Ne rincez pas.' },
       { key: 'peptide-serum', num: '03', qualifier: 'Traiter · Matin', instr: 'Réchauffez 1 à 2 gouttes, tapotez sur le visage et le cou. Laissez pénétrer avant l\'étape suivante.' },
       { key: 'firming-day-cream', num: '04', qualifier: 'Hydrater', instr: 'Réchauffez une noisette de produit, pressez sur le visage, le cou et le décolleté.' },
       { key: 'spf50-stick', num: '05', qualifier: 'Protéger', instr: 'Passez sur le front, les joues, le nez et le menton. Réappliquez toutes les 2 heures en extérieur.' },
@@ -762,8 +762,8 @@ const BUNDLES = {
     sectionSub: 'Chaque produit de The Beauty Sleep Ritual, étape par étape.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Nettoyage', instr: 'Massez en mousse pendant 30 secondes, rincez et séchez en tapotant.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes et pressez, sans coton. Passez au sérum dans les 30 secondes.' },
-      { key: 'retinol-alt-serum', num: '03', qualifier: 'Traiter · Soir', instr: 'Le soir uniquement. Chauffez une à deux gouttes, tapotez, puis passez à l\'étape suivante.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes ou sur un coton et pressez. Ne rincez pas.' },
+      { key: 'retinol-alt-serum', num: '03', qualifier: 'Traiter · Soir', instr: 'Chauffez quelques gouttes, tapotez, puis passez à l\'étape suivante.' },
       { key: 'smoothing-eye-cream', num: '04', qualifier: 'Contour des yeux', instr: 'Uniquement l\'annulaire. Déposez le long de l\'orbite et tapotez pour faire pénétrer.' },
       { key: 'ceramide-night-cream', num: '05', qualifier: 'Hydrater', instr: 'Appliquez généreusement en dernière étape, visage, cou et décolleté, puis dormez.' },
     ],
@@ -782,10 +782,10 @@ const BUNDLES = {
     sectionSub: 'Chaque produit de The Full Ritual, étape par étape.',
     routineSteps: [
       { key: 'cleansing-foam', num: '01', qualifier: 'Nettoyage', instr: 'Massez en mousse pendant 30 secondes, rincez et séchez en tapotant.' },
-      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes et pressez, sans coton. Passez au sérum dans les 30 secondes.' },
+      { key: 'hydrating-toner', num: '02', qualifier: 'Tonifier', instr: 'Versez dans vos paumes ou sur un coton et pressez. Ne rincez pas.' },
       { key: 'vitamin-c-serum', num: '03', qualifier: 'Traiter · Matin', instr: 'Réchauffez 1 à 2 gouttes, pressez, patientez 60 secondes. Terminez toujours votre routine matinale par la protection SPF.' },
       { key: 'peptide-serum', num: '04', qualifier: 'Traiter · Matin/Soir', instr: 'Réchauffez 1 à 2 gouttes, tapotez sur le visage et le cou. Poursuivez avec la crème de jour le matin, la crème de nuit le soir.' },
-      { key: 'retinol-alt-serum', num: '05', qualifier: 'Traiter · Soir', instr: 'Le soir uniquement. Chauffez une à deux gouttes, tapotez, puis passez à l\'étape suivante.' },
+      { key: 'retinol-alt-serum', num: '05', qualifier: 'Traiter · Soir', instr: 'Chauffez quelques gouttes, tapotez, puis passez à l\'étape suivante.' },
       { key: 'smoothing-eye-cream', num: '06', qualifier: 'Ciblé · Soin des yeux', instr: 'Uniquement l\'annulaire. Déposez le long de l\'orbite et tapotez pour faire pénétrer.', targeted: true },
       { key: 'firming-day-cream', num: '07', qualifier: 'Hydrater · Matin', instr: 'Réchauffez une noisette de produit, pressez sur le visage, le cou et le décolleté.' },
       { key: 'ceramide-night-cream', num: '08', qualifier: 'Hydrater · Soir', instr: 'Appliquez généreusement en dernière étape, puis dormez.' },
