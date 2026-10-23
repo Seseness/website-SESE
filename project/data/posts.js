@@ -510,7 +510,7 @@ export const POSTS = {
       "titleHtml": "De beste natuurlijke anti-aging huidverzorgingsroutine voor huid boven de 35",
       "date": "July 30, 2026",
       "readtime": "6 min leestijd",
-      "excerpt": "Na je 35e verandert je huid. Collageen neemt af, hydratatie daalt en de eerste fijne lijntjes verschijnen. Hier is hoe je de meest effectieve natuurlijke anti-aging routine opbouwt - stap voor stap, ingrediënt voor ingrediënt.",
+      "excerpt": "Na je 35e verandert je huid. Collageen neemt af, hydratatie daalt en de eerste fijne lijntjes verschijnen. Zo bouw je stap voor stap een natuurlijke anti-aging routine op, met de juiste ingrediënten op het juiste moment.",
       "image": null,
       "sources": [
         "Ganceviciene, R. et al. (2012). Skin anti-aging strategies. <em>Dermato-Endocrinology.</em>",
@@ -774,7 +774,7 @@ export const POSTS = {
       "titleHtml": "La meilleure routine de soins anti-âge naturels pour la peau après 35 ans",
       "date": "July 30, 2026",
       "readtime": "6 min de lecture",
-      "excerpt": "Après 35 ans, votre peau change. Le collagène diminue, l'hydratation baisse et les premières ridules apparaissent. Voici comment construire la routine anti-âge naturelle la plus efficace - étape par étape, ingrédient par ingrédient.",
+      "excerpt": "Après 35 ans, votre peau change. Le collagène diminue, l'hydratation baisse et les premières ridules apparaissent. Voici comment construire, étape par étape, une routine anti-âge naturelle, avec les bons ingrédients au bon moment.",
       "image": null,
       "sources": [
         "Ganceviciene, R. et al. (2012). Skin anti-aging strategies. <em>Dermato-Endocrinology.</em>",
