@@ -109,7 +109,7 @@
     .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px; }
     .chip { padding:7px 12px; border-radius:999px; border:1px solid var(--line-default); font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--ink-2); display:inline-flex; align-items:center; gap:8px; line-height:1; }
     .chip .d { width:5px; height:5px; border-radius:50%; background:var(--green); display:block; flex-shrink:0; align-self:center; margin-bottom:1px; }
-    /* HIDDEN — restore display:flex once Trustpilot is connected */
+    /* HIDDEN - restore display:flex once Trustpilot is connected */
     .reviews { display:none; align-items:center; gap:12px; margin-bottom:28px; font-size:13px; color:var(--ink-2); }
     .stars { letter-spacing:0.08em; color:var(--blue); font-size:14px; }
     .pricing { display:flex; align-items:baseline; gap:16px; padding:22px 0; border-top:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft); }
@@ -182,7 +182,7 @@
     .cert .s { font-size:10px; letter-spacing:0.22em; text-transform:uppercase; color:rgba(42,38,32,0.65); margin-top:2px; }
 
     /* benefit */
-    /* HIDDEN — restore to display:grid once product has 5+ reviews */
+    /* HIDDEN - restore to display:grid once product has 5+ reviews */
     .benefit { display:none; }
     .benefit .visual { aspect-ratio:5/6; border-radius:var(--radius-card); position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; }
     .benefit .visual .pull { position:absolute; left:24px; bottom:24px; right:24px; font-size:28px; line-height:1.18; color:#1A1A1A; font-style:italic; }
@@ -429,7 +429,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
     gap: 32px !important;
     padding: 32px 20px !important;
   }
-  /* Pairs section — compact row layout on mobile */
+  /* Pairs section - compact row layout on mobile */
   .pair-grid { display: flex !important; flex-direction: column !important; gap: 0 !important; }
   .pcard { display: grid !important; grid-template-columns: 72px 1fr auto !important; align-items: center !important; gap: 14px !important; padding: 16px 0 !important; border-radius: 0 !important; border: none !important; border-bottom: 1px solid var(--line-soft) !important; background: none !important; }
   .pcard:last-child { border-bottom: none !important; }
@@ -622,7 +622,7 @@ function bindEvents(key, p) {
   document.getElementById('qty-minus').addEventListener('click', () => { qty = Math.max(1, qty-1); document.getElementById('qty-val').textContent = qty; });
   document.getElementById('qty-plus').addEventListener('click',  () => { qty++; document.getElementById('qty-val').textContent = qty; });
 
-  // add to cart (main) — link straight to the Winkelify cart
+  // add to cart (main) - link straight to the Winkelify cart
   document.getElementById('add-cart-btn').addEventListener('click', () => {
     const btn = document.getElementById('add-cart-btn');
     const variantId = SHOPIFY.variants[key];
@@ -670,7 +670,7 @@ if (wasSSR) {
 
 <div class="nav-drawer" id="nav-drawer">
   <div class="nav-drawer-overlay"></div>
-  <!-- The 7 links below must stay locale-relative (no "../" prefix) — this page already lives one level inside /nl/ or /fr/, so "../about.html" jumps past the locale folder to the English root, silently dropping the chosen language. This exact bug shipped once already (mobile drawer links pointed to English regardless of the language popup choice). The EN/NL/FR switcher links just below, inside .nav-drawer-lang, are different: those intentionally use "../" to cross into a sibling locale directory. Do not "fix" those to match these. -->
+  <!-- The 7 links below must stay locale-relative (no "../" prefix) - this page already lives one level inside /nl/ or /fr/, so "../about.html" jumps past the locale folder to the English root, silently dropping the chosen language. This exact bug shipped once already (mobile drawer links pointed to English regardless of the language popup choice). The EN/NL/FR switcher links just below, inside .nav-drawer-lang, are different: those intentionally use "../" to cross into a sibling locale directory. Do not "fix" those to match these. -->
   <div class="nav-drawer-panel">
     <button class="nav-drawer-close" aria-label="Close">&#x00D7;</button>
     <a href="collection.html">Shop</a>

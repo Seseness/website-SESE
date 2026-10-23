@@ -1,4 +1,4 @@
-// Auto-extracted from blog-post.html/nl/fr — one exported function per language variant, selected by the caller.
+// Auto-extracted from blog-post.html/nl/fr - one exported function per language variant, selected by the caller.
 
 export function renderPostView_en(post, allPosts, lang, baseUrl = 'https://www.sese.be') {
   const prefix = lang === 'en' ? '' : '/' + lang;

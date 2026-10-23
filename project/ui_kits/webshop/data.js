@@ -1,4 +1,4 @@
-/* SESE products — canonical names + copy. All 9 SKUs. */
+/* SESE products - canonical names + copy. All 9 SKUs. */
 window.SESE_PRODUCTS = [
   {
     id: "cleansing-foam", name: "Cleansing Foam", step: "01 · Cleanse",
@@ -75,7 +75,7 @@ window.SESE_PRODUCTS = [
 ];
 
 window.SESE_ROUTINES = [
-  { id: "starter", name: "Starter Routine Bundle", desc: "Begin where it matters — five steps, one box.", price: "€168", saved: "Save €18", products: [0,1,3,5,8] },
+  { id: "starter", name: "Starter Routine Bundle", desc: "Begin where it matters - five steps, one box.", price: "€168", saved: "Save €18", products: [0,1,3,5,8] },
   { id: "day", name: "Day Routine", desc: "Glow, protect, go.", price: "€176", products: [0,1,2,5,8] },
   { id: "night", name: "Night Routine", desc: "While you sleep, your skin remembers.", price: "€184", products: [0,1,4,7,6] }
 ];

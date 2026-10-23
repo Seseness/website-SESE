@@ -1,5 +1,5 @@
 // =============================================================
-//  SESE — Single source of truth for all blog post data.
+//  SESE - Single source of truth for all blog post data.
 //  Imported by: blog-post.html, blog.html, index.html
 //
 //  To update an excerpt: edit the `excerpt` field here only.
@@ -263,25 +263,25 @@ const POSTS = [
     readtime: "5 min read",
     excerpt: "Retinol gets all the press. But for skin that wants results without a reaction, peptides are the quieter, smarter choice.",
     image: null,
-    fullBody: `<p>When people talk about anti-aging ingredients, retinol tends to dominate the conversation. It works — that part is true. But it also comes with a list of conditions: introduce it slowly, expect peeling, avoid sun exposure, do not use it near your eyes, pause if you are pregnant.</p>
+    fullBody: `<p>When people talk about anti-aging ingredients, retinol tends to dominate the conversation. It works - that part is true. But it also comes with a list of conditions: introduce it slowly, expect peeling, avoid sun exposure, do not use it near your eyes, pause if you are pregnant.</p>
 
 <p>Peptides ask none of that. And for most people's skin, they deliver results that are every bit as meaningful.</p>
 
 <h2>What peptides actually are</h2>
 
-<p>Peptides are short chains of amino acids — the same building blocks that make up proteins, including the proteins in your skin. Collagen, for instance, is a protein. When it breaks down with age, the skin loses the structural support that keeps it firm and smooth.</p>
+<p>Peptides are short chains of amino acids - the same building blocks that make up proteins, including the proteins in your skin. Collagen, for instance, is a protein. When it breaks down with age, the skin loses the structural support that keeps it firm and smooth.</p>
 
 <p>Peptide molecules can signal to the skin that collagen has been lost, prompting the production of new collagen. They can also penetrate more deeply than many other ingredients because of their small molecular size, working at the level where structural change actually happens.</p>
 
 <h2>What they do for aging skin specifically</h2>
 
-<p>The primary benefit is improved firmness over time. Not overnight — peptides are not dramatic in their timeline — but after six to twelve weeks of consistent use, most people notice that their skin holds its contours better. Fine lines soften. The face looks less deflated.</p>
+<p>The primary benefit is improved firmness over time. Not overnight - peptides are not dramatic in their timeline - but after six to twelve weeks of consistent use, most people notice that their skin holds its contours better. Fine lines soften. The face looks less deflated.</p>
 
 <p>There is also a hydration benefit. Many peptide formulas include supporting ingredients that strengthen the skin's barrier, which means better moisture retention and a more resilient surface. That translates to skin that looks plumper and behaves more calmly.</p>
 
 <h2>Why gentle matters</h2>
 
-<p>The skin's barrier is not just a cosmetic concern. It is the skin's primary defence system — against pollution, bacteria, UV, and moisture loss. Ingredients that compromise it in pursuit of quick results are borrowing against the skin's long-term health.</p>
+<p>The skin's barrier is not just a cosmetic concern. It is the skin's primary defence system - against pollution, bacteria, UV, and moisture loss. Ingredients that compromise it in pursuit of quick results are borrowing against the skin's long-term health.</p>
 
 <p>Peptides work without disrupting the barrier. They fit into the skin's own language of repair and regeneration, supporting processes that already exist rather than forcing reactions from the outside. For sensitive skin, reactive skin, and anyone who has ever had a bad experience with aggressive actives, this is a genuine advantage.</p>
 
@@ -289,7 +289,7 @@ const POSTS = [
 
 <p>A peptide serum is versatile: suitable for morning or evening, compatible with most other actives, and gentle enough for daily use from the very first application. Apply it after cleansing and toning, before your moisturiser.</p>
 
-<p>If you do use retinol in your evening routine, peptides make an excellent morning counterpart — delivering similar long-term firming benefits without doubling up on intensity. If you prefer to avoid retinol entirely, a peptide serum is more than sufficient for meaningful anti-aging results on its own.</p>
+<p>If you do use retinol in your evening routine, peptides make an excellent morning counterpart - delivering similar long-term firming benefits without doubling up on intensity. If you prefer to avoid retinol entirely, a peptide serum is more than sufficient for meaningful anti-aging results on its own.</p>
 
 <p>The quieter ingredients often do the most sustained work. Peptides are a good example of that.</p>`
   },
@@ -298,14 +298,14 @@ const POSTS = [
     title: "How to layer skincare products correctly",
     date: "June 14, 2026",
     readtime: "5 min read",
-    excerpt: "Lightest to heaviest. Actives before occlusives. There is a logic to the order — and it makes everything work better.",
+    excerpt: "Lightest to heaviest. Actives before occlusives. There is a logic to the order - and it makes everything work better.",
     image: "project/assets/products-new/vitamin-c-serum-studio.jpg",
     sources: [
       "Schagen, S.K. et al. (2012). Discovering the link between nutrition and skin aging. <em>Dermato-Endocrinology.</em>",
       "Katayama, K. et al. (1993). A pentapeptide from type I procollagen promotes extracellular matrix production. <em>Journal of Biological Chemistry.</em>",
       "Tran, D. et al. (2015). Daily intake of the herbal alternative to retinol. <em>Journal of Clinical and Aesthetic Dermatology.</em>"
     ],
-    fullBody: `<p>The order in which you apply your skincare products is not arbitrary. There is a logic to it — one rooted in how the skin absorbs different substances, how ingredients interact with each other, and what each product is designed to do. Get the order right and your routine becomes significantly more effective. Get it wrong and you may be reducing the benefit of products you are spending real money on.</p>
+    fullBody: `<p>The order in which you apply your skincare products is not arbitrary. There is a logic to it - one rooted in how the skin absorbs different substances, how ingredients interact with each other, and what each product is designed to do. Get the order right and your routine becomes significantly more effective. Get it wrong and you may be reducing the benefit of products you are spending real money on.</p>
 
 <p>The general principle is simple: lightest to heaviest, water-based before oil-based, actives before occlusives.</p>
 
@@ -313,31 +313,31 @@ const POSTS = [
 
 <p>Before anything else, cleanse. Products applied to uncleansed skin have to penetrate through a layer of sebum, dead cells, SPF residue, and everything the day (or night) has added. A clean skin surface allows every subsequent product to reach where it needs to go.</p>
 
-<p>Follow with toner — the first layer of hydration and the step that primes the skin to absorb what follows. A hydrating toner applied to damp skin will be more effective than one applied to completely dry skin, so timing matters here.</p>
+<p>Follow with toner - the first layer of hydration and the step that primes the skin to absorb what follows. A hydrating toner applied to damp skin will be more effective than one applied to completely dry skin, so timing matters here.</p>
 
-<h2>Serums before moisturisers — always</h2>
+<h2>Serums before moisturisers - always</h2>
 
-<p>This is the most commonly broken rule in skincare layering. Serums contain high concentrations of active ingredients in lightweight, fast-absorbing formulas. They are designed to penetrate deeply. Moisturisers, by contrast, are partially occlusive — they form a layer over the skin's surface to seal in what is beneath them and prevent moisture loss.</p>
+<p>This is the most commonly broken rule in skincare layering. Serums contain high concentrations of active ingredients in lightweight, fast-absorbing formulas. They are designed to penetrate deeply. Moisturisers, by contrast, are partially occlusive - they form a layer over the skin's surface to seal in what is beneath them and prevent moisture loss.</p>
 
 <p>If you apply moisturiser before your serum, you are putting a partial barrier between the serum and the skin. The serum's active ingredients cannot penetrate as effectively. Always apply your serum first, give it at least a minute to absorb, then apply your moisturiser on top.</p>
 
 <h2>Multiple serums: lightest first</h2>
 
-<p>If you use more than one serum — a Vitamin C serum in the morning alongside a peptide serum, for example — apply the thinner, more watery one first and the thicker one second. This ensures both reach the skin effectively rather than the thicker formula blocking the thinner one.</p>
+<p>If you use more than one serum - a Vitamin C serum in the morning alongside a peptide serum, for example - apply the thinner, more watery one first and the thicker one second. This ensures both reach the skin effectively rather than the thicker formula blocking the thinner one.</p>
 
 <h2>Oil-based products last (before SPF)</h2>
 
-<p>Any oil-based products — facial oils, oil-rich balms — should come after your water-based serum and moisturiser and before your SPF. Oils cannot pass through a water-based layer once that layer has been applied; water-based products can penetrate through a light oil layer in principle, but why create the obstacle? Keep oil-based formulas close to last in your routine.</p>
+<p>Any oil-based products - facial oils, oil-rich balms - should come after your water-based serum and moisturiser and before your SPF. Oils cannot pass through a water-based layer once that layer has been applied; water-based products can penetrate through a light oil layer in principle, but why create the obstacle? Keep oil-based formulas close to last in your routine.</p>
 
 <h2>SPF seals the morning routine</h2>
 
-<p>Your morning routine should end with SPF. It is the final layer — protective rather than penetrating — and it belongs on top of everything else. Nothing should be applied over SPF except makeup, and nothing water-based should be applied under it after the SPF has been given a few minutes to set.</p>
+<p>Your morning routine should end with SPF. It is the final layer - protective rather than penetrating - and it belongs on top of everything else. Nothing should be applied over SPF except makeup, and nothing water-based should be applied under it after the SPF has been given a few minutes to set.</p>
 
 <h2>Evening: the same logic, without SPF</h2>
 
 <p>The evening routine follows the same sequence: cleanser, toner, serum (or serums), moisturiser. If you use a retinol alternative, this goes in the serum step. Your night cream replaces the day cream and SPF. That is all.</p>
 
-<p>A well-ordered five-minute routine will outperform a ten-product routine applied in the wrong sequence. Order is not a detail — it is part of the formula.</p>`
+<p>A well-ordered five-minute routine will outperform a ten-product routine applied in the wrong sequence. Order is not a detail - it is part of the formula.</p>`
   },
   {
     id: 6,
@@ -351,69 +351,69 @@ const POSTS = [
       "Papakonstantinou, E. et al. (2012). Hyaluronic acid: a key molecule in skin aging. <em>Dermato-Endocrinology.</em>",
       "Loden, M. (2003). Role of topical emollients and moisturizers in the treatment of dry skin barrier disorders. <em>American Journal of Clinical Dermatology.</em>"
     ],
-    fullBody: `<p>Walk into any pharmacy or browse any skincare website and you will encounter both hydrating products and barrier-repair products. They often sit near each other. They may look similar. But they do different things — and understanding the difference will change how you read ingredient lists and make purchasing decisions.</p>
+    fullBody: `<p>Walk into any pharmacy or browse any skincare website and you will encounter both hydrating products and barrier-repair products. They often sit near each other. They may look similar. But they do different things - and understanding the difference will change how you read ingredient lists and make purchasing decisions.</p>
 
 <h2>What moisturising does</h2>
 
 <p>Moisturising, in the most direct sense, means adding water to the skin. This happens through two mechanisms: humectants draw water into the skin from the environment (or from deeper skin layers), and occlusives create a physical barrier on the skin's surface that slows the rate at which water evaporates.</p>
 
-<p>Ingredients like hyaluronic acid, glycerin, and aloe vera are humectants — they attract and hold water. Shea butter, squalane, and dimethicone are occlusives — they seal the surface. Most good moisturisers contain both.</p>
+<p>Ingredients like hyaluronic acid, glycerin, and aloe vera are humectants - they attract and hold water. Shea butter, squalane, and dimethicone are occlusives - they seal the surface. Most good moisturisers contain both.</p>
 
-<p>When your skin feels tight, dry, or dull, it is often dehydrated — short on water content. A good moisturiser addresses this directly. You will typically notice results within hours: the skin feels plumper, looks more alive, and reflects light better.</p>
+<p>When your skin feels tight, dry, or dull, it is often dehydrated - short on water content. A good moisturiser addresses this directly. You will typically notice results within hours: the skin feels plumper, looks more alive, and reflects light better.</p>
 
 <h2>What barrier repair means</h2>
 
-<p>The skin barrier — the stratum corneum — is the outermost layer of the skin. Think of it as a brick wall: skin cells are the bricks, and the lipid matrix between them (ceramides, fatty acids, cholesterol) is the mortar. When this structure is intact, it keeps water in and irritants, bacteria, and pollution out. When it is compromised, both happen in reverse.</p>
+<p>The skin barrier - the stratum corneum - is the outermost layer of the skin. Think of it as a brick wall: skin cells are the bricks, and the lipid matrix between them (ceramides, fatty acids, cholesterol) is the mortar. When this structure is intact, it keeps water in and irritants, bacteria, and pollution out. When it is compromised, both happen in reverse.</p>
 
-<p>A damaged barrier is not just a hydration problem. It is a structural problem. And while a good moisturiser helps, what a damaged barrier actually needs is the repair of that lipid matrix. This means ceramides, fatty acids (particularly linoleic acid), and cholesterol — ingredients that physically integrate into the barrier structure and reinforce it.</p>
+<p>A damaged barrier is not just a hydration problem. It is a structural problem. And while a good moisturiser helps, what a damaged barrier actually needs is the repair of that lipid matrix. This means ceramides, fatty acids (particularly linoleic acid), and cholesterol - ingredients that physically integrate into the barrier structure and reinforce it.</p>
 
 <h2>How to tell which one your skin needs</h2>
 
-<p>If your skin is temporarily dry — tight after cleansing, dull in winter, dehydrated from travel — a hydrating serum and a good moisturiser will likely resolve it within days.</p>
+<p>If your skin is temporarily dry - tight after cleansing, dull in winter, dehydrated from travel - a hydrating serum and a good moisturiser will likely resolve it within days.</p>
 
 <p>If your skin is persistently reactive, prone to redness, sensitive to products it has tolerated in the past, or if it stings when you apply things that should not sting, the barrier may be compromised. This requires a different approach: a gentler cleanser, fewer actives for a period, and specifically a ceramide-rich moisturiser or barrier repair product that addresses the structural deficit.</p>
 
 <h2>The ceramide advantage</h2>
 
-<p>Ceramides are not a trend. They are a foundational component of the skin's own structure. Ceramide levels decline with age — which is one of the reasons that aging skin tends to be drier, more reactive, and less resilient. A ceramide-rich night cream is not just moisturising; it is actively contributing to the skin's structural integrity.</p>
+<p>Ceramides are not a trend. They are a foundational component of the skin's own structure. Ceramide levels decline with age - which is one of the reasons that aging skin tends to be drier, more reactive, and less resilient. A ceramide-rich night cream is not just moisturising; it is actively contributing to the skin's structural integrity.</p>
 
-<p>Combine ceramides with humectants for both immediate hydration and long-term barrier support. That combination — sealed in with a good occlusive layer — is what gives the skin what it needs to stay resilient through every season and every decade.</p>`
+<p>Combine ceramides with humectants for both immediate hydration and long-term barrier support. That combination - sealed in with a good occlusive layer - is what gives the skin what it needs to stay resilient through every season and every decade.</p>`
   },
   {
     id: 7,
-    title: "What COSMOS Natural means — and why it matters for your skin",
+    title: "What COSMOS Natural means - and why it matters for your skin",
     date: "June 14, 2026",
     readtime: "6 min read",
     excerpt: "A certification with teeth. Here is what it requires, what it excludes, and why it is worth looking for.",
     image: null,
     sources: [
-      "COSMOS Standard — cosmeticscertification.com",
-      "Ecocert — ecocert.com/cosmos",
-      "European Commission — Cosmetics Regulation (EC) No 1223/2009"
+      "COSMOS Standard - cosmeticscertification.com",
+      "Ecocert - ecocert.com/cosmos",
+      "European Commission - Cosmetics Regulation (EC) No 1223/2009"
     ],
     fullBody: `<p>Natural skincare claims are easy to make and difficult to verify. "Clean." "Green." "Botanical." These are words that appear on packaging without any standardised definition, any independent verification, or any requirement to substantiate them. A brand can call its products natural while using synthetic preservatives, petrochemical derivatives, or formulations that would be prohibited under genuine natural standards.</p>
 
-<p>COSMOS Natural certification is different. It is a rigorous, independently audited standard developed by a consortium of European certifying bodies — Ecocert, BDIH, Cosmebio, Soil Association, and ICEA. It defines what "natural" actually means in cosmetics, and it requires third-party verification at every stage of the supply chain.</p>
+<p>COSMOS Natural certification is different. It is a rigorous, independently audited standard developed by a consortium of European certifying bodies - Ecocert, BDIH, Cosmebio, Soil Association, and ICEA. It defines what "natural" actually means in cosmetics, and it requires third-party verification at every stage of the supply chain.</p>
 
 <h2>What COSMOS Natural requires</h2>
 
-<p>Under COSMOS Natural, ingredients must come from natural sources such as plants and minerals, or be derived from them through approved processes. There is no minimum share of organic ingredients: that is what COSMOS Organic adds, requiring at least 95% of agro-ingredients and at least 20% of the total formula (10% for rinse-off products) to be organic. Either way, the formula is independently verified — not self-reported.</p>
+<p>Under COSMOS Natural, ingredients must come from natural sources such as plants and minerals, or be derived from them through approved processes. There is no minimum share of organic ingredients: that is what COSMOS Organic adds, requiring at least 95% of agro-ingredients and at least 20% of the total formula (10% for rinse-off products) to be organic. Either way, the formula is independently verified - not self-reported.</p>
 
 <p>Physical and biological processing is permitted. Certain carefully regulated chemical transformations are allowed where necessary. But a broad list of synthetic ingredients is prohibited entirely: silicones, parabens, PEGs, synthetic fragrances, GMOs, and a range of other substances that appear regularly in conventional skincare.</p>
 
-<h2>What it excludes — and why that matters</h2>
+<h2>What it excludes - and why that matters</h2>
 
-<p>The prohibited list in COSMOS certification covers many of the ingredients that consumers are most concerned about. Parabens, which are widely used as preservatives and have been the subject of ongoing regulatory scrutiny, are not permitted. Synthetic fragrances — a common cause of skin sensitisation and allergic reactions — are excluded. PEGs (polyethylene glycols), which are derived from petroleum and used as emulsifiers, are not allowed.</p>
+<p>The prohibited list in COSMOS certification covers many of the ingredients that consumers are most concerned about. Parabens, which are widely used as preservatives and have been the subject of ongoing regulatory scrutiny, are not permitted. Synthetic fragrances - a common cause of skin sensitisation and allergic reactions - are excluded. PEGs (polyethylene glycols), which are derived from petroleum and used as emulsifiers, are not allowed.</p>
 
 <p>For the skin, this matters for a practical reason: fewer potential irritants means a lower likelihood of sensitisation over time. Some synthetic ingredients cause no issues for most people. Others have cumulative effects that only become apparent after years of use. The COSMOS standard removes that uncertainty for a significant portion of the ingredient list.</p>
 
 <h2>Third-party verification</h2>
 
-<p>The certification is not self-awarded. An independent certifying body audits the supply chain, the formulations, and the manufacturing processes. Brands pay for this audit and must maintain compliance to retain the certification. The COSMOS logo on packaging represents a verifiable claim — not a marketing position.</p>
+<p>The certification is not self-awarded. An independent certifying body audits the supply chain, the formulations, and the manufacturing processes. Brands pay for this audit and must maintain compliance to retain the certification. The COSMOS logo on packaging represents a verifiable claim - not a marketing position.</p>
 
 <h2>What it means for an anti-aging routine</h2>
 
-<p>There is sometimes an assumption that natural formulations cannot deliver the actives needed for meaningful anti-aging results. This is worth questioning. Many of the most well-researched anti-aging ingredients — peptides, certain Vitamin C derivatives, ceramides, botanical extracts with proven antioxidant activity — are compatible with natural certification standards.</p>
+<p>There is sometimes an assumption that natural formulations cannot deliver the actives needed for meaningful anti-aging results. This is worth questioning. Many of the most well-researched anti-aging ingredients - peptides, certain Vitamin C derivatives, ceramides, botanical extracts with proven antioxidant activity - are compatible with natural certification standards.</p>
 
 <p>A COSMOS certified anti-aging routine is not a compromise. It is a commitment to formulations that are both effective and independently verified to be what they claim to be. That is not a small thing in an industry where claims are cheap and scrutiny is rare.</p>`
   },
@@ -429,33 +429,33 @@ const POSTS = [
       "Elias, P.M. (2008). Skin barrier function. <em>Current Allergy and Asthma Reports.</em>",
       "Rawlings, A.V. & Matts, P.J. (2005). Stratum corneum moisturization at the molecular level. <em>Journal of Investigative Dermatology.</em>"
     ],
-    fullBody: `<p>Sleep is not passive time for your skin. It is, in fact, the period of most intense repair and regeneration — the window when the skin is freed from the work of protecting itself against the external environment and can focus its resources on restoration.</p>
+    fullBody: `<p>Sleep is not passive time for your skin. It is, in fact, the period of most intense repair and regeneration - the window when the skin is freed from the work of protecting itself against the external environment and can focus its resources on restoration.</p>
 
 <p>Understanding what actually happens during those hours helps clarify not just why a good evening routine matters, but why the specific products you use at night should be chosen differently from those you use in the morning.</p>
 
-<h2>The repair cycle — what is happening at the cellular level</h2>
+<h2>The repair cycle - what is happening at the cellular level</h2>
 
-<p>Cell division accelerates during sleep. The body produces significantly more growth hormone at night — growth hormone that drives tissue repair and the production of new cells throughout the body, including in the skin. Cell turnover, which slows with age, is at its most active between approximately 11pm and 4am.</p>
+<p>Cell division accelerates during sleep. The body produces significantly more growth hormone at night - growth hormone that drives tissue repair and the production of new cells throughout the body, including in the skin. Cell turnover, which slows with age, is at its most active between approximately 11pm and 4am.</p>
 
-<p>Blood flow to the skin also increases during sleep. This supports the delivery of nutrients and oxygen to skin cells and the removal of metabolic waste. The skin temperature rises slightly, which increases the permeability of the skin — meaning that topically applied ingredients are absorbed more readily during the night than during the day.</p>
+<p>Blood flow to the skin also increases during sleep. This supports the delivery of nutrients and oxygen to skin cells and the removal of metabolic waste. The skin temperature rises slightly, which increases the permeability of the skin - meaning that topically applied ingredients are absorbed more readily during the night than during the day.</p>
 
 <h2>Transepidermal water loss at night</h2>
 
-<p>The skin loses more water at night than during the day, in part because the barrier is more permeable and in part because there is no moisturiser sitting on the surface being reapplied through the day. This is why night creams are typically richer and more occlusive than day creams — not because richness is inherently better, but because the additional occlusion is needed to compensate for increased overnight moisture loss.</p>
+<p>The skin loses more water at night than during the day, in part because the barrier is more permeable and in part because there is no moisturiser sitting on the surface being reapplied through the day. This is why night creams are typically richer and more occlusive than day creams - not because richness is inherently better, but because the additional occlusion is needed to compensate for increased overnight moisture loss.</p>
 
-<p>Applying your evening moisturiser shortly before sleep — rather than hours before — means the seal it provides is working during the hours of highest moisture loss.</p>
+<p>Applying your evening moisturiser shortly before sleep - rather than hours before - means the seal it provides is working during the hours of highest moisture loss.</p>
 
 <h2>Actives work harder at night</h2>
 
 <p>The increased skin permeability during sleep means that active ingredients applied at night have better access to the deeper skin layers where they do their work. This is one reason why retinol alternatives and cell-renewing actives are typically recommended for evening use: they benefit from the enhanced absorption window.</p>
 
-<p>It is also why fragrance and certain sensitising ingredients are more likely to cause reactions when used in the evening — the same permeability that allows beneficial ingredients deeper access also allows irritants in more readily. This is a reason to choose evening products with clean, well-tolerated formulas.</p>
+<p>It is also why fragrance and certain sensitising ingredients are more likely to cause reactions when used in the evening - the same permeability that allows beneficial ingredients deeper access also allows irritants in more readily. This is a reason to choose evening products with clean, well-tolerated formulas.</p>
 
 <h2>What a good evening routine looks like</h2>
 
-<p>Cleanse thoroughly — this is the more important cleanse, removing everything the day has deposited on your skin. Follow with a hydrating toner, then your treatment serum (peptide, Vitamin C if you reserve it for mornings is optional here, or a retinol alternative). Finish with a ceramide-rich night cream that seals in moisture, supports the barrier, and gives the skin the structural support it needs to do its overnight work.</p>
+<p>Cleanse thoroughly - this is the more important cleanse, removing everything the day has deposited on your skin. Follow with a hydrating toner, then your treatment serum (peptide, Vitamin C if you reserve it for mornings is optional here, or a retinol alternative). Finish with a ceramide-rich night cream that seals in moisture, supports the barrier, and gives the skin the structural support it needs to do its overnight work.</p>
 
-<p>Then leave the skin alone. The repair cycle does not need assistance — it needs the right conditions to begin. That is all a good evening routine is for.</p>`
+<p>Then leave the skin alone. The repair cycle does not need assistance - it needs the right conditions to begin. That is all a good evening routine is for.</p>`
   },
   {
     id: 9,
@@ -469,39 +469,39 @@ const POSTS = [
       "Katayama, K. et al. (1993). A pentapeptide from type I procollagen promotes extracellular matrix production. <em>Journal of Biological Chemistry.</em>",
       "Tran, D. et al. (2015). Daily intake of the herbal alternative to retinol. <em>Journal of Clinical and Aesthetic Dermatology.</em>"
     ],
-    fullBody: `<p>SESE has three treatment serums. Each one targets a different aspect of aging skin, works through a different mechanism, and suits different skin types and priorities. This is not a case of more is better — it is a case of understanding what your skin actually needs and choosing accordingly.</p>
+    fullBody: `<p>SESE has three treatment serums. Each one targets a different aspect of aging skin, works through a different mechanism, and suits different skin types and priorities. This is not a case of more is better - it is a case of understanding what your skin actually needs and choosing accordingly.</p>
 
 <p>You might use one. You might use two at different times of day. You might work through all three across different stages of your skincare practice. Here is what you need to know about each.</p>
 
-<h2>Vitamin C Serum — for brightness and protection</h2>
+<h2>Vitamin C Serum - for brightness and protection</h2>
 
 <p><strong>Best for:</strong> dull skin, uneven tone, dark spots, and anyone who wants antioxidant protection as part of their morning routine.</p>
 
-<p>Vitamin C is a morning ingredient. It works synergistically with SPF to combat the oxidative stress caused by UV exposure, and it addresses the visible consequences of that stress — pigmentation, uneven tone, loss of radiance — through its effect on melanin production and collagen support.</p>
+<p>Vitamin C is a morning ingredient. It works synergistically with SPF to combat the oxidative stress caused by UV exposure, and it addresses the visible consequences of that stress - pigmentation, uneven tone, loss of radiance - through its effect on melanin production and collagen support.</p>
 
 <p>If your primary concern is brightness, evening out the skin tone, or supporting the effects of your SPF, Vitamin C is the serum to prioritise. It is also a good choice as a first treatment serum if you are new to actives and want to start with something that delivers visible results without irritation risk.</p>
 
-<p>Not ideal for: very reactive or sensitised skin at the outset — start every other day and build up.</p>
+<p>Not ideal for: very reactive or sensitised skin at the outset - start every other day and build up.</p>
 
-<h2>Peptide Serum — for firmness and elasticity</h2>
+<h2>Peptide Serum - for firmness and elasticity</h2>
 
 <p><strong>Best for:</strong> skin that is losing firmness, fine lines that have become more pronounced, anyone who wants long-term structural support without irritation.</p>
 
-<p>Peptides are versatile — morning or evening, compatible with essentially all other skincare ingredients, gentle enough for daily use from day one. Their mechanism of action is slower and more foundational than Vitamin C: they signal to the skin to produce more collagen, which builds over weeks and months into improved firmness and visible smoothing of lines.</p>
+<p>Peptides are versatile - morning or evening, compatible with essentially all other skincare ingredients, gentle enough for daily use from day one. Their mechanism of action is slower and more foundational than Vitamin C: they signal to the skin to produce more collagen, which builds over weeks and months into improved firmness and visible smoothing of lines.</p>
 
-<p>If you are building an anti-aging routine for the first time, a peptide serum is an excellent foundation — and it is the serum we would recommend for anyone who finds retinol or retinol alternatives too stimulating.</p>
+<p>If you are building an anti-aging routine for the first time, a peptide serum is an excellent foundation - and it is the serum we would recommend for anyone who finds retinol or retinol alternatives too stimulating.</p>
 
-<h2>Retinol Alternative Serum — for cell renewal and line reduction</h2>
+<h2>Retinol Alternative Serum - for cell renewal and line reduction</h2>
 
 <p><strong>Best for:</strong> skin that is ready for more targeted anti-aging treatment, particularly textural concerns, fine lines, and visible signs of reduced cell turnover.</p>
 
-<p>Our retinol alternative uses plant-derived compounds that work through a similar mechanism to retinol — stimulating cell renewal and collagen production — without the irritation, sensitivity, and photosensitivity associated with conventional retinoids. The results come more gradually, but they come without the adjustment period that makes many people abandon retinol-based routines.</p>
+<p>Our retinol alternative uses plant-derived compounds that work through a similar mechanism to retinol - stimulating cell renewal and collagen production - without the irritation, sensitivity, and photosensitivity associated with conventional retinoids. The results come more gradually, but they come without the adjustment period that makes many people abandon retinol-based routines.</p>
 
-<p>This is an evening serum. Apply it after toning, before your night cream, on days when your skin feels balanced and comfortable — daily if possible, every other day if your skin needs it.</p>
+<p>This is an evening serum. Apply it after toning, before your night cream, on days when your skin feels balanced and comfortable - daily if possible, every other day if your skin needs it.</p>
 
 <h2>Can you use more than one?</h2>
 
-<p>Yes — with care. Vitamin C in the morning and Retinol Alternative in the evening is a well-tolerated, effective combination for many people. Add Peptide Serum to either routine for enhanced firming support. The key is to listen to your skin and not chase more product with the assumption that more means better results. Consistent use of the right product matters far more than layering three serums at once.</p>`
+<p>Yes - with care. Vitamin C in the morning and Retinol Alternative in the evening is a well-tolerated, effective combination for many people. Add Peptide Serum to either routine for enhanced firming support. The key is to listen to your skin and not chase more product with the assumption that more means better results. Consistent use of the right product matters far more than layering three serums at once.</p>`
   },
   {
     id: 10,
@@ -512,10 +512,10 @@ const POSTS = [
     image: null,
     sources: [
       "Krutmann, J. et al. (2017). The skin aging exposome. <em>Journal of Dermatological Science.</em>",
-      "Baumann, L. (2009). <em>Cosmetic Dermatology — Principles and Practice.</em> McGraw-Hill.",
-      "COSMOS Standard — cosmeticscertification.com"
+      "Baumann, L. (2009). <em>Cosmetic Dermatology - Principles and Practice.</em> McGraw-Hill.",
+      "COSMOS Standard - cosmeticscertification.com"
     ],
-    fullBody: `<p>There is something about the Belgian coast that slows time. The wide, flat horizon. The particular quality of northern light on the water. The way the wind demands a certain presence — you cannot be distracted on a beach in winter. You are simply there, and the weather makes that the only option.</p>
+    fullBody: `<p>There is something about the Belgian coast that slows time. The wide, flat horizon. The particular quality of northern light on the water. The way the wind demands a certain presence - you cannot be distracted on a beach in winter. You are simply there, and the weather makes that the only option.</p>
 
 <p>SESE was conceived in this context. Not as a response to a market gap or a formulation trend, but as a reflection of a particular way of thinking about care. Slow. Intentional. Without the noise of the industry that has built an entire infrastructure of urgency around something that should be simple.</p>
 
@@ -527,21 +527,21 @@ const POSTS = [
 
 <h2>The Belgian approach to beauty</h2>
 
-<p>Belgium is not, in the global beauty narrative, a reference point the way France or Korea might be. But there is a quality to Belgian taste — across food, design, fashion, and the domestic arts — that is worth naming. It is restrained without being austere. It is precise without being cold. It values quality over status, and it tends toward the understated.</p>
+<p>Belgium is not, in the global beauty narrative, a reference point the way France or Korea might be. But there is a quality to Belgian taste - across food, design, fashion, and the domestic arts - that is worth naming. It is restrained without being austere. It is precise without being cold. It values quality over status, and it tends toward the understated.</p>
 
-<p>These are the same values that guide SESE's formulations. Not the most expensive ingredients regardless of necessity, but the right ingredients at the right concentrations. Not packaging designed to impress on a shelf, but packaging designed to protect the formula inside. Not ten steps, but five — because five, done properly, is what works.</p>
+<p>These are the same values that guide SESE's formulations. Not the most expensive ingredients regardless of necessity, but the right ingredients at the right concentrations. Not packaging designed to impress on a shelf, but packaging designed to protect the formula inside. Not ten steps, but five - because five, done properly, is what works.</p>
 
 <h2>The coastal connection</h2>
 
-<p>The sea has long been associated with skin health. Thalassotherapy — the therapeutic use of seawater and marine elements — has roots in Belgian and French coastal towns that go back over a century. But SESE's connection to the coast is less clinical than that.</p>
+<p>The sea has long been associated with skin health. Thalassotherapy - the therapeutic use of seawater and marine elements - has roots in Belgian and French coastal towns that go back over a century. But SESE's connection to the coast is less clinical than that.</p>
 
-<p>It is about the light. The air. The unhurried relationship with time that the coast imposes. The idea that caring for your skin should feel like this — not rushed, not anxious, not driven by comparison or aspiration, but simply present. A few minutes in the morning. A few minutes at night. Products you trust, applied with intention.</p>
+<p>It is about the light. The air. The unhurried relationship with time that the coast imposes. The idea that caring for your skin should feel like this - not rushed, not anxious, not driven by comparison or aspiration, but simply present. A few minutes in the morning. A few minutes at night. Products you trust, applied with intention.</p>
 
 <h2>What this means for how you approach your routine</h2>
 
 <p>It means removing the urgency. You are not trying to reverse ten years in ten days. You are building a practice that your skin will benefit from over a decade.</p>
 
-<p>It means ignoring most of what the industry tells you to worry about. Pores do not close. Skin does not "detox." Most of what gets marketed as a breakthrough is a reformulation of something that already existed. The fundamentals — cleanse, treat, moisturise, protect — do not change.</p>
+<p>It means ignoring most of what the industry tells you to worry about. Pores do not close. Skin does not "detox." Most of what gets marketed as a breakthrough is a reformulation of something that already existed. The fundamentals - cleanse, treat, moisturise, protect - do not change.</p>
 
 <p>And it means recognising that the ritual itself has value. Not just the outcome. The five minutes you take to care for your skin well are not just an investment in how your face looks in twenty years. They are a small act of presence in a day that asks for constant distraction. That is worth something too.</p>
 

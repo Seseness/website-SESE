@@ -1,5 +1,5 @@
 // =============================================================
-//  SESE Sticky Header — runs on every page.
+//  SESE Sticky Header - runs on every page.
 //  Makes the existing header sticky and hides it on scroll-down
 //  past a small threshold, showing it again on any scroll-up or
 //  at the very top of the page. Pure scroll behavior: injects only

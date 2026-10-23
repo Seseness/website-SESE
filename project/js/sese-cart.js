@@ -1,5 +1,5 @@
 // =============================================================
-//  SESE Cart — localStorage-based, Shopify checkout
+//  SESE Cart - localStorage-based, Shopify checkout
 // =============================================================
 
 const SHOPIFY_DOMAIN = 'sese-8214.myshopify.com';
@@ -18,7 +18,7 @@ const CART_KEY = 'sese_cart_v2';
   window.history.replaceState({}, '', cleanUrl);
 })();
 
-// Product catalogue — name, price, image, background colour
+// Product catalogue - name, price, image, background colour
 const PRODUCT_CATALOGUE = {
   'cleansing-foam':       { name: 'Cleansing Foam',         price: 26,  img: '/project/assets/products-new/cleansing-foam-hp.png',       bg: '#E3EEF5', variant: '58352279748992' },
   'hydrating-toner':      { name: 'Hydrating Toner',          price: 24,  img: '/project/assets/products-new/hydrating-toner-hp.png',      bg: '#E6EFE9', variant: '58352287154560' },

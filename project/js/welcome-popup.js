@@ -1,5 +1,5 @@
 // =============================================================
-//  SESE Welcome Popup — first-visit email capture (10% off)
+//  SESE Welcome Popup - first-visit email capture (10% off)
 //  Reuses handleNewsletterSubmit() from newsletter.js; sets a
 //  discount code in localStorage that sese-cart.js applies at
 //  checkout. No new server-side secrets, no new API routes.
@@ -200,7 +200,7 @@
       setTimeout(showPopup, SHOW_DELAY_MS);
       return;
     }
-    // Language and/or cookie consent haven't been resolved yet — wait
+    // Language and/or cookie consent haven't been resolved yet - wait
     // for both so the newsletter popup never jumps ahead of them.
     function onProgress() {
       if (!isReadyForWelcome()) return;

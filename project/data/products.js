@@ -77,14 +77,14 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Glycerin",
           "ds": "Keeps moisture in while you cleanse.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "SC",
           "bg": "#E3EEF5",
           "nm": "Sucrose Cocoate",
           "ds": "Mild, plant-derived cleansing agent.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Clean start, <em>calm finish.</em>",
@@ -215,7 +215,7 @@ export const PRODUCTS = {
           "abbr": "RW",
           "bg": "#FCE8EB",
           "nm": "Rose Flower Water",
-          "ds": "Botanical base — softly hydrating and calming.",
+          "ds": "Botanical base - softly hydrating and calming.",
           "pct": "Organic"
         },
         {
@@ -223,14 +223,14 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Sodium Hyaluronate",
           "ds": "Hyaluronic acid that draws water into the skin.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "PCA",
           "bg": "#E3EEF5",
           "nm": "Sodium PCA",
           "ds": "Natural moisturising factor that holds hydration.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "CAM",
@@ -375,7 +375,7 @@ export const PRODUCTS = {
           "abbr": "VC",
           "bg": "#FCEAD0",
           "nm": "Ascorbyl Glucoside",
-          "ds": "Stabilised natural vitamin C — brightens gently.",
+          "ds": "Stabilised natural vitamin C - brightens gently.",
           "pct": "2%"
         },
         {
@@ -397,14 +397,14 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Vitamin E",
           "ds": "Antioxidant protection.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "HA",
           "bg": "#E3EEF5",
           "nm": "Hyaluronic Acid",
           "ds": "Keeps the skin hydrated.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Stable actives, <em>honest results.</em>",
@@ -550,21 +550,21 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Hyaluronic Acid",
           "ds": "Hydrates and plumps.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "GIN",
           "bg": "#FAF7C9",
           "nm": "Ginkgo Leaf Extract",
           "ds": "Botanical antioxidant.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "BB",
           "bg": "#FCE8EB",
           "nm": "Blueberry & Strawberry Seed Oil",
           "ds": "Nourishing seed oils.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Honest helpers, <em>not heroes.</em>",
@@ -695,7 +695,7 @@ export const PRODUCTS = {
           "abbr": "BP",
           "bg": "#FCE8EB",
           "nm": "Bidens Pilosa Extract",
-          "ds": "Plant-based retinol alternative — renews gently.",
+          "ds": "Plant-based retinol alternative - renews gently.",
           "pct": "Key"
         },
         {
@@ -710,14 +710,14 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Hyaluronic Acid",
           "ds": "Deep hydration.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "RM",
           "bg": "#FAF7C9",
           "nm": "Rose Myrtle Extract",
           "ds": "Botanical extract for a more even-looking skin.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "JOJ",
@@ -752,7 +752,7 @@ export const PRODUCTS = {
       "benefitTitle": "Renewal, <em>gently.</em>",
       "benefitBody": [
         "Retinol works, but many skins react to it with redness or flaking.",
-        "This serum uses Bidens pilosa extract, a plant-based retinol alternative, to renew the skin, improve texture and reduce the appearance of fine lines and dark spots — gently enough for sensitive skin and beginners."
+        "This serum uses Bidens pilosa extract, a plant-based retinol alternative, to renew the skin, improve texture and reduce the appearance of fine lines and dark spots - gently enough for sensitive skin and beginners."
       ],
       "stats": [
         {
@@ -856,7 +856,7 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Hyaluronic Acid",
           "ds": "Multi-molecular-weight hyaluronic acid hydrates at several levels.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "AL",
@@ -1044,7 +1044,7 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Hyaluronic Acid",
           "ds": "Hydration during the night.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Ceramides that rebuild. <em>Overnight.</em>",
@@ -1166,7 +1166,7 @@ export const PRODUCTS = {
         ],
         [
           "Use AM & PM",
-          "Tap gently — never rub"
+          "Tap gently - never rub"
         ]
       ],
       "routineActive": -1,
@@ -1190,7 +1190,7 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Hyaluronic Acid",
           "ds": "Hydrates and smooths fine lines.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "SHE",
@@ -1204,7 +1204,7 @@ export const PRODUCTS = {
           "bg": "#EFDFC2",
           "nm": "Plant Ceramides",
           "ds": "Support the barrier and elasticity.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Targeted actives for <em>delicate skin.</em>",
@@ -1321,7 +1321,7 @@ export const PRODUCTS = {
       "size": "12 g",
       "quickInfo": [
         [
-          "Morning — final step",
+          "Morning - final step",
           "Reapply outdoors"
         ],
         [
@@ -1336,21 +1336,21 @@ export const PRODUCTS = {
           "bg": "#E8D5B0",
           "nm": "Zinc Oxide",
           "ds": "Mineral UV filter.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "TiO",
           "bg": "#FAF7C9",
           "nm": "Titanium Dioxide",
           "ds": "Mineral UV filter.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "RICE",
           "bg": "#E6EFE9",
           "nm": "Rice Bran Oil",
           "ds": "Smooth glide, skin-conditioning.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "JOJ",
@@ -1364,7 +1364,7 @@ export const PRODUCTS = {
           "bg": "#FCE8EB",
           "nm": "Sunflower Seed Wax",
           "ds": "Gives the stick its smooth texture.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Mineral filters. <em>Nothing else to worry about.</em>",
@@ -1519,14 +1519,14 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Glycerine",
           "ds": "Houdt vocht vast tijdens het reinigen.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "SC",
           "bg": "#E3EEF5",
           "nm": "Sucrose Cocoate",
           "ds": "Milde, plantaardige reinigende stof.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Een schone start, <em>een rustgevend einde.</em>",
@@ -1665,14 +1665,14 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Natriumhyaluronaat",
           "ds": "Hyaluronzuur dat water in de huid trekt.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "PCA",
           "bg": "#E3EEF5",
           "nm": "Sodium PCA",
           "ds": "Natuurlijke vochtfactor die hydratatie vasthoudt.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "CAM",
@@ -1839,14 +1839,14 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Vitamine E",
           "ds": "Antioxidante bescherming.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "HA",
           "bg": "#E3EEF5",
           "nm": "Hyaluronzuur",
           "ds": "Houdt de huid gehydrateerd.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Stabiele actieve stoffen, <em>eerlijke resultaten.</em>",
@@ -1992,21 +1992,21 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Hyaluronzuur",
           "ds": "Hydrateert en maakt de huid voller.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "GIN",
           "bg": "#FAF7C9",
           "nm": "Ginkgo-extract",
           "ds": "Plantaardige antioxidant.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "BB",
           "bg": "#FCE8EB",
           "nm": "Bosbes- & aardbeipitolie",
           "ds": "Voedende zaadoliën.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Eerlijke helpers, <em>geen helden.</em>",
@@ -2152,14 +2152,14 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Hyaluronzuur",
           "ds": "Diepe hydratatie.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "RM",
           "bg": "#FAF7C9",
           "nm": "Rozenmirte-extract",
           "ds": "Plantenextract voor een egalere huid.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "JOJ",
@@ -2298,7 +2298,7 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Hyaluronzuur",
           "ds": "In meerdere molecuulgroottes, hydrateert op verschillende niveaus.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "AL",
@@ -2486,7 +2486,7 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Hyaluronzuur",
           "ds": "Hydratatie tijdens de nacht.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Ceramiden die herstellen. <em>Overnight.</em>",
@@ -2632,7 +2632,7 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Hyaluronzuur",
           "ds": "Hydrateert en strijkt fijne lijntjes glad.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "SHE",
@@ -2646,7 +2646,7 @@ export const PRODUCTS = {
           "bg": "#EFDFC2",
           "nm": "Plantaardige ceramiden",
           "ds": "Ondersteunen de barrière en elasticiteit.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Gerichte actieve stoffen voor <em>delicate huid.</em>",
@@ -2778,21 +2778,21 @@ export const PRODUCTS = {
           "bg": "#E8D5B0",
           "nm": "Zinkoxide",
           "ds": "Mineraal UV-filter.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "TiO",
           "bg": "#FAF7C9",
           "nm": "Titaniumdioxide",
           "ds": "Mineraal UV-filter.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "RICE",
           "bg": "#E6EFE9",
           "nm": "Rijstzemelolie",
           "ds": "Glijdt soepel, verzorgt de huid.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "JOJ",
@@ -2806,7 +2806,7 @@ export const PRODUCTS = {
           "bg": "#FCE8EB",
           "nm": "Zonnebloemwas",
           "ds": "Geeft de stick zijn zachte textuur.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Minerale filters. <em>Geen zorgen verder.</em>",
@@ -2961,14 +2961,14 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Glycérine",
           "ds": "Retient l’hydratation pendant le nettoyage.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "SC",
           "bg": "#E3EEF5",
           "nm": "Sucrose Cocoate",
           "ds": "Agent nettoyant doux d’origine végétale.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Un début propre, <em>une fin apaisante.</em>",
@@ -3107,14 +3107,14 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Hyaluronate de sodium",
           "ds": "Acide hyaluronique qui attire l’eau dans la peau.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "PCA",
           "bg": "#E3EEF5",
           "nm": "Sodium PCA",
           "ds": "Facteur d’hydratation naturel.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "CAM",
@@ -3281,14 +3281,14 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Vitamine E",
           "ds": "Protection antioxydante.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "HA",
           "bg": "#E3EEF5",
           "nm": "Acide hyaluronique",
           "ds": "Garde la peau hydratée.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Actifs stables, <em>résultats honnêtes.</em>",
@@ -3434,21 +3434,21 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Acide hyaluronique",
           "ds": "Hydrate et repulpe.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "GIN",
           "bg": "#FAF7C9",
           "nm": "Extrait de ginkgo",
           "ds": "Antioxydant végétal.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "BB",
           "bg": "#FCE8EB",
           "nm": "Huiles de myrtille & fraise",
           "ds": "Huiles de pépins nourrissantes.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Des alliés honnêtes, <em>pas des héros.</em>",
@@ -3594,14 +3594,14 @@ export const PRODUCTS = {
           "bg": "#E6EFE9",
           "nm": "Acide hyaluronique",
           "ds": "Hydratation en profondeur.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "RM",
           "bg": "#FAF7C9",
           "nm": "Extrait de myrte rose",
           "ds": "Extrait végétal pour un teint plus uniforme.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "JOJ",
@@ -3740,7 +3740,7 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Acide hyaluronique",
           "ds": "En plusieurs poids moléculaires, hydrate à différents niveaux.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "AL",
@@ -3928,7 +3928,7 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Acide hyaluronique",
           "ds": "Hydratation pendant la nuit.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Des céramides qui reconstruisent. <em>Pendant la nuit.</em>",
@@ -4074,7 +4074,7 @@ export const PRODUCTS = {
           "bg": "#E3EEF5",
           "nm": "Acide hyaluronique",
           "ds": "Hydrate et lisse les ridules.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "SHE",
@@ -4088,7 +4088,7 @@ export const PRODUCTS = {
           "bg": "#EFDFC2",
           "nm": "Céramides végétaux",
           "ds": "Soutiennent la barrière et l’élasticité.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Des actifs ciblés pour <em>une peau délicate.</em>",
@@ -4220,21 +4220,21 @@ export const PRODUCTS = {
           "bg": "#E8D5B0",
           "nm": "Oxyde de zinc",
           "ds": "Filtre UV minéral.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "TiO",
           "bg": "#FAF7C9",
           "nm": "Dioxyde de titane",
           "ds": "Filtre UV minéral.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "RICE",
           "bg": "#E6EFE9",
           "nm": "Huile de son de riz",
           "ds": "Glisse en douceur, soigne la peau.",
-          "pct": "—"
+          "pct": "-"
         },
         {
           "abbr": "JOJ",
@@ -4248,7 +4248,7 @@ export const PRODUCTS = {
           "bg": "#FCE8EB",
           "nm": "Cire de tournesol",
           "ds": "Donne au stick sa texture douce.",
-          "pct": "—"
+          "pct": "-"
         }
       ],
       "ingTitle": "Filtres minéraux. <em>Rien d'autre à craindre.</em>",

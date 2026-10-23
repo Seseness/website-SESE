@@ -1,8 +1,8 @@
 // =============================================================
-//  SESE Locale Preference Sync — runs on every page.
+//  SESE Locale Preference Sync - runs on every page.
 //  This file intentionally does NOT redirect the visitor. Every
 //  link on the site already points to the correct language for
-//  its own href — a past version of this file force-redirected
+//  its own href - a past version of this file force-redirected
 //  based on a stored "last chosen language" whenever it didn't
 //  match the current URL, which silently bounced visitors to the
 //  wrong language after they clicked a perfectly correct footer

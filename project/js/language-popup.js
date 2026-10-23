@@ -1,5 +1,5 @@
 // =============================================================
-//  SESE Language Picker — shown once before the welcome popup
+//  SESE Language Picker - shown once before the welcome popup
 // =============================================================
 
 (() => {

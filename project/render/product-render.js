@@ -1,4 +1,4 @@
-// Auto-extracted from product.html/nl/fr — one exported function per language variant, selected by the caller.
+// Auto-extracted from product.html/nl/fr - one exported function per language variant, selected by the caller.
 
 const ROUTINE_STEPS = [
   { n:'01', l:'Cleanse' },
@@ -145,7 +145,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="pricing">
         <span class="now">${p.price}</span>
         <span class="vol">${p.vol} · ${p.volPrice}</span>
-        <span class="stock"><span class="d"></span>In stock · Ships 1–2 days</span>
+        <span class="stock"><span class="d"></span>In stock · Ships 1-2 days</span>
       </div>
       <div class="buy-row">
         <div class="qty">
