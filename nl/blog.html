@@ -477,6 +477,39 @@ html, body { overflow-x: hidden; max-width: 100%; }
   .hamburger { opacity: 1 !important; visibility: visible !important; }
 }
 </style>
+<style id="journal-css">
+#journal{--jr-blue:#3A7D94;--jr-blue-d:#2A5C70;--jr-ink:#1A1A1A;--jr-ink2:#4A4A47;--jr-ink3:#7A7770;--jr-sand:#FAF5EC;--jr-line:rgba(26,26,26,.1)}
+#journal a{color:inherit;text-decoration:none}
+.jr-eb{font-family:var(--font-ui);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--jr-ink3)}
+.jr-top{display:grid;grid-template-columns:1fr 1fr;min-height:620px;background:var(--jr-sand)}
+.jr-txt{padding:90px 56px 64px;display:flex;flex-direction:column;justify-content:space-between;gap:48px}
+.jr-top h1{font-family:var(--font-display);font-weight:300;font-size:30px;letter-spacing:.34em;margin:0;color:var(--jr-ink)}
+.jr-feat h2{font-family:var(--font-display);font-weight:300;font-size:56px;line-height:1.06;margin:18px 0 22px;color:var(--jr-ink)}
+.jr-feat p{font-family:var(--font-display);font-style:italic;font-size:20px;line-height:1.5;color:var(--jr-ink2);max-width:470px;margin:0}
+.jr-btn{display:inline-block;margin-top:32px;background:var(--jr-ink);color:#fff !important;border-radius:999px;padding:16px 28px;font-family:var(--font-ui);font-size:10px;letter-spacing:.26em;text-transform:uppercase;transition:background .28s}
+.jr-btn:hover{background:var(--jr-blue-d)}
+.jr-pic{position:relative;display:block;overflow:hidden}
+.jr-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.jr-pic:hover img{transform:scale(1.03)}
+.jr-tag{position:absolute;bottom:24px;left:24px;background:var(--jr-sand);padding:10px 16px;border-radius:999px;font-family:var(--font-ui);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--jr-blue-d)}
+.jr-idx{background:#fff;padding:84px 56px 110px}
+.jr-idxh{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px 24px;border-bottom:1px solid var(--jr-ink);padding-bottom:22px}
+.jr-idxh h2{font-family:var(--font-display);font-weight:300;font-size:40px;margin:0;color:var(--jr-ink)}
+.jr-idxh h2 em{color:var(--jr-blue-d)}
+.jr-row{display:grid;grid-template-columns:90px 190px 1fr 150px;gap:28px;align-items:center;padding:30px 12px;border-bottom:1px solid var(--jr-line);transition:background .3s;border-radius:4px}
+.jr-row:hover{background:var(--jr-sand)}
+.jr-no{font-family:var(--font-display);font-size:46px;line-height:1;color:transparent;-webkit-text-stroke:1px var(--jr-blue)}
+.jr-left{display:flex;flex-direction:column;gap:8px}
+.jr-left .jr-eb{color:var(--jr-blue-d)}
+.jr-d{font-family:var(--font-ui);font-size:12px;color:var(--jr-ink3)}
+.jr-mid h3{font-family:var(--font-display);font-weight:300;font-size:30px;line-height:1.15;margin:0;color:var(--jr-ink)}
+.jr-mid p{font-family:var(--font-ui);font-size:13.5px;line-height:1.6;color:var(--jr-ink2);margin:8px 0 0;max-width:620px}
+.jr-th{width:150px;aspect-ratio:1;border-radius:50% 50% 12px 12px;overflow:hidden;background:var(--jr-sand)}
+.jr-th img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:1024px){.jr-txt{padding:64px 32px 48px}.jr-feat h2{font-size:42px}.jr-idx{padding:64px 32px 90px}.jr-row{grid-template-columns:70px 150px 1fr 120px;gap:20px}.jr-th{width:120px}}
+@media(max-width:700px){.jr-top{grid-template-columns:1fr;min-height:0}.jr-pic{min-height:380px;order:-1}.jr-txt{padding:36px 20px 44px;gap:28px}.jr-feat h2{font-size:34px}.jr-feat p{font-size:17px}
+.jr-idx{padding:50px 20px 70px}.jr-idxh h2{font-size:30px}.jr-row{grid-template-columns:48px 1fr 84px;gap:14px;padding:22px 4px}.jr-left{grid-column:2;grid-row:1}.jr-mid{grid-column:1/-1;grid-row:2}.jr-mid p{display:none}.jr-mid h3{font-size:23px}.jr-no{font-size:32px}.jr-th{width:84px;grid-column:3;grid-row:1}}
+</style>
 </head>
 <body>
 
@@ -511,16 +544,7 @@ html, body { overflow-x: hidden; max-width: 100%; }
       <button class="hamburger" id="hamburger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
-
-  <!-- Blog Hero -->
-  <div class="blog-hero">
-    <div class="blog-hero-eyebrow">Vanuit de blog</div>
-    <h1>Blog</h1>
-    <p class="blog-hero-sub">Verhalen over huidverzorging, ingrediëntengidsen en eerlijk advies.</p>
-  </div>
-
-  <div id="blog-featured"></div>
-  <div id="blog-grid"></div>
+  <div id="journal"></div>
 
 </div><!-- /.page -->
 
@@ -630,61 +654,35 @@ html, body { overflow-x: hidden; max-width: 100%; }
 <script type="module">
 import { POSTS as ALL_POSTS } from '../project/data/posts.js';
 const POSTS = ALL_POSTS.nl;
-
-function formatDate(dateStr) {
-  var months = ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
-  var d = new Date(dateStr);
-  if (isNaN(d.getTime())) return dateStr;
-  return d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+const MONTHS = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
+const PRE = '../';
+function fd(s) { const d = new Date(s); if (isNaN(d)) return s; return d.getDate() + " " + MONTHS[d.getMonth()] + " " + d.getFullYear(); }
+function topic(c) { return (c || '').split(' · ')[0]; }
+function pic(p, cls) {
+  const src = PRE + 'project/assets/' + (p.thumb || 'journal-cover-mallorca.jpg');
+  const webp = p.thumbWebp ? '<source srcset="' + src.replace(/\.(jpg|jpeg|png)$/i, '.webp') + '" type="image/webp">' : '';
+  return '<picture>' + webp + '<img src="' + src + '" alt="" loading="' + (cls === 'feat' ? 'eager' : 'lazy') + '"></picture>';
 }
-
-(function() {
-  var published = POSTS.filter(function(p) { return p.published; });
-  published.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
-  var featured = published[0];
-  var rest = published.slice(1).reverse();
-
-  if (featured) {
-    var coverImg = featured.image || '../project/assets/journal-cover-mallorca.jpg';
-    var url = 'blog-post.html?p=' + featured.id;
-    document.getElementById('blog-featured').innerHTML =
-      '<div class="featured-wrap">' +
-        '<div class="featured-label">Laatste artikel</div>' +
-        '<div class="featured-post">' +
-          '<div class="featured-img"><picture><source srcset="' + coverImg.replace(/\.(jpg|jpeg|png)$/i, '.webp') + '" type="image/webp"><img src="' + coverImg + '" alt="Handen houden drie SESE-serums vast aan zee" /></picture></div>' +
-          '<div class="featured-body">' +
-            '<div class="featured-meta">' +
-              '<span>' + formatDate(featured.date) + '</span>' +
-              '<span class="sep">·</span>' +
-              '<span>' + featured.readtime + '</span>' +
-            '</div>' +
-            '<a href="' + url + '" style="color:inherit;text-decoration:none;"><h2>' + (featured.titleHtml || featured.title) + '</h2></a>' +
-            '<p class="featured-excerpt">' + featured.excerpt + '</p>' +
-            '<a href="' + url + '" class="read-more">Lees meer →</a>' +
-          '</div>' +
-        '</div>' +
-      '</div>';
-  }
-
-  if (rest.length) {
-    var cards = rest.map(function(p, i) {
-      var num = String(i + 1).padStart(2, '0');
-      var u = 'blog-post.html?p=' + p.id;
-      return '<div class="post-card">' +
-        '<div class="post-card-num">No. ' + num + '</div>' +
-        '<div class="post-card-date">' + formatDate(p.date) + ' · ' + p.readtime + '</div>' +
-        '<a href="' + u + '" style="color:inherit;text-decoration:none;"><h3>' + (p.titleHtml || p.title) + '</h3></a>' +
-        '<p class="post-card-excerpt">' + p.excerpt + '</p>' +
-        '<a href="' + u + '" class="post-card-link">Lees →</a>' +
-      '</div>';
-    }).join('');
-    document.getElementById('blog-grid').innerHTML =
-      '<div class="grid-section">' +
-        '<div class="grid-section-label">Meer uit de blog</div>' +
-        '<div class="posts-grid">' + cards + '</div>' +
-      '</div>';
-  }
-})();
+const today = new Date();
+const published = POSTS.filter(p => p.published && new Date(p.date) <= today).sort((a, b) => new Date(b.date) - new Date(a.date));
+const f = published[0];
+const rows = published.slice(1).map((p, i) => {
+  const u = 'blog-post.html?p=' + p.id;
+  const no = String(published.length - 1 - i).padStart(2, '0');
+  return '<a class="jr-row" href="' + u + '"><span class="jr-no">' + no + '</span>' +
+    '<div class="jr-left"><span class="jr-eb">' + topic(p.category) + '</span><span class="jr-d">' + fd(p.date) + '</span></div>' +
+    '<div class="jr-mid"><h3>' + (p.titleHtml || p.title) + '</h3><p>' + p.excerpt + '</p></div>' +
+    '<div class="jr-th">' + pic(p) + '</div></a>';
+}).join('');
+const fu = f ? 'blog-post.html?p=' + f.id : '#';
+document.getElementById('journal').innerHTML = (f ?
+  '<section class="jr-top"><div class="jr-txt"><h1>JOURNAL</h1><div class="jr-feat">' +
+    '<span class="jr-eb">Nieuw · ' + fd(f.date) + ' · ' + f.readtime + '</span>' +
+    '<a href="' + fu + '"><h2>' + (f.titleHtml || f.title) + '</h2></a>' +
+    '<p>' + f.excerpt + '</p>' +
+    '<a class="jr-btn" href="' + fu + '">Lees het artikel →</a></div></div>' +
+    '<a class="jr-pic" href="' + fu + '">' + pic(f, 'feat') + '<span class="jr-tag">' + topic(f.category) + '</span></a></section>' : '') +
+  '<section class="jr-idx"><div class="jr-idxh"><h2>Alle <em>verhalen</em></h2><span class="jr-eb">Om de twee weken op maandag</span></div>' + rows + '</section>';
 </script>
 <script src="../project/js/sese-cart.js"></script>
 <script src="../project/js/newsletter.js"></script>
