@@ -828,7 +828,7 @@ export const PRODUCTS = {
           "bg": "#FCE8EB"
         },
         {
-          "src": "project/assets/products-new/ceramide-night-cream-textuur.jpg",
+          "src": "project/assets/products-new/firming-day-cream-textuur.jpg",
           "bg": "#F5DEE2",
           "photo": true
         },
@@ -989,7 +989,7 @@ export const PRODUCTS = {
           "bg": "#EFDFC2"
         },
         {
-          "src": "project/assets/products-new/firming-day-cream-textuur.jpg",
+          "src": "project/assets/products-new/ceramide-night-cream-textuur.jpg",
           "bg": "#F5EAD0",
           "photo": true
         },
@@ -2279,7 +2279,7 @@ export const PRODUCTS = {
           "bg": "#FCE8EB"
         },
         {
-          "src": "../project/assets/products-new/ceramide-night-cream-textuur.jpg",
+          "src": "../project/assets/products-new/firming-day-cream-textuur.jpg",
           "bg": "#F5DEE2",
           "photo": true
         },
@@ -2440,7 +2440,7 @@ export const PRODUCTS = {
           "bg": "#EFDFC2"
         },
         {
-          "src": "../project/assets/products-new/firming-day-cream-textuur.jpg",
+          "src": "../project/assets/products-new/ceramide-night-cream-textuur.jpg",
           "bg": "#F5EAD0",
           "photo": true
         },
@@ -3730,7 +3730,7 @@ export const PRODUCTS = {
           "bg": "#FCE8EB"
         },
         {
-          "src": "../project/assets/products-new/ceramide-night-cream-textuur.jpg",
+          "src": "../project/assets/products-new/firming-day-cream-textuur.jpg",
           "bg": "#F5DEE2",
           "photo": true
         },
@@ -3891,7 +3891,7 @@ export const PRODUCTS = {
           "bg": "#EFDFC2"
         },
         {
-          "src": "../project/assets/products-new/firming-day-cream-textuur.jpg",
+          "src": "../project/assets/products-new/ceramide-night-cream-textuur.jpg",
           "bg": "#F5EAD0",
           "photo": true
         },
