@@ -246,7 +246,7 @@ const POSTS = [
 
 <p>The SESE Smoothing Eye Cream is formulated for the specific needs of the eye area. Its light, fast-absorbing texture hydrates intensely without feeling heavy or irritating the eyes. The cream works on fine lines, softens the skin and supports the regeneration of the delicate eye zone.</p>
 
-<p>Suitable for both morning and evening routines. For all skin types. COSMOS Natural certified and vegan, like all SESE products.</p>
+<p>Suitable for both morning and evening routines. For all skin types. COSMOS Natural certified and vegan.</p>
 
 <h2>Integrate it into your existing routine</h2>
 
