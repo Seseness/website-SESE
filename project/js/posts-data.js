@@ -397,7 +397,7 @@ const POSTS = [
 
 <h2>What COSMOS Natural requires</h2>
 
-<p>Under the COSMOS standard, at least 95% of all plant-based ingredients must be organically produced. The percentage of total ingredients that must be natural depends on the product type, but the formula is clear and independently verified — not self-reported.</p>
+<p>Under COSMOS Natural, ingredients must come from natural sources such as plants and minerals, or be derived from them through approved processes. There is no minimum share of organic ingredients: that is what COSMOS Organic adds, requiring at least 95% of agro-ingredients and at least 20% of the total formula (10% for rinse-off products) to be organic. Either way, the formula is independently verified — not self-reported.</p>
 
 <p>Physical and biological processing is permitted. Certain carefully regulated chemical transformations are allowed where necessary. But a broad list of synthetic ingredients is prohibited entirely: silicones, parabens, PEGs, synthetic fragrances, GMOs, and a range of other substances that appear regularly in conventional skincare.</p>
 
