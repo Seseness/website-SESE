@@ -118,7 +118,7 @@ export const POSTS = {
       "date": "August 24, 2026",
       "readtime": "5 min read",
       "excerpt": "Lightest to heaviest. Actives before occlusives. There is a logic to the order - and it makes everything work better.",
-      "image": "project/assets/products-new/vitamin-c-serum-studio.jpg",
+      "image": "project/assets/products-new/vitamin-c-serum-sfeer-2.jpg",
       "sources": [
         "Draelos, Z.D. (2018). The science behind skin care: moisturizers. <em>Journal of Cosmetic Dermatology.</em>",
         "Ganceviciene, R. et al. (2012). Skin anti-aging strategies. <em>Dermato-Endocrinology.</em>"
@@ -126,7 +126,7 @@ export const POSTS = {
       "fullBody": "<p>The order in which you apply your skincare products is not arbitrary. There is a logic to it - one rooted in how the skin absorbs different substances, how ingredients interact with each other, and what each product is designed to do. Get the order right and your routine becomes significantly more effective. Get it wrong and you may be reducing the benefit of products you are spending real money on.</p>\n\n<p>The general principle is simple: lightest to heaviest, water-based before oil-based, actives before occlusives.</p>\n\n<h2>Start with a clean base</h2>\n\n<p>Before anything else, cleanse. Products applied to uncleansed skin have to penetrate through a layer of sebum, dead cells, SPF residue, and everything the day (or night) has added. A clean skin surface allows every subsequent product to reach where it needs to go.</p>\n\n<p>Follow with toner - the first layer of hydration and the step that primes the skin to absorb what follows. A hydrating toner applied to damp skin will be more effective than one applied to completely dry skin, so timing matters here.</p>\n\n<h2>Serums before moisturisers - always</h2>\n\n<p>This is the most commonly broken rule in skincare layering. Serums contain high concentrations of active ingredients in lightweight, fast-absorbing formulas. They are designed to penetrate deeply. Moisturisers, by contrast, are partially occlusive - they form a layer over the skin's surface to seal in what is beneath them and prevent moisture loss.</p>\n\n<p>If you apply moisturiser before your serum, you are putting a partial barrier between the serum and the skin. The serum's active ingredients cannot penetrate as effectively. Always apply your serum first, give it at least a minute to absorb, then apply your moisturiser on top.</p>\n\n<h2>Multiple serums: lightest first</h2>\n\n<p>If you use more than one serum - a Vitamin C serum in the morning alongside a peptide serum, for example - apply the thinner, more watery one first and the thicker one second. This ensures both reach the skin effectively rather than the thicker formula blocking the thinner one.</p>\n\n<h2>Oil-based products last (before SPF)</h2>\n\n<p>Any oil-based products - facial oils, oil-rich balms - should come after your water-based serum and moisturiser and before your SPF. Oils cannot pass through a water-based layer once that layer has been applied; water-based products can penetrate through a light oil layer in principle, but why create the obstacle? Keep oil-based formulas close to last in your routine.</p>\n\n<h2>SPF seals the morning routine</h2>\n\n<p>Your morning routine should end with SPF. It is the final layer - protective rather than penetrating - and it belongs on top of everything else. Only makeup goes on top of SPF. Give your SPF a few minutes to set before you apply makeup.</p>\n\n<h2>Evening: the same logic, without SPF</h2>\n\n<p>The evening routine follows the same sequence: cleanser, toner, serum (or serums), moisturiser. If you use a retinol alternative, this goes in the serum step. Your night cream replaces the day cream and SPF. That is all.</p>\n\n<p>A well-ordered five-minute routine will outperform a ten-product routine applied in the wrong sequence. Order is not a detail - it is part of the formula.</p>",
       "published": true,
       "category": "Routine · Layering",
-      "thumb": "products-new/vitamin-c-serum-studio.jpg",
+      "thumb": "products-new/vitamin-c-serum-sfeer-2.jpg",
       "thumbWebp": true
     },
     {
@@ -379,7 +379,7 @@ export const POSTS = {
       "date": "August 24, 2026",
       "readtime": "5 min leestijd",
       "excerpt": "Van licht naar zwaar. Actieve stoffen vóór afsluitende crèmes. De juiste volgorde laat alles beter werken.",
-      "image": "../project/assets/products-new/vitamin-c-serum-studio.jpg",
+      "image": "../project/assets/products-new/vitamin-c-serum-sfeer-2.jpg",
       "sources": [
         "Draelos, Z.D. (2018). The science behind skin care: moisturizers. <em>Journal of Cosmetic Dermatology.</em>",
         "Ganceviciene, R. et al. (2012). Skin anti-aging strategies. <em>Dermato-Endocrinology.</em>"
@@ -388,7 +388,7 @@ export const POSTS = {
       "published": true,
       "category": "Routine · Volgorde",
       "titleHtml": "In welke volgorde breng je je huidverzorging aan?",
-      "thumb": "products-new/vitamin-c-serum-studio.jpg",
+      "thumb": "products-new/vitamin-c-serum-sfeer-2.jpg",
       "thumbWebp": true
     },
     {
@@ -643,7 +643,7 @@ export const POSTS = {
       "date": "August 24, 2026",
       "readtime": "5 min de lecture",
       "excerpt": "Du plus léger au plus riche. Les actifs avant les crèmes. Le bon ordre permet à chaque produit de mieux agir.",
-      "image": "../project/assets/products-new/vitamin-c-serum-studio.jpg",
+      "image": "../project/assets/products-new/vitamin-c-serum-sfeer-2.jpg",
       "sources": [
         "Draelos, Z.D. (2018). The science behind skin care: moisturizers. <em>Journal of Cosmetic Dermatology.</em>",
         "Ganceviciene, R. et al. (2012). Skin anti-aging strategies. <em>Dermato-Endocrinology.</em>"
@@ -652,7 +652,7 @@ export const POSTS = {
       "published": true,
       "category": "Routine · Superposition",
       "titleHtml": "Dans quel ordre appliquer vos soins ?",
-      "thumb": "products-new/vitamin-c-serum-studio.jpg",
+      "thumb": "products-new/vitamin-c-serum-sfeer-2.jpg",
       "thumbWebp": true
     },
     {
