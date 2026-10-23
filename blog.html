@@ -715,7 +715,7 @@ function topic(c) { return (c || '').split(' · ')[0]; }
 function pic(p, cls) {
   const src = PRE + 'project/assets/' + (p.thumb || 'journal-cover-mallorca.jpg');
   const webp = p.thumbWebp ? '<source srcset="' + src.replace(/\.(jpg|jpeg|png)$/i, '.webp') + '" type="image/webp">' : '';
-  return '<picture>' + webp + '<img src="' + src + '" alt="" loading="' + (cls === 'feat' ? 'eager' : 'lazy') + '"></picture>';
+  return '<picture>' + webp + '<img src="' + src + '"' + (p.thumbPos ? ' style="object-position:' + p.thumbPos + '"' : '') + ' alt="" loading="' + (cls === 'feat' ? 'eager' : 'lazy') + '"></picture>';
 }
 const today = new Date();
 const published = POSTS.filter(p => p.published && new Date(p.date) <= today).sort((a, b) => new Date(b.date) - new Date(a.date));

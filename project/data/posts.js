@@ -207,7 +207,6 @@ export const POSTS = {
       "date": "October 19, 2026",
       "readtime": "4 min read",
       "excerpt": "No ten-step routines, no chasing the newest ingredient. Why SESE believes in slow skincare: a few good steps, done every day.",
-      "image": null,
       "sources": [
         "Krutmann, J. et al. (2017). The skin aging exposome. <em>Journal of Dermatological Science.</em>",
         "Baumann, L. (2009). <em>Cosmetic Dermatology - Principles and Practice.</em> McGraw-Hill."
@@ -216,8 +215,9 @@ export const POSTS = {
       "published": true,
       "category": "About SESE · Slow skincare",
       "titleHtml": "Slow skincare: why a calm, consistent routine works",
-      "thumb": "hero-strand.jpg",
-      "thumbWebp": true
+      "thumb": "blog-slow-skincare.jpg",
+      "thumbWebp": true,
+      "thumbPos": "22% center"
     },
     {
       "id": 12,
@@ -471,7 +471,6 @@ export const POSTS = {
       "date": "October 19, 2026",
       "readtime": "4 min leestijd",
       "excerpt": "Geen routines van tien stappen, geen jacht op het nieuwste ingrediënt. Waarom SESE gelooft in slow skincare: een paar goede stappen, elke dag.",
-      "image": null,
       "sources": [
         "Krutmann, J. et al. (2017). The skin aging exposome. <em>Journal of Dermatological Science.</em>",
         "Baumann, L. (2009). <em>Cosmetic Dermatology - Principles and Practice.</em> McGraw-Hill."
@@ -480,8 +479,9 @@ export const POSTS = {
       "published": true,
       "category": "Over SESE · Slow skincare",
       "titleHtml": "Slow skincare: waarom een rustige, consequente routine werkt",
-      "thumb": "hero-strand.jpg",
-      "thumbWebp": true
+      "thumb": "blog-slow-skincare.jpg",
+      "thumbWebp": true,
+      "thumbPos": "22% center"
     },
     {
       "id": 12,
@@ -735,7 +735,6 @@ export const POSTS = {
       "date": "October 19, 2026",
       "readtime": "4 min de lecture",
       "excerpt": "Pas de routine en dix étapes, pas de course au dernier ingrédient. Pourquoi SESE croit au slow skincare : quelques bons gestes, chaque jour.",
-      "image": null,
       "sources": [
         "Krutmann, J. et al. (2017). The skin aging exposome. <em>Journal of Dermatological Science.</em>",
         "Baumann, L. (2009). <em>Cosmetic Dermatology - Principles and Practice.</em> McGraw-Hill."
@@ -744,8 +743,9 @@ export const POSTS = {
       "published": true,
       "category": "À propos de SESE · Slow skincare",
       "titleHtml": "Slow skincare : pourquoi une routine calme et régulière fonctionne",
-      "thumb": "hero-strand.jpg",
-      "thumbWebp": true
+      "thumb": "blog-slow-skincare.jpg",
+      "thumbWebp": true,
+      "thumbPos": "22% center"
     },
     {
       "id": 12,
