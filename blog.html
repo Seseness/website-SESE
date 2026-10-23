@@ -625,8 +625,9 @@ html, body { overflow-x: hidden; max-width: 100%; }
 })();
 </script>
 
-<script src="project/js/posts-data.js"></script>
-<script>
+<script type="module">
+import { POSTS as ALL_POSTS } from './project/data/posts.js';
+const POSTS = ALL_POSTS.en;
 (function() {
   var published = POSTS.filter(function(p) { return p.published; });
   published.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
