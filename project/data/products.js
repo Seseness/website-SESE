@@ -589,7 +589,7 @@ export const PRODUCTS = {
       ],
       "benefitGrad": "linear-gradient(160deg,#F5C98A,#E0AC58)",
       "quote": "Consistency is what you see.",
-      "benefitTitle": "Time-released firmness, <em>built into a daily ritual.</em>",
+      "benefitTitle": "Firmness you build, <em>in a daily ritual.</em>",
       "benefitBody": [
         "Peptides do not work like a glow trick. You won’t notice the single day. You will notice the weeks.",
         "A lightweight, fast-absorbing serum with peptides and hydrolysed hyaluronic acid that help improve elasticity, firmness and skin plumpness."
@@ -2031,7 +2031,7 @@ export const PRODUCTS = {
       ],
       "benefitGrad": "linear-gradient(160deg,#F5C98A,#E0AC58)",
       "quote": "Consistentie is wat je ziet.",
-      "benefitTitle": "Tijdgegeven stevigheid, <em>ingebouwd in een dagelijks ritueel.</em>",
+      "benefitTitle": "Stevigheid die je opbouwt, <em>in een dagelijks ritueel.</em>",
       "benefitBody": [
         "Peptiden werken niet als een glow-trucje. Je merkt het niet na één dag. Je merkt het na enkele weken.",
         "Een licht, snel intrekkend serum met peptiden en gehydrolyseerd hyaluronzuur die de elasticiteit, stevigheid en volheid van de huid helpen verbeteren."
@@ -2330,7 +2330,7 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "Licht maar <em>echt vochtinbrengend.</em>",
-      "howTitle": "Één stap tussen <em>serum en SPF.</em>",
+      "howTitle": "Eén stap tussen <em>serum en SPF.</em>",
       "howStaps": [
         {
           "h": "Na je ochtendserum",
@@ -3467,13 +3467,13 @@ export const PRODUCTS = {
           "p": "Patientez environ 60 secondes. Poursuivez avec Firming Day Cream le matin, Ceramide Night Cream le soir."
         },
         {
-          "h": "Terminez par la SPF le matin",
+          "h": "Terminez par le SPF le matin",
           "p": "Le SPF 50 Sunscreen Stick est l'étape finale non négociable avant de commencer la journée."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#F5C98A,#E0AC58)",
       "quote": "La régularité, c’est ce qui se voit.",
-      "benefitTitle": "Une fermeté à libération lente, <em>intégrée à un rituel quotidien.</em>",
+      "benefitTitle": "Une fermeté qui se construit, <em>dans un rituel quotidien.</em>",
       "benefitBody": [
         "Les peptides ne sont pas un coup d’éclat. On ne le voit pas en un jour. On le voit au fil des semaines.",
         "Un sérum léger, qui pénètre vite, avec des peptides et de l’acide hyaluronique hydrolysé qui aident à améliorer l’élasticité, la fermeté et le rebondi de la peau."
@@ -3726,7 +3726,7 @@ export const PRODUCTS = {
       "quickInfo": [
         [
           "Peau normale à sèche",
-          "Sous le maquillage ou la SPF"
+          "Sous le maquillage ou le SPF"
         ],
         [
           "Usage matinal",
@@ -3772,7 +3772,7 @@ export const PRODUCTS = {
         }
       ],
       "ingTitle": "Légère mais <em>véritablement hydratante.</em>",
-      "howTitle": "Une étape entre <em>le sérum et la SPF.</em>",
+      "howTitle": "Une étape entre <em>le sérum et le SPF.</em>",
       "howÉtapes": [
         {
           "h": "Après votre sérum du matin",
@@ -3787,7 +3787,7 @@ export const PRODUCTS = {
           "p": "Ne vous arrêtez pas à la mâchoire. Pressez vers le haut et vers l'extérieur. Le cou vieillit aussi vite que le visage."
         },
         {
-          "h": "Terminez par la SPF",
+          "h": "Terminez par le SPF",
           "p": "La crème de jour ne contient pas de SPF. Terminez toujours par SESE SPF 50 Sunscreen Stick comme dernière étape du matin."
         }
       ],
@@ -4256,7 +4256,7 @@ export const PRODUCTS = {
       "howÉtapes": [
         {
           "h": "Dernière étape de la routine du matin",
-          "p": "Une fois l'hydratant ou la crème de jour absorbé. La SPF au-dessus de tout, jamais en dessous."
+          "p": "Une fois l'hydratant ou la crème de jour absorbé. Le SPF au-dessus de tout, jamais en dessous."
         },
         {
           "h": "Deux à trois passages par zone",
@@ -4268,7 +4268,7 @@ export const PRODUCTS = {
         },
         {
           "h": "Réappliquez toutes les deux heures en extérieur",
-          "p": "Aucune SPF ne dure toute la journée. Le format stick est conçu pour une réapplication facile, glissez-le dans votre poche."
+          "p": "Aucun SPF ne dure toute la journée. Le format stick est conçu pour une réapplication facile, glissez-le dans votre poche."
         }
       ],
       "benefitGrad": "linear-gradient(160deg,#E8D5B0,#C8A870)",
