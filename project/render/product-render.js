@@ -142,7 +142,6 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
       <h1>${p.nameBreak}</h1>
       <p class="tagline">${p.tagline}</p>
       <div class="chips">${chipsHtml}</div>
-      <div class="reviews"><span class="stars">★★★★★</span><span>4.8 · </span><a href="${TRUSTPILOT_URL}" target="_blank" rel="noopener">206 honest reviews</a></div>
       <div class="pricing">
         <span class="now">${p.price}</span>
         <span class="vol">${p.vol} · ${p.volPrice}</span>
@@ -162,7 +161,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="ship-line">
         <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="9" rx="1.5"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></span>Free shipping over €100</span>
         <span style="opacity:0.4;">·</span>
-        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>COSMOS Natural Certified</span>
+        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>${p.cosmos ? 'COSMOS Natural Certified' : 'Vegan formula'}</span>
       </div>
       <div class="quick-cards">${quickHtml}</div>
     </aside>
@@ -192,11 +191,11 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
 
   <!-- Certs -->
   <section class="certs">
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natural</div><div class="s">Certified</div></div></div>
+    ${p.cosmos ? `<div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natural</div><div class="s">Certified</div></div></div>` : ''}
     <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12c2-4 5-6 7-6s5 2 7 6c-2 4-5 6-7 6s-5-2-7-6z"/><circle cx="12" cy="12" r="2"/></svg></span><div><div class="t">Vegan</div><div class="s">No animal derivatives</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0v3l1 2H4l1-2v-3z"/><path d="M10 19a2 2 0 004 0"/></svg></span><div><div class="t">Cruelty-free</div><div class="s">Leaping Bunny</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Gluten-free</div><div class="s">Tested formula</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Coastal botanicals</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0v3l1 2H4l1-2v-3z"/><path d="M10 19a2 2 0 004 0"/></svg></span><div><div class="t">Cruelty-free</div><div class="s">Not tested on animals</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Gluten-free</div><div class="s">No gluten ingredients</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Produced in Europe</div></div></div>
   </section>
 
   <!-- Benefit -->
@@ -415,7 +414,6 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
       <h1>${p.nameBreak}</h1>
       <p class="tagline">${p.tagline}</p>
       <div class="chips">${chipsHtml}</div>
-      <div class="reviews"><span class="stars">★★★★★</span><span>4.8 · </span><a href="${TRUSTPILOT_URL}" target="_blank" rel="noopener">206 honest reviews</a></div>
       <div class="pricing">
         <span class="now">${p.price}</span>
         <span class="vol">${p.vol} · ${p.volPrice}</span>
@@ -435,7 +433,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="ship-line">
         <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="9" rx="1.5"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></span>Gratis verzending vanaf €100</span>
         <span style="opacity:0.4;">·</span>
-        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>COSMOS Natural Gecertificeerd</span>
+        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>${p.cosmos ? 'COSMOS Natural Gecertificeerd' : 'Veganistische formule'}</span>
       </div>
       <div class="quick-cards">${quickHtml}</div>
     </aside>
@@ -465,11 +463,11 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
 
   <!-- Certs -->
   <section class="certs">
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natural</div><div class="s">Gecertificeerd</div></div></div>
+    ${p.cosmos ? `<div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natural</div><div class="s">Gecertificeerd</div></div></div>` : ''}
     <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12c2-4 5-6 7-6s5 2 7 6c-2 4-5 6-7 6s-5-2-7-6z"/><circle cx="12" cy="12" r="2"/></svg></span><div><div class="t">Veganistisch</div><div class="s">Geen dierlijke afgeleiden</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0v3l1 2H4l1-2v-3z"/><path d="M10 19a2 2 0 004 0"/></svg></span><div><div class="t">Cruelty-free</div><div class="s">Leaping Bunny</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Glutenvrij</div><div class="s">Geteste formule</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Kustbotanische ingrediënten</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0v3l1 2H4l1-2v-3z"/><path d="M10 19a2 2 0 004 0"/></svg></span><div><div class="t">Cruelty-free</div><div class="s">Niet getest op dieren</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Glutenvrij</div><div class="s">Zonder gluten</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Geproduceerd in Europa</div></div></div>
   </section>
 
   <!-- Benefit -->
@@ -688,7 +686,6 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
       <h1>${p.nameBreak}</h1>
       <p class="tagline">${p.tagline}</p>
       <div class="chips">${chipsHtml}</div>
-      <div class="reviews"><span class="stars">★★★★★</span><span>4.8 · </span><a href="${TRUSTPILOT_URL}" target="_blank" rel="noopener">206 honest reviews</a></div>
       <div class="pricing">
         <span class="now">${p.price}</span>
         <span class="vol">${p.vol} · ${p.volPrice}</span>
@@ -708,7 +705,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
       <div class="ship-line">
         <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="9" rx="1.5"/><path d="M16 10h3l2 3v3h-5"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></span>Livraison gratuite dès 100 €</span>
         <span style="opacity:0.4;">·</span>
-        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>Certifié COSMOS Natural</span>
+        <span class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/><path d="M8 14c1 1 2 1.6 4 1.6"/></svg></span>${p.cosmos ? 'Certifié COSMOS Natural' : 'Formule vegan'}</span>
       </div>
       <div class="quick-cards">${quickHtml}</div>
     </aside>
@@ -738,11 +735,11 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
 
   <!-- Certs -->
   <section class="certs">
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natural</div><div class="s">Certifié</div></div></div>
+    ${p.cosmos ? `<div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9z"/></svg></span><div><div class="t">COSMOS Natural</div><div class="s">Certifié</div></div></div>` : ''}
     <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12c2-4 5-6 7-6s5 2 7 6c-2 4-5 6-7 6s-5-2-7-6z"/><circle cx="12" cy="12" r="2"/></svg></span><div><div class="t">Vegan</div><div class="s">Sans dérivés animaux</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0v3l1 2H4l1-2v-3z"/><path d="M10 19a2 2 0 004 0"/></svg></span><div><div class="t">Sans cruauté</div><div class="s">Leaping Bunny</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Sans gluten</div><div class="s">Formule testée</div></div></div>
-    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Ingrédients côtiers</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0v3l1 2H4l1-2v-3z"/><path d="M10 19a2 2 0 004 0"/></svg></span><div><div class="t">Sans cruauté</div><div class="s">Non testé sur les animaux</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5 12a14 14 0 0014 0M12 3v18"/></svg></span><div><div class="t">Sans gluten</div><div class="s">Sans ingrédients à gluten</div></div></div>
+    <div class="cert"><span class="b"><svg viewBox="0 0 24 24"><path d="M4 18l5-12 3 7 2-4 6 9"/></svg></span><div><div class="t">Made in EU</div><div class="s">Produit en Europe</div></div></div>
   </section>
 
   <!-- Benefit -->
