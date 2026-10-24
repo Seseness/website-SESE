@@ -217,7 +217,7 @@ export const PRODUCTS = {
           "abbr": "RW",
           "bg": "#FCE8EB",
           "nm": "Rose Flower Water",
-          "ds": "Botanical base - softly hydrating and calming.",
+          "ds": "Botanical base, softly hydrating and calming.",
           "pct": "Organic"
         },
         {
@@ -378,7 +378,7 @@ export const PRODUCTS = {
           "abbr": "VC",
           "bg": "#FCEAD0",
           "nm": "Ascorbyl Glucoside",
-          "ds": "Stabilised natural vitamin C - brightens gently.",
+          "ds": "Stabilised natural vitamin C that brightens gently.",
           "pct": "2%"
         },
         {
@@ -700,7 +700,7 @@ export const PRODUCTS = {
           "abbr": "BP",
           "bg": "#FCE8EB",
           "nm": "Bidens Pilosa Extract",
-          "ds": "Plant-based retinol alternative - renews gently.",
+          "ds": "Plant-based retinol alternative that renews gently.",
           "pct": "Key"
         },
         {
@@ -757,7 +757,7 @@ export const PRODUCTS = {
       "benefitTitle": "Renewal, <em>gently.</em>",
       "benefitBody": [
         "Retinol works, but many skins react to it with redness or flaking.",
-        "This serum uses Bidens pilosa extract, a plant-based retinol alternative, to renew the skin, improve texture and reduce the appearance of fine lines and dark spots - gently enough for sensitive skin and beginners."
+        "This serum uses Bidens pilosa extract, a plant-based retinol alternative, to renew the skin, improve texture and reduce the appearance of fine lines and dark spots, gently enough for sensitive skin and beginners."
       ],
       "stats": [
         {
@@ -1174,7 +1174,7 @@ export const PRODUCTS = {
         ],
         [
           "Use AM & PM",
-          "Tap gently - never rub"
+          "Tap gently, never rub"
         ]
       ],
       "routineActive": -1,
@@ -1330,7 +1330,7 @@ export const PRODUCTS = {
       "size": "12 g",
       "quickInfo": [
         [
-          "Morning - final step",
+          "Morning, final step",
           "Reapply outdoors"
         ],
         [
