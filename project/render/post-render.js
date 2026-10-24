@@ -45,7 +45,7 @@ function getRelatedPosts(allPosts, currentId) {
 }
 
   // Build article header
-  const imageHtml = post.image ? `
+  const imageHtml = false ? `
     <div class="article-image">
       <div class="img-frame" style="background-image:url('${post.image}');background-color:#EFDFC2;background-size:contain;background-repeat:no-repeat;">
         <div class="img-placeholder" style="background:transparent"></div>
@@ -147,7 +147,7 @@ function formatDate(dateStr) {
 }
 
   // Build article header
-  const imageHtml = post.image ? `
+  const imageHtml = false ? `
     <div class="article-image">
       <div class="img-frame" style="background-image:url('${post.image}');background-color:#EFDFC2;background-size:contain;background-repeat:no-repeat;">
         <div class="img-placeholder" style="background:transparent"></div>
@@ -249,7 +249,7 @@ function formatDate(dateStr) {
 }
 
   // Build article header
-  const imageHtml = post.image ? `
+  const imageHtml = false ? `
     <div class="article-image">
       <div class="img-frame" style="background-image:url('${post.image}');background-color:#EFDFC2;background-size:contain;background-repeat:no-repeat;">
         <div class="img-placeholder" style="background:transparent"></div>
