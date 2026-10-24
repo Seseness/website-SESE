@@ -31,7 +31,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
   if (!p) return null;
 
   const prefix = lang === 'en' ? '' : '/' + lang;
-  const title = `SESE - ${p.name}`;
+  const title = `${p.name} | SESE`;
   const metaDescription = p.tagline;
   const canonicalUrl = baseUrl + prefix + '/product.html?p=' + key;
   const hreflangLinks = [
@@ -303,7 +303,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
   if (!p) return null;
 
   const prefix = lang === 'en' ? '' : '/' + lang;
-  const title = `SESE - ${p.name}`;
+  const title = `${p.name} | SESE`;
   const metaDescription = p.tagline;
   const canonicalUrl = baseUrl + prefix + '/product.html?p=' + key;
   const hreflangLinks = [
@@ -575,7 +575,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
   if (!p) return null;
 
   const prefix = lang === 'en' ? '' : '/' + lang;
-  const title = `SESE - ${p.name}`;
+  const title = `${p.name} | SESE`;
   const metaDescription = p.tagline;
   const canonicalUrl = baseUrl + prefix + '/product.html?p=' + key;
   const hreflangLinks = [

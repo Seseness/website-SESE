@@ -5,6 +5,8 @@ const NEWSLETTER_CONFIG = {
   storefrontToken: '67d78b4861b9bc1f40b5a231dedfb7df',
 };
 
+const NL_MSG = (function(){ const l=(location.pathname.match(/^\/(nl|fr)\//)||[])[1]||'en'; return {en:{sending:'Sending…',ok:'Subscribed ✓',retry:'Try again'},nl:{sending:'Bezig…',ok:'Ingeschreven ✓',retry:'Probeer opnieuw'},fr:{sending:'Envoi…',ok:'Inscription confirmée ✓',retry:'Réessayer'}}[l]; })();
+
 async function handleNewsletterSubmit(event) {
   event.preventDefault();
 
@@ -15,7 +17,7 @@ async function handleNewsletterSubmit(event) {
 
   if (!email) return;
 
-  button.textContent = 'Sending…';
+  button.textContent = NL_MSG.sending;
   button.disabled    = true;
   input.disabled     = true;
 
@@ -53,16 +55,16 @@ async function handleNewsletterSubmit(event) {
 
     if (errors.length === 0 || alreadyExists) {
       input.value        = '';
-      button.textContent = 'Subscribed ✓';
+      button.textContent = NL_MSG.ok;
       button.style.color = '#4E7A4E';
     } else {
-      button.textContent = 'Try again';
+      button.textContent = NL_MSG.retry;
       button.disabled    = false;
       input.disabled     = false;
       console.error('Newsletter error:', errors);
     }
   } catch (err) {
-    button.textContent = 'Try again';
+    button.textContent = NL_MSG.retry;
     button.disabled    = false;
     input.disabled     = false;
     console.error('Newsletter fetch error:', err);
