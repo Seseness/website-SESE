@@ -92,7 +92,23 @@ function getRelatedPosts(allPosts, currentId) {
     </div>
   `;
 
-  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml, relatedHtml, ogImage: ldImage };
+
+  const _now = new Date();
+  const _list = (allPosts || []).filter(p => p.published && !isNaN(new Date(p.date)) && new Date(p.date) <= _now).sort((a, b) => new Date(a.date) - new Date(b.date));
+  const _i = _list.findIndex(p => p.id === post.id);
+  const _prev = _i > 0 ? _list[_i - 1] : null;
+  const _next = _i >= 0 && _i < _list.length - 1 ? _list[_i + 1] : null;
+  const navHtml = `
+    <nav class="post-nav" aria-label="Blog">
+      <a class="post-nav-back" href="blog.html">← All articles</a>
+      <div class="post-nav-pn">
+        ${_prev ? `<a class="post-nav-link prev" href="blog-post.html?p=${_prev.id}"><span class="post-nav-dir">← Previous article</span><span class="post-nav-title">${_prev.title}</span></a>` : '<span></span>'}
+        ${_next ? `<a class="post-nav-link next" href="blog-post.html?p=${_next.id}"><span class="post-nav-dir">Next article →</span><span class="post-nav-title">${_next.title}</span></a>` : '<span></span>'}
+      </div>
+    </nav>`;
+  const topBackHtml = `<a class="post-back-top" href="blog.html">← All articles</a>`;
+  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml: articleHtml + navHtml, relatedHtml, ogImage: ldImage };
+;
 }
 
 export function renderPostView_nl(post, allPosts, lang, baseUrl = 'https://www.sese.be') {
@@ -173,7 +189,7 @@ function formatDate(dateStr) {
     </div>
     ${post.sources ? `
     <div class="article-sources">
-      <h4>Sources &amp; further reading</h4>
+      <h4>Bronnen &amp; verder lezen</h4>
       <ol>${post.sources.map(s => `<li>${s}</li>`).join('')}</ol>
     </div>` : ''}
     <hr class="article-divider">
@@ -194,7 +210,23 @@ function formatDate(dateStr) {
     </div>
   `;
 
-  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml, relatedHtml, ogImage: ldImage };
+
+  const _now = new Date();
+  const _list = (allPosts || []).filter(p => p.published && !isNaN(new Date(p.date)) && new Date(p.date) <= _now).sort((a, b) => new Date(a.date) - new Date(b.date));
+  const _i = _list.findIndex(p => p.id === post.id);
+  const _prev = _i > 0 ? _list[_i - 1] : null;
+  const _next = _i >= 0 && _i < _list.length - 1 ? _list[_i + 1] : null;
+  const navHtml = `
+    <nav class="post-nav" aria-label="Blog">
+      <a class="post-nav-back" href="blog.html">← Alle artikels</a>
+      <div class="post-nav-pn">
+        ${_prev ? `<a class="post-nav-link prev" href="blog-post.html?p=${_prev.id}"><span class="post-nav-dir">← Vorig artikel</span><span class="post-nav-title">${_prev.title}</span></a>` : '<span></span>'}
+        ${_next ? `<a class="post-nav-link next" href="blog-post.html?p=${_next.id}"><span class="post-nav-dir">Volgend artikel →</span><span class="post-nav-title">${_next.title}</span></a>` : '<span></span>'}
+      </div>
+    </nav>`;
+  const topBackHtml = `<a class="post-back-top" href="blog.html">← Alle artikels</a>`;
+  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml: articleHtml + navHtml, relatedHtml, ogImage: ldImage };
+;
 }
 
 export function renderPostView_fr(post, allPosts, lang, baseUrl = 'https://www.sese.be') {
@@ -275,7 +307,7 @@ function formatDate(dateStr) {
     </div>
     ${post.sources ? `
     <div class="article-sources">
-      <h4>Sources &amp; further reading</h4>
+      <h4>Sources &amp; lectures complémentaires</h4>
       <ol>${post.sources.map(s => `<li>${s}</li>`).join('')}</ol>
     </div>` : ''}
     <hr class="article-divider">
@@ -284,7 +316,7 @@ function formatDate(dateStr) {
 
   const related = getRelatedPosts(allPosts, post.id);
   const relatedHtml = `
-    <div class="related-label">Plus du blog</div>
+    <div class="related-label">À lire aussi</div>
     <div class="related-grid">
       ${related.map(r => `
         <a href="blog-post.html?p=${r.id}" class="related-card">
@@ -296,7 +328,23 @@ function formatDate(dateStr) {
     </div>
   `;
 
-  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml, relatedHtml, ogImage: ldImage };
+
+  const _now = new Date();
+  const _list = (allPosts || []).filter(p => p.published && !isNaN(new Date(p.date)) && new Date(p.date) <= _now).sort((a, b) => new Date(a.date) - new Date(b.date));
+  const _i = _list.findIndex(p => p.id === post.id);
+  const _prev = _i > 0 ? _list[_i - 1] : null;
+  const _next = _i >= 0 && _i < _list.length - 1 ? _list[_i + 1] : null;
+  const navHtml = `
+    <nav class="post-nav" aria-label="Blog">
+      <a class="post-nav-back" href="blog.html">← Tous les articles</a>
+      <div class="post-nav-pn">
+        ${_prev ? `<a class="post-nav-link prev" href="blog-post.html?p=${_prev.id}"><span class="post-nav-dir">← Article précédent</span><span class="post-nav-title">${_prev.title}</span></a>` : '<span></span>'}
+        ${_next ? `<a class="post-nav-link next" href="blog-post.html?p=${_next.id}"><span class="post-nav-dir">Article suivant →</span><span class="post-nav-title">${_next.title}</span></a>` : '<span></span>'}
+      </div>
+    </nav>`;
+  const topBackHtml = `<a class="post-back-top" href="blog.html">← Tous les articles</a>`;
+  return { title, metaDescription, canonicalUrl, hreflangLinks, jsonLd, breadcrumbTitle, articleHtml: articleHtml + navHtml, relatedHtml, ogImage: ldImage };
+;
 }
 
 export function renderPostView(lang, post, allPosts, baseUrl) {

@@ -279,7 +279,7 @@ export function renderProductView_en(PRODUCTS, key, lang, baseUrl = 'https://www
         </div>
       </div>
       <div class="foot-bot">
-        <div>© 2026 SESE · Based in Belgium</div>
+        <div>© 2026 SESE BV · VAT BE 1038.530.401<br>Dendermondse Steenweg 76A, 9300 Aalst, Belgium</div>
         <div class="pay">
           <span class="chip">VISA</span>
           <span class="chip">Mastercard</span>
@@ -551,7 +551,7 @@ export function renderProductView_nl(PRODUCTS, key, lang, baseUrl = 'https://www
         </div>
       </div>
       <div class="foot-bot">
-        <div>© 2026 SESE · Gevestigd in België</div>
+        <div>© 2026 SESE BV · BTW BE 1038.530.401<br>Dendermondse Steenweg 76A, 9300 Aalst, België</div>
         <div class="pay">
           <span class="chip">VISA</span>
           <span class="chip">Mastercard</span>
@@ -823,7 +823,7 @@ export function renderProductView_fr(PRODUCTS, key, lang, baseUrl = 'https://www
         </div>
       </div>
       <div class="foot-bot">
-        <div>© 2026 SESE · Basé en Belgique</div>
+        <div>© 2026 SESE BV · TVA BE 1038.530.401<br>Dendermondse Steenweg 76A, 9300 Aalst, Belgique</div>
         <div class="pay">
           <span class="chip">VISA</span>
           <span class="chip">Mastercard</span>
