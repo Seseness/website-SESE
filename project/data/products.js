@@ -470,7 +470,7 @@ export const PRODUCTS = {
         },
         {
           "q": "Is it suitable for nut allergies?",
-          "a": "The formula contains sweet almond oil. If you have a nut allergy, choose another serum."
+          "a": "The formula contains sweet almond oil, so it is not suitable if you have a nut allergy. Our <a href=\"product.html?p=peptide-serum\" style=\"color:inherit;text-decoration:underline;text-underline-offset:3px\">Peptide Serum</a> and <a href=\"product.html?p=retinol-alt-serum\" style=\"color:inherit;text-decoration:underline;text-underline-offset:3px\">Retinol Alternative Serum</a> are made without almond oil and are a lovely alternative."
         }
       ],
       "inci": "Aqua/Water, Glycerin**, Cetearyl Alcohol, Simmondsia Chinensis (Jojoba) Seed Oil*, Pentylene Glycol, Butylene Glycol, Ascorbyl Glucoside, Glyceryl Stearate Citrate, Sodium PCA, Polyglyceryl-6 Stearate, Caprylic/Capric Triglyceride, Ferulic Acid, Hippophae Rhamnoides (Sea Buckthorn) Fruit Oil*, Tocopherol, Coco-Caprylate/Caprate, Dicaprylyl Carbonate, Isoamyl Laurate, Triheptanoin, Potassium Hydroxide, Prunus Amygdalus Dulcis (Sweet Almond) Oil*, Parfum/Fragrance, Cellulose, Sodium Citrate, Xanthan Gum, Polyglyceryl-6 Behenate, Persea Gratissima (Avocado) Oil*, Rosa Canina (Rosehip) Fruit Oil*, Ascorbyl Palmitate, Ricinus Communis (Castor) Seed Oil*, Hydrolyzed Hyaluronic Acid, Sodium Hyaluronate, Sodium Phytate, Citric Acid, Limonene***, Citrus Aurantium Peel Oil, Geranyl Acetate***, Citrus Limon Peel Oil, Linalool***, Pinene***, Geraniol***, Pelargonium Graveolens Flower Oil, Citronellol***, Vanillin, Beta-Caryophyllene***, Carvone***.",
@@ -1921,7 +1921,7 @@ export const PRODUCTS = {
         },
         {
           "q": "Is het geschikt bij een notenallergie?",
-          "a": "De formule bevat amandelolie. Heb je een notenallergie, kies dan een ander serum."
+          "a": "De formule bevat zoete amandelolie en is daarom niet geschikt bij een notenallergie. Ons <a href=\"product.html?p=peptide-serum\" style=\"color:inherit;text-decoration:underline;text-underline-offset:3px\">Peptide Serum</a> en <a href=\"product.html?p=retinol-alt-serum\" style=\"color:inherit;text-decoration:underline;text-underline-offset:3px\">Retinol Alternative Serum</a> bevatten geen amandelolie en zijn een mooi alternatief."
         }
       ],
       "inci": "Aqua/Water, Glycerin**, Cetearyl Alcohol, Simmondsia Chinensis (Jojoba) Seed Oil*, Pentylene Glycol, Butylene Glycol, Ascorbyl Glucoside, Glyceryl Stearate Citrate, Sodium PCA, Polyglyceryl-6 Stearate, Caprylic/Capric Triglyceride, Ferulic Acid, Hippophae Rhamnoides (Sea Buckthorn) Fruit Oil*, Tocopherol, Coco-Caprylate/Caprate, Dicaprylyl Carbonate, Isoamyl Laurate, Triheptanoin, Potassium Hydroxide, Prunus Amygdalus Dulcis (Sweet Almond) Oil*, Parfum/Fragrance, Cellulose, Sodium Citrate, Xanthan Gum, Polyglyceryl-6 Behenate, Persea Gratissima (Avocado) Oil*, Rosa Canina (Rosehip) Fruit Oil*, Ascorbyl Palmitate, Ricinus Communis (Castor) Seed Oil*, Hydrolyzed Hyaluronic Acid, Sodium Hyaluronate, Sodium Phytate, Citric Acid, Limonene***, Citrus Aurantium Peel Oil, Geranyl Acetate***, Citrus Limon Peel Oil, Linalool***, Pinene***, Geraniol***, Pelargonium Graveolens Flower Oil, Citronellol***, Vanillin, Beta-Caryophyllene***, Carvone***.",
@@ -3372,7 +3372,7 @@ export const PRODUCTS = {
         },
         {
           "q": "Convient-il en cas d’allergie aux fruits à coque ?",
-          "a": "La formule contient de l’huile d’amande douce. En cas d’allergie, choisissez un autre sérum."
+          "a": "La formule contient de l’huile d’amande douce et ne convient donc pas en cas d’allergie aux fruits à coque. Notre <a href=\"product.html?p=peptide-serum\" style=\"color:inherit;text-decoration:underline;text-underline-offset:3px\">Peptide Serum</a> et notre <a href=\"product.html?p=retinol-alt-serum\" style=\"color:inherit;text-decoration:underline;text-underline-offset:3px\">Retinol Alternative Serum</a> sont formulés sans huile d’amande et sont une belle alternative."
         }
       ],
       "inci": "Aqua/Water, Glycerin**, Cetearyl Alcohol, Simmondsia Chinensis (Jojoba) Seed Oil*, Pentylene Glycol, Butylene Glycol, Ascorbyl Glucoside, Glyceryl Stearate Citrate, Sodium PCA, Polyglyceryl-6 Stearate, Caprylic/Capric Triglyceride, Ferulic Acid, Hippophae Rhamnoides (Sea Buckthorn) Fruit Oil*, Tocopherol, Coco-Caprylate/Caprate, Dicaprylyl Carbonate, Isoamyl Laurate, Triheptanoin, Potassium Hydroxide, Prunus Amygdalus Dulcis (Sweet Almond) Oil*, Parfum/Fragrance, Cellulose, Sodium Citrate, Xanthan Gum, Polyglyceryl-6 Behenate, Persea Gratissima (Avocado) Oil*, Rosa Canina (Rosehip) Fruit Oil*, Ascorbyl Palmitate, Ricinus Communis (Castor) Seed Oil*, Hydrolyzed Hyaluronic Acid, Sodium Hyaluronate, Sodium Phytate, Citric Acid, Limonene***, Citrus Aurantium Peel Oil, Geranyl Acetate***, Citrus Limon Peel Oil, Linalool***, Pinene***, Geraniol***, Pelargonium Graveolens Flower Oil, Citronellol***, Vanillin, Beta-Caryophyllene***, Carvone***.",
